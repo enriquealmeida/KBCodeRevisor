@@ -1,0 +1,37 @@
+======OBJECT = WWSolicitudObjetosDocumentacionDS.DataSelector === WWSolicitud Objetos Documentacion DS=====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:26.0000000Z" checksum="cd49f825aa5a4fd2c328893fec4aa687" fullyQualifiedName="MOD_Solicitudes.WWSolicitudObjetosDocumentacionDS" guid="586938f5-5e89-4954-8d42-3951be971f25" name="WWSolicitudObjetosDocumentacionDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWSolicitud Objetos Documentacion DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[PrbDsc like &PrbDsc when not &PrbDsc.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="PrbDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrbDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrbDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrbDsc</Name>
+        <Description>Prb Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWSolicitudObjetosDocumentacionDS</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWSolicitudObjetosDocumentacionDS
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

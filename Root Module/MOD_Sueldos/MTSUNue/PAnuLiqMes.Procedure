@@ -1,0 +1,44 @@
+======OBJECT = PAnuLiqMes.Procedure === Anula Liquidación del Mes=====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM, in:&RspId);
+
+
+=== PROCEDURE SOURCE ===
+&MailText = ''
+
+&ParFchLiq = PMTParFch('PARULTLIQ')
+if (year(&ParFchLiq) = &RspSuA) and (month(&ParFchLiq) = &RspSuM)
+    // borro de los detalles todo lo que sea generado automáticamente
+    for each order RspSuA, RspSuM
+        where        RspSuA = &RspSuA
+        where        RspSuM = &RspSuM
+        where        RspId = &RspId or null(&RspId)
+        where        TpoHonAM = 'A'
+        defined by RspSuObs
+		
+		
+        delete
+    endfor
+	
+    // Modifico la fecha de la última liquidación (si es la liquidación completa)
+    if null(&RspId)
+		
+        &AuxDate= &ParFchLiq.AddMonths(-1)
+		
+        PMDOpDate.call(1,1,'PARULTLIQ',&AuxDate,&error)
+		//msg(&AuxDate.ToString())
+    endif
+	
+	
+endif
+commit
+
+
+====== PROPERTIES =======
+Name -> PAnuLiqMes
+Description -> Anula Liquidación del Mes
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

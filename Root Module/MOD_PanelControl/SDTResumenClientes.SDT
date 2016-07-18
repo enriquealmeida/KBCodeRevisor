@@ -1,0 +1,20 @@
+======OBJECT = SDTResumenClientes.SDT === SDTResumen Clientes.=====
+
+=== STRUCTURE ===
+SDTResumenClientes, collection: SDTResumenClientesItem
+	CliId, C(10), Cliente 
+	HrsCnt, N(8), Horas 
+	SolING, N(4), Sol ING 
+	SolDES, N(4), Sol DES 
+	SolINS, N(4), Sol INS 
+	USAnual, N(8)-, Fact. 
+	USGan, N(8)-, Gan. 
+	PryActivos, N(4), Pry Act. 
+
+====== PROPERTIES =======
+Name -> SDTResumenClientes
+Description -> SDTResumen Clientes.
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

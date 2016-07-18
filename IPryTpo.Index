@@ -1,0 +1,12 @@
+======OBJECT = IPryTpo.Index === IPry Tpo=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:26.0000000Z" checksum="5ca8296de179cffa6e66be8fd4ea6b83" fullyQualifiedName="IPryTpo" guid="357f98e2-1a5c-4767-8782-a053f97514a2" name="IPryTpo" type="9e750647-3679-0000-0100-2529de263960" description="IPry Tpo">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PryTpo</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IPryTpo</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IPryTpo

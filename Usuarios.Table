@@ -1,0 +1,10 @@
+======OBJECT = Usuarios.Table === Usuarios=====
+*GLUsId  DMUsuarios- Null=False
+ GLUsNbm  DMNombre- Null=False
+ CliId  Cliente- Null=True
+ FechaDesdeDondePuedeCosultar  MDDate- Null=False
+
+====== PROPERTIES =======
+Name -> Usuarios
+Description -> Usuarios
+CACHE_LEVEL -> 2

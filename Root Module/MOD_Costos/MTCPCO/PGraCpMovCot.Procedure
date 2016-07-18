@@ -1,0 +1,34 @@
+======OBJECT = PGraCpMovCot.Procedure === Graba CpMovCot=====
+
+=== RULES ===
+parm(in:&CpMovId);
+
+
+=== PROCEDURE SOURCE ===
+
+for each
+    where            CpMovId = &CpMovId
+	
+    if CpMovPesos = 0
+		&Location = GetLocation("DevuelveCotizacion")
+		&CpMovCot = &DevuelveCotizacion.Execute(CpMovFch)
+        CpMovPesos = CpMovImp * &CpMovCot
+    endif
+    
+    if CpMovEST = 'E'
+        CpMovFchFac = nullvalue(CpMovFchFac)
+        CpMovFchCob = nullvalue(CpMovFchCob)
+    else
+        CpMovFchFac = CpMovFch
+        CpMovFchCob = CpMovFch
+    endif
+endfor
+
+
+====== PROPERTIES =======
+Name -> PGraCpMovCot
+Description -> Graba CpMovCot
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 19
+ObjectVisibility -> Private
+IsDefault -> False

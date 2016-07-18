@@ -1,0 +1,23 @@
+======OBJECT = OrangeBar.Image === Orange Bar=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-26T23:53:00.0000000Z" checksum="99fa1dfaa300b369fd266bb7c9c19b53" fullyQualifiedName="OrangeBar" guid="6f7de1be-7001-4248-990c-18da711a9de4" name="OrangeBar" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Orange Bar">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="barraSuperior.png" description="barra Superior.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAABRIAAAAECAIAAAB9dFTEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN0gAADdIBb5L+jgAAABp0RVh0U29mdHdhcmUAUGFp
+bnQuTkVUIHYzLjUuMTAw9HKhAAAAbElEQVRoQ+3ZQQ0AAAgCQOMY2op2sIA0uI0ENz6M2mkhQIAAAQIECBAgQIAAAQIEXoHiQoAAAQIECBAgQIAAAQIECCQB
+s9nZToAAAQIECBAgQIAAAQIEooDZrBwECBAgQIAAAQIECBAgQCAKHOJ9T8cf4vr7AAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>barraSuperior.png</Value></Property><Property><Name>Description</Name><Value>barra Superior.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\MasterPage\Orange\barraSuperior.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>OrangeBar</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> OrangeBar
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,22 @@
+======OBJECT = cabezal_cuerpo.Image === cabezal_cuerpo=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-09-23T17:07:54.0000000Z" lastUpdate="2011-06-30T19:19:30.0000000Z" checksum="f94d22e016aac5e5c761865db3e19960" fullyQualifiedName="cabezal_cuerpo" guid="9176d7ea-acf9-410e-bcd8-c5f04e4b4441" name="cabezal_cuerpo" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="cabezal_cuerpo">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="cabezal_cuerpo.png" description="cabezal_cuerpo.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAIAAAAkCAYAAAHURNuZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccll
+PAAAAHdJREFUeNpicHR0/M/09etXBqZPnz4xMH38+JGBgYuL6z9AADHY2dn9B3MhBEgWIIAYwIp//vzJACF+/PjBgJX7+/dvBoAAgihmAAKmv3//MjD9+fMH
+SlDC/f//PwNAgDGCTAYZzALigRkgOVQGSB/dpYCYFcQAANZxkXOEw2WNAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>cabezal_cuerpo.png</Value></Property><Property><Name>Description</Name><Value>cabezal_cuerpo.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\acimas\Downloads\Pesobook\imgs\cabezal_cuerpo.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>cabezal_cuerpo</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> cabezal_cuerpo
+IsDefault -> False

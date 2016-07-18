@@ -1,0 +1,13 @@
+======OBJECT = MDLog.Table === Log de Metadata=====
+*MDLgId  Id- Null=False
+ MDLgOTpo  DMTipoObjetoMetadatos- Null=False
+ MDLgOSec  Numerador- Null=False
+ MDLgCdId  Codigo10- Null=False
+ MDLgAcc  DMAccion- Null=False
+ MDLgValAnt  Observaciones- Null=False
+ MDLgUsr  DMUsuarios- Null=False
+ MDLgFch  FechaHora- Null=False
+
+====== PROPERTIES =======
+Name -> MDLog
+Description -> Log de Metadata

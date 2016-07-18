@@ -1,0 +1,15 @@
+======OBJECT = PrbFchIng.Attribute === Fecha de ingresado=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> PrbFchIng
+Description -> Fecha de ingresado
+HORIZONTAL_DESCRIPTION -> Fecha de ingresado
+VERTICAL_DESCRIPTION -> Ingreso
+ContextualTitle -> Fecha de ingresado
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

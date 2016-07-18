@@ -1,0 +1,69 @@
+======OBJECT = WWClienteDS.DataSelector === WWCliente DS=====
+<Object parent="MOD_Proyectos.WorkWithPlusCliente" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="22e37d62-3691-0e70-0c24-2724248f3726" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-27T17:15:40.0000000Z" lastUpdate="2016-05-25T17:53:44.0000000Z" checksum="37efb6e0a18e9d34f9cecaa392027df9" fullyQualifiedName="MOD_Proyectos.WWClienteDS" guid="36894225-3f93-4cd1-bb51-279b0511289a" name="WWClienteDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWCliente DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[CliNom like &CliNom when not &CliNom.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CliActivo = &CliActivo when not &CliActivo.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CliTpoId = &CliTpoId when not &CliTpoId.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="CliNom">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliNom</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliNom</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliTpoId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliTpoId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliTpoId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliActivo">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliActivo</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliActivo</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliNom</Name>
+        <Description>Cli Nom</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliActivo</Name>
+        <Description>Cli Activo</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliTpoId</Name>
+        <Description>Cli Tpo Id</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWClienteDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Proyectos.WorkWithPlusCliente</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWClienteDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-23
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 23
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

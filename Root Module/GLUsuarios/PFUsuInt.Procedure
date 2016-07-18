@@ -1,0 +1,53 @@
+======OBJECT = PFUsuInt.Procedure === Chequeo de no deshabilitable=====
+
+=== RULES ===
+parm(IN:GLUsAmbId ,IN:&vNivel ,OUT:&vHabil) ;
+
+
+=== PROCEDURE SOURCE ===
+    &vNvlUsr = 0
+    &vHabil =Bool.false //'N'
+    &vCorrec =Bool.false //'N'
+    &vUsuario= upper(userid())
+    
+    &vPedCla = false //'N'
+    for each // NIVHAB
+    where     GLUsAmbNvl = &vNivel
+        &vPedCla = GLPideClave 
+    endfor
+
+
+        &vCorrec=Bool.true //'S'
+
+
+    if &vCorrec=Bool.true //'S' // En el caso de que la contraseña está Ok
+        &vCorrec=Bool.false //'N'
+        // Ahora controlo que el usuario tenga nivel suficiente
+
+        for each order GLUsId GLUsAmbId
+        where     GLUsId = &vUsuario
+            &vNvlUsr = GLUsAmbNvl  
+            if GLUsAmbNvl  >= &vNivel
+                &vCorrec=Bool.true //'S'
+            endif
+        endfor 
+        if &vCorrec=Bool.false //'N'
+            &msg= &vUsuario+ ': Acceso no autorizado en el ambiente ' + GLUsAmbId + ': usted tiene un permiso nivel ' + trim(str(&vNvlUsr)) +  ' y necesita por lo menos un nivel ' + trim(str(&vNivel))
+            msg(&msg)
+        endif
+    endif
+
+    if &vCorrec=Bool.true //'S'
+        &vHabil = Bool.true //'S'
+    else
+        &vHabil = Bool.false //'N'
+    endif
+
+
+====== PROPERTIES =======
+Name -> PFUsuInt
+Description -> Chequeo de no deshabilitable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 20
+ObjectVisibility -> Public
+IsDefault -> False

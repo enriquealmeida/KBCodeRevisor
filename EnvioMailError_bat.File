@@ -1,0 +1,16 @@
+======OBJECT = EnvioMailError_bat.File === Envio Mail Error_bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-07-01T16:42:46.0000000Z" lastUpdate="2016-07-01T16:30:44.0000000Z" checksum="074e0c6c04669eda827b2fdff3d900b7" fullyQualifiedName="EnvioMailError_bat" guid="e749a33e-df86-4aa5-850e-d4de3034d278" name="EnvioMailError_bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Envio Mail Error_bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>Y2QgTG9nDQpAY2FsbCAuLlx0b29sc1xtYWlsc2VuZCAtdG8gJU1haWxUb0J1aWxkJSAtZnJvbSAlTWFpbEZyb21CdWlsZCUgLXNzbCAtcG9ydCAlTWFpbEZyb21Qb3J0JSAtYXV0aCAtc210cCBzbXRwLmdtYWlsLmNvbSAtc3ViICIlS0JOb21icmUlIC0gJUVycm9yU3ViJSIgLXVzZXIgJU1haWxGcm9tQnVpbGQlIC1wYXNzICVNYWlsRnJvbVBhc3MlIC1NICIlRXJyb3IlIiAtYXR0YWNoICIlbG9nRmlsZU5hbWUlLHRleHQvcGxhaW4saSINCmNkIC4u</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>EnvioMailError.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>EnvioMailError_bat</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>..\Deploy</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> EnvioMailError_bat
+Extract -> Newer
+ExtractToPath -> ..\Deploy
+IsDefault -> False

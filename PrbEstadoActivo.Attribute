@@ -1,0 +1,14 @@
+======OBJECT = PrbEstadoActivo.Attribute === Estado activo?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> PrbEstadoActivo
+Description -> Estado activo?
+VERTICAL_DESCRIPTION -> Activo
+ContextualTitle -> Estado activo?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlTitle -> Estado activo?
+IsDefault -> False

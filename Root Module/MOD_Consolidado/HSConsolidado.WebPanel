@@ -1,0 +1,47 @@
+======OBJECT = HSConsolidado.WebPanel === Seleccion de consolidados=====
+
+=== RULES ===
+parm(inout:&CnsId);
+order((CnsId));
+
+
+=== EVENTS SOURCE ===
+Event Start
+//    for each
+//        where      CliId = &CliId
+//        where      SisId = &SisId
+//
+//        &KBId = PrbKbId
+//        &KBDsc = KBDsc
+//    when none
+//        &KBId = ''
+//        &KBDsc = 'TODAS LAS BASES DE CONOCIMIENTO'
+//    endfor
+
+    &MTCnsEstABI = PMTParChr('MTCNSABI')
+
+    &MTCnsEstId = &MTCnsEstABI
+
+//    &CnsFchIni = ymdtod( year(&Today), month(&Today), 1 )
+    &CnsFchIni.SetEmpty()
+    &CnsFchFin = addmth(&CnsFchIni, 2) - 1
+EndEvent  // Start
+
+Event Enter
+    &CnsId = CnsId
+    return
+EndEvent  // Enter
+
+Event Refresh
+
+EndEvent  // Refresh
+
+
+====== PROPERTIES =======
+Name -> HSConsolidado
+Description -> Seleccion de consolidados
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Public
+IsDefault -> False

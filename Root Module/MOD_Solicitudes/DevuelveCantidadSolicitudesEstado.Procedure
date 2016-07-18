@@ -1,0 +1,20 @@
+======OBJECT = DevuelveCantidadSolicitudesEstado.Procedure === Devuelve Cantidad Solicitudes Estado=====
+
+=== RULES ===
+parm(in:&CliId,in:&PrbSts, out:&Cantidad);
+
+
+=== PROCEDURE SOURCE ===
+&Cantidad=0
+for each
+	where            CliId=&CliId
+	where            PrbSts = &PrbSts
+&Cantidad +=1
+endfor
+
+
+====== PROPERTIES =======
+Name -> DevuelveCantidadSolicitudesEstado
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+IsDefault -> False

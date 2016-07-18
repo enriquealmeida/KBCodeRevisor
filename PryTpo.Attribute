@@ -1,0 +1,17 @@
+======OBJECT = PryTpo.Attribute === Tipo de Proyecto=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> PryTpo
+Description -> Tipo de Proyecto
+HORIZONTAL_DESCRIPTION -> Tipo de Proyecto
+VERTICAL_DESCRIPTION -> Tipo Proyecto
+ContextualTitle -> Tipo de Proyecto
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+ControlType -> 4
+ControlItemDescription -> PryTpo
+IsDefault -> False

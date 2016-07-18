@@ -1,0 +1,15 @@
+======OBJECT = RunFullCycleWindowsTask.bat.File === Run Full Cycle Windows Task.bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-06-26T16:20:01.0000000Z" checksum="d6cfd0be8d7e5bd31bd8ddb7a928f173" fullyQualifiedName="RunFullCycleWindowsTask.bat" guid="9ea2efcc-ceda-46d8-a82b-bb6260ad23cc" name="RunFullCycleWindowsTask.bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Run Full Cycle Windows Task.bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>c2NodGFza3MuZXhlIC9ydW4gL1Mgc3J2LXByb2QgL1ROIEZ1bGxDeWNsZU1UID4+IEZ1bGxDeWNsZU1UMy5sb2c=</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>RunFullCycleWindowsTask.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>RunFullCycleWindowsTask.bat</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> RunFullCycleWindowsTask.bat
+Extract -> Newer
+IsDefault -> False

@@ -1,0 +1,40 @@
+======OBJECT = SDTAsientos_SDTAsientosItem.SDT === SDTAsientos_SDTAsientos Item=====
+
+=== STRUCTURE ===
+SDTAsientos_SDTAsientosItem
+	AsiFec, D(8.5), Asi Fec 
+	AsiTpo, C(9999), Asi Tpo 
+	AsiNro, N(12), Asi Nro 
+	AsiEst, C(9999), Asi Est 
+	AsiOri, C(9999), Asi Ori 
+	LibId, C(9999), Lib Id 
+	AsiUsr, C(9999), Asi Usr 
+	AsiFecIng, D(8.5), Asi Fec Ing 
+	AsiNroLot, N(12), Asi Nro Lot 
+	AsiDes, C(9999), Asi Des 
+	AsiUltLin, N(9), Asi Ult Lin 
+	CotMC, N(18.2), Cot MC 
+	AsiLin, N(4), Asi Lin 
+	RubId, C(9999), Rub Id 
+	RubDsc, V(30), Rub Dsc 
+	AuxId, C(9999), Aux Id 
+	AsiLinDH, C(9999), Asi Lin DH 
+	CotME, N(18.2), Cot ME 
+	AsiLinImp, N(18.2), Asi Lin Imp 
+	AsiLinMN, N(18.2), Asi Lin MN 
+	AsiLinME, N(18.2), Asi Lin ME 
+	AsiLinMC, N(18.2), Asi Lin MC 
+	AsiLinDes, C(9999), Asi Lin Des 
+	AsiLinDoc, C(9999), Asi Lin Doc 
+	UltLinDoc, N(9), Ult Lin Doc 
+	AsiLinCnc, C(9999), Asi Lin Cnc 
+
+====== PROPERTIES =======
+Name -> SDTAsientos_SDTAsientosItem
+Description -> SDTAsientos_SDTAsientos Item
+ExternalName -> SDTAsientos.SDTAsientosItem
+ExternalNamespace -> SIGE_MTWS
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

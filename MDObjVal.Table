@@ -1,0 +1,9 @@
+======OBJECT = MDObjVal.Table === Valores del objeto=====
+*MDObjTpo  DMTipoObjetoMetadatos- Null=False
+*MDObjSec  Numerador- Null=False
+*MDCdId  Codigo10- Null=False
+ MDCdVal  Observaciones- Null=False
+
+====== PROPERTIES =======
+Name -> MDObjVal
+Description -> Valores del objeto

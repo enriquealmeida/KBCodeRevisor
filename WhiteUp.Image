@@ -1,0 +1,33 @@
+======OBJECT = WhiteUp.Image === White Up=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-09-01T18:43:06.0000000Z" checksum="e68eed67dd49571203753b8c3b93c4a4" fullyQualifiedName="WhiteUp" guid="dca48b16-b957-44d5-9809-4f3818a8ebfb" name="WhiteUp" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="White Up">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="WhiteUp.jpg" description="White Up.jpg"><Data>
+<base64Binary>
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/
+2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wgARCAAWABYDASIAAhEBAxEB/8QA
+FwABAQEBAAAAAAAAAAAAAAAAAAgJBv/EABUBAQEAAAAAAAAAAAAAAAAAAAAE/9oADAMBAAIQAxAAAAHWHj5KmeuPbNBSSync7g1xB//EABsQAQADAAMBAAAA
+AAAAAAAAAAUDBAYBAgcV/9oACAEBAAEFAr7sa0sEWV4lJc6wTIIp0CCa+xMWchX04++8+6JcjSfdWyeSrZit/8QAHxEAAgICAQUAAAAAAAAAAAAAAgMBEQQS
+QhAhIzJR/9oACAEDAQE/AcjJYligDFe8TnyMXEaqH7395viPG5u9RLr/AP/EAB8RAAICAQQDAAAAAAAAAAAAAAIDAREEECEjMTJCUf/aAAgBAgEBPwFGMDlt
+M8lKCGOMGTNtL5t4RXRT7VHVlGv/xAAmEAADAQACAgEEAQUAAAAAAAACAwQBBRIREwAUFSEiMSNCVGFx/9oACAEBAAY/Aqe7GBxCHtlnnU9iPuLJXGmmus06
+tpSE4DRLH3+negCqpygaUKl0k8Hw0r/8mGGaG0NL+5dsYIrSzf59i3Afn89vPwoeQrwpyUVHHX0sHD9ayUt8NbS64x6Cao5nlutrnM8d2fG6mmbj5vT9yjmX
+x7MqNgLCyQfpayb61sYRBQpnYdwdM/PYh3d+FymcpHQyk8+tW+qv1VDn8CeZJuL1eficgH+hn6gPq7LKPjeJwi5DKRvIE6Zbk06GT0bmiPfQF9s2eemZvkfP
+jfGfKee4pypbcAn3zP75JZ6wHs8CWDDmr9S/28LNNJYOniWk2g08LFnSx7dSBVb65sId8b2YrKG4P/EFv+vheW7ZyNAANVmj0HoGkQTSq8l6Zw093fJE15/u
+49wUqT//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUFR/9oACAEBAAE/IXJy9ASrTlzQI0xj2KXNGOJekXoFMUkwlx0lIo19VpBDkVreRzj716mEN+3omEL9
+0pCrGlHLSSeoYxh+KDOogoP61+tdhxYOmZCuf99Ibp8jv//aAAwDAQACAAMAAAAQhM8A/8QAGxEBAAICAwAAAAAAAAAAAAAAAREhABBRsfD/2gAIAQMBAT8Q
+tUpsuQYhpLcCRke473//xAAbEQEAAgIDAAAAAAAAAAAAAAABESEAEFGx8P/aAAgBAgEBPxCqDJhIWYS0SxoGL7nrf//EABcQAQEBAQAAAAAAAAAAAAAAAAEA
+ESH/2gAIAQEAAT8QpXayQBAzaJwwdIFHa4oCsMAIGh4cWzQ31qOuYI2UgU+sbAu0G2QrRBebLL6Py9B6DZtcgiufM/OFt35pjnIy5+6uailwQhBklBZazFVH
+/9k=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>WhiteUp.jpg</Value></Property><Property><Name>Description</Name><Value>White Up.jpg</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>E:\Documents and Settings\ealvarez\Escritorio\fotosNuevas\WhiteUp.jpg</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WhiteUp</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WhiteUp
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = MDLgValAnt.Attribute === Valor Anterior=====
+VARCHAR(256)
+
+
+====== PROPERTIES =======
+Name -> MDLgValAnt
+Description -> Valor Anterior
+HORIZONTAL_DESCRIPTION -> Valor Anterior
+VERTICAL_DESCRIPTION -> Valor Anterior
+ContextualTitle -> Valor Anterior
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

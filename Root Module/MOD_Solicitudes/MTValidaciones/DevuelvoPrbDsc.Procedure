@@ -1,0 +1,21 @@
+======OBJECT = DevuelvoPrbDsc.Procedure === Devuelvo titulo de la solicitud=====
+
+=== RULES ===
+Parm(in:&PrbId, out:&PrbDsc);
+
+
+=== PROCEDURE SOURCE ===
+&PrbDsc.SetEmpty()
+for each
+	where            PrbId = &PrbId
+	&PrbDsc = PrbDsc
+endfor
+
+
+====== PROPERTIES =======
+Name -> DevuelvoPrbDsc
+Description -> Devuelvo titulo de la solicitud
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 31
+ObjectVisibility -> Public
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = IndObs.Attribute === Observaciones=====
+VARCHAR(256)
+
+
+====== PROPERTIES =======
+Name -> IndObs
+Description -> Observaciones
+HORIZONTAL_DESCRIPTION -> Observaciones
+VERTICAL_DESCRIPTION -> Observaciones
+ContextualTitle -> Observaciones
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

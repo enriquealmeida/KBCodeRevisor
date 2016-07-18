@@ -1,0 +1,19 @@
+======OBJECT = PParChart.Procedure === Parametros de chart=====
+
+=== RULES ===
+parm(OUT:&ParDirChart , OUT:&ParDirWProc );
+
+
+=== PROCEDURE SOURCE ===
+//Recupero parametro de Chart.
+&ParDirChart = PMTParChr('PARDRCHART')
+//Recupero 
+&ParDirWProc = PMTParChr('PARDRWPROC')
+
+
+====== PROPERTIES =======
+Name -> PParChart
+Description -> Parametros de chart
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = ObjIndMeta.Attribute === Meta=====
+VARCHAR(50)
+
+
+====== PROPERTIES =======
+Name -> ObjIndMeta
+Description -> Meta
+HORIZONTAL_DESCRIPTION -> Meta
+VERTICAL_DESCRIPTION -> Meta
+ContextualTitle -> Meta
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

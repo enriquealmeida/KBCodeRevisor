@@ -1,0 +1,164 @@
+======OBJECT = HPCCli2.WebComponent === PCCli2=====
+
+=== RULES ===
+parm(IN:&cCliId,IN:&FchIni ,IN:&FchFnl, IN:&MonId, IN:&UsarFecha);
+noaccept(&Texto ) ;
+noaccept(&vHrs ) ;
+noaccept(&vCob ) ;
+noaccept(&vGan ) ;
+noaccept(&vPag ) ;
+noaccept(&vTranf ) ;
+noaccept(&vCobxHr ) ;
+noaccept(&vPagxHr ) ;
+noaccept(&vGanxHr ) ;
+noaccept(&cPryNom ) ;
+noaccept(&vMargen ) ;
+noaccept(&vTotCob ) ;
+noaccept(&vTotCobxHr ) ;
+noaccept(&vTotPag ) ;
+noaccept(&vTotPagxHr ) ;
+noaccept(&vTotGan ) ;
+noaccept(&vTotGanxHr ) ;
+noaccept(&cpryclsdsc ) ;
+noaccept(&cprytpodsc ) ;
+default(&vFchFin ,today() ) ;
+
+
+=== EVENTS SOURCE ===
+Event Start
+    if null(&FchFnl)
+//        &cFchFin = PRecFchCrr()
+        &cFchFin = PMTParFch('PARFCHCRR')
+    else
+        &cFchFin = &FchFnl
+    endif
+    &vCpMovTpo = 'R'
+    &vTomaTrf  = 'S'	
+    &Nulo=nullvalue(&cCpRecId)
+    PParChart.call(&ParDirChart,&ParDirWProc)
+EndEvent
+
+Event Refresh
+    if &cFchIni > &cFchFin
+        msg('El rango de fechas no es válido')
+    endif
+
+    &vTotHrs    = 0
+    &vTotCob    = 0
+    &vTotCobxHr = 0
+    &vTotPag    = 0
+    &vTotPagxHr = 0
+    &vTotGan    = 0
+    &vTotGanxHr = 0
+    &vTotTranf  = 0
+    &vToTranpHr = 0
+     &Texto.FontBold=1
+    &FchAux=&cFchFin
+
+    &FchAuxT1=PDtoN(&FchIni)
+    &FchAuxT2=PDtoN(&FchFnl)
+    &TxtGrf=trim(&ParDirChart) +'DrawChart.aspx?width=370&height=250&title=Proyectos&type=Bar&legend=None&source1='+trim(&ParDirWProc )+ 'aGrfCliPry.aspx?'+trim(&cCliId)+','+trim(str(&FchAuxT1))+','+trim(str(&FchAuxT2))
+    //&url = trim(&ParDirWProc) + 'aGrfCliPry.aspx?' + trim(&cCliId) + ',' + trim(str(&FchAuxT1)) + ',' + trim(str(&FchAuxT2))
+    //&url = trim(&url)
+//    &TxtGrf = &wsChart.MakeChart(&url, 400, 300, "Bar", "Proyectos", "None", "", "", "", "", "", "", 1, 0, 1, 255, "jpeg")
+    &GrfPry=loadBitmap(&TxtGrf)
+	
+	//msg(&TxtGrf)
+    //&GrfPry=loadBitmap(&Url) 
+
+    &FchAuxT1=PDtoN(&FchIni)
+    &FchAuxT2=PDtoN(&FchFnl)
+    &TxtGrf=trim(&ParDirChart) +'DrawChart.aspx?width=370&height=250&title=Tareas&type=Bar&legend=None&source1='+trim(&ParDirWProc )+ 'aGrfCliTar.aspx?'+trim(&cCliId)+','+trim(str(&FchAuxT1))+','+trim(str(&FchAuxT2))
+    //&url = trim(&ParDirWProc) + 'aGrfCliTar.aspx?' + trim(&cCliId) + ',' + trim(str(&FchAuxT1)) + ',' + trim(str(&FchAuxT2))
+    //&url = trim(&url)
+//    &TxtGrf = &wsChart.MakeChart(&url, 400, 300, "Bar", "Tareas", "None", "", "", "", "", "", "", 1, 0, 1, 255, "jpeg")
+    &GrfTar=loadBitmap(&TxtGrf)
+     //&GrfTar=loadBitmap(&Url)
+EndEvent
+
+Event load
+    &cFchIni=ymdtod( year(&cFchFin),month(&cFchFin),01)
+    &Texto='Ult.Mes  '
+    Do 'CargoUnaLinea'
+    load
+    
+    &cFchIni=ymdtod( year(&cFchFin),01,01)
+    &Texto='Año Corr '
+    Do 'CargoUnaLinea'
+    load
+
+    &cFchIni=Addmth(&cFchFin,-12)+1
+    &Texto='12 Meses '
+    Do 'CargoUnaLinea'
+    load
+EndEvent
+
+Sub 'CargoUnaLinea'
+    for each order CliId
+    where     CliId=&cCliId
+        &vHrs   = 0
+        &vCob   = 0
+        &vPag   = 0
+        &vTranf = 0
+        for each
+        where     PryId = &cPryId  or  null(&cPryId)
+        defined by PryNom
+            for each order PryId CpMovFch
+            where     CpMovEST <> 'T'  or  &vTomaTrf ='S'
+            where     CpRecId = &cCpRecId  or  null(&cCpRecId)
+            //where     &cFchIni <= CpMovFch  and  CpMovFch <= &cFchFin
+            where     &cFchIni <= CpMovFch and CpMovFch <= &cFchFin when &UsarFecha = 'M'
+            where     &cFchIni <= CpMovFchFac and CpMovFchFac <= &cFchFin when &UsarFecha = 'F'
+            where     &cFchIni <= CpMovFchCob and CpMovFchCob <= &cFchFin when &UsarFecha = 'C'
+                &vHrs = &vHrs + CpMovHrs
+
+                if &MonId = '2222'
+                    if CpMovEST = 'E'
+                        &vCob = &vCob + CpMovImp
+                    else 
+                        if CpMovEST = 'S'
+                            &vPag = &vPag + CpMovImp
+                        else
+                            &vTranf = &vTranf + CpMovImp
+                        endif
+                    endif
+                else
+                    if CpMovEST = 'E'
+                        &vCob = &vCob + CpMovPesos
+                    else 
+                        if CpMovEST = 'S'
+                            &vPag = &vPag + CpMovPesos
+                        else
+                            &vTranf = &vTranf + CpMovPesos
+                        endif
+                    endif
+                endif
+            endfor
+        endfor
+        &vGan = &vCob + &vPag + &vTranf
+
+        &vCobxHr =   PClcTas(&vCob,&vHrs)
+        &vPagxHr =   PClcTas(&vPag,&vHrs)
+        &vGanxHr =   PClcTas(&vGan,&vHrs)
+        &vTranfxHr = PClcTas(&vTranf,&vHrs)
+
+        &vMargen=PClcMrg(&vGan,&vCob)
+    endfor
+
+    &vCobScr = round(&vCob, 0)
+    &vPagScr = round(&vPag, 0)
+    &vTranfScr = round(&vTranf, 0)
+    &vGanScr = round(&vGan, 0)
+EndSub
+
+
+====== PROPERTIES =======
+Name -> HPCCli2
+Description -> PCCli2
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

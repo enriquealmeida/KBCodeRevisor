@@ -1,0 +1,24 @@
+======OBJECT = AgregaFeriados.Procedure === Dar de alta feriados=====
+
+=== RULES ===
+parm(in:&Fecha, in:&Tipo, in:&Dsc, in:&FerDescuentoLicencia);
+
+
+=== PROCEDURE SOURCE ===
+new
+    FerFecha  = &Fecha
+    FerTipo   = &Tipo
+    FerDsc    = &Dsc
+    FerDescuentoLicencia = &FerDescuentoLicencia
+endnew
+
+
+====== PROPERTIES =======
+Name -> AgregaFeriados
+Description -> Dar de alta feriados
+CANCEL -> NO
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+ObjectVisibility -> Private
+IsDefault -> False

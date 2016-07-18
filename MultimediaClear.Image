@@ -1,0 +1,23 @@
+======OBJECT = MultimediaClear.Image === Multimedia Clear=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-08-09T19:08:26.0000000Z" checksum="dc0e274f864e9374c6644b1dfe830573" fullyQualifiedName="MultimediaClear" guid="86847ae1-e723-4118-9074-4de2951704cd" name="MultimediaClear" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Multimedia Clear">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="clear.png" description="clear.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGFJREFUeNpiZEAC////DwBS
+BkhCGxgZGS+AGCwMqCAfiBWA+AEQO0DFwAqZoCYlAPF+NNNAIB4kDsQGMCsd/uMG94FYAdl9/6G60en9cKuJAbRXKICDZkD3DDYA9gxAgAEAP0Ju9rRR0jUA
+AAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>clear.png</Value></Property><Property><Name>Description</Name><Value>clear.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>E:\KBsEvo2\MultimediaTypes\CSharpModel\web\clear.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MultimediaClear</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> MultimediaClear
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

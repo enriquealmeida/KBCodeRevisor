@@ -1,0 +1,37 @@
+======OBJECT = MailAProfesionales.Procedure === Mail AProfesionales=====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM);
+
+
+=== PROCEDURE SOURCE ===
+if &RspSuA.IsEmpty()	
+	for each order (RspSuA,RspSuM)
+       &Ano = RspSuA
+	   &Mes = RspSuM
+	   exit 
+	endfor
+else
+	&Ano=&RspSuA
+    &Mes=&RspSuM
+endif
+
+
+for each
+where            RspActivo=true   //activo
+
+where            RspVinculoLaboral = DMRspVinculoLaboral.PROFESIONAL
+	        PMailLiqMes.call( RspId, &Ano, &Mes) //&RspSuA, &RspSuM)
+endfor
+		
+
+
+====== PROPERTIES =======
+Name -> MailAProfesionales
+IsMain -> True
+CALL_PROTOCOL -> CLINE
+AppLocation -> BATCH
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Private
+IsDefault -> False

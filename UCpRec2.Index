@@ -1,0 +1,13 @@
+======OBJECT = UCpRec2.Index === =====
+<Object Type="Duplicate" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T17:07:37.0000000Z" checksum="b792858e9725380ff065d937dc18672c" fullyQualifiedName="UCpRec2" guid="aaae01fe-711f-459b-bb02-a770b7e089ac" name="UCpRec2" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CpRecTpo</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>UCpRec2</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> UCpRec2
+Description -> 

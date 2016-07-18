@@ -1,0 +1,18 @@
+======OBJECT = TradAtoEst.Attribute === Estado de la traducción de asi=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> TradAtoEst
+Description -> Estado de la traducción de asi
+HORIZONTAL_DESCRIPTION -> Estado de la traducción de asi
+VERTICAL_DESCRIPTION -> Estado
+ContextualTitle -> Estado
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttValueRange -> 'ING' 'AUT'
+ATT_PICTURE -> @!
+ControlType -> 0
+ControlValues -> Ingresado:ING,Autorizado:AUT
+IsDefault -> False

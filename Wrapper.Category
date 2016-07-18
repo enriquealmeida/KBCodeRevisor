@@ -1,0 +1,10 @@
+======OBJECT = Wrapper.Category === Wrapper=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-06-20T19:04:00.0000000Z" lastUpdate="2016-06-20T18:13:04.0000000Z" checksum="c8bb366472ae1db755a57d0e53da6f94" fullyQualifiedName="Wrapper" guid="5147b03f-2cf7-42b6-be95-7d479ab6969b" name="Wrapper" type="00000000-0000-0000-0000-000000000006" description="Wrapper">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Wrapper</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Wrapper
+IsDefault -> False

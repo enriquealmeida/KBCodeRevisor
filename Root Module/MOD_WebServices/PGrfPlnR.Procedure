@@ -1,0 +1,39 @@
+======OBJECT = PGrfPlnR.Procedure === Horas planificada - reales=====
+
+=== RULES ===
+parm( in:&RspId,in:&FchIni,in:&FchFin);
+
+
+=== PROCEDURE SOURCE ===
+
+for each order PryId
+defined by PryNom
+      &HrsR = PCntHrsIng(&RspId,PryId,&FchIni,&FchFin)
+      &HrsP = PCntHrs(&RspId,PryId,&FchIni,&FchFin)
+      if &HrsR <> 0 or &HrsP <> 0
+          &xmlcat=&xmlcat+"<category>"+TRIM(PryId)+"</category>"
+          &xmlser=&xmlser+"<point>"+TRIM(str(&HrsR,6,2))+"</point>"
+          &xmlser1=&xmlser1+"<point>"+TRIM(str(&HrsP,6,2))+"</point>"
+      endif
+endfor
+&xmlcat="<categories>"+&xmlcat+"</categories>"
+&xmlser1="<series><name>Planificado</name><points>"+&xmlser1+"</points></series>"
+&xmlser=&xmlser1+"<series><name>Reales</name><points>"+&xmlser+"</points></series>"
+&XML="<gxchart>"+&xmlCat+&xmlSer+"</gxchart>"
+
+&xmlwriter.OpenResponse(&HttpResponde)
+&xmlwriter.WriteStartDocument()
+&xmlwriter.WriteRawText(&XML)
+&xmlwriter.Close()
+
+
+====== PROPERTIES =======
+Name -> PGrfPlnR
+Description -> Horas planificada - reales
+IsMain -> True
+CALL_PROTOCOL -> HTTP
+STD_FUNC_OBJECT -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

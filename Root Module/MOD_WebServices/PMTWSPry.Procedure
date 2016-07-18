@@ -1,0 +1,119 @@
+======OBJECT = PMTWSPry.Procedure === Devuelve proyectos de cli sel.=====
+
+=== RULES ===
+parm(in:&Anio, in:&Mes, in:&CliXML, out:&Result);
+//parm(in:&Anio, in:&Mes, in:&CliXML, in:&RecXML, out:&Result);
+
+
+=== PROCEDURE SOURCE ===
+// obtiene el año y mes anteriores al año/mes recibidos por parámetro
+if &Mes = 1
+    &MesAnt = 12
+    &AnioAnt = &Anio - 1
+else
+    &MesAnt = &Mes - 1
+    &AnioAnt = &Anio
+endif
+
+//// carga el XML de recursos en un array
+//&Recursos() = nullvalue( &Recursos() )
+//&topeRecursos = nullvalue( &topeRecursos )
+//&XmlRead.OpenFromString(&RecXML)
+//&XmlRead.Read() // RECSEL
+//do while &XmlRead.Read() > 0
+//    if &XmlRead.Name = 'RECURSO'
+//        &topeRecursos += 1
+//        &Recursos( &topeRecursos ) = &XmlRead.Value
+//    endif
+//enddo
+//&XmlRead.Close()
+
+// procesa el XML de clientes y genera el XML de salida
+&XmlWrite.OpenToString()
+&XmlWrite.WriteRawText("<?xml version='1.0' encoding='ISO-8859-1' ?>")
+&XmlWrite.WriteRawText(newLine())
+&XmlWrite.WriteStartElement('PROYECTOS')
+
+&XmlRead.OpenFromString(&CliXML)
+&XmlRead.Read()   // CLISEL
+do while &XmlRead.Read() > 0
+    if &XmlRead.Name = 'CLIENTE'
+        &CliId = &XmlRead.Value
+        for each
+        where          PryAct = DMPryAct.Activo
+        where          CliId = &CliId
+        defined by PryNom
+            &XmlWrite.WriteStartElement('PROYECTO')
+                &XmlWrite.WriteElement('PRYID', trim(PryId))
+
+                // cuento las horas del mes anterior
+                &FchIniAux = ymdtod(&AnioAnt, &MesAnt, 1)
+                &FchFinAux = eom(&FchIniAux)
+                &HrsMesPry = 0
+                for each
+                    where          HrsFch >= &FchIniAux and HrsFch <= &FchFinAux
+                    &HrsMesPry += HrsCnt
+                endfor
+                &XmlWrite.WriteElement('PRYHRSMESANT', &HrsMesPry)
+//                // cuento las horas del mes anterior realizadas por los recursos seleccionados
+//                &FchIniAux = ymdtod(&AnioAnt, &MesAnt, 1)
+//                &FchFinAux = eom(&FchIniAux)
+//                &HrsMesPry = 0
+//                for &k = 1 to &topeRecursos
+//                    &CpRecId = &Recursos( &i )
+//                    for each
+//                        where          RspId = &CpRecId                                    
+//                        where          HrsFch >= &FchIniAux and HrsFch <= &FchFinAux
+//                        &HrsMesPry += HrsCnt
+//                    endfor
+//                endfor
+//                &XmlWrite.WriteElement('PRYHRSMESANT', &HrsMesPry)
+                
+                // cuento las horas realizadas en el mes actual
+                &FchIniAux = ymdtod(&Anio, &Mes, 1)
+                &FchFinAux = eom(&FchIniAux)
+                &HrsMesPry = 0
+                for each
+                    where          RspId = &CpRecId
+                    where          HrsFch >= &FchIniAux and HrsFch <= &FchFinAux
+                    &HrsMesPry += HrsCnt
+                endfor
+                &XmlWrite.WriteElement('PRYHRSMESREA', &HrsMesPry)
+//                // cuento las horas realizadas en el mes actual por los recursos seleccionados
+//                &FchIniAux = ymdtod(&Anio, &Mes, 1)
+//                &FchFinAux = eom(&FchIniAux)
+//                &HrsMesPry = 0
+//                for &k = 1 to &topeRecursos
+//                    &CpRecId = &Recursos( &i )
+//                    for each
+//                        where          RspId = &CpRecId
+//                        where          HrsFch >= &FchIniAux and HrsFch <= &FchFinAux
+//                        &HrsMesPry += HrsCnt
+//                    endfor
+//                endfor
+//                &XmlWrite.WriteElement('PRYHRSMESREA', &HrsMesPry)
+                
+                &XmlWrite.WriteElement('PRYCLS', trim(PryCls))
+                &XmlWrite.WriteElement('CLIID', trim(CliId))
+                &XmlWrite.WriteElement('PRYNOM', trim(PryNom))
+            &XmlWrite.WriteEndElement()
+        endfor
+    endif
+enddo
+&XmlRead.Close()
+
+&XmlWrite.WriteEndElement()
+&XmlWrite.Close()
+&Result = &XmlWrite.ResultingString
+
+
+====== PROPERTIES =======
+Name -> PMTWSPry
+Description -> Devuelve proyectos de cli sel.
+IsMain -> True
+CALL_PROTOCOL -> SOAP
+AppLocation -> MTWebServices
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

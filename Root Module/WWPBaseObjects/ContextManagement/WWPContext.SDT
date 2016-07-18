@@ -1,0 +1,13 @@
+======OBJECT = WWPContext.SDT === WWPContext=====
+
+=== STRUCTURE ===
+WWPContext
+	UserId, N(4), User Id 
+	UserName, V(100), User Name 
+
+====== PROPERTIES =======
+Name -> WWPContext
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 73
+ObjectVisibility -> Private
+IsDefault -> False

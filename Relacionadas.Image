@@ -1,0 +1,31 @@
+======OBJECT = Relacionadas.Image === Relacionadas=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:31:07.0000000Z" checksum="1cb2b06687556ec99738fbaf471a38c8" fullyQualifiedName="Relacionadas" guid="f385a502-c3ce-490e-adda-603b810948a5" name="Relacionadas" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Relacionadas">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="Relacionadas.GIF" description=""><Data>
+<base64Binary>
+R0lGODlhEAAQAPcAAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAAD/AP//AAAA//8A/wD//////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAZgAAmQAAzAAA/wAzAAAzMwAzZgAzmQAzzAAz/wBmAABmMwBmZgBm
+mQBmzABm/wCZAACZMwCZZgCZmQCZzACZ/wDMAADMMwDMZgDMmQDMzADM/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMzADMzMzMzZjMz
+mTMzzDMz/zNmADNmMzNmZjNmmTNmzDNm/zOZADOZMzOZZjOZmTOZzDOZ/zPMADPMMzPMZjPMmTPMzDPM/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYA
+mWYAzGYA/2YzAGYzM2YzZmYzmWYzzGYz/2ZmAGZmM2ZmZmZmmWZmzGZm/2aZAGaZM2aZZmaZmWaZzGaZ/2bMAGbMM2bMZmbMmWbMzGbM/2b/AGb/M2b/Zmb/
+mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5kzAJkzM5kzZpkzmZkzzJkz/5lmAJlmM5lmZplmmZlmzJlm/5mZAJmZM5mZZpmZmZmZzJmZ/5nMAJnMM5nMZpnM
+mZnMzJnM/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wzAMwzM8wzZswzmcwzzMwz/8xmAMxmM8xmZsxmmcxmzMxm/8yZAMyZM8yZZsyZ
+mcyZzMyZ/8zMAMzMM8zMZszMmczMzMzM/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8zAP8zM/8zZv8zmf8zzP8z//9mAP9mM/9mZv9m
+mf9mzP9m//+ZAP+ZM/+ZZv+Zmf+ZzP+Z///MAP/MM//MZv/Mmf/MzP/M////AP//M///Zv//mf//zP///yH5BAEAABAALAAAAAAQABAAAAiHAP8JHEgw1qFV
+hg5xIcjwn6FYqxAubDjQ4KGEEyn+U0VQi0GEhwANhAXrXzWOVFR9NLSQ2pY/qUz+g+XREEguhv5Qm0lFS8+UA/NRKamxmkmUA1dZTPgvplGaQ/9BtLgQ1k+f
+1Lj8UXpI4SGN1FQRFUhFo8CS1HZqMTtTYLVqU9iq8kmXLcWAADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Relacionadas.GIF</Value></Property><Property><Name>Description</Name><Value /></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>\\hugo\inetpub\Produccion\PrivateExterno\GXBasedWeb\ConceptoComUyMT2007\imagenes\Relacionadas.GIF</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Relacionadas</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Relacionadas
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

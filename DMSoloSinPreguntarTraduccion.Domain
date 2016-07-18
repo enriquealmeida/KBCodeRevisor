@@ -1,0 +1,24 @@
+======OBJECT = DMSoloSinPreguntarTraduccion.Domain === Solo asientos que no preguntan traducción=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-02-11T19:25:13.0000000Z" lastUpdate="2016-02-11T17:11:04.0000000Z" checksum="48da3b809c6e2b6275e6f9b7967030ea" fullyQualifiedName="DMSoloSinPreguntarTraduccion" guid="403c5d0e-2df0-4a1a-9270-ebc9439286b7" name="DMSoloSinPreguntarTraduccion" type="00972a17-9975-449e-aab1-d26165d51393" description="Solo asientos que no preguntan traducción">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMSoloSinPreguntarTraduccion</Value></Property><Property><Name>Description</Name><Value>Solo asientos que no preguntan traducción</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Boolean</Value></Property><Property><Name>ControlTitle</Name><Value>Solo asientos que no preguntan traducción</Value></Property><Property><Name>TooltipText</Name><Value>Solo asientos sin traducción automática</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMSoloSinPreguntarTraduccion
+Description -> Solo asientos que no preguntan traducción
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 15
+ControlTitle -> Solo asientos que no preguntan traducción
+TooltipText -> Solo asientos sin traducción automática
+IsDefault -> False

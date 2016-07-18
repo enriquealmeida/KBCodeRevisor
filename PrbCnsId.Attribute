@@ -1,0 +1,16 @@
+======OBJECT = PrbCnsId.Attribute === Consolidado=====
+NUMERIC(3)
+
+
+====== PROPERTIES =======
+Name -> PrbCnsId
+Description -> Consolidado
+HORIZONTAL_DESCRIPTION -> Consolidado
+VERTICAL_DESCRIPTION -> Consolidado
+ContextualTitle -> Consolidado
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+EmptyAsNull -> Yes
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-117
+ATT_PICTURE -> ZZ9
+IsDefault -> False

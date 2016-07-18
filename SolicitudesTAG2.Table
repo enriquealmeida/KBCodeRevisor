@@ -1,0 +1,11 @@
+======OBJECT = SolicitudesTAG2.Table === TAG de Solicitudes =====
+*PryId  PROYECTO- Null=False
+*PrbId  SOLICITUD- Null=False
+*TagId  DMTag- Null=False
+ TagSolHor  HorasLargas- Null=True
+ TagSolHorReal  HorasLargas-HorasSolicitudesParaTag.udp(PrbId,TagId) Null=False
+
+====== PROPERTIES =======
+Name -> SolicitudesTAG2
+Description -> TAG de Solicitudes 
+CLUSTERIDX -> Artech.Genexus.Common.CustomTypes.TableIndexReference

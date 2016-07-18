@@ -1,0 +1,53 @@
+======OBJECT = AjustaFechaADiaHabil.Procedure === Ajusta fecha a día hábil c/Fin=====
+
+=== RULES ===
+parm(IN:&Fecha ,IN:&Opcion ,OUT:&FecRet ) ;
+
+
+=== PROCEDURE SOURCE ===
+&Fec = &Fecha
+&OkFec = 0
+do while &OkFec = 0
+
+    if dow(&Fec ) = 7
+        if &Opcion = '+'
+            &Fec = &Fec + 2
+        else
+            &Fec = &Fec - 1
+        endif            
+    else
+        if dow(&Fec ) = 1
+            if &Opcion = '+'
+                &Fec = &Fec + 1
+            else
+                &Fec = &Fec - 2
+            endif                                
+        endif
+    endif
+
+    &OkFec = 1
+    for each order FerFecha
+        where            FerFecha = &Fec
+        &OkFec = 0
+        exit
+    endfor        
+
+    if &OkFec = 0
+        if &Opcion = '+'
+            &Fec = &Fec + 1
+        else
+            &Fec = &Fec - 1
+        endif            
+    else
+        &FecRet = &Fec
+    endif                
+enddo
+
+
+====== PROPERTIES =======
+Name -> AjustaFechaADiaHabil
+Description -> Ajusta fecha a día hábil c/Fin
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+ObjectVisibility -> Private
+IsDefault -> False

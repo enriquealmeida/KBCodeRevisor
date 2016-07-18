@@ -1,0 +1,23 @@
+======OBJECT = GetSolicitudTesteada.Procedure === Solicitud Testeada?=====
+
+=== RULES ===
+parm(in:PryId, in:PrbId,out:&Testeada);
+
+
+=== PROCEDURE SOURCE ===
+
+
+for each
+         &Testeada=SolicitudTesteada
+   when none
+         &Testeada=false
+endfor
+
+
+====== PROPERTIES =======
+Name -> GetSolicitudTesteada
+Description -> Solicitud Testeada?
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

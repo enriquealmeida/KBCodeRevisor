@@ -1,0 +1,96 @@
+======OBJECT = WWTipoProyectoDS.DataSelector === WWTipo Proyecto DS=====
+<Object parent="MOD_Proyectos.WorkWithPlusTipoProyecto" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="1eb1c8c7-924d-4ce7-8deb-4cd6c31837fb" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T19:33:28.0000000Z" checksum="c7f79fd094612ea51ccdfc6885d04862" fullyQualifiedName="MOD_Proyectos.WWTipoProyectoDS" guid="f0cc7d20-54ac-4fb2-bee6-36041cfccdd0" name="WWTipoProyectoDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWTipo Proyecto DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[PryTpoDsc like &PryTpoDsc when not &PryTpoDsc.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="DynamicFiltersSelector1">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersSelector1</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersOperator1">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersOperator1</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryTpoDsc1">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryTpoDsc1</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryTpoDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersEnabled2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersEnabled2</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Boolean</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersSelector2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersSelector2</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersOperator2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersOperator2</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryTpoDsc2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryTpoDsc2</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryTpoDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersEnabled3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersEnabled3</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Boolean</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersSelector3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersSelector3</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersOperator3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersOperator3</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryTpoDsc3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryTpoDsc3</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryTpoDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryTpoDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryTpoDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryTpoDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryTpoDsc</Name>
+        <Description>Pry Tpo Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWTipoProyectoDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Proyectos.WorkWithPlusTipoProyecto</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWTipoProyectoDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-79
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 79
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

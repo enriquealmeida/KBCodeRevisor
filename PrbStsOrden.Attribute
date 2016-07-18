@@ -1,0 +1,14 @@
+======OBJECT = PrbStsOrden.Attribute === Orden=====
+NUMERIC(4)
+
+
+====== PROPERTIES =======
+Name -> PrbStsOrden
+Description -> Orden
+HORIZONTAL_DESCRIPTION -> Orden
+VERTICAL_DESCRIPTION -> Orden
+ContextualTitle -> Orden
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

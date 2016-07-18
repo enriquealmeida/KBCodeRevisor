@@ -1,0 +1,21 @@
+======OBJECT = topR.Image === top R=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-19T16:26:24.0000000Z" lastUpdate="2013-08-15T17:51:20.0000000Z" checksum="80196ec038451d42962aed90fb068b38" fullyQualifiedName="topR" guid="512173e3-50e6-4d16-81a1-5c665dba2562" name="topR" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="top R">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="topR.gif" description="top R.gif"><Data>
+<base64Binary>
+R0lGODlhCgAKALMAACBIcDtfgnSNpsfR27nG0oKYr////1R1hl2BkwAAAAAAAIrH2gZOeiBIcAAAAAAAACH5BAEAAAYALAAAAAAKAAoAAAQbkLFlqjUASHqz
+np23WV42YuVHpSaDshPbymYEADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>topR.gif</Value></Property><Property><Name>Description</Name><Value>top R.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\develop\Theme2\topR.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>topR</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> topR
+IsDefault -> False

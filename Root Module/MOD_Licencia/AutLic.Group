@@ -1,0 +1,22 @@
+======OBJECT = AutLic.Group === Responsable que autoriza=====
+<Object parent="MOD_Licencia" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="eb85f78d-a9cf-45de-813e-39740f7daa9c" user="" versionDate="2016-03-14T12:23:37.0000000Z" lastUpdate="2016-03-14T11:35:26.0000000Z" checksum="74ecbe9dfb5d17af4c48ab274b8a3c58" fullyQualifiedName="MOD_Licencia.AutLic" guid="1c2f67af-3bc1-4f78-b206-3348fccd91a2" name="AutLic" type="87313f43-5eb2-41d7-9b8c-e8d9f5bf9588" description="Responsable que autoriza">
+  <Part type="74203da2-41b1-402c-0001-d8d564a2c2fa">
+    <Subtype guid="c0548373-9a7d-44ce-a2de-e9b3a4299339">
+      <Name>RspAutId</Name>
+      <Supertype guid="947a8983-7214-41b9-be70-4cc2072fe122">RspId</Supertype>
+    </Subtype>
+    <Subtype guid="e28dcb62-ec05-4a96-9a3e-5da7765c9905">
+      <Name>RspAutVinculoLaboral</Name>
+      <Supertype guid="62486771-e336-4b3c-b3c8-e62c9c7dd1af">RspVinculoLaboral</Supertype>
+    </Subtype>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>AutLic</Value></Property><Property><Name>Description</Name><Value>Responsable que autoriza</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> AutLic
+Description -> Responsable que autoriza
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

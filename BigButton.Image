@@ -1,0 +1,27 @@
+======OBJECT = BigButton.Image === Big Button=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:53.0000000Z" checksum="7b26f92404d7ce481a61a8e2adeb0bc9" fullyQualifiedName="BigButton" guid="e776a6c1-3659-4fb1-aeb5-0a54ddce73ac" name="BigButton" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Big Button">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="btnC.gif" description="btn C.gif"><Data>
+<base64Binary>
+R0lGODlhAQAUAMQAANfX1319feHh4bS0tOvr6/j4+Ojo6O/v7+zs7Onp6dnZ2fDw8P39/d7e3ufn5/T09P///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABABQAAAURYAAwz0EkRqMIDrI8BdQMTggAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>btnC.gif</Value></Property><Property><Name>Description</Name><Value>btn C.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="btnC.gif" description="btn C.gif"><Data>
+<base64Binary>
+R0lGODlhAQAUAMQAANfX1319feHh4bS0tOvr6/j4+Ojo6O/v7+zs7Onp6dnZ2fDw8P39/d7e3ufn5/T09P///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABABQAAAURYAAwz0EkRqMIDrI8BdQMTggAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>btnC.gif</Value></Property><Property><Name>Description</Name><Value>btn C.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>BigButton</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> BigButton
+IsDefault -> False

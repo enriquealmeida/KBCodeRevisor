@@ -1,0 +1,13 @@
+======OBJECT = UMTMon2.Index === =====
+<Object Type="Unique" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T17:07:39.0000000Z" checksum="796b1e13a0e98adf10eccc79e974455e" fullyQualifiedName="UMTMon2" guid="5c99d08a-8a5e-4c21-adc5-27e0d723f5dd" name="UMTMon2" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">MonSmb</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>UMTMon2</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> UMTMon2
+Description -> 

@@ -1,0 +1,23 @@
+======OBJECT = PORCENTAJE.Domain === PORCENTAJE=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-07-04T18:31:14.0000000Z" checksum="bbc58edc8ba501e5aaf168614de5bcde" fullyQualifiedName="PORCENTAJE" guid="7e9fc2e3-6682-4f3a-97da-462fd52a74ef" name="PORCENTAJE" type="00972a17-9975-449e-aab1-d26165d51393" description="PORCENTAJE">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>PORCENTAJE</Value></Property><Property><Name>Length</Name><Value>8</Value></Property><Property><Name>Decimals</Name><Value>4</Value></Property><Property><Name>ATT_PICTURE</Name><Value>ZZ9.9999</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> PORCENTAJE
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 8
+Decimals -> 4
+ATT_PICTURE -> ZZ9.9999
+IsDefault -> False

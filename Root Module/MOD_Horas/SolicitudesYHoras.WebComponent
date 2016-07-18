@@ -1,0 +1,19 @@
+======OBJECT = SolicitudesYHoras.WebComponent === Solicitudes YHoras=====
+
+=== RULES ===
+parm(in: &RspId, in: &FchIni, in: &FchFin);
+
+
+=== EVENTS SOURCE ===
+Event Start
+	GridComponent.Object = HWCHorPrb.Create(&RspId,'','','','','',&FchIni,&FchFin,0)
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> SolicitudesYHoras
+WEB_COMP -> Yes
+URLAccess -> Yes
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+IsDefault -> False

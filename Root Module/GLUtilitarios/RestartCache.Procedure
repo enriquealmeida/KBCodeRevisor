@@ -1,0 +1,18 @@
+======OBJECT = RestartCache.Procedure === Restart Cache=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+//El comando a usar en .NET es:
+csharp GeneXus.Cache.CacheService.Instance.Flush(); 
+
+//El comando a usar en JAVA es:
+java com.genexus.db.ResultCache.restartCache();
+
+
+====== PROPERTIES =======
+Name -> RestartCache
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

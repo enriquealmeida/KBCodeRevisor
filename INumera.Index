@@ -1,0 +1,12 @@
+======OBJECT = INumera.Index === INumera=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:34.0000000Z" checksum="bcee9a183a7af518d007308e45c4c0b7" fullyQualifiedName="INumera" guid="33144fd9-1334-4b6a-b2aa-e2e635766367" name="INumera" type="9e750647-3679-0000-0100-2529de263960" description="INumera">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">NumId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>INumera</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> INumera

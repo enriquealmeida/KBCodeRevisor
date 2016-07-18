@@ -1,0 +1,207 @@
+======OBJECT = CierreMensual.WebPanel === Cierre Mensual=====
+
+=== RULES ===
+noaccept(&vTasaHora ) ;
+noaccept(&vRecTotHor ) ;
+noaccept(&vRecTotHorf);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &vNivel = 9 
+    PFUsuHab.call('CIERRE',&vNivel,&vOk)//Seguridad
+    if &vOk <> 'S'
+        HSinPermiso.call()
+	else
+        &FchCrr = PMTParFch('PARFCHCRR')
+        &MesAnt=month( &FchCrr + 1 )
+        &AnoAnt=year(addmth(&FchCrr,1))
+    endif
+EndEvent
+
+Event load
+    &vTotHoras = 0
+	&vRecTotHor = 0
+    &RspSuA = year(&FchIni)
+    &RspSuM = Month(&FchIni)
+    
+    for each order CpRecId
+        where      &FchIni <= CpMovFch  and  CpMovFch <= &FchFin
+        where      CpMovSts = DMMovSts.S
+            &vRecTotHor  =&vRecTotHor + CpMovHrs
+    endfor
+	
+    if &vRecTotHor <>0     
+        load
+    endif
+EndEvent
+
+Event Refresh
+
+    Do 'ActFechas'
+
+    &AnoAnt.Clear()
+    for &AnoAux = 2008 to year(&Today)
+        &AnoAuxTxt = trim(str(&AnoAux, 4, 0))
+        &AnoAnt.Additem(&AnoAux, &AnoAuxTxt)
+    endfor
+    if null(&AnoAnt)
+        &AnoAnt = year(&Today)
+    endif
+	
+EndEvent
+
+Event 'Renovar'
+    refresh
+EndEvent  // 'Renovar'
+
+Event &AnoAnt.Click
+	//------ Actualizacion de Fecha inicial y fecha final a partir del año y mes.
+    Do 'ActFechas'
+EndEvent
+
+Event &MesAnt.Click
+    Do 'ActFechas'
+EndEvent
+
+Event 'Ver Atrasos'
+    HHrsNoIng2.call(&FchIni,&FchFin)
+EndEvent  // 'VerAtrasos'
+
+Event 'Cargar Horas'
+	// Genera los movimientos en Control de Proyectos a partir de las Horas.
+   if  PFCarHrs(&FchFin)='S'
+      PcCpMov.call(&FchIni,&FchFin)
+	  msg(format('Se cargaron las horas desde %1 a %2',&FchIni, &FchFin))
+	else
+      msg('Este mes ya  está valorizado. Imposible volver a cargar horas.')
+   endif
+   Grilla.Refresh()
+EndEvent
+
+Event 'Traducción Asientos'
+    PTradAto.call(&FchIni,&FchFin)
+EndEvent  // 'Traducción asientos'
+
+Event 'Revisar Traducción'
+    WWTTradAto.call()//HWTrdAto,'ING')
+EndEvent  // 'Revisar traduccion'
+
+Event 'Cargar Contabilidad'
+    &RevTrd = PHayTrdIng()
+    if &RevTrd = 'N'
+        HorecAto.call(&FchIni,&FchFin)
+    else
+        msg('ERRor: Hay traducciones de asientos para revisar.')
+    endif
+    Grilla.Refresh()
+EndEvent  // 'Cargar Contabilidad'
+
+Event 'Revisar Contabilidad'
+    HwCPMovR.call(&FchIni,&FchFin)
+	refresh
+EndEvent
+
+Event 'Valorizar'
+	// Valoriza las salidas generadas en el Punto anterior.
+    for each line
+        PCpValSa.call(CpRecId,&FchIni,&FchFin,&vRecTotHor)//,&vRecImpTot,&RecImpPes,&ImpCmpDol,&ImpCmpPes)
+    endfor
+    commit
+	Grilla.Refresh()
+EndEvent
+
+Event 'Chequear Planilla'
+   	&Window.Url= 'http://www.concepto.com.uy/sige_mtws/gastosdelperiodo.aspx'
+	&Window.Open()
+EndEvent    // 'Chequear Planilla'
+
+Event 'Proyectos con Horas'
+    HOPryCHrsMes.call(&FchIni,&FchFin)
+EndEvent  // 'Proyectos con Horas'
+
+Event 'Distribuir Proyectos'
+	// Distribuye proyectos distribuibles entre los demas.
+   HDstrPrN.call(&FchIni,&FchFin)
+EndEvent
+
+Event 'Distr SIGE y Consol'
+    HDstrPrT.call()
+EndEvent  // 'Distribucion Sige'
+
+
+Event 'Cerrar Período'
+    PGFchCrr.call(&FchFin)
+	&FchCrr = PMTParFch('PARFCHCRR')
+    &MesAnt=month( &FchCrr + 1 )
+    &AnoAnt=year(addmth(&FchCrr,1))
+	&Dias = &Today - &FchCrr
+	&MailMessage.Subject='Está cerrado Métricas.'
+	&MailMessage.HTMLText=format('%2',&HttpRequest.ServerHost,&HttpRequest.BaseUrl) + HwResTot.Link() + newline() + '<br>'
+	&MailMessage.HTMLText+= 'Metricas cerrado hasta el dia:  ' + &FchCrr.ToString() + newline() + '<br>'
+	&MailMessage.HTMLText+= 'Dia del Cierre: ' + &Today.ToString()  + newline() + '<br>'
+	&MailMessage.HTMLText+= 'Dias : ' + &Dias.ToString()  + newline() + '<br>'
+	&MailRecipient.Address='administracion@concepto.com.uy'
+	&MailMessage.To.Add(&MailRecipient)
+	EnvioMail.Call(&MailMessage,&ErrorCode,&Texto)
+
+EndEvent  // 'Cerrar periodo'
+
+Event 'Deshacer Valorización'
+    if &FchIni <= &FchCrr or &FchFin <= &FchCrr
+        msg('No se puede deshacer la valorización si el período está cerrado')
+    else
+        PCpDesVal.call(&FchIni,&FchFin)
+    endif
+    Grilla.Refresh()
+EndEvent  // 'Deshacer Valorización'
+
+Event 'Borrar Transferencias'
+    if &FchIni <= &FchCrr or &FchFin <= &FchCrr
+        msg('No se pueden borrar las transferencias si el período está cerrado')
+    else
+        PCpBorTrf.call(&FchIni,&FchFin)
+    endif
+Grilla.Refresh()
+EndEvent  // 'Borrar Transferencias'
+
+Event 'Borrar Horas'
+    if &FchIni <= &FchCrr or &FchFin <= &FchCrr
+        msg('No se pueden borrar las horas cargadas si el período está cerrado')
+    else
+        PCpBorHrs.call(&FchIni,&FchFin)
+    endif
+Grilla.Refresh()
+EndEvent  // 'BorrarHoras'
+
+Event 'Borrar Movimientos'
+    if &FchIni <= &FchCrr or &FchFin <= &FchCrr
+        msg('No se pueden borrar los movimientos si el período está cerrado')
+    else
+        PCpBorMov.call(&FchIni,&FchFin)
+    endif
+    msg('Se borraron los movimientos')
+	Grilla.Refresh()
+EndEvent  // 'Borrar Movimientos'
+
+
+Sub 'ActFechas'  
+    &FchIni=ymdtod( &AnoAnt, &MesAnt,1)
+    &FchFin=eom(&FchIni)
+    &FchFin=ymdtod(&AnoAnt, &MesAnt,day(&FchFin))
+    if &FchFin < &FchCrr
+        msg(Format('%1 No deberia generarse horas ni movimientos anteriores a la fecha de cierre %2', &FchFin, &FchCrr))
+    endif
+EndSub
+
+
+====== PROPERTIES =======
+Name -> CierreMensual
+Description -> Cierre Mensual
+IsMain -> True
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Public
+IsDefault -> False

@@ -1,0 +1,16 @@
+======OBJECT = coSeleccionar.Image === co Seleccionar=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:31:06.0000000Z" checksum="0c47d9eaa794b7e16121b66c789b87e4" fullyQualifiedName="coSeleccionar" guid="84be9c95-74ba-4e4e-bd44-31a2f649f947" name="coSeleccionar" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="co Seleccionar">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="coSeleccionar.bmp" description="co Seleccionar.bmp" /><Properties><Property><Name>Name</Name><Value>coSeleccionar.bmp</Value></Property><Property><Name>Description</Name><Value>co Seleccionar.bmp</Value></Property><Property><Name>IsExternalImage</Name><Value>True</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>bitmaps/coSeleccionar.bmp</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>coSeleccionar</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> coSeleccionar
+IsDefault -> False

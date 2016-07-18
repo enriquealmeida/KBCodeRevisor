@@ -1,0 +1,17 @@
+======OBJECT = FerTipo.Attribute === Tipo de Feriado=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> FerTipo
+Description -> Tipo de Feriado
+HORIZONTAL_DESCRIPTION -> Tipo de Feriado
+VERTICAL_DESCRIPTION -> Tipo de Feriado
+ContextualTitle -> Tipo de Feriado
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttValueRange -> 'F' 'M'
+ControlType -> 0
+ControlValues -> Fijo:F,Móvil:M
+IsDefault -> False

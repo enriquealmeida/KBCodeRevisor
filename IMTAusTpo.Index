@@ -1,0 +1,12 @@
+======OBJECT = IMTAusTpo.Index === IMTAus Tpo=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:28.0000000Z" checksum="c6a252efffe32a06ea09b4b06ba63c86" fullyQualifiedName="IMTAusTpo" guid="771fa3a9-0d06-4ad0-8050-b185525673ba" name="IMTAusTpo" type="9e750647-3679-0000-0100-2529de263960" description="IMTAus Tpo">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">AusTpoId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IMTAusTpo</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IMTAusTpo

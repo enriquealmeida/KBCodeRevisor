@@ -1,0 +1,11 @@
+======OBJECT = PrbAvance.Attribute === Avance=====
+NUMERIC(5)-
+
+
+====== PROPERTIES =======
+Name -> PrbAvance
+Description -> Avance
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

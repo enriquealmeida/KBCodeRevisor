@@ -1,0 +1,24 @@
+======OBJECT = LongVarCharUnRenglon.Domain === Long Var Char Un Renglon=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-09-25T17:45:42.0000000Z" checksum="6e08ec5257febb70d0747eb1250d6c2f" fullyQualifiedName="LongVarCharUnRenglon" guid="4227362b-db7a-45fe-aa5b-cfc2862ab92a" name="LongVarCharUnRenglon" type="00972a17-9975-449e-aab1-d26165d51393" description="Long Var Char Un Renglon">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>LongVarCharUnRenglon</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:LongVarChar</Value></Property><Property><Name>AutoResize</Name><Value>False</Value></Property><Property><Name>GxWidth</Name><Value>180chr</Value></Property><Property><Name>GxHeight</Name><Value>1row</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> LongVarCharUnRenglon
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 8
+AutoResize -> False
+GxWidth -> 180chr
+GxHeight -> 1row
+IsDefault -> False

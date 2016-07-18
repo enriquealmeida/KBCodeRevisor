@@ -1,0 +1,24 @@
+======OBJECT = SNMgradientBlue.Image === SNMgradient Blue=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-04T15:51:45.0000000Z" lastUpdate="2012-05-30T16:08:25.0000000Z" checksum="d06668643bb3bac0d2b0d7e3cb50e4b0" fullyQualifiedName="SNMgradientBlue" guid="9b0788ba-a508-4cee-b005-f3e32141d434" name="SNMgradientBlue" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="SNMgradient Blue">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="SNMgradientBlue.png" description="SNMgradient Blue.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAYAAAA6CAIAAAAcFr/JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEJSURB
+VDhPXdP7KsNhAMfh74Xs976/neeeZoyx2Qybrc2anMa0kENEixCtVouQQ0RoiVIr5Xr4+1PPLTxyojWQE6uDnIEGyMTXQWZoE2QT2yA7sgtyk/sgN9UEuekj
+kDdzAvJmz0C+iRbIl2uD/PkOyF+4BPmL16BA6RYUKN+DgpVHULD6AgrNvoFCc11QeP4DFF78AkWWvkGR5R4osvID6lv9BQUWeiC3+glyK12QO/MOsuVXkC09
+g2zxCWQLDyA7fQey+RuQzV2B7NQFyEx2QCbbBpnxFshkzkEmfQoyY8cgkzoEmWQT5IwegJzEHsgZ3gE58S2QM7gB/7fXQJ5YA+Tpr4M80Rr8AYJWqtYAaEcd
+AAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>SNMgradientBlue.png</Value></Property><Property><Name>Description</Name><Value>SNMgradient Blue.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\afernandez\Desktop\SNMgradientBlue.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SNMgradientBlue</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> SNMgradientBlue
+IsDefault -> False

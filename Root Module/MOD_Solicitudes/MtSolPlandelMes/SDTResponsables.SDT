@@ -1,0 +1,13 @@
+======OBJECT = SDTResponsables.SDT === SDTResponsables=====
+
+=== STRUCTURE ===
+SDTResponsables, collection: SDTResponsablesItem
+	RspId, C(16), Responsable 
+	SumHoras, N(6.2)-, Sum Horas 
+
+====== PROPERTIES =======
+Name -> SDTResponsables
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

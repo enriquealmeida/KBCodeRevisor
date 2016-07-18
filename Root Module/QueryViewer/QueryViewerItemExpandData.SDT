@@ -1,0 +1,14 @@
+======OBJECT = QueryViewerItemExpandData.SDT === Query Viewer Item Expand Data=====
+
+=== STRUCTURE ===
+QueryViewerItemExpandData
+	Name, C(20), Name 
+	Value, C(20), Value 
+	ExpandedValues, C(20), Expanded Values , collection Item
+
+====== PROPERTIES =======
+Name -> QueryViewerItemExpandData
+Description -> Query Viewer Item Expand Data
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 67
+IsDefault -> False

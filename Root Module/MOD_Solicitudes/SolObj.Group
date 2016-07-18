@@ -1,0 +1,18 @@
+======OBJECT = SolObj.Group === Objetivo de la solicitud=====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="" versionDate="2016-03-10T18:31:16.0000000Z" lastUpdate="2016-03-10T16:38:31.0000000Z" checksum="d0728f77ee7ff7a378ccf6f7a10e1bf0" fullyQualifiedName="MOD_Solicitudes.SolObj" guid="6660d5f7-3b7e-4ec2-8d29-9c3d8b81db4a" name="SolObj" type="87313f43-5eb2-41d7-9b8c-e8d9f5bf9588" description="Objetivo de la solicitud">
+  <Part type="74203da2-41b1-402c-0001-d8d564a2c2fa">
+    <Subtype guid="47e5e139-1642-45b8-9443-40a1d5595709">
+      <Name>SolObjId</Name>
+      <Supertype guid="62b70efd-b231-40d1-a7ea-e1d44b836c84">ObjId</Supertype>
+    </Subtype>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SolObj</Value></Property><Property><Name>Description</Name><Value>Objetivo de la solicitud</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> SolObj
+Description -> Objetivo de la solicitud
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

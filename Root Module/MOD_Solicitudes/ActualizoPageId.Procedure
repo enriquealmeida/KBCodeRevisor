@@ -1,0 +1,20 @@
+======OBJECT = ActualizoPageId.Procedure === Actualizo Page Id=====
+
+=== RULES ===
+parm(in:PrbId, in:&PageId);
+
+
+=== PROCEDURE SOURCE ===
+for each
+  PageId = &PageId
+endfor
+commit
+
+
+====== PROPERTIES =======
+Name -> ActualizoPageId
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

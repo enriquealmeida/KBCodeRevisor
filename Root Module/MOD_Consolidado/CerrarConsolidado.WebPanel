@@ -1,0 +1,55 @@
+======OBJECT = CerrarConsolidado.WebPanel === Cerrar Consolidado=====
+
+=== RULES ===
+parm(in: &CnsId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+	&ConsolidadoAux.Load(&CnsId)
+EndEvent
+
+Event 'Cerrar'
+	&Consolidado.Load(&CnsId)
+	&NuevoConsolidado.CnsFch = &Consolidado.CnsFch
+	&NuevoConsolidado.MTCnsFchRea = &Consolidado.MTCnsFchRea
+	if &ConsolidadoAux.CnsFch.IsEmpty() 
+		&Consolidado.CnsFch = &Today
+	else
+		&Consolidado.CnsFch = &ConsolidadoAux.CnsFch
+	endif
+	if &ConsolidadoAux.MTCnsFchRea.IsEmpty()
+		&Consolidado.MTCnsFchRea = &Today
+	else
+		&Consolidado.MTCnsFchRea = &ConsolidadoAux.MTCnsFchRea
+	endif
+	&Consolidado.MTCnsObs = &ConsolidadoAux.MTCnsObs
+	&Consolidado.MTCnsEstId = 'CER'
+	&Consolidado.Save()
+	if &Consolidado.Success()
+		&NuevoConsolidado.KBId = &Consolidado.KBId
+		&NuevoConsolidado.MTCnsObs = 'GENERADO AUTOMATICAMENTE'
+		&NuevoConsolidado.Save()
+		if &NuevoConsolidado.Success()
+			commit
+			CerrarConsolidado.Call(&NuevoConsolidado.CnsId)
+		else
+			for &mensaje in &NuevoConsolidado.GetMessages()
+				Msg(&mensaje.Description.ToString())
+			endfor
+		endif
+	else
+		for &mensaje in &Consolidado.GetMessages()
+			Msg(&mensaje.Description.ToString())
+		endfor
+	endif
+	
+Endevent
+
+
+====== PROPERTIES =======
+Name -> CerrarConsolidado
+IsMain -> True
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+IsDefault -> False

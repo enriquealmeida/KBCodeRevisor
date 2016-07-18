@@ -1,0 +1,24 @@
+======OBJECT = APIAuthorizationStatus.Domain === APIAuthorization Status=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="ARTECH\GeneXus" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-09-23T22:29:16.0000000Z" checksum="544eb488df40b5f3e4c378e3c16a3c15" fullyQualifiedName="APIAuthorizationStatus" guid="b670485f-ba99-4e80-91d9-595bd8e50edf" name="APIAuthorizationStatus" type="00972a17-9975-449e-aab1-d26165d51393" description="APIAuthorization Status">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>APIAuthorizationStatus</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Numeric</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>AttMaxLen</Name><Value>1</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>0, NotDetermined, Not Determined; 1, Restricted, Restricted; 2, Denied, Denied; 3, Authorized, Authorized; 4, AuthorizedWhenInUse, Authorized When In Use</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> APIAuthorizationStatus
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 4
+Length -> 1
+AttMaxLen -> 1
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

@@ -1,0 +1,17 @@
+======OBJECT = EnvioMail.bat.File === Envio Mail.bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-05-08T21:26:52.0000000Z" checksum="18d49406819a846b6a8085a931c73c63" fullyQualifiedName="EnvioMail.bat" guid="b11fe746-08c6-45b7-b28e-25bf292db13b" name="EnvioMail.bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Envio Mail.bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>dG9vbHNcbWFpbHNlbmQgLXRvIGVhbG1laWRhQGNvbmNlcHRvLmNvbS51eS5jb20gLWZyb20gYXBsaWNhY2lvbmVzQGNvbmNlcHRvLmNvbS51eSAgLXN0YXJ0dGxzICAtc210cCBzbXRwLmdtYWlsLmNvbSAtcG9ydCA1ODcgLXN1YiAiVGhlIHN1YmplY3QgbGluZSB0ZXN0ICV0aW1lJSIgK2NjICtiYyAtdiAtYXV0aC1wbGFpbiAtTSAiVGhpcyBpcyBib2R5IHRleHQgb2YgdGhlIG1lc3NhZ2UuICVkYXRlJSAldGltZSUgc2VuZGluZy4gU0QuIiArY2MgK2JjIC1xIC11c2VyIGJ1aWxkc0Bjb25jZXB0by5jb20udXkgLXBhc3MgTnVldmEzSGVsdmVjaWEgIC1hdHRhY2ggJWxvZ2ZpbGUlDQo=</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>EnvioMail.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>EnvioMail.bat</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>..\Deploy</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  <Categories>Deploy</Categories>
+</Object>
+====== PROPERTIES =======
+Name -> EnvioMail.bat
+Extract -> Newer
+ExtractToPath -> ..\Deploy
+IsDefault -> False

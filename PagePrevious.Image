@@ -1,0 +1,46 @@
+======OBJECT = PagePrevious.Image === Page Previous=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:50.0000000Z" checksum="c6a861a33ec823ee6dbd27a35e1f3f47" fullyQualifiedName="PagePrevious" guid="cdf36de9-aae4-40c2-928b-5dd2f7589dc9" name="PagePrevious" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Page Previous">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="boton_anterior.gif" description="Blue Previous.jpg"><Data>
+<base64Binary>
+R0lGODlhEgASAOZLAE1NTVNTU4iIiIGBgXh4eJGRkYCAgJSUlGVlZXl5eWdnZzMzM39/f46OjlJSUouLi4+Pj1RUVISEhF5eXmRkZJCQkHBwcGNjY2FhYZWV
+lVFRUW9vb21tbX19fV1dXYaGhmJiYl9fX3R0dFpaWjk5OYKCgjIyMk5OTnV1dXNzc4mJiY2NjVtbW6SkpIODg0lJSVhYWGpqaoeHh1ZWVk9PT3t7e2lpaYyM
+jDo6OllZWXx8fHZ2dnd3d1dXV5ubm2BgYGhoaJaWlpOTk5eXl3p6epKSknFxcZqampiYmGZmZpmZmf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAEsALAAAAAASABIAAAf/gEsfEwhJCkCIiDYKCgggF0tHABgcIjwJCUQECQQEO0ZA
+IwEVMCkSDRVFqkKqBQ0qHTEARRglBUhISkpHSkhHuUEPIhpCFBJDuLq5usoQBA4HCDJBvLq/Awa+SgVEAQcUAsm/DCcmSbxIRd0HSQLIRwYACyQjN9bqERnt
+yyYLSULMeOE7oCCcrhMLcCQpwkzJQATulMWbl4AZtwBCIA5peIQBgCQWuwm58IHaMmu7ejkLUABECYDofjUc8gCFBggeiDwQEiQIkiBDggbJ0EDCBhorHABB
+oYPBAGxPsXUgsOHHixY9HOTwEOKH168hJrCYAYDDEh81LBhZy7atEQsuA5YEAgA7
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>boton_anterior.gif</Value></Property><Property><Name>Description</Name><Value>Blue Previous.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\ImgsTransparecncias\botones gif - fondo transparente\boton_anterior.gif</Value></Property></Properties></ImageItem>
+      <ImageItem><Image name="PagePrevious.png" description="Blue Previous.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAYAAAAyhueAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAOFJREFUOE+tkjEKg0AQRS3sUwtiHZtFkDQKkgt4xpALpM0B7E36HCDH2MysO8sw+QSJPnhk89f/
+G832xHsf3JU0KgftWlCXxSGgKIoD+SAvMYJdFocGHizL8umc83VdexlGXRaHCj3Ytm2w7/sb36Eui8MIGhzH8U7PHPne9kQcrhhkbE/EIVFV1VUPdl33prs0
+yNieiENimqbTMAwvGW2aJr0gAXVZHC6FfJ7nsx7Wb56xPRGHETr/HLY9EYcK+v81vOmTEihLw5s+KQvlYZh+//+kEHSXx2PA9sRdWUZ99gF7tlUHYU8o/wAA
+AABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>PagePrevious.png</Value></Property><Property><Name>Description</Name><Value>Blue Previous.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\grid\PagePrevious.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="PagePrevious.png" description="Blue Previous.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAYAAAAyhueAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAOFJREFUOE+tkjEKg0AQRS3sUwtiHZtFkDQKkgt4xpALpM0B7E36HCDH2MysO8sw+QSJPnhk89f/
+G832xHsf3JU0KgftWlCXxSGgKIoD+SAvMYJdFocGHizL8umc83VdexlGXRaHCj3Ytm2w7/sb36Eui8MIGhzH8U7PHPne9kQcrhhkbE/EIVFV1VUPdl33prs0
+yNieiENimqbTMAwvGW2aJr0gAXVZHC6FfJ7nsx7Wb56xPRGHETr/HLY9EYcK+v81vOmTEihLw5s+KQvlYZh+//+kEHSXx2PA9sRdWUZ99gF7tlUHYU8o/wAA
+AABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>PagePrevious.png</Value></Property><Property><Name>Description</Name><Value>Blue Previous.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\grid\PagePrevious.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>PagePrevious</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> PagePrevious
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

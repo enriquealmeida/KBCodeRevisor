@@ -1,0 +1,39 @@
+======OBJECT = PCpValSa.Procedure === Valorizo Salidas de un Recurso=====
+
+=== RULES ===
+parm(in:CpRecId, in:&FchIni, in:&FchFin,in:&vRecTotHor); //, in:&vRecImpTot, in:&RecImpPes, in:&ImpCmpDol, in:&ImpCmpPes);
+
+
+=== PROCEDURE SOURCE ===
+CalculoImportesResponsable.Call(CpRecId,&FchIni,&FchFin,&vRecImpTot,&vRecImpPes)
+
+//COMIENZA LA VALorACION.
+
+if &vRecTotHor <> 0 
+    &TasaHor = &vRecImpTot  / &vRecTotHor
+    &TasaPes = &vRecImpPes  / &vRecTotHor
+else
+    &TasaHor=0
+    &TasaPes=0
+endif
+
+for each
+    where            &FchIni <= CpMovFch and CpMovFch <= &FchFin
+    where            CpMovSts = DMMovSts.S
+    where            CpMovEST = DMEst.Salidas   
+	where            PryDist <> 'T'  // El proyecto no se tiene en cuenta para la valorizacion.
+
+    CpMovImp = round(CpMovHrs * &TasaHor , 2)
+    CpMovPesos = round(CpMovHrs * &TasaPes, 2)
+    CpMovSts = DMMovSts.Valorizado
+endfor
+
+
+====== PROPERTIES =======
+Name -> PCpValSa
+Description -> Valorizo Salidas de un Recurso
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

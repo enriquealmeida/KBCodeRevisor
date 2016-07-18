@@ -1,0 +1,27 @@
+======OBJECT = MultimediaEdit.Image === Multimedia Edit=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:51.0000000Z" checksum="a6a27385f8f6488c40348e1dfff95d5a" fullyQualifiedName="MultimediaEdit" guid="089b589f-43ac-4175-a46d-144edf140711" name="MultimediaEdit" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Multimedia Edit">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="MultimediaEdit.png" description="Multimedia Edit.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOUlEQVR42oXMwQkAIBADwdRhtXYeXwEJ3nqwcI8hsk05P6IcwDpGvDiOfVFC1HA/sLqAdWER
+dJanDljdT9rW8FYOAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>MultimediaEdit.png</Value></Property><Property><Name>Description</Name><Value>Multimedia Edit.png</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="MultimediaEdit.png" description="Multimedia Edit.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOUlEQVR42oXMwQkAIBADwdRhtXYeXwEJ3nqwcI8hsk05P6IcwDpGvDiOfVFC1HA/sLqAdWER
+dJanDljdT9rW8FYOAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>MultimediaEdit.png</Value></Property><Property><Name>Description</Name><Value>Multimedia Edit.png</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MultimediaEdit</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> MultimediaEdit
+IsDefault -> False

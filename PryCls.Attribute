@@ -1,0 +1,19 @@
+======OBJECT = PryCls.Attribute === Producto=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> PryCls
+Description -> Producto
+HORIZONTAL_DESCRIPTION -> Producto
+VERTICAL_DESCRIPTION -> Producto
+ContextualTitle -> Producto
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+ControlType -> 4
+ControlItemValues -> PryCls
+ControlItemDescription -> PryCls
+AddEmptyItem -> True
+IsDefault -> False

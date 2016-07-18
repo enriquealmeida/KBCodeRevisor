@@ -1,0 +1,10 @@
+======OBJECT = MTSUNue.Folder === MTSUNue=====
+<Object parent="MOD_Sueldos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="81161df1-5a38-44db-a6ea-b59d9601d454" user="" versionDate="2016-03-14T16:43:03.0000000Z" lastUpdate="2016-03-14T16:00:44.0000000Z" checksum="208bc25e525854c42b900e44d9906731" fullyQualifiedName="MOD_Sueldos.MTSUNue" guid="cdd1e476-f435-4a16-a45b-f4c5cfda4243" name="MTSUNue" type="00000000-0000-0000-0000-000000000008" description="MTSUNue">
+  <Properties><Property><Name>Name</Name><Value>MTSUNue</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+Name -> MTSUNue
+ObjectVisibility -> Private
+IsDefault -> False

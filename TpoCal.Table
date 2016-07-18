@@ -1,0 +1,8 @@
+======OBJECT = TpoCal.Table === Tipo de Problema Calidad=====
+*PrbTpoCal  Codigo3- Null=False
+ PrbTpoCalDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> TpoCal
+Description -> Tipo de Problema Calidad
+CACHE_LEVEL -> 3

@@ -1,0 +1,15 @@
+======OBJECT = LegFchId.Attribute === Fecha legajo=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> LegFchId
+Description -> Fecha legajo
+HORIZONTAL_DESCRIPTION -> Fecha legajo
+VERTICAL_DESCRIPTION -> Fecha legajo
+ContextualTitle -> Fecha legajo
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

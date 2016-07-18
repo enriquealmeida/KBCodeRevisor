@@ -1,0 +1,79 @@
+======OBJECT = SolicitudCambioProyecto.Procedure === Solicitud Cambio Proyecto=====
+
+=== RULES ===
+parm(in:&PryId, in:&PrbId, in:&PryIdNuevo, out:&ErrorDsc);
+
+
+=== PROCEDURE SOURCE ===
+&ErrorDsc.SetEmpty()
+for each
+where        PryId = &PryIdNuevo
+defined by PryNom
+when none
+	&ErrorDsc = 'No existe el proyecto:' + &PryIdNuevo	
+endfor
+if &ErrorDsc.IsEmpty()
+	for each
+	where        PryId = &PryId and PrbId = &PrbId
+	defined by PrbFchIng
+		new
+		defined by PrbFchIng
+			PryId = &PryIdNuevo
+		when duplicate
+			&ErrorDsc = format('Ya existía la solicitud proyecto %1 Id %2',&PryIdNuevo,&PrbId)		
+		endnew
+		if &ErrorDsc.IsEmpty()
+			for each
+				where        PryId = &PryId and PrbId = &PrbId
+				defined by PrbDocDsc
+				new
+				defined by PrbDocDsc
+					PryId = &PryIdNuevo
+				endnew
+				Delete
+			endfor		
+		
+			for each
+			where        PryId = &PryId and PrbId = &PrbId
+			defined by TagSolHor
+				new
+				defined by TagSolHor
+					PryId = &PryIdNuevo
+				endnew
+				Delete
+			endfor
+
+			for each
+			where        PryId = &PryId and PrbId = &PrbId
+			defined by SolObsFch
+				new
+				defined by SolObsFch
+					PryId = &PryIdNuevo
+				endnew
+				delete
+			endfor
+		
+			for each
+			where        PryId = &PryId and PrbId = &PrbId
+			defined by HrsCnt
+				PryId = &PryIdNuevo
+			endfor
+		endif
+		if &ErrorDsc.IsEmpty()
+			delete
+			commit
+		else
+			rollback
+		endif
+	endfor
+endif
+
+
+
+====== PROPERTIES =======
+Name -> SolicitudCambioProyecto
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

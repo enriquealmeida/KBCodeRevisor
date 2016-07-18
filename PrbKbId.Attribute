@@ -1,0 +1,15 @@
+======OBJECT = PrbKbId.Attribute === Id de la KB=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> PrbKbId
+Description -> Id de la KB
+HORIZONTAL_DESCRIPTION -> Id de la KB
+VERTICAL_DESCRIPTION -> Id de la KB
+ContextualTitle -> Id de la KB
+Class -> INFERRED
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-127
+ATT_PICTURE -> @!
+IsDefault -> False

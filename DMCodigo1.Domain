@@ -1,0 +1,24 @@
+======OBJECT = DMCodigo1.Domain === Codigo=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="EALMEIDANBK\Enrique" versionDate="2016-06-14T19:59:25.0000000Z" lastUpdate="2016-06-09T20:48:50.0000000Z" checksum="879869f363aa31794ff721585a547b57" fullyQualifiedName="DMCodigo1" guid="cf9b69db-e229-4722-ba24-5e3d7697fe0c" name="DMCodigo1" type="00972a17-9975-449e-aab1-d26165d51393" description="Codigo">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMCodigo1</Value></Property><Property><Name>Description</Name><Value>Codigo</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>AttMaxLen</Name><Value>1</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMCodigo1
+Description -> Codigo
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 1
+AttMaxLen -> 1
+IsDefault -> False

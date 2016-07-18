@@ -1,0 +1,12 @@
+======OBJECT = IPry2.Index === IPry2=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-08-22T18:42:13.0000000Z" checksum="2b7908219d1146aabf8ad3f89556cf25" fullyQualifiedName="IPry2" guid="8f1fb617-079e-48f2-9580-b8720de5b646" name="IPry2" type="9e750647-3679-0000-0100-2529de263960" description="IPry2">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">KBId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IPry2</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IPry2

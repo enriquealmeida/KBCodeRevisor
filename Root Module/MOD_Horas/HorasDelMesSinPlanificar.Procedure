@@ -1,0 +1,32 @@
+======OBJECT = HorasDelMesSinPlanificar.Procedure === Horas Del Mes Sin Planificar=====
+
+=== RULES ===
+parm(in:&RspId, in:&CliId, in:&TagId, out:&HrsTot);
+
+
+=== PROCEDURE SOURCE ===
+
+&anio = &TagId.Substring(1,4).ToNumeric()
+&Mes  = &TagId.Substring(5,2).ToNumeric() 
+&FechaInicial = ymdtod(&anio,&Mes,1)
+&FechaFinal = &FechaInicial.EndOfMonth()
+
+&HrsTot = 0
+for each
+	where            CliId = &CliId
+	where            RspId = &RspId
+	where            PrbId.IsEmpty() or PrbId.IsNull()
+	where            TarId <> 'ALMUERZO'
+	where            &FechaInicial <= HrsFch and HrsFch <= &FechaFinal
+	   &HrsTot += HrsCnt
+endfor
+
+
+====== PROPERTIES =======
+Name -> HorasDelMesSinPlanificar
+Description -> Horas Del Mes Sin Planificar
+IsMain -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Public
+IsDefault -> False

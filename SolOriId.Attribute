@@ -1,0 +1,17 @@
+======OBJECT = SolOriId.Attribute === Origen=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> SolOriId
+Description -> Origen
+HORIZONTAL_DESCRIPTION -> Origen
+VERTICAL_DESCRIPTION -> Origen
+ContextualTitle -> Origen
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+ControlType -> 4
+ControlItemDescription -> SolOriDsc
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = AmbNvlDsc.Attribute === Descripción Ambiente Nivel=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> AmbNvlDsc
+Description -> Descripción Ambiente Nivel
+HORIZONTAL_DESCRIPTION -> Descripción Ambiente Nivel
+VERTICAL_DESCRIPTION -> Descripción Ambiente Nivel
+ContextualTitle -> Descripción Ambiente Nivel
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

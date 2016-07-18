@@ -1,0 +1,10 @@
+======OBJECT = FechaDesdeDondePuedeCosultar.Attribute === Fecha Desde Donde Puede Cosultar=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> FechaDesdeDondePuedeCosultar
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

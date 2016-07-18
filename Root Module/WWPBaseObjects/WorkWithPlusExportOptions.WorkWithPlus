@@ -1,0 +1,45 @@
+======OBJECT = WorkWithPlusExportOptions.WorkWithPlus === Work With Plus Export Options=====
+<Object parent="WWPBaseObjects.ExportOptions" parentType="c9584656-94b6-4ccd-890f-332d11fc2c25" parentGuid="b8285a59-8ad1-40f1-8006-41c94013fcde" user="EALMEIDANBK\Enrique" versionDate="2016-06-14T19:59:25.0000000Z" lastUpdate="2016-06-14T18:14:56.0000000Z" checksum="afdf46b7d3cbdc5c6a1bbdf9b5c4eb53" fullyQualifiedName="WWPBaseObjects.WorkWithPlusExportOptions" guid="bf3b02c9-dc2d-086a-340e-47fe62e963a3" name="WorkWithPlusExportOptions" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Export Options">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="7;57;" baseWebForm="HTML" SecFuntionKey="WPAskExport" defaultSecFuntionKey="ExportOptions">
+  <WPRoot childrenOrderedList="7;66;Main Table-7;75;ShowMessages-7;75;LoadWWPContext" Template="CreateData" defaultTemplate="CreateData">
+    <table name="TableMain" defaultName="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" defaultType="Responsive" childrenOrderedList="7;27;TextBlockTitle-7;66;TableContent-7;88;Actions">
+      <textBlock controlName="JS" caption="JS" format="Raw HTML" />
+      <errorViewer colSpan="999" />
+      <table name="TableContent" defaultName="TableContent" themeClass="Table" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" width="560" height="386" cellPadding="0" cellSpacing="0" defaultType="Responsive" cellThemeClass="PopupContentCell" vAlign="Top" childrenOrderedList="7;28;ErrorViewer-7;66;TableAttributes">
+        <table name="TableExport" themeClass="TableData" cellPadding="0" cellSpacing="0" type="Responsive" includeInPanel="True" panelTitle="Where to export?" collapsable="False" cellThemeClass="ExportOptionsPanellCell">
+          <variable name="ExportType" defaultName="ExportType" description="Export type" defaultDescription="Export Type" descriptionThemeClass="DataDescription" defaultDescriptionThemeClass="DataDescription" domain="00972a17-9975-449e-aab1-d26165d51393-ExportType" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-ExportType" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="DataDescriptionCell" defaultDescriptionCellThemeClass="DataDescriptionCell" showDescription="True" />
+        </table>
+        <table name="TableGoogleDriveInfo" themeClass="Table100x100" cellPadding="0" cellSpacing="0" cellThemeClass="ExportOptionsPanellCell" colSpan="999">
+          <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" isGroup="False" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="0" cellSpacing="0" type="Responsive" defaultType="Responsive" title="Google Drive Information" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="Google Drive Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" defaultCellWidth_S="75%" defaultCellWidth_L="50%" colSpan="999">
+            <variable name="User" defaultName="Description" description="Email" defaultDescription="Description" descriptionThemeClass="DataDescription" defaultDescriptionThemeClass="DataDescription" domain="00972a17-9975-449e-aab1-d26165d51393-Descripcion" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="DataDescriptionCell" defaultDescriptionCellThemeClass="DataDescriptionCell" />
+            <variable name="DocTitle" defaultName="Description" description="Document title" defaultDescription="Description" descriptionThemeClass="DataDescription" defaultDescriptionThemeClass="DataDescription" domain="00972a17-9975-449e-aab1-d26165d51393-Descripcion" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="DataDescriptionCell" defaultDescriptionCellThemeClass="DataDescriptionCell" />
+            <variable name="Password" defaultName="Description" description="Password" defaultDescription="Description" descriptionThemeClass="DataDescription" defaultDescriptionThemeClass="DataDescription" domain="00972a17-9975-449e-aab1-d26165d51393-Descripcion" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="DataDescriptionCell" defaultDescriptionCellThemeClass="DataDescriptionCell" />
+          </table>
+        </table>
+      </table>
+      <userTable name="UT" type="Html" />
+      <actionGroup themeClass="ActionGroupRight" defaultThemeClass="TrnActionGroup" type="GX Action Group" name="Actions" defaultName="Actions" childrenOrderedList="7;91;Enter-7;91;Cancel">
+        <userAction caption="Save" name="DownloadToFile" />
+        <userAction caption="Save" name="SaveGoogleDrive" />
+        <standardAction name="Cancel" defaultName="Cancel" />
+      </actionGroup>
+    </table>
+    <steps />
+    <events />
+  </WPRoot>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusExportOptions</Value></Property><Property><Name>KBObject</Name><Value>c9584656-94b6-4ccd-890f-332d11fc2c25-WWPBaseObjects.ExportOptions</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c9584656-94b6-4ccd-890f-332d11fc2c25
+FolderId -> 1237
+Name -> WorkWithPlusExportOptions
+KBObject -> c9584656-94b6-4ccd-890f-332d11fc2c25-1237
+IsDefault -> False

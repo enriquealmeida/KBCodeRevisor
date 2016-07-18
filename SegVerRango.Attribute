@@ -1,0 +1,13 @@
+======OBJECT = SegVerRango.Attribute === Ver solo rango=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> SegVerRango
+Description -> Ver solo rango
+ContextualTitle -> Ver solo rango
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlTitle -> Ver solo en el rango especificado
+IsDefault -> False

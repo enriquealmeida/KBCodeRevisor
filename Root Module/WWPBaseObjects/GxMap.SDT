@@ -1,0 +1,23 @@
+======OBJECT = GxMap.SDT === Gx Map=====
+
+=== STRUCTURE ===
+GxMap
+	Points, collection: Point
+		PointLat, C(40), Point Lat 
+		PointLong, C(40), Point Long 
+		PointIcon, C(20), Point Icon 
+		PointStreet, C(100), Point Street 
+		PointStreetNumber, C(6), Point Street Number 
+		PointCrossStreet, C(100), Point Cross Street 
+		PointInfowinTit, C(100), Point Infowin Tit 
+		PointInfowinDesc, C(200), Point Infowin Desc 
+		PointInfowinLink, C(200), Point Infowin Link 
+		PointInfowinLinkDsc, C(200), Point Infowin Link Dsc 
+		PointInfowinImg, C(200), Point Infowin Img 
+
+====== PROPERTIES =======
+Name -> GxMap
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

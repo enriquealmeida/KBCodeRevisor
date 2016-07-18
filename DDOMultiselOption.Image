@@ -1,0 +1,23 @@
+======OBJECT = DDOMultiselOption.Image === DDOMultisel Option=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-03-29T21:58:19.0000000Z" lastUpdate="2016-03-29T18:11:55.0000000Z" checksum="425539d87f6b704216cb0142534801dc" fullyQualifiedName="DDOMultiselOption" guid="57e1409a-dafd-45c5-b823-eac09df3c4ba" name="DDOMultiselOption" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="DDOMultisel Option">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="CB.png" description="CB.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqY
+AAAXb5JfxUYAAADESURBVHja1JChjoUwEEXP0E0VAmr4g0oMiv9PCB5H6lGluikwK152xSbvPXbdHnPNnNzJFVVlnmfd953zPHmGMYa2bRmGAWutyDRNKiJ4
+73nHuq6oKuM4ShVjxHuPqgK8TO89MUYAPnLO5JwREVT1beacH2IphVLKLUlEKKU8xOu6Xo7yk+u6AKj4I/9JNMb8Svi6r5xzhBBuSSEEnHMAyLZtuiwLKaXv
+qZ81NU1D3/d0XSeiqqSU9DiOW2/WdY21Vj4HAAoTgZsE5JbCAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>CB.png</Value></Property><Property><Name>Description</Name><Value>CB.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\usuario\Desktop\CB.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DDOMultiselOption</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DDOMultiselOption
+IsDefault -> False

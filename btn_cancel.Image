@@ -1,0 +1,40 @@
+======OBJECT = btn_cancel.Image === btn_cancel=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:53.0000000Z" checksum="3b02823a9e17efa6cccc307234e9a97a" fullyQualifiedName="btn_cancel" guid="86245357-47d7-4a78-b045-93a33df7e9a4" name="btn_cancel" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="btn_cancel">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="btn_cancel.gif" description="btn_cancel.gif"><Data>
+<base64Binary>
+R0lGODlhUAAUAMQfAMTExNnZ2c61tcvLy/v7+4glJZdFRdLS0tXCwry8vJ2cnMaoqLR/f6VhYdrPz+zs7IAUFOnp6eHh4X19fbS0tP39/dfX1+vr6+/v7/j4
++PDw8N7e3ufn5/T09P///////yH5BAEAAB8ALAAAAABQABQAAAX/4CeOo6cdlKJMbOu+cCzPr0pZWkXuvEhsKQUAYCkaj8ikcslEDgDBDaFHrQxUmw6hwu16
+v+CweBzOdDaqw5RK8qAVFnNnTq/b7/i8Xm8OpA4ebCMYChQAHBoYiouMjY6PkI0IBgKRixocFCkYgiIAQgkcDxekpaanqKmqpwIQAqulDxxDQp0fCglPEhG8
+vb69DgIIvAjCxBvBG74CAsq8xhGtAr/UvBIAAwkKtgoD3gEc1b4NEOULDuUQDREGBeUFCBwI7hAG8vQGAdLh4rwcAd6ucDtA8ECADQgTKmQAYcEGhxsQbGA4
+oB0CBwUMbMjoIFmBBhsEfFzQUKHJhAEK/x7Y1knBhgAwY8qUacBAEZgCDKRbUBNmTZILYpKs2c4A0JlIkbIURGGDhKdQo0atGTXjAoY5DTyt2WoBVJIMFggQ
+C1SqWalAbFEIEIGD27dw34IVwABdgwXksrqtycHq1b5G8XLoGrcw3AhpO+XC8KCx48eNeTFwV2CsuwYGGNR8oKEmhknlGnzWWYDBA4wNIKt+jCGbLRQYNMie
+Tbu27du4c+u+jYHCAVsXEgDoIGeP8ePI95gBkOCCrR8UBmghkKG69evYs2vfzp07AQIdBjRdI8hDBj+HpntYz769+/fw48t3/73DrLUZAtmqkOGaIYInBSjg
+gAQSaMEBUAAgQTYGOtgiQgUEaABQAgloYuGFGGao4YYcZkjhABtosIWDbUDYAQYXGKbiiiy2GNcFGGhRgX49hAAAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>btn_cancel.gif</Value></Property><Property><Name>Description</Name><Value>btn_cancel.gif</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="btn_cancel.gif" description="btn_cancel.gif"><Data>
+<base64Binary>
+R0lGODlhUAAUAMQfAMTExNnZ2c61tcvLy/v7+4glJZdFRdLS0tXCwry8vJ2cnMaoqLR/f6VhYdrPz+zs7IAUFOnp6eHh4X19fbS0tP39/dfX1+vr6+/v7/j4
++PDw8N7e3ufn5/T09P///////yH5BAEAAB8ALAAAAABQABQAAAX/4CeOo6cdlKJMbOu+cCzPr0pZWkXuvEhsKQUAYCkaj8ikcslEDgDBDaFHrQxUmw6hwu16
+v+CweBzOdDaqw5RK8qAVFnNnTq/b7/i8Xm8OpA4ebCMYChQAHBoYiouMjY6PkI0IBgKRixocFCkYgiIAQgkcDxekpaanqKmqpwIQAqulDxxDQp0fCglPEhG8
+vb69DgIIvAjCxBvBG74CAsq8xhGtAr/UvBIAAwkKtgoD3gEc1b4NEOULDuUQDREGBeUFCBwI7hAG8vQGAdLh4rwcAd6ucDtA8ECADQgTKmQAYcEGhxsQbGA4
+oB0CBwUMbMjoIFmBBhsEfFzQUKHJhAEK/x7Y1knBhgAwY8qUacBAEZgCDKRbUBNmTZILYpKs2c4A0JlIkbIURGGDhKdQo0atGTXjAoY5DTyt2WoBVJIMFggQ
+C1SqWalAbFEIEIGD27dw34IVwABdgwXksrqtycHq1b5G8XLoGrcw3AhpO+XC8KCx48eNeTFwV2CsuwYGGNR8oKEmhknlGnzWWYDBA4wNIKt+jCGbLRQYNMie
+Tbu27du4c+u+jYHCAVsXEgDoIGeP8ePI95gBkOCCrR8UBmghkKG69evYs2vfzp07AQIdBjRdI8hDBj+HpntYz769+/fw48t3/73DrLUZAtmqkOGaIYInBSjg
+gAQSaMEBUAAgQTYGOtgiQgUEaABQAgloYuGFGGao4YYcZkjhABtosIWDbUDYAQYXGKbiiiy2GNcFGGhRgX49hAAAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>btn_cancel.gif</Value></Property><Property><Name>Description</Name><Value>btn_cancel.gif</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>btn_cancel</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> btn_cancel
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

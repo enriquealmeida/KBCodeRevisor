@@ -1,0 +1,16 @@
+======OBJECT = RspSaldoFuturo.Attribute === Saldo Futuro(empleados)=====
+NUMERIC(5)-
+RspSaldoLicenciaTomada-RspLicenciaPendienteAutorizar
+
+====== PROPERTIES =======
+Name -> RspSaldoFuturo
+Description -> Saldo Futuro(empleados)
+HORIZONTAL_DESCRIPTION -> Saldo Futuro
+VERTICAL_DESCRIPTION -> Saldo Futuro
+ContextualTitle -> Saldo Futuro
+Formula -> RspSaldoLicenciaTomada-RspLicenciaPendienteAutorizar
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+TooltipText -> Saldo de licencia tomada, asumiendo que se autoricen todas las licencias
+IsDefault -> False

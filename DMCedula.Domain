@@ -1,0 +1,24 @@
+======OBJECT = DMCedula.Domain === Cedula=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="EALMEIDANBK\Enrique" versionDate="2016-06-14T19:59:25.0000000Z" lastUpdate="2016-06-14T18:32:53.0000000Z" checksum="3f51562c395772505c5e2f73aa833d48" fullyQualifiedName="DMCedula" guid="6b3ffb98-a9af-4419-a79d-1c9a6b5dd259" name="DMCedula" type="00972a17-9975-449e-aab1-d26165d51393" description="Cedula">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMCedula</Value></Property><Property><Name>Description</Name><Value>Cedula</Value></Property><Property><Name>Length</Name><Value>15</Value></Property><Property><Name>AttMaxLen</Name><Value>15</Value></Property><Property><Name>ATT_PICTURE</Name><Value>ZZZZZZZZ.ZZZ.ZZZ-9</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMCedula
+Description -> Cedula
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 15
+AttMaxLen -> 15
+ATT_PICTURE -> ZZZZZZZZ.ZZZ.ZZZ-9
+IsDefault -> False

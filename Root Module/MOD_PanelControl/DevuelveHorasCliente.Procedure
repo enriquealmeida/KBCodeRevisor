@@ -1,0 +1,21 @@
+======OBJECT = DevuelveHorasCliente.Procedure === Devuelve Horas Cliente=====
+
+=== RULES ===
+parm(in:&CliId, in:&FchIni, in:&FchFin, out: &HrsCnt );
+
+
+=== PROCEDURE SOURCE ===
+&HrsCnt = 0 
+for each
+	where            CliId= &CliId
+	where            &FchIni <= HrsFch and HrsFch <= &FchFin
+	&HrsCnt += HrsCnt
+endfor
+
+
+====== PROPERTIES =======
+Name -> DevuelveHorasCliente
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,42 @@
+======OBJECT = HMDWAdm.WebPanel === Administración=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+Event &MostrarMD.Click
+do case
+    Case &MostrarMD ='FIL'
+        &Tipo = MDObjTpo 
+        codigos.Visible =1
+    Case &MostrarMD =TrnMode.Insert
+        TMDTipo.call(MDObjTpo,TrnMode.Insert)
+        codigos.Visible =0
+    Case &MostrarMD =TrnMode.Update
+        TMDTipo.call(MDObjTpo,TrnMode.Update)
+        codigos.Visible =0
+   Case &MostrarMD =TrnMode.Display
+        TMDTipo.call(MDObjTpo,TrnMode.Display)
+        codigos.Visible =0
+endcase
+EndEvent  // &MostrarMD.Click
+
+Event Start
+codigos.Visible =0
+EndEvent  // Start
+
+Event 'Agregar'
+TMDTipo.call( MDObjTpo , TrnMode.Insert)
+        codigos.Visible =0
+EndEvent  // 'Agregar'
+
+
+====== PROPERTIES =======
+Name -> HMDWAdm
+Description -> Administración
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+ObjectVisibility -> Public
+IsDefault -> False

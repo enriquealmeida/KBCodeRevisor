@@ -1,0 +1,20 @@
+======OBJECT = TabsMenuData.SDT === Tabs Menu Data=====
+
+=== STRUCTURE ===
+TabsMenuData, collection: TabsMenuDataItem
+	MenuId, N(4), Menu Id 
+	MenuTitle, C(20), Menu Title 
+	MenuDescription, V(150), Menu Description 
+	MenuURL, V(1000), Menu URL 
+	Sections, collection: SectionsItem
+		SectionId, N(4), Section Id 
+		SectionTitle, C(20), Section Title 
+		SectionDescription, V(150), Section Description 
+		SectionURL, V(1000), Section URL 
+
+====== PROPERTIES =======
+Name -> TabsMenuData
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 72
+ObjectVisibility -> Private
+IsDefault -> False

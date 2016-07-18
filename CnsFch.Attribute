@@ -1,0 +1,15 @@
+======OBJECT = CnsFch.Attribute === Fecha de Consolidado=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> CnsFch
+Description -> Fecha de Consolidado
+HORIZONTAL_DESCRIPTION -> Fecha de Consolidado
+VERTICAL_DESCRIPTION -> Fecha de Consolidado
+ContextualTitle -> Fecha de Consolidado
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

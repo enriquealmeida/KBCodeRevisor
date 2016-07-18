@@ -1,0 +1,34 @@
+======OBJECT = TrabajarConFeriados.WebPanel === Trabajar Con Feriados=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &Todos = 'S'
+    &Anio = year(&Today )
+    &Borrar='Borrar'
+EndEvent
+
+Event 'Copiar'
+    CopiarFeriados.call(&Anio)
+EndEvent
+
+Event load
+    FerFecha.Link=Feriados.Link(FerFecha,TrnMode.Update)
+    &Borrar.Link=Feriados.Link(FerFecha,TrnMode.Delete)
+EndEvent
+
+Event 'Nuevo'
+    &Fecha = nullvalue(&Fecha )
+    Feriados.call(&Fecha,TrnMode.Insert)
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> TrabajarConFeriados
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+ObjectVisibility -> Public
+IsDefault -> False

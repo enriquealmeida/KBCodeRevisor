@@ -1,0 +1,47 @@
+======OBJECT = PLoadCli.Procedure === Load Cli =====
+
+=== RULES ===
+      parm(In:&PrbSts, In:&CliId, In:&CrrUsr, In:&SegUsr, In:&PrbCnsId, In:&PrbPrio, In:&PrbEstadoActivo, In: &PrbPryId, in: &SisId, In:&VisualizationType, Out:&SummarizedInfo);
+
+
+=== PROCEDURE SOURCE ===
+&CallerUrl = PGetCallerUrl()
+  
+
+for each order CliId
+	defined by PrbHrsReal
+	&Count = 0
+	for each order CliId
+		defined by PrbHrsReal
+		&Count +=1
+	endfor
+	if &Count <> 0
+		&SummarizedInfoItem = new SummarizedInfo.Item()
+		&SummarizedInfoItem.DimensionId = CliId
+		&SummarizedInfoItem.DimensionDesc = CliId
+		&SummarizedInfoItem.Indicator = &Count
+		&SummarizedInfoItem.ListUrl = HListaSolicitudes2.Link( &PrbSts, CliId, &CrrUsr, &SegUsr, &PrbCnsId, &PrbPrio, &PrbEstadoActivo,&PrbPryId, &SisId)
+		&SummarizedInfoItem.DrillUrl = SummaryPrbTab.Link( &PrbSts, CliId, &CrrUsr, &SegUsr, &PrbCnsId, &PrbPrio, &PrbEstadoActivo, &PrbPryId, &SisId, &VisualizationType)
+		&SummarizedInfo.Items.Add(&SummarizedInfoItem)
+	
+		&SummarizedInfo.Total += &Count
+		if &SummarizedInfo.Max < &Count
+			&SummarizedInfo.Max = &Count										
+		endif
+		if &SummarizedInfo.Min > &Count
+			&SummarizedInfo.Min = &Count
+		endif
+	endif
+endfor
+&SummarizedInfo.ListTotalUrl = HListaSolicitudes2.Link( &PrbSts, Nullvalue(&CliId), &CrrUsr, &SegUsr, &PrbCnsId, &PrbPrio, &PrbEstadoActivo, &PrbPryId, &SisId)
+&SummarizedInfo.DrillTotalUrl = SummaryPrbTab.Link( &PrbSts, NullValue(&CliId), &CrrUsr, &SegUsr, &PrbCnsId, &PrbPrio, &PrbEstadoActivo,&PrbPryId, &SisId, &VisualizationType)
+&SummarizedInfo.GraphUrl = PGetGXChartUrl("http://www.gxchart.com/service/Drawchart.aspx?", "Solicitudes", 350, 300)
+
+
+====== PROPERTIES =======
+Name -> PLoadCli
+Description -> Load Cli 
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 40
+ObjectVisibility -> Private
+IsDefault -> False

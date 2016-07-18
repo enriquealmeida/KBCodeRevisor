@@ -1,0 +1,41 @@
+======OBJECT = WWTMTLegTpoDS.DataSelector === WWTMTLeg Tpo DS=====
+<Object parent="MOD_Sueldos.WorkWithPlusTMTLegTpo" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="f4d99951-fb8c-03fe-165d-0b6ca3165f66" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:32.0000000Z" checksum="83b928a2f5fde7fb53c223eb24b758c6" fullyQualifiedName="MOD_Sueldos.WWTMTLegTpoDS" guid="5d6b3452-08ff-4002-b779-9d43c4e06526" name="WWTMTLegTpoDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWTMTLeg Tpo DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[LegTpoDsc like &LegTpoDsc when not &LegTpoDsc.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="LegTpoDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>LegTpoDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:LegTpoDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>LegTpoDsc</Name>
+        <Description>Leg Tpo Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWTMTLegTpoDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Sueldos.WorkWithPlusTMTLegTpo</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWTMTLegTpoDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-127
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 127
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

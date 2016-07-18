@@ -1,0 +1,30 @@
+======OBJECT = RightTopWW.Image === Right Top WW=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:54.0000000Z" checksum="c5b3a76c014fb0ea1f921e878c2a2117" fullyQualifiedName="RightTopWW" guid="7b2e244c-8a3e-4a11-9756-2e51ee391313" name="RightTopWW" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Right Top WW">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="RightTopWW.gif" description="Right Top WW.gif"><Data>
+<base64Binary>
+R0lGODlhCgAeAMQAAP///6PL2YrH2qrQ3L/c5bLU4Njq8Mjh6efy9szk6+v09+Dv867S3sLe56LK2LPV4KfO26XN2tzt8rfX4tTo7qnP27DT37nZ4wAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAKAB4AAAV9oCAAZGmKJkmUo3m9ZEtatBWXQ57fQOD/t58QMBICiY6kMkk0AgVOHzFCrVKJkKw2S6x4
+v16ibjwgMs7oM7HAbrOJj7g8TpzY73YiYc/fExuAgYBEB4WGhUQJiouKRBSPkI9EBpSVlEQSmZqZRAuen55ECKOko0QKqKmoRCEAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>RightTopWW.gif</Value></Property><Property><Name>Description</Name><Value>Right Top WW.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="RightTopWW.gif" description="Right Top WW.gif"><Data>
+<base64Binary>
+R0lGODlhCgAeAMQAAP///6PL2YrH2qrQ3L/c5bLU4Njq8Mjh6efy9szk6+v09+Dv867S3sLe56LK2LPV4KfO26XN2tzt8rfX4tTo7qnP27DT37nZ4wAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAKAB4AAAV9oCAAZGmKJkmUo3m9ZEtatBWXQ57fQOD/t58QMBICiY6kMkk0AgVOHzFCrVKJkKw2S6x4
+v16ibjwgMs7oM7HAbrOJj7g8TpzY73YiYc/fExuAgYBEB4WGhUQJiouKRBSPkI9EBpSVlEQSmZqZRAuen55ECKOko0QKqKmoRCEAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>RightTopWW.gif</Value></Property><Property><Name>Description</Name><Value>Right Top WW.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>RightTopWW</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> RightTopWW
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,12 @@
+======OBJECT = ITAG.Index === ITAG=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-08-30T21:57:58.0000000Z" checksum="1429e78ac8f2bc67f6280b2275aa7453" fullyQualifiedName="ITAG" guid="c05fbad7-2aae-445b-acc8-a8eef5538f48" name="ITAG" type="9e750647-3679-0000-0100-2529de263960" description="ITAG">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">TagId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ITAG</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ITAG

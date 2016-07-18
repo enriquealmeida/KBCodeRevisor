@@ -1,0 +1,131 @@
+======OBJECT = HwCPMovR.WebPanel === Movimientos para revisar=====
+
+=== RULES ===
+parm( in: &FchIni, in: &FchFin);
+
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &Revisar.FromImage(flechita) //=loadBitmap('imagenes/flechita.gif')
+    //&Nuevo = loadBitmap('imagenes/flechita.gif')
+	
+    &pagina = 1
+	
+	&MassiveActionCheckAll = false
+	&MassiveActionUncheckAll = false
+EndEvent  // Start
+
+Event load
+//	if &MassiveActionCheckAll
+//		&Confirmar = Bool.true
+//	else
+//		if &MassiveActionUncheckAll
+//    		&Confirmar = Bool.false
+//		endif
+//	endif
+    Do 'Existe'
+    if &Existe = Bool.false  or CpMovCod = 'R' 
+        &Revisar.Link = Movimientos.Link(TrnMode.Update, CpMovId)
+        &vOK.Link = Hllmproc.link( CpMovId)
+        CpMovId.Link=Movimientos.Link(TrnMode.Update, CpMovId)
+        if &Existe = Bool.false 
+            PryId.ForeColor =RGB(255,0,0)
+            &vOK.Link= ''
+            &vOK='Error'			
+			//&Confirmar=Bool.false
+
+        else
+            PryId.ForeColor =RGB(0,0,0) 
+            &vOK.Link = Hllmproc.link( CpMovId)
+            &vOK='OK'
+//			&Confirmar=Bool.true
+
+        endif
+        load
+    endif
+EndEvent  // load
+
+
+
+Event 'ConfirmarMarcados'
+    for each line
+        if &Confirmar = Bool.true 
+            PCPMovR.call(CpMovId)
+        endif
+    endfor
+    Movimientos.FirstPage()
+EndEvent  // 'ConfirmarMarcados'
+
+Sub 'Existe'
+&Existe = Bool.false 
+for each
+where      PryId = PryId
+    &Existe = Bool.true  
+endfor
+if &Existe = Bool.true 
+    &Existe = Bool.false 
+    for each
+    where      CpRecId = CpRecId
+        &Existe = Bool.true 
+    endfor 
+endif
+EndSub
+
+
+Event 'AsignarProyecto'
+  for each line
+     if &Confirmar = Bool.true
+	    ActualizoProyectoCPMov(CpMovId,&Asignar)
+	 endif
+  endfor
+  commit
+  refresh
+	
+EndEvent
+
+Event 'AsignarRecurso'
+  for each line
+     if &Confirmar = Bool.true
+	    ActualizorecursoCPMov(CpMovId,&Asignar)
+	 endif
+  endfor
+  commit
+  refresh
+	
+EndEvent
+
+Event 'CheckAll'
+	for each line
+		if &vOK='OK'
+			&Confirmar=Bool.true
+		else
+            &Confirmar=Bool.false
+		endif
+	
+	endfor
+
+//	&MassiveActionCheckAll = true
+//	&MassiveActionUncheckAll = false
+//	Movimientos.Refresh()
+EndEvent
+
+Event 'UncheckAll'
+	for each line
+		&Confirmar=Bool.false
+	endfor
+
+	//&MassiveActionUncheckAll = true
+	//&MassiveActionCheckAll = false
+	//Movimientos.Refresh()
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HwCPMovR
+Description -> Movimientos para revisar
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

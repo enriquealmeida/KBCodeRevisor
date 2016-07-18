@@ -1,0 +1,10 @@
+======OBJECT = Liquidacion.Table === Cabezal de Liquidacion de Honorarios Mensuales=====
+*LiqAnio  ANIO- Null=False
+*LiqMes  Mes- Null=False
+ LiqCotizacionDolarenPesos  Cotizacion- Null=False
+ LiqFacturasFch  MDDate- Null=False
+ LiqResguardoMinimoImponiblePes  Importe- Null=False
+
+====== PROPERTIES =======
+Name -> Liquidacion
+Description -> Cabezal de Liquidacion de Honorarios Mensuales

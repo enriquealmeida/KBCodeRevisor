@@ -1,0 +1,30 @@
+======OBJECT = BtnUpdateImage.Image === Btn Update Image=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2015-05-05T17:03:56.0000000Z" checksum="f61e00fdbb0f1226361803687dbe87e4" fullyQualifiedName="BtnUpdateImage" guid="f5e2e436-d8ae-4308-86fb-8e0a25523ecc" name="BtnUpdateImage" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Btn Update Image">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="BtnUpdateImage.png" description="Btn Update Image.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEQAACxEBf2RfkQAAABh0RVh0U29mdHdhcmUAcGFp
+bnQubmV0IDQuMC41ZYUyZQAAAwBJREFUSEu1lqFOK0EUhkeUBIEgEAgCUVFBCQKB6AM0AQlJBU0q7gNUVFSSICFcgURUkLSCEAQgwCAQeNoUEhJIIICgSUVD
+Kioqytc9p8O02902N7mf2p3zz7+7Z86cWdMZRbPZvL29PTk5+evBxd3dHYMaDibQut1uFwqFjY2NyclJ44PBZDJ5dHTUarV0go/h1mdnZ7FYTG1CiUajpVJJ
+p/UzaM1bZDIZndeDx/COfzy4wE4DPTY3N/0p6rP++vpKJBIqN2Z6enp3d/fp6UnDDgzu7e0hUKkxKysrTNewx681j3V9s9lso9HQWAAIkOkEY5aWltx3/7VO
+pVKiiEQirI+OjgFipshc0sX6y7han5+fSwzG9H14eEin05IEakknG3N8fCyCrjXPsfXAQkkgnMfHx7m5OfTxeLxWqzGSy+XEYXFxUSqya80ukFGWpV6vd6eG
+8vz8zK6xa7i8vPz9/U2WFxYWZISPQNa1ttVGPXhzw6hWq7zv+vq66y45PDw8lFs2GreGbFjFy8uLNz0Q8it5AOs+Ozv7/v5O9PPzU0LsVT7CoJZ7ClPmB+H6
+CuJeqVRU0emsrq5KiHFzc3MjN9vb2xofht8XZmZmBjYUJhLqrh+1Ijf5fF7jPmw9uOB7f3+vih6YSJQeOdp6fF/osw5PCL7z8/MisOBbLpdV0U9fQkKW8fX1
+1e9LPQT5Qt8yUnxTU1Ny//b2phKPy8vLra0tCQnhvmx6kWnxMWS/ggSJCD4+PiYmJk5PT607vm6d+WHjiJImxW3XmmNChqh/20ivr68Zse4jfekbdA/xkc05
+2J7oMp6yc3BwICO4X1xcjNyoOzs7oqeT/LYnsB0KpCsWi8X9/f2rqysyI5oQ3OnSm0CtwT0KkOroGCAOOwpg4ACjC4b8CAgIbB4g8AADqmdtbU2FXtbok/Qz
+DTugZK3sugG+gceuwGM5+VXeg41AgbKJgQu7LyzkwX1fYdAaSBYr6f/ZGApfxrrZ/LoMsRbI43/5MXPhS//ld7LT+QGQ77Ih/o9GnQAAAABJRU5ErkJggg==
+
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>BtnUpdateImage.png</Value></Property><Property><Name>Description</Name><Value>Btn Update Image.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Desktop\BtnUpdateImage.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>BtnUpdateImage</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> BtnUpdateImage
+IsDefault -> False

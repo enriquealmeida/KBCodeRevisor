@@ -1,0 +1,9 @@
+======OBJECT = ContextManagement.Folder === Context Management=====
+<Object parent="WWPBaseObjects" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="f952860a-9553-4095-82c8-dedaadd8cf64" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-11-21T13:58:47.0000000Z" checksum="1d06ab5d4ca08455c6d0e42ca9fc5fd0" fullyQualifiedName="WWPBaseObjects.ContextManagement" guid="06c6b15d-11b9-4031-b60c-06ea808096f3" name="ContextManagement" type="00000000-0000-0000-0000-000000000008" description="Context Management">
+  <Properties><Property><Name>Name</Name><Value>ContextManagement</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+Name -> ContextManagement
+IsDefault -> False

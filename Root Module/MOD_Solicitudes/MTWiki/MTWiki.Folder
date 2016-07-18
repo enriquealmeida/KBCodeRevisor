@@ -1,0 +1,9 @@
+======OBJECT = MTWiki.Folder === MTWiki=====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="" versionDate="2016-03-14T02:22:11.0000000Z" lastUpdate="2016-03-14T00:05:46.0000000Z" checksum="68030194742595f132497a008a27e5dc" fullyQualifiedName="MOD_Solicitudes.MTWiki" guid="773c0ab2-38d1-4b68-b8aa-e2752bac5fe6" name="MTWiki" type="00000000-0000-0000-0000-000000000008" description="MTWiki">
+  <Properties><Property><Name>Name</Name><Value>MTWiki</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+Name -> MTWiki
+IsDefault -> False

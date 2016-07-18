@@ -1,0 +1,20 @@
+======OBJECT = ExisteResponsable.Procedure === Determina si existe el responsable. =====
+
+=== RULES ===
+parm(in: &RspId, out: &Existe);
+
+
+=== PROCEDURE SOURCE ===
+&Existe=false
+for each
+  where            RspId=&RspId
+  &Existe=true
+endfor
+
+
+====== PROPERTIES =======
+Name -> ExisteResponsable
+Description -> Determina si existe el responsable. 
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

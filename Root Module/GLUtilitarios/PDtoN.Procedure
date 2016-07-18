@@ -1,0 +1,16 @@
+======OBJECT = PDtoN.Procedure === Date to Numeric=====
+
+=== RULES ===
+parm(IN:&FchAux,OUT:&Num);
+
+
+=== PROCEDURE SOURCE ===
+&Num=Year(&FchAux)*10000 + Month(&FchAux)* 100 + Day(&FchAux)
+
+
+====== PROPERTIES =======
+Name -> PDtoN
+Description -> Date to Numeric
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

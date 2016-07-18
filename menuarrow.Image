@@ -1,0 +1,25 @@
+======OBJECT = menuarrow.Image === menuarrow=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-09-23T17:07:54.0000000Z" lastUpdate="2007-09-04T18:46:40.0000000Z" checksum="f241edafc059a5bae62f42a1b313c7a1" fullyQualifiedName="menuarrow" guid="69999b9b-d1f7-4e42-abc2-043357b0600b" name="menuarrow" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="menuarrow">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="menuarrow.gif" description="menuarrow.gif"><Data>
+<base64Binary>
+R0lGODlhBwAFAIABAEJCQv///yH5BAEAAAEALAAAAAAHAAUAAAIIhB15ycAPYwEAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>menuarrow.gif</Value></Property><Property><Name>Description</Name><Value>menuarrow.gif</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties></ImageItem>
+      <ImageItem><Image name="menuarrow.gif" description="menuarrow.gif"><Data>
+<base64Binary>
+R0lGODlhBwAFAIABAEJCQv///yH5BAEAAAEALAAAAAAHAAUAAAIIhB15ycAPYwEAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>menuarrow.gif</Value></Property><Property><Name>Description</Name><Value>menuarrow.gif</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>menuarrow</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> menuarrow
+IsDefault -> False

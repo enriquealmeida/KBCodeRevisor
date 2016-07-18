@@ -1,0 +1,23 @@
+======OBJECT = SortedDsc.Image === Sorted Dsc=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-06T13:30:21.0000000Z" checksum="fe82e2d72a2fbfa32ddf4324546180c0" fullyQualifiedName="SortedDsc" guid="97a17938-ceeb-4c25-99ec-934bdedd1082" name="SortedDsc" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Sorted Dsc">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="SortedDsc.png" description="Sorted Dsc.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAACVJREFUGFdj+P//PxwDAZBC4sMZQCYMo0giS8AwVBxTAoIZ/gMA+TEzzWAw2xsAAAAASUVORK5C
+YII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>SortedDsc.png</Value></Property><Property><Name>Description</Name><Value>Sorted Dsc.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\jgomez\Downloads\SortedDsc.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SortedDsc</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> SortedDsc
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

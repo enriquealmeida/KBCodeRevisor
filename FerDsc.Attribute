@@ -1,0 +1,14 @@
+======OBJECT = FerDsc.Attribute === Descripción feriado=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> FerDsc
+Description -> Descripción feriado
+HORIZONTAL_DESCRIPTION -> Descripción feriado
+VERTICAL_DESCRIPTION -> Descripción feriado
+ContextualTitle -> Descripción feriado
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

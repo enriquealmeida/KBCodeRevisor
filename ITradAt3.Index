@@ -1,0 +1,12 @@
+======OBJECT = ITradAt3.Index === ITrad At3=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:36.0000000Z" checksum="1ae765b2d35f4a67a82005803225119f" fullyQualifiedName="ITradAt3" guid="43e05552-587a-4a9e-b6a1-c6cef09a4f37" name="ITradAt3" type="9e750647-3679-0000-0100-2529de263960" description="ITrad At3">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PryId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ITradAt3</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ITradAt3

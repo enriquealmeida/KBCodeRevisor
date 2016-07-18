@@ -1,0 +1,15 @@
+======OBJECT = MDLgFch.Attribute === Fecha=====
+DATETIME(10.5)
+
+
+====== PROPERTIES =======
+Name -> MDLgFch
+Description -> Fecha
+HORIZONTAL_DESCRIPTION -> Fecha
+VERTICAL_DESCRIPTION -> Fecha
+ContextualTitle -> Fecha
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999 99:99
+IsDefault -> False

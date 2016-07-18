@@ -1,0 +1,27 @@
+======OBJECT = PCNumera.Procedure === Cambiar Numerador=====
+
+=== RULES ===
+parm(in:NumId ,out:&vNumUlt ) ;
+
+
+=== PROCEDURE SOURCE ===
+for each
+    NumUlt   = NumUlt + 1
+    &vNumUlt = NumUlt
+when None
+    new
+      NumUlt=1
+    endnew
+endfor
+commit
+
+
+====== PROPERTIES =======
+Name -> PCNumera
+Description -> Cambiar Numerador
+EXECUTE_IN_NEW_UTL -> True
+CommitOnExit -> No
+TRNCMT -> NO
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 22
+IsDefault -> False

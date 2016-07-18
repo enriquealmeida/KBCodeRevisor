@@ -1,0 +1,17 @@
+======OBJECT = PryObsCie.Attribute === Observaciones al cierre=====
+LONGVARCHAR(2097152)
+
+
+====== PROPERTIES =======
+Name -> PryObsCie
+Description -> Observaciones al cierre
+HORIZONTAL_DESCRIPTION -> Observaciones al cierre
+VERTICAL_DESCRIPTION -> Observaciones al cierre
+ContextualTitle -> Observaciones al cierre
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 2
+AutoResize -> False
+GxHeight -> 5row
+IsDefault -> False

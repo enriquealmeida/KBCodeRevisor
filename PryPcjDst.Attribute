@@ -1,0 +1,15 @@
+======OBJECT = PryPcjDst.Attribute === Porcentaje que recibe en distribución=====
+NUMERIC(8.4)
+
+
+====== PROPERTIES =======
+Name -> PryPcjDst
+Description -> Porcentaje que recibe en distribución
+HORIZONTAL_DESCRIPTION -> Porcentaje que recibe en distribución
+VERTICAL_DESCRIPTION -> % Recibe
+ContextualTitle -> Porcentaje que recibe en distribución
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZ9.9999
+IsDefault -> False

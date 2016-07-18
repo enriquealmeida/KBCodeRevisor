@@ -1,0 +1,217 @@
+======OBJECT = WorkWithPlusTMTPaises.WorkWithPlus === Work With Plus TMTPaises=====
+<Object parent="MOD_Proyectos.TMTPaises" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="1a7850e8-1eb9-4551-84c5-b34669cfe860" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-27T17:15:40.0000000Z" lastUpdate="2016-05-25T17:40:49.0000000Z" checksum="d054df73a39889894e406aea27dd6ebf" fullyQualifiedName="MOD_Proyectos.WorkWithPlusTMTPaises" guid="1d6b0878-4845-0dca-30cd-b5714b35771d" name="WorkWithPlusTMTPaises" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus TMTPaises">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWTMTPaises" defaultSecFuntionKey="WWTMTPaises">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.TMTPaises" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.TMTPaises" SecFuntionKeyINS="WWTMTPaises_Insert" defaultSecFuntionKeyINS="WWTMTPaises_Insert" SecFuntionKeyUPD="WWTMTPaises_Update" defaultSecFuntionKeyUPD="WWTMTPaises_Update" SecFuntionKeyDLT="WWTMTPaises_Delete" defaultSecFuntionKeyDLT="WWTMTPaises_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;TMTPaisesTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="TMTPaisesTitle" defaultControlName="TMTPaisesTitle" caption="Paises" defaultCaption="Paises" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" cellWidth_S="" cellWidth_L="" childrenOrderedList="2;22;MTPaisId-2;22;MTPaisDesc">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;MTPaisDesc-4;39;-;76;-5;41;" id="1a7850e8-1eb9-4551-84c5-b34669cfe860:1" defaultId="1a7850e8-1eb9-4551-84c5-b34669cfe860:1" name="TMTPaises" defaultName="TMTPaises">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Paises" defaultDescription=" Paises" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.WWTMTPaises" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportWWTMTPaises" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportReportWWTMTPaises" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Proyectos.WWTMTPaisesDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;TMTPaisesTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="TMTPaisesTitle" defaultControlName="TMTPaisesTitle" caption="Paises" defaultCaption="Paises" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;30;-4;12;MTPaisDesc">
+              <orders childrenOrderedList="4;13;=MTPaisDesc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order childrenOrderedList="4;26;MTPaisDesc;=MTPaisDesc.ContextualTitle" name="=MTPaisDesc.ContextualTitle" defaultName="=MTPaisDesc.ContextualTitle">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" />
+                </order>
+              </orders>
+              <filterAttribute name="MTPaisDesc" defaultName="MTPaisDesc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="MTPaisDesc like &amp;MTPaisDesc when not &amp;MTPaisDesc.IsEmpty()" defaultCondition="MTPaisDesc like &amp;MTPaisDesc when not &amp;MTPaisDesc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="4;17;Delete-4;17;Update-4;23;MTPaisId-4;23;MTPaisDesc">
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTPaisId = &amp;TFMTPaisId when not &amp;TFMTPaisId.IsEmpty()" defaultFilterCondition="MTPaisId = &amp;TFMTPaisId when not &amp;TFMTPaisId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="MTPaisDesc like &amp;TFMTPaisDesc when not &amp;TFMTPaisDesc.IsEmpty()" defaultFilterCondition="MTPaisDesc like &amp;TFMTPaisDesc when not &amp;TFMTPaisDesc.IsEmpty()" />
+          <standardAction name="Delete" defaultName="Delete" />
+        </grid>
+      </table>
+    </selection>
+    <prompt description="Select Paises" defaultDescription="Select Paises" childrenOrderedList=";77;MTPaisDesc;;76;-;02;TableMain" ShowMasterPageWhenPopUp="False" defaultShowMasterPageWhenPopUp="False">
+      <GenexusPatterns_Objects>
+        <Object Id="Prompt" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.PromptTMTPaises" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" height="493" defaultHeight="493" type="Responsive" defaultType="Responsive" childrenOrderedList=";02;TableHeader-;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList=";02;TableFilters">
+          <table name="TableFilters" defaultName="TableFilters" numberOfColumns="4" defaultNumberOfColumns="4" defaultNumberOfColumns_S="4" defaultNumberOfColumns_M="4" defaultNumberOfColumns_L="4" type="Responsive" defaultType="Responsive" childrenOrderedList=";30;-;12;MTPaisDesc">
+            <orders childrenOrderedList=";13;=MTPaisDesc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+              <order childrenOrderedList=";26;MTPaisDesc;=MTPaisDesc.ContextualTitle" name="=MTPaisDesc.ContextualTitle" defaultName="=MTPaisDesc.ContextualTitle">
+                <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" />
+              </order>
+            </orders>
+            <filterAttribute name="MTPaisDesc" defaultName="MTPaisDesc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="MTPaisDesc like &amp;MTPaisDesc when not &amp;MTPaisDesc.IsEmpty()" defaultCondition="MTPaisDesc like &amp;MTPaisDesc when not &amp;MTPaisDesc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          </table>
+        </table>
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList=";17;Select-;23;MTPaisId-;23;MTPaisDesc" columnSelector="False" defaultColumnSelector="False">
+          <standardAction name="Select" defaultName="Select" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTPaisId = &amp;TFMTPaisId when not &amp;TFMTPaisId.IsEmpty()" defaultFilterCondition="MTPaisId = &amp;TFMTPaisId when not &amp;TFMTPaisId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="MTPaisDesc like &amp;TFMTPaisDesc when not &amp;TFMTPaisDesc.IsEmpty()" defaultFilterCondition="MTPaisDesc like &amp;TFMTPaisDesc when not &amp;TFMTPaisDesc.IsEmpty()" />
+        </grid>
+      </table>
+      <parameters>
+        <parameter name="MTPaisDesc" defaultName="MTPaisDesc" />
+      </parameters>
+    </prompt>
+    <view childrenOrderedList="5;14;MTPaisId;5;41;-5;06;Main Table-5;38;" caption="MTPaisDesc.ToString()" defaultCaption="MTPaisDesc.ToString()">
+      <GenexusPatterns_Objects>
+        <Object Id="View" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.ViewTMTPaises" />
+      </GenexusPatterns_Objects>
+      <parameters>
+        <parameter name="MTPaisId" defaultName="MTPaisId" />
+      </parameters>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableContentNoMargin" defaultThemeClass="TableContentNoMargin" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="5;06;TableTitle-5;29;WorkWithLink-5;34;">
+        <table name="TableTitle" defaultName="TableTitle" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellWidth_E="58%" defaultCellWidth_E="58%" cellThemeClass="CellViewTableTitle CellWidthAuto" defaultCellThemeClass="CellViewTableTitle CellWidthAuto" childrenOrderedList="5;27;ViewTitle-5;21;MTPaisDesc">
+          <textBlock controlName="ViewTitle" defaultControlName="ViewTitle" caption="Paises :: " defaultCaption="Paises :: " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewTextBlockTitle" defaultCellThemeClass="CellViewTextBlockTitle" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeTitleWWP" defaultThemeClass="AttributeTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewAttributeTitle" defaultCellThemeClass="CellViewAttributeTitle" showDescription="False" defaultShowDescription="False" />
+        </table>
+        <workWithLink themeClass="TextBlockLink" defaultThemeClass="TextBlockLink" cellWidth_E="42%" defaultCellWidth_E="42%" cellThemeClass="CellAlignRightWithMargin CellWidthAuto" defaultCellThemeClass="CellAlignRightWithMargin CellWidthAuto" align="Right" defaultAlign="Right" />
+        <tabsPosition cellThemeClass="CellViewTabsPosition" defaultCellThemeClass="CellViewTabsPosition" colSpan="999" defaultColSpan="999" startCol="1" defaultStartCol="1" />
+      </table>
+      <tabs childrenOrderedList="TMTPaisesGeneral;42;General-TMTPaisesProyectosWC;43;Proyectos-TMTPaisesProyectosCierreWC;43;ProyectosCierre-TMTPaisesClienteWC;43;Cliente">
+        <tabularTab childrenOrderedList="TMTPaisesGeneral;04;Main Table" name="General" defaultName="General" code="General" defaultCode="General" wcname="TMTPaisesGeneral" defaultWcname="TMTPaisesGeneral">
+          <GenexusPatterns_Objects>
+            <Object Id="TabTabular" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.TMTPaisesGeneral" />
+          </GenexusPatterns_Objects>
+          <table name="Table" defaultName="Table" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="TMTPaisesGeneral;28;ErrorViewer-TMTPaisesGeneral;04;TableAttributes-TMTPaisesGeneral;04;TableActions">
+            <errorViewer />
+            <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="TMTPaisesGeneral;21;MTPaisId-TMTPaisesGeneral;21;MTPaisDesc">
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTPaisDesc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+            </table>
+            <table name="TableActions" defaultName="TableActions" themeClass="TableActions" defaultThemeClass="TableActions" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="TMTPaisesGeneral;88;Actions">
+              <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="TMTPaisesGeneral;91;Update-TMTPaisesGeneral;91;Delete">
+                <standardAction caption="GXM_update" defaultCaption="GXM_update" buttonClass="Button" defaultButtonClass="Button" name="Update" defaultName="Update" />
+                <standardAction caption="GX_BtnDelete" defaultCaption="GX_BtnDelete" buttonClass="Button" defaultButtonClass="Button" name="Delete" defaultName="Delete" />
+              </actionGroup>
+            </table>
+          </table>
+        </tabularTab>
+        <gridTab childrenOrderedList="TMTPaisesProyectosWC;14;MTPryPais;TMTPaisesProyectosWC;43;Proyectos-TMTPaisesProyectosWC;35;-TMTPaisesProyectosWC;02;Main Table" name="Pais del Proyecto" defaultName="Pais del Proyecto" code="Proyectos" defaultCode="Proyectos" wcname="TMTPaisesProyectosWC" defaultWcname="TMTPaisesProyectosWC" collapsedByDefault="True" defaultCollapsedByDefault="True">
+          <GenexusPatterns_Objects>
+            <Object Id="TabGrid" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.TMTPaisesProyectosWC" />
+          </GenexusPatterns_Objects>
+          <parameters>
+            <parameter name="MTPryPais" defaultName="MTPryPais" />
+          </parameters>
+          <transaction transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Proyectos" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Proyectos" />
+          <table name="TableGridHeader" defaultName="TableGridHeader" themeClass="Table100x100" defaultThemeClass="Table100x100" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" colSpan="999" defaultColSpan="999" childrenOrderedList="TMTPaisesProyectosWC;28;ErrorViewer-TMTPaisesProyectosWC;02;TableHeader-TMTPaisesProyectosWC;31;">
+            <errorViewer />
+            <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="TMTPaisesProyectosWC;27;ProyectosTitle-TMTPaisesProyectosWC;02;TableActions-TMTPaisesProyectosWC;02;TableRightHeader">
+              <textBlock controlName="ProyectosTitle" defaultControlName="ProyectosTitle" caption="Proyectos" defaultCaption="Proyectos" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" cellVisible_E="False" defaultCellVisible_E="False" />
+              <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="CellWidthAuto" defaultCellThemeClass="CellWidthAuto" />
+              <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="TMTPaisesProyectosWC;88;Actions-TMTPaisesProyectosWC;02;TableFilters">
+                <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="TMTPaisesProyectosWC;91;Insert" cellWidth_S="8%" defaultCellWidth_S="8%">
+                  <standardAction name="Insert" defaultName="Insert" />
+                </actionGroup>
+                <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="TMTPaisesProyectosWC;30;-TMTPaisesProyectosWC;12;PryNom">
+                  <orders childrenOrderedList="TMTPaisesProyectosWC;13;=PryNom.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                    <order childrenOrderedList="TMTPaisesProyectosWC;26;PryNom;=PryNom.ContextualTitle" name="=PryNom.ContextualTitle" defaultName="=PryNom.ContextualTitle">
+                      <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" />
+                    </order>
+                  </orders>
+                  <filterAttribute name="PryNom" defaultName="PryNom" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="PryNom like &amp;PryNom when not &amp;PryNom.IsEmpty()" defaultCondition="PryNom like &amp;PryNom when not &amp;PryNom.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+                </table>
+              </table>
+            </table>
+            <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="TMTPaisesProyectosWC;17;Delete-TMTPaisesProyectosWC;17;Update-TMTPaisesProyectosWC;23;PryId-TMTPaisesProyectosWC;23;PryNom-TMTPaisesProyectosWC;23;CliId-TMTPaisesProyectosWC;23;PryCls-TMTPaisesProyectosWC;23;PryTpo-TMTPaisesProyectosWC;23;PryRspId-TMTPaisesProyectosWC;23;PryDist-TMTPaisesProyectosWC;23;PryFchIni-TMTPaisesProyectosWC;23;PryFchAprCli-TMTPaisesProyectosWC;23;PryFchFinP-TMTPaisesProyectosWC;23;PryFchFin-TMTPaisesProyectosWC;23;PryAct-TMTPaisesProyectosWC;23;PrySts-TMTPaisesProyectosWC;23;PryHorDscObligatoria-TMTPaisesProyectosWC;23;PryPcjDst-TMTPaisesProyectosWC;23;PryObsIng-TMTPaisesProyectosWC;23;PryObsCie-TMTPaisesProyectosWC;23;PryTpoHorasOblig-TMTPaisesProyectosWC;23;PryTpoAprOblig-TMTPaisesProyectosWC;23;PryTpoFechaOblig-TMTPaisesProyectosWC;23;MTCliPais-TMTPaisesProyectosWC;23;PryValHrs-TMTPaisesProyectosWC;23;PryHrsPln-TMTPaisesProyectosWC;23;PryExt-TMTPaisesProyectosWC;23;MTPryFrmFct-TMTPaisesProyectosWC;23;PryEvaluacionCierre-TMTPaisesProyectosWC;23;KBId" columnSelector="False" defaultColumnSelector="False">
+              <standardAction name="Update" defaultName="Update" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PryId = &amp;TFPryId when not &amp;TFPryId.IsEmpty()" defaultFilterCondition="PryId = &amp;TFPryId when not &amp;TFPryId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="PryNom like &amp;TFPryNom when not &amp;TFPryNom.IsEmpty()" defaultFilterCondition="PryNom like &amp;TFPryNom when not &amp;TFPryNom.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CliId = &amp;TFCliId when not &amp;TFCliId.IsEmpty()" defaultFilterCondition="CliId = &amp;TFCliId when not &amp;TFCliId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryAct" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryAct" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PryAct = &amp;TFPryAct when not &amp;TFPryAct.IsEmpty()" defaultFilterCondition="PryAct = &amp;TFPryAct when not &amp;TFPryAct.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrySts" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrySts" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrySts = &amp;TFPrySts when not &amp;TFPrySts.IsEmpty()" defaultFilterCondition="PrySts = &amp;TFPrySts when not &amp;TFPrySts.IsEmpty()" />
+              <standardAction name="Delete" defaultName="Delete" />
+            </grid>
+          </table>
+        </gridTab>
+        <gridTab childrenOrderedList="TMTPaisesClienteWC;14;MTCliPais;TMTPaisesClienteWC;43;Cliente-TMTPaisesClienteWC;35;-TMTPaisesClienteWC;02;Main Table" name="Pais del Cliente" defaultName="Pais del Cliente" code="Cliente" defaultCode="Cliente" wcname="TMTPaisesClienteWC" defaultWcname="TMTPaisesClienteWC" collapsedByDefault="True" defaultCollapsedByDefault="True">
+          <GenexusPatterns_Objects>
+            <Object Id="TabGrid" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.TMTPaisesClienteWC" />
+          </GenexusPatterns_Objects>
+          <parameters>
+            <parameter name="MTCliPais" defaultName="MTCliPais" />
+          </parameters>
+          <transaction transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Cliente" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Cliente" />
+          <table name="TableGridHeader" defaultName="TableGridHeader" themeClass="Table100x100" defaultThemeClass="Table100x100" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" colSpan="999" defaultColSpan="999" childrenOrderedList="TMTPaisesClienteWC;28;ErrorViewer-TMTPaisesClienteWC;02;TableHeader-TMTPaisesClienteWC;31;">
+            <errorViewer />
+            <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="TMTPaisesClienteWC;27;ClienteTitle-TMTPaisesClienteWC;02;TableActions-TMTPaisesClienteWC;02;TableRightHeader">
+              <textBlock controlName="ClienteTitle" defaultControlName="ClienteTitle" caption="Clientes" defaultCaption="Clientes" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" cellVisible_E="False" defaultCellVisible_E="False" />
+              <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="CellWidthAuto" defaultCellThemeClass="CellWidthAuto" />
+              <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="TMTPaisesClienteWC;88;Actions-TMTPaisesClienteWC;02;TableFilters">
+                <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="TMTPaisesClienteWC;91;Insert" cellWidth_S="8%" defaultCellWidth_S="8%">
+                  <standardAction name="Insert" defaultName="Insert" />
+                </actionGroup>
+                <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="TMTPaisesClienteWC;30;-TMTPaisesClienteWC;12;CliNom">
+                  <orders childrenOrderedList="TMTPaisesClienteWC;13;=CliNom.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                    <order childrenOrderedList="TMTPaisesClienteWC;26;CliNom;=CliNom.ContextualTitle" name="=CliNom.ContextualTitle" defaultName="=CliNom.ContextualTitle">
+                      <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliNom" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliNom" />
+                    </order>
+                  </orders>
+                  <filterAttribute name="CliNom" defaultName="CliNom" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="CliNom like &amp;CliNom when not &amp;CliNom.IsEmpty()" defaultCondition="CliNom like &amp;CliNom when not &amp;CliNom.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+                </table>
+              </table>
+            </table>
+            <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="TMTPaisesClienteWC;17;Delete-TMTPaisesClienteWC;17;Update-TMTPaisesClienteWC;23;CliId-TMTPaisesClienteWC;23;CliNom-TMTPaisesClienteWC;23;CliMailSol-TMTPaisesClienteWC;23;CliPagPla-TMTPaisesClienteWC;23;CliAjuAnio-TMTPaisesClienteWC;23;CliTpoId-TMTPaisesClienteWC;23;CliAct-TMTPaisesClienteWC;23;CliActivo-TMTPaisesClienteWC;23;CliInterno-TMTPaisesClienteWC;23;KBWikiId" columnSelector="False" defaultColumnSelector="False">
+              <standardAction name="Update" defaultName="Update" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CliId = &amp;TFCliId when not &amp;TFCliId.IsEmpty()" defaultFilterCondition="CliId = &amp;TFCliId when not &amp;TFCliId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliNom" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliNom" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="CliNom like &amp;TFCliNom when not &amp;TFCliNom.IsEmpty()" defaultFilterCondition="CliNom like &amp;TFCliNom when not &amp;TFCliNom.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliMailSol" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliMailSol" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CliMailSol like &amp;TFCliMailSol when not &amp;TFCliMailSol.IsEmpty()" defaultFilterCondition="CliMailSol like &amp;TFCliMailSol when not &amp;TFCliMailSol.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliPagPla" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliPagPla" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CliPagPla = &amp;TFCliPagPla when not &amp;TFCliPagPla.IsEmpty()" defaultFilterCondition="CliPagPla = &amp;TFCliPagPla when not &amp;TFCliPagPla.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliAjuAnio" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliAjuAnio" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" cellVisible_S="False" filterCondition="CliAjuAnio = &amp;TFCliAjuAnio when not &amp;TFCliAjuAnio.IsEmpty()" defaultFilterCondition="CliAjuAnio = &amp;TFCliAjuAnio when not &amp;TFCliAjuAnio.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliTpoId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliTpoId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CliTpoId = &amp;TFCliTpoId when not &amp;TFCliTpoId.IsEmpty()" defaultFilterCondition="CliTpoId = &amp;TFCliTpoId when not &amp;TFCliTpoId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliActivo" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliActivo" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CliActivo = &amp;TFCliActivo when not &amp;TFCliActivo.IsEmpty()" defaultFilterCondition="CliActivo = &amp;TFCliActivo when not &amp;TFCliActivo.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliInterno" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliInterno" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CliInterno = &amp;TFCliInterno when not &amp;TFCliInterno.IsEmpty()" defaultFilterCondition="CliInterno = &amp;TFCliInterno when not &amp;TFCliInterno.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBWikiId = &amp;TFKBWikiId when not &amp;TFKBWikiId.IsEmpty()" defaultFilterCondition="KBWikiId = &amp;TFKBWikiId when not &amp;TFKBWikiId.IsEmpty()" />
+              <standardAction name="Delete" defaultName="Delete" />
+            </grid>
+          </table>
+        </gridTab>
+      </tabs>
+    </view>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusTMTPaises</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.TMTPaises</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 64
+Name -> WorkWithPlusTMTPaises
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-64
+IsDefault -> False

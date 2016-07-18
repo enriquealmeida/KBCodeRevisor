@@ -1,0 +1,28 @@
+======OBJECT = TabGroupPrevious.Image === Tab Group Previous=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:55.0000000Z" checksum="75dd8764f29262f2dfec32b12ec41e7c" fullyQualifiedName="TabGroupPrevious" guid="23d403d6-d1e5-4c79-aab4-f073de218b70" name="TabGroupPrevious" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Tab Group Previous">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="TabGroupPrevious.gif" description="Tab Group Previous.gif"><Data>
+<base64Binary>
+R0lGODlhDAALAMQZAIqKi6SkpImIiaioqKqqqaKiopycm76+vrq6urS0tLe2tri4uIKBgcXGxZOTk6CgoKysq7CxsJqZmXBxccvMy8C/v3p6ebKyspGRkf//
+/wAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABkALAAAAAAMAAsAQAUmYCaOZFkKlik2C2GoIwLByiABcG4meXUFKsohUnDkHhiGLjMRhQAAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>TabGroupPrevious.gif</Value></Property><Property><Name>Description</Name><Value>Tab Group Previous.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="TabGroupPrevious.gif" description="Tab Group Previous.gif"><Data>
+<base64Binary>
+R0lGODlhDAALAMQZAIqKi6SkpImIiaioqKqqqaKiopycm76+vrq6urS0tLe2tri4uIKBgcXGxZOTk6CgoKysq7CxsJqZmXBxccvMy8C/v3p6ebKyspGRkf//
+/wAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABkALAAAAAAMAAsAQAUmYCaOZFkKlik2C2GoIwLByiABcG4meXUFKsohUnDkHhiGLjMRhQAAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>TabGroupPrevious.gif</Value></Property><Property><Name>Description</Name><Value>Tab Group Previous.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>TabGroupPrevious</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> TabGroupPrevious
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

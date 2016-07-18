@@ -1,0 +1,41 @@
+======OBJECT = TabUnselectedSelected.Image === Tab Unselected Selected=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:55.0000000Z" checksum="7ae7a3ce7cacb596ca2ec9448060392d" fullyQualifiedName="TabUnselectedSelected" guid="a908a75c-9ebf-4d01-bcda-9711089e0493" name="TabUnselectedSelected" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Tab Unselected Selected">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="Tab_secundario_seleccionado.jpg" description="Tab Unselected Selected.jpg"><Data>
+<base64Binary>
+/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMD/8AAEQgAGQARAwERAAIRAQMRAf/EAHQAAAMBAQAAAAAAAAAAAAAAAAAFCQgDAQADAQADAAAAAAAAAAAAAAAABwgEAgMJEAABBAEDBQEAAAAA
+AAAAAAACAAEDBAURtDUhEnR1BggRAAEDAwIFBQAAAAAAAAAAAAIAAQNzBDQRskGRsVIFITFCMwf/2gAMAwEAAhEDEQA/AG+G5jFeyo7qJVzf4M1I9rrzzsc2
+GqG5lKjK8pkvPubiRWfZYcVIdrKULvKkqF1dL1qWdVnw3MYr2VHdRKJr/BmpHtdVvY5sNUNzKVGV5TJefc3Eis+yw4qQ7WUoXeVJULq6XrUs60lV/TP1lS1W
+tBgPnSOtPDYASHJdpFDIMgiWl5n7XceuiU835F4WaE4SubphMXF/r4tp2JlQ/p3l4ZRlG3tnISZ/nwfXuWc7M5WbE9k2YSsTSzkI69olKZSOw6u76M5dE1Io
+2iiGIfVhFm5NolxIbyyFI/uRO/N9VxXYuCqqkynehCEIQv/Z
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Tab_secundario_seleccionado.jpg</Value></Property><Property><Name>Description</Name><Value>Tab Unselected Selected.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\Tab_secundario_seleccionado.jpg</Value></Property></Properties></ImageItem>
+      <ImageItem><Image name="TabUnselectedSelected.png" description="Tab Unselected Selected.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAkAAAAqCAIAAADuy+bfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAFhJREFUOE9j+I8bMKBJvXv3
+7uHDh3fBAEXu8ePHHz58+P37N0QDQg6oAyiBbAxCDmjU379/scsBLUCzG6FvVG40zNDT2WiaGLRpAlJcAMHLly9x5mnMMggAd9BXw20jXkQAAAAASUVORK5C
+YII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>TabUnselectedSelected.png</Value></Property><Property><Name>Description</Name><Value>Tab Unselected Selected.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\Tabs\BootstrapTabs_images\TabUnselectedSelected.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="TabUnselectedSelected.png" description="Tab Unselected Selected.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAkAAAAqCAIAAADuy+bfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAFhJREFUOE9j+I8bMKBJvXv3
+7uHDh3fBAEXu8ePHHz58+P37N0QDQg6oAyiBbAxCDmjU379/scsBLUCzG6FvVG40zNDT2WiaGLRpAlJcAMHLly9x5mnMMggAd9BXw20jXkQAAAAASUVORK5C
+YII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>TabUnselectedSelected.png</Value></Property><Property><Name>Description</Name><Value>Tab Unselected Selected.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\Tabs\BootstrapTabs_images\TabUnselectedSelected.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>TabUnselectedSelected</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> TabUnselectedSelected
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

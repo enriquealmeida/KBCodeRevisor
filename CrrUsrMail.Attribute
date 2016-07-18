@@ -1,0 +1,14 @@
+======OBJECT = CrrUsrMail.Attribute === Usuario de Mail (Cierre)=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> CrrUsrMail
+Description -> Usuario de Mail (Cierre)
+HORIZONTAL_DESCRIPTION -> Usuario de Mail (Cierre)
+VERTICAL_DESCRIPTION -> CIERRE
+ContextualTitle -> CIERRE
+Class -> INFERRED
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-101
+IsDefault -> False

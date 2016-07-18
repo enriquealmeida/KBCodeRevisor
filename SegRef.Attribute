@@ -1,0 +1,15 @@
+======OBJECT = SegRef.Attribute === Referencia=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> SegRef
+Description -> Referencia
+HORIZONTAL_DESCRIPTION -> Referencia
+VERTICAL_DESCRIPTION -> Referencia
+ContextualTitle -> Referencia
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = RspDPla.Attribute === Días Trabajados en Plaza=====
+NUMERIC(2)
+
+
+====== PROPERTIES =======
+Name -> RspDPla
+Description -> Días Trabajados en Plaza
+HORIZONTAL_DESCRIPTION -> Días Trabajados en Plaza
+VERTICAL_DESCRIPTION -> Días Trabajados en Plaza
+ContextualTitle -> Días Trabajados en Plaza
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> Z9
+IsDefault -> False

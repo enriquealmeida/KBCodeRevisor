@@ -1,0 +1,10 @@
+======OBJECT = MTInd.Table === Indicadores=====
+*IndId  Codigo10- Null=False
+ IndDsc  DESC- Null=False
+ IndObs  Observaciones- Null=False
+ IndActivo  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> MTInd
+Description -> Indicadores
+CACHE_LEVEL -> 1

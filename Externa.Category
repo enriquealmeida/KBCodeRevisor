@@ -1,0 +1,10 @@
+======OBJECT = Externa.Category === Externa=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-10-25T17:43:10.0000000Z" checksum="36f39e191133e113241e9126d20b37e9" fullyQualifiedName="Externa" guid="24d2ebb7-fd8b-43ec-bd6c-1b7211df1cd1" name="Externa" type="00000000-0000-0000-0000-000000000006" description="Externa">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Externa</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Externa
+IsDefault -> False

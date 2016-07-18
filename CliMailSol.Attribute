@@ -1,0 +1,14 @@
+======OBJECT = CliMailSol.Attribute === Mail para enviar Solicitudes=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> CliMailSol
+Description -> Mail para enviar Solicitudes
+HORIZONTAL_DESCRIPTION -> Mail para enviar Solicitudes
+VERTICAL_DESCRIPTION -> Mail para enviar Solicitudes
+ContextualTitle -> Mail para enviar Solicitudes
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

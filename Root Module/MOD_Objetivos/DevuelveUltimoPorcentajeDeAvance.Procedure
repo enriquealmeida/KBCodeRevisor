@@ -1,0 +1,22 @@
+======OBJECT = DevuelveUltimoPorcentajeDeAvance.Procedure === Devuelve Ultimo Porcentaje De Avance=====
+
+=== RULES ===
+parm(in: &ObjId, out:&ObjPcjAva);
+
+
+=== PROCEDURE SOURCE ===
+for each Order (IndMedFch)
+ 	where ObjId = &ObjId
+    &ObjPcjAva=ObjPcjAvance
+	exit
+endfor
+
+	
+
+
+====== PROPERTIES =======
+Name -> DevuelveUltimoPorcentajeDeAvance
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 9
+ObjectVisibility -> Public
+IsDefault -> False

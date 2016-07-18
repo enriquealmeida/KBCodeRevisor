@@ -1,0 +1,56 @@
+======OBJECT = HWCHorPrb.WebComponent === Resumen de Horas por Solicitudes=====
+
+=== RULES ===
+parm(in:&RspId, in:&CliId, in:&PryId, in:&PryCls, in:&PryTpo, in:&TarId, in:&FchIni, in:&FchFin, in:&HrsPrbId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &HrsCntTot = PCntTHrs(&PryId, &TarId, &RspId, &CliId, &FchIni, &FchFin, &prycls, &prytpo, &HrsPrbId)
+EndEvent  // Start
+
+Event SbfTar.load
+	//&HrsPrbIdNull=&HrbPrbId.SetEmpty()
+    for each order PrbId using HorasSolicitudesDS(&FchIni, &FchFin, &CliId, &PryTpo, &PryCls, &PryId, &TarId, &RspId, &HrsPrbId)
+		&PrbId = PrbId
+        &PrbDsc = DevuelvoPrbDsc(PrbId)
+		//&PrbDsc =  &PrbDsc.Substring(1,30)
+		&HrsCnt = 0 
+		for each order PrbId
+		    &HrsCnt += HrsCnt
+	    endfor
+       	&PrbHrsPln = PrbHrsPln
+        &TarIdSbf =  &PrbId.ToString()
+        &TarDscSbf =  &PrbDsc.Substring(1,30)
+
+        &HrsPcj = 0
+        if &HrsCnt <> 0
+            &HrsPcj = round(&HrsCnt * 100 / &HrsCntTot, 2)
+            load
+        endif
+	    
+	endfor
+    
+	
+    &TarIdSbf =''
+    &TarDscSbf = 'Total' 
+    &TarDscSbf.FontBold=1
+    &HrsCnt = &HrsCntTot
+    &HrsCnt.FontBold=1
+    &HrsPcj=100
+    load
+EndEvent  // SbfCli.load
+
+
+
+
+====== PROPERTIES =======
+Name -> HWCHorPrb
+Description -> Resumen de Horas por Solicitudes
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 85
+ObjectVisibility -> Private
+IsDefault -> False

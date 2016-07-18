@@ -1,0 +1,9 @@
+======OBJECT = Uploadify.Folder === Uploadify=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T16:27:34.0000000Z" checksum="7da0536811a9f17ac687af8767d65d65" fullyQualifiedName="Uploadify" guid="3fbb450d-517d-4d38-8803-d8cff1e08b73" name="Uploadify" type="00000000-0000-0000-0000-000000000008" description="Uploadify">
+  <Properties><Property><Name>Name</Name><Value>Uploadify</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> Uploadify
+IsDefault -> False

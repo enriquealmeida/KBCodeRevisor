@@ -1,0 +1,8 @@
+======OBJECT = GLUsuAmb.Table === Ambientes=====
+*GLUsAmbId  DMClave- Null=False
+ GLUsAmbDsc  DMDescLarga- Null=False
+
+====== PROPERTIES =======
+Name -> GLUsuAmb
+Description -> Ambientes
+CACHE_LEVEL -> 2

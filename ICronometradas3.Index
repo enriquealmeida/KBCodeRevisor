@@ -1,0 +1,12 @@
+======OBJECT = ICronometradas3.Index === ICronometradas3=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-09-03T19:00:19.0000000Z" checksum="46e7ccca3c51f8f5537a9ae36f486be2" fullyQualifiedName="ICronometradas3" guid="7d85544b-4488-460a-b9d5-5d4e1e514b73" name="ICronometradas3" type="9e750647-3679-0000-0100-2529de263960" description="ICronometradas3">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">TarId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ICronometradas3</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ICronometradas3

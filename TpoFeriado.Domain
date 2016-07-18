@@ -1,0 +1,25 @@
+======OBJECT = TpoFeriado.Domain === Tipo de feriado=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-23T19:13:21.0000000Z" lastUpdate="2016-05-23T17:13:57.0000000Z" checksum="e801d226f084100e5eb69725b1fdb2d0" fullyQualifiedName="TpoFeriado" guid="d9371210-6e94-4644-865e-78762ec28e38" name="TpoFeriado" type="00972a17-9975-449e-aab1-d26165d51393" description="Tipo de feriado">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>TpoFeriado</Value></Property><Property><Name>Description</Name><Value>Tipo de feriado</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>AttMaxLen</Name><Value>1</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>F, Fijo, Fijo; M, Movil, Móvil</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> TpoFeriado
+Description -> Tipo de feriado
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 1
+AttMaxLen -> 1
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

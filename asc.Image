@@ -1,0 +1,21 @@
+======OBJECT = asc.Image === asc=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-08-28T13:06:17.0000000Z" checksum="d78875dabb20c49ef329f0ba909ab675" fullyQualifiedName="asc" guid="153bb27f-6514-4286-8fc1-9da3d51fe511" name="asc" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="asc">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="asc.gif" description="asc.gif"><Data>
+<base64Binary>
+R0lGODlhCwAHAJEAAAAAAP///////wAAACH5BAUUAAIALAAAAAALAAcAAAIUlA2nGLkCgnQnylmvTlZfAIYiWAAAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>asc.gif</Value></Property><Property><Name>Description</Name><Value>asc.gif</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Temp\asc.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>asc</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> asc
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

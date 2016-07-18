@@ -1,0 +1,11 @@
+======OBJECT = RspFchNacimiento.Attribute === Nacimiento=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> RspFchNacimiento
+Description -> Nacimiento
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = PrbDocFileExt.Attribute === Extension=====
+VARCHAR(6)
+
+
+====== PROPERTIES =======
+Name -> PrbDocFileExt
+Description -> Extension
+HORIZONTAL_DESCRIPTION -> Extension
+VERTICAL_DESCRIPTION -> Extension
+ContextualTitle -> Extension
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

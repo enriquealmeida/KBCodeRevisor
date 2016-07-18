@@ -1,0 +1,12 @@
+======OBJECT = INIVHAB1.Index === INIVHAB1=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:26.0000000Z" checksum="a8136688d80623edacf8f0786627b2e9" fullyQualifiedName="INIVHAB1" guid="dfdd7145-242e-4dfb-9102-34c57b83cfc7" name="INIVHAB1" type="9e750647-3679-0000-0100-2529de263960" description="INIVHAB1">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">GLUsAmbId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>INIVHAB1</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> INIVHAB1

@@ -1,0 +1,11 @@
+======OBJECT = PrbAprobadoFecha.Attribute === Fecha Aprobado=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> PrbAprobadoFecha
+Description -> Fecha Aprobado
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

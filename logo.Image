@@ -1,0 +1,16 @@
+======OBJECT = logo.Image === logo=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:31:10.0000000Z" checksum="92b391545be5a0a51c22729e7e4aacc0" fullyQualifiedName="logo" guid="0978f264-c036-4642-b5de-fb379d5dd15e" name="logo" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="logo">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="" description="" /><Properties><Property><Name>Description</Name><Value /></Property><Property><Name>IsExternalImage</Name><Value>True</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>http://www.concepto.com.uy/images/logo.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>logo</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> logo
+IsDefault -> False

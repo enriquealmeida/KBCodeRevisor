@@ -1,0 +1,22 @@
+======OBJECT = Integer.Domain === Integer=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:22:45.0000000Z" checksum="60f89a68cdc2b438c62eff791583ca98" fullyQualifiedName="Integer" guid="fd5c7b25-89b9-4f1f-b66f-3984f760fb1a" name="Integer" type="00972a17-9975-449e-aab1-d26165d51393" description="Integer">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Integer</Value></Property><Property><Name>Length</Name><Value>5</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Integer
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 5
+Decimals -> 0
+IsDefault -> False

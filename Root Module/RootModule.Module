@@ -1,0 +1,13 @@
+======OBJECT = RootModule.Module === Root Module=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T16:27:32.0000000Z" checksum="fbe5cb07d47d20f4ad6f67be56542482" fullyQualifiedName="Root Module" guid="afa47377-41d5-4ae8-9755-6f53150aa361" name="Root Module" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="Root Module">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Properties />
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Root Module</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Root Module
+IsDefault -> False

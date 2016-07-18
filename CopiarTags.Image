@@ -1,0 +1,36 @@
+======OBJECT = CopiarTags.Image === Copiar Tags=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-19T17:41:24.0000000Z" checksum="0dc4404f5a6b65876fc7f45de3dd8578" fullyQualifiedName="CopiarTags" guid="e7d024a9-91c3-40f4-b78e-a74977c03b74" name="CopiarTags" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Copiar Tags">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="CopiarTags.png" description="Copiar Tags.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAYAAABxnDbHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOwwAADsMBx2+oZAAAABx0RVh0U29mdHdhcmUAQWRv
+YmUgRmlyZXdvcmtzIENTNui8sowAAATjSURBVEiJnZV/TNRlHMdfz/fH3Zc78A4U1JDQsqy1knNKTmepS61ZTcvSXbOSVozU5bSirbXcasuV5mZXN02ubEWh
+1bDNpllac9p0JSoYIgLlIYggIML9/n6f/oCzC39kvv/7vvfZ5/V83s/zfB8hpeRG5PMEvMAXA59rBOLdpVVLulJr8krKRwE7gTuAtcAmoFG7QeA0YCYQAJDI
+GUAHsC4FOBZYCqwBIsBE4FNguvi/k/o8AQGsAtYvqyoyARDLVV+BZ6XdZOfzx4qqB6DFQF3Q7/05ZSElgOs/oT5PYBzwEhAdsCRQBXwVU8lZ+VvRGYDNd5dV
+HBmuFZTdY989NGS5JUi7KorjlswBWoN+bzSvpHw+sPia8fo8gZuBCmB8iv0+cBqYlh5jllhX8caIRjPwmi6e7LEJ7Al5u00VPboitnRHzTE2Vbw3sOh6wAb0
+KdcA5gGVg4AABwDtoVPxX1Upj952wiwTksW6BN0CBNKuKiuAHxF0AV8CmSkpGVeE+jyBbGAr4OFStYVdMcixDzfDZrj51t7icFQVk2c3xZ/uSlO4qAvOOgU2
+iXWXUz/UEoo3t218qkXA78BzA20iwInL9tTnCYwEtgOTUn1DTaPmwlEa+k6+WTpu9bZtyuElYzutV45nK9RlaUwLxtkw0cCVUEkIpXLKsIzS6o7z2b0mCwRk
+AyuA5cAGbRBwGLAtFagIBSklhmJQe/E4Al6v7aleeWfCchkJSZ8mKGiLY0fDSMuka9eHGPkT5h0M504XhssmMB30X5Vc4BZAKinALOAbYGrSs6RF3IpjV+38
+dG4nChCxwrbOWKfLUhUsAXYTqkcYbLmpg3jtPlyTF9Fbs4tw+2k3ut0x0EoAF4E1Qb+3U0sBfgvc988eSpxaOoe7DxExw+xq28HNjtHMz13IUNswwmYYzZKk
+myoH8g2GtOoooThKmpuceauxon1YkV4QCkBG0O9tTPbWfJ6AG/gMuP8SUFqka0No7KuntqeGmBXj8VGLyE8bg9uWRcgMkR6H08MzqcxpIbPLItpaj7QSxM81
+ojjdCEVNAquAV1O3UQH2A3NTTaeeQVOogb3tu9EVG9NzHmCCuxCH5iRshnHGJeeynHyU00hnbzPdezeR6O0gY/xcQk0HwUwMJMofwGNBv7dhMLS5P3SBKU3C
+Zoi/+pr4oW0HLt1NS7iZ/R2/oAsdU1o4E9CelcH6jCO07niLzNH3IhNRHGMKsSI9uAoXImwGII8BDwb93j8ZJPFBQZkC+O2K/YXGvlNsb/2aGdmziFpRzkfb
+KcyagkN1oioatoSkwyEoKzDoIYZ6/gyRYDWuwgVYsXAyToA64JGg31s/GAggpJT4PAGbRH6iCtXr1jM5G2ml5sIRZubMoSdxASklimUR0sW+jQX2Sd2GYthN
+iVA0UDVkPJLa8yTw8NWAyXhZVlUUE4hn3Hpm+fdnK/E1rGVkWi59Zi+WtJBIEPheXjhkTptTKTUS/T8UaSWuBLzqhP+aNKnvpu6x1ffWfa4gnnBo6cSsKKL/
+QHy8L99RXFG5SALklZSvov9RTlUQmBv0e6uvBbw0aVKP7p8Zc6rOZ3XFtjVuxZLAzcCLSSBA0O9dR/81SAxYtcDs6wFeNmlSPk8gE3gbiAOly6qKopcVAXkl
+5e/Q/wqtDfq9e64HCPA3mUIPdXbzJxEAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>CopiarTags.png</Value></Property><Property><Name>Description</Name><Value>Copiar Tags.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\awolff\Desktop\CopiarTags.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>CopiarTags</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> CopiarTags
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

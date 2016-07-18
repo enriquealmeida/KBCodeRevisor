@@ -1,0 +1,23 @@
+======OBJECT = IdiomNotInUse.Image === Idiom Not In Use=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T18:04:34.0000000Z" checksum="ebec4b7f60d935dcc2ccd0a37187bef7" fullyQualifiedName="IdiomNotInUse" guid="42f35dcc-1d8c-4520-8114-ac66fd7bb763" name="IdiomNotInUse" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Idiom Not In Use">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="IdiomNotInUse.png" description="idioma_en_desuso_32x20px.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqY
+AAAXb5JfxUYAAAB/SURBVHja7JZBDYNQEETfkgrAARaoAyoFB3WGBCRAHeAACa+HQlIFfy87yd7fZiaZCZVMdYCNbwPGiADgcYG8Gj49Aav6BA5M8EBd1LdK
+l2T9B+jvDKSHsAAKoAAKoAAyNPw3U9M2VCf1VEf1twcSKnmOiF0lsifZFwAA//8DAKBvUONvpRPaAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>IdiomNotInUse.png</Value></Property><Property><Name>Description</Name><Value>idioma_en_desuso_32x20px.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\KB Demo WorkWithPlus\DemoWWP4\CSharpModel\web\Resources\IdiomNotInUse.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IdiomNotInUse</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IdiomNotInUse
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

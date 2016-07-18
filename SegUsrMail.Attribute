@@ -1,0 +1,14 @@
+======OBJECT = SegUsrMail.Attribute === Usuario de mail (sigue)=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> SegUsrMail
+Description -> Usuario de mail (sigue)
+HORIZONTAL_DESCRIPTION -> Usuario de mail (sigue)
+VERTICAL_DESCRIPTION -> SIGUE
+ContextualTitle -> SIGUE
+Class -> INFERRED
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-101
+IsDefault -> False

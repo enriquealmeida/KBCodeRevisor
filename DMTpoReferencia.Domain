@@ -1,0 +1,25 @@
+======OBJECT = DMTpoReferencia.Domain === Tipo de Referencia=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-23T19:13:21.0000000Z" lastUpdate="2016-05-23T17:50:19.0000000Z" checksum="d850ab9ce11dc26f76c6da482530bb86" fullyQualifiedName="DMTpoReferencia" guid="aa17bed3-0ba4-4414-a228-53ea2de49597" name="DMTpoReferencia" type="00972a17-9975-449e-aab1-d26165d51393" description="Tipo de Referencia">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMTpoReferencia</Value></Property><Property><Name>Description</Name><Value>Tipo de Referencia</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>3</Value></Property><Property><Name>AttMaxLen</Name><Value>3</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>CLI, Cliente, Cliente; PRY, Proyecto, Proyecto</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMTpoReferencia
+Description -> Tipo de Referencia
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 3
+AttMaxLen -> 3
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

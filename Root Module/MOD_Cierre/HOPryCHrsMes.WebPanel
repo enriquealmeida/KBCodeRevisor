@@ -1,0 +1,63 @@
+======OBJECT = HOPryCHrsMes.WebPanel === Proyectos con horas en el mes=====
+
+=== RULES ===
+parm(in:&FchIniPar, in:&FchFinPar);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    if null(&FchIniPar)
+        &FchIni = ymdtod( year(&Today), month(&Today), 1 )
+    else
+        &FchIni = &FchIniPar
+    endif
+    if null(&FchFinPar)
+        &FchFin = eom(&FchIni)
+    else
+        &FchFin = &FchFinPar
+    endif
+EndEvent  // Start
+
+Event grdProyectos.load
+    // veo si el proyecto tuvo horas en el mes
+    &hayMovimientos = Bool.false
+    for each
+        where      HrsFch >= &FchIni
+        where      HrsFch <= &FchFin
+        where      HrsCnt > 0
+
+        &hayMovimientos = Bool.true
+    endfor
+
+    if &hayMovimientos = Bool.true
+        // veo si el proyecto se distribuye o recibe distribución por tabla
+        &Tabla = 'No participa'
+        &Tabla.Link = ''
+        for each
+            where      PryPadId = PryId
+
+            &Tabla = 'Se distribuye'
+            &Tabla.Link = HDstPor.link( PryPadId,&ImpPar,&ImpPesPar,&CpMovTpo,&Fecha)
+        endfor
+        for each
+            where      PryHijId = PryId
+
+            &Tabla = 'Recibe'
+        endfor
+
+        PryId.Link = Proyectos.link( TrnMode.Update, PryId)
+
+        load
+    endif
+EndEvent  // grdProyectos.load
+
+
+====== PROPERTIES =======
+Name -> HOPryCHrsMes
+Description -> Proyectos con horas en el mes
+IsMain -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,40 @@
+======OBJECT = CargarDimension.Procedure === Cargar Dimension=====
+
+=== RULES ===
+parm(inout:&Movimientos,in:&TipoResumen);
+
+
+=== PROCEDURE SOURCE ===
+For &Movimiento in &Movimientos
+	do case 
+		case &Tiporesumen = TipoRes.Cli
+			&Movimiento.Texto = &Movimiento.CliId
+		case &Tiporesumen = TipoRes.Mes
+			&MovimientoFecha = &Movimiento.CpMovFch
+			&Movimiento.Texto = str(year(&MovimientoFecha),4,0)+'/'+str(month(&MovimientoFecha),2,0)
+		case &Tiporesumen = TipoRes.PCls
+			&Movimiento.Texto = &Movimiento.PryCls
+		case &Tiporesumen = TipoRes.Pry
+			&Movimiento.Texto = &Movimiento.PryId
+		case &Tiporesumen = TipoRes.PTpo
+			&Movimiento.Texto = &Movimiento.PryTpo
+		case &Tiporesumen = TipoRes.Rec	
+			do case
+				case &Movimiento.CpRecTpo = DMRecTpo.Porhoras
+					&Movimiento.Texto = " " + &Movimiento.CpRecId
+				case &Movimiento.CpRecTpo = DMRecTpo.Gastos
+					&Movimiento.Texto = &Movimiento.CpRecId
+				otherwise
+					&Movimiento.Texto = &Movimiento.CpRecId
+			endcase
+		
+	endcase
+endfor
+
+
+====== PROPERTIES =======
+Name -> CargarDimension
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

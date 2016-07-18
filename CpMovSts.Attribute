@@ -1,0 +1,15 @@
+======OBJECT = CpMovSts.Attribute === Status del Movimiento=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> CpMovSts
+Description -> Status del Movimiento
+HORIZONTAL_DESCRIPTION -> Status del Movimiento
+VERTICAL_DESCRIPTION -> Status del Movimiento
+ContextualTitle -> Status del Movimiento
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttValueRange -> 
+IsDefault -> False

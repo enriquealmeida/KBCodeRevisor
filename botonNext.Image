@@ -1,0 +1,23 @@
+======OBJECT = botonNext.Image === boton Next=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:31:08.0000000Z" checksum="28c16c8dfa764614fc5a1ca3c285dd6f" fullyQualifiedName="botonNext" guid="94174e4e-8f39-48d8-b088-9080d4c6b54c" name="botonNext" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="boton Next">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="botonNext.gif" description="boton Next.gif"><Data>
+<base64Binary>
+R0lGODlhEwAUAHAAACH5BAEAABYALAAAAAATABQAhAAAAJGljmd1ZU1XTDxDO1xoWpyzmcLevt382HODcLLNr9f2087syYSWgUJLQNPxzsnnxbvWt7bRsrHK
+rVFdUKe+pAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXGoCWOhuCcQjCuY1AIBoNAZaGyVuJMSO8jB0eClSj8eo8eg1EYihqO40/WczREhcMvSUUw
+FgxDwRIQSAnIx8KLSMGUSgJhsV5CGA2TFo6Qz5cHEBFBaGxsBA5ySwwREwqKCGt0CCeJBAwHEwePDjKekXInmBONBg4wnmCUigwKChMTeWVedgxyCI2lEw4G
+FgUGEIF3l42wEwZiTw6Bms2wBhXIViM6zsbHxwNO1AMGxdAGEwFCOBYNFFYB4gnoV+UiJYmnNyshADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>botonNext.gif</Value></Property><Property><Name>Description</Name><Value>boton Next.gif</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\101\MT\MT20090714\Conversion.tmp\..\images/botonNext.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>botonNext</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> botonNext
+IsDefault -> False

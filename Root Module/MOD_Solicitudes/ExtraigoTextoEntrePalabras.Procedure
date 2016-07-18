@@ -1,0 +1,39 @@
+======OBJECT = ExtraigoTextoEntrePalabras.Procedure === Extraigo Texto Entre Palabras=====
+
+=== RULES ===
+parm(in:&Original,in:&DesdeTexto,in:&HastaTexto,out:&Salida);
+
+
+
+=== PROCEDURE SOURCE ===
+&Auxiliar = &original.toupper()
+
+msg(&Auxiliar,status)
+msg(&desdeTexto,status)
+msg(&Hastatexto,status)
+
+&Desde = &Auxiliar.IndexOf(&desdeTexto.ToUpper()) + &desdeTexto.Length()
+
+&Hasta = &Auxiliar.IndexOf(&Hastatexto.ToUpper())
+
+&Largo = iif(&Desde < &Hasta, &Hasta - &Desde, 0) 
+
+msg(format('Desde %1, Hasta %2 , Largo %3 ',&Desde,&Hasta,&Largo),status)
+&Salida = &original.Substring(&Desde, &Largo )
+&Salida = &Salida.Replace("*" , " ")
+&Salida = &Salida.Trim()
+if &Salida.IsEmpty()
+	&Descrip = 'DESCRIPCI'
+	&Desde = &Auxiliar.IndexOf(&Descrip.ToUpper()) + &Descrip.Length() + 3
+	&Salida=&original.Substring(&Desde,100)
+	&Salida = iif(&Salida.IsEmpty(),'Vacia',&Salida)
+endif	
+msg(&Salida,status)
+
+
+====== PROPERTIES =======
+Name -> ExtraigoTextoEntrePalabras
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

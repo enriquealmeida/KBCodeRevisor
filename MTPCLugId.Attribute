@@ -1,0 +1,14 @@
+======OBJECT = MTPCLugId.Attribute === Lugar=====
+NUMERIC(2)
+
+
+====== PROPERTIES =======
+Name -> MTPCLugId
+Description -> Lugar
+HORIZONTAL_DESCRIPTION -> Lugar
+VERTICAL_DESCRIPTION -> Lugar
+ContextualTitle -> Lugar
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

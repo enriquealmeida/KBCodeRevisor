@@ -1,0 +1,11 @@
+======OBJECT = CronIni.Attribute === Inicio Cronómetro=====
+DATETIME(10.5)
+
+
+====== PROPERTIES =======
+Name -> CronIni
+Description -> Inicio Cronómetro
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

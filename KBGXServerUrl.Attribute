@@ -1,0 +1,11 @@
+======OBJECT = KBGXServerUrl.Attribute === KBGXServer Url=====
+VARCHAR(1000)
+
+
+====== PROPERTIES =======
+Name -> KBGXServerUrl
+ContextualTitle -> GxServer Url
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

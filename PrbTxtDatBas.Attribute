@@ -1,0 +1,14 @@
+======OBJECT = PrbTxtDatBas.Attribute === Inicialización de datos básicos=====
+LONGVARCHAR(2097152)
+
+
+====== PROPERTIES =======
+Name -> PrbTxtDatBas
+Description -> Inicialización de datos básicos
+HORIZONTAL_DESCRIPTION -> Inicialización de datos básicos
+VERTICAL_DESCRIPTION -> Inicialización de datos básicos
+ContextualTitle -> Inicialización de datos básicos
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

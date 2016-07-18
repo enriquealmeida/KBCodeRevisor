@@ -1,0 +1,12 @@
+======OBJECT = PryClsEvaluacion.Attribute === Necesita evaluacion?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> PryClsEvaluacion
+Description -> Necesita evaluacion?
+ContextualTitle -> Necesita evaluacion?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

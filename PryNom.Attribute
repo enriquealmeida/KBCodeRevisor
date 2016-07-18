@@ -1,0 +1,14 @@
+======OBJECT = PryNom.Attribute === Nombre del Proyecto=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> PryNom
+Description -> Nombre del Proyecto
+HORIZONTAL_DESCRIPTION -> Nombre del Proyecto
+VERTICAL_DESCRIPTION -> Nombre
+ContextualTitle -> Nombre del Proyecto
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

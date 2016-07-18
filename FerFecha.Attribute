@@ -1,0 +1,15 @@
+======OBJECT = FerFecha.Attribute === Fecha del Feriado=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> FerFecha
+Description -> Fecha del Feriado
+HORIZONTAL_DESCRIPTION -> Fecha del Feriado
+VERTICAL_DESCRIPTION -> Fecha del Feriado
+ContextualTitle -> Fecha del Feriado
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

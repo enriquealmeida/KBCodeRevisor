@@ -1,0 +1,42 @@
+======OBJECT = AgregoTagMesFueraPlan.Procedure === Agrego Tag Mes Fuera Plan=====
+
+=== RULES ===
+Parm(In:&PryId, In:&PrbId,in:&TagIdPar);
+
+
+=== PROCEDURE SOURCE ===
+if &TagIdPar.IsEmpty()
+	&Mes = &Today.Month()
+	&Ano = &Today.Year()
+    &TagId = &Ano.ToFormattedString() + &Mes.ToFormattedString() + 'F'
+else 
+	&TagId=&TagidPar
+endif
+
+//Agrego tag, puede que no exista. 
+new
+  TagId=&TagId
+  when duplicate //no hago nada
+endnew
+
+
+for each
+	where            PryId=&PryId
+	where            PrbId=&PrbId
+	where            TagId.Substring(1,6) = &TagId.Substring(1,6)
+when none
+	 new
+		 PryId=&PryId
+		 PrbId=&PrbId
+		 TagId=&TagId
+	 endnew
+endfor
+
+	
+
+
+====== PROPERTIES =======
+Name -> AgregoTagMesFueraPlan
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

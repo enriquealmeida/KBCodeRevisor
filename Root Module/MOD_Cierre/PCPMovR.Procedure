@@ -1,0 +1,21 @@
+======OBJECT = PCPMovR.Procedure === Marca movimiento como revisado=====
+
+=== RULES ===
+parm(IN:CpMovId );
+
+
+=== PROCEDURE SOURCE ===
+for each 
+    CpMovCod = Bool.False //'N'
+endfor
+commit
+
+
+====== PROPERTIES =======
+Name -> PCPMovR
+Description -> Marca movimiento como revisado
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

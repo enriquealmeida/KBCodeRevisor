@@ -1,0 +1,12 @@
+======OBJECT = Cronometradas.Table === Mediciones de tiempo trabajando en una solicitud=====
+*RspId  DMUsuarios- Null=False
+*CronIni  FechaHora- Null=False
+ CronFin  FechaHora- Null=False
+ PrbId  SOLICITUD- Null=True
+ CronHorasImputadas  Horas- Null=False
+ CronHorasSugeridas  Horas-tdiff(servernow(),CronIni) / 3600 Null=False
+ TarId  Tareas- Null=True
+
+====== PROPERTIES =======
+Name -> Cronometradas
+Description -> Mediciones de tiempo trabajando en una solicitud

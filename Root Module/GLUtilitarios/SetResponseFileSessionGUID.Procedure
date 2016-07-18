@@ -1,0 +1,18 @@
+======OBJECT = SetResponseFileSessionGUID.Procedure === Set ResponseFile Session GUID=====
+
+=== RULES ===
+Parm(in:&FileName, out:&guidString);
+
+
+=== PROCEDURE SOURCE ===
+&guidString = GUID.newGuid().ToString()
+&WebSession.Set(ResponseFileEnum.PRIVATETEMPSTorAGEGUID, &guidString)
+&WebSession.Set(ResponseFileEnum.FILENAME, &FileName)
+
+
+====== PROPERTIES =======
+Name -> SetResponseFileSessionGUID
+Description -> Set ResponseFile Session GUID
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

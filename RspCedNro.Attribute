@@ -1,0 +1,16 @@
+======OBJECT = RspCedNro.Attribute === Numero de Cedula=====
+NUMERIC(15)
+
+
+====== PROPERTIES =======
+Name -> RspCedNro
+Description -> Numero de Cedula
+HORIZONTAL_DESCRIPTION -> Numero de Cedula
+VERTICAL_DESCRIPTION -> Documento
+ContextualTitle -> Numero de Cedula
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+idNUMNUMBERS -> idNUMNUMBERS_BLANK
+ATT_PICTURE -> ZZZZZZZZ.ZZZ.ZZZ-9
+IsDefault -> False

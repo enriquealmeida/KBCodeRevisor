@@ -1,0 +1,15 @@
+======OBJECT = HrsCnt.Attribute === Cantidad de Horas Realizadas=====
+NUMERIC(6.2)-
+
+
+====== PROPERTIES =======
+Name -> HrsCnt
+Description -> Cantidad de Horas Realizadas
+HORIZONTAL_DESCRIPTION -> Horas Realizadas
+VERTICAL_DESCRIPTION -> Horas
+ContextualTitle -> Horas Realizadas
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> Z,ZZ9.99
+IsDefault -> False

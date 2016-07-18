@@ -1,0 +1,30 @@
+======OBJECT = ActionCSV.Image === Action CSV=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-03-29T21:58:19.0000000Z" lastUpdate="2016-02-17T11:45:13.0000000Z" checksum="e694aecf3ce9d31672f6fda105c15151" fullyQualifiedName="ActionCSV" guid="19ac2eeb-fc93-491b-9476-6c047e442246" name="ActionCSV" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action CSV">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionCSV.png" description="Action CSV.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAABh0RVh0U29mdHdhcmUAcGFp
+bnQubmV0IDQuMC45bDN+TgAAAylJREFUSEu1ly1wVTEQhZ+oqKioqEAgOgMCgUBUIBCICgQCgUAgKioqEQhEBTMViIoKBBKBQCCQFZWICkQFAoFAVCARCATi
+cb7cPWFvbm6pgDPzzSSbTTY/m9z3Fsvl8tJIa+KueCSeBpTviLVenznGlaRkWxG74lj8FBh70HYi9sRqHrfHuDLVQ/FF5ACX4at4LKpynBJrVPmjVfFG5MEM
+E2FlrwPKBOr5vhccT9Eo1qgy6Io4FXmA7+K5uJH9M7SJZwLf3PeTYMyi6t90ZnZt0JdiPfvNEVoX9MljfBZl5dW36fiOtuCXIFFGPhfRiL6M4fE4kpXqmzo9
+CAdTgrayf8uMuA15zJ3qH524Mjl7SZqu3LGlp7AfUQzORblqbuQRcCPJsSG6cqCWnsLO2X6jGuwWezTmq0P2zsqBWnpKbU+oBsf2Z5vzFbguLB4Btoqzqlkp
+bQomSBu5wRhcJ2z3hHVbYLsmPD4vXBnrZhiAO2c5wz0pOjAQQdg67GeCNnKC4yGLT9NK34qzKNsXeNsX28mAI6KBOs7cS/vwEt2P8nBWw7PqVX8QGHkwqP8Q
+B2kSFICcWuwkw2E4+UxcZxD8CMKW2p9A+2Ij/PhaUcCXrxjlrWg7jDrg1w3MuVAoq2rBLj6GD/AyMTnygzqreyHOU59J4NFWh5Mn44nw0eCzSAcSw6u4JfzE
+2sYkOH/y5RW2sE+2epRc4cS5OoF4+EkeGjhLPwgHUScP8B0ehsFOAbZT4ElyOQls3AzHLcHsbeeuI38yne0ELSsIOTEZ05Mh2TzOcJ2iIW9D2f+wI1Zf7h3C
+bqSSVMl3pNTGu08BTootGngo3MBKymewJw/W0lPY2SHeaI+/V+zRyHbnj8TRRYP16Cns+cxzLlTlDwWQ2RPlYJkZtWPW61kVlfaHQE6aUaA5kug7+SEgWr8i
+kqj96cNjwjlVtcGagfDN2wv1pw9q/KtI/fwqAWfDM3pVzIl+ZG9OJCBo/bGHSuCZWTM7Pgh5AMNDwPXjCQTK+XHIsL11pdYkcBPcH4a538wXwQ7xntcfdy1d
+Y0bizP7vX5i/IbFt/+BP23LxG2LYUxlM1HDRAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionCSV.png</Value></Property><Property><Name>Description</Name><Value>Action CSV.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Desktop\ActionCSV.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionCSV</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionCSV
+IsDefault -> False

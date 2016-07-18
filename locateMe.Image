@@ -1,0 +1,45 @@
+======OBJECT = locateMe.Image === locate Me=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-05-09T16:43:02.0000000Z" lastUpdate="2014-04-09T15:36:24.0000000Z" checksum="2e737935fb89f4d6effe5ee514b06367" fullyQualifiedName="locateMe" guid="6c4e657c-6882-474f-9ba4-cffe7e37d7b8" name="locateMe" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="locate Me">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="locateme.png" description="locateme.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjVJivzgAAABoUlEQVQ4T5WUSyuFURSGT8otcgvlGiYoBgYGlIlSUi4zE1NDRibKLzAwpPgFMsEAAwNihDCS3Dou
+uQyQgXsuz3tau3afcz7selp7r732u9deZ50vEkk8sthqhHZogzpIDon/sVWOZxSO4MvjlfkmDEDGb4LdBJx7h++ZP4FEHj3/OvOaRGJddkhZ7EE/lMEybEA1
+DMOlCR5gq4JiFTiuLGAeW+AFTDNf8NbKZMdil7ApvtiYbWxjcwK35LHOD/iU3bWdUTliIxfO4BN6gqmGrEdMaMbFNJnjGJv+DyFl9QJRyNQ5paYC34EKOwd+
+jYLapThWYQve7FyJgjpNSOoq+D4Uh2TmhNRTErqFIsU3wAfoaYWWZlKIkNuqZKIe08Vpcqou6huJtf5BwIUM2ksm/TND5lzBpgbElHYsdW9ofQLv0OxvZLNQ
+D6noUy5VC1jDCjf0fP0oih2P94J6nFEvsw7mukBdvAtqyj5QGSSyCPpCxB213m0KPgX9WZ/hxgTknwgTccr67/TCLFzAA+grcAgqbEuiLML8Sl3fJzVcaNd/
+A7C0aAdTlHdaAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>locateme.png</Value></Property><Property><Name>Description</Name><Value>locateme.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties></ImageItem>
+      <ImageItem><Image name="locateme.png" description="locateme.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAYAAADpnJ2CAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2tpVFh0WE1MOmNvbS5hZG9i
+ZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6
+bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpS
+REYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg
+eG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5
+cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRp
+ZDoxNDMxREE2MEUwMjE2ODExODIyQUI5QkRBMkI3MTQ0MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1OTMyMDgyRUFERTQxMUUzQTY2N0Q3M0EzNDUx
+NjA4MSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OTMyMDgyREFERTQxMUUzQTY2N0Q3M0EzNDUxNjA4MSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQ
+aG90b3Nob3AgQ0MgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2MjM4NjIxOC1mMzQ0LTRlOTMt
+YTEzZC1hMjI0ODBiMTBmYjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTQzMURBNjBFMDIxNjgxMTgyMkFCOUJEQTJCNzE0NDAiLz4gPC9yZGY6RGVz
+Y3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7gzcMQAAAA20lEQVR42mL8//8/AwzcvXsXxmFkoCJQVlaGs5kI
+qL0OxO1AbE4tRxCyUAOIK4D4BBA/AeIZQOwOxGy0shAZSAFxOhDvAOLXQLyc1hYiAz4gjqCnhQz0CFJs4DQQpwExD70sNAHimUD8HEob0ytIeaA+PQPFOH1N
+izg0xudrci38BMSriFDHiF5gsJBgCcjFm4B4AxDvA+JfQByGRd05IJ4FxMuA+DO6JCELb0ItAOFTQPwPh7ov0IJgFjQOcQJCFmoQkMfrG3IsJCaBDO+SZtTC
+UQtHLaQcAAQYAKUfKznx1/mQAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>locateme.png</Value></Property><Property><Name>Description</Name><Value>locateme.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Temp\CRM\Images\Location_Icon.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>locateMe</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> locateMe
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

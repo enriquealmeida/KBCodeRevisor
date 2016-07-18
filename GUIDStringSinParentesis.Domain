@@ -1,0 +1,24 @@
+======OBJECT = GUIDStringSinParentesis.Domain === GUIDString Sin Parentesis=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-04-08T20:52:42.0000000Z" checksum="cde41dfe71a94d11f780d3910a870cc8" fullyQualifiedName="GUIDStringSinParentesis" guid="fbe47256-5d4c-4e71-a67c-7afd4e3eb7fd" name="GUIDStringSinParentesis" type="00972a17-9975-449e-aab1-d26165d51393" description="GUIDString Sin Parentesis">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <InnerHtml><![CDATA[<P>Formato&nbsp;<SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; COLOR: rgb(0,0,0); TEXT-ALIGN: left; FONT: 14px/24px sans-serif, Arial, Verdana, segoeui; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px"><SPAN class=Apple-converted-space>&nbsp;</SPAN>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX </SPAN><SPAN style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; COLOR: rgb(0,0,0); TEXT-ALIGN: left; FONT: 14px/24px sans-serif, Arial, Verdana, segoeui; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">de largo exacto 36 incluyendo guiones</SPAN></P>]]></InnerHtml>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>GUIDStringSinParentesis</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>36</Value></Property><Property><Name>AttMaxLen</Name><Value>36</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> GUIDStringSinParentesis
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 13
+Length -> 36
+AttMaxLen -> 36
+IsDefault -> False

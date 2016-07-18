@@ -1,0 +1,64 @@
+======OBJECT = WorkWithPlusResumenHoras.WorkWithPlus === Work With Plus Resumen Horas=====
+<Object parent="MOD_Horas.ResumenHoras" parentType="c9584656-94b6-4ccd-890f-332d11fc2c25" parentGuid="d2ee7fe4-8b52-43f5-b1d2-4c8ab8635935" user="AW\awolff" versionDate="2016-07-02T20:59:45.0000000Z" lastUpdate="2016-07-02T20:57:26.0000000Z" checksum="f1747d092a28a2eb208e5287e84487a3" fullyQualifiedName="MOD_Horas.WorkWithPlusResumenHoras" guid="d5fd2774-ddae-0b6e-05da-4abd9a99c648" name="WorkWithPlusResumenHoras" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Resumen Horas">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="7;57;">
+  <WPRoot childrenOrderedList="7;66;Main Table" Template="(none)" defaultTemplate="(none)">
+    <table name="MainTable" numberOfColumns="2" type="Responsive">
+      <textBlock controlName="Titulo" caption="Resumen de Horas" themeClass="TextBlockTitleWWP" cellWidth_S="100%" />
+      <table name="TableOffset" type="Responsive" cellWidth_S="8%" cellVisible_E="False" startCol="1" />
+      <table name="TableFilters" numberOfColumns="2" type="Responsive" cellWidth_S="92%" startCol="0">
+        <variable name="HrsPrbId" description="Solicitud" dataType="Basic" basicLength="6" showDescription="True" descriptionPosition="Top" />
+        <variable name="TarId" defaultName="TarId" description="Tarea" defaultDescription="Identificador de Tarea" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlInputValue="adbb33c9-0906-4971-833c-998de27e0676-TarId" controlInputDescription="adbb33c9-0906-4971-833c-998de27e0676-TarId" controlEmptyItem="True" domain="adbb33c9-0906-4971-833c-998de27e0676-TarId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-TarId" descriptionPosition="Top" />
+        <variable name="PryId" defaultName="PryId" description="Proyecto" defaultDescription="Proyecto" dataType="Based on" controlInfoDef="Based on" controlInfo="00972a17-9975-449e-aab1-d26165d51393-PROYECTO" controlType="Dynamic Combo Box" domain="adbb33c9-0906-4971-833c-998de27e0676-PryId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-PryId" descriptionPosition="Top" />
+        <variable name="CliId" defaultName="CliId" description="Cliente" defaultDescription="Cliente" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlInputValue="adbb33c9-0906-4971-833c-998de27e0676-CliId" controlInputDescription="adbb33c9-0906-4971-833c-998de27e0676-CliId" controlEmptyItem="True" domain="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-CliId" descriptionPosition="Top" />
+        <variable name="PryTpo" defaultName="PryTpo" description="Tipo de Proyecto" defaultDescription="Tipo de Proyecto" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlInputValue="adbb33c9-0906-4971-833c-998de27e0676-PryTpo" controlInputDescription="adbb33c9-0906-4971-833c-998de27e0676-PryTpo" controlEmptyItem="True" domain="adbb33c9-0906-4971-833c-998de27e0676-PryTpo" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-PryTpo" descriptionPosition="Top" />
+        <variable name="PryCls" defaultName="PryCls" description="Clase" defaultDescription="Producto" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlEmptyItem="True" domain="adbb33c9-0906-4971-833c-998de27e0676-PryCls" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-PryCls" descriptionPosition="Top" />
+        <variable name="RspId" defaultName="RspId" description="Responsable" defaultDescription="Responsable" domain="adbb33c9-0906-4971-833c-998de27e0676-RspId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-RspId" descriptionPosition="Top" />
+        <table name="TableFechas" numberOfColumns="2" type="Regular">
+          <textBlock controlName="Fechas" caption="Fechas" themeClass="Label" cellWidth_S="100%" />
+          <variable name="FchIni" defaultName="Fecha" description="Fecha Inicial" defaultDescription="Fecha" domain="00972a17-9975-449e-aab1-d26165d51393-Fecha" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-Fecha" startCol="1" showDescription="False" />
+          <variable name="FchFin" defaultName="Fecha" description="Fecha Final" defaultDescription="Fecha" domain="00972a17-9975-449e-aab1-d26165d51393-Fecha" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-Fecha" showDescription="False" />
+        </table>
+      </table>
+      <actionGroup name="ActionGroup" align="Center">
+        <standardAction caption="Renovar" name="Refresh" />
+        <standardAction name="Cancel" />
+      </actionGroup>
+      <table name="TableComponents" themeClass="Table100x100" numberOfColumns="5" type="Regular" cellWidth_S="100%">
+        <webComponent name="wbcCli" cellThemeClass="TableTop">
+          <parameters />
+        </webComponent>
+        <webComponent name="wbcRsp" cellThemeClass="TableTop">
+          <parameters />
+        </webComponent>
+        <webComponent name="wbcPry" cellThemeClass="TableTop">
+          <parameters />
+        </webComponent>
+        <webComponent name="wbcTar" cellThemeClass="TableTop">
+          <parameters />
+        </webComponent>
+        <webComponent name="wbcPrb" cellThemeClass="TableTop">
+          <parameters />
+        </webComponent>
+      </table>
+      <textBlock controlName="tbkHrsNoIng" caption="Horas sin Ingresar" />
+    </table>
+    <steps />
+    <events />
+  </WPRoot>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusResumenHoras</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Horas.ResumenHoras</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c9584656-94b6-4ccd-890f-332d11fc2c25
+FolderId -> 231
+Name -> WorkWithPlusResumenHoras
+ObjectVisibility -> Private
+KBObject -> c9584656-94b6-4ccd-890f-332d11fc2c25-231
+IsDefault -> False

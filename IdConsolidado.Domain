@@ -1,0 +1,24 @@
+======OBJECT = IdConsolidado.Domain === Identificador de consolidado=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-23T19:13:21.0000000Z" lastUpdate="2016-05-23T16:59:41.0000000Z" checksum="014a5d3c88125a860dca7e25db0a7313" fullyQualifiedName="IdConsolidado" guid="961d0b63-0883-4375-a1b9-4a5eb93c49bd" name="IdConsolidado" type="00972a17-9975-449e-aab1-d26165d51393" description="Identificador de consolidado">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IdConsolidado</Value></Property><Property><Name>Description</Name><Value>Identificador de consolidado</Value></Property><Property><Name>Length</Name><Value>3</Value></Property><Property><Name>AttMaxLen</Name><Value>3</Value></Property><Property><Name>AUTONUMBER</Name><Value>True</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IdConsolidado
+Description -> Identificador de consolidado
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 3
+AttMaxLen -> 3
+AUTONUMBER -> True
+IsDefault -> False

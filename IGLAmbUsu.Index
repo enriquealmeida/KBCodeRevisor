@@ -1,0 +1,13 @@
+======OBJECT = IGLAmbUsu.Index === IGLAmb Usu=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:26.0000000Z" checksum="23b5487da26b392ca5694c44abd3930f" fullyQualifiedName="IGLAmbUsu" guid="e1347886-707c-4468-b878-e4189594e906" name="IGLAmbUsu" type="9e750647-3679-0000-0100-2529de263960" description="IGLAmb Usu">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">GLUsAmbId</Member>
+      <Member Order="Ascending">GLUsId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IGLAmbUsu</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IGLAmbUsu

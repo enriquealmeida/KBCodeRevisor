@@ -1,0 +1,15 @@
+======OBJECT = LegQuien.Attribute === Ingreso del legajo=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> LegQuien
+Description -> Ingreso del legajo
+HORIZONTAL_DESCRIPTION -> Ingreso del legajo
+VERTICAL_DESCRIPTION -> Ingreso del legajo
+ContextualTitle -> Ingreso del legajo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

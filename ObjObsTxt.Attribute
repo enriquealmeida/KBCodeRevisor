@@ -1,0 +1,14 @@
+======OBJECT = ObjObsTxt.Attribute === Observación=====
+LONGVARCHAR(1024)
+
+
+====== PROPERTIES =======
+Name -> ObjObsTxt
+Description -> Observación
+HORIZONTAL_DESCRIPTION -> Observación
+VERTICAL_DESCRIPTION -> Observación
+ContextualTitle -> Observación
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

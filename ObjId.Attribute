@@ -1,0 +1,16 @@
+======OBJECT = ObjId.Attribute === Objetivo=====
+NUMERIC(6)
+
+
+====== PROPERTIES =======
+Name -> ObjId
+Description -> Objetivo
+HORIZONTAL_DESCRIPTION -> Objetivo
+VERTICAL_DESCRIPTION -> Objetivo
+ContextualTitle -> Objetivo
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AUTONUMBER -> False
+AUTONUMBER_START -> 500000
+IsDefault -> False

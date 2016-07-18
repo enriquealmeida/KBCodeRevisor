@@ -1,0 +1,11 @@
+======OBJECT = KBWikiDSC.Attribute === Descripcion=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> KBWikiDSC
+Description -> Descripcion
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

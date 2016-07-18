@@ -1,0 +1,54 @@
+======OBJECT = TMTSUMes.Transaction === Liquidaciones del responsable en el mes=====
+
+=== RULES ===
+parm(in:RspId,in: RspSuA, in:RspSuM);
+
+default(RspDPla, 21);
+
+noaccept(RspSueldo);
+noaccept(RspSuEx);
+noaccept(RspParHxD);
+noaccept(RspParDxM);
+noaccept(RspHrT);
+noaccept(RspParIVA);
+noaccept(RspSuMonPla);
+noaccept(RspSuMonExt);
+
+//nocheck(RspSuA,RspSuM);
+	
+
+RspDPla = (&RspParDxM - RspDEx) if after(confirm) and RspDPla = old(RspDPla);
+
+error('La suma de los días en plaza y exterior es mayor que los días por mes') if (RspDPla + RspDEx) > &RspParDxM;
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &RspParDxM = PMTParNum('DIASPorMES')
+EndEvent  // Start
+
+
+=== STRUCTURE ===
+RspId*
+RspSuA*
+RspSuM*
+RspSueldo
+RspSuEx
+RspParHxD
+RspParDxM
+RspHrT
+RspDEx
+RspDPla
+RspParIVA
+RspSuMonPla
+RspSuMonExt
+SUFacturaAprobada
+
+
+====== PROPERTIES =======
+Name -> TMTSUMes
+Description -> Liquidaciones del responsable en el mes
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Public
+IsDefault -> False

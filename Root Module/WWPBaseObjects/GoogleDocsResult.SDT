@@ -1,0 +1,19 @@
+======OBJECT = GoogleDocsResult.SDT === Google Docs Result=====
+
+=== STRUCTURE ===
+GoogleDocsResult
+	Success, B(4), Success 
+	Error, V(1000), Error 
+	Docs, collection: Doc
+		Type, V(100), Type 
+		Title, V(100), Title 
+		URL, V(1000), URL 
+
+====== PROPERTIES =======
+Name -> GoogleDocsResult
+ExternalName -> Result
+ExternalNamespace -> DVelop.Extensions.GoogleDocs
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

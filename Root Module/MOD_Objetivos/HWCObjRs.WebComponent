@@ -1,0 +1,27 @@
+======OBJECT = HWCObjRs.WebComponent === Objetivos del Responsable=====
+
+=== RULES ===
+parm(in:&RspId, in:&FchIniPar, in:&FchFinPar);
+//los parámetros &FchIniPar y &FchFinPar son por compatibilidad con el panel de control.
+
+
+=== EVENTS SOURCE ===
+Event ObjDsc.Click
+//   &window = Objetivo.Create(trnmode.Update,ObjId)
+//   &window.Open()
+//  
+    Objetivo.Call(TrnMode.Update,ObjId) 
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HWCObjRs
+Description -> Objetivos del Responsable
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+WebUX -> SMOOTH
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 9
+ObjectVisibility -> Private
+IsDefault -> False

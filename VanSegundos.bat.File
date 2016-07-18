@@ -1,0 +1,17 @@
+======OBJECT = VanSegundos.bat.File === Van Segundos.bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-05-08T21:29:25.0000000Z" checksum="ed4f942c3d479ad2a81f45ac064c9e6b" fullyQualifiedName="VanSegundos.bat" guid="6219925c-a09b-4e78-8c04-fded933ce750" name="VanSegundos.bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Van Segundos.bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>QHNldCAvQSBfaGFzdGE9JXRpbWU6fjAsMiUqMzYwMF4NCiAgICAgICAgICAgICsldGltZTp+MywxJSoxMCo2MF4NCiAgICAgICAgICAgICsldGltZTp+NCwxJSo2MF4NCiAgICAgICAgICAgICsldGltZTp+NiwxJSoxMF4NCiAgICAgICAgICAgICsldGltZTp+NywxJSA+bnVsDQoNCkBzZXQgL0EgX2VsYXBzZWQ9JV9oYXN0YSUtJV9pbmljaW8NCkBlY2hvIC0tLSAgIFZhbiAgJV9lbGFwc2VkJSBzZWd1bmRvcyAlMSAtLS0gDQpAZWNobyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQo=</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>VanSegundos.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>VanSegundos.bat</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>..\Deploy\Tools</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  <Categories>Deploy</Categories>
+</Object>
+====== PROPERTIES =======
+Name -> VanSegundos.bat
+Extract -> Newer
+ExtractToPath -> ..\Deploy\Tools
+IsDefault -> False

@@ -1,0 +1,30 @@
+======OBJECT = CambioAvanceSolicitud.WebPanel === Cambio Avance Solicitud=====
+
+=== RULES ===
+parm(in:&PryId, in:&PrbId );
+
+
+=== EVENTS SOURCE ===
+Event Start
+	for each
+		//where      PryId = &PryId and PrbId = &PrbId
+		&PrbAvance = PrbAvance
+		&PrbDsc    = PrbDsc
+		&PrbHrsPln = PrbHrsPln
+	endfor
+
+EndEvent
+
+Event Enter
+	ActualizoAvanceSolicitud(&PryId, &PrbId, &PrbAvance, &PrbHrsPln)
+	return
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> CambioAvanceSolicitud
+MasterPage -> Artech.Genexus.Common.CustomTypes.WebPanelReference
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

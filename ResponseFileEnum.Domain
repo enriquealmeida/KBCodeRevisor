@@ -1,0 +1,24 @@
+======OBJECT = ResponseFileEnum.Domain === Response File Enum=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-04-10T20:25:12.0000000Z" checksum="2b46f782fb61fb73f80024e709bc7ca3" fullyQualifiedName="ResponseFileEnum" guid="ba3d68c7-6778-4c93-b4d7-a7c87a53fb6e" name="ResponseFileEnum" type="00972a17-9975-449e-aab1-d26165d51393" description="Response File Enum">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ResponseFileEnum</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>30</Value></Property><Property><Name>AttMaxLen</Name><Value>30</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>PRIVATETEMPSTORAGEGUID, PRIVATETEMPSTORAGEGUID, PRIVATETEMPSTORAGEGUID; FILENAME, FILENAME, FILENAME</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ResponseFileEnum
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 30
+AttMaxLen -> 30
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

@@ -1,0 +1,26 @@
+======OBJECT = GLMoneda.Module === GLMoneda=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T17:17:18.0000000Z" checksum="e8426f72243d2c3bd4c004e236c9e5cb" fullyQualifiedName="GLMoneda" guid="1d8f8d0b-d240-4465-9826-31e6a2fc759a" name="GLMoneda" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="GLMoneda">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="05cdbb62-ca05-490a-9d25-dbe7d21dc037">
+      <Layers>
+        <Layer Id="05cdbb62-ca05-490a-9d25-dbe7d21dc037">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-GLMoneda" Bounds="25 24.99999 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-WWPBaseObjects" Bounds="365 33 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MasterPage" Bounds="292 210 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>GLMoneda</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> GLMoneda
+IsDefault -> False

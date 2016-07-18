@@ -1,0 +1,21 @@
+======OBJECT = resize.Image === resize=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-08-28T13:06:17.0000000Z" checksum="224ea7f1e0d6c161205a546221b93ae2" fullyQualifiedName="resize" guid="05a35bf6-975a-4543-bfe4-7fe43ff60e3e" name="resize" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="resize">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="resize.gif" description="resize.gif"><Data>
+<base64Binary>
+R0lGODlhBwAHAJECAAAAABAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgACACwAAAAABwAHAAACC5QfZ6nJ4hCcsdICADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>resize.gif</Value></Property><Property><Name>Description</Name><Value>resize.gif</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Temp\resize.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>resize</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> resize
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

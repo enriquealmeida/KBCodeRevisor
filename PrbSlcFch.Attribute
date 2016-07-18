@@ -1,0 +1,15 @@
+======OBJECT = PrbSlcFch.Attribute === Fecha Solicitada por el Cliente=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> PrbSlcFch
+Description -> Fecha Solicitada por el Cliente
+HORIZONTAL_DESCRIPTION -> Fecha Solicitada por el Cliente
+VERTICAL_DESCRIPTION -> Fecha Solicitada por el Cliente
+ContextualTitle -> Fecha Solicitada por el Cliente
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

@@ -1,0 +1,85 @@
+======OBJECT = WWPTabbedView.WebComponent === Tabbed View=====
+
+=== RULES ===
+parm(in:&Tabs, in:&TabCode);
+
+
+=== EVENTS SOURCE ===
+Event TabsGrid.load
+	// Select the Subset of tabs that will be shown.
+	Do 'FindTabIndex'
+	Do 'ScrollTabs'
+
+	&IsFirstTab = True
+	For &Index = &FirstTab To &LastTab
+		&Tab = &Tabs.Item(&Index)
+		Do 'loadItem'
+		load
+		&IsFirstTab = False
+	endfor
+
+	if (&Tabs.Count > 0)
+		&TabBitmap = GetWWPTabImage(&IsFirstTab, &IsSelectedTab, False, True)
+		EndTab.Bitmap = &TabBitmap
+	else
+		EndTab.Visible = 0
+	endif
+EndEvent
+
+Sub 'FindTabIndex'
+	// Searches for the tab with the specified code.
+	// if not found, or code is empty, returns first tab.
+	&Found = False
+	if (&TabCode <> "")
+		For &Index = 1 to &Tabs.Count
+			if (&Tabs.Item(&Index).Code = &TabCode)
+				&SelectedTab = &Index
+				&Found = True
+				Exit
+			endif
+		endfor
+	endif
+
+	if (not &Found and &Tabs.Count > 0)
+		&SelectedTab = 1
+	endif
+EndSub
+
+Sub 'ScrollTabs'
+	// Tab scrolling logic (disabled for the moment)
+	&FirstTab = 1
+	&LastTab = &Tabs.Count
+	TabPrevious.Visible = 0
+	TabNext.Visible = 0
+EndSub
+
+Sub 'loadItem'
+	Tab.Caption = &Tab.Description
+	if &Index = &SelectedTab
+		&TabBitmap = GetWWPTabImage(&IsFirstTab, True, False, False)
+		&IsSelectedTab = True
+		TableTab.Class = !"SelectedTabTable"
+		Tab.Class = !"SelectedTab"
+		Tab.Link = ""
+		&WebComponentUrl = &Tab.WebComponent
+		Component.Object = CreateFromURL(&WebComponentUrl)
+	else
+		&TabBitmap = GetWWPTabImage(&IsFirstTab, False, &IsSelectedTab, False)
+		&IsSelectedTab = False
+		TableTab.Class = !"UnSelectedTabTable"
+		Tab.Class = !"UnSelectedTab"
+		Tab.Link = &Tab.Link
+	endif
+	BeginTab.Bitmap = &TabBitmap
+EndSub
+
+
+====== PROPERTIES =======
+Name -> WWPTabbedView
+Description -> Tabbed View
+WEB_COMP -> Yes
+STD_FUNC_OBJECT -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

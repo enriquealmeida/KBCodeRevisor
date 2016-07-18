@@ -1,0 +1,17 @@
+======OBJECT = LoadWWPContext.Procedure === Load Work With Plus Context=====
+
+=== RULES ===
+parm(out:&Context);
+
+
+=== PROCEDURE SOURCE ===
+&Context.FromXml(&Session.Get(WWPDomains.WWPContext))
+
+
+
+====== PROPERTIES =======
+Name -> LoadWWPContext
+Description -> Load Work With Plus Context
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 73
+IsDefault -> False

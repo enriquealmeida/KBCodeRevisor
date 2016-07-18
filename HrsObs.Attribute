@@ -1,0 +1,15 @@
+======OBJECT = HrsObs.Attribute === Observación Horas Realizadas=====
+VARCHAR(256)
+
+
+====== PROPERTIES =======
+Name -> HrsObs
+Description -> Observación Horas Realizadas
+HORIZONTAL_DESCRIPTION -> Observación Horas Realizadas
+VERTICAL_DESCRIPTION -> Observación Horas Realizadas
+ContextualTitle -> Observación Horas Realizadas
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 2
+IsDefault -> False

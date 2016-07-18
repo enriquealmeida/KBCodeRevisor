@@ -1,0 +1,22 @@
+======OBJECT = MDCod.Transaction === MDCod=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+MDObjTpo*
+MDCdId*
+MDCdDsc
+MDCdFrm
+MDCdLog
+
+
+====== PROPERTIES =======
+Name -> MDCod
+GenerateObject -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+IsDefault -> False

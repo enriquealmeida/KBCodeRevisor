@@ -1,0 +1,12 @@
+======OBJECT = IRspLic.Index === IRsp Lic=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:28.0000000Z" checksum="c6eae3917a95d9a97ddf4483deded8bd" fullyQualifiedName="IRspLic" guid="14d38892-73ae-45f7-81f3-6f9de4a532df" name="IRspLic" type="9e750647-3679-0000-0100-2529de263960" description="IRsp Lic">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspLicId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IRspLic</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IRspLic

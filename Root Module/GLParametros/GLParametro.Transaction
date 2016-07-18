@@ -1,0 +1,20 @@
+======OBJECT = GLParametro.Transaction === GLParametro=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+ParId*
+SolxMailDateTime
+
+
+====== PROPERTIES =======
+Name -> GLParametro
+GenerateObject -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 21
+ObjectVisibility -> Private
+IsDefault -> False

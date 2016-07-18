@@ -1,0 +1,297 @@
+======OBJECT = PNumStr.Procedure === Pasa Numero a String=====
+
+=== RULES ===
+parm(IN:&VAuxNum ,OUT:&Vstr ) ;
+
+
+=== PROCEDURE SOURCE ===
+&VNumero = &VAuxNum
+
+Do 'InicializoVectorUnidades'
+Do 'InicializoVectorDecenas'
+Do 'InicializoVectorCentenas'
+
+//CONVIERTO EL NUMERO A STRING
+&VStr = ''
+if &VNumero < 0
+    &VNumero = &VNumero * (-1)
+endif
+if &VNumero = 0
+	&Vstr= 'Cero'
+    Return
+endif
+
+&VNumStr = str( (&VNumero * 100) ,15 )
+
+&VLar = 1
+// COMIENZO LA RECorRIDA DE EL NUMERO
+Do While &VLar < 15
+    &Vpos = val( Substr( &VNumStr , &VLar , 1 ) )
+   //CONTROLO LOS CENTESIMOS QUE SEAN MENorES DE TREINTA
+       if &VLar = 14  and  &Vpos < 3 // and  &Vpos <> 0
+           &Vaux1 = Substr( &VNumStr , &VLar , 1 )
+           &VLar = &Vlar + 1
+           &Vaux2 = Substr( &VNumStr , &VLar  , 1 )
+           &VAux2 = &Vaux1 + &Vaux2
+           &VDsc =  ' Con  ' + &Vaux2 +  '/100'
+           &Vstr = trim(&Vstr)
+           &Vstr =  &VStr + &VDsc
+       else
+        //SI NO LO TRATO COMO UN NUMERO COMUN
+           if &Vlar > 13  and  &VPos >= 3
+               &Vaux1 = Substr( &VNumStr , 14 , 1 )
+               &Vaux2 = Substr( &VNumStr , 15 , 1 )
+               &Vaux2 = &Vaux1 + &Vaux2
+               &VDsc =' Con  ' + &Vaux2
+               &VDsc = &VDsc + '/100'
+               &Vstr = trim(&Vstr)
+               &Vstr = &VStr + &VDsc
+           endif
+       endif
+    //HAGO LO MISMO PERO CON LOS NUMEROS
+       if &VLar = 12  and  &Vpos < 3
+           &Vaux1 = Substr( &VNumStr , &VLar , 1 )
+           &VLar = &Vlar + 1
+           &Vaux2 = Substr( &VNumStr , &VLar  , 1 )
+           &VAux2 = &Vaux1 + &Vaux2
+           &Vpos = val(&Vaux2 )
+           if &Vpos <> 0
+               &VNumDsc = &VUni(&VPos)
+               &Vstr =  &VStr + &VNumDsc
+           endif
+       else
+        //SI NO LO TRATO COMO UN NUMERO COMUN
+           if &Vlar = 12  and  &VPos >= 3
+               &VPos1 =  val( Substr( &VNumStr , 12 , 1 ) )
+               &VPos2 =  val( Substr( &VNumStr , 13 , 1 ) )
+               &VNumDsc = &VDec(&VPos1)
+               if &VPos2 <> 0
+                   &VNumDsc = &VNumDsc + ' y '
+                   &VNumAuxDsc = &VUni(&VPos2)
+               endif
+               &VNumDsc = &VNumDsc + &VNumAuxDsc
+               &Vstr = &VStr + &VNumDsc
+           endif
+       endif
+       if &Vlar = 11  and  &Vpos <> 0
+           if &Vpos = 1  and  (val( Substr( &VNumStr , 12 , 1 ) ) = 0 )  and  (val( Substr( &VNumStr , 13 , 1 ) ) = 0 )
+               &VNumDsc = 'Cien'
+           else
+               &VNumDsc = &VCen(&VPos)
+           endif
+           &Vstr = &VStr + &VNumDsc
+       endif
+       if &VLar = 9  and  &Vpos < 3
+           &Vaux1 = Substr( &VNumStr , &VLar , 1 )
+           &VLar = &Vlar + 1
+           &Vaux2 = Substr( &VNumStr , &VLar  , 1 )
+           &VAux2 = &Vaux1 + &Vaux2
+           &VPos = val(&Vaux2 )
+           &VPos2 =  val( Substr( &VNumStr , 10 , 1 ) )
+           &VNumDsc = ''
+           &vAuxTxt = trim(Substr(&VNumStr ,8,1))
+           if &Vpos = 1  or  (&Vpos = 0  and  not null(&vAuxTxt)  and  &vAuxTxt <> '1'  and  &vAuxTxt <> '0')
+               &VNumDsc = ' Mil '
+           endif
+           if &Vpos > 1  and  &VPos2 = 1  and  &VPos <> 11
+               &VPos = val(&Vaux1)
+               &VNumDsc = &VDec(&VPos) + 'un Mil '
+               &p = 'E'
+           endif
+           if &Vpos > 1  and  &p <> 'E'
+               &VNumDsc = &Vuni(&VPos) + ' Mil '
+           endif
+           &Vstr = concat( &VStr ,&VNumDsc )
+       else
+        //SI NO LO TRATO COMO UN NUMERO COMUN
+           if &Vlar = 9  and  &VPos >= 3
+               &VPos1 =  val( Substr( &VNumStr , 9 , 1 ) )
+               &VPos2 =  val( Substr( &VNumStr , 10 , 1 ) )
+               &VNumDsc = &VDec(&VPos1)
+               if &Vpos2 = 1
+                   &VNumDsc = &VNumDsc + ' y '
+                   &VNumAuxDsc = ' Un '
+               else
+                   if &Vpos2 > 0
+                       &VNumDsc = &VNumDsc + ' y '
+                       &VNumAuxDsc = &VUni(&VPos2)
+                   else
+                       &VNumAuxDsc = ' '
+                   endif
+               endif
+               &VNumDsc = &VNumDsc + &VNumAuxDsc
+               &VNumDsc = &VNumDsc + ' Mil '
+               &Vstr = concat( &VStr ,&VNumDsc )
+               &VNumAuxDsc = ' '
+           endif
+       endif
+       if &Vlar = 8  and  &Vpos <> 0
+           if &Vpos = 1  and  (val( Substr( &VNumStr , 9 , 1 ) ) = 0 )  and  (val( Substr( &VNumStr , 10 , 1 ) ) = 0 )
+               &VnumDsc = ' Cien Mil '
+           else
+               if (val( Substr( &VNumStr , 9 , 1 ) ) = 0 )  and  (val( Substr( &VNumStr , 10 , 1 ) ) = 1 )
+                   &VNumDsc = &VCen(&VPos) + ' Un '
+               else
+                   if &Vpos <> 0
+                       &VNumDsc = &VCen(&VPos)
+                   endif
+               endif
+           endif
+		
+           &Vstr = concat( &VStr ,&VNumDsc )
+       endif
+       if &VLar = 6  and  &Vpos < 3
+           &Vaux1 = Substr( &VNumStr , &VLar , 1 )
+           &VLar = &Vlar + 1
+           &Vaux2 = Substr( &VNumStr , &VLar  , 1 )
+           &VAux2 = &Vaux1 + &Vaux2
+           &Vpos = val(&Vaux2 )
+           if &Vpos = 1
+               &VNumDsc = ' Un Millon '
+               &Vstr =  &VStr + &VNumDsc
+           endif
+           if &Vpos > 1
+               &VNumDsc = &VUni(&VPos) + ' Millones '
+               &Vstr =  &VStr + &VNumDsc
+           endif
+       else
+        //SI NO LO TRATO COMO UN NUMERO COMUN
+           if &Vlar = 6  and  &VPos >= 3
+               &VPos1 =  val( Substr( &VNumStr , 6 , 1 ) )
+               &VPos2 =  val( Substr( &VNumStr , 7 , 1 ) )
+               &VNumDsc = &VDec(&VPos1)
+               &VNumDsc = &VNumDsc + ' y '
+               if &Vpos <> 0
+                   &VNumAuxDsc = &VUni(&VPos2)
+               endif
+               &VNumDsc = &VNumDsc + &VNumAuxDsc
+               &VNumDsc = &VNumDsc + ' Millones '
+               &Vstr = concat( &VStr ,&VNumDsc )
+           endif
+           &P = 'S'
+       endif
+       if &Vlar = 5  and  &Vpos <> 0
+           if &P <> 'S'
+               &VNumDsc = &VCen(&VPos) + ' Millones '
+           else
+               &VNumDsc = &VCen(&VPos)
+           endif
+           &Vstr = concat( &VStr ,&VNumDsc )
+       endif
+       if &Vlar = 4  and  &Vpos <> 0
+           if &Vpos = 1
+               &VNumDsc = 'Un Billon'
+           else
+               &VNumDsc = &VUni(&VPos) + ' Billones '
+           endif
+           &Vstr = &Vstr + &VNumDsc
+           &P = 'S'
+       endif
+       if &Vlar = 3  and  &Vpos <> 0
+           if &P <> 'S'
+               &VNumDsc = &VDec(&VPos) + ' Billon '
+           else
+               &VNumDsc = &VDec(&VPos)
+           endif
+           &Vstr = concat( &VStr ,&VNumDsc )
+       endif
+       if &Vlar = 2  and  &Vpos <> 0
+           if &P <> 'S'
+               &VNumDsc = &VCen(&VPos) + ' Billon '
+           else
+               &VNumDsc = &VCen(&VPos)
+           endif
+           &Vstr = concat( &VStr ,&VNumDsc )
+       endif
+       if &Vlar = 1  and  &Vpos <> 0
+           if &Vpos = 1
+               &VNumDsc = 'Un Trillon '
+           else
+               &VNumDsc = &VUni(&VPos) + ' Trillon '
+           endif
+           &Vstr = concat( &VStr ,&VNumDsc )
+       endif
+    &VLar = &VLar + 1
+EndDo
+
+
+
+Sub 'InicializoVectorUnidades'
+	
+	// CARGO EL VECTor DE LAS UNIDADES
+	//---------------------------------
+	
+	&VUni(1) = ' Uno '
+	&VUni(2) = ' Dos '
+	&VUni(3) = ' Tres '
+	&VUni(4) = ' Cuatro '
+	&VUni(5) = ' Cinco '
+	&VUni(6) = ' Seis '
+	&VUni(7) = ' Siete '
+	&VUni(8) = ' Ocho '
+	&VUni(9) = ' Nueve '
+	&VUni(10) = ' Diez '
+	&VUni(11) = ' Once '
+	&VUni(12) = ' Doce '
+	&VUni(13) = ' Trece '
+	&VUni(14) = ' Catorce '
+	&VUni(15) = ' Quince '
+	&VUni(16) = ' Dieciseis '
+	&VUni(17) = ' Diecisiete '
+	&VUni(18) = ' Dieciocho '
+	&VUni(19) = ' Diecinueve '
+	&VUni(20) = ' Veinte '
+	&VUni(21) = ' Veintiuno '
+	&VUni(22) = ' Veintidos '
+	&VUni(23) = ' Veintitres '
+	&VUni(24) = ' Veinticuatro '
+	&VUni(25) = ' Veinticinco '
+	&VUni(26) = ' Veintiseis '
+	&VUni(27) = ' Veintisiete '
+	&VUni(28) = ' Veintiocho '
+	&VUni(29) = ' Veintinueve'
+	
+EndSub
+
+Sub 'InicializoVectorDecenas'
+	//-----------------------------
+	//CARGO EL VECTor DE LA DECENAS
+	//---------- --------------------
+	&VDec(1) = ' Dieci '
+	&VDec(2) = ' Veinti'
+	&VDec(3) = ' Treinta '
+	&VDec(4) = ' Cuarenta '
+	&VDec(5) = ' Cincuenta '
+	&VDec(6) = ' Sesenta '
+	&VDec(7) = ' Setenta '
+	&VDec(8) = ' Ochenta '
+	&VDec(9) = ' Noventa '
+	
+EndSub
+
+Sub 'InicializoVectorCentenas'
+	//-------------------------------
+	//CARGO EL VECTor DE LAS CENTENAS
+	//-------------------------------
+	&VCen(1) = ' Ciento '
+	&VCen(2) = ' Doscientos '
+	&VCen(3) = ' Trescientos '
+	&VCen(4) = ' Cuatrocientos '
+	&VCen(5) = ' Quinientos '
+	&VCen(6) = ' Seiscientos '
+	&VCen(7) = ' Setecientos '
+	&VCen(8) = ' Ochocientos '
+	&VCen(9) = ' Novecientos '
+	//------------------------------
+EndSub
+
+
+
+
+
+====== PROPERTIES =======
+Name -> PNumStr
+Description -> Pasa Numero a String
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

@@ -1,0 +1,16 @@
+======OBJECT = HrsTot.Attribute === Total de Horas =====
+NUMERIC(6.2)-
+sum(HrsCnt)
+
+====== PROPERTIES =======
+Name -> HrsTot
+Description -> Total de Horas 
+HORIZONTAL_DESCRIPTION -> Total Horas
+VERTICAL_DESCRIPTION -> Total Horas
+ContextualTitle -> Total Horas
+Formula -> sum(HrsCnt)
+Class -> VERTICAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> Z,ZZ9.99
+IsDefault -> False

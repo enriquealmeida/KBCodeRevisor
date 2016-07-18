@@ -1,0 +1,27 @@
+======OBJECT = selectRow.Image === select Row=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-10-02T18:10:40.0000000Z" checksum="344cc197e9f4c35400bfe9b14958b0cd" fullyQualifiedName="selectRow" guid="3914535b-0c03-44c5-9538-906a99cdd2bc" name="selectRow" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="select Row">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="SelectRow.png" description="select Row.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVY
+dFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuM4zml1AAAAH6SURBVDhPnZI/axRBGMYvxkQlWElMFA5FbMTGShH8ECI2NvGCsVBErG0OO4n4FfwAW9oIKTwQQjiy
+xRVHijUYPI4ce3/03Jmd2Zl5Z8Zn4h4ompz6wC67M/N7n2ffdyv/oziO55xzp733x8qlv1MAsixbFFrcNM7cEU5Uy63pCjBzbKnQxTNt9Xtr7bYiVSu3p0sI
+UdVOPwbUBGzwCU4a+aLcPlxwnmGMLQFcNdZskSWBAmPr7DYnvloeO1xJkpzggt83xmwSEQ/OgBu5ye+mPl2utNvt+U9f9i98HHWrcDtZcjPhVm/UjzPF7mmt
+3wUYzgoJNiTSJNn+YkhXyYrsylhnjzLFHyrvr2FxPsA911sY5sPrQokNQ0YCLoylliC1svOte+YADsJInqPqZzh0rHOvpJeXOq5zqjDFbXx3cP6K1AZFmlzx
+Wur5cv3n+aMRNRwEfNDZXTi90VQ8JauiEBtr2hB9QOy1QT44D+dff56xHF9mhq3DIQFMuARZs2MdDfDskG5TklzrMXb2NzgoNHGkRlcx09c4vBviAtRIFJrW
+FiRWOGL/EZ4oNC40E0XWNek+ijhlVWPIhw/6rn/uSHiiKIpmc5ffkFa+xK/6lhF70kybaFh9OjxR5KPZLkaUZumtPbl3Ec4/RvWvavVaC7GP58rXI1SpfAcN
+ocHdhy0i2QAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>SelectRow.png</Value></Property><Property><Name>Description</Name><Value>select Row.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Downloads\SelectRow.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>selectRow</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> selectRow
+IsDefault -> False

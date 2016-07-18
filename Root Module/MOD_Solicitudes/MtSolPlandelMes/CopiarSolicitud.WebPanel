@@ -1,0 +1,64 @@
+======OBJECT = CopiarSolicitud.WebPanel === Copiar Solicitud =====
+
+=== RULES ===
+Parm(in:&PrbId, in:&RspId, out:&PrbIdNueva);
+
+
+=== EVENTS SOURCE ===
+Event Start
+	for each
+	where      PrbId = &PrbId
+		&PrbDsc 	= 'Ajustar Descripcion'
+		&CliId 		= CliId
+		&PrbPryId	= PryId
+		&SisId		= SisId
+		&PrbTpo		= PrbTpo
+		&SegUsr		= &RspId.ToUpper()
+		&CrrUsr 	= &RspId.ToUpper()
+		&PrbUsr		= &RspId.ToUpper()
+		&PrbSts		= DMPrbSts.ING
+	endfor
+EndEvent
+
+Event Enter
+	&PrbIdNueva.SetEmpty()
+	&errorDescription.SetEmpty()
+	for each
+	where      PrbId = &PrbId
+		//&BCSolicitudes.CliId 	= &CliId
+		&BCSolicitudes.SisId	= &SisId
+		&BCSolicitudes.PryId	= &PrbPryId
+		&BCSolicitudes.PrbSts	= &PrbSts
+		&BCSolicitudes.SegUsr	= &SegUsr
+		&BCSolicitudes.CrrUsr 	= &CrrUsr
+		&BCSolicitudes.PrbTpo	= &PrbTpo
+		&BCSolicitudes.PrbUsr	= &PrbUsr
+		&BCSolicitudes.PrbDsc 	= &PrbDsc
+		&BCSolicitudes.PrbTxt	= &PrbTxt
+		&BCSolicitudes.Save()
+		if &BCSolicitudes.Fail()
+			&Messages = &BCSolicitudes.GetMessages()
+			for &Message in &Messages
+				&errorDescription = &errorDescription + newLine() + &Message.Description
+			endfor
+		else
+			&PrbIdNueva = &BCSolicitudes.PrbId
+		endif
+	endfor
+	if &errorDescription.IsEmpty()
+		commit
+		return
+	else
+		msg(&errorDescription)
+	endif
+
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> CopiarSolicitud
+Description -> Copiar Solicitud 
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

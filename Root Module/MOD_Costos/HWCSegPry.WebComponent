@@ -1,0 +1,188 @@
+======OBJECT = HWCSegPry.WebComponent === Seguimiento de proyectos=====
+
+=== RULES ===
+parm(in:&RspId, in:&FchIniPar, in:&FchFinPar);
+// los parrámetros &FchIniPar y &FchFinPar son por compatibilidad con el panel de control.
+
+
+=== EVENTS SOURCE ===
+
+Event Start
+    PParChart.call(&ParDirChart,&ParDirWProc)
+
+    if &FchFinPar.IsEmpty()
+        &FchIni = ymdtod( year(&Today), month(&Today), 1 )
+        &FchFin = eom(&FchIni)
+    else
+        &FchIni = &FchIniPar
+        &FchFin = &FchFinPar
+    endif
+
+    //tbkConf.Link = TMTSegRsp.link( &RspId)
+EndEvent  // Start
+
+Event Refresh
+    // cargo los clientes o los clientes de los proyectos que está suscrito el responsable
+    &clientesAux.Clear()
+    for each
+        where     RspId = &RspId
+
+        if SegTpoRef = 'CLI'
+            &CliId = SegRef
+            do 'AgregoCliente'
+        else    // SegTporef = 'PRY'
+            // busco el cliente del proyecto
+            for each
+                where     PryId = SegRef
+
+                &CliId = CliId
+            endfor
+            do 'AgregoCliente'
+        endif
+    endfor
+
+    // saco de la colexión los elementos repetidos
+    &clientesAux.Sort('CliId')
+    &clientes.Clear()
+    &CliIdAnt = nullvalue(&CliIdAnt)
+    for &clientesItem in &clientesAux
+        if &clientesItem.CliId <> &CliIdAnt
+            &clientes.Add(&clientesItem)
+        endif
+        &CliIdAnt = &clientesItem.CliId
+    endfor
+
+    if &clientes.Count > 0
+        tbkMensaje.Visible = 0
+        Grid1.Visible = 1
+    else
+        tbkMensaje.Caption = 'No existen proyectos seguidos por ' + trim(&RspId)
+        tbkMensaje.Visible = 1
+        Grid1.Visible = 0
+    endif
+EndEvent  // Refresh
+
+Event load
+    for &clientesItem in &clientes
+        &CliId = &clientesItem.CliId
+
+        &url = trim(&ParDirChart) + 'Drawchart.aspx?type=Bar&legend=None'
+        &urlCat = 'Categories=Values:'
+        &urlSeries = '&Series1=Values:'
+
+        &cantPry = 0
+
+        // veo si la suscripción es al cliente
+        &SegPorCli = Bool.false
+        for each
+            where     RspId = &RspId
+            where     SegTpoRef = 'CLI'
+            where     SegRef = &CliId
+
+            &SegPorCli = Bool.true
+            &SegVerRango = SegVerRango
+        endfor
+
+        // veo las horas en los proyectos que son de ese cliente
+        for each
+            where     CliId = &CliId
+            defined by PryNom
+
+            if &SegPorCli = Bool.false
+                // veo si el proyecto lo tengo que seguir
+                &SegPry = Bool.false
+                for each
+                    where     RspId = &RspId
+                    where     SegTpoRef = 'PRY'
+                    where     SegRef = PryId
+
+                    &SegPry = Bool.true
+                    &SegVerRango = SegVerRango
+                endfor
+            endif
+
+            if &SegPorCli = Bool.true or &SegPry = Bool.true
+                &HrsCnt = 0
+                &HrsCntErr = 0
+                for each
+                    where     HrsFch >= &FchIni when &SegVerRango = true
+                    where     HrsFch <= &FchFin
+    
+                    if TarId <> 'ERRorES'
+                        &HrsCnt += HrsCnt
+                    else
+                        &HrsCntErr += HrsCnt
+                    endif
+                endfor
+                if &HrsCnt > 0
+                    &urlCat += ',' + trim(PryId)
+                    &urlSeries += ',' + trim(str(&HrsCnt, 8, 0))
+                    &cantPry += 1
+                endif
+                if &HrsCntErr > 0
+                    &urlCat += ',' + trim(PryId) + '_ERR'
+                    &urlSeries += ',' + trim(str(&HrsCntErr, 8, 0))
+                    &cantPry += 1
+                endif
+    
+                // calculo las transferencias para ese proyecto
+                &HrsTotTrf = nullvalue(&HrsTotTrf)
+                for each
+                    where     PryHijId = PryId
+    
+                    // veo todas las horas del proyecto padre en el período
+                    &HrsCntTrf = nullvalue(&HrsCntTrf)
+                    for each
+                        where     HrsFch >= &FchIni
+                        where     HrsFch <= &FchFin
+                        where     PryId = PryPadId
+        
+                        &HrsCntTrf += HrsCnt
+                    endfor
+                    &HrsTotTrf += &HrsCntTrf * PryDisPor / 100
+                endfor
+                if &HrsTotTrf > 0
+                    &urlCat += ',' + trim(PryId) + '_TRF'
+                    &urlSeries += ',' + trim(str(&HrsTotTrf, 8, 0))
+                    &cantPry += 1
+                endif
+            endif
+        endfor
+
+        &height = &cantPry * 22 + 40
+        &url += '&width=300&height=' + trim(str(&height))
+        &url += '&' + &urlCat + &urlSeries
+        &grf = loadBitmap(&url)
+        load
+    endfor
+EndEvent  // load
+
+
+Sub 'AgregoCliente'
+    // veo si el cliente está en la tabla de clientes
+    &existe = Bool.false
+    for each
+        where     CliId = &CliId
+
+        &existe = Bool.true
+    endfor
+
+    if &existe = Bool.true
+        &clientesItem.CliId = &CliId
+        &clientesAux.Add(&clientesItem)
+        &clientesItem = new SdtClientes.SdtClientesItem()
+    endif
+EndSub  // 'AgregoCliente'
+
+
+====== PROPERTIES =======
+Name -> HWCSegPry
+Description -> Seguimiento de proyectos
+WEB_COMP -> Yes
+URLAccess -> No
+AUTO_REFRESH -> VARS_CHANGE
+WebUX -> SMOOTH
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

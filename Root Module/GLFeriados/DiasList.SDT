@@ -1,0 +1,12 @@
+======OBJECT = DiasList.SDT === Dias List=====
+
+=== STRUCTURE ===
+DiasList, collection: DiasListItem
+	Dias, D(8), Dias 
+
+====== PROPERTIES =======
+Name -> DiasList
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+ObjectVisibility -> Private
+IsDefault -> False

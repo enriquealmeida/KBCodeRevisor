@@ -1,0 +1,15 @@
+======OBJECT = PryFchAprCli.Attribute === Fecha Aprobacion Cliente=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> PryFchAprCli
+Description -> Fecha Aprobacion Cliente
+HORIZONTAL_DESCRIPTION -> Fecha Aprobacion Cliente
+VERTICAL_DESCRIPTION -> Fecha Aprobacion Cliente
+ContextualTitle -> Fecha Aprobacion Cliente
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+idDATEFORMAT -> idDATEFORMAT_LONG
+IsDefault -> False

@@ -1,0 +1,35 @@
+======OBJECT = MOD_Sueldos.Module === MOD_Sueldos=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-03-14T19:00:07.0000000Z" lastUpdate="2016-03-14T16:53:03.0000000Z" checksum="cbc44f8b283b261f61a4a5bd4030ea39" fullyQualifiedName="MOD_Sueldos" guid="81161df1-5a38-44db-a6ea-b59d9601d454" name="MOD_Sueldos" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="MOD_Sueldos">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="7ae54ef2-19f1-4a9b-9267-c86520016778">
+      <Layers>
+        <Layer Id="7ae54ef2-19f1-4a9b-9267-c86520016778">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Sueldos" Bounds="961.6874 781.6537 150.0001 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MD" Bounds="397 807.0651 150 32.00006" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="31.98186 245.5354 150 32.00002" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-Root Module" Bounds="384.1525 27.97515 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-GLFeriados" Bounds="84.25979 692.7104 150 32.00006" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Licencia" Bounds="49.12298 104.8184 150 32.00002" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-WWPBaseObjects" Bounds="-54.19074 524.3175 150 32.00006" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Proyectos" Bounds="1174.338 598.9633 150.0001 32.00006" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Consolidado" Bounds="819.8576 41.86351 150.0001 32.00001" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Solicitudes" Bounds="1005.656 625.1446 150.0001 32.00006" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Horas" Bounds="665.1575 769.316 150.0001 32.00006" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Objetivos" Bounds="1060.12 107.7468 150.0001 32.00002" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MOD_Sueldos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> MOD_Sueldos
+IsDefault -> False

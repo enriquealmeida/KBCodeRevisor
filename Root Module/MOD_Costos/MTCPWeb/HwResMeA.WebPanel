@@ -1,0 +1,191 @@
+======OBJECT = HwResMeA.WebPanel === Mes Acumulado=====
+
+=== RULES ===
+noaccept(&vMes ) ;
+noaccept(&cCpRecDsc ) ;
+noaccept(&vHrs ) ;
+noaccept(&vCob ) ;
+noaccept(&vGan ) ;
+noaccept(&vCobxHr ) ;
+noaccept(&vPagxHr ) ;
+noaccept(&vGanxHr ) ;
+noaccept(&vGanOpt ) ;
+noaccept(&cPryNom ) ;
+noaccept(&vMargen ) ;
+noaccept(&vTotCob ) ;
+noaccept(&vTotCobxHr ) ;
+noaccept(&vTotPag ) ;
+noaccept(&vTotPagxHr ) ;
+noaccept(&vTotGan ) ;
+noaccept(&vTotGanxHr ) ;
+noaccept(&vTotGanOpt ) ;
+noaccept(&vTotPorcGa ) ;
+noaccept(&cprytpodsc ) ;
+noaccept(&cpryclsdsc ) ;
+
+default(&vFchFin ,today() ) ;
+
+color('RED+' ,&Texto ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vHrs ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vCob ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vGan ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vPag ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vTranf ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vCobxHr ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vGanxHr ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vPagxHr ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vTranfxHr ) IF &Texto = ' TOTALES' ;
+color('RED+' ,&vMargen ) IF &Texto = ' TOTALES' ;
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &PrimeraVez='S'
+    &UrlMesLab = '&Legend=Bottom&Categories=Values:'
+
+    &cFchFin = PMTParFch('PARFCHCRR')
+    &cFchIni = ymdtod( year(&cFchFin), 1, 1)
+    
+    &vMes=0
+    &vCpMovTpo = 'R'
+    &vTomaTrf  = 'S'
+
+    &Nulo=nullvalue(&cCpRecId)
+
+    &cCliId=&Nulo
+    &cPryId=&Nulo
+    &cCpRecId=&Nulo
+    &cprycls=&Nulo
+    &cprytpo=&Nulo
+
+    PParChart.call(&ParDirChart,&ParDirWProc)
+    &ParDirChart = trim(&ParDirChart)
+    &ParDirWProc = trim(&ParDirWProc)
+
+    &UsarFecha = 'M'
+
+    &VerEgr = Bool.True
+    &VerGan = Bool.True
+    &VerTrf = Bool.True
+EndEvent
+
+Event Refresh
+    &cFchFin = PMTParFch('PARFCHCRR')
+
+    &vMes = month(&cFchIni)
+    &vAno = year(&cFchIni)
+    &cFchIni = ymdtod(&vAno, &vMes, 1)
+    &vFecha  = &cFchIni
+    if &cFchIni > &cFchFin
+        msg('El rango de fechas no es válido')
+    endif
+    &vTotHrs    = 0
+    &vTotCob    = 0
+    &vTotCobxHr = 0
+    &vTotPag    = 0
+    &vTotPagxHr = 0
+    &vTotGan    = 0
+    &vTotGanxHr = 0
+    &vTotGanOpt = 0
+    &vTotPorcGa = 0
+    &vTotTranf  = 0
+    &vToTranxHr = 0
+EndEvent
+
+Event load
+    Do While &vFecha < &cFchFin
+        &Texto=trim(str(month(&vFecha),2,0))
+        if len(&Texto) = 1
+            &Texto='0'+&Texto
+        endif
+        &Texto= str(year(&vFecha),4,0)+'m'+&Texto
+
+        &vFchFinAux = eom(&vFecha)
+        for each order CpMovFch
+            where      &vFecha <= CpMovFch and CpMovFch <= &vFchFinAux when &UsarFecha = 'M'
+            where      &vFecha <= CpMovFchFac and CpMovFchFac <= &vFchFinAux when &UsarFecha = 'F'
+            where      &vFecha <= CpMovFchCob and CpMovFchCob <= &vFchFinAux when &UsarFecha = 'C'
+            where      CpMovEST <> 'T'  or  &vTomaTrf ='S'
+            where      CliId = &cCliId  or  null(&cCliId)
+            where      CpRecId = &cCpRecId  or  null(&cCpRecId)
+            where      PryId = &cPryId  or  null(&cPryId)
+            where      PryCls = &cprycls  or  null(&cprycls)
+            where      PryTpo = &cprytpo  or  null(&cprytpo)
+            &vHrs = &vHrs + CpMovHrs
+            if CpMovEST = 'E'
+                &vCob = &vCob + CpMovImp
+            else
+                if CpMovEST = 'S'  or  CpMovEST='T'
+                    &vPag = &vPag - CpMovImp
+                else
+                     &vTranf = &vTranf - CpMovImp
+                     
+                endif           
+            endif
+        endfor
+        &vFecha = addmth(&vFecha, 1)
+    
+        &vGan = &vCob - &vPag - &vTranf
+    
+        &vCobxHr =   PClcTas(&vCob,&vHrs)
+        &vPagxHr =   PClcTas(&vPag,&vHrs)
+        &vGanxHr =   PClcTas(&vGan,&vHrs)
+        &vTranfxHr = PClcTas(&vTranf,&vHrs)
+
+        &vMargen=PClcMrg(&vGan,&vCob)
+
+        if &vHrs <> 0  or   &vPag <> 0  or  &vGan<> 0
+            if &PrimeraVez <> 'S'
+                &UrlMesLab=&UrlMesLab+','
+                &UrlLeg1= &UrlLeg1+','
+                &UrlLeg2= &UrlLeg2+','
+                &UrlLeg4= &UrlLeg4+','
+            endif
+            &PrimeraVez='N'
+            &UrlMesLab = &UrlMesLab + &Texto
+            &Decimales = 2
+            &UrlLeg1 = &UrlLeg1 + PComaApto(&vCobxHr,&Decimales)
+            &UrlLeg2 = &UrlLeg2 + PComaApto(&vPagxHr,&Decimales)
+            &UrlLeg4 = &UrlLeg4 + PComaApto(&vGanxHr,&Decimales)
+
+            &vCobScr = round(&vCob, 0)
+            &vPagScr = round(&vPag, 0)
+            &vTranfScr = round(&vTranf, 0)
+            &vGanScr = round(&vGan, 0)
+            load   
+        endif
+        &vTotHrs = &vTotHrs + &vHrs
+        &vTotPag = &vTotPag - &vPag
+        &vTotGan = &vTotGan + &vGan
+        &vTotCob = &vTotCob + &vCob
+        &vTotTranf = &vTotTranf - &vTranf
+    EndDo
+    
+    &Url = &ParDirChart + 'DrawChart.aspx?type=Line&datalabels=none&width=750&height=400'+&UrlMesLab
+
+    &i = 1
+    if &VerEgr = 'S'
+        &Url += '&Series' + trim(str(&i)) + '=Values:Egresos:' + &UrlLeg1
+        &i += 1
+    endif
+    if &VerTrf = 'S'
+        &Url += '&Series' + trim(str(&i)) + '=Values:Transf:' + &UrlLeg2
+        &i += 1
+    endif
+    if &VerGan = 'S'
+        &Url += '&Series' + trim(str(&i)) + '=Values:Ganancia:' + &UrlLeg4
+        &i += 1
+    endif
+    &Grafica=loadBitmap(&Url )
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HwResMeA
+Description -> Mes Acumulado
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 43
+ObjectVisibility -> Public
+IsDefault -> False

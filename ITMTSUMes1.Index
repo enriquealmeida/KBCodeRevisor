@@ -1,0 +1,12 @@
+======OBJECT = ITMTSUMes1.Index === ITMTSUMes1=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-08-20T19:46:04.0000000Z" checksum="89dc16053db17008f8f25ed7dfd5c51f" fullyQualifiedName="ITMTSUMes1" guid="027a6422-bc1f-413e-b9a9-cbbc2c40968d" name="ITMTSUMes1" type="9e750647-3679-0000-0100-2529de263960" description="ITMTSUMes1">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspSuMonPla</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ITMTSUMes1</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ITMTSUMes1

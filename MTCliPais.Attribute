@@ -1,0 +1,15 @@
+======OBJECT = MTCliPais.Attribute === Pais=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> MTCliPais
+Description -> Pais
+HORIZONTAL_DESCRIPTION -> Pais
+VERTICAL_DESCRIPTION -> Pais
+ContextualTitle -> Pais
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-78
+ATT_PICTURE -> @!
+IsDefault -> False

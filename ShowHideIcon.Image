@@ -1,0 +1,22 @@
+======OBJECT = ShowHideIcon.Image === Show Hide Icon=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-19T16:26:24.0000000Z" lastUpdate="2014-09-23T15:16:25.0000000Z" checksum="ee9d4bd24e4598927bd48c24e3224736" fullyQualifiedName="ShowHideIcon" guid="d5805f89-2052-48f0-8fcc-d86daddb26cd" name="ShowHideIcon" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Show Hide Icon">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ShowHideIcon.png" description="Show Hide Icon.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABYAAAAPCAYAAADgbT9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVY
+dFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuM4zml1AAAAA9SURBVDhP7dAxCgAwDMPA/P/T7ZKpyATRNQfaPLke57OIxqaIxqY1o99MEY1NEY1Na0a/mSIamyIa
+m1rVBURyj3FT4K9IAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ShowHideIcon.png</Value></Property><Property><Name>Description</Name><Value>Show Hide Icon.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\TestThemeControles\CSharpModel\web\Resources\ShowHideIcon.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ShowHideIcon</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ShowHideIcon
+IsDefault -> False

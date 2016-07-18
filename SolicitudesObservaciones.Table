@@ -1,0 +1,13 @@
+======OBJECT = SolicitudesObservaciones.Table === Observaciones de las solicitudes=====
+*PryId  PROYECTO- Null=False
+*PrbId  SOLICITUD- Null=False
+*SolObsLin  NumeroLinea- Null=False
+ SolObsDet  ObservacionesCorta- Null=False
+ SolObsFch  Fecha- Null=False
+ SolObsTpo  DMTpoObservaciones- Null=False
+ SolObsUsr  DMUsuarios- Null=False
+ ObsPrbStsId  Codigo3- Null=False
+
+====== PROPERTIES =======
+Name -> SolicitudesObservaciones
+Description -> Observaciones de las solicitudes

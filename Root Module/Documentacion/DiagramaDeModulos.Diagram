@@ -1,0 +1,35 @@
+======OBJECT = DiagramaDeModulos.Diagram === Diagrama De Modulos=====
+<Object parent="Documentacion" parentType="00000000-0000-0000-0000-000000000008" parentGuid="ef7241f9-ade9-45ec-8241-bd93497057b9" user="" versionDate="2016-03-15T18:53:00.0000000Z" lastUpdate="2016-03-15T18:31:57.0000000Z" checksum="608f7374f1976f16429da96128a006b2" fullyQualifiedName="DiagramaDeModulos" guid="182d4053-002c-4c18-8d71-6c335dabbdfd" name="DiagramaDeModulos" type="280c149c-48b2-4284-a532-0c999df9e006" description="Diagrama De Modulos">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="380d1e38-2652-4aee-83ea-55398ba8b544">
+      <Layers>
+        <Layer Id="380d1e38-2652-4aee-83ea-55398ba8b544">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Consolidado" Bounds="1034.162 603.8111 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="1006.801 794.2009 150.0001 32.00006" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Horas" Bounds="868.3082 110.6578 150 32.00003" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Objetivos" Bounds="631.5544 25.11884 150 32.00003" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Proyectos" Bounds="342.891 0 150.0001 32.00003" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-WWPBaseObjects" Bounds="1024.456 356.4084 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Cierre" Bounds="401.2459 837.2195 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Costos" Bounds="113.3211 784.9456 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Licencia" Bounds="43.11982 155.3813 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_PanelControl" Bounds="1.816877E-06 644.7451 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Solicitudes" Bounds="758.8611 853.1216 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Sueldos" Bounds="-9.047176E-08 449.523 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DiagramaDeModulos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 86
+Name -> DiagramaDeModulos
+IsDefault -> False

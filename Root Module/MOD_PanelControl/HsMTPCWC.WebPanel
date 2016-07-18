@@ -1,0 +1,26 @@
+======OBJECT = HsMTPCWC.WebPanel === (NA) Selección de WebComps de Panel=====
+
+=== RULES ===
+parm(in:&MTPCWbp, out:&MTWCWbp);
+
+
+=== EVENTS SOURCE ===
+Event Enter
+    &MTWCWbp = MTWCWbp
+    return
+EndEvent
+
+Event 'Select'
+	&MTWCWbp = MTWCWbp
+	return 
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HsMTPCWC
+Description -> (NA) Selección de WebComps de Panel
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

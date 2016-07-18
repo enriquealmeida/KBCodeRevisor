@@ -1,0 +1,15 @@
+======OBJECT = PrcActId.Attribute === Proceso o Actividad de apoyo=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> PrcActId
+Description -> Proceso o Actividad de apoyo
+HORIZONTAL_DESCRIPTION -> Proceso o Actividad de apoyo
+VERTICAL_DESCRIPTION -> Proceso o Actividad de apoyo
+ContextualTitle -> Proceso o Actividad de apoyo
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

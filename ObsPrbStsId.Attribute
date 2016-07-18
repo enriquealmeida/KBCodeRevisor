@@ -1,0 +1,12 @@
+======OBJECT = ObsPrbStsId.Attribute === Obs Prb Sts Id=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> ObsPrbStsId
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttCollection -> False
+ControlType -> 2
+IsDefault -> False

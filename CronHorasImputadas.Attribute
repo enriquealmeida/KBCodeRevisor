@@ -1,0 +1,13 @@
+======OBJECT = CronHorasImputadas.Attribute === Horas Imputadas a la Solicitud=====
+NUMERIC(6.2)-
+
+
+====== PROPERTIES =======
+Name -> CronHorasImputadas
+Description -> Horas Imputadas a la Solicitud
+HORIZONTAL_DESCRIPTION -> Horas Imputadas
+VERTICAL_DESCRIPTION -> Horas Imputadas
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,17 @@
+======OBJECT = SetWWPContext.Procedure === Set Work With Plus Context=====
+
+=== RULES ===
+parm(in:&Context);
+
+
+=== PROCEDURE SOURCE ===
+&Session.Set(WWPDomains.WWPContext, &Context.ToXml())
+
+
+====== PROPERTIES =======
+Name -> SetWWPContext
+Description -> Set Work With Plus Context
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 73
+ObjectVisibility -> Private
+IsDefault -> False

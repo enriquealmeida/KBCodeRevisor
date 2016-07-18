@@ -1,0 +1,49 @@
+======OBJECT = DisparoPSolXMail.Procedure === Disparo PSol XMail=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+&HayProcesos=IsProcessRunning('mod_solicitudes.apsolxmail')
+if &HayProcesos='N'
+	do 'Someto'
+else 
+	&SolXMailDateTime=DevuelvoSolxMailDateTime()
+
+    &Segundos = Tdiff(Now(),&SolXMailDateTime)
+	Msg(format('Segundos %1', &Segundos),status)
+	
+	if &Segundos > (30 * 60 )  //MediaHora
+		Msg(format('Mato proceso apsolxmail, pues hace %1 segundos que no actualiza ', &Segundos),status)
+	    csharp foreach ( System.Diagnostics.Process p in System.Diagnostics.Process.GetProcessesByName("mod_solicitudes.apsolxmail") ){
+			csharp try     {       p.Kill();         p.WaitForExit();     }
+		    //csharp catch ( Win32Exception winException ) {     }
+			csharp catch ( InvalidOperationException invalidException ) {}
+		    //{         // process has already exited - might be able to let this one go}
+	    csharp }
+	    do 'someto'
+	else 
+		Msg('Ya hay un proceso apSolxMail ejecutando correctamente',status) //Call() //&err=shell('pSolxMail.exe')
+	endif
+	
+endif
+&err = sleep(30) 
+
+Sub 'Someto'
+	Msg('Voy a someter apSolxMail',status)
+	&err=shell('mail.bat',0)
+	   // PSolxMail.submit('') 
+	Msg('Someti apSolxMail',status)
+endSub
+
+
+
+====== PROPERTIES =======
+Name -> DisparoPSolXMail
+IsMain -> True
+CALL_PROTOCOL -> CLINE
+AppLocation -> BATCH
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

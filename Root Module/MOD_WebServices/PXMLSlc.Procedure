@@ -1,0 +1,66 @@
+======OBJECT = PXMLSlc.Procedure === XML de Solicitudes=====
+
+=== RULES ===
+Parm(in:&RspId);
+
+
+=== PROCEDURE SOURCE ===
+&XmlW.OpenResponse(&Response)
+&XmlW.WriteStartDocument('ISO-8859-1')
+&XmlW.WriteStartElement('Solicitudes')
+    
+for each order PrbSts  PrbPrio PrbPlaFch //Primero recorro todas las solicitudes con fecha de vencimiento
+where            CrrUsr = &RspId  or  SegUsr = &RspId
+where            PrbSts = DMPrbSts.DES // or PrbSts = &ParDesarro
+where            not Null(PrbPlaFch) 
+    &PrbTxt = PrbTxt
+    &PrbPrio = PrbPrio
+    &PrbId = PrbId
+    &PrbDiasAbi = PrbDiasAbi
+    &PrbPedFch = PrbPlaFch
+    &PrbSts = PrbSts
+    Do 'Escribo'
+endfor
+    
+for each order PrbPrio           //Recorro todas las solicitudes SIN fecha de vencimiento
+where            CrrUsr = &RspId  or  SegUsr = &RspId
+where            PrbSts =  DMPrbSts.DES //or PrbSts=&ParDesarro    
+where            Null(PrbPlaFch)
+    &PrbTxt = PrbTxt
+    &PrbPrio = PrbPrio
+    &PrbId = PrbId
+    &PrbDiasAbi = PrbDiasAbi
+    &PrbPedFch = PrbPlaFch
+    &PrbSts = PrbSts
+    Do 'Escribo'
+endfor
+        
+&XmlW.WriteEndElement()
+&XmlW.Close()
+
+
+Sub 'Escribo'
+    &XmlW.WriteStartElement('Solic')
+        &XmlW.WriteElement('ID',trim(str(&PrbId)) ) 
+        &XmlW.WriteElement('Texto', &PrbTxt )
+        &XmlW.WriteElement('Dias',&PrbDiasAbi )
+        if not Null(&PrbPedFch)
+            &XmlW.WriteElement('Para',DtoC(&PrbPedFch) )
+        else 
+            &XmlW.WriteElement('Para','')   
+        endif 
+        &XmlW.WriteElement('Prioridad', str(&PrbPrio) )  
+        &XmlW.WriteElement('Estado', &PrbSts)
+    &XmlW.WriteEndElement()
+EndSub  // 'Escribo'
+
+
+====== PROPERTIES =======
+Name -> PXMLSlc
+Description -> XML de Solicitudes
+IsMain -> True
+CALL_PROTOCOL -> HTTP
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

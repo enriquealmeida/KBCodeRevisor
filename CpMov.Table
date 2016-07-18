@@ -1,0 +1,23 @@
+======OBJECT = CpMov.Table === Movimientos Control Proyectos=====
+*CpMovId  Numerador- Null=False
+ CpMovSts  DMMovSts- Null=False
+ CpRecId  Recurso- Null=False
+ PryId  PROYECTO- Null=False
+ CpMovImp  ImporteCorto- Null=False
+ CpMovEST  DMEst- Null=False
+ CpMovFch  Fecha- Null=False
+ CpMovHrs  Horas- Null=False
+ CpMovObs  Observaciones- Null=False
+ CpMovCod  DMCodigo1- Null=False
+ CpMovCot  CotizacionMovimientos-0 
+	    IF CpMovImp = 0;
+CpMovPesos / CpMovImp 
+	    OTHERWISE; Null=False
+ CpMovPesos  ImporteCorto- Null=False
+ CpMovFchFac  Fecha- Null=False
+ CpMovFchCob  Fecha- Null=False
+ CpMovRubId  RUBRO- Null=False
+
+====== PROPERTIES =======
+Name -> CpMov
+Description -> Movimientos Control Proyectos

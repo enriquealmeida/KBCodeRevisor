@@ -1,0 +1,22 @@
+======OBJECT = EmpleadoSaldoLicenciaTomada.Procedure === Empleado Saldo Licencia Tomada=====
+
+=== RULES ===
+Parm(in:&RspId, out:&Dias);
+
+
+=== PROCEDURE SOURCE ===
+&Dias = 0
+for each
+where            RspId = &RspId and RspActivo = true
+where            RspVinculoLaboral = DMRspVinculoLaboral.EMPLEADO
+//where            RspCnt = 'N' and RspSoc = 'N'	// Es empleado y no es socio
+	//&Dias = Sum(LicDias, LicEst = EstadoLicencia.Autorizada,0)
+	&Dias = Sum(LicDias, RspId = &RspId and LicTpo = DMLicTpo.Generada and LicEst <> EstadoLicencia.Eliminada,0) + Sum(LicDias, RspId = &RspId and  LicTpo = DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Licencia and LicEst = EstadoLicencia.Autorizada,0)
+endfor
+
+
+====== PROPERTIES =======
+Name -> EmpleadoSaldoLicenciaTomada
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

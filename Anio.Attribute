@@ -1,0 +1,15 @@
+======OBJECT = Anio.Attribute === Año=====
+NUMERIC(4)
+
+
+====== PROPERTIES =======
+Name -> Anio
+Description -> Año
+HORIZONTAL_DESCRIPTION -> Año
+VERTICAL_DESCRIPTION -> Año
+ContextualTitle -> Año
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZZ9
+IsDefault -> False

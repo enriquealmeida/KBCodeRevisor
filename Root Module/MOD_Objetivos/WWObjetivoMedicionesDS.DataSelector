@@ -1,0 +1,97 @@
+======OBJECT = WWObjetivoMedicionesDS.DataSelector === WWObjetivo Mediciones DS=====
+<Object parent="MOD_Objetivos.WorkWithPlusObjetivoMediciones" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="c70803e2-9878-0d18-2134-2f81aacec5f6" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:29.0000000Z" checksum="d07db8db125c6ec609b0f3edfba5531c" fullyQualifiedName="MOD_Objetivos.WWObjetivoMedicionesDS" guid="232257f9-8550-407d-98ed-74572c335e9e" name="WWObjetivoMedicionesDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWObjetivo Mediciones DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[ObjStsId = &ObjStsId when not &ObjStsId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[IndMedFch >= &IndMedFch when not &IndMedFch.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[IndMedFch <= &IndMedFch_To when not &IndMedFch_To.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[IndId = &IndId when not &IndId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrcActId = &PrcActId when not &PrcActId.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="ObjStsId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>ObjStsId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:ObjStsId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="IndMedFch">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>IndMedFch</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:IndMedFch</Value></Property></Properties>
+      </Variable>
+      <Variable Name="IndMedFch_To">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>IndMedFch_To</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:IndMedFch</Value></Property></Properties>
+      </Variable>
+      <Variable Name="IndId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>IndId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:IndId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PrcActId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrcActId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrcActId</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>ObjStsId</Name>
+        <Description>Obj Sts Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>IndMedFch</Name>
+        <Description>Ind Med Fch</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>IndMedFch_To</Name>
+        <Description>Ind Med Fch_To</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>IndId</Name>
+        <Description>Ind Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrcActId</Name>
+        <Description>Prc Act Id</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWObjetivoMedicionesDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Objetivos.WorkWithPlusObjetivoMediciones</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWObjetivoMedicionesDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-5
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 5
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

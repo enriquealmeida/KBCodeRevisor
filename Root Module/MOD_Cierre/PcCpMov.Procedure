@@ -1,0 +1,40 @@
+======OBJECT = PcCpMov.Procedure === Carga Horas del Mes=====
+
+=== RULES ===
+parm(in:&vFchIni ,in:&vFchFin ) ;
+
+
+=== PROCEDURE SOURCE ===
+&vAnio=year(&vFchFin)
+&vMes=month(&VFchFin)
+
+&ParFchCrr = PMTParFch('PARFCHCRR')
+if &vFchIni < &ParFchCrr
+    msg(Format('%1 ERRor - Ese mes ya está cerrado %2', &vFchIni, &ParFchCrr))
+    Return
+endif
+
+for each order Anio Mes RspId PryId
+   where          Anio=&vAnio  and  Mes=&vMes
+
+    &vCpMovHrs = 0
+
+    for each
+        &vCpMovHrs = &vCpMovHrs + HrsCnt
+    endfor
+
+    &vCpMovImp = 0
+    &CpMovPesos = 0
+
+    PGCpMov.Call(DMMovSts.S, RspId, PryId, &vCpMovImp, &CpMovPesos, DMEst.Salidas , &vFchFin,  &vCpMovHrs,'','','')
+endfor
+commit
+
+
+====== PROPERTIES =======
+Name -> PcCpMov
+Description -> Carga Horas del Mes
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

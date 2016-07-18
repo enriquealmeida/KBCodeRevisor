@@ -1,0 +1,19 @@
+======OBJECT = SuMesDet.Table === Sueldos Mes Detalle=====
+*RspId  DMUsuarios- Null=False
+*RspSuA  Numeric(4.0)- Null=False
+*RspSuM  Numeric(2.0)- Null=False
+*PryId  PROYECTO- Null=False
+*RspSuFch  Fecha- Null=False
+*TpoHonId  Codigo3- Null=False
+*MonId  DMMoneda- Null=False
+ RspSuPlaExt  DMTpoSueldo- Null=False
+ RspSuImp  ImporteCorto- Null=False
+ RspSuObs  Observaciones- Null=False
+ RubId  RUBRO- Null=True
+ RspSuAuxId  DMUsuarios- Null=False
+ RspSuBol  DMBoleta- Null=False
+
+====== PROPERTIES =======
+Name -> SuMesDet
+Description -> Sueldos Mes Detalle
+CLUSTERIDX -> Artech.Genexus.Common.CustomTypes.TableIndexReference

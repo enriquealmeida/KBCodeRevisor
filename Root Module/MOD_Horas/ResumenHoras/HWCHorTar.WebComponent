@@ -1,0 +1,44 @@
+======OBJECT = HWCHorTar.WebComponent === Resumen de Horas por Tarea=====
+
+=== RULES ===
+parm(in:&RspId, in:&CliId, in:&PryId, in:&PryCls, in:&PryTpo, in:&TarId, in:&FchIni, in:&FchFin, in:&HrsPrbId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &HrsCntTot = PCntTHrs(&PryId,&TarId,&RspId,&CliId,&FchIni,&FchFin,&prycls,&prytpo,&HrsPrbId)
+EndEvent  // Start
+
+Event SbfTar.load
+    for each order TarId
+        where      TarId = &TarId  or  null(&TarId )
+
+        &TarIdSbf = TarId
+        &TarDscSbf = TarDsc
+
+        &HrsCnt = PCntTHrs(&PryId, TarId, &RspId, &CliId, &FchIni, &FchFin, &prycls, &prytpo, &HrsPrbId)
+       
+        &HrsPcj = 0
+        if &HrsCnt <> 0
+            &HrsPcj = round(&HrsCnt * 100 / &HrsCntTot, 2)
+            load
+        endif
+    endfor
+    &TarIdSbf =''
+    &HrsCnt = &HrsCntTot
+    &HrsCnt.FontBold=1
+    &HrsPcj=100
+    load
+EndEvent  // SbfCli.load
+
+
+====== PROPERTIES =======
+Name -> HWCHorTar
+Description -> Resumen de Horas por Tarea
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 85
+ObjectVisibility -> Private
+IsDefault -> False

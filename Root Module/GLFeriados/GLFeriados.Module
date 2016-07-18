@@ -1,0 +1,28 @@
+======OBJECT = GLFeriados.Module === GLFeriados=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T17:17:21.0000000Z" checksum="bb32451182511acb5d8a34962357f7e0" fullyQualifiedName="GLFeriados" guid="98917c34-e915-440a-808d-88f57e7f224c" name="GLFeriados" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="GLFeriados">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="0e561300-8a53-42c0-ab83-640b4cbfffe7">
+      <Layers>
+        <Layer Id="0e561300-8a53-42c0-ab83-640b4cbfffe7">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-GLFeriados" Bounds="289.0999 399.1092 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="129.3456 204.7922 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-WWPBaseObjects" Bounds="206.5303 86.46541 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-Root Module" Bounds="605.8824 71.71752 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Horas" Bounds="649.5232 274.8251 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>GLFeriados</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> GLFeriados
+IsDefault -> False

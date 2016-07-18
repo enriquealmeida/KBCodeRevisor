@@ -1,0 +1,12 @@
+======OBJECT = SLConsolid.Table === Consolidados=====
+*CnsId  IdConsolidado- Null=False
+ KBId  Codigo10- Null=False
+ CnsFch  Fecha- Null=False
+ MTCnsFchRea  Fecha- Null=False
+ MTCnsEstId  Codigo3- Null=False
+ MTCnsObs  DMDescLarga- Null=False
+ MTCnsDsc  DESC-trim(str(CnsId, 3, 0)) + ': ' + trim(KBId) + ' (' + trim(MTCnsEstId) + ')'; Null=False
+
+====== PROPERTIES =======
+Name -> SLConsolid
+Description -> Consolidados

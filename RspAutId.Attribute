@@ -1,0 +1,17 @@
+======OBJECT = RspAutId.Attribute === Responsable que Autoriza=====
+CHARACTER(16)
+
+
+====== PROPERTIES =======
+Name -> RspAutId
+Description -> Responsable que Autoriza
+HORIZONTAL_DESCRIPTION -> Autoriza
+VERTICAL_DESCRIPTION -> Autoriza
+ContextualTitle -> Autoriza
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+EmptyAsNull -> No
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-10
+ATT_PICTURE -> @!
+EditAutocomplete -> 1
+IsDefault -> False

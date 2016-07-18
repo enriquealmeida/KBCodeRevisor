@@ -1,0 +1,13 @@
+======OBJECT = SdtClientes.SDT === SDT Clientes=====
+
+=== STRUCTURE ===
+SdtClientes, collection: SdtClientesItem
+	CliId, C(10), Cli Id 
+
+====== PROPERTIES =======
+Name -> SdtClientes
+Description -> SDT Clientes
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

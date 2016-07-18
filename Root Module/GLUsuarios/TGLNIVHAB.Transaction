@@ -1,0 +1,27 @@
+======OBJECT = TGLNIVHAB.Transaction === Descripción Nivel Ambiente=====
+
+=== RULES ===
+parm(in:GLUsAmbId ,in:&GLUsAmbNvl ,in:&Mode ) ;
+
+GLUsAmbNvl = &GLUsAmbNvl if not insert; 
+
+Default(GLPideClave,False);
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+GLUsAmbId*
+GLUsAmbNvl*
+AmbNvlDsc
+GLPideClave
+
+
+====== PROPERTIES =======
+Name -> TGLNIVHAB
+Description -> Descripción Nivel Ambiente
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 20
+ObjectVisibility -> Private
+IsDefault -> False

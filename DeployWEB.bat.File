@@ -1,0 +1,17 @@
+======OBJECT = DeployWEB.bat.File === Deploy WEB.bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-07-01T16:42:46.0000000Z" lastUpdate="2016-07-01T16:26:43.0000000Z" checksum="e066d4a4ae5dc4aba81d05046ffda371" fullyQualifiedName="DeployWEB.bat" guid="ff42b412-f22c-40f3-98e1-65557647296f" name="DeployWEB.bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Deploy WEB.bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>aWYgJTFBIE5FUSBBQUEgIGdvdG8gU0lHTyANCiAgIGNhbGwgU2V0ZW9QYXJhbWV0cm9zLmJhdA0KICAgY2FsbCBTZXRlb0luaWNpYWxlcy5iYXQNCjpTSUdPDQpjYWxsICVkaXJGcmFtZXdvcmslXE1TQnVpbGQgRGVwbG95V0VCLk1TQlVJTEQgL25vbG9nbyAvUDpLQkRpcj0lZGlyS0IlLFRhcmdldFBhdGg9JVRhcmdldFBhdGglLEFBQUE9JWFhYWElLG1tPSVtbSUsZGQ9JWRkJSAgDQoNCmlmICVEZXN0aW5hdGlvbkRlcGxveVBhdGglQT09QSAgR09UTyBGSU4NCiAgIHhjb3B5IC5cYUluc3RhbGFyXHdlYlwqLiogL3MgL2QgL3EgL1kgJURlc3RpbmF0aW9uRGVwbG95UGF0aCUNCg0KZWNobyA+ICVEZXN0aW5hdGlvbkRlcGxveUJhdGNoUGF0aCVcaW5zdGFsYW5kby5GVUxMQ1lDTEUNCmVjaG8gRXNwZXJhbmRvIDMgbWludXRvcyBhIHF1ZSBmaW5hbGljZW4gbG9zIHByb2Nlc29zLi4NCg0KQHRpbWVvdXQgL3QgMTgwIC9ub2JyZWFrID4gbnVsDQp4Y29weSAuXGFJbnN0YWxhclx3ZWJcYmluXCouKiAvcyAvZCAvcSAvWSAlRGVzdGluYXRpb25EZXBsb3lCYXRjaFBhdGglIA0KaWYgRVJST1JMRVZFTCAxIGdvdG8gRVJST1JDT1BJQVINCg0KZGVsIAklRGVzdGluYXRpb25EZXBsb3lCYXRjaFBhdGglXGluc3RhbGFuZG8uRlVMTENZQ0xFDQppZiBFUlJPUkxFVkVMIDEgZ290byBFUlJPUkJPUlJBUg0KZ290byBGSU4NCg0KOkVSUk9SQ09QSUFSDQpzZXQgRXJyb3I9RWwgZXJyb3Igc2UgcHJvZHVqbyBhbCBpbnRlbnRhciBjb3BpYXIgYXJjaGl2b3MgZW4gbGEgS0IgJUtCTm9tYnJlJSANCnNldCBFcnJvclN1Yj1FUlJPUjogT2N1cnJpbyB1biBlcnJvciBhbCBpbnRlbnRhciBoYWNlciBEZXBsb3lXRUIgZW4gJUtCTm9tYnJlJQ0KZ290byBNQUlMDQoNCjpFUlJPUkJPUlJBUg0Kc2V0IEVycm9yPUVsIGVycm9yIHNlIHByb2R1am8gYWwgaW50ZW50YXIgYm9ycmFyIGFyY2hpdm9zIGVuIGxhIEtCICVLQk5vbWJyZSUgDQpzZXQgRXJyb3JTdWI9RVJST1I6IE9jdXJyaW8gdW4gZXJyb3IgYWwgaW50ZW50YXIgaGFjZXIgRGVwbG95V0VCIGVuICVLQk5vbWJyZSUNCjpNQUlMDQpjYWxsIEVudmlvTWFpbEVycm9yLmJhdA0KDQo6RklODQoNCg==</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>DeployWEB.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DeployWEB.bat</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>..\Deploy</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  <Categories>Deploy</Categories>
+</Object>
+====== PROPERTIES =======
+Name -> DeployWEB.bat
+Extract -> Newer
+ExtractToPath -> ..\Deploy
+IsDefault -> False

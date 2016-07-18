@@ -1,0 +1,19 @@
+======OBJECT = SaveColumnsSelectorState.Procedure === Save Columns Selector State=====
+
+=== RULES ===
+parm(in:&UserCustomKey,in:&UserCustomValue);
+
+
+=== PROCEDURE SOURCE ===
+//This is a procedure in which user has to define the behaviour of columns selector state.
+//You can save the ColumnsSelector state in session, database or whatever you want.
+//By default, it calls to SaveUserKeyValue Procedure in order to have the same mechanism in all the end users configurations
+SaveUserKeyValue(&UserCustomKey, &UserCustomValue)
+
+
+====== PROPERTIES =======
+Name -> SaveColumnsSelectorState
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 75
+ObjectVisibility -> Private
+IsDefault -> False

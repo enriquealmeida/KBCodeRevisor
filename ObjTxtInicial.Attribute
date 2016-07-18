@@ -1,0 +1,12 @@
+======OBJECT = ObjTxtInicial.Attribute === Recursos/Planificacion=====
+LONGVARCHAR(1024)
+
+
+====== PROPERTIES =======
+Name -> ObjTxtInicial
+Description -> Recursos/Planificacion
+ContextualTitle -> Recursos/Planificacion
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

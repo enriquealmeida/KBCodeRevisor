@@ -1,0 +1,139 @@
+======OBJECT = HwSUMes.WebPanel === Trabajar con honorarios del mes =====
+
+=== RULES ===
+order(RspVinculoLaboral);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &GLUsAmbNvl = 9
+    PFUsuHab.call('SUELDOS',&GLUsAmbNvl,&vOk)//Seguridad
+    If &vOk <> Bool.true 
+        HSinPermiso.call()
+    else
+        &ParDirWProc = PMTParChr('PARURLBASE')
+        &RspId2.Additem('TODOS', 'TODOS', 1)
+        &RspId2 = 'TODOS'
+		&FechaAux = &Today - 30
+        &RspSUA = Year( &FechaAux )
+        &RspSUM = Month(&FechaAux)
+		&Det.FromImage(flechita)
+		&Ausencias.FromImage(flechita)
+        &RspCobraSueldo = true //'S'
+    endif
+
+    &UltMonId = nullvalue(&UltMonId)
+
+    &DatRsp = 'Ver'
+
+    btnAnuLiq.JSEvent('onclick', "confirm('¿Confirma que desea anular la liquidación?')")
+
+    &ParFchLiq = PMTParFch('PARULTLIQ')
+	
+	&Session.Set('MODOLICENCIA',ModoLicencias.MILICENCIA )	//Para que el link al wwLicencia funcione en este modo
+EndEvent
+
+Event 'Cargar'
+    PGraCabLiq.call(&RspSUA,&RspSUM)
+	refresh
+EndEvent  // 'Cargar'
+
+Event Load
+
+    RspId.Link = HWDetLiq.Link( RspId, &RspSUA, &RspSUM)
+    RspDPla.Link = TMTSUMes.Link( RspId, &RspSUA, &RspSUM)
+    RspDEx.Link = TMTSUMes.Link( RspId, &RspSUA, &RspSUM)
+    &Det.Link = HRspSuMes.Link( RspId, &RspSUA, &RspSUM)
+    &DatRsp.Link = Responsable.Link(TrnMode.Update,RspId)
+    &DiasTotal = RspDPla + RspDEx
+    &Ausencias.Link = link(WWLicencia)
+
+    // veo si el responsable tiene ausencias sin autorizar
+    &FchIni = ymdtod( &RspSUA, &RspSUM, 1 )
+    &FchFin = eom( &FchIni )
+    for each
+        where RspId = RspId
+        where LicFecIni <= &FchFin
+        where LicFecFin >= &FchIni
+        where LicEst = EstadoLicencia.Ingresada
+
+        &hayLicSinAut = Bool.true //'S'
+        exit
+    when none
+        &hayLicSinAut = Bool.false 
+    endfor
+
+    if &hayLicSinAut = Bool.true //bool.true //'S'
+        &DiasTotal.ForeColor = rgb(255,0,0)
+    else
+        &DiasTotal.ForeColor = rgb(0,0,0)
+    endif
+
+    Load
+
+EndEvent
+
+Event 'Mails a profesionales'
+	MailAProfesionales.Call(&RspSUA, &RspSUM)
+	Msg('Se envio mail a profesionales')
+EndEvent  // 'Mails'
+
+Event Refresh
+     Imprimir.Link = 'javascript:print()'
+EndEvent  // Refresh
+
+Event 'Detalle'
+    HWDetLiq.call('',&RspSUA,&RspSUM)
+EndEvent    // 'Detalle'
+
+
+Event 'Liquidar'
+	&IngresoDatosOK = Liquidar(&RspSUA, &RspSUM)
+	if &IngresoDatosOK
+    	msg('Se efectuo la liquidación')
+	else
+		msg('No fue posible realizar la liquidación')
+	endif
+	//Msg('Se sometio la liquidacion del mes')
+EndEvent  // 'Liquidar'
+
+Event 'AnularLiquidacion'
+	&ParFchLiq = PMTParFch('PARULTLIQ')
+    if year(&ParFchLiq) = &RspSUA and month(&ParFchLiq) = &RspSUM
+        PAnuLiqMes.call(&RspSUA,&RspSUM,'')
+		//refresh
+    else
+        msg('No se pudo anular. Solo se puede anular el último mes liquidado.')
+    endif
+EndEvent  // 'AnularLiquidacion'
+
+Event 'Resumen'
+    HDResLiq.call(&RspSUA,&RspSUM)
+EndEvent  // 'Resumen'
+
+
+Event 'Liquidar Responsable'
+    HOLiqRsp.call(&RspSUA,&RspSUM)
+EndEvent  // 'Liquidar Responsable'
+
+
+Event 'Variaciones'
+    //HOVarHon.call( &RspSUA, &RspSUM)
+EndEvent  // 'Variaciones'
+
+Event 'Horas sin Ingresar'
+    HHrsNoIng2.Call(NullValue(&Today),NullValue(&Today))
+EndEvent  // 'Horas sin Ingresar'
+
+
+====== PROPERTIES =======
+Name -> HwSUMes
+Description -> Trabajar con honorarios del mes 
+Theme -> c804fdbd-7c0b-440d-8527-4316c92649a6-6
+IsMain -> True
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Public
+IsDefault -> False

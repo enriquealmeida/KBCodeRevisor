@@ -1,0 +1,8 @@
+======OBJECT = CliTpo.Table === Tipo de Clientes=====
+*CliTpoId  TpoId- Null=False
+ CliTpoDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> CliTpo
+Description -> Tipo de Clientes
+CACHE_LEVEL -> 2

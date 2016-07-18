@@ -1,0 +1,9 @@
+======OBJECT = Documentacion.Folder === Documentacion=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-03-15T18:09:11.0000000Z" lastUpdate="2016-03-15T17:59:04.0000000Z" checksum="b1aa51e45df9d580ea01e0052c79d636" fullyQualifiedName="Documentacion" guid="ef7241f9-ade9-45ec-8241-bd93497057b9" name="Documentacion" type="00000000-0000-0000-0000-000000000008" description="Documentacion">
+  <Properties><Property><Name>Name</Name><Value>Documentacion</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> Documentacion
+IsDefault -> False

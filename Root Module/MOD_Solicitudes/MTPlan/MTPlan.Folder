@@ -1,0 +1,9 @@
+======OBJECT = MTPlan.Folder === MTPlan=====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="" versionDate="2016-03-10T18:31:16.0000000Z" lastUpdate="2016-03-10T16:19:57.0000000Z" checksum="952e316329b021e000c22c89813e7421" fullyQualifiedName="MOD_Solicitudes.MTPlan" guid="f72558d0-77d3-48b7-a6fc-d5bc4bb03779" name="MTPlan" type="00000000-0000-0000-0000-000000000008" description="MTPlan">
+  <Properties><Property><Name>Name</Name><Value>MTPlan</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+Name -> MTPlan
+IsDefault -> False

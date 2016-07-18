@@ -1,0 +1,97 @@
+======OBJECT = WWLegajoDS.DataSelector === WWLegajo DS=====
+<Object parent="MOD_Sueldos.WorkWithPlusLegajo" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="1ffe5122-9e00-0d9a-0ab5-8c0ff3e4c8b1" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-27T17:15:40.0000000Z" lastUpdate="2016-05-26T18:55:33.0000000Z" checksum="031bd74a5521073f2787b6369cfe938b" fullyQualifiedName="MOD_Sueldos.WWLegajoDS" guid="0e2b81a5-3a0f-4da0-b327-3497cac2eb64" name="WWLegajoDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWLegajo DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[RspActivo = &RspActivo when not &RspActivo.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[RspId = &RspId when not &RspId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[LegFchId >= &LegFchId when not &LegFchId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[LegFchId <= &LegFchId_To when not &LegFchId_To.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[LegQuien = &LegQuien when not &LegQuien.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="RspId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>RspId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="LegFchId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>LegFchId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:LegFchId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="LegFchId_To">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>LegFchId_To</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:LegFchId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="LegQuien">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>LegQuien</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:LegQuien</Value></Property></Properties>
+      </Variable>
+      <Variable Name="RspActivo">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>RspActivo</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspActivo</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>RspActivo</Name>
+        <Description>Rsp Activo</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>RspId</Name>
+        <Description>Rsp Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>LegFchId</Name>
+        <Description>Leg Fch Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>LegFchId_To</Name>
+        <Description>Leg Fch Id_To</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>LegQuien</Name>
+        <Description>Leg Quien</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWLegajoDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Sueldos.WorkWithPlusLegajo</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWLegajoDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-45
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 45
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,9 @@
+======OBJECT = MTMD.Folder === MTMD=====
+<Object parent="MD" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="c591cc23-7d1c-4a8c-8e85-596c2f4e6e60" user="" versionDate="2016-03-14T02:22:11.0000000Z" lastUpdate="2016-03-13T22:54:34.0000000Z" checksum="74a593babcd304f5a711a701f89f083c" fullyQualifiedName="MD.MTMD" guid="e260cc8a-91bc-4544-8dcd-7c7e1b5274d7" name="MTMD" type="00000000-0000-0000-0000-000000000008" description="MTMD">
+  <Properties><Property><Name>Name</Name><Value>MTMD</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+Name -> MTMD
+IsDefault -> False

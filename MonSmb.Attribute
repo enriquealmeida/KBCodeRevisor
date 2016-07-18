@@ -1,0 +1,15 @@
+======OBJECT = MonSmb.Attribute === Símbolo=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> MonSmb
+Description -> Símbolo
+HORIZONTAL_DESCRIPTION -> Símbolo
+VERTICAL_DESCRIPTION -> Símbolo
+ContextualTitle -> Símbolo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

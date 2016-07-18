@@ -1,0 +1,22 @@
+======OBJECT = ArchivoAdjunto.Domain === Archivo Adjunto=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-05-05T12:21:36.0000000Z" lastUpdate="2016-05-05T12:15:50.0000000Z" checksum="07fedff27b977f19f973db33b8c1c1e0" fullyQualifiedName="ArchivoAdjunto" guid="f3511d50-ca2c-4a9d-b6ab-fadb13b8b057" name="ArchivoAdjunto" type="00972a17-9975-449e-aab1-d26165d51393" description="Archivo Adjunto">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ArchivoAdjunto</Value></Property><Property><Name>Description</Name><Value>Archivo Adjunto</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Blob</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ArchivoAdjunto
+Description -> Archivo Adjunto
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 14
+IsDefault -> False

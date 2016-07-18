@@ -1,0 +1,15 @@
+======OBJECT = PrbFch.Attribute === Fecha de Apertura=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> PrbFch
+Description -> Fecha de Apertura
+HORIZONTAL_DESCRIPTION -> Fecha de Apertura
+VERTICAL_DESCRIPTION -> Apertura
+ContextualTitle -> Apertura
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

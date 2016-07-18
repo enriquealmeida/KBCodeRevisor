@@ -1,0 +1,12 @@
+======OBJECT = SolEsPublica.Attribute === Es pública?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> SolEsPublica
+Description -> Es pública?
+ContextualTitle -> Es pública?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

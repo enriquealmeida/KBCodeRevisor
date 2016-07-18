@@ -1,0 +1,107 @@
+======OBJECT = HwResTot.WebPanel === Resumen Total=====
+
+=== RULES ===
+noaccept(&Texto ) ;
+noaccept(&vHrs ) ;
+noaccept(&vCob ) ;
+noaccept(&vGan ) ;
+noaccept(&vPag ) ;
+noaccept(&vTranf ) ;
+noaccept(&vCobxHr ) ;
+noaccept(&vPagxHr ) ;
+noaccept(&vGanxHr ) ;
+noaccept(&cPryNom ) ;
+noaccept(&vMargen ) ;
+noaccept(&vTotCob ) ;
+noaccept(&vTotCobxHr ) ;
+noaccept(&vTotPag ) ;
+noaccept(&vTotPagxHr ) ;
+noaccept(&vTotGan ) ;
+noaccept(&vTotGanxHr ) ;
+noaccept(&cpryclsdsc ) ;
+noaccept(&cprytpodsc ) ;
+
+default(&vFchFin ,today() ) ;
+
+default(&Clientes,1);
+default(&Meses,1);
+Default(&Recursos,1);
+Default(&Proyectos,0);
+Default(&Clases,0);
+Default(&Tipos,0);
+
+
+=== EVENTS SOURCE ===
+Event Start
+
+    &vCpMovTpo = 'R'
+    &vTomaTrf  = 'S'
+
+    &cFchFin = PMTParFch('PARFCHCRR')
+    &cFchIni = ymdtod( year(&cFchFin), 1, 1)
+    
+    &Nulo = nullvalue(&cCpRecId)
+
+    &cCliId = &Nulo
+
+    &cCpRecId.additem(&Nulo,'*TODOS')
+    &cCpRecId = &Nulo
+
+    &cprycls.additem(&Nulo,'*TODOS')
+    &cprycls = &Nulo
+
+    &cprytpo.additem(&Nulo,'*TODOS')
+    &cprytpo = &Nulo
+
+    &Moneda = 'D'
+
+    &CpMovFTpo = 'M'
+
+    &PryRspId.Additem( &Nulo, '*TODOS' )
+    &PryRspId = &Nulo
+EndEvent
+
+Event Refresh
+	&Movimientos = DPResumenMovimientos(&cPryId,&cCliId,&PryRspId,&cprycls,&cprytpo,&cCpRecId,&vTomaTrf,&cFchIni,&cFchFin)
+	if &Clientes = 1
+		wbcCli.Object = WCResumendeProyectos.create(&cCliId,&cPryId,&cCpRecId,&PryRspId,&cFchIni,&cFchFin,&Moneda,&cprycls,&cprytpo,&vCpMovTpo,&vTomaTrf,&CpMovFTpo,TipoRes.Cli,&Movimientos)
+    endif
+    wbcCli.Visible = &Clientes
+
+    if &Meses = 1
+		wbcMes.Object = WCResumendeProyectos.create(&cCliId,&cPryId,&cCpRecId,&PryRspId,&cFchIni,&cFchFin,&Moneda,&cprycls,&cprytpo,&vCpMovTpo,&vTomaTrf,&CpMovFTpo,TipoRes.Mes,&Movimientos)
+    endif
+    wbcMes.Visible = &Meses
+
+    if &Recursos = 1
+	   wbcRec.Object = WCResumendeProyectos.create(&cCliId,&cPryId,&cCpRecId,&PryRspId,&cFchIni,&cFchFin,&Moneda,&cprycls,&cprytpo,&vCpMovTpo,&vTomaTrf,&CpMovFTpo,TipoRes.Rec,&Movimientos)
+    endif
+    wbcRec.Visible = &Recursos
+
+    if &Proyectos = 1
+		wbcPry.Object = WCResumendeProyectos.create(&cCliId,&cPryId,&cCpRecId,&PryRspId,&cFchIni,&cFchFin,&Moneda,&cprycls,&cprytpo,&vCpMovTpo,&vTomaTrf,&CpMovFTpo,TipoRes.Pry,&Movimientos)
+    endif
+    wbcPry.Visible = &Proyectos
+
+    if &Clases = 1
+		wbcCls.Object = WCResumendeProyectos.create(&cCliId,&cPryId,&cCpRecId,&PryRspId,&cFchIni,&cFchFin,&Moneda,&cprycls,&cprytpo,&vCpMovTpo,&vTomaTrf,&CpMovFTpo,TipoRes.PCls,&Movimientos)
+    endif
+    wbcCls.Visible = &Clases
+
+    if &Tipos = 1
+		wbcTpo.Object = WCResumendeProyectos.create(&cCliId,&cPryId,&cCpRecId,&PryRspId,&cFchIni,&cFchFin,&Moneda,&cprycls,&cprytpo,&vCpMovTpo,&vTomaTrf,&CpMovFTpo,TipoRes.PTpo,&Movimientos)
+    endif
+    wbcTpo.Visible = &Tipos
+EndEvent  // Refresh
+
+
+
+
+====== PROPERTIES =======
+Name -> HwResTot
+Description -> Resumen Total
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 43
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = RspSuMonPla.Attribute === Moneda Sueldo Plaza=====
+CHARACTER(4)
+
+
+====== PROPERTIES =======
+Name -> RspSuMonPla
+Description -> Moneda Sueldo Plaza
+HORIZONTAL_DESCRIPTION -> Moneda Sueldo Plaza
+VERTICAL_DESCRIPTION -> Moneda Sueldo Plaza
+ContextualTitle -> Moneda Sueldo Plaza
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-202
+IsDefault -> False

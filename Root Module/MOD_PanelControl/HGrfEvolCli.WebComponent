@@ -1,0 +1,44 @@
+======OBJECT = HGrfEvolCli.WebComponent === Evolución=====
+
+=== RULES ===
+parm(in:&CliId, in:&FchIni, in:&FchFin, in:&EvolTpo, in:&Acum, in:&MonId, in:&UsarFecha);
+
+
+=== EVENTS SOURCE ===
+/*
+Event Start
+    PParChart.call( &ParDirChart , &ParDirWProc )
+EndEvent  // Start
+
+Event Refresh
+    &FchAuxT1 = PDtoN(&FchIni)
+    &FchAuxT2 = PDtoN(&FchFin)
+    if &EvolTpo = 'H' 
+        &TxtGrfTar = trim(&ParDirChart)+'DrawChart.aspx?title=Evolucion%20del%20cliente&legend=Top&width=600&height=300&markers=1&source1='+trim(&ParDirWProc )+'aXMLWEvo.aspx?'+trim(&CliId)+','+trim(str(&FchAuxT1))+','+trim(str(&FchAuxT2))+',' + &EvolTpo + ','+&Acum + ',' + &MonId + ',' + &UsarFecha
+        &url = trim(&ParDirWProc) + 'aXMLWEvo.aspx?' + trim(&CliId) + ',' + trim(str(&FchAuxT1)) + ',' + trim(str(&FchAuxT2)) + ','
+                  + &EvolTpo + ',' + &Acum + ',' + &MonId + ',' + &UsarFecha
+        &url = trim(&url)
+//        &TxtGrfTar = &wsChart.MakeChart(&url, 600, 300, "Column", "Evolución del cliente", "Right", "", "", "", "", "", "", 1, 0, 1, 255, "jpeg")
+    endif
+    if &EvolTpo = 'I' or &EvolTpo = 'Y'
+        &TxtGrfTar = trim(&ParDirChart)+'DrawChart.aspx?type=Line&title=Evolución%20del%20cliente&legend=Top&width=600&height=300&markers=1&source1='+trim(&ParDirWProc )+'aXMLWEvo.aspx?'+trim(&CliId)+','+trim(str(&FchAuxT1))+','+trim(str(&FchAuxT2))+',' + &EvolTpo + ','+&Acum + ',' + &MonId + ',' + &UsarFecha
+        &url = trim(&ParDirWProc ) + 'aXMLWEvo.aspx?' + trim(&CliId) + ',' + trim(str(&FchAuxT1)) + ',' + trim(str(&FchAuxT2)) + ','
+                  + &EvolTpo + ',' + &Acum + ',' + &MonId + ',' + &UsarFecha
+        &url = trim(&url)
+      //  &TxtGrfTar = &wsChart.MakeChart(&url, 600, 300, "Line", "Evolución del cliente", "Right", "", "", "", "", "", "", 1, 0, 1, 255, "jpeg")
+    endif
+    &GrfPry = loadBitmap(&TxtGrfTar)
+EndEvent  // Start
+*/
+
+
+====== PROPERTIES =======
+Name -> HGrfEvolCli
+Description -> Evolución
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

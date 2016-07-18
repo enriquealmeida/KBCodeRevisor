@@ -1,0 +1,26 @@
+======OBJECT = RecentLinksBackground.Image === Recent Links Background=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:54.0000000Z" checksum="02276a00918c8d074e39b6a7b624dd42" fullyQualifiedName="RecentLinksBackground" guid="ab1f71fa-d4d8-44cb-bf26-51d10072d071" name="RecentLinksBackground" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Recent Links Background">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="RecentLinksBackground.gif" description="Recent Links Background.gif"><Data>
+<base64Binary>
+R0lGODlhAQAZALMAALXQ8Obw/eTv/OHs+8jc9bjS8czf9rvU8drn+d7q+8PZ9Nbl+L7X89Hh9wAAALrM1iwAAAAAAQAZAAAEBhDISaulEQA7
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>RecentLinksBackground.gif</Value></Property><Property><Name>Description</Name><Value>Recent Links Background.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="RecentLinksBackground.gif" description="Recent Links Background.gif"><Data>
+<base64Binary>
+R0lGODlhAQAZALMAALXQ8Obw/eTv/OHs+8jc9bjS8czf9rvU8drn+d7q+8PZ9Nbl+L7X89Hh9wAAALrM1iwAAAAAAQAZAAAEBhDISaulEQA7
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>RecentLinksBackground.gif</Value></Property><Property><Name>Description</Name><Value>Recent Links Background.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>RecentLinksBackground</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> RecentLinksBackground
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

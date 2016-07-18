@@ -1,0 +1,19 @@
+======OBJECT = SuMes.Table === Sueldos Mes=====
+*RspId  DMUsuarios- Null=False
+*RspSuA  Numeric(4.0)- Null=False
+*RspSuM  Numeric(2.0)- Null=False
+ RspSueldo  Importe- Null=False
+ RspSuEx  Importe- Null=False
+ RspParHxD  Horas- Null=False
+ RspParDxM  CODIGO2- Null=False
+ RspHrT  Horas- Null=False
+ RspDEx  CODIGO2- Null=False
+ RspDPla  CODIGO2- Null=False
+ RspParIVA  PORCENTAJE- Null=False
+ RspSuMonPla  DMMoneda- Null=False
+ RspSuMonExt  DMMoneda- Null=False
+ SUFacturaAprobada  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> SuMes
+Description -> Sueldos Mes

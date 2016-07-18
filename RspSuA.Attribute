@@ -1,0 +1,15 @@
+======OBJECT = RspSuA.Attribute === Año=====
+NUMERIC(4)
+
+
+====== PROPERTIES =======
+Name -> RspSuA
+Description -> Año
+HORIZONTAL_DESCRIPTION -> Año
+VERTICAL_DESCRIPTION -> Año
+ContextualTitle -> Año
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+DomainKey -> 00972a17-9975-449e-aab1-d26165d51393-50
+ATT_PICTURE -> ZZZ9
+IsDefault -> False

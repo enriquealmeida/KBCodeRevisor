@@ -1,0 +1,113 @@
+======OBJECT = WorkWithPlusObjetivosTipos.WorkWithPlus === Work With Plus Objetivos Tipos=====
+<Object parent="MOD_Objetivos.ObjetivosTipos" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="0844920d-1941-472e-9c2c-e328b409685a" user="" versionDate="2016-05-05T17:28:38.0000000Z" lastUpdate="2016-05-05T17:22:30.0000000Z" checksum="2ff3f85cece85b4249a4dafad6b5ac8d" fullyQualifiedName="MOD_Objetivos.WorkWithPlusObjetivosTipos" guid="19fde928-34f0-4d67-a45a-844a3a083469" name="WorkWithPlusObjetivosTipos" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Objetivos Tipos">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWObjetivosTipos" defaultSecFuntionKey="WWObjetivosTipos">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Objetivos.ObjetivosTipos" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Objetivos.ObjetivosTipos" SecFuntionKeyINS="WWObjetivosTipos_Insert" defaultSecFuntionKeyINS="WWObjetivosTipos_Insert" SecFuntionKeyUPD="WWObjetivosTipos_Update" defaultSecFuntionKeyUPD="WWObjetivosTipos_Update" SecFuntionKeyDLT="WWObjetivosTipos_Delete" defaultSecFuntionKeyDLT="WWObjetivosTipos_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;ObjetivosTiposTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="ObjetivosTiposTitle" defaultControlName="ObjetivosTiposTitle" caption="Tipos de Objetivos" defaultCaption="Tipos de Objetivos" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" childrenOrderedList="2;22;ObjTpoId-2;22;ObjTpoDsc">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;ObjTpoDsc-4;39;-;76;-5;41;" id="0844920d-1941-472e-9c2c-e328b409685a:1" defaultId="0844920d-1941-472e-9c2c-e328b409685a:1" name="ObjetivosTipos" defaultName="ObjetivosTipos">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Tipos de Objetivos" defaultDescription=" Tipos de Objetivos" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Objetivos.WWObjetivosTipos" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Objetivos.ExportWWObjetivosTipos" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Objetivos.ExportReportWWObjetivosTipos" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Objetivos.WWObjetivosTiposDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;ObjetivosTiposTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="ObjetivosTiposTitle" defaultControlName="ObjetivosTiposTitle" caption="Tipos de Objetivos" defaultCaption="Tipos de Objetivos" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;30;-4;12;ObjTpoDsc">
+              <orders childrenOrderedList="4;13;=ObjTpoDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order childrenOrderedList="4;26;ObjTpoDsc;=ObjTpoDsc.ContextualTitle" name="=ObjTpoDsc.ContextualTitle" defaultName="=ObjTpoDsc.ContextualTitle">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" />
+                </order>
+              </orders>
+              <filterAttribute name="ObjTpoDsc" defaultName="ObjTpoDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="ObjTpoDsc like &amp;ObjTpoDsc when not &amp;ObjTpoDsc.IsEmpty()" defaultCondition="ObjTpoDsc like &amp;ObjTpoDsc when not &amp;ObjTpoDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="4;17;Delete-4;17;Update-4;23;ObjTpoId-4;23;ObjTpoDsc">
+          <standardAction name="Delete" defaultName="Delete" />
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" visible="False" defaultVisible="False" cellVisible_E="False" defaultCellVisible_E="False" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="ObjTpoDsc like &amp;TFObjTpoDsc when not &amp;TFObjTpoDsc.IsEmpty()" defaultFilterCondition="ObjTpoDsc like &amp;TFObjTpoDsc when not &amp;TFObjTpoDsc.IsEmpty()" />
+        </grid>
+      </table>
+    </selection>
+    <view childrenOrderedList="5;14;ObjTpoId;5;41;-5;06;Main Table-5;38;" caption="ObjTpoDsc.ToString()" defaultCaption="ObjTpoDsc.ToString()">
+      <GenexusPatterns_Objects>
+        <Object Id="View" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Objetivos.ViewObjetivosTipos" />
+      </GenexusPatterns_Objects>
+      <parameters>
+        <parameter name="ObjTpoId" defaultName="ObjTpoId" />
+      </parameters>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableContentNoMargin" defaultThemeClass="TableContentNoMargin" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="5;06;TableTitle-5;29;WorkWithLink-5;34;">
+        <table name="TableTitle" defaultName="TableTitle" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellWidth_E="58%" defaultCellWidth_E="58%" cellThemeClass="CellViewTableTitle CellWidthAuto" defaultCellThemeClass="CellViewTableTitle CellWidthAuto" childrenOrderedList="5;27;ViewTitle-5;21;ObjTpoDsc">
+          <textBlock controlName="ViewTitle" defaultControlName="ViewTitle" caption="Tipos de Objetivos :: " defaultCaption="Tipos de Objetivos :: " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewTextBlockTitle" defaultCellThemeClass="CellViewTextBlockTitle" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeTitleWWP" defaultThemeClass="AttributeTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewAttributeTitle" defaultCellThemeClass="CellViewAttributeTitle" showDescription="False" defaultShowDescription="False" />
+        </table>
+        <workWithLink themeClass="TextBlockLink" defaultThemeClass="TextBlockLink" cellWidth_E="42%" defaultCellWidth_E="42%" cellThemeClass="CellAlignRightWithMargin CellWidthAuto" defaultCellThemeClass="CellAlignRightWithMargin CellWidthAuto" align="Right" defaultAlign="Right" />
+        <tabsPosition cellThemeClass="CellViewTabsPosition" defaultCellThemeClass="CellViewTabsPosition" colSpan="999" defaultColSpan="999" startCol="1" defaultStartCol="1" />
+      </table>
+      <tabs childrenOrderedList="ObjetivosTiposGeneral;42;General-ObjetivosTiposObjetivoWC;43;Objetivo">
+        <tabularTab childrenOrderedList="ObjetivosTiposGeneral;04;Main Table" name="General" defaultName="General" code="General" defaultCode="General" wcname="ObjetivosTiposGeneral" defaultWcname="ObjetivosTiposGeneral">
+          <GenexusPatterns_Objects>
+            <Object Id="TabTabular" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Objetivos.ObjetivosTiposGeneral" />
+          </GenexusPatterns_Objects>
+          <table name="Table" defaultName="Table" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="ObjetivosTiposGeneral;28;ErrorViewer-ObjetivosTiposGeneral;04;TableAttributes-ObjetivosTiposGeneral;04;TableActions">
+            <errorViewer />
+            <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="ObjetivosTiposGeneral;21;ObjTpoId-ObjetivosTiposGeneral;21;ObjTpoDsc">
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" visible="False" defaultVisible="False" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+            </table>
+            <table name="TableActions" defaultName="TableActions" themeClass="TableActions" defaultThemeClass="TableActions" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="ObjetivosTiposGeneral;88;Actions">
+              <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="ObjetivosTiposGeneral;91;Update-ObjetivosTiposGeneral;91;Delete">
+                <standardAction caption="GXM_update" defaultCaption="GXM_update" buttonClass="Button" defaultButtonClass="Button" name="Update" defaultName="Update" />
+                <standardAction caption="GX_BtnDelete" defaultCaption="GX_BtnDelete" buttonClass="Button" defaultButtonClass="Button" name="Delete" defaultName="Delete" />
+              </actionGroup>
+            </table>
+          </table>
+        </tabularTab>
+      </tabs>
+    </view>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusObjetivosTipos</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Objetivos.ObjetivosTipos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 20
+Name -> WorkWithPlusObjetivosTipos
+ObjectVisibility -> Private
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-20
+IsDefault -> False

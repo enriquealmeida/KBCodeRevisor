@@ -1,0 +1,9 @@
+======OBJECT = WebApi.Folder === Web Api=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-05-12T14:13:11.0000000Z" lastUpdate="2016-05-10T19:16:02.0000000Z" checksum="913259307b66166d7927d56a73594ee7" fullyQualifiedName="WebApi" guid="1d60a32e-abca-41a5-97b5-6cbe99d9b111" name="WebApi" type="00000000-0000-0000-0000-000000000008" description="Web Api">
+  <Properties><Property><Name>Name</Name><Value>WebApi</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> WebApi
+IsDefault -> False

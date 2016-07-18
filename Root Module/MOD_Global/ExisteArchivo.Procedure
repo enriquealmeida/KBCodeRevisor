@@ -1,0 +1,15 @@
+======OBJECT = ExisteArchivo.Procedure === Existe Archivo=====
+
+=== RULES ===
+parm(in:&Path,out:&Existe);
+
+
+=== PROCEDURE SOURCE ===
+&Existe = FileExist(&Path)
+
+
+====== PROPERTIES =======
+Name -> ExisteArchivo
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 3
+IsDefault -> False

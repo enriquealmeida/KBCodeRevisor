@@ -1,0 +1,34 @@
+======OBJECT = TMTDstPor.Transaction === Porcentajes de distribución=====
+
+=== RULES ===
+parm(in:&PryPadId,in:&PryHijId,in:&Mode);
+
+PryHijId = &PryHijId if update or delete;
+PryPadId = &PryPadId if update or delete;
+noaccept(PryHijId) if update or delete;
+noaccept(PryPadId) if update or delete;
+
+error('Porcentaje inválido') if PryDisPor <= 0;
+
+prompt(HsPry, PryPadId);
+prompt(HsPry, PryHijId);
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+PryPadId*
+PryPadNom
+PryHijId*
+PryHijNom
+PryDisPor
+
+
+====== PROPERTIES =======
+Name -> TMTDstPor
+Description -> Porcentajes de distribución
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+ObjectVisibility -> Public
+IsDefault -> False

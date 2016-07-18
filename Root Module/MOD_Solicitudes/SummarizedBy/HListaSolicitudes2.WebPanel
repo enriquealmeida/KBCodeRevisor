@@ -1,0 +1,47 @@
+======OBJECT = HListaSolicitudes2.WebPanel === Lista de Solicitudes =====
+
+=== RULES ===
+parm(In:&PrbSts, In:&CliId, In:&CrrUsr, In:&SegUsr, In:&PrbCnsId, In:&PrbPrio, In:&PrbEstadoActivo,In:&PrbPryId, In:&SisId);
+
+
+
+=== EVENTS SOURCE ===
+ 
+Event Start
+	&PryId.Visible=0
+EndEvent
+
+
+Event 'Search'
+	Grid1.FirstPage()
+EndEvent
+
+
+
+
+Event PrbId.Click
+	&Window.Object = Solicitudes.Create(TrnMode.Update,PryId, PrbId)
+	&window.Open()
+	
+EndEvent
+
+ Event 'AgregoTag'
+   if &TagId.IsEmpty()
+	   msg('El TAG a asignar no puede ser vacio')
+   else 	   
+       AsociarTag.Call(PryId, PrbId,&TagId, &ErrorDescription)
+	   if not &ErrorDescription.IsEmpty()
+		   msg(&ErrorDescription)
+	   endif
+   endif	   
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HListaSolicitudes2
+Description -> Lista de Solicitudes 
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 40
+ObjectVisibility -> Private
+IsDefault -> False

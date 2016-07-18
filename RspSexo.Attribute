@@ -1,0 +1,12 @@
+======OBJECT = RspSexo.Attribute === Sexo=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> RspSexo
+Description -> Sexo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_INITIAL_VALUE -> Sexo.Masculino
+IsDefault -> False

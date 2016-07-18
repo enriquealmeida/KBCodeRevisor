@@ -1,0 +1,31 @@
+======OBJECT = PCpBorTrf.Procedure === Borra Transferencias=====
+
+=== RULES ===
+parm(IN:&FchIni, IN:&FchFin);
+
+
+=== PROCEDURE SOURCE ===
+
+    &FchCrr = PMTParFch('PARFCHCRR')
+
+    // veo que el período no esté cerrado
+    if &FchIni > &FchCrr and &FchFin > &FchCrr
+        for each order CpRecId, CpMovFch
+            where          CpRecId = 'TRANSF'
+            where          CpMovEST = 'T'
+            where          CpMovFch >= &FchIni and CpMovFch <= &FchFin
+
+            delete
+        endfor
+    endif
+commit
+
+
+====== PROPERTIES =======
+Name -> PCpBorTrf
+Description -> Borra Transferencias
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

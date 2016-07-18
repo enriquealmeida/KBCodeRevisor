@@ -1,0 +1,70 @@
+======OBJECT = EnvioMailCS.Procedure === Envio Mail CS=====
+
+=== RULES ===
+parm(in:&MailMessage, out:&Texto);
+
+
+=== PROCEDURE SOURCE ===
+&SMTPHost = "smtp.gmail.com"
+
+&SMTPUserName     = 'aplicaciones@concepto.com.uy'
+&SMTPEmailPassword    = 'HerNAND?3361912?ARIAs'
+
+	
+&EMailSubject=&MailMessage.Subject
+&EmailMessage = &MailMessage.HTMLText
+	
+	
+
+
+//csharp try
+//csharp {
+csharp string SMTPUserName = [!&SMTPUserName!];
+csharp string SMTPEmailPassword = [!&SMTPEmailPassword!];
+csharp string EMailTo = [!&EMailTo!];
+
+csharp string EMailSubject = [!&EMailSubject!];
+csharp string EMailMessage = [!&EMailMessage!];
+csharp string SMTPHost = [!&SMTPHost!];
+csharp int SMTPPort = 587;
+
+csharp System.Net.Mail.MailMessage mM = new System.Net.Mail.MailMessage();
+csharp mM.From = new System.Net.Mail.MailAddress(SMTPUserName);
+
+for &i = 1 to &MailMessage.To.Count
+    //para test
+	&EmailTo = &MailMessage.To.Item(&i).Address
+	//&EmailTo = 'ealmeida@concepto.com.uy'
+csharp        mM.To.Add([!&EmailTo!]);
+endfor
+
+
+csharp mM.Subject = EMailSubject;
+csharp mM.Body = EMailMessage;
+csharp mM.IsBodyHtml = true;
+csharp mM.Priority = System.Net.Mail.MailPriority.High;
+csharp System.Net.Mail.SmtpClient sC = new System.Net.Mail.SmtpClient(SMTPHost, SMTPPort);
+csharp sC.EnableSsl = true;
+csharp string strId;
+csharp string strPassword;
+//csharp strId = SMTPUserName.Split('@')[0];
+csharp strId = SMTPUserName;
+csharp strPassword = SMTPEmailPassword;
+csharp sC.Credentials = new System.Net.NetworkCredential(strId, strPassword);
+csharp sC.Send(mM);
+
+//csharp [!&statusEnvio!] = 1;
+//csharp }
+//csharp catch (System.Exception ex)
+//csharp {
+//	csharp [!&statusEnvio!] = 0;
+//csharp }
+//Msg(format('statusEnvio %1',&StatusEnvio),STATUS)
+
+
+====== PROPERTIES =======
+Name -> EnvioMailCS
+IsMain -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

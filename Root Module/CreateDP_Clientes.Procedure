@@ -1,0 +1,25 @@
+======OBJECT = CreateDP_Clientes.Procedure === Create DP_Clientes=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+&comilla='"'
+msg('ClienteCollection {',status)
+for each 
+	msg('	Cliente {',status)
+	msg('		CliId='+&Comilla+ CliId.ToString() + &Comilla,status) 
+	msg('		CliNom='+&Comilla+CliNom.ToString() + &Comilla,status)
+	msg('		CliMailSol='+&Comilla+CliMailSol.ToString()+&Comilla,status)
+	msg('	}',status)
+endfor
+msg('}',status)
+
+
+====== PROPERTIES =======
+Name -> CreateDP_Clientes
+IsMain -> True
+CALL_PROTOCOL -> CLINE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+IsDefault -> False

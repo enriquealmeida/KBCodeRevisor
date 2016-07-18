@@ -1,0 +1,66 @@
+======OBJECT = AgregoSolicitudesActivas.Procedure === Agrego Solicitudes Activas=====
+
+=== RULES ===
+parm(in:&HrsFch,In:&RspId);
+
+
+=== PROCEDURE SOURCE ===
+//Saco el ultimo renglon de las horas 
+&UltimorenglonId = Find(UltimoRenglonId, HrsFch=&HrsFch and RspId=&RspId, 0) 
+
+//Busco las solicitudes activas del usuario
+for each USING  SolicitudesActivas(&RspId)
+	&PryId = PryId 
+	&PrbId = PrbId
+	//Agrego renglones a la solicitud
+    msg(&PryId + &PrbId.ToString() + " "+ PrbSts + " " + CrrUsr, status )
+    do 'AgregorenglonesHoras'
+endfor
+
+//Actualizo el cabezal de horas con el UltimoNumero de Reglon.
+for each 
+   where          RspId= &RspId
+   where          HrsFch = &HrsFch
+     UltimoRenglonId = &UltimorenglonId
+endfor
+
+commit
+
+Sub 'AgregorenglonesHoras'
+
+	for each
+		where          RspId = &RspId
+		where          PrbFch= &PrbFch
+		where          PryId = &PryId
+		where          PrbId = &PrbId
+		
+		//&RenglonId = RenglonId
+	when none
+		&UltimorenglonId +=  1
+		&PrbDsc = Find(PrbDsc,PryId=&PryId and PrbId=&PrbId ,'Solicitud no encontrada')
+		
+		msg(Format("Doy de alta hora: %1 %2 %3 %4 %5",&HrsFch, &RspId, &UltimorenglonId,&PryId,&PrbId),status)
+		new
+			HrsFch = &HrsFch
+			RspId  = &RspId
+			RenglonId = &UltimorenglonId  
+			PryId   = &PryId
+			PrbId   = &PrbId
+			TarId   = 'OTROS'
+			HrsCnt  = 0
+			HrsObs  = &PrbDsc
+			Mes     = &HrsFch.Month()
+			Anio    = &HrsFch.Year()
+		endnew
+	endfor
+
+
+EndSub
+
+
+====== PROPERTIES =======
+Name -> AgregoSolicitudesActivas
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,45 @@
+======OBJECT = icono_registrar_deshabilitado.Image === icono_registrar_deshabilitado=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-08-28T13:56:40.0000000Z" checksum="55049b2adac39f44496eeec925a071c1" fullyQualifiedName="icono_registrar_deshabilitado" guid="d34da8f7-a60b-493c-896d-07cb921d9e76" name="icono_registrar_deshabilitado" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="icono_registrar_deshabilitado">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="icono-registrar_deshabilitado.png" description="icono-registrar_deshabilitado.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVY
+dFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADcWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
+TXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMw
+MTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIv
+MjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4w
+L21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFk
+b2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjE1NzYxMjY5LWMxZGItODU0NC1iMjMyLWEyZjg1NTI0ZjM0ZCIg
+eG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGNDNENzMyNEIzRjMxMUUzOUY4RkFGOTA0MkVCNEY1OCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGNDNE
+NzMyM0IzRjMxMUUzOUY4RkFGOTA0MkVCNEY1OCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2
+ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NmNjZWRhNzgtNzhjOS0wYjRkLWIwOTItMDBmOWVjOGIxODgwIiBzdFJlZjpkb2N1bWVudElEPSJ4
+bXAuZGlkOjE1NzYxMjY5LWMxZGItODU0NC1iMjMyLWEyZjg1NTI0ZjM0ZCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4g
+PD94cGFja2V0IGVuZD0iciI/Pq0g6iwAAASzSURBVFhHtZcPUFRFHMe/xyGViYhJwwwJ5jgiBKTcpQR3gEkEJMwYCHelYhgOFSBOmWOlwnhQgRiHhIzASUxD
+Cdrkn8EcwKK7CWRAx1ADjQLzVEQQZkoIkde+9/Y4Lu4v6Wfmvd3vd+e9/d3evt/uChgCbOYB7vZegf34ALpvDGPBM854zNEdDjNdaLv12NHSIsMDl5G3eyNc
+5thBo2nCpav9uNDFYGj4cVy4OoyWc53E10AWI0ZzQwV9yjKWR+DeRYiWvwJlyWFqWEewVIqaiizEJu6ijnHMBpD3cRxejMiganq8EStFd3c3BE94UMcQkwEs
+WzIb+8tqqfr/eDjfxvznXqNKj9EA/Bfbo1D1I1UPD3cnLdx9E6jimTIJxT4uj6RzlmtDbhi8+QtVPAYjUF6QCk+xjCogKkwKaWgwXghYSR3TNDWfhQMzgO07
+86kD7MiQo/3X6zh5Wk0dYDV55+DIpEFnA+DpZ9Rq9cS1Pi6Q+rYRE+7HPb8tLYE6DOO9QGjw7sLsjbSFYSZG4E1ZCDalZnNBRayS4q9/GNz6QwN/kRQjI0D6
+B7u5NnMo87Jwgv5aL7d7eOrZcK7OIhQI0KjWj4REEkDu9rq/YJQkkRa+hXCsuhh5hVVcYrGV2qPFiJcnYtmKCHS0HoGnKJbzW1saMTIq5Oosl1u/w+aMvfwk
+PH64iDN1jMGR1myj+stPkfN5FZaSxFV36mssEcehs+1bru2TPYYJae++/VzJBVBaXsUJPeO0tJ5vDuWgsPQkVQzCImSoq2WDiEVIkB+2buf/Xh2qqgZy/5sP
+oFHdxhbTpuZQForKdUlLP8PDImV4Z0MIsj8rpo4hbc0aPoDaOv3ksJVq1S4oy+uomvR5EYoU8ZAnK6iaivbab2wAo1TaTtXBHSRpnaFK17mAuw5kx2NpaDpv
+mUDwYIgfgelQU5GJ4krdyE3uHPhCsRa+IeY710ECcKBV6zlaqYCyrB6BooW4+WcHcfiOWYoUcjwfuoUq8zBCJ34Eol6Wcoa1KAqO4SWJF3KVlejquYNb2k7i
+ClCSm4w7Y56or6/nLku4uS/iAwiRijnDWrTaHpzRXMS7KUmcdnXzxMH8FPgEJnI6MzOTKy0hCpDwASRvknOGHv2QGsNx1ixyF6L1bANJqRKU7kuD94p1fKOV
+JL2+ityf5AOISUhliwkchOa/DLlcjujoaKxdl4Go8CB4Ldev8Y2nymjNPO+/l8aVRhejhDWh0PaN4cSREji7+nCeNawk+8D+vk7MnrfY4jryn8WI5S556BJf
+JdR8pSQb0RqqbCMyeCE+yqmkairnf1Ih7UMVVze7IVkvi0TK5kQIBDPYfQN1jSOws8P9kSHkF6hw/HvTmXU1+eIGh/XvMgiARez7NAoO8CvYo8Bn0WzMcfWj
+ysiesLX9NtKTLG/BpoO70w2DzlmmBMBy7sp9pL31KlUPBw/nPrIjjqdKj9EAWM53DKHpdCFV04c9mASJ5pMzwRrqGGIyAJZte6oh8Z+LLW/rJ6a1sEez3t9/
+QE8vY/JUxGI2AI6Z3mhrvw6R91z8XFdG8oX5+VGUuxUzRrswTuZ27Iad1DXNlK/AOsZNHM/n0XZrAf4F/4kKU46JlwoAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>icono-registrar_deshabilitado.png</Value></Property><Property><Name>Description</Name><Value>icono-registrar_deshabilitado.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Basura2\icono-registrar_deshabilitado.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>icono_registrar_deshabilitado</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> icono_registrar_deshabilitado
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = IMTSegRsp.Index === IMTSeg Rsp=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:30.0000000Z" checksum="1c1904aeb059224e5fffcb828105cad6" fullyQualifiedName="IMTSegRsp" guid="718ae871-e1ac-47d3-a71b-1135b4a0db40" name="IMTSegRsp" type="9e750647-3679-0000-0100-2529de263960" description="IMTSeg Rsp">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspId</Member>
+      <Member Order="Ascending">SegTpoRef</Member>
+      <Member Order="Ascending">SegRef</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IMTSegRsp</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IMTSegRsp

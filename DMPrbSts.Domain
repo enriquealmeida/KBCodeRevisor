@@ -1,0 +1,25 @@
+======OBJECT = DMPrbSts.Domain === Estados de la solicitud=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-05-03T18:41:49.0000000Z" lastUpdate="2016-05-03T17:30:38.0000000Z" checksum="8cd950494da05b42777ed69f8cfd4c97" fullyQualifiedName="DMPrbSts" guid="9aa43c28-533b-423e-afbe-5305dc128018" name="DMPrbSts" type="00972a17-9975-449e-aab1-d26165d51393" description="Estados de la solicitud">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMPrbSts</Value></Property><Property><Name>Description</Name><Value>Estados de la solicitud</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>3</Value></Property><Property><Name>AttMaxLen</Name><Value>3</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>ING, ING, Inicial; DES, DES, En desarrollo; INS, INS, A Instalar; CER, CER, Cerrado; BOR, BOR, Borrado; SUS, SUS, Suspendido</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMPrbSts
+Description -> Estados de la solicitud
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 3
+AttMaxLen -> 3
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

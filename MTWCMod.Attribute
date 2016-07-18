@@ -1,0 +1,12 @@
+======OBJECT = MTWCMod.Attribute === Módulo=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> MTWCMod
+Description -> Módulo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_INITIAL_VALUE -> "MOD_PanelControl"
+IsDefault -> False

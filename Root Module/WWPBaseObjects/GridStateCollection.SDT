@@ -1,0 +1,15 @@
+======OBJECT = GridStateCollection.SDT === Grid State Collection=====
+
+=== STRUCTURE ===
+GridStateCollection, collection: Item
+	Title, V(100), Title 
+	GridStateXML, L(2097152), Grid State XML 
+
+====== PROPERTIES =======
+Name -> GridStateCollection
+ExternalName -> Items
+ExternalNamespace -> 
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

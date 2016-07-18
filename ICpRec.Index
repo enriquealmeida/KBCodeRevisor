@@ -1,0 +1,12 @@
+======OBJECT = ICpRec.Index === ICp Rec=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:25.0000000Z" checksum="0bb4e7e20e7c3dc09b06c45d143f56a2" fullyQualifiedName="ICpRec" guid="b28a4685-ac6e-453a-aa3c-5f916d41cd12" name="ICpRec" type="9e750647-3679-0000-0100-2529de263960" description="ICp Rec">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CpRecId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ICpRec</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ICpRec

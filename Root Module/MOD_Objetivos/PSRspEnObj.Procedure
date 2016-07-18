@@ -1,0 +1,26 @@
+======OBJECT = PSRspEnObj.Procedure === Responsable en objetivo?=====
+
+=== RULES ===
+parm(in:&ObjId, out:&Existe);
+
+
+=== PROCEDURE SOURCE ===
+&Existe = Bool.False
+&RspId = userid()
+if &ObjId > 0
+    for each
+        where            ObjId = &ObjId
+        where            RspId = &RspId
+
+        &Existe = Bool.True 
+     endfor
+endif
+
+
+====== PROPERTIES =======
+Name -> PSRspEnObj
+Description -> Responsable en objetivo?
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 9
+ObjectVisibility -> Private
+IsDefault -> False

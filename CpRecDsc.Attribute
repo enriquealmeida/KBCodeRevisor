@@ -1,0 +1,14 @@
+======OBJECT = CpRecDsc.Attribute === Descripción de Recurso=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> CpRecDsc
+Description -> Descripción de Recurso
+HORIZONTAL_DESCRIPTION -> Descripción de Recurso
+VERTICAL_DESCRIPTION -> Descripción de Recurso
+ContextualTitle -> Descripción de Recurso
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,8 @@
+======OBJECT = MTPaises.Table === Paises=====
+*MTPaisId  Pais- Null=False
+ MTPaisDesc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MTPaises
+Description -> Paises
+CACHE_LEVEL -> 3

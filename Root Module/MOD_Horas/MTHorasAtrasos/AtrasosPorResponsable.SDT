@@ -1,0 +1,13 @@
+======OBJECT = AtrasosPorResponsable.SDT === Atrasos Por Responsable=====
+
+=== STRUCTURE ===
+AtrasosPorResponsable, collection: AtrasosPorResponsableItem
+	Cantidad, N(4), Cantidad 
+	RspId, C(16), Responsable 
+
+====== PROPERTIES =======
+Name -> AtrasosPorResponsable
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Private
+IsDefault -> False

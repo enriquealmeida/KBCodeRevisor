@@ -1,0 +1,14 @@
+======OBJECT = PrbTxtDoc.Attribute === Documentación técnica=====
+LONGVARCHAR(2097152)
+
+
+====== PROPERTIES =======
+Name -> PrbTxtDoc
+Description -> Documentación técnica
+HORIZONTAL_DESCRIPTION -> Documentación técnica
+VERTICAL_DESCRIPTION -> Documentación técnica
+ContextualTitle -> Documentación técnica
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

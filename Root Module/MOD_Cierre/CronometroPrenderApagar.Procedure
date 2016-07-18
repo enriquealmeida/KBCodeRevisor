@@ -1,0 +1,81 @@
+======OBJECT = CronometroPrenderApagar.Procedure === Cronómetro Prender Apagar=====
+
+=== RULES ===
+Parm(in:&RspId, in:&PrbId, out:&SePrendioOseApago, out:&errorDescription) ;
+
+
+=== PROCEDURE SOURCE ===
+&errorDescription.SetEmpty()
+&SePrendioOseApago = DMCronometroAccion.NINGUNA
+
+for each
+where          RspId = &RspId
+where          PrbId = &PrbId
+where          CronFin.IsEmpty()
+	&Cronometradas.load(RspId,CronIni)
+	if &Cronometradas.Success()
+		&Cronometradas.CronFin	= ServerNow()
+		&SePrendioOseApago = DMCronometroAccion.APAGAR
+	else	// no debería ocurrir, pero por las dudas
+		&SePrendioOseApago = DMCronometroAccion.NINGUNA
+		&Messages = &Cronometradas.GetMessages()
+		for &Message in &Messages
+			&errorDescription = &errorDescription + &Message.Description
+		endfor	
+	endif
+when none
+	&SePrendioOseApago = DMCronometroAccion.PRENDER
+	for each
+	where          PrbId = &PrbId and PrbSts = DMPrbSts.ING // Pasarla a estado DES
+	    &PryId = PryId
+		&BCSolicitudes.load(&PryId, &PrbId)
+		if &BCSolicitudes.Success()
+			if CrrUsr.IsEmpty()
+				&BCSolicitudes.CrrUsr = &RspId
+			endif
+			&BCSolicitudes.PrbSts = DMPrbSts.DES
+			&BCSolicitudes.Save()
+			if &BCSolicitudes.Fail()
+				&SePrendioOseApago = DMCronometroAccion.NINGUNA
+				&Messages = &BCSolicitudes.GetMessages()
+				for &Message in &Messages
+					&errorDescription = &errorDescription + &Message.Description
+				endfor	
+			endif
+		else
+			&SePrendioOseApago = DMCronometroAccion.NINGUNA
+			&Messages = &BCSolicitudes.GetMessages()
+			for &Message in &Messages
+				&errorDescription = &errorDescription + &Message.Description
+			endfor	
+		endif
+	endfor
+	if &errorDescription.IsEmpty()
+		&Cronometradas.RspId	= &RspId
+		&Cronometradas.CronIni 	= ServerNow()
+		&Cronometradas.PrbId	= &PrbId
+	endif
+
+endfor
+if &errorDescription.IsEmpty()
+	&Cronometradas.Save()
+	if &Cronometradas.Success()
+		commit
+	else
+		  rollback
+		&SePrendioOseApago = DMCronometroAccion.NINGUNA
+		&Messages = &Cronometradas.GetMessages()
+		for &Message in &Messages
+			&errorDescription = &errorDescription + &Message.Description
+		endfor	
+	endif
+endif
+
+
+====== PROPERTIES =======
+Name -> CronometroPrenderApagar
+Description -> Cronómetro Prender Apagar
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Public
+IsDefault -> False

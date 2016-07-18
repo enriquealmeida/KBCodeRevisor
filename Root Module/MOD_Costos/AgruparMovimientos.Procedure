@@ -1,0 +1,47 @@
+======OBJECT = AgruparMovimientos.Procedure === Agrupar Movimientos=====
+
+=== RULES ===
+parm(in: &Movimientos, in: &Moneda, in: &TomarTransf, out:&MovimientosOut);
+
+
+=== PROCEDURE SOURCE ===
+&Index = 0
+&TextoAux = ''
+&Movimientos.Sort('Texto')
+for &Movimiento in &Movimientos
+	if &Movimiento.Texto <> &TextoAux
+		&Index += 1
+		&TextoAux = &Movimiento.Texto
+		&MovimientosOut.Add(&Movimiento.Clone(),&Index)
+		&MovimientosOut.Item(&Index).CpMovHrs = 0
+	endif
+	&MovimientosOut.Item(&Index).CpMovHrs += &Movimiento.CpMovHrs
+	if &Moneda = 'D'
+		&Importe = &Movimiento.CpMovImp
+	else
+		&Importe = &Movimiento.CpMovPesos
+	endif
+	if &Movimiento.CpMovEST = DMEst.Entradas
+        &MovimientosOut.Item(&Index).Cobrado += &Importe
+    else 
+        if &Movimiento.CpMovEST =  DMEst.Salidas
+            &MovimientosOut.Item(&Index).Pagado += &Importe
+        else
+            if &TomarTransf = 'S'
+                &MovimientosOut.Item(&Index).Transferido += &Importe
+            else
+                &MovimientosOut.Item(&Index).Pagado += &Importe
+                &MovimientosOut.Item(&Index).Transferido = 0
+            endif
+        endif
+    endif
+endfor
+
+
+====== PROPERTIES =======
+Name -> AgruparMovimientos
+Description -> Agrupar Movimientos
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

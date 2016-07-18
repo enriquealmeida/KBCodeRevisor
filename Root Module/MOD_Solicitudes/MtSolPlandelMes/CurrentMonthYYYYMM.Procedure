@@ -1,0 +1,22 @@
+======OBJECT = CurrentMonthYYYYMM.Procedure === Mes corriente=====
+
+=== RULES ===
+Parm(out:&YYYYMM);
+
+
+=== PROCEDURE SOURCE ===
+&hoy = ServerDate()
+if &hoy.Month() >= 10
+	&YYYYMM = &hoy.Year().ToString().Trim() + &hoy.Month().ToString().Trim()
+else 
+	&YYYYMM = &hoy.Year().ToString().Trim() + '0' + &hoy.Month().ToString().Trim()
+endif
+
+
+====== PROPERTIES =======
+Name -> CurrentMonthYYYYMM
+Description -> Mes corriente
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

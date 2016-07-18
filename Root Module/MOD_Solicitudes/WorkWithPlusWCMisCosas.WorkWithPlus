@@ -1,0 +1,35 @@
+======OBJECT = WorkWithPlusWCMisCosas.WorkWithPlus === Work With Plus WCMis Cosas=====
+<Object parent="MOD_Solicitudes.WCMisCosas" parentType="c9584656-94b6-4ccd-890f-332d11fc2c25" parentGuid="27ddc800-6201-4005-b347-738a23727248" user="" versionDate="2016-04-13T18:38:37.0000000Z" lastUpdate="2016-04-13T18:20:15.0000000Z" checksum="f5740eb8ae63abdb86126eaafe66e272" fullyQualifiedName="MOD_Solicitudes.WorkWithPlusWCMisCosas" guid="20ce9090-34fd-089e-074f-75bd0188ed35" name="WorkWithPlusWCMisCosas" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus WCMis Cosas">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="7;57;" SecFuntionKey="WCMisCosas" defaultSecFuntionKey="WCMisCosas">
+  <WPRoot childrenOrderedList="7;66;Main Table-7;75;LoadWWPContext" Template="WorkWithWithoutBaseTable" defaultTemplate="WorkWithWithoutBaseTable">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" cellPadding="1" defaultCellPadding="0" cellSpacing="1" defaultCellSpacing="0" childrenOrderedList="7;66;TableTitle-7;28;ErrorViewer-7;66;TableSearch-7;66;TableGridHeader">
+      <table name="TableGridHeader" type="Responsive">
+        <grid cellWidth_E="100%" cellWidth_S="100%" colSpan="19" rowSpan="2" defaultAllowSelection="True" defaultAllowHovering="False" type="&lt;default&gt;" page="">
+          <gridVariable name="Id" defaultName="PrbId" description="" defaultDescription="Solicitud" themeClass="Attribute" visible="True" domain="adbb33c9-0906-4971-833c-998de27e0676-PryId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-PrbId" />
+          <gridVariable name="Dsc" defaultName="PrbDsc" description="" defaultDescription="Titulo" themeClass="Attribute" visible="True" domain="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" />
+          <gridVariable name="Fch" defaultName="PrbPlaFch" description="Fecha " defaultDescription="Fecha Planificada" visible="False" domain="adbb33c9-0906-4971-833c-998de27e0676-PrbPlaFch" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-PrbPlaFch" />
+          <gridVariable name="Tpo" defaultName="RspId" description="Tipo" defaultDescription="Responsable" visible="False" domain="00972a17-9975-449e-aab1-d26165d51393-Codigo10" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-RspId" />
+        </grid>
+      </table>
+    </table>
+    <steps />
+    <events>
+      <eventBlock BlockName="LoadWWPContext" defaultBlockName="LoadWWPContext" />
+    </events>
+  </WPRoot>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusWCMisCosas</Value></Property><Property><Name>KBObject</Name><Value>c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.WCMisCosas</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c9584656-94b6-4ccd-890f-332d11fc2c25
+FolderId -> 1088
+Name -> WorkWithPlusWCMisCosas
+KBObject -> c9584656-94b6-4ccd-890f-332d11fc2c25-1088
+IsDefault -> False

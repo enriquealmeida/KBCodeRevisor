@@ -1,0 +1,96 @@
+======OBJECT = HRecHonS.WebPanel === Retiro a cuenta de futuras utilidades=====
+
+=== RULES ===
+parm(in:&Fecha, in:&RspId, in:&RspSuA, in:&RspSuM);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &Dia = day(&Fecha)
+    &Mes = month(&Fecha)
+    &Anio = year(&Fecha)
+
+    &MesDsc=CMonth(&Fecha,'spa') 
+    for each
+        where      RspId = &RspId
+
+        &RspNom = RspNom
+    endfor
+
+    for each
+    where      RspId = &RspId
+		&RspVinculoLaboral = RspVinculoLaboral
+    endfor
+
+    &ImpMN = 0
+    &ImpME = 0
+    for each
+    where      RspId = &RspId
+    where      RspSuA = &RspSuA
+    where      RspSuM = &RspSuM
+	where      TpoHonCateg = TpoHonCategoriaEnum.Honorario or TpoHonCateg = TpoHonCategoriaEnum.Otros or TpoHonCateg = TpoHonCategoriaEnum.Pasaje or TpoHonCateg = TpoHonCategoriaEnum.Viatico
+
+        if MonId = '0'
+            &ImpMN += RspSuImp
+        else
+            &ImpME += RspSuImp
+        endif
+    endfor
+
+    for each
+        where      MonId = &MonId
+
+        &MonSmb = MonSmb
+        &MonDsc = MonDsc
+    endfor
+
+    &LugFec = 'Montevideo, ' + trim(str(&Dia)) + ' de ' + trim(&MesDsc) + ' de ' + trim(str(&Anio))
+
+    &RecTxt = 'Recibí de Concepto S.R.L. la cantidad de '
+    if &ImpME <> 0
+        &ImpDsc = PNumStr(&ImpME)
+        &RecTxt += 'U$S ' + ToFormattedString(&ImpME) + ' (dolares americanos ' + trim(&ImpDsc) + ')'
+        &Aux = ' y la cantidad de '
+    else
+        &Aux = ''
+    endif
+    if &ImpMN <> 0
+        &ImpDsc = PNumStr(&ImpMN)
+        &RecTxt += &Aux + '$ ' + ToFormattedString(&ImpMN) + ' (pesos uruguayos ' + trim(&ImpDsc) + ')'
+    endif
+
+    &RecTxt += &TpoHonmsg + '.'
+EndEvent  // Start
+
+Event sbfDet.load
+    for each order RspId, RspSuA, RspSuM, MonId
+    where      RspId = &RspId
+    where      RspSuA = &RspSuA
+    where      RspSuM = &RspSuM
+    where      TpoHonCateg = TpoHonCategoriaEnum.Honorario or TpoHonCateg = TpoHonCategoriaEnum.Otros or TpoHonCateg = TpoHonCategoriaEnum.Pasaje or TpoHonCateg = TpoHonCategoriaEnum.Viatico
+
+        &MonSmb = MonSmb
+
+        //if &RspSoc = 'S'
+		if &RspVinculoLaboral = DMRspVinculoLaboral.SOCIO
+            &TpoHonmsg = trim(TpoHonDSoc)
+        else
+            &TpoHonmsg = trim(TpoHonDUni)
+        endif
+
+        &Importe = RspSuImp
+
+        load
+    endfor
+EndEvent  // sbfDet.load
+
+
+====== PROPERTIES =======
+Name -> HRecHonS
+Description -> Retiro a cuenta de futuras utilidades
+MasterPage -> Artech.Genexus.Common.CustomTypes.WebPanelReference
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Private
+IsDefault -> False

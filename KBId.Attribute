@@ -1,0 +1,16 @@
+======OBJECT = KBId.Attribute === Base de conocimiento=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> KBId
+Description -> Base de conocimiento
+HORIZONTAL_DESCRIPTION -> Base de conocimiento
+VERTICAL_DESCRIPTION -> KB
+ContextualTitle -> Base de conocimiento
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_INITIAL_VALUE -> ''
+ATT_PICTURE -> @!
+IsDefault -> False

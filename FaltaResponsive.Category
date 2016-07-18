@@ -1,0 +1,10 @@
+======OBJECT = FaltaResponsive.Category === Falta Responsive=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-02-19T14:04:12.0000000Z" lastUpdate="2016-02-18T18:30:36.0000000Z" checksum="550b5b7662646a50a66f5234f8658834" fullyQualifiedName="FaltaResponsive" guid="e1e652f3-a56d-472e-bf54-4eec3de754d8" name="FaltaResponsive" type="00000000-0000-0000-0000-000000000006" description="Falta Responsive">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>FaltaResponsive</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> FaltaResponsive
+IsDefault -> False

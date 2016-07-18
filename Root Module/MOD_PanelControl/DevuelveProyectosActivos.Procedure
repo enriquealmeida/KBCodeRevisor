@@ -1,0 +1,23 @@
+======OBJECT = DevuelveProyectosActivos.Procedure === Devuelve Proyectos Activos=====
+
+=== RULES ===
+parm(in:&CliId,out:&Cantidad);
+
+
+=== PROCEDURE SOURCE ===
+&Cantidad=0
+for each order PryId
+	   where            CliId=&CliId
+	   where            PryAct = DMPryAct.Activo
+	     &Cantidad += 1
+endfor
+ 
+		 
+
+
+====== PROPERTIES =======
+Name -> DevuelveProyectosActivos
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

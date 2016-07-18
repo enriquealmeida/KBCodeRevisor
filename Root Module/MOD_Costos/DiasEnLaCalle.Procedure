@@ -1,0 +1,28 @@
+======OBJECT = DiasEnLaCalle.Procedure === Dias En La Calle=====
+
+=== RULES ===
+parm(in:&CliId,in:&Importe,out:&Dias);
+
+
+=== PROCEDURE SOURCE ===
+&Dias = 0 
+&ImporteAux = &Importe
+for each  order CpMovEST,(CpMovFch)
+	where            CpMovEST='E'
+	where            CliId = &CliId when not &CliId.IsEmpty()
+	&ImporteAux -= CpMovImp
+    if &ImporteAux <= 0 
+	       &CpMovFch = CpMovFch
+     	   exit
+	endif
+endfor
+&Dias = &Today - &CpMovFch
+
+
+
+====== PROPERTIES =======
+Name -> DiasEnLaCalle
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

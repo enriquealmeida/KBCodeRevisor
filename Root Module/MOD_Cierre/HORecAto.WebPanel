@@ -1,0 +1,29 @@
+======OBJECT = HORecAto.WebPanel === Datos para recuperación de asientos=====
+
+=== RULES ===
+parm(in:&FchIni, in:&FchFin);
+
+
+=== EVENTS SOURCE ===
+Event Refresh
+    &UltAsiNro = PMTParNum('ULTASINRO')
+    &UsarUltAsiNro = Bool.True //'S'
+EndEvent  // Refresh
+
+Event Enter
+	//msg('LLamare al RecAto')
+	&location = GetLocation('ActualizoAsientosDeCajaTransitoria')
+	&ActualizoAsientosDeCajaTransitoria.Execute(&FchIni,&FchFin)
+    PRecAto.call(&FchIni,&FchFin)//,&UsarUltAsiNro)
+    HwCPMovR.call(&FchIni,&FchFin)
+EndEvent  // Enter
+
+
+====== PROPERTIES =======
+Name -> HORecAto
+Description -> Datos para recuperación de asientos
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

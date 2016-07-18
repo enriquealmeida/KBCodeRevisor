@@ -1,0 +1,15 @@
+======OBJECT = CpMovEST.Attribute === Entrada/Salida/Transferencia=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> CpMovEST
+Description -> Entrada/Salida/Transferencia
+HORIZONTAL_DESCRIPTION -> Entrada/Salida/Transferencia
+VERTICAL_DESCRIPTION -> E/S/T
+ContextualTitle -> E/S/T
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttValueRange -> 'E' 'T' 'S'
+IsDefault -> False

@@ -1,0 +1,9 @@
+======OBJECT = DropDownTabsMenu.Folder === Drop Down Tabs Menu=====
+<Object parent="WWPBaseObjects" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="f952860a-9553-4095-82c8-dedaadd8cf64" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-11-25T16:17:11.0000000Z" checksum="21379025fd53ac02a3792833dc9381f5" fullyQualifiedName="WWPBaseObjects.DropDownTabsMenu" guid="d80b36b8-444d-4ba9-9c0a-aff4073b17df" name="DropDownTabsMenu" type="00000000-0000-0000-0000-000000000008" description="Drop Down Tabs Menu">
+  <Properties><Property><Name>Name</Name><Value>DropDownTabsMenu</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+Name -> DropDownTabsMenu
+IsDefault -> False

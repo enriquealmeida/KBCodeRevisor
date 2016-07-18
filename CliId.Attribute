@@ -1,0 +1,18 @@
+======OBJECT = CliId.Attribute === Identificador de Cliente=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> CliId
+Description -> Identificador de Cliente
+HORIZONTAL_DESCRIPTION -> Cliente
+VERTICAL_DESCRIPTION -> Cliente
+ContextualTitle -> Cliente
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+ControlType -> 2
+EditAutocomplete -> 2
+ControlItemValues -> CliId
+IsDefault -> False

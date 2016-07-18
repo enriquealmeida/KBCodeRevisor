@@ -1,0 +1,11 @@
+======OBJECT = KBWikiHttps.Attribute === Https=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> KBWikiHttps
+Description -> Https
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

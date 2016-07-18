@@ -1,0 +1,14 @@
+======OBJECT = RspCred.Attribute === Credencial=====
+VARCHAR(20)
+
+
+====== PROPERTIES =======
+Name -> RspCred
+Description -> Credencial
+HORIZONTAL_DESCRIPTION -> Credencial
+VERTICAL_DESCRIPTION -> Credencial
+ContextualTitle -> Credencial
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

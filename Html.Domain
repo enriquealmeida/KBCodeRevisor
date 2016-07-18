@@ -1,0 +1,22 @@
+======OBJECT = Html.Domain === Html=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-11-10T18:10:31.0000000Z" checksum="000f980c5bc9df52c97a86051b584645" fullyQualifiedName="Html" guid="e625d966-f6c9-4d02-b968-8144719904e3" name="Html" type="00972a17-9975-449e-aab1-d26165d51393" description="Html">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Html</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:LongVarChar</Value></Property><Property><Name>GxFormat</Name><Value>HTML</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Html
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 8
+GxFormat -> 1
+IsDefault -> False

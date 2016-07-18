@@ -1,0 +1,17 @@
+======OBJECT = PGetGXChartUrl.Procedure === Get GXChart Url=====
+
+=== RULES ===
+parm(In:&baseUrl, In:&Title, In:&Width, In:&Height, Out:&GXChartUrl);
+
+
+=== PROCEDURE SOURCE ===
+&GXChartUrl = &baseUrl + "&title=" + &Title + "$&width=" + trim(&Width.ToString()) + "&height=" + trim(&Height.ToString()) + "&shadow=1&border=1&values=1&legend=left"
+
+
+====== PROPERTIES =======
+Name -> PGetGXChartUrl
+Description -> Get GXChart Url
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 41
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,17 @@
+======OBJECT = Cronometro.js.File === Cronometro.js=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-09-25T18:39:59.0000000Z" checksum="4f57eb3b9b78ca01d0a2d9b556a67ec8" fullyQualifiedName="Cronometro.js" guid="e72f3919-ee63-4284-bee7-af8f94d7eb60" name="Cronometro.js" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Cronometro.js">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>Ly9hbGVydCgiQ2FyZ28gY3Jvbm9tZXRyby5qcyIpOw0KDQp3aW5kb3cub25sb2FkID0gZnVuY3Rpb24oKXsJDQoJLy9hbGVydCgib25sb2FkIik7DQoJY3Jvbm9tZXRyb19JbmljaW8oKTsNCgkvL2d4LmZ4Lm9icy5hZGRPYnNlcnZlcignZ3gub25sb2FkJyx3aW5kb3csIGZ1bmN0aW9uKCl7IGFsZXJ0KCdneC5vbmxvYWQnKTt9KTsNCn07DQoNCmZ1bmN0aW9uIGNyb25vbWV0cm9fSW5pY2lvKCkNCnsNCgljb250YWRvcl9zID0wOw0KCWNvbnRhZG9yX20gPTA7DQoJY29udGFkb3JfaCA9MDsNCgkNCgloID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNwYW5fdkNST05PTUVUUk9IT1JBUyIpOw0KCW0gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic3Bhbl92Q1JPTk9NRVRST01JTlVUT1MiKTsNCglzID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNwYW5fdkNST05PTUVUUk9TRUdVTkRPUyIpOw0KDQoJY3Jvbm9tZXRybyA9IHNldEludGVydmFsKA0KCQlmdW5jdGlvbigpew0KCQkJcHJlbmRpZG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic3Bhbl92Q1JPTk9NRVRST1BSRU5ESURPIik7DQoJCQlpZiAocHJlbmRpZG8uaW5uZXJUZXh0ID09ICdTJykNCgkJCXsNCgkJCQljb250YWRvcl9zID0gTnVtYmVyKHMuaW5uZXJUZXh0KTsNCgkJCQljb250YWRvcl9tID0gTnVtYmVyKG0uaW5uZXJUZXh0KTsNCgkJCQljb250YWRvcl9oID0gTnVtYmVyKGguaW5uZXJUZXh0KTsNCgkJCQljb250YWRvcl9zKys7DQoJCQkJaWYoY29udGFkb3Jfcz09NjApDQoJCQkJew0KCQkJCQljb250YWRvcl9zPTA7DQoJCQkJCWNvbnRhZG9yX20rKzsNCgkJCQkJaWYoY29udGFkb3JfbT09NjApDQoJCQkJCXsNCgkJCQkJCWNvbnRhZG9yX20gPSAwOw0KCQkJCQkJY29udGFkb3JfaCsrOw0KCQkJCQkJaC5pbm5lckhUTUwgPSBwYWRsemVybyhjb250YWRvcl9oKTsNCgkJCQkJfQ0KCQkJCQltLmlubmVySFRNTCA9IHBhZGx6ZXJvKGNvbnRhZG9yX20pOw0KCQkJCX0NCgkJCQlzLmlubmVySFRNTCA9IHBhZGx6ZXJvKGNvbnRhZG9yX3MpOw0KCQkJCQkNCgkJCQkNCgkJCX0NCgkJfQ0KCQksMTAwMCk7DQoNCn0NCg0KZnVuY3Rpb24gcGFkbHplcm8odm51bSl7DQoJaWYgKHZudW0gPCAxMCkNCgkJcmV0dXJuICIwIit2bnVtOw0KCWVsc2UNCgkJcmV0dXJuIHZudW07DQp9</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>Cronometro.js</Value></Property><Property><Name>FileExtension</Name><Value>.js</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Cronometro.js</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>Generator</Name><Value>CSharp</Value></Property><Property><Name>ExtractToPath</Name><Value>.</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Cronometro.js
+Extract -> Newer
+Generator -> CSharp
+ExtractToPath -> .
+IsDefault -> False

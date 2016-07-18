@@ -1,0 +1,18 @@
+======OBJECT = AusTpoId.Attribute === Tipo de ausencia=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> AusTpoId
+Description -> Tipo de ausencia
+HORIZONTAL_DESCRIPTION -> Tipo de ausencia
+VERTICAL_DESCRIPTION -> Tipo Ausencia
+ContextualTitle -> Tipo Ausencia
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+DB_NLS_SUPPORT -> No
+ATT_PICTURE -> @!
+ControlType -> 4
+ControlItemDescription -> AusTpoDsc
+IsDefault -> False

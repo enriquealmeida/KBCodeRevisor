@@ -1,0 +1,25 @@
+======OBJECT = PMTParChr.Procedure === Devuelve Parámetro Char=====
+
+=== RULES ===
+parm(in:&ParNom, out:&ParChar);
+
+
+=== PROCEDURE SOURCE ===
+&ParChar = ''
+
+&MDObjTpo = 1
+&MDObjSec = 1
+
+PMDOgChar.call( &MDObjTpo, &MDObjSec, &ParNom, &MDResult, &MDError)
+
+if &MDError = 0
+    &ParChar = &MDResult
+endif
+
+
+====== PROPERTIES =======
+Name -> PMTParChr
+Description -> Devuelve Parámetro Char
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 33
+IsDefault -> False

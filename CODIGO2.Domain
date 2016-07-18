@@ -1,0 +1,23 @@
+======OBJECT = CODIGO2.Domain === CODIGO2=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-07-04T18:31:15.0000000Z" checksum="3e772c9d79120ff51fed4bfbc25bf417" fullyQualifiedName="CODIGO2" guid="5c043a46-0001-4a00-86c7-176582a85fac" name="CODIGO2" type="00972a17-9975-449e-aab1-d26165d51393" description="CODIGO2">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>CODIGO2</Value></Property><Property><Name>Length</Name><Value>2</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>ATT_PICTURE</Name><Value>Z9</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> CODIGO2
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 2
+Decimals -> 0
+ATT_PICTURE -> Z9
+IsDefault -> False

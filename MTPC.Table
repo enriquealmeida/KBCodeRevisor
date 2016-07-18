@@ -1,0 +1,9 @@
+======OBJECT = MTPC.Table === Paneles de Control=====
+*MTPCWbp  DESC- Null=False
+ MTPCDsc  DESC- Null=False
+ MTPCLugMax  DMLugar- Null=False
+
+====== PROPERTIES =======
+Name -> MTPC
+Description -> Paneles de Control
+CACHE_LEVEL -> 3

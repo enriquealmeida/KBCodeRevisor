@@ -1,0 +1,14 @@
+======OBJECT = TpoHonDUni.Attribute === Desc. recibo unipersonales=====
+LONGVARCHAR(1024)
+
+
+====== PROPERTIES =======
+Name -> TpoHonDUni
+Description -> Desc. recibo unipersonales
+HORIZONTAL_DESCRIPTION -> Desc. recibo unipersonales
+VERTICAL_DESCRIPTION -> Desc. recibo unipersonales
+ContextualTitle -> Desc. recibo unipersonales
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

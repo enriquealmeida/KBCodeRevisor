@@ -1,0 +1,13 @@
+======OBJECT = TagSolHorReal.Attribute === Horas en ese periodo=====
+NUMERIC(8.2)-
+HorasSolicitudesParaTag.udp(PrbId,TagId)
+
+====== PROPERTIES =======
+Name -> TagSolHorReal
+Description -> Horas en ese periodo
+ContextualTitle -> Horas en periodo
+Formula -> HorasSolicitudesParaTag.udp(PrbId,TagId)
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

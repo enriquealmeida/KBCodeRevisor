@@ -1,0 +1,14 @@
+======OBJECT = CpMovRubId.Attribute === Rubro del Movimiento=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> CpMovRubId
+Description -> Rubro del Movimiento
+HORIZONTAL_DESCRIPTION -> Rubro del Movimiento
+VERTICAL_DESCRIPTION -> Rubro del Movimiento
+ContextualTitle -> Rubro del Movimiento
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

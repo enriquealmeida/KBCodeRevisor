@@ -1,0 +1,28 @@
+======OBJECT = PMailSolLic.Procedure === Mail de solicitud de ausencia=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+&ParMailLic = PMTParChr('PARMAILLIC')
+&ParMailLic = &ParMailLic.Trim()
+&ParSis = PMTParChr('PARSIS')
+&ParUrlBase = PMTParChr('URLMTPUB')
+
+&Wrap.BaseURL = trim(&ParUrlBase)
+&Wrap.Object = HSolLic.Create()
+
+&MailMsg.HTMLText = &Wrap.GetResponse()
+&MailMsg.To.New('Ausencias', &ParMailLic)
+&MailMsg.Subject = 'Solicitudes de ausencias-.'
+
+EnvioMail(&MailMsg,&ErrorCode,&Msg)
+
+
+====== PROPERTIES =======
+Name -> PMailSolLic
+Description -> Mail de solicitud de ausencia
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

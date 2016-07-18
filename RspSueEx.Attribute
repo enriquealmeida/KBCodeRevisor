@@ -1,0 +1,14 @@
+======OBJECT = RspSueEx.Attribute === Remuneración Exterior=====
+NUMERIC(17.2)-
+
+
+====== PROPERTIES =======
+Name -> RspSueEx
+Description -> Remuneración Exterior
+HORIZONTAL_DESCRIPTION -> Remuneración Exterior
+VERTICAL_DESCRIPTION -> Remuneración Exterior
+ContextualTitle -> Remuneración Exterior
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = GLUsAmbNvl.Attribute === Nivel=====
+NUMERIC(1)
+
+
+====== PROPERTIES =======
+Name -> GLUsAmbNvl
+Description -> Nivel
+HORIZONTAL_DESCRIPTION -> Nivel
+VERTICAL_DESCRIPTION -> Nivel
+ContextualTitle -> Nivel
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 9
+IsDefault -> False

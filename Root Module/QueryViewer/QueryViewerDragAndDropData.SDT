@@ -1,0 +1,12 @@
+======OBJECT = QueryViewerDragAndDropData.SDT === Query Viewer Drag And Drop Data=====
+
+=== STRUCTURE ===
+QueryViewerDragAndDropData
+	Name, C(20), Name 
+	Axis, C(20), Axis 
+
+====== PROPERTIES =======
+Name -> QueryViewerDragAndDropData
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 67
+IsDefault -> False

@@ -1,0 +1,8 @@
+======OBJECT = MTSolOri.Table === Origenes de las solicitudes=====
+*SolOriId  Codigo10- Null=False
+ SolOriDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MTSolOri
+Description -> Origenes de las solicitudes
+CACHE_LEVEL -> 3

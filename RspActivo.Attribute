@@ -1,0 +1,11 @@
+======OBJECT = RspActivo.Attribute === Activo?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> RspActivo
+Description -> Activo?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

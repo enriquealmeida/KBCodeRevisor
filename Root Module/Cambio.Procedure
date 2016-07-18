@@ -1,0 +1,39 @@
+======OBJECT = Cambio.Procedure === Cambio=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+&Horas_Renglones.HrsCnt=10
+&Horas_Renglones.TarId='ALMUERZO'
+&Horas_Renglones.PrbId=1
+//
+////&Horas_renglones2 = &Horas_Renglones.Clone()
+//&Horas.Renglones.Add(&Horas_Renglones.Clone())
+&Horas.Renglones.Add(&Horas_Renglones)
+&Horas_Renglones2.TarId='ULTIMA'
+//&Horas.Renglones.Add(&Horas_Renglones2)
+
+&Horas2=&Horas.Clone()
+&Horas.Renglones.CurrentItem.TarId='OTRAMAS'
+
+for  &H in &Horas.Renglones
+	Msg(&H.TarId,status)
+endfor
+
+Msg(" ",status)
+
+for  &H in &Horas2.Renglones
+	Msg(&H.TarId,status)
+endfor
+	
+
+
+====== PROPERTIES =======
+Name -> Cambio
+IsMain -> True
+CALL_PROTOCOL -> CLINE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+ObjectVisibility -> Public
+IsDefault -> False

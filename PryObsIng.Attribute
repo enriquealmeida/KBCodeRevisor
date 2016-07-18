@@ -1,0 +1,16 @@
+======OBJECT = PryObsIng.Attribute === Observaciones en el ingreso=====
+LONGVARCHAR(2097152)
+
+
+====== PROPERTIES =======
+Name -> PryObsIng
+Description -> Observaciones en el ingreso
+HORIZONTAL_DESCRIPTION -> Observaciones en el ingreso
+VERTICAL_DESCRIPTION -> Observaciones en el ingreso
+ContextualTitle -> Observaciones en el ingreso
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AutoResize -> False
+GxHeight -> 5row
+IsDefault -> False

@@ -1,0 +1,96 @@
+======OBJECT = TestMailaSolicitudes.Procedure === Test Maila Solicitudes=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+&MailRecipient.Name='SOLICITUDES'
+&MailRecipient.Address='solicitudes2@concepto.com.uy'
+&Attachment1 = 'attachment1.jpg'
+&Attachment2 = 'attachment2.jpg'
+&Attachment3 = 'attachment3.jpg'
+
+&Attachmentxpz1='attachmentxpz1.xpz'
+&Attachmentxpz2='attachmentxpz2.xpz'
+&Attachmentxpz3='attachmentxpz3.xpz'
+
+&PrbId=35229
+
+
+//&MailMessage.Subject='TEST (EALMEIDA) MAIL SIMPLE'
+//&MailMessage.HTMLText='<H1>Titulo</H1> texto'
+//&MailMessage.To.Add(&MailRecipient)
+//msg(&MailMessage.Subject,status)
+//EnvioMail.Call(&MailMessage,&msgError)
+//msg(&msgError)
+
+&MailMessage.Subject='TEST (EALMEIDA) UN ATTACHMENT '
+&MailMessage.HTMLText='<H1>SEGUNDO</H1> texto'
+&MailMessage.Attachments.Add(&Attachment1)
+msg(&MailMessage.Subject,status)
+EnvioMail.Call(&MailMessage,&ErrorCode,&msgError)
+msg(&msgError)
+&MailMessage.Attachments.Clear()
+//
+&MailMessage.Subject='TEST (EALMEIDA) TRES ATTACHMENTS SIMPLES '
+&MailMessage.HTMLText='<H1>SEGUNDO</H1> texto'
+&MailMessage.Attachments.Add(&Attachment1)
+&MailMessage.Attachments.Add(&attachment2)
+&MailMessage.Attachments.Add(&Attachment3)
+msg(&MailMessage.Subject,status)
+EnvioMail.Call(&MailMessage,&ErrorCode,&msgError)
+msg(&msgError)
+&MailMessage.Attachments.Clear()
+
+&MailMessage.Subject='TEST (EALMEIDA) UN XPZ'
+&MailMessage.HTMLText='<H1>SEGUNDO</H1> texto'
+//&MailMessage.To.Add(&MailRecipient)
+&MailMessage.Attachments.Add(&AttachmentXPZ1)
+msg(&MailMessage.Subject,status)
+EnvioMail.Call(&MailMessage,&ErrorCode,&msgError)
+msg(&msgError)
+&MailMessage.Attachments.Clear()
+
+&MailMessage.Subject='TEST (EALMEIDA) TRES XPZ'
+&MailMessage.HTMLText='<H1>SEGUNDO</H1> texto'
+//&MailMessage.To.Add(&MailRecipient)
+&MailMessage.Attachments.Add(&AttachmentXPZ1)
+&MailMessage.Attachments.Add(&AttachmentXPZ2)
+&MailMessage.Attachments.Add(&AttachmentXPZ3)
+msg(&MailMessage.Subject,status)
+EnvioMail.Call(&MailMessage,&ErrorCode,&msgError)
+msg(&msgError)
+&MailMessage.Attachments.Clear()
+
+//
+for each 
+	where            PrbId=&PrbId
+	PrbDsc='PRUEBA (EALMEIDA) PARA ACTUALIZACION DE PRB'
+	CliId ='EALMEIDA'
+	PrbTxt='---'
+endfor
+
+&MailMessage.Subject=format('TEST (EALMEIDA) ACTUALIZO XPZ Solicitud:#%1#',&PrbId)
+&MailMessage.HTMLText='<H1>AGREGADO</H1> texto'
+//&MailMessage.To.Add(&MailRecipient)
+&MailMessage.Attachments.Add(&AttachmentXPZ1)
+&MailMessage.Attachments.Add(&Attachment1)
+&MailMessage.Attachments.Add(&AttachmentXPZ3)
+msg(&MailMessage.Subject,status)
+EnvioMail.Call(&MailMessage,&ErrorCode,&msgError)
+msg(&msgError)
+
+&MailMessage.Attachments.Clear()
+
+
+//PSolxMail.Call()
+
+
+====== PROPERTIES =======
+Name -> TestMailaSolicitudes
+IsMain -> True
+CALL_PROTOCOL -> CLINE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = SolObsDet.Attribute === Detalle=====
+LONGVARCHAR(1024)
+
+
+====== PROPERTIES =======
+Name -> SolObsDet
+Description -> Detalle
+HORIZONTAL_DESCRIPTION -> Detalle
+VERTICAL_DESCRIPTION -> Detalle
+ContextualTitle -> Detalle
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

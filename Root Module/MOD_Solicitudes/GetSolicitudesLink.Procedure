@@ -1,0 +1,15 @@
+======OBJECT = GetSolicitudesLink.Procedure === Get Solicitudes Link=====
+
+=== RULES ===
+parm(in:&TrnMode, in:&PryId, in:&PrbId, out:&Url);
+
+
+=== PROCEDURE SOURCE ===
+&Url = Solicitudes.Link(&TrnMode,&PryId, &PrbId)
+
+
+====== PROPERTIES =======
+Name -> GetSolicitudesLink
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+IsDefault -> False

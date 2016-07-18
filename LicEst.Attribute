@@ -1,0 +1,14 @@
+======OBJECT = LicEst.Attribute === Estado de la licencia=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> LicEst
+Description -> Estado de la licencia
+HORIZONTAL_DESCRIPTION -> Estado de la licencia
+VERTICAL_DESCRIPTION -> Estado
+ContextualTitle -> Estado
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

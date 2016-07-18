@@ -1,0 +1,15 @@
+======OBJECT = RspCel.Attribute === Celular=====
+CHARACTER(20)
+
+
+====== PROPERTIES =======
+Name -> RspCel
+Description -> Celular
+HORIZONTAL_DESCRIPTION -> Celular
+VERTICAL_DESCRIPTION -> Celular
+ContextualTitle -> Celular
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

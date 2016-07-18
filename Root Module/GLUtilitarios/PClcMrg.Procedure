@@ -1,0 +1,30 @@
+======OBJECT = PClcMrg.Procedure === Calculo margenes=====
+
+=== RULES ===
+parm(in:&Importe1 ,in:&Importe2 ,out:&Resultado ) ;
+
+
+=== PROCEDURE SOURCE ===
+if &Importe2<>0
+    &ImpAux=round(&Importe1/&Importe2,2) * 100
+
+    if &ImpAux > 9999.99
+         &Resultado=9999.99
+    else
+        if &ImpAux < -999.99
+            &Resultado=  -999.99
+        else
+            &Resultado=&ImpAux
+        endif
+    endif
+else
+    &Resultado=0
+endif
+
+
+====== PROPERTIES =======
+Name -> PClcMrg
+Description -> Calculo margenes
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

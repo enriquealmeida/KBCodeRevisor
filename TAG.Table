@@ -1,0 +1,6 @@
+======OBJECT = TAG.Table === Maestro de TAG=====
+*TagId  DMTag- Null=False
+
+====== PROPERTIES =======
+Name -> TAG
+Description -> Maestro de TAG

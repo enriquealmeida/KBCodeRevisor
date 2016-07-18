@@ -1,0 +1,28 @@
+======OBJECT = PGDatosNueRsp.Procedure === Graba datos nuevo responsable=====
+
+=== RULES ===
+parm(in:&RspId);
+
+
+=== PROCEDURE SOURCE ===
+PGDatosNueRspPc.Call(&RspId,&MTPCLugId)
+// doy de alta el responsable en la tabla de recursos
+for each
+    where          RspId = &RspId
+    defined by RspNom
+
+    new
+        CpRecId = RspId
+        CpRecDsc = RspNom
+        CpRecTpo = DMRecTpo.Porhoras
+    endnew
+endfor
+
+
+====== PROPERTIES =======
+Name -> PGDatosNueRsp
+Description -> Graba datos nuevo responsable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+ObjectVisibility -> Private
+IsDefault -> False

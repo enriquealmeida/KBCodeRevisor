@@ -1,0 +1,13 @@
+======OBJECT = RspFormaPagoDolares.Attribute === Forma Pago Dólares=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> RspFormaPagoDolares
+Description -> Forma Pago Dólares
+VERTICAL_DESCRIPTION -> Forma Pago U$S
+ContextualTitle -> Forma Pago Dólares
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

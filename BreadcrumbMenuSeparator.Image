@@ -1,0 +1,38 @@
+======OBJECT = BreadcrumbMenuSeparator.Image === Breadcrumb Menu Separator=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T17:53:53.0000000Z" checksum="58e438698b7324e073e563cc5bae3200" fullyQualifiedName="BreadcrumbMenuSeparator" guid="82008d6c-1a27-4a93-a5f1-124e880c6e02" name="BreadcrumbMenuSeparator" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Breadcrumb Menu Separator">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="separador_menu_breadcrumb_1024x5px.jpg" description="separador_menu_breadcrumb_1024x5px.jpg"><Data>
+<base64Binary>
+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
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>separador_menu_breadcrumb_1024x5px.jpg</Value></Property><Property><Name>Description</Name><Value>separador_menu_breadcrumb_1024x5px.jpg</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\Especificaciones 2\separador_menu_breadcrumb_1024x5px.jpg</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>BreadcrumbMenuSeparator</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> BreadcrumbMenuSeparator
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

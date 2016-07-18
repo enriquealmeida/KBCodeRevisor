@@ -1,0 +1,11 @@
+======OBJECT = SolxMailDateTime.Attribute === Ultimo chequeo de solicitudes por mail=====
+DATETIME(10.5)
+
+
+====== PROPERTIES =======
+Name -> SolxMailDateTime
+Description -> Ultimo chequeo de solicitudes por mail
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

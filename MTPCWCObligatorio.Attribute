@@ -1,0 +1,13 @@
+======OBJECT = MTPCWCObligatorio.Attribute === Es Obligatorio?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> MTPCWCObligatorio
+Description -> Es Obligatorio?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttCollection -> False
+ControlType -> 3
+IsDefault -> False

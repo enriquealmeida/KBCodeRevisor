@@ -1,0 +1,55 @@
+======OBJECT = WWIndicadoresDS.DataSelector === WWIndicadores DS=====
+<Object parent="MOD_Objetivos.WorkWithPlusIndicadores" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="f26c14eb-e0d9-49b2-820c-8471f027799a" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:25.0000000Z" checksum="93c1588437abcb185730f3a0c374446b" fullyQualifiedName="MOD_Objetivos.WWIndicadoresDS" guid="5a00e631-8c47-4ed3-bb0a-c2b29a35b643" name="WWIndicadoresDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWIndicadores DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[IndDsc like &IndDsc when not &IndDsc.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[IndActivo = &IndActivo when not &IndActivo.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="IndDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>IndDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:IndDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="IndActivo">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>IndActivo</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:IndActivo</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>IndDsc</Name>
+        <Description>Ind Dsc</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>IndActivo</Name>
+        <Description>Ind Activo</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWIndicadoresDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Objetivos.WorkWithPlusIndicadores</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWIndicadoresDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-61
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 61
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

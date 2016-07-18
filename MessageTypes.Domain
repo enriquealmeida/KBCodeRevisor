@@ -1,0 +1,24 @@
+======OBJECT = MessageTypes.Domain === Message Types=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2007-01-23T14:33:20.0000000Z" checksum="9d606283944332d010d7a7283d27eac6" fullyQualifiedName="MessageTypes" guid="60a17476-86c0-45f4-9405-bbe193690ed0" name="MessageTypes" type="00972a17-9975-449e-aab1-d26165d51393" description="Message Types">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MessageTypes</Value></Property><Property><Name>Length</Name><Value>2</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>0, Warning, Warning; 1, Error, Error</Value></Property><Property><Name>ControlType</Name><Value>Combo Box</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> MessageTypes
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 2
+Decimals -> 0
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+ControlType -> 0
+IsDefault -> False

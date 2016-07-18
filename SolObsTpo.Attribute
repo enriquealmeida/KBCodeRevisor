@@ -1,0 +1,16 @@
+======OBJECT = SolObsTpo.Attribute === Tipo=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> SolObsTpo
+Description -> Tipo
+HORIZONTAL_DESCRIPTION -> Tipo
+VERTICAL_DESCRIPTION -> Tipo
+ContextualTitle -> Tipo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 0
+ControlValues -> Observación:OBS,Cambio de estado:EST,Cambio en fecha de solicitud:SOL,Cerrada:CRR
+IsDefault -> False

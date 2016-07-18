@@ -1,0 +1,15 @@
+======OBJECT = PolFchFin.Attribute === Fecha final=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> PolFchFin
+Description -> Fecha final
+HORIZONTAL_DESCRIPTION -> Fecha final
+VERTICAL_DESCRIPTION -> Fecha final
+ContextualTitle -> Fecha final
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

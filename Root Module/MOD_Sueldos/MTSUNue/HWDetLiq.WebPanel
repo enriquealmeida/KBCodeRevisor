@@ -1,0 +1,88 @@
+======OBJECT = HWDetLiq.WebPanel === Trab. con Detalle Liquidación=====
+
+=== RULES ===
+parm(in:&RspIdPar, in:&RspSuAPar, in:&RspSuMPar);
+
+
+=== EVENTS SOURCE ===
+ Event Start
+    &GLUsAmbNvl = 9
+    PFUsuHab.call('SUELDOS',&GLUsAmbNvl,&vOk)//Seguridad
+    if &vOk <> 'S'
+        HSinPermiso.call()
+    endif
+
+    &RspSuA = &RspSuAPar
+    &RspSuM = &RspSuMPar
+
+    &Eliminar = 'Eliminar'
+
+    &TpoHonId.Additem('', 'TODOS')
+    &TpoHonId = ''
+
+    &RspId.Additem('', 'TODOS')
+    &RspId = &RspIdPar
+
+    &PryId.Additem('', 'TODOS')
+    &PryId = ''
+
+    &MonId = ''
+
+    &RubId.Additem('', 'TODOS')
+    &RubId = ''
+EndEvent  // Start
+
+Event sbfMesDet.load
+    RspId.Link = TMTSUMesDet.Link( RspId, RspSuA, RspSuM, PryId, RspSuFch, TpoHonId, MonId, TrnMode.Update)
+    RspSuPlaExt.Link = TMTSUMDPlaExt.Link( RspId, RspSuA, RspSuM, PryId, RspSuFch, TpoHonId, MonId)
+    &Eliminar.link = TMTSUMesDet.Link( RspId, RspSuA, RspSuM, PryId, RspSuFch, TpoHonId, MonId, TrnMode.Delete)
+    load
+EndEvent  // sbfMesDet.load
+
+Event Refresh
+
+EndEvent  // 'Refresh'
+
+Event 'Agregar'
+    &RspSuFch = nullvalue(&RspSuFch)
+    TMTSUMesDet.call(&RspId,&RspSuA,&RspSuM,'',&RspSuFch,'','',TrnMode.Insert)
+EndEvent  // 'Agregar'
+
+Event 'Recibos'
+    HOImpRec.call(&RspId,&RspSuA,&RspSuM)
+EndEvent  // 'Recibos'
+
+Event &TpoHonId.Click
+
+EndEvent  // &TpoHonId.Click
+
+Event &RspId.Click
+
+EndEvent  // &RspId.Click
+
+Event &MonId.Click
+
+EndEvent  // &MonId.Click
+
+Event &PryId.Click
+
+EndEvent  // &PryId.Click
+
+Event &RubId.Click
+
+EndEvent  // &RubId.Click
+
+Event 'Cerrar'
+    HwSUMes.call()
+EndEvent  // 'Cerrar'
+
+
+====== PROPERTIES =======
+Name -> HWDetLiq
+Description -> Trab. con Detalle Liquidación
+AUTO_REFRESH -> VARS_CHANGE
+SPC_WARNINGS_DISABLED -> spc0096
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

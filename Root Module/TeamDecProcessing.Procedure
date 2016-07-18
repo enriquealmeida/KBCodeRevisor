@@ -1,0 +1,86 @@
+======OBJECT = TeamDecProcessing.Procedure === Team Dec Processing=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+&xmlreader.Open("teamdev.xml")
+
+
+do while not &xmlreader.EOF
+	do 'leo'
+	
+	if &xmlreader.NodeType=&xmlreader.ElementType
+		do case
+			//			case &xmlreader.Name='log'
+			//				
+			case &xmlreader.Name='logentry'
+				&revision= &xmlreader.GetAttributeByName('revision')
+				
+			case &xmlreader.Name='author'
+			    &author= &xmlreader.Value
+				
+			case &xmlreader.Name='date'
+			     &date = &xmlreader.Value
+				 &ano= &date.Substring(7,4)
+				 &mes=&date.Substring(1,2)
+			case &xmlreader.Name='action'
+			     &Ope= &xmlreader.GetAttributeByName('type')
+		    case &xmlreader.Name='objectType'
+			     &objecttype=&xmlreader.Value
+				 
+			case &xmlreader.Name='objectName'
+			     &objectName=&xmlreader.Value
+			case &xmlreader.Name = 'msg'
+			     &msg2=&xmlreader.Value
+			 otherwise
+	 endcase
+ 
+ 
+	endif
+	
+	if &xmlreader.Name='action' and &xmlreader.NodeType=&xmlreader.EndTagType
+		msg(format("%1 , %2 , %3 , %4 , %5, %6, %7 ",&revision , &author , &objectName ,&objecttype, &ano, &mes, &ope),status)
+	endif
+enddo
+
+
+
+Sub 'Leo'
+	&xmlreader.Read()
+	if (&xmlreader.ErrCode<>0)
+	  	msg(&xmlreader.ErrDescription,status) 
+	 endif
+EndSub
+
+//
+//
+//
+//
+//&xmlreader.
+//
+//<log>
+//	<logentry revision="6040">
+//		<author>Local\adecaux</author>
+//		<date>05/02/2016 19:28:00</date>
+//		<actions>
+//			<action type="Modified">
+//				<objectGuid>91464b1c-90d7-ebc3-6658-c421f8425aaa</objectGuid>
+//				<objectType>Procedure</objectType>
+//				<objectTypeGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</objectTypeGuid>
+//				<objectName>PCGPrMC</objectName>
+//				<objectDescription>Procesa mod. de Conocimiento</objectDescription>
+//			</action>
+//		</actions>
+//		<msg>ad-gl cambio modificacion de nro conocimiento x courier</msg>
+//	</logentry>
+
+
+====== PROPERTIES =======
+Name -> TeamDecProcessing
+IsMain -> True
+CALL_PROTOCOL -> CLINE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = CliNom.Attribute === Nombre del Cliente=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> CliNom
+Description -> Nombre del Cliente
+HORIZONTAL_DESCRIPTION -> Nombre
+VERTICAL_DESCRIPTION -> Nombre
+ContextualTitle -> Nombre
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 2
+IsDefault -> False

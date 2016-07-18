@@ -1,0 +1,15 @@
+======OBJECT = CpRecId.Attribute === Identificador de Recurso=====
+CHARACTER(16)
+
+
+====== PROPERTIES =======
+Name -> CpRecId
+Description -> Identificador de Recurso
+HORIZONTAL_DESCRIPTION -> Identificador de Recurso
+VERTICAL_DESCRIPTION -> Recurso
+ContextualTitle -> Recurso
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

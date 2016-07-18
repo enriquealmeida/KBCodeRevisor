@@ -1,0 +1,24 @@
+======OBJECT = DMCronometroAccion.Domain === DMCronometro Accion=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-11-28T15:36:08.0000000Z" checksum="b99f0d42cf64e346b4d6e59331e794a6" fullyQualifiedName="DMCronometroAccion" guid="063b9efc-57ae-445c-b982-1e5d6897fb5c" name="DMCronometroAccion" type="00972a17-9975-449e-aab1-d26165d51393" description="DMCronometro Accion">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMCronometroAccion</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>10</Value></Property><Property><Name>AttMaxLen</Name><Value>10</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>PRENDER, PRENDER, PRENDER; APAGAR, APAGAR, APAGAR; \0, NINGUNA, NINGUNA</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMCronometroAccion
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 10
+AttMaxLen -> 10
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

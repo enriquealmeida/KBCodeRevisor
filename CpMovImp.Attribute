@@ -1,0 +1,14 @@
+======OBJECT = CpMovImp.Attribute === Importe del Movimiento=====
+NUMERIC(15.2)-
+
+
+====== PROPERTIES =======
+Name -> CpMovImp
+Description -> Importe del Movimiento
+HORIZONTAL_DESCRIPTION -> Importe del Movimiento
+VERTICAL_DESCRIPTION -> Importe del Movimiento
+ContextualTitle -> Importe del Movimiento
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

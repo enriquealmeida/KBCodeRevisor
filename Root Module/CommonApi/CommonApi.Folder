@@ -1,0 +1,9 @@
+======OBJECT = CommonApi.Folder === Common Api=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-05-06T20:16:26.0000000Z" lastUpdate="2013-03-08T16:46:50.0000000Z" checksum="0a281d16874274874a4c25c2d0d6fa59" fullyQualifiedName="CommonApi" guid="462c98e7-21bc-4e28-b96a-bbeef10701eb" name="CommonApi" type="00000000-0000-0000-0000-000000000008" description="Common Api">
+  <Properties><Property><Name>Name</Name><Value>CommonApi</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> CommonApi
+IsDefault -> False

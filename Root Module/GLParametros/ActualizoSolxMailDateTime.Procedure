@@ -1,0 +1,24 @@
+======OBJECT = ActualizoSolxMailDateTime.Procedure === Actualizo Solx Mail Date Time=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+	  for each 
+		where          ParId=1
+		  SolxMailDateTime = now()
+	  when none
+		  new
+			  ParId = 1
+			  SolxMailDateTime = now()
+		  endnew
+	  
+	  endfor
+      commit
+
+
+====== PROPERTIES =======
+Name -> ActualizoSolxMailDateTime
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 21
+IsDefault -> False

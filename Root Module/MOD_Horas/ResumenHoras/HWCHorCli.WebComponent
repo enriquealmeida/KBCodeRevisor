@@ -1,0 +1,52 @@
+======OBJECT = HWCHorCli.WebComponent === Resumen de Horas por Cliente=====
+
+=== RULES ===
+parm(in:&RspId, in:&CliId, in:&PryId, in:&PryCls, in:&PryTpo, in:&TarId, in:&FchIni, in:&FchFin, in:&HrsPrbId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+   // &Det = loadBitmap('imagenes/flechita.gif')
+	
+	&Det.FromImage(flechita)
+	
+    &HrsCntTot = PCntTHrs(&PryId,&TarId,&RspId,&CliId,&FchIni,&FchFin,&prycls,&prytpo,&HrsPrbId)
+EndEvent  // Start
+
+Event SbfCli.load
+    for each order CliId
+        where      CliId = &CliId when not &CliId.IsEmpty() 
+		
+        &CliIdSbf = CliId
+        	
+        &HrsCnt = PCntTHrs( &PryId, &TarId, &RspId, CliId , &FchIni, &FchFin, &prycls, &prytpo , &HrsPrbId)
+        
+        &HrsPcj = 0
+        if &HrsCnt <> 0
+            &Det.link = HDHrPryP.link( &TarId, &RspId, &CliIdSbf, &FchIni, &FchFin, &prycls, &prytpo)
+            &HrsPcj = round(&HrsCnt * 100 / &HrsCntTot, 2)
+            load
+        endif
+    endfor
+    &CliIdSbf = 'Totales'
+    &CliIdSbf.FontBold=1
+    &HrsCnt = &HrsCntTot
+    &HrsCnt.FontBold=1
+    &HrsPcj=100
+   // &Det=loadBitmap('')
+   &Det.Enabled=0
+   &Det.Visible=0
+    load
+EndEvent  // SbfCli.load
+
+
+====== PROPERTIES =======
+Name -> HWCHorCli
+Description -> Resumen de Horas por Cliente
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 85
+ObjectVisibility -> Private
+IsDefault -> False

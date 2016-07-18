@@ -1,0 +1,15 @@
+======OBJECT = HorasRenglones.Table === Renglones de Horas=====
+*HrsFch  Fecha- Null=False
+*RspId  DMUsuarios- Null=False
+*RenglonId  Renglon- Null=False
+ PryId  PROYECTO- Null=False
+ PrbId  SOLICITUD- Null=True
+ TarId  Tareas- Null=False
+ HrsCnt  Horas- Null=False
+ HrsObs  Observaciones- Null=False
+ Mes  Mes- Null=False
+ Anio  ANIO- Null=False
+
+====== PROPERTIES =======
+Name -> HorasRenglones
+Description -> Renglones de Horas

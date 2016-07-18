@@ -1,0 +1,7 @@
+======OBJECT = Numera.Table === Numeradores=====
+*NumId  Codigo10- Null=False
+ NumUlt  Numerador- Null=False
+
+====== PROPERTIES =======
+Name -> Numera
+Description -> Numeradores

@@ -1,0 +1,9 @@
+======OBJECT = MTCPWeb.Folder === MTCPWeb=====
+<Object parent="MOD_Costos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="369d3627-bc9f-467c-8d20-e200def4955e" user="" versionDate="2016-03-15T17:55:23.0000000Z" lastUpdate="2016-03-15T16:26:46.0000000Z" checksum="e2bd213c7496d3071ea7ae457f30d7a6" fullyQualifiedName="MOD_Costos.MTCPWeb" guid="e6653c53-c36e-4295-a3da-5eb5c2385b09" name="MTCPWeb" type="00000000-0000-0000-0000-000000000008" description="MTCPWeb">
+  <Properties><Property><Name>Name</Name><Value>MTCPWeb</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+Name -> MTCPWeb
+IsDefault -> False

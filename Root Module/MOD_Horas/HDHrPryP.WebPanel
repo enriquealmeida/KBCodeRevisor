@@ -1,0 +1,89 @@
+======OBJECT = HDHrPryP.WebPanel === Horas x proyectos con parámetr=====
+
+=== RULES ===
+parm(in:&vTarId ,IN:&vRspId ,IN:&vCliId ,IN:&vFchIni ,IN:&vFchFin ,IN:&vPryCls ,IN:&vPryTpo ) ;
+//order(CliId ,PryId ) ;
+//noaccept(&vTarDsc ) ;
+//noaccept(&vCliNom ) ;
+//noaccept(&vHrsTot ) ;
+//noaccept(&vHrsCnt ) ;
+//noaccept(&vHrsPrc ) ;
+//noaccept(&vpryclsdsc ) ;
+//noaccept(&vprytpodsc ) ;
+//noread(TarId ) ;
+
+
+=== EVENTS SOURCE ===
+Event Start 
+   &vPryCls.additem('','TODAS')
+   &vCliId.additem('','TODOS')
+   &vPryTpo.additem('','TODOS')
+   &vRspId.additem('','TODOS')
+   &vTarId.additem('','TODAS')
+EndEvent
+
+Event Refresh
+    if &vCliId = ''
+        &vCliNom = 'TODOS LOS CLIENTES'
+    else
+        for each 
+        where      CliId = &vCliId
+            &vCliNom = CliNom
+        endfor
+    endif
+    if &vTarId = ''
+        &vTarDsc = 'TODAS LAS TAREAS'
+    else
+        for each
+        where      &vTarId = TarId
+            &vTarDsc = TarDsc
+        endfor
+    endif
+    if &vprytpo = ''
+       &vprytpodsc = 'TODOS LOS TIPOS'
+    else
+      for each
+      where      PryTpo=&vPryTpo
+        &vprytpodsc=PryTpoDsc
+      endfor  
+    endif
+    if &vprycls = ''
+        &vpryclsdsc = 'TODAS LAS CLASES'
+    else
+	  &vpryclsdsc=DevuelvoPryClsDsc(&vPryCls)
+    endif
+    &vHrsTot = PCntTHrs(&vPryId,&vTarId,&vRspId,&vCliId,&vFchIni,&vFchFin,&vPrycls,&vPrytpo,&PrbId)
+EndEvent
+
+Event load
+    
+    for each order CliId PryId  
+    where      CliId = &vCliId or &vCliId = ''
+       &PryId = PryId
+       &PryNom = PryNom 
+       &vHrsCnt = 0
+       &vHrsPrc = 0
+        for each order HrsFch
+        where      HrsFch >= &vFchIni and HrsFch <= &vFchFin 
+        where      RspId = &vRspId  or  &vRspId = ''
+        where      TarId = &vTarId  or  &vTarId = ''
+        where      PryCls = &vprycls  or  &vprycls = ''
+        where      PryTpo = &vprytpo  or  &vprytpo = ''
+              &vHrsCnt = &vHrsCnt + HrsCnt
+        endfor
+        if &vHrsCnt > 0
+            &vHrsPrc = PCHrsPrc(&vHrsCnt,&vHrsTot)
+            load
+        endif
+    endfor 
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HDHrPryP
+Description -> Horas x proyectos con parámetr
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Private
+IsDefault -> False

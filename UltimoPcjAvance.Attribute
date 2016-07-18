@@ -1,0 +1,11 @@
+======OBJECT = UltimoPcjAvance.Attribute === Ultimo Pcj Avance=====
+NUMERIC(4)
+DevuelveUltimoPorcentajeDeAvance(ObjId)
+
+====== PROPERTIES =======
+Name -> UltimoPcjAvance
+Formula -> DevuelveUltimoPorcentajeDeAvance(ObjId)
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

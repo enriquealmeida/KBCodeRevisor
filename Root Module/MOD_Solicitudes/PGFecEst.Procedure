@@ -1,0 +1,18 @@
+======OBJECT = PGFecEst.Procedure === Genero Fecha Estado=====
+
+=== RULES ===
+parm(in:&PrbId, in:&PrbEst);
+
+
+=== PROCEDURE SOURCE ===
+&SolObsDet = 'Cambio de estado: ' + &PrbEst
+PGSolObs.call( &PrbId, DMTpoObservaciones.CambioDeEstado, &SolObsDet, &PrbEst)
+
+
+====== PROPERTIES =======
+Name -> PGFecEst
+Description -> Genero Fecha Estado
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

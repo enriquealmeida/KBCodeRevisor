@@ -1,0 +1,14 @@
+======OBJECT = Clientecollection.SDT === Clientecollection=====
+
+=== STRUCTURE ===
+Clientecollection, collection: Cliente
+	Cliid, C(10), Cliid 
+	Clinom, C(30), Clinom 
+	Climailsol, C(40), Climailsol 
+
+====== PROPERTIES =======
+Name -> Clientecollection
+idDYNAMIC_SDT -> True
+FolderType -> 2a9e9aba-d2de-4801-ae7f-5e3819222daf
+FolderId -> 18
+IsDefault -> False

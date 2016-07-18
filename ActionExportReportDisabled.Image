@@ -1,0 +1,33 @@
+======OBJECT = ActionExportReportDisabled.Image === Action Export Report Disabled=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-19T16:26:24.0000000Z" lastUpdate="2013-09-24T14:50:38.0000000Z" checksum="22ef87989f749e0a274927bf9fc98006" fullyQualifiedName="ActionExportReportDisabled" guid="2fa8e35b-c360-41cb-ab13-085f0f76352a" name="ActionExportReportDisabled" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Export Report Disabled">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionExportReportDisabled.gif" description="Action Export Report Disabled.png"><Data>
+<base64Binary>
+R0lGODlhHQAcAPcAAAAAADc3Nzg4ODs7O0tLS0xMTE1NTVRUVFVVVVZWVldXV1lZWVpaWlxcXF1dXV9fX2BgYGNjY2ZmZnBwcHFxcXNzc3V1dXd3d3p6enx8
+fH5+fn9/f4CAgIGBgYODg4aGhoqKiouLi5GRkZKSkpOTk5eXl5mZmZ+fn6GhoaOjo6ampqioqKmpqaqqqqysrK2tra+vr7CwsLGxsbOzs7S0tLW1tbe3t7i4
+uLq6ury8vL6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcfHx8jIyMnJycvLy8zMzM3Nzc/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc
+3N3d3d7e3t/f3+Dg4OLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy8vT09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8
+/P39/f7+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAAdABwAAAj/AP8JHEiwoMGD
+CBMqXMiwocOHECPC0UIlihMlRXrE4BFRYJsqVqhIsaikhwojEafgqDHDBo0ZNWDo+DGFCsQQI4Do2DFjB40QIoqIQdLkYQQIJTp0yGCiwgEKS4LMOPHEoYEB
+BQI0SEBggIAHVqIwgSHDIQgFCxwsWMCgAYIRXa5QEXLjIRMjS5goWZJEiZcwWbA06fHQDZo3bd68iQOGRBUxXKQceYiGTBs2iuU8kWBkDZgsRR2mIRMHTuk6
+WS5YcVPGC5OHatK8kROHjh0wGsDMUfMlCmUzc+LMkUPnB4cTVrD0fphmjBs4cuqo+QDCwoQJJKBQ/rKmTRwnGzzkQXBCJAUKJQ/PdEGzZswFDFberGm+xUn6
+LGHKbCkxZHQYL1tc8ZpoM7DwwgsuIOhCCy2skIIPHUUo4YQUVmhhQQEBADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionExportReportDisabled.gif</Value></Property><Property><Name>Description</Name><Value>Action Export Report Disabled.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\jgomez\Downloads\ActionExportReportDisabled.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionExportReportDisabled</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionExportReportDisabled
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

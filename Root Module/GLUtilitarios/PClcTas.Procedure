@@ -1,0 +1,33 @@
+======OBJECT = PClcTas.Procedure === Calculo Tasa Horaria=====
+
+=== RULES ===
+parm(IN:&Importe1 ,IN:&Importe2 ,OUT:&Resultado ) ;
+
+
+=== PROCEDURE SOURCE ===
+
+
+if &Importe2<>0
+    &ImpAux=round(&Importe1/&Importe2 , 2)
+
+    if &ImpAux > 9999.99
+         &Resultado=9999.99
+    else
+        if &ImpAux < -9999.99
+            &Resultado=-9999.99
+        else
+            &Resultado=&ImpAux
+        endif
+    endif
+else
+    &Resultado=0
+endif
+
+
+====== PROPERTIES =======
+Name -> PClcTas
+Description -> Calculo Tasa Horaria
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+ObjectVisibility -> Public
+IsDefault -> False

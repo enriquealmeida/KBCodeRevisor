@@ -1,0 +1,14 @@
+======OBJECT = NotificationInfo.SDT === Notification Info=====
+
+=== STRUCTURE ===
+NotificationInfo
+	Id, C(100), Id 
+	Object, C(100), Object 
+	Message, L(2097152), Message 
+
+====== PROPERTIES =======
+Name -> NotificationInfo
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 87
+ObjectVisibility -> Private
+IsDefault -> False

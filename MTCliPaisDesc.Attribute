@@ -1,0 +1,15 @@
+======OBJECT = MTCliPaisDesc.Attribute === Descripción del país=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> MTCliPaisDesc
+Description -> Descripción del país
+HORIZONTAL_DESCRIPTION -> Descripción del país
+VERTICAL_DESCRIPTION -> Descripción del país
+ContextualTitle -> Descripción del país
+Class -> INFERRED
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-85
+ATT_PICTURE -> @!
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = PryDisPor.Attribute === Porcentaje a distribuir=====
+NUMERIC(8.4)
+
+
+====== PROPERTIES =======
+Name -> PryDisPor
+Description -> Porcentaje a distribuir
+HORIZONTAL_DESCRIPTION -> Porcentaje distribuido
+VERTICAL_DESCRIPTION -> Porcentaje distribuido
+ContextualTitle -> Porcentaje a distribuir
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZ9.9999
+IsDefault -> False

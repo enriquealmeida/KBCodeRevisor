@@ -1,0 +1,15 @@
+======OBJECT = RspHrT.Attribute === Horas trabajadas por día=====
+NUMERIC(6.2)-
+
+
+====== PROPERTIES =======
+Name -> RspHrT
+Description -> Horas trabajadas por día
+HORIZONTAL_DESCRIPTION -> Horas trabajadas por día
+VERTICAL_DESCRIPTION -> Horas trabajadas por día
+ContextualTitle -> Horas trabajadas por día
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> Z,ZZ9.99
+IsDefault -> False

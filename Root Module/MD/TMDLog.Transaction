@@ -1,0 +1,27 @@
+======OBJECT = TMDLog.Transaction === (NA) Log de metadata=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+MDLgId*
+MDLgOTpo
+MDLgOSec
+MDLgCdId
+MDLgAcc
+MDLgValAnt
+MDLgUsr
+MDLgFch
+
+
+====== PROPERTIES =======
+Name -> TMDLog
+Description -> (NA) Log de metadata
+GenerateObject -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+ObjectVisibility -> Private
+IsDefault -> False

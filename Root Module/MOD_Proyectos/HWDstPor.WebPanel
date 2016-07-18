@@ -1,0 +1,58 @@
+======OBJECT = HWDstPor.WebPanel === Trabajar con porcentajes de distribución=====
+
+=== RULES ===
+parm(in:&PryPadId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    PFUsuHab.call('CIERRE',9,&Ok)
+    if &Ok <> 'S'
+        HSinPermiso.call()
+    endif
+EndEvent  // Start
+
+Event Refresh
+    &TotPor = 0
+
+    &cant = 0
+    for each
+        where      PryPadId = &PryPadId
+        
+        &cant += 1
+    endfor
+    if &cant > 0
+        for each
+            where      PryId = &PryPadId
+
+            &PryPadNom = PryNom
+        endfor
+        &PryPadNom.ForeColor = rgb(0, 0, 0)
+    else
+        &PryPadNom = 'El proyecto no se distribuye por tabla'
+        &PryPadNom.ForeColor = rgb(255, 0, 0)
+    endif
+
+    &Eliminar = 'Eliminar'
+EndEvent  // Refresh
+
+Event load
+    &TotPor = &TotPor + PryDisPor
+    PryDisPor.Link = TMTDstPor.link( PryPadId, PryHijId, TrnMode.Update)
+    &Eliminar.Link = TMTDstPor.link( PryPadId, PryHijId, TrnMode.Delete)
+EndEvent  // load
+
+Event 'Agregar'
+    TMTDstPor.call(PryPadId,'',TrnMode.Insert)
+EndEvent  // 'Agregar'
+
+
+====== PROPERTIES =======
+Name -> HWDstPor
+Description -> Trabajar con porcentajes de distribución
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+ObjectVisibility -> Private
+IsDefault -> False

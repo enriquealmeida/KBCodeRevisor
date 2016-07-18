@@ -1,0 +1,26 @@
+======OBJECT = TasaHoraria.Domain === Tasa Horaria=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-12-11T13:22:22.0000000Z" checksum="43d0ec464b4a98f636f578f26263f99e" fullyQualifiedName="TasaHoraria" guid="1f7850b8-d58f-4578-a1bd-909b8615178d" name="TasaHoraria" type="00972a17-9975-449e-aab1-d26165d51393" description="Tasa Horaria">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>TasaHoraria</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Numeric</Value></Property><Property><Name>Length</Name><Value>13</Value></Property><Property><Name>Decimals</Name><Value>6</Value></Property><Property><Name>AttMaxLen</Name><Value>13</Value></Property><Property><Name>AttAvgLen</Name><Value>6</Value></Property><Property><Name>Signed</Name><Value>True</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> TasaHoraria
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 4
+Length -> 13
+Decimals -> 6
+AttMaxLen -> 13
+AttAvgLen -> 6
+Signed -> True
+IsDefault -> False

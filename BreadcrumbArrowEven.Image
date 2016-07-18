@@ -1,0 +1,25 @@
+======OBJECT = BreadcrumbArrowEven.Image === Breadcrumb Arrow Even=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T17:07:23.0000000Z" checksum="2726d73c61c21c5f091ce9b791682c2a" fullyQualifiedName="BreadcrumbArrowEven" guid="1d689cb9-32d3-4143-805e-288d2b9bda7c" name="BreadcrumbArrowEven" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Breadcrumb Arrow Even">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="flecha3_bread-crumb.jpg" description="flecha3_bread-crumb.jpg"><Data>
+<base64Binary>
+/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMD/8AAEQgAEwAIAwERAAIRAQMRAf/EAHAAAAMAAAAAAAAAAAAAAAAAAAUGCgEAAwEAAAAAAAAAAAAAAAAAAgMEBRAAAQMCBAUFAAAAAAAAAAAA
+ARECAxIEACFRBjFhEzMFIjKCQxURAAAEBAcAAAAAAAAAAAAAAAABAgMRQYEE8DESMkIzQ//aAAwDAQACEQMRAD8Asz2x5JQfHTOzbU+2JPFubpIvj7hyXTFr
+K+JjPuG/QqgRt+wfd3rJvU2G0c2V7gSCXgrHGCEKuIU8gdcA0nUqMiDX1klEJmGfbKfmhOj3pF6Vda5d+r7NEypTDWdlRPcdk8sQH//Z
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>flecha3_bread-crumb.jpg</Value></Property><Property><Name>Description</Name><Value>flecha3_bread-crumb.jpg</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\Especificaciones 2\flecha3_bread-crumb.jpg</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>BreadcrumbArrowEven</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> BreadcrumbArrowEven
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

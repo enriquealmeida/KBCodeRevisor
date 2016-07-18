@@ -1,0 +1,9 @@
+======OBJECT = ResumenHoras.Folder === Resumen Horas=====
+<Object parent="MOD_Horas" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="ef519605-8f4a-4442-969e-2c07364ba5e0" user="" versionDate="2016-03-15T02:04:27.0000000Z" lastUpdate="2016-03-15T02:03:17.0000000Z" checksum="5b393efbbdbf54d2323f422f3bb379e1" fullyQualifiedName="MOD_Horas.ResumenHoras" guid="02575e7b-61ba-4923-aba1-2d2cbefe7e15" name="ResumenHoras" type="00000000-0000-0000-0000-000000000008" description="Resumen Horas">
+  <Properties><Property><Name>Name</Name><Value>ResumenHoras</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+Name -> ResumenHoras
+IsDefault -> False

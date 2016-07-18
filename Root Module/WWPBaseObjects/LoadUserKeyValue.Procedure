@@ -1,0 +1,46 @@
+======OBJECT = LoadUserKeyValue.Procedure === Load User Key Value=====
+
+=== RULES ===
+parm(in:&UserCustomKey, out:&UserCustomValue);
+
+
+=== PROCEDURE SOURCE ===
+//This is a procedure in which user has to define how to save information related to each end user
+//By default it saves the ColumnsSelector State, the Grid State (filters, orders, etc) and Filters within 'ManageFilters' Action
+
+//Example to save/load in Session
+&UserCustomValue = &Session.Get(&UserCustomKey)
+
+//if you want to save/load this information in DataBase you should create the following transaction:
+
+//Transaction:: UserCustom
+//				* UserId (Id)
+//				* UserCustomKey (VarChar(120))
+//				  UserCustomValue (VarChar(1000))
+//
+//Set this transaction as bussiness component
+
+//Then uncomment the code below and define the variables: 
+//														UserCustom:: UserCustom
+//														&Context:: WWPContext
+
+//After that, you should create the following attribute to SDT WWPContext:
+//                            UserId:: Id
+
+//Finally you should uncomment the code and define the correspondend variables in procedure: SaveColumnsSelectorState
+
+//loadWWPContext.Call(&Context)
+//&UserCustom.load(&Context.UserId,&UserCustomKey)
+//if &UserCustom.Success()
+//	&UserCustomValue = &UserCustom.UserCustomValue
+//else
+//	&UserCustomValue.SetEmpty()
+//endif
+
+
+====== PROPERTIES =======
+Name -> LoadUserKeyValue
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

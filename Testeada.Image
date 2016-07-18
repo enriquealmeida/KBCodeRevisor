@@ -1,0 +1,33 @@
+======OBJECT = Testeada.Image === Testeada=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-20T00:12:16.0000000Z" checksum="51dfc60481b1c634fe2ab77f57cf2012" fullyQualifiedName="Testeada" guid="007ada37-06f3-4912-8950-2562c719a580" name="Testeada" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Testeada">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="Testeada.png" description="Testeada.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAt+wAALfsB/IdK5wAAABx0RVh0U29mdHdhcmUAQWRv
+YmUgRmlyZXdvcmtzIENTNui8sowAAAOzSURBVEiJrZbPb1RVFMc/5943782bAv1BodBIqEGDLkxDtGIgAVIIImhw5cJE+QNMTNwQ2LlwoYkmxsTowpgUQVho
+8MeCbvxRE2IIICGFNIGGFBCs2hSG6Uzfz3tctALTmVI0PXf3kns+53vOud88UVW+PPFFhx8UB8WYPhYp1LnTSRztevWF1ybtk5vWr/aD4JAYswWQRQGoIsZ0
+e57XO3z5/I+e9bwTiPQuVnLrlfCtIUlr4mCX9bwTRoxZHACKH7TjyheIrw/gF4r/Kur15qsod/nDE0RoCTup3fiOiSuf0bVmJyo+SA2ABohThxVLZ9tyBEEX
+zG+w3lJ+H/mY8o3jFAqteEEnThWZHXEdRFEMhmcef5qujlUPpaYYlvj5h3eYvP4VYXEVWVoBVe7foTqIc46OpR2saF9JnMYLpFfCsJWzZ45y8dz7LCl1oSiI
+R1S9yhIyklmUaZQvOHUNKY2p72yhUGJ8/BJnTh6kFC5HEdTloClhcRkFk88IagaZW60xHkGwjGrtFiIWUEQExXJyaD9GI4zxyfMIyHn0qTcJet6gEiUYWQAi
+IoRhK0maMvTT23xzbBtTd8awXkgQLOXi8BEmbg7hB+2kaRVrA3bsGcC2beNW5S/gXjeaQkQMWZZy7rfDHD/Wz+jwR7jkNsPnPsH3faaqtxg++wFhsZ0sreF5
+JXa8eJhH1m4hTW9jpN446iA6u3aeLTA5OcqFs+8SVUYphp0ExXbGLn/L5MQVRi4eJZq6hiKIGPp3f05Xdx9xXMUr+Kjq/JAZGZBlMau7N/DK66fYsPEgaVoj
+zxMAfv3lAGOXjuD7rWRpjc3bP6R7zSbiqMx81lcHEZHZKoQsraEIfZsPsH3PIQqFFkD4+49TRNVxknSKDRv3s279XqLpO3cBOrsYD1ZynyR1GdO1Mmt6+nn+
+5a8ptazEuZw0qdKzbg+9fW8RR1Pzp1gYcg8WR2Xalz/Bzr3HKIZtBMUOntv6HnkWo03e1NxoapDNQElcZlnbY2zd+SnTtQlKLV0k8fxzeCBERO4aWwMoKrNi
+1bOIGJKoDHN6L0jDPBogghAnMYpijZ3xojmhLkEBY20DQFHiJG4osg5ijKEyXWHk2gg9XWtxbiGjv/+uMDZ+lcp0BWvqC2holzWW0ZujjP05Nk/bmoeiZHmG
+ZxvHbJxz5+d+9KyHorj/cBRtCnDOnTdpkuxW1UGoH4D8jzNXnKoOpkmyW1SVge8HOkqlcNBYu2j/XS7PT9dq07v2vbRv8h96K6CA5dH69gAAAABJRU5ErkJg
+gg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Testeada.png</Value></Property><Property><Name>Description</Name><Value>Testeada.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\awolff\Desktop\Testeada.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Testeada</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Testeada
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

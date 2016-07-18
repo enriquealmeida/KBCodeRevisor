@@ -1,0 +1,11 @@
+======OBJECT = PrbAprobadoUsuario.Attribute === Usuario que Aprueba=====
+CHARACTER(16)
+
+
+====== PROPERTIES =======
+Name -> PrbAprobadoUsuario
+Description -> Usuario que Aprueba
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

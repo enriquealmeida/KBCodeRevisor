@@ -1,0 +1,10 @@
+======OBJECT = ToBeDefined.Category === To Be Defined=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:30:50.0000000Z" checksum="4842428f6b887e9bbb988a193e1401c1" fullyQualifiedName="ToBeDefined" guid="ff8995f9-8b6e-43c0-a00a-77c0d26091e8" name="ToBeDefined" type="00000000-0000-0000-0000-000000000006" description="To Be Defined">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ToBeDefined</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ToBeDefined
+IsDefault -> False

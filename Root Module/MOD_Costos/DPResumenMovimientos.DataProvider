@@ -1,0 +1,108 @@
+======OBJECT = DPResumenMovimientos.DataProvider === Resumen Movimientos=====
+
+=== RULES ===
+parm(in:&PryId,in:&CliId,in:&PryRspId,in:&PryCls,in:&PryTpo,in:&CpRecId,in:&TomarTransf,in:&FchIni,in:&FchFin);
+
+<Object parent="MOD_Costos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="369d3627-bc9f-467c-8d20-e200def4955e" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T11:36:28.0000000Z" lastUpdate="2016-05-17T19:33:25.0000000Z" checksum="44656127efa6a6becd7ae4a58034b0c5" fullyQualifiedName="MOD_Costos.DPResumenMovimientos" guid="d257c16c-4c29-4698-8f59-6c8aee82e7ec" name="DPResumenMovimientos" type="2a9e9aba-d2de-4801-ae7f-5e3819222daf" description="Resumen Movimientos">
+  <Part type="1d8aeb5a-6e98-45a7-92d2-d8de7384e432">
+    <Source><![CDATA[SDTResumenMovimientos
+{
+	SDTResumenMovimientosItem 
+	using DSResumenProyectos(&PryId,&CliId,&PryRspId,&PryCls,&PryTpo,&CpRecId,&TomarTransf,&FchIni,&FchFin)
+	{
+		CliId 
+		PryId 
+		PryTpo 
+		PryCls 
+		PryRspId 
+		CpRecId 
+		CpMovEST
+		CpMovHrs
+		CpMovPesos 
+		CpRecTpo
+		Texto = ''
+		CpMovImp 
+		CpMovFch 
+		Cobrado = 0
+		Pagado = 0
+		Transferido = 0
+	}
+}
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+    <Source><![CDATA[parm(in:&PryId,in:&CliId,in:&PryRspId,in:&PryCls,in:&PryTpo,in:&CpRecId,in:&TomarTransf,in:&FchIni,in:&FchFin);
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+    <Variable Name="CliId">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>CliId</Value></Property><Property><Name>Description</Name><Value>Identificador de Cliente</Value></Property><Property><Name>idIsAutoDefinedVariable</Name><Value>True</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliId</Value></Property></Properties>
+    </Variable>
+    <Variable Name="CpRecId">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>CpRecId</Value></Property><Property><Name>Description</Name><Value>Identificador de Recurso</Value></Property><Property><Name>idIsAutoDefinedVariable</Name><Value>True</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CpRecId</Value></Property></Properties>
+    </Variable>
+    <Variable Name="PryCls">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>PryCls</Value></Property><Property><Name>Description</Name><Value>Producto</Value></Property><Property><Name>idIsAutoDefinedVariable</Name><Value>True</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryCls</Value></Property></Properties>
+    </Variable>
+    <Variable Name="PryId">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>PryId</Value></Property><Property><Name>Description</Name><Value>Identificador de Proyecto</Value></Property><Property><Name>idIsAutoDefinedVariable</Name><Value>True</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryId</Value></Property></Properties>
+    </Variable>
+    <Variable Name="PryRspId">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>PryRspId</Value></Property><Property><Name>Description</Name><Value>Responsable del Proyecto</Value></Property><Property><Name>idIsAutoDefinedVariable</Name><Value>True</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryRspId</Value></Property></Properties>
+    </Variable>
+    <Variable Name="PryTpo">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>PryTpo</Value></Property><Property><Name>Description</Name><Value>Tipo de Proyecto</Value></Property><Property><Name>idIsAutoDefinedVariable</Name><Value>True</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryTpo</Value></Property></Properties>
+    </Variable>
+    <Variable Name="TomarTransf">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>TomarTransf</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>AttMaxLen</Name><Value>1</Value></Property></Properties>
+    </Variable>
+    <Variable Name="FchIni">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FchIni</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Variable Name="FchFin">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FchFin</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DPResumenMovimientos</Value></Property><Property><Name>Description</Name><Value>Resumen Movimientos</Value></Property><Property><Name>OutputSDT</Name><Value>447527b5-9210-4523-898b-5dccb17be60a-MOD_Costos.SDTResumenMovimientos</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DPResumenMovimientos
+Description -> Resumen Movimientos
+OutputSDT -> 447527b5-9210-4523-898b-5dccb17be60a-82
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

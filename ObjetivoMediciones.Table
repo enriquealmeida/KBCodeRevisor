@@ -1,0 +1,11 @@
+======OBJECT = ObjetivoMediciones.Table === Objetivos Mediciones=====
+*ObjId  Id6- Null=False
+*IndMedFch  Fecha- Null=False
+ ObjObsTxt  ObservacionesCorta- Null=False
+ ObjObsUsr  DMUsuarios- Null=False
+ ObjPcjAvance  PORCENTAJE_ENTERO- Null=False
+ IndMedVal  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> ObjetivoMediciones
+Description -> Objetivos Mediciones

@@ -1,0 +1,16 @@
+======OBJECT = KeepAlive.File === Keep Alive=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-10-17T13:22:30.0000000Z" checksum="5456ab8799bdeb02d1834a64405c36dd" fullyQualifiedName="KeepAlive" guid="e970b8ce-63c5-439c-949f-0ac37ddf6265" name="KeepAlive" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Keep Alive">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>dmFyIHVybDsNCnZhciBtaW51dG9zOw0KZnVuY3Rpb24gc2V0S2VlcEFsaXZlKHVybFBhciwgbWludXRvc1Bhcikgew0KICAgIHVybCA9IHVybFBhcjsNCiAgICBtaW51dG9zID0gbWludXRvc1BhcjsNCiAgICBrZWVwQWxpdmUoKQ0KfQ0KICAgIA0KZnVuY3Rpb24ga2VlcEFsaXZlKCkgew0KICAgIHNldFRpbWVvdXQoa2VlcEFsaXZlLCAxMDAwKjYwKm1pbnV0b3MpOyAgIC8vIExsYW1hIGEga2VlcEFsaXZlIGVuIGNhZGEgdGltZW91dA0KICAgIHZhciByZXF1ZXN0ID0gZmFsc2U7DQogICAgdHJ5IHsNCiAgICAgICAgcmVxdWVzdCA9IG5ldyBYTUxIdHRwUmVxdWVzdCgpOw0KICAgIH0gY2F0Y2ggKHRyeW1pY3Jvc29mdCkgew0KICAgICAgICB0cnkgew0KICAgICAgICAgICAgcmVxdWVzdCA9IG5ldyBBY3RpdmVYT2JqZWN0KCJNc3htbDIuWE1MSFRUUCIpOw0KICAgICAgICB9IGNhdGNoIChvdGhlcm1pY3Jvc29mdCkgew0KICAgICAgICAgICAgdHJ5IHsNCiAgICAgICAgICAgICAgICByZXF1ZXN0ID0gbmV3IEFjdGl2ZVhPYmplY3QoIk1pY3Jvc29mdC5YTUxIVFRQIik7DQogICAgICAgICAgICB9IGNhdGNoIChmYWlsZWQpIHsNCiAgICAgICAgICAgIHJlcXVlc3QgPSBmYWxzZTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0NCiAgICBpZiAoIXJlcXVlc3QpIHsNCiAgICAgICAgYWxlcnQoIkVycm9yIGluaXRpYWxpemluZyBYTUxIdHRwUmVxdWVzdCEiKTsNCiAgICB9IGVsc2Ugew0KICAgICAgICByZXF1ZXN0Lm9ucmVhZHlzdGF0ZWNoYW5nZSA9IGZ1bmN0aW9uICgpIHt9OyAgICAvLyBDdWFuZG8gdnVlbHZlIG5vIGhhY2UgbmFkYQ0KICAgICAgICByZXF1ZXN0Lm9wZW4oIkdFVCIsIHVybCwgdHJ1ZSk7DQogICAgICAgIHJlcXVlc3Quc2VuZChudWxsKTsNCiAgIH0NCn0NCg==</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>keepAlive.js</Value></Property><Property><Name>FileExtension</Name><Value>.js</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>KeepAlive</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>.</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> KeepAlive
+Extract -> Newer
+ExtractToPath -> .
+IsDefault -> False

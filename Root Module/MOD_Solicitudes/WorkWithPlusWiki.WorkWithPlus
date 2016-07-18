@@ -1,0 +1,163 @@
+======OBJECT = WorkWithPlusWiki.WorkWithPlus === Work With Plus Wiki=====
+<Object parent="MOD_Solicitudes.Wiki" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="dea8d922-1c76-4cd6-b8ad-aa2126aca310" user="" versionDate="2016-05-05T17:28:38.0000000Z" lastUpdate="2016-05-05T17:18:47.0000000Z" checksum="c5c201f1fce98b8fa3144f2a72d51b01" fullyQualifiedName="MOD_Solicitudes.WorkWithPlusWiki" guid="d9bb81b2-4a8a-044d-0ca5-ac1604563c6d" name="WorkWithPlusWiki" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Wiki">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWWiki" defaultSecFuntionKey="WWWiki">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Solicitudes.Wiki" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Solicitudes.Wiki" UseTransactionContext="True" SecFuntionKeyINS="WWWiki_Insert" defaultSecFuntionKeyINS="WWWiki_Insert" SecFuntionKeyUPD="WWWiki_Update" defaultSecFuntionKeyUPD="WWWiki_Update" SecFuntionKeyDLT="WWWiki_Delete" defaultSecFuntionKeyDLT="WWWiki_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;WikiTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="WikiTitle" defaultControlName="WikiTitle" caption="Wiki" defaultCaption="Wiki" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellThemeClass="" colSpan="1" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" cellThemeClass="" childrenOrderedList="2;22;KBWikiId-2;22;KBWikiDSC-2;22;KBWikiBaseUrl-2;22;KBWikiUserId-2;22;KBWikiUserPassword-2;22;KBWikiHost-2;22;KBWikiHttps">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" showDescription="False" descriptionPosition="Top" defaultDescriptionPosition="Top" mergeWithPrevious="True" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiBaseUrl" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiBaseUrl" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiUserId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiUserId" description="User" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiUserPassword" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiUserPassword" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup caption="&lt;default&gt;" themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete" showDescription="True">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;KBWikiDSC-4;39;-;76;-5;41;" id="dea8d922-1c76-4cd6-b8ad-aa2126aca310:1" defaultId="dea8d922-1c76-4cd6-b8ad-aa2126aca310:1" name="Wiki" defaultName="Wiki">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Wiki" defaultDescription=" Wiki" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.WWWiki" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Solicitudes.ExportWWWiki" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Solicitudes.ExportReportWWWiki" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Solicitudes.WWWikiDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;WikiTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="WikiTitle" defaultControlName="WikiTitle" caption="Wiki" defaultCaption="Wiki" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" cellThemeClass="" colSpan="1" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup caption="&lt;default&gt;" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%" showDescription="True">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellWidth_S="92%" childrenOrderedList="4;30;-4;12;KBWikiDSC">
+              <orders childrenOrderedList="4;13;=KBWikiDSC.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order name="Descripcion" defaultName="Descripcion">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" />
+                </order>
+              </orders>
+              <filterAttribute name="KBWikiDSC" defaultName="KBWikiDSC" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="KBWikiDSC like &amp;KBWikiDSC when not &amp;KBWikiDSC.IsEmpty()" defaultCondition="KBWikiDSC like &amp;KBWikiDSC when not &amp;KBWikiDSC.IsEmpty()" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" allowSelection="False" allowHovering="True" childrenOrderedList="4;17;Delete-4;17;Update-4;23;KBWikiId-4;23;KBWikiDSC-4;23;KBWikiBaseUrl-4;23;KBWikiUserId-4;23;KBWikiUserPassword-4;23;KBWikiHost-4;23;KBWikiHttps">
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBWikiId = &amp;TFKBWikiId when not &amp;TFKBWikiId.IsEmpty()" defaultFilterCondition="KBWikiId = &amp;TFKBWikiId when not &amp;TFKBWikiId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="KBWikiDSC like &amp;TFKBWikiDSC when not &amp;TFKBWikiDSC.IsEmpty()" defaultFilterCondition="KBWikiDSC like &amp;TFKBWikiDSC when not &amp;TFKBWikiDSC.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiBaseUrl" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiBaseUrl" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBWikiBaseUrl like &amp;TFKBWikiBaseUrl when not &amp;TFKBWikiBaseUrl.IsEmpty()" defaultFilterCondition="KBWikiBaseUrl like &amp;TFKBWikiBaseUrl when not &amp;TFKBWikiBaseUrl.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiUserId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiUserId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBWikiUserId like &amp;TFKBWikiUserId when not &amp;TFKBWikiUserId.IsEmpty()" defaultFilterCondition="KBWikiUserId like &amp;TFKBWikiUserId when not &amp;TFKBWikiUserId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiHost" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiHost" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBWikiHost like &amp;TFKBWikiHost when not &amp;TFKBWikiHost.IsEmpty()" defaultFilterCondition="KBWikiHost like &amp;TFKBWikiHost when not &amp;TFKBWikiHost.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiHttps" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiHttps" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBWikiHttps = &amp;TFKBWikiHttps when not &amp;TFKBWikiHttps.IsEmpty()" defaultFilterCondition="KBWikiHttps = &amp;TFKBWikiHttps when not &amp;TFKBWikiHttps.IsEmpty()" />
+          <standardAction name="Delete" defaultName="Delete" />
+        </grid>
+      </table>
+    </selection>
+    <view childrenOrderedList="5;14;KBWikiId;5;41;-5;06;Main Table-5;38;" caption="KBWikiDSC.ToString()" defaultCaption="KBWikiDSC.ToString()">
+      <GenexusPatterns_Objects>
+        <Object Id="View" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.ViewWiki" />
+      </GenexusPatterns_Objects>
+      <parameters>
+        <parameter name="KBWikiId" defaultName="KBWikiId" />
+      </parameters>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableContentNoMargin" defaultThemeClass="TableContentNoMargin" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="5;06;TableTitle-5;29;WorkWithLink-5;34;">
+        <table name="TableTitle" defaultName="TableTitle" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" cellWidth_E="58%" defaultCellWidth_E="58%" cellThemeClass="CellViewTableTitle CellWidthAuto" defaultCellThemeClass="CellViewTableTitle CellWidthAuto" childrenOrderedList="5;27;ViewTitle-5;21;KBWikiDSC">
+          <textBlock controlName="ViewTitle" defaultControlName="ViewTitle" caption="Wiki :: " defaultCaption="Wiki :: " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewTextBlockTitle" defaultCellThemeClass="CellViewTextBlockTitle" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeTitleWWP" defaultThemeClass="AttributeTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewAttributeTitle" defaultCellThemeClass="CellViewAttributeTitle" showDescription="False" defaultShowDescription="False" mergeWithPrevious="False" />
+        </table>
+        <workWithLink defaultThemeClass="TextBlockLink" cellWidth_E="42%" defaultCellWidth_E="42%" defaultCellThemeClass="CellAlignRightWithMargin CellWidthAuto" align="Right" defaultAlign="Right" />
+        <tabsPosition cellThemeClass="CellViewTabsPosition" defaultCellThemeClass="CellViewTabsPosition" colSpan="999" defaultColSpan="999" startCol="1" defaultStartCol="1" />
+      </table>
+      <tabs childrenOrderedList="WikiGeneral;42;General-WikiClienteWC;43;Cliente">
+        <tabularTab childrenOrderedList="WikiGeneral;04;Main Table" name="General" defaultName="General" code="General" defaultCode="General" wcname="WikiGeneral" defaultWcname="WikiGeneral">
+          <GenexusPatterns_Objects>
+            <Object Id="TabTabular" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.WikiGeneral" />
+          </GenexusPatterns_Objects>
+          <table name="Table" defaultName="Table" themeClass="" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="WikiGeneral;28;ErrorViewer-WikiGeneral;04;TableAttributes-WikiGeneral;04;TableActions">
+            <errorViewer />
+            <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="WikiGeneral;21;KBWikiId-WikiGeneral;21;KBWikiDSC-WikiGeneral;21;KBWikiBaseUrl-WikiGeneral;21;KBWikiUserId-WikiGeneral;21;KBWikiUserPassword-WikiGeneral;21;KBWikiHost-WikiGeneral;21;KBWikiHttps">
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCellView" descriptionCellThemeClass="" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiDSC" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCellView" descriptionCellThemeClass="" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiBaseUrl" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiBaseUrl" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCellView" descriptionCellThemeClass="" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiUserId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBWikiUserId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCellView" descriptionCellThemeClass="" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+            </table>
+            <table name="TableActions" defaultName="TableActions" themeClass="TableActions" defaultThemeClass="TableActions" numberOfColumns="0" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="WikiGeneral;88;Actions">
+              <actionGroup caption="&lt;default&gt;" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="WikiGeneral;91;Update-WikiGeneral;91;Delete" showDescription="True">
+                <standardAction caption="GXM_update" defaultCaption="GXM_update" buttonClass="Button" defaultButtonClass="Button" name="Update" defaultName="Update" />
+                <standardAction caption="GX_BtnDelete" defaultCaption="GX_BtnDelete" buttonClass="Button" defaultButtonClass="Button" name="Delete" defaultName="Delete" />
+              </actionGroup>
+            </table>
+          </table>
+        </tabularTab>
+        <gridTab name="Bases de conocimiento" defaultName="Bases de conocimiento" code="KB" defaultCode="KB" wcname="WikiKBWC" defaultWcname="WikiKBWC" panelTheme="GXUI-DVelop-Panel-Gray" defaultPanelTheme="GXUI-DVelop-Panel-Gray" collapsedByDefault="True" defaultCollapsedByDefault="True">
+          <GenexusPatterns_Objects>
+            <Object Id="TabGrid" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.WikiKBWC" />
+            <Object Id="ExportTabGrid" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Solicitudes.ExportWikiKBWC" />
+            <Object Id="ExportReportTabGrid" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Solicitudes.ExportReportWikiKBWC" />
+          </GenexusPatterns_Objects>
+          <transaction transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Consolidado.KB" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Consolidado.KB" />
+          <table name="TableGridHeader" defaultName="TableGridHeader" defaultThemeClass="Table100x100" numberOfColumns="1" defaultNumberOfColumns="1" type="Responsive" colSpan="999" defaultColSpan="999">
+            <errorViewer />
+            <table name="TableSearch" defaultName="TableSearch" themeClass="TableSearch" defaultThemeClass="TableSearch" numberOfColumns="2" defaultNumberOfColumns="20" cellPadding="0" defaultCellPadding="0" cellSpacing="0" defaultCellSpacing="0" type="Responsive" defaultCellThemeClass="TableSearchCell">
+              <table name="TableActions" defaultName="TableActions" numberOfColumns="3" defaultNumberOfColumns="30" cellPadding="3" defaultCellPadding="3" cellSpacing="3" defaultCellSpacing="3" type="Responsive" cellWidth_S="8%">
+                <standardAction name="Insert" defaultName="Insert" cellWidth_E="8%" cellWidth_S="100%" />
+                <standardAction name="Export" defaultName="Export" cellWidth_E="8%" cellWidth_S="100%" align="Right" defaultAlign="Right" />
+                <standardAction name="ExportReport" defaultName="ExportReport" popup="True" defaultPopup="True" cellWidth_E="8%" cellWidth_S="100%" />
+              </table>
+              <orders descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell">
+                <order name="Descripción" defaultName="Descripción">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" />
+                </order>
+              </orders>
+              <table name="TableFilters" defaultName="TableFilters" numberOfColumns="4" defaultNumberOfColumns="4" type="Responsive" defaultCellThemeClass="TableFiltersCell">
+                <filterAttribute name="KBDsc" defaultName="KBDsc" description="Descripción" defaultDescription="Descripción" condition="KBDsc like &amp;KBDsc when not &amp;KBDsc.IsEmpty()" defaultCondition="KBDsc like &amp;KBDsc when not &amp;KBDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" defaultCellThemeClass="DataFilterContentCell" descriptionCellThemeClass="DataFilterDescriptionCell" defaultDescriptionCellThemeClass="DataFilterDescriptionCell" />
+              </table>
+            </table>
+            <grid allowSelection="True" defaultAllowSelection="True" allowHovering="False" defaultAllowHovering="False">
+              <standardAction name="Update" defaultName="Update" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" description="Base de conocimiento" defaultDescription="Base de conocimiento" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" description="Descripción" defaultDescription="Descripción" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBCliId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBCliId" description="Cliente" defaultDescription="Cliente" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBActiva" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBActiva" description="Activa?" defaultDescription="Activa?" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBGXServerUrl" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBGXServerUrl" description="GxServer Url" defaultDescription="GxServer Url" cellVisible_E="False" cellVisible_S="False" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBGXserverFechaUltimaActualiza" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBGXserverFechaUltimaActualiza" description="Actualizacion" defaultDescription="Actualizacion" cellVisible_E="False" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBGXServerNombreId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBGXServerNombreId" description="Nombre KB Server" defaultDescription="Nombre KB Server" cellVisible_E="False" cellVisible_S="False" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBGXServerNombreVersion" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBGXServerNombreVersion" description="la Version" defaultDescription="la Version" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBAgregoTAGaSolicitudes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBAgregoTAGaSolicitudes" description="nuevas solicitudes?" defaultDescription="nuevas solicitudes?" cellVisible_E="False" cellVisible_S="False" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBEstadoSolicitudes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBEstadoSolicitudes" description="que abran" defaultDescription="que abran" />
+              <standardAction name="Delete" defaultName="Delete" />
+            </grid>
+          </table>
+        </gridTab>
+      </tabs>
+    </view>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <InnerHtml><![CDATA[]]></InnerHtml>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusWiki</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Solicitudes.Wiki</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 117
+Name -> WorkWithPlusWiki
+ObjectVisibility -> Private
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-117
+IsDefault -> False

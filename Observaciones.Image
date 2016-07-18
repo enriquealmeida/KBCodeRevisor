@@ -1,0 +1,31 @@
+======OBJECT = Observaciones.Image === Observaciones=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:31:07.0000000Z" checksum="bbd6e919ad747de687e50fa38ad321fd" fullyQualifiedName="Observaciones" guid="1e276d44-46d4-48ba-9899-8283f2b0135d" name="Observaciones" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Observaciones">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="Observaciones.gif" description=""><Data>
+<base64Binary>
+R0lGODlhEQAQAPcAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwP///6bK8EAgAGAgAIAgAKAgAMAgAOAgAABAACBAAEBAAGBAAIBAAKBAAMBAAOBAAABgACBg
+AEBgAGBgAIBgAKBgAMBgAOBgAACAACCAAECAAGCAAICAAKCAAMCAAOCAAACgACCgAECgAGCgAICgAKCgAMCgAOCgAADAACDAAEDAAGDAAIDAAKDAAMDAAODA
+AADgACDgAEDgAGDgAIDgAKDgAMDgAODgAAAAQCAAQEAAQGAAQIAAQKAAQMAAQOAAQAAgQCAgQEAgQGAgQIAgQKAgQMAgQOAgQABAQCBAQEBAQGBAQIBAQKBA
+QMBAQOBAQABgQCBgQEBgQGBgQIBgQKBgQMBgQOBgQACAQCCAQECAQGCAQICAQKCAQMCAQOCAQACgQCCgQECgQGCgQICgQKCgQMCgQOCgQADAQCDAQEDAQGDA
+QIDAQKDAQMDAQODAQADgQCDgQEDgQGDgQIDgQKDgQMDgQODgQAAAgCAAgEAAgGAAgIAAgKAAgMAAgOAAgAAggCAggEAggGAggIAggKAggMAggOAggABAgCBA
+gEBAgGBAgIBAgKBAgMBAgOBAgABggCBggEBggGBggIBggKBggMBggOBggACAgCCAgECAgGCAgICAgKCAgMCAgOCAgACggCCggECggGCggICggKCggMCggOCg
+gADAgCDAgEDAgGDAgIDAgKDAgMDAgODAgADggCDggEDggGDggIDggKDggMDggODggAAAwCAAwEAAwGAAwIAAwKAAwMAAwOAAwAAgwCAgwEAgwGAgwIAgwKAg
+wMAgwOAgwABAwCBAwEBAwGBAwIBAwKBAwMBAwOBAwABgwCBgwEBgwGBgwIBgwKBgwMBgwOBgwACAwCCAwECAwGCAwICAwKCAwMCAwOCAwACgwCCgwECgwGCg
+wICgwKCgwMCgwOCgwADAwCDAwEDAwGDAwIDAwKDAwP///6CgpICAgP8AAAD/AP//AAAA//8A/wD//////yH5BAEAAPYALAAAAAARABAAQAiLAO0JHEiw4MB6
+CBImvGfrlxsAowommEiRYr2Gt0hVcWevHYKBByq202SwJEhTr06ZsodQYcIDbn7dekiwpUJSWwAcqEfSpM+fBg+YWmmvYgJ27NaNW8fO1gGVVYpSTLq0nSuZ
+NAUipIgAJladNRFwvYfg4YFNBbceOICgntsEIwu2k0S3rt2eQE0GBAA7
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Observaciones.gif</Value></Property><Property><Name>Description</Name><Value /></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>\\hugo\inetpub\Produccion\PrivateExterno\GXBasedWeb\ConceptoComUyMT2007\imagenes\Observaciones.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Observaciones</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Observaciones
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

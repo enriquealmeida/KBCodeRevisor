@@ -1,0 +1,41 @@
+======OBJECT = WWAusenciaTpoDS.DataSelector === WWAusencia Tpo DS=====
+<Object parent="MOD_Licencia.WorkWithPlusAusenciaTpo" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="7bf86cf6-17ba-022f-0966-37b991e278aa" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:32.0000000Z" checksum="9dacbef35d6828f3e48a8c9837ea0bcc" fullyQualifiedName="MOD_Licencia.WWAusenciaTpoDS" guid="4b6428d9-ee1e-4989-a971-dc74d794de84" name="WWAusenciaTpoDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWAusencia Tpo DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[AusTpoDsc like &AusTpoDsc when not &AusTpoDsc.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="AusTpoDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>AusTpoDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:AusTpoDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>AusTpoDsc</Name>
+        <Description>Aus Tpo Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWAusenciaTpoDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Licencia.WorkWithPlusAusenciaTpo</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWAusenciaTpoDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-126
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 126
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,177 @@
+======OBJECT = WorkWithPlusConsolidado.WorkWithPlus === Work With Plus Consolidado=====
+<Object parent="MOD_Consolidado.Consolidado" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="d37d5fc1-4b5e-498d-917e-317d8201d708" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-06-27T16:45:53.0000000Z" lastUpdate="2016-06-27T16:38:13.0000000Z" checksum="30357cad8d833728ae58613bde0fdf4e" fullyQualifiedName="MOD_Consolidado.WorkWithPlusConsolidado" guid="d46e0751-1da2-0116-2576-374aa0fb4875" name="WorkWithPlusConsolidado" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Consolidado">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWConsolidado" defaultSecFuntionKey="WWConsolidado">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Consolidado.Consolidado" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Consolidado.Consolidado" SecFuntionKeyINS="WWConsolidado_Insert" defaultSecFuntionKeyINS="WWConsolidado_Insert" SecFuntionKeyUPD="WWConsolidado_Update" defaultSecFuntionKeyUPD="WWConsolidado_Update" SecFuntionKeyDLT="WWConsolidado_Delete" defaultSecFuntionKeyDLT="WWConsolidado_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;ConsolidadoTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="ConsolidadoTitle" defaultControlName="ConsolidadoTitle" caption="Historia de Consolidados" defaultCaption="Historia de Consolidados" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" cellWidth_S="" cellWidth_L="" childrenOrderedList="2;22;CnsId-2;22;MTCnsDsc-2;22;KBId-2;22;KBDsc-2;22;CnsFch-2;22;MTCnsFchRea-2;22;MTCnsEstId-2;22;MTCnsObs">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CnsId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CnsId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsDsc" description=" " defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" showDescription="True" descriptionPosition="Top" defaultDescriptionPosition="Top" mergeWithPrevious="True" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" description=" " defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" showDescription="True" descriptionPosition="Top" defaultDescriptionPosition="Top" mergeWithPrevious="True" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CnsFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CnsFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsFchRea" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsFchRea" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsObs" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsObs" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="4;39;-;76;-5;41;" id="d37d5fc1-4b5e-498d-917e-317d8201d708:1" defaultId="d37d5fc1-4b5e-498d-917e-317d8201d708:1" name="Consolidado" defaultName="Consolidado">
+    <selection description=" Historia de Consolidados" defaultDescription=" Historia de Consolidados" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Consolidado.WWConsolidado" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Consolidado.ExportWWConsolidado" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Consolidado.ExportReportWWConsolidado" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Consolidado.WWConsolidadoDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;ConsolidadoTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="ConsolidadoTitle" defaultControlName="ConsolidadoTitle" caption="Historia de Consolidados" defaultCaption="Historia de Consolidados" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;30;-4;12;KBDsc">
+              <orders descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order name="CnsId">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CnsId" ascending="False" />
+                </order>
+              </orders>
+              <filterAttribute name="CliId" defaultName="CliId" description="=Attribute.Title" defaultDescription="=Attribute.Title" condition="CliId = &amp;CliId when not &amp;CliId.IsEmpty()" defaultCondition="CliId = &amp;CliId when not &amp;CliId.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+              <filterAttribute name="KBId" defaultName="KBId" description="=Attribute.Title" defaultDescription="=Attribute.Title" condition="KBId = &amp;KBId when not &amp;KBId.IsEmpty()" defaultCondition="KBId = &amp;KBId when not &amp;KBId.IsEmpty()" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlInputValue="adbb33c9-0906-4971-833c-998de27e0676-KBId" controlInputDescription="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" controlEmptyItem="True" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+              <filterAttribute name="MTCnsEstId" defaultName="MTCnsEstId" description="=Attribute.Title" defaultDescription="=Attribute.Title" condition="MTCnsEstId = &amp;MTCnsEstId when not &amp;MTCnsEstId.IsEmpty()" defaultCondition="MTCnsEstId = &amp;MTCnsEstId when not &amp;MTCnsEstId.IsEmpty()" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlInputValue="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstId" controlInputDescription="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstDsc" controlEmptyItem="True" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="4;17;Delete-4;17;Update-4;23;CnsId-4;23;MTCnsDsc-4;23;KBId-4;23;KBDsc-4;23;CnsFch-4;23;MTCnsFchRea-4;23;MTCnsEstId-4;23;MTCnsObs">
+          <standardAction name="Delete" defaultName="Delete" />
+          <standardAction name="Update" defaultName="Update" condition="MTCnsEstId &lt;&gt; &amp;MTCnsEstCER" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CnsId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CnsId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="CnsId = &amp;TFCnsId when not &amp;TFCnsId.IsEmpty()" defaultFilterCondition="CnsId = &amp;TFCnsId when not &amp;TFCnsId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTCnsDsc like &amp;TFMTCnsDsc when not &amp;TFMTCnsDsc.IsEmpty()" defaultFilterCondition="MTCnsDsc like &amp;TFMTCnsDsc when not &amp;TFMTCnsDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBId = &amp;TFKBId when not &amp;TFKBId.IsEmpty()" defaultFilterCondition="KBId = &amp;TFKBId when not &amp;TFKBId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBDsc like &amp;TFKBDsc when not &amp;TFKBDsc.IsEmpty()" defaultFilterCondition="KBDsc like &amp;TFKBDsc when not &amp;TFKBDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CnsFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CnsFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CnsFch &gt;= &amp;TFCnsFch when not &amp;TFCnsFch.IsEmpty()" defaultFilterCondition="CnsFch &gt;= &amp;TFCnsFch when not &amp;TFCnsFch.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsFchRea" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsFchRea" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTCnsFchRea &gt;= &amp;TFMTCnsFchRea when not &amp;TFMTCnsFchRea.IsEmpty()" defaultFilterCondition="MTCnsFchRea &gt;= &amp;TFMTCnsFchRea when not &amp;TFMTCnsFchRea.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTCnsEstId = &amp;TFMTCnsEstId when not &amp;TFMTCnsEstId.IsEmpty()" defaultFilterCondition="MTCnsEstId = &amp;TFMTCnsEstId when not &amp;TFMTCnsEstId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsObs" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsObs" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTCnsObs like &amp;TFMTCnsObs when not &amp;TFMTCnsObs.IsEmpty()" defaultFilterCondition="MTCnsObs like &amp;TFMTCnsObs when not &amp;TFMTCnsObs.IsEmpty()" />
+          <userAction image="9fb193d9-64a4-4d30-b129-ff7c76830f7e-calendar" ControlType="Image" name="AgregarSolicitudes" gxobject="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Consolidado.HSPrbCns">
+            <parameters>
+              <parameter name="KBId" />
+              <parameter name="CnsId" />
+            </parameters>
+          </userAction>
+          <userAction image="9fb193d9-64a4-4d30-b129-ff7c76830f7e-menu_icon1" ControlType="Image" name="Mail" gxobject="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Consolidado.PSMailCons">
+            <parameters>
+              <parameter name="CnsId" />
+            </parameters>
+          </userAction>
+          <userAction image="9fb193d9-64a4-4d30-b129-ff7c76830f7e-BtnUpdateImage" ControlType="Image" name="Documentacion" gxobject="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Consolidado.HSDocCam">
+            <parameters>
+              <parameter name="0" />
+              <parameter name="CnsId" />
+            </parameters>
+          </userAction>
+          <userAction tooltip="Cerrar Consolidado" image="9fb193d9-64a4-4d30-b129-ff7c76830f7e-ActionFiltersClean" ControlType="Image" name="CerrarConsolidado" gxobject="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Consolidado.CerrarConsolidado" condition="MTCnsEstId &lt;&gt; &amp;MTCnsEstCER">
+            <parameters>
+              <parameter name="CnsId" />
+            </parameters>
+          </userAction>
+        </grid>
+      </table>
+    </selection>
+    <prompt description="Select Historia de Consolidados" defaultDescription="Select Historia de Consolidados" childrenOrderedList=";02;TableMain" ShowMasterPageWhenPopUp="False" defaultShowMasterPageWhenPopUp="False">
+      <GenexusPatterns_Objects>
+        <Object Id="Prompt" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Consolidado.PromptConsolidado" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" height="493" defaultHeight="493" type="Responsive" defaultType="Responsive" childrenOrderedList=";02;TableHeader-;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList=";02;TableFilters">
+          <table name="TableFilters" defaultName="TableFilters" numberOfColumns="4" defaultNumberOfColumns="4" defaultNumberOfColumns_S="4" defaultNumberOfColumns_M="4" defaultNumberOfColumns_L="4" type="Responsive" defaultType="Responsive" childrenOrderedList=";30;-;12;KBDsc">
+            <orders descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top" />
+            <filterAttribute name="KBDsc" defaultName="KBDsc" description="=Attribute.Title" defaultDescription="=Attribute.Title" condition="KBDsc like &amp;KBDsc when not &amp;KBDsc.IsEmpty()" defaultCondition="KBDsc like &amp;KBDsc when not &amp;KBDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          </table>
+        </table>
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList=";17;Select-;23;CnsId-;23;MTCnsDsc-;23;KBId-;23;KBDsc-;23;CnsFch-;23;MTCnsFchRea-;23;MTCnsEstId-;23;MTCnsObs" columnSelector="False" defaultColumnSelector="False">
+          <standardAction name="Select" defaultName="Select" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CnsId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CnsId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="CnsId = &amp;TFCnsId when not &amp;TFCnsId.IsEmpty()" defaultFilterCondition="CnsId = &amp;TFCnsId when not &amp;TFCnsId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTCnsDsc like &amp;TFMTCnsDsc when not &amp;TFMTCnsDsc.IsEmpty()" defaultFilterCondition="MTCnsDsc like &amp;TFMTCnsDsc when not &amp;TFMTCnsDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBId = &amp;TFKBId when not &amp;TFKBId.IsEmpty()" defaultFilterCondition="KBId = &amp;TFKBId when not &amp;TFKBId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="KBDsc like &amp;TFKBDsc when not &amp;TFKBDsc.IsEmpty()" defaultFilterCondition="KBDsc like &amp;TFKBDsc when not &amp;TFKBDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CnsFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CnsFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CnsFch &gt;= &amp;TFCnsFch when not &amp;TFCnsFch.IsEmpty()" defaultFilterCondition="CnsFch &gt;= &amp;TFCnsFch when not &amp;TFCnsFch.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsFchRea" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsFchRea" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTCnsFchRea &gt;= &amp;TFMTCnsFchRea when not &amp;TFMTCnsFchRea.IsEmpty()" defaultFilterCondition="MTCnsFchRea &gt;= &amp;TFMTCnsFchRea when not &amp;TFMTCnsFchRea.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTCnsEstId = &amp;TFMTCnsEstId when not &amp;TFMTCnsEstId.IsEmpty()" defaultFilterCondition="MTCnsEstId = &amp;TFMTCnsEstId when not &amp;TFMTCnsEstId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsObs" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsObs" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MTCnsObs like &amp;TFMTCnsObs when not &amp;TFMTCnsObs.IsEmpty()" defaultFilterCondition="MTCnsObs like &amp;TFMTCnsObs when not &amp;TFMTCnsObs.IsEmpty()" />
+        </grid>
+      </table>
+    </prompt>
+    <view childrenOrderedList="5;14;CnsId;5;41;-5;06;Main Table-5;38;" caption="&quot;Historia de Consolidados&quot;" defaultCaption="&quot;Historia de Consolidados&quot;">
+      <GenexusPatterns_Objects>
+        <Object Id="View" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Consolidado.ViewConsolidado" />
+      </GenexusPatterns_Objects>
+      <parameters>
+        <parameter name="CnsId" defaultName="CnsId" />
+      </parameters>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableContentNoMargin" defaultThemeClass="TableContentNoMargin" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="5;06;TableTitle-5;29;WorkWithLink-5;34;">
+        <table name="TableTitle" defaultName="TableTitle" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellWidth_E="58%" defaultCellWidth_E="58%" cellThemeClass="CellViewTableTitle CellWidthAuto" defaultCellThemeClass="CellViewTableTitle CellWidthAuto" childrenOrderedList="5;27;ViewTitle">
+          <textBlock controlName="ViewTitle" defaultControlName="ViewTitle" caption="Historia de Consolidados :: " defaultCaption="Historia de Consolidados :: " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewTextBlockTitle" defaultCellThemeClass="CellViewTextBlockTitle" />
+        </table>
+        <workWithLink themeClass="TextBlockLink" defaultThemeClass="TextBlockLink" cellWidth_E="42%" defaultCellWidth_E="42%" cellThemeClass="CellAlignRightWithMargin CellWidthAuto" defaultCellThemeClass="CellAlignRightWithMargin CellWidthAuto" align="Right" defaultAlign="Right" />
+        <tabsPosition cellThemeClass="CellViewTabsPosition" defaultCellThemeClass="CellViewTabsPosition" colSpan="999" defaultColSpan="999" startCol="1" defaultStartCol="1" />
+      </table>
+      <tabs childrenOrderedList="ConsolidadoGeneral;42;General-ConsolidadoSolicitudesWC;43;Solicitudes-ConsolidadoSolicitudesTagsWC;43;SolicitudesTags">
+        <tabularTab childrenOrderedList="ConsolidadoGeneral;04;Main Table" name="General" defaultName="General" code="General" defaultCode="General" wcname="ConsolidadoGeneral" defaultWcname="ConsolidadoGeneral">
+          <GenexusPatterns_Objects>
+            <Object Id="TabTabular" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Consolidado.ConsolidadoGeneral" />
+          </GenexusPatterns_Objects>
+          <table name="Table" defaultName="Table" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="ConsolidadoGeneral;28;ErrorViewer-ConsolidadoGeneral;04;TableAttributes-ConsolidadoGeneral;04;TableActions">
+            <errorViewer />
+            <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="ConsolidadoGeneral;21;CnsId-ConsolidadoGeneral;21;MTCnsDsc-ConsolidadoGeneral;21;KBId-ConsolidadoGeneral;21;KBDsc-ConsolidadoGeneral;21;CnsFch-ConsolidadoGeneral;21;MTCnsFchRea-ConsolidadoGeneral;21;MTCnsEstId-ConsolidadoGeneral;21;MTCnsObs">
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CnsId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CnsId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-KBDsc" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CnsFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CnsFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsFchRea" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsFchRea" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsEstId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsObs" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MTCnsObs" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+            </table>
+            <table name="TableActions" defaultName="TableActions" themeClass="TableActions" defaultThemeClass="TableActions" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="ConsolidadoGeneral;88;Actions">
+              <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="ConsolidadoGeneral;91;Update-ConsolidadoGeneral;91;Delete">
+                <standardAction caption="GXM_update" defaultCaption="GXM_update" buttonClass="Button" defaultButtonClass="Button" name="Update" defaultName="Update" />
+                <standardAction caption="GX_BtnDelete" defaultCaption="GX_BtnDelete" buttonClass="Button" defaultButtonClass="Button" name="Delete" defaultName="Delete" />
+              </actionGroup>
+            </table>
+          </table>
+        </tabularTab>
+      </tabs>
+    </view>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusConsolidado</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Consolidado.Consolidado</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 91
+Name -> WorkWithPlusConsolidado
+ObjectVisibility -> Private
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-91
+IsDefault -> False

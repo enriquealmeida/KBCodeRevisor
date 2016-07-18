@@ -1,0 +1,23 @@
+======OBJECT = PSummarizedByGetConfiguration.Procedure === Summarized By Get Configuration=====
+
+=== RULES ===
+parm(Out:&listEnabledImage, Out:&listDisabledImage, Out:&listToolTip, Out:&drillDownEnabledImage, Out:&drillDownDisabledImage, Out:&drillDownToolTip, Out:&totalCaption);
+
+
+=== PROCEDURE SOURCE ===
+&ListEnabledImage = !"images/edit.gif"
+&ListToolTip = !"images/List"
+&listDisabledImage = !"images/actionDisabled.gif"
+&DrillDownEnabledImage = !"images/display.gif"
+&DrillDownToolTip = !"Drill Down"
+&DrillDownDisabledImage = !"images/actionDisabled.gif"
+&TotalCaption = "Total"
+
+
+====== PROPERTIES =======
+Name -> PSummarizedByGetConfiguration
+Description -> Summarized By Get Configuration
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 40
+ObjectVisibility -> Private
+IsDefault -> False

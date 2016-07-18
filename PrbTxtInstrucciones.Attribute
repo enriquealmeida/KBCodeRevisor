@@ -1,0 +1,11 @@
+======OBJECT = PrbTxtInstrucciones.Attribute === Instrucciones=====
+LONGVARCHAR(2097152)
+
+
+====== PROPERTIES =======
+Name -> PrbTxtInstrucciones
+Description -> Instrucciones
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

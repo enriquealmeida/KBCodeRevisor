@@ -1,0 +1,27 @@
+======OBJECT = DVB_SDTDropDownOptionsTitleSettingsIcons.SDT === DVB_SDTDrop Down Options Title Settings Icons=====
+
+=== STRUCTURE ===
+DVB_SDTDropDownOptionsTitleSettingsIcons
+	Default, B(4), Default 
+	Filtered, B(4), Filtered 
+	SortedASC, B(4), Sorted ASC 
+	SortedDSC, B(4), Sorted DSC 
+	FilteredSortedASC, B(4), Filtered Sorted ASC 
+	FilteredSortedDSC, B(4), Filtered Sorted DSC 
+	OptionSortASC, B(4), Option Sort ASC 
+	OptionSortDSC, B(4), Option Sort DSC 
+	OptionApplyFilter, B(4), Option Apply Filter 
+	OptionFilteringData, B(4), Option Filtering Data 
+	OptionCleanFilters, B(4), Option Clean Filters 
+	SelectedOption, B(4), Selected Option 
+	MultiselOption, B(4), Multisel Option 
+	MultiselSelOption, B(4), Multisel Sel Option 
+
+====== PROPERTIES =======
+Name -> DVB_SDTDropDownOptionsTitleSettingsIcons
+ExternalName -> TitleSettingsIcons
+ExternalNamespace -> 
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 69
+ObjectVisibility -> Private
+IsDefault -> False

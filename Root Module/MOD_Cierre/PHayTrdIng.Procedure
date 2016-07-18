@@ -1,0 +1,21 @@
+======OBJECT = PHayTrdIng.Procedure === Hay traducción que revisar ?=====
+
+=== RULES ===
+parm(OUT:&vRet);
+
+
+=== PROCEDURE SOURCE ===
+&vRet = Bool.False //'N'
+for each
+where            TradAtoEst = 'ING'
+    &vRet = Bool.True //'S' 
+endfor
+
+
+====== PROPERTIES =======
+Name -> PHayTrdIng
+Description -> Hay traducción que revisar ?
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

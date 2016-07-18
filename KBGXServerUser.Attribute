@@ -1,0 +1,10 @@
+======OBJECT = KBGXServerUser.Attribute === KBGXServer User=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> KBGXServerUser
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

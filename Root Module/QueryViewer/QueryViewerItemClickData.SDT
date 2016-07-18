@@ -1,0 +1,19 @@
+======OBJECT = QueryViewerItemClickData.SDT === Query Viewer Item Click Data=====
+
+=== STRUCTURE ===
+QueryViewerItemClickData
+	Name, C(20), Name 
+	Axis, C(20), Axis 
+	Value, C(20), Value 
+	Context, collection: Element
+		Name, C(20), Name 
+		Values, C(20), Value , collection Item
+	Filters, collection: Filter
+		Name, C(20), Name 
+		Values, C(20), Values , collection Item
+
+====== PROPERTIES =======
+Name -> QueryViewerItemClickData
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 67
+IsDefault -> False

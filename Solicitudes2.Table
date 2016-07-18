@@ -1,0 +1,58 @@
+======OBJECT = Solicitudes2.Table === Cabezal de Solicitudes=====
+*PryId  PROYECTO- Null=False
+*PrbId  SOLICITUD- Null=False
+ PrbAprobadoUsuario  DMUsuarios- Null=True
+ PrbAprobadoFecha  Fecha- Null=True
+ PrbAvance  PORCENTAJE_ENTERO- Null=True
+ PrbGravedad  DMGravedad- Null=False
+ PrbSlcFch  Fecha- Null=False
+ SolObjId  Id6- Null=True
+ SolOriId  Codigo10- Null=False
+ PrbUltObs  Numerador- Null=False
+ PrbFchIng  Fecha- Null=False
+ PrbTxtInstrucciones  ObservacionesLarga- Null=False
+ PrbTxtDatBas  ObservacionesLarga- Null=False
+ PrbTxtDoc  ObservacionesLarga- Null=False
+ PrbTxtCam  ObservacionesLarga- Null=False
+ PrbTpoCal  Codigo3- Null=False
+ PrbKbId  Codigo10- Null=False
+ PrbCnsDsc  DESC- Null=False
+ PrbCnsEst  Codigo3- Null=False
+ PrbCnsId  IdConsolidado- Null=True
+ PrbHrsPorcentajeUsados  PORCENTAJE_ENTERO-PClcMrg(PrbHrsReal,PrbHrsPln) Null=False
+ IngUsr  DMUsuarios- Null=False
+ PrbDiasAbi  Dias-0 
+		IF PrbSts = 'BOR' or PrbSts='SUS';
+int(CrrFch - PrbFchIng) 
+	    IF .NOT. CrrFch.isempty();
+int(sysdate() - PrbFchIng) 
+	    IF .NOT. PrbFchIng.isempty();
+		
+0 
+	    OTHERWISE; Null=False
+ PrbTxt  DocumentacionTXT- Null=False
+ PrbPrio  Prioridad- Null=False
+ CrrUsrMail  Email- Null=False
+ PrbPlaFch  Fecha- Null=False
+ SegUsrMail  Email- Null=False
+ SegUsr  DMUsuarios- Null=False
+ PrbTpo  SolicitudTipo- Null=True
+ PrbFch  Fecha- Null=False
+ PrbHrsPln  HorasLargas- Null=False
+ PageId  Id6- Null=False
+ PrbUsr  DMUsuarios- Null=True
+ SisId  DMSistemaId- Null=True
+ PrbHrsReal  HorasLargas-HorasRealizadasSolicitud.udp(PrbId) Null=False
+ CrrFch  Fecha- Null=False
+ CrrUsr  DMUsuarios- Null=False
+ PrbSts  DMPrbSts- Null=False
+ PrbDsc  Descripcion- Null=False
+ PrbIndicadorHoras  Indicador-iif(PrbHrsPln > 0 , 100 * (PrbHrsReal - PrbHrsPln) / PrbHrsPln, 0) IF (PrbHrsReal >= PrbHrsPln) ;
+iif(PrbHrsPln > 0 , 100 * (PrbHrsPln - PrbHrsReal) / PrbHrsPln, 0)  OTHERWISE ; Null=False
+ SolEsPublica  OBLIGATORIO- Null=False
+ PrbRequiereDocumentacion  OBLIGATORIO- Null=False
+ SolicitudTesteada  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> Solicitudes2
+Description -> Cabezal de Solicitudes

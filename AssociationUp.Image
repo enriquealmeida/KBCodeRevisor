@@ -1,0 +1,26 @@
+======OBJECT = AssociationUp.Image === Association Up=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T17:02:48.0000000Z" checksum="f0d43827560ca95dd49ddbe329310ba6" fullyQualifiedName="AssociationUp" guid="18fea524-2fca-4d65-a716-0747be033f02" name="AssociationUp" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Association Up">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="flecha_arriba_14x14px.jpg" description="flecha_arriba_14x14px.jpg"><Data>
+<base64Binary>
+/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMD/8AAEQgADgAOAwERAAIRAQMRAf/EAGQAAAMBAAAAAAAAAAAAAAAAAAEFBwkBAQEBAAAAAAAAAAAAAAAAAAABAhAAAQQCAgICAwAAAAAAAAAA
+AQIDBQYEBxESABNBFCMWCBEAAwEAAwAAAAAAAAAAAAAAAAEhEWGBEv/aAAwDAQACEQMRAD8A1p1RQLhujYl1in9nytEq9dyZeQsFymp2cchoZyRsv6/WI59K
+ZJge6esGcxjNAKHRHdYBDZHhMkSFtNgtsLse2NVqzrau+MxkbS24ZU9MrfZsp3RrWELbazmEttl10/mHCfrrKuehPKiZoHqnclU/aS4PZlbb1erY0ab0zg4W
+wDhIsypGZNPTNHH10uS5bc94x+qzifY+S70PgFpqNV3qjbm0mxsqLd/oR3XcchTzWFaxacYie128l7JC9eN4is9VUa9Q6Iczu7iSUh0FadX1yJ0f/9k=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>flecha_arriba_14x14px.jpg</Value></Property><Property><Name>Description</Name><Value>flecha_arriba_14x14px.jpg</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\flecha_arriba_14x14px.jpg</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>AssociationUp</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> AssociationUp
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

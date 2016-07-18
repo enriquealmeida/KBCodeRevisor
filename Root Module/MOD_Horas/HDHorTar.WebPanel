@@ -1,0 +1,122 @@
+======OBJECT = HDHorTar.WebPanel === Horas x Tareas=====
+
+=== RULES ===
+order(TarId ) ;
+default(&vFchFin ,today() ) ;
+noaccept(&vHrsTot ) ;
+noaccept(&vHrsCnt ) ;
+noaccept(&vHrsPrc ) ;
+noaccept(&vPryNom ) ;
+noaccept(&vCliNom ) ;
+noaccept(&vpryclsdsc ) ;
+noaccept(&vprytpodsc ) ;
+
+
+=== EVENTS SOURCE ===
+Event Refresh
+    &vHrsTot = PCntTHrs(&vPryId,&vTarId,&vRspId,&vCliId,&vFchIni,&vFchFin,&vprycls,&vprytpo,&hrsPrbId)
+
+    &vprytpodsc = space(30)
+    if null(&vprytpo )
+        &vprytpodsc = 'TODOS LOS TIPOS'
+    else
+      for each
+      where      PryTpo=&vprytpo
+        &vprytpodsc=PryTpoDsc
+      endfor  
+    endif
+
+    &vpryclsdsc = space(30)
+    if null(&vprycls )
+        &vpryclsdsc = 'TODAS LAS CLASES'
+    else
+        &vpryclsdsc=DevuelvoPryClsDsc(&vPryCls)  
+    endif
+
+    &vPryNom = space(30)
+    if null(&vPryId )
+        &vPryNom = 'TODOS LOS PROYECTOS'
+    else
+        &vPryNom = DevuelvoPryNom(&vPryId)
+    endif
+    &vCliNom = space(30)
+    if null(&vCliId )
+        &vCliNom = 'TODOS LOS CLIENTES'
+    else
+        for each
+            where      CliId = &vCliId
+            &vCliNom = CliNom
+        endfor
+    endif
+EndEvent
+
+Event load
+    &vHrsCnt = 0
+    &vHrsPrc = 0
+    for each order HrsFch
+        &vHrsCnt = &vHrsCnt + HrsCnt
+    endfor
+    if &vHrsCnt <> 0
+      &vHrsPrc = PCHrsPrc(&vHrsCnt,&vHrsTot)
+       load
+    endif
+EndEvent
+
+Event Start
+    &Nulo=nullvalue(&vprycls)
+    &vprycls.additem(&Nulo,'TODOS')
+    &vprycls = &Nulo
+    &vCliId.additem(&Nulo,'TODOS')
+    &vCliId = &Nulo
+
+   // cargo los proyectos activos
+    &vPryId.additem(&Nulo,'*TODOS')
+    for each order PryId
+        where      PryAct = DMPryAct.Activo
+        &vPryId.Additem(PryId, PryId)
+    endfor
+    &vPryId = &Nulo
+   
+    &vpryTpo.additem(&Nulo,'TODOS')
+    &vprytpo = &nulo
+    &vRspId.additem(&Nulo,'TODOS')
+    &vRspId = &Nulo
+    &vFchFin=today()
+    &vFchIni=today()-30
+EndEvent
+
+
+Event &vCliId.Click
+
+EndEvent  // &vCliId.Click
+
+
+Event &vprycls.Click
+
+EndEvent  // &vprycls.Click
+
+
+Event &vPryId.Click
+
+EndEvent  // &vPryId.Click
+
+
+Event &vprytpo.Click
+
+EndEvent  // &vprytpo.Click
+
+
+Event &vRspId.Click
+
+EndEvent  // &vRspId.Click
+
+
+====== PROPERTIES =======
+Name -> HDHorTar
+Description -> Horas x Tareas
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Public
+IsDefault -> False

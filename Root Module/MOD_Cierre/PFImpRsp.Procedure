@@ -1,0 +1,51 @@
+======OBJECT = PFImpRsp.Procedure === Importes de Sueldos del Resp.=====
+
+=== RULES ===
+parm(in:&RspId, in:&RspSuA, in:&RspSuM, out:&ImpME, out:&ImpMN);
+
+
+=== PROCEDURE SOURCE ===
+//Cargo desde Contabilidad 
+&FchIni = YMDtoD(&RspSuA,&RspSuM,01)
+&FchFin = Eom(&FchIni)
+
+&ImpME =  0
+&ImpMN =  0
+&RubTpo = 'A'       //Honorarios de Socios
+&SI_SDTAsientos.Clear()
+
+&Location = GetLocation("AsientosDP")
+
+&SI_SDTAsientos = &AsientosDP.Execute(&FchIni,&FchFin,&RubTpo,&RspId)
+for &SI_SDTAsientosItem in &SI_SDTAsientos
+	
+    if &SI_SDTAsientosItem.AsiLinDH = 'H'
+      &ImpME = &ImpME - &SI_SDTAsientosItem.AsiLinMC
+      &ImpMN = &ImpMN - &SI_SDTAsientosItem.AsiLinMN
+    else
+      &ImpME = &ImpME + &SI_SDTAsientosItem.AsiLinMC
+      &ImpMN = &ImpMN + &SI_SDTAsientosItem.AsiLinMN
+    endif      
+endfor
+
+&RubTpo = 'O' // //SUELDOS Y PROFESIONALES informáticos/NoInformáticos que se liquidan por MT
+&SI_SDTAsientos = &AsientosDP.Execute(&FchIni,&FchFin,&RubTpo,&RspId)
+for &SI_SDTAsientosItem in &SI_SDTAsientos
+	
+    if &SI_SDTAsientosItem.AsiLinDH = 'H'
+      &ImpME = &ImpME - &SI_SDTAsientosItem.AsiLinMC
+      &ImpMN = &ImpMN - &SI_SDTAsientosItem.AsiLinMN
+    else
+      &ImpME = &ImpME + &SI_SDTAsientosItem.AsiLinMC
+      &ImpMN = &ImpMN + &SI_SDTAsientosItem.AsiLinMN
+    endif      
+endfor
+
+
+====== PROPERTIES =======
+Name -> PFImpRsp
+Description -> Importes de Sueldos del Resp.
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

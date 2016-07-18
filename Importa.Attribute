@@ -1,0 +1,13 @@
+======OBJECT = Importa.Attribute === Se importa este movimiento?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> Importa
+Description -> Se importa este movimiento?
+VERTICAL_DESCRIPTION -> Importar?
+ContextualTitle -> Importar?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,48 @@
+======OBJECT = IndicadorCiclo.Procedure === Indicador Ciclo =====
+
+=== RULES ===
+parm(in:&FchIni, in:&FchFin, in:&CliId, in:&CrrUsr, in:&PrbSts,out:&FormaCalculo, out:&Indicador) ;
+
+
+=== PROCEDURE SOURCE ===
+
+//&Anio = Val(&FiltroTagId.Substring(1,4))
+//&Mes  = Val(&FiltroTagId.Substring(5,2))
+
+//&FchIni = ymdtod(&Anio,&Mes,01)
+//&FchFin = &FchIni.EndOfMonth()
+
+&Cantidad = 0 
+for each 
+	using SolicitudesDelPlan(&FchIni, &FchFin, &CliId,&CrrUsr, &PrbSts)
+	
+	defined by PrbId
+		&Cantidad +=1
+endfor
+
+
+&CantidadCerradas = 0 
+for each 
+	using SolicitudesDelPlan(&FchIni, &FchFin ,&CliId,&CrrUsr,&PrbSts)
+	where          &FchIni <= CrrFch and CrrFch <= &FchFin
+		&CantidadCerradas +=1 
+endfor
+
+// Peticiones finalizadas ciclo / Peticiones solicitadas ciclo
+if &Cantidad > 0
+	&Indicador = 100 *  &CantidadCerradas / &Cantidad
+else
+	&Indicador = 0
+endif
+
+
+&FormaCalculo = format("Cantidad Solicitudes: %1 Solicitudes Cerradas: %2", &Cantidad,&CantidadCerradas)
+
+
+====== PROPERTIES =======
+Name -> IndicadorCiclo
+Description -> Indicador Ciclo 
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,42 @@
+======OBJECT = PGrfCli.Procedure === Grafico de clientes=====
+
+=== RULES ===
+parm(in:&RspId,in:&FchIni,in:&FchFin);
+
+
+=== PROCEDURE SOURCE ===
+for each order CliId
+    &HrsCnt=0
+    for each order RspId,PryId
+        where            CliId=&CliId
+        where            RspId=&RspId
+        where            &FchIni <= HrsFch and HrsFch <= &FchFin 
+		
+        &HrsCnt = &HrsCnt + HrsCnt
+    endfor
+    if &HrsCnt <>0
+        &xmlcat=&xmlcat+'<category>'+TRIM(&CliId)+'</category>'
+        &xmlser=&xmlser+'<point>'+TRIM(str(&HrsCnt))+'</point>'
+    endif
+endfor
+&xmlcat='<categories>'+&xmlcat+'</categories>'
+&xmlser='<series><points>'+&xmlser+'</points></series>'
+
+&XML='<gxchart>'+&xmlCat+&xmlSer+'</gxchart>'
+ 
+&xmlwriter.OpenToString()
+&xmlwriter.WriteRawText(&xml)
+&xmlwriter.Close()
+
+
+
+====== PROPERTIES =======
+Name -> PGrfCli
+Description -> Grafico de clientes
+IsMain -> True
+CALL_PROTOCOL -> HTTP
+STD_FUNC_OBJECT -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

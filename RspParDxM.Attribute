@@ -1,0 +1,15 @@
+======OBJECT = RspParDxM.Attribute === Dias x mes base=====
+NUMERIC(2)
+
+
+====== PROPERTIES =======
+Name -> RspParDxM
+Description -> Dias x mes base
+HORIZONTAL_DESCRIPTION -> Dias x mes base
+VERTICAL_DESCRIPTION -> Dias x mes base
+ContextualTitle -> Dias x mes base
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> Z9
+IsDefault -> False

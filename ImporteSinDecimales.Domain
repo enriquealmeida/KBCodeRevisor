@@ -1,0 +1,24 @@
+======OBJECT = ImporteSinDecimales.Domain === Importe Sin Decimales=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-05-27T13:25:06.0000000Z" checksum="5d7f140ba2ba4b6d19829e8a165eee4c" fullyQualifiedName="ImporteSinDecimales" guid="64fccd38-5db9-462b-b2f3-af6179a66e72" name="ImporteSinDecimales" type="00972a17-9975-449e-aab1-d26165d51393" description="Importe Sin Decimales">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ImporteSinDecimales</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Numeric</Value></Property><Property><Name>Length</Name><Value>15</Value></Property><Property><Name>AttMaxLen</Name><Value>15</Value></Property><Property><Name>idTHOUSANDSEP</Name><Value>True</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ImporteSinDecimales
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 4
+Length -> 15
+AttMaxLen -> 15
+idTHOUSANDSEP -> True
+IsDefault -> False

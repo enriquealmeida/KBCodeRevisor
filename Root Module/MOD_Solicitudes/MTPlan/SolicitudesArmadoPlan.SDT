@@ -1,0 +1,21 @@
+======OBJECT = SolicitudesArmadoPlan.SDT === Solicitudes para Armado Plan =====
+
+=== STRUCTURE ===
+SolicitudesArmadoPlan, collection: SolicitudesArmadoPlanItem
+	PryId, C(10), Identificador de Proyecto 
+	PrbId, N(6), Identificador de la Solicitud 
+	PrbTpo, C(3), Tipo del Problema 
+	PrbPlaFch, D(8), Fecha Planificada 
+	CrrUsr, C(16), Hace 
+	PrbHrsPln, N(8.2)-, Horas Planificadas 
+	TagId, C(10), Tag 
+	TagSolHor, N(8.2)-, Horas Planificadas 
+	ComentarioAdicional, C(80), Comentario Adicional 
+
+====== PROPERTIES =======
+Name -> SolicitudesArmadoPlan
+Description -> Solicitudes para Armado Plan 
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 37
+ObjectVisibility -> Private
+IsDefault -> False

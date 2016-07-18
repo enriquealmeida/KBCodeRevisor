@@ -1,0 +1,16 @@
+======OBJECT = Mail_bat.File === Mail_bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-07-01T16:42:46.0000000Z" lastUpdate="2016-07-01T16:28:57.0000000Z" checksum="ab69214c80f2a4141ffdb92c578abc99" fullyQualifiedName="Mail_bat" guid="954a2018-38bd-40b1-91f6-796a02b7123f" name="Mail_bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Mail_bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>QGVjaG8gb2ZmDQoNClJFTSBzZXQgY3VybmRhdGU9JWRhdGUlDQpSRU0gc2V0IGRkPSVjdXJuZGF0ZTp+MCwyJQ0KUkVNIHNldCBtbT0lY3VybmRhdGU6fjMsMiUNClJFTSBzZXQgYWFhYT0lY3VybmRhdGU6fjYsNCUNClJFTSBtZCBsb2dzID4+IG51bA0KUkVNIGNhbGwgbW9kX3NvbGljaXR1ZGVzLmFwc29seG1haWwuZXhlID4+IExPR1NcYXBTb2x4TWFpbF8lREFURVRJTUUlLmxvZw0KDQpzZXQgZGF0ZWZvcm1hdD15eXl5TU1kZA0KZm9yIC9mICJ0b2tlbnM9MywzIiAlJWEgaW4gKCdyZWcgcXVlcnkgImhrY3VcY29udHJvbCBwYW5lbFxpbnRlcm5hdGlvbmFsIiAvdiBzc2hvcnRkYXRlJykgZG8gc2V0IHNmbXQ9JSVhDQpmb3IgL2YgInRva2Vucz0zLDMiICUlYSBpbiAoJ3JlZyBxdWVyeSAiaGtjdVxjb250cm9sIHBhbmVsXGludGVybmF0aW9uYWwiIC92IHNsb25nZGF0ZScpIGRvIHNldCBsZm10PSUlYQ0KcmVnIGFkZCAiaGtjdVxjb250cm9sIHBhbmVsXGludGVybmF0aW9uYWwiIC92IHNzaG9ydGRhdGUgL3QgcmVnX3N6IC9kICVkYXRlZm9ybWF0JSAvZiA+bnVsDQpyZWcgYWRkICJoa2N1XGNvbnRyb2wgcGFuZWxcaW50ZXJuYXRpb25hbCIgL3Ygc2xvbmdkYXRlIC90IHJlZ19zeiAvZCAlZGF0ZWZvcm1hdCUgL2YgPm51bA0Kc2V0IGN1cnJlbnRkYXRlPSVkYXRlJQ0KcmVnIGFkZCAiaGtjdVxjb250cm9sIHBhbmVsXGludGVybmF0aW9uYWwiIC92IHNzaG9ydGRhdGUgL3QgcmVnX3N6IC9kICVzZm10JSAvZiA+bnVsDQpyZWcgYWRkICJoa2N1XGNvbnRyb2wgcGFuZWxcaW50ZXJuYXRpb25hbCIgL3Ygc2xvbmdkYXRlIC90IHJlZ19zeiAvZCAlbGZtdCUgL2YgPm51bA0KDQpjYWxsIG1vZF9zb2xpY2l0dWRlcy5hcHNvbHhtYWlsLmV4ZSA+PiBMT0dTXGFwU29seE1haWxfJWN1cnJlbnRkYXRlJS5sb2c=</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>Mail.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Mail_bat</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>.\bin</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Mail_bat
+Extract -> Newer
+ExtractToPath -> .\bin
+IsDefault -> False

@@ -1,0 +1,34 @@
+======OBJECT = ActionLogOut.Image === Action Log Out=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-19T16:26:24.0000000Z" lastUpdate="2014-09-22T22:02:55.0000000Z" checksum="57fbd59504a085757ebcddbef6e22406" fullyQualifiedName="ActionLogOut" guid="f3aa001a-9bb4-4496-90e2-794d4244d8d1" name="ActionLogOut" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Log Out">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionLogout.png" description="1288882301_ Log Out. PNG"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9i
+ZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6
+bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpS
+REYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIg
+eG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1s
+bnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9w
+IENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUU4M0RERDQxN0YyMTFFMUI5M0E5MUM4REU2NTYzMkYiIHhtcE1NOkRvY3VtZW50
+SUQ9InhtcC5kaWQ6QUU4M0RERDUxN0YyMTFFMUI5M0E5MUM4REU2NTYzMkYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlp
+ZDpBRTgzREREMjE3RjIxMUUxQjkzQTkxQzhERTY1NjMyRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBRTgzREREMzE3RjIxMUUxQjkzQTkxQzhERTY1
+NjMyRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiPEUcQAAAEvSURBVHja3JaBDYIw
+EEWBMABuoBtgYADZQDaAEZxAnQQ2wA3AAYhuoBvIBviP0KSpiIUWErzkUr30eL3yT8+s69pg5vu+gyWD7ww1K+BhWZYVfSGGJWzQATHaZ2R8wO7YQHbGaU5j
+CJ7nUd5RPLDVtXkspC/XMmay5YDwTjL4XghXU1REEIJFXCwQYTqvLgEsaQVxx7Lpk7eqRYDRemDNOgiE5BcWRxYGd5ET8DDZq3MGVubCb4C5c8h7Dc8Z7C8a
+9kkybxUoDaoGQujhWwaRVh0SVj2KrIXQBR6L8tZ9dSkAzR8eDuBMBaIq4rZKUtpD9y9DCr8CknKxXOw9ZRCr4leDL7ePeBHwn+2eAaNQmID4K2xkbgpzXa5p
+3GpmO7y/4NtcFypU8jFA8oG3AAMAxQVrN1bSKo8AAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionLogout.png</Value></Property><Property><Name>Description</Name><Value>1288882301_ Log Out. PNG</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Downloads\ActionLogout.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionLogOut</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionLogOut
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

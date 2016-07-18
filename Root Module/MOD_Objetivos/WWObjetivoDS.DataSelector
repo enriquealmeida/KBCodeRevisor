@@ -1,0 +1,167 @@
+======OBJECT = WWObjetivoDS.DataSelector === WWObjetivo DS=====
+<Object parent="MOD_Objetivos.WorkWithPlusObjetivo" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="88793d39-32a3-4e2d-9295-e7ece22bff15" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:25.0000000Z" checksum="5829dafbc5e58b3cde3372dd938ae4ba" fullyQualifiedName="MOD_Objetivos.WWObjetivoDS" guid="6ceed7d0-82a0-458b-8275-02e7ff91c586" name="WWObjetivoDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWObjetivo DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[ObjId = &ObjId when not &ObjId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[&RspId=&RspId and ObjetivoTieneResponsable.Udp(&RspId,ObjId) when not &RspId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[ObjTpoId = &ObjTpoId when not &ObjTpoId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PolId = &PolId when not &PolId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[ObjStsId = &ObjStsId when not &ObjStsId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrcActId = &PrcActId when not &PrcActId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrcActDsc like &PrcActDsc when not &PrcActDsc.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[ObjDsc like &ObjDsc when not &ObjDsc.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[ObjFch >= &ObjFch when not &ObjFch.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[ObjFch <= &ObjFch_To when not &ObjFch_To.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="ObjId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>ObjId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:ObjId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="RspId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>RspId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="ObjTpoId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>ObjTpoId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:ObjTpoId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PolId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PolId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PolId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="ObjStsId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>ObjStsId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:ObjStsId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PrcActId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrcActId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrcActId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PrcActDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrcActDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrcActDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="ObjDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>ObjDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:ObjDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="ObjFch">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>ObjFch</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:ObjFch</Value></Property></Properties>
+      </Variable>
+      <Variable Name="ObjFch_To">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>ObjFch_To</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:ObjFch</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>ObjId</Name>
+        <Description>Obj Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>RspId</Name>
+        <Description>Rsp Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>ObjTpoId</Name>
+        <Description>Obj Tpo Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PolId</Name>
+        <Description>Pol Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>ObjStsId</Name>
+        <Description>Obj Sts Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrcActId</Name>
+        <Description>Prc Act Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrcActDsc</Name>
+        <Description>Prc Act Dsc</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>ObjDsc</Name>
+        <Description>Obj Dsc</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>ObjFch</Name>
+        <Description>Obj Fch</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>ObjFch_To</Name>
+        <Description>Obj Fch_To</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWObjetivoDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Objetivos.WorkWithPlusObjetivo</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWObjetivoDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-65
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 65
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

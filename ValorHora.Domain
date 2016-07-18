@@ -1,0 +1,25 @@
+======OBJECT = ValorHora.Domain === Valor Hora=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-05-05T17:28:38.0000000Z" lastUpdate="2016-05-05T16:27:49.0000000Z" checksum="9f277cf263c31968f4314ee94e2e2359" fullyQualifiedName="ValorHora" guid="1e700cd8-36ff-476e-a877-9d2f66fbf759" name="ValorHora" type="00972a17-9975-449e-aab1-d26165d51393" description="Valor Hora">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ValorHora</Value></Property><Property><Name>Description</Name><Value>Valor Hora</Value></Property><Property><Name>Length</Name><Value>5</Value></Property><Property><Name>Decimals</Name><Value>2</Value></Property><Property><Name>AttMaxLen</Name><Value>5</Value></Property><Property><Name>AttAvgLen</Name><Value>2</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ValorHora
+Description -> Valor Hora
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 5
+Decimals -> 2
+AttMaxLen -> 5
+AttAvgLen -> 2
+IsDefault -> False

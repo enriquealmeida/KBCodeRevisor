@@ -1,0 +1,21 @@
+======OBJECT = GetHorasRealizadasResponsable.Procedure === Devuelve las horas realizadas por un responsable para una solicitud=====
+
+=== RULES ===
+parm(in: &RspId, in: &PrbId, out: &Horas);
+
+
+=== PROCEDURE SOURCE ===
+&Horas = 0.0
+for each
+	where            PrbId = &PrbId
+	where            RspId = &RspId
+	&Horas += HrsCnt
+endfor
+
+
+====== PROPERTIES =======
+Name -> GetHorasRealizadasResponsable
+Description -> Devuelve las horas realizadas por un responsable para una solicitud
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+IsDefault -> False

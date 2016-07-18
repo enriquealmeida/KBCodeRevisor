@@ -1,0 +1,13 @@
+======OBJECT = UCpRec4.Index === =====
+<Object Type="Unique" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T17:07:37.0000000Z" checksum="c9d70a65d43279d13e133eb21e7e5806" fullyQualifiedName="UCpRec4" guid="37b28508-ac74-44b4-820b-66ac15a2ece1" name="UCpRec4" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CpRecDsc</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>UCpRec4</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> UCpRec4
+Description -> 

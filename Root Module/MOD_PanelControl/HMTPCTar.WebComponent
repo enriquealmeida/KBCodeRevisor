@@ -1,0 +1,35 @@
+======OBJECT = HMTPCTar.WebComponent === Horas por tareas=====
+
+=== RULES ===
+parm(IN:&RspId ,IN:&cFchIni , IN:&cFchFin );
+
+
+=== EVENTS SOURCE ===
+
+Event Start
+     PParChart.call(&ParDirChart,&ParDirWProc)
+EndEvent  // Start
+
+Event Refresh
+    Tareas.Link = link(HDHorTar  )
+    &FchAuxT1=PDtoN(&cFchIni)
+    &FchAuxT2=PDtoN(&cFchFin)
+    &TxtGrfTar=trim(&ParDirChart )+'DrawChart.aspx?width=300&height=250&title=Horas por tareas&type=Bar&legend=None&source1='+trim(&ParDirWProc )+ 'aGrfTar.aspx?'+trim(&RspId)+','+trim(str(&FchAuxT1))+','+trim(str(&FchAuxT2))
+    &url = trim(&ParDirWProc) + 'aGrfTar.aspx?' + trim(&RspId) + ',' + trim(str(&FchAuxT1)) + ',' + trim(str(&FchAuxT2))
+    &url = trim(&url)
+    //&TxtGrfTar = &wsChart.MakeChart(&url, 300, 250, "Bar", "Horas por tarea", "None", "", "", "", "", "", "", 1, 0, 1, 255, "jpeg")
+    &GrfPry=loadBitmap(&TxtGrfTar)
+EndEvent  // Start
+
+
+====== PROPERTIES =======
+Name -> HMTPCTar
+Description -> Horas por tareas
+WEB_COMP -> Yes
+URLAccess -> No
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,25 @@
+======OBJECT = ActionDisplay.Image === Action Display=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-12-02T15:35:09.0000000Z" checksum="dfbb28059163d91eeb9d599f579014c6" fullyQualifiedName="ActionDisplay" guid="f11923b6-6acd-4a79-bfc0-0cfc6f3bced5" name="ActionDisplay" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Display">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionDisplay.png" description="Action Display.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVY
+dFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuM4zml1AAAADnSURBVDhPzZKxDcIwFEQ9AANQINFSIJSCgoIiRRahp2CAFGmttIgFMkJGYAgGMApFSkoKcz++WAKb
+QDqedIp1d/6Jraj/w1q7hWroBrVcZ4yHQfEAPaAYOWtxUJA3y2ZRCSXQkut+aMp6CEL5VKGk5YFXuMjWtEIQypmFhJYH3sxF1tAKQSgXJixoeeBNXWRbWiEI
++yMUtDzwji4aPkLmOt2FyZnls+XNJ6jj2jQ71uOgk7vqZ7TWc9bjoJNCLz+SMWaPp+frkBhVVa24v2fC6Hfehpyh8UOwSS72At2hNe1xcMhGKaWeaktTAiEi
+D1kAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionDisplay.png</Value></Property><Property><Name>Description</Name><Value>Action Display.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Downloads\ActionDisplay.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionDisplay</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionDisplay
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

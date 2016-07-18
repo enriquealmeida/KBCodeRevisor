@@ -1,0 +1,30 @@
+======OBJECT = AsociarTag.Procedure === Asignar un Tag a una solicitud=====
+
+=== RULES ===
+parm(in:&PryId, in:&PrbId,in:&TagId, out:&ErrorDescription);
+
+
+=== PROCEDURE SOURCE ===
+&ErrorDescription.SetEmpty()
+for each Tag
+where            TagId = &TagId
+when none
+	&ErrorDescription = 'No existe el TAG:' + &TagId
+endfor
+if &ErrorDescription.IsEmpty()
+	new 
+		PryId=&PryId
+		PrbId=&PrbId
+		TagId=&TagId
+		when duplicate //No hago nada.
+	endnew
+endif
+
+
+====== PROPERTIES =======
+Name -> AsociarTag
+Description -> Asignar un Tag a una solicitud
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 37
+ObjectVisibility -> Private
+IsDefault -> False

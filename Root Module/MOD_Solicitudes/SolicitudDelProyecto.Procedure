@@ -1,0 +1,36 @@
+======OBJECT = SolicitudDelProyecto.Procedure === Solicitud Del Proyecto=====
+
+=== RULES ===
+parm(in:&Pryid, in:&PrbId, in:&HrsFch, out:&Mensaje);
+
+
+=== PROCEDURE SOURCE ===
+
+if not &PrbId.IsEmpty()
+	for each
+		where            PrbId=&PrbId when not &PrbId.IsEmpty()
+		
+	    if PryId<> &Pryid 
+			&Mensaje=format('La solicitud %1 no esta asignada al proyecto %2',&PrbId,&Pryid)
+		else
+			&FchAux = &HrsFch.AddDays(-7)
+			if not (PrbSts in (DMPrbSts.DES,DMPrbSts.INS) or (PrbSts=DMPrbSts.CER and CrrFch >= &FchAux) )
+             	&Mensaje=format('La solicitud %1 tiene el estado %2 - Cerrado=%3. Deberia ser INS o DES o Cerrada despues de la fecha %4',&PrbId, PrbSts, CrrFch, &FchAux)
+			endif
+		endif
+		
+	when none
+		&Mensaje = format('No existe la solicitud %1',&PrbId)
+	endfor
+else
+	&Mensaje=''
+endif
+
+
+
+====== PROPERTIES =======
+Name -> SolicitudDelProyecto
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

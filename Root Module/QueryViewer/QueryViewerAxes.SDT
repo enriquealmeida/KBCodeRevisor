@@ -1,0 +1,49 @@
+======OBJECT = QueryViewerAxes.SDT === Query Viewer Axes=====
+
+=== STRUCTURE ===
+QueryViewerAxes, collection: Axis
+	Name, C(20), Name 
+	Title, C(40), Title 
+	DataField, C(20), Data Field 
+	Type, C(20), Type 
+	Filter
+		Type, C(20), Type 
+		Values, C(20), Values , collection Value
+	ExpandCollapse
+		Type, C(20), Type 
+		Values, C(20), Values , collection Value
+	AxisOrder
+		Type, C(20), Type 
+		Values, C(40), Values , collection Value
+	Format
+		Picture, C(20), Picture 
+		Subtotals, C(20), Subtotals 
+		CanDragToPages, B(4), Can Drag To Pages 
+		Style, C(20), Style 
+		ValuesStyles, collection: ValueStyle
+			Value, C(20), Value 
+			StyleOrClass, C(20), Style Or Class 
+			ApplyToRowOrColumn, B(4), Apply To Row Or Column 
+		ConditionalStyles, collection: ConditionalStyle
+			Operator, C(2), Operator 
+			Value1, C(20), Value1 
+			Value2, C(20), Value2 
+			StyleOrClass, C(20), Style Or Class 
+	Grouping
+		GroupByYear, B(4), Group By Year 
+		YearTitle, C(20), Year Title 
+		GroupBySemester, B(4), Group By Semester 
+		SemesterTitle, C(20), Semester Title 
+		GroupByQuarter, B(4), Group By Quarter 
+		QuarterTitle, C(20), Quarter Title 
+		GroupByMonth, B(4), Group By Month 
+		MonthTitle, C(20), Month Title 
+		GroupByDayOfWeek, B(4), Group By Day Of Week 
+		DayOfWeekTitle, C(20), Day Of Week Title 
+		HideValue, B(4), Hide Value 
+
+====== PROPERTIES =======
+Name -> QueryViewerAxes
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 67
+IsDefault -> False

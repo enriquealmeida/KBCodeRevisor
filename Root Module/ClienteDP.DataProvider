@@ -1,0 +1,333 @@
+======OBJECT = ClienteDP.DataProvider === Cliente DP=====
+
+=== RULES ===
+
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="EALMEIDANBK\Enrique" versionDate="2016-06-14T19:59:25.0000000Z" lastUpdate="2016-05-23T14:03:20.0000000Z" checksum="995b05ccdc1d85ecedc8755b09e0ca6d" fullyQualifiedName="ClienteDP" guid="a3a2bbed-ed67-46ba-8e72-b42981e68dc0" name="ClienteDP" type="2a9e9aba-d2de-4801-ae7f-5e3819222daf" description="Cliente DP">
+  <Part type="1d8aeb5a-6e98-45a7-92d2-d8de7384e432">
+    <Source><![CDATA[ClienteCollection {
+	Cliente {
+		CliId="ADCR      "
+		CliNom="Aduana Costa Rica             "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="ADEC      "
+		CliNom="Aduana Ecuador                "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="ADHN      "
+		CliNom="DEI - Honduras                "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="ADNI      "
+		CliNom="Aduanas Nicaragua             "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="ADPN      "
+		CliNom="Aduana Panam                  "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="ADRD      "
+		CliNom="Aduana de Republica Dominicana"
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="ADVZ      "
+		CliNom="Aduana de Venezuela           "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="AGESIC    "
+		CliNom="AGESIC                        "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="AGUPARK   "
+		CliNom="AGUADA PARK                   "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="AKOSEC    "
+		CliNom="Alvaro KOSEC                  "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="ALCAN     "
+		CliNom="Alcan Aluminio del Uruguay    "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="ANEP      "
+		CliNom="ADM. NAC. EDUCACIàN PéBLICA   "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="BID       "
+		CliNom="BID                           "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="CABLECDE  "
+		CliNom="tv cable del este             "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="CABLES    "
+		CliNom="CANALES DE CABLE              "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="CHIPPER   "
+		CliNom="CHIPPER                       "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="CIAT      "
+		CliNom="CIAT Panam                    "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="CONCEPTO  "
+		CliNom="Concepto-Computacion Empresari"
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="CONTADORA "
+		CliNom="CONTADORA                     "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="CONUEVAS  "
+		CliNom="NUEVAS TECNOLOGIAS (CONCEPTO) "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="CONVERPEL "
+		CliNom="CONVERPEL                     "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="COPAPSA   "
+		CliNom="copapsa                       "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="CSI       "
+		CliNom="CSI COSTA RICA                "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="DELCARMEN "
+		CliNom="DEL CARMEN ACISA              "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="DISTRIB   "
+		CliNom="Distribucion de premios       "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="DIVEROL   "
+		CliNom="DIVEROL                       "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="DNA       "
+		CliNom="DNA                           "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="DURANDIN  "
+		CliNom="LABORATORIO DURANDIN SAI      "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="EALMEIDA  "
+		CliNom="PARA PRUEBAS                  "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="FACTELECT "
+		CliNom="Factura electronica           "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="FANAPEL   "
+		CliNom="Fanapel                       "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="FELI      "
+		CliNom="feli sa - motosierras         "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="FIVISA    "
+		CliNom="FIERRO VIGNOLI SA             "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="FORESUR   "
+		CliNom="Foresur                       "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="GARD      "
+		CliNom="Grupo Gard                    "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="IPRIMARIA "
+		CliNom="Impuesto Primaria             "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="JSERE     "
+		CliNom="Jaume y Sere                  "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="LEXTER    "
+		CliNom="Grupo Lexter                  "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="LICENCIA  "
+		CliNom="Licencias Generadas y Tomadas "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="MDP       "
+		CliNom="Montes del Plata              "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="MEDILAB   "
+		CliNom="MEDILAB                       "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="OTROS     "
+		CliNom="Otros de Concepto             "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="PPV       "
+		CliNom="POSADAS, POSADAS Y VECINO     "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="PRECODATA "
+		CliNom="Precodata                     "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="RACAFE    "
+		CliNom="RACAFE                        "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="SAMMEL    "
+		CliNom="Sammel                        "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="SIGE      "
+		CliNom="SIGE - Cliente gen‚rico       "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="SIGEMX    "
+		CliNom="SIGE EN MEXICO                "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="SUGR      "
+		CliNom="SUMINISTROS GRAFICOS CHILE    "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="TAPEBICUA "
+		CliNom="TAPEBICUA                     "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="TCP       "
+		CliNom="TCP                           "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="TCU       "
+		CliNom="TCU carrasco                  "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="TNT       "
+		CliNom="TNT                           "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="TV:TT     "
+		CliNom="TV Cable Treinta y tres       "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="UNISIGE   "
+		CliNom="UNISIGE (SIGE Unificado)      "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="UPM       "
+		CliNom="UPM                           "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="URUGUAYXXI"
+		CliNom="Uruguay XXI                   "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="URUPANEL  "
+		CliNom="URUPANEL                      "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+	Cliente {
+		CliId="URUPANELCO"
+		CliNom="URUPANEL CONCORDATO           "
+		CliMailSol="awolff@concepto.com.uy                  "
+	}
+}
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+    <Properties />
+  </Part>
+  <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+    <Properties />
+  </Part>
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ClienteDP</Value></Property><Property><Name>idINFER_SDT</Name><Value>idINFER_STRUCTURE_IF_SDT_IS_DYNAMIC</Value></Property><Property><Name>OutputSDT</Name><Value>447527b5-9210-4523-898b-5dccb17be60a-Clientecollection</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ClienteDP
+idINFER_SDT -> idINFER_STRUCTURE_IF_SDT_IS_DYNAMIC
+OutputSDT -> 447527b5-9210-4523-898b-5dccb17be60a-84
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+IsDefault -> False

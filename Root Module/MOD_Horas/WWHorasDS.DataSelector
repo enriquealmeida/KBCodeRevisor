@@ -1,0 +1,139 @@
+======OBJECT = WWHorasDS.DataSelector === WWHoras DS=====
+<Object parent="MOD_Horas.WorkWithPlusHoras" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="9904a1f2-9115-0c09-2d4b-bb2719c349df" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:26.0000000Z" checksum="c3a32641654f11a927bfd8c2fccfcb5d" fullyQualifiedName="MOD_Horas.WWHorasDS" guid="6b5dc179-4a13-4212-bbf2-f57ccd570278" name="WWHorasDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWHoras DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[PrbId = &PrbId when not &PrbId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CliId = &CliId when not &CliId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryId = &PryId when not &PryId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[RspId = &RspId when not &RspId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[TarId = &TarId when not &TarId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[HrsFch >= &HrsFch when not &HrsFch.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[HrsFch <= &HrsFch_To when not &HrsFch_To.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[HrsObs like &HrsObs when not &HrsObs.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="PrbId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrbId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrbId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="RspId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>RspId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="TarId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>TarId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:TarId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="HrsFch">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>HrsFch</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:HrsFch</Value></Property></Properties>
+      </Variable>
+      <Variable Name="HrsFch_To">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>HrsFch_To</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:HrsFch</Value></Property></Properties>
+      </Variable>
+      <Variable Name="HrsObs">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>HrsObs</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:HrsObs</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrbId</Name>
+        <Description>Prb Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliId</Name>
+        <Description>Cli Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryId</Name>
+        <Description>Pry Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>RspId</Name>
+        <Description>Rsp Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>TarId</Name>
+        <Description>Tar Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>HrsFch</Name>
+        <Description>Hrs Fch</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>HrsFch_To</Name>
+        <Description>Hrs Fch_To</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>HrsObs</Name>
+        <Description>Hrs Obs</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWHorasDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Horas.WorkWithPlusHoras</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWHorasDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-2
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 2
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

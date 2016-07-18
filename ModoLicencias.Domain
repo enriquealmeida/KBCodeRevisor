@@ -1,0 +1,24 @@
+======OBJECT = ModoLicencias.Domain === Modo Licencias=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-09T20:31:35.0000000Z" checksum="5f9bbb703c96935b030de82eabc25eb9" fullyQualifiedName="ModoLicencias" guid="e31f53fe-3532-4f2a-8cb5-12329bf92ab7" name="ModoLicencias" type="00972a17-9975-449e-aab1-d26165d51393" description="Modo Licencias">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ModoLicencias</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>10</Value></Property><Property><Name>AttMaxLen</Name><Value>10</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>MILICENCIA, MILICENCIA, MILICENCIA; TIGERMODE, TIGERMODE, TIGERMODE</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ModoLicencias
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 10
+AttMaxLen -> 10
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

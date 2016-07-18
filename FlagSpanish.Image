@@ -1,0 +1,33 @@
+======OBJECT = FlagSpanish.Image === Flag Spanish=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T17:00:17.0000000Z" checksum="e2fa218ff845591f3e42a7d0f4a40dfe" fullyQualifiedName="FlagSpanish" guid="b8f7c364-1b4f-4c8e-8389-ac124ba016fe" name="FlagSpanish" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Flag Spanish">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="bandera_idioma_espaniol_21x14px.gif" description="bandera_idioma_espaniol_21x14px.jpg"><Data>
+<base64Binary>
+R0lGODlhFQAOAPf5APjPFfPEFPPBFNF0YvTIJ+64EO+7EPHENfC8EckdHfHCFPDAQvTFE/bJFPG+E7I2NvbIE9RRP9VQPderVPbMFdBpWNh3SvXNFcEgGOyx
+DcmnTrY0NOq8RPbIGtRHGfHAPeu8RvHCOOq2nvHDOe69V+y8VvLIJvzVGPDCONh5Te61EMyKKem7W8xEGu3BOtNOO95jKNRNOdNGG896ZvTKFNRDMvbFEfXM
+Iqo3NLaSVPLAEe26TdwaG9RIN9aEXu/FMdZENfjSF9F5a6w4OMCBXtF1ZtpsOdmyVfTKE9NiOswcHLp6Pey6W9puP9dJG/HBMeiyHtpJGvHBFey8UO+5Dt5N
+GPC7VeBNGfLHKvPBKrk1M8iFWq42N8lEGdtoMtlwQe/BOOvTsc6zXPPHHOmvDfLKE/G9EdFeS9ytU/jOF/HKJeisrtJTQPTCE9RfGdRtXPHCNs+jZvTHEnhs
+OvXEEOO0Yu23D8EoIL8iHdYZHe26YcAhG9NiUNxKGZ1kUfDBGdMZGvfRGPPGE+u6UdMbG7lgNOyzDtBrWceHPfnMF/C/SN5LF9VINtFjUvHCPvLGMtlzQ9xl
+K/TJGtAcG/THFPrUGeu7WdZFMtRLOa01NtBGGNB9bbE2OLc1NfXKJc4cGu/FNag4N9JfTO20D/nNFvfJE++2D7k0NdJaScCkWvHIMKRsVfG/UJp3T/DCO85G
+FtQdGey2GNNWQvXHEfPII9JnVdJlUcGPUMKaRdFoVac6N701NbyVOLE3Nu29T/G/EsYeHfPILPjPE++5EdJXR/HFMKk5OOurDeipDtJbR/LKLd1rN96pXbw0
+NMocG9BxX8CZVtiGXtNURdd/V9BhTc1GGfC/Rt68Y85xYNJYQ+y2DvfOJrU1NtIcG+FLGc14Y7COjNd+UsMfHuuuIsWoZtaDWb4yMdh2R+iJEdOpRdJvXM9G
+GPLDE9NGGdxKG9tmMPnUFNiIZdsbGtdJGdyISvHBIfLDOdd8UO++R////wAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAPkALAAAAAAVAA4AAAj/APNtElJkwDN1
+FXI14iMqWTZZbCRg6gEkX74Z3wZge3Ooli1qZ1ARkxbhRQxGl2pYjBfNR7lp4e6lsHAO0pcmRpZ5eRcJhkU9LKyU8MUKn7UFjkaA+qFKGQE12zpYZELiCLQc
+GhQt+BACzoFHwQh4uiGpjEVLaCa08oMrnQtXKA4Uw2KC1hhBsy5YnHKNGb01YcSAsfckS70/UhQEkFMqjcVBcYhsASdiFZRYdqggcCCAjg0aiYRZ3FGHHKJC
+bm4ZUlHAAGd2DBpQABDEIohUvFYsQTdHW2szOtowgIAEQKBKFjmMQ3aMTIZRpoYh+KWYUgNSAOCdsJikS4tqr9ZpQZLRzoOTeVHc9VlUxdsVi3f24MEgDliC
+BM6UfJrUjRAgWHnIw4NFxoSiyxA4ZMIFJ7088AA3G3SixSm7NGNOPgEBADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>bandera_idioma_espaniol_21x14px.gif</Value></Property><Property><Name>Description</Name><Value>bandera_idioma_espaniol_21x14px.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\ImgsTransparecncias\i¦üconos gif - fondo transparente\bandera_idioma_espaniol_21x14px.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>FlagSpanish</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> FlagSpanish
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,59 @@
+======OBJECT = HWamb.WebPanel === Trabajar con ambientes=====
+
+=== RULES ===
+noaccept(&Titulo ) ;
+noaccept(&Pgmname ) ;
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &vEliminar = 'Eliminar'
+    &vNivel = 9
+    PFUsuInt.call('CLAVES',&vNivel,&vOk)
+    if &vOk = 'S'
+         &vEliminar = 'Eliminar'
+         &vUsuarios ='Usuarios'
+         &Nivel = 'Nivel'
+    else
+        &vEliminar = ''
+        &vUsuarios =''
+        &Nivel = ''
+    endif
+EndEvent
+
+Event 'Agregar'
+    if &vOk ='S'
+        TGLUsAmb.call('',TrnMode.Insert)
+    endif
+EndEvent
+
+Event load
+    if &vOk = 'S'
+        GLUsAmbId.Link = TGLUsAmb.link( GLUsAmbId ,TrnMode.Update)
+        &vEliminar.Link = TGLUsAmb.link(GLUsAmbId ,TrnMode.Delete)
+        &vUsuarios.Link = HWUsuAmb.link(GLUsAmbId)
+        &Nivel.Link = HWAmbNiv.link(GLUsAmbId)
+    else
+        GLUsAmbId.Link = link('')
+        &vEliminar.Link = link('')
+        &vUsuarios.Link = link('')
+        &Nivel.Link = link('')
+    endif
+EndEvent  // load
+
+Event Refresh
+
+EndEvent  // Refresh
+
+
+
+
+====== PROPERTIES =======
+Name -> HWamb
+Description -> Trabajar con ambientes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 20
+ObjectVisibility -> Public
+IsDefault -> False

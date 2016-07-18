@@ -1,0 +1,24 @@
+======OBJECT = Fecha.Domain === Fecha=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-03-14T14:04:51.0000000Z" checksum="9463897b24385253ae0e6de7e5f47da3" fullyQualifiedName="Fecha" guid="d3611d56-1f49-40f6-9249-21b07dadc031" name="Fecha" type="00972a17-9975-449e-aab1-d26165d51393" description="Fecha">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Fecha</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Date</Value></Property><Property><Name>Length</Name><Value>8</Value></Property><Property><Name>idDATEFORMAT</Name><Value>idDATEFORMAT_LONG</Value></Property><Property><Name>ATT_PICTURE</Name><Value>99/99/9999</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Fecha
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 6
+Length -> 8
+idDATEFORMAT -> idDATEFORMAT_LONG
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

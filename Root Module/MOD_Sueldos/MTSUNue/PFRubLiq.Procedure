@@ -1,0 +1,29 @@
+======OBJECT = PFRubLiq.Procedure === Busca Rubro de Liquidación=====
+
+=== RULES ===
+parm(in:&RspId, in:&PryId, in:&TpoHonId, in:&MonId, in:&AnoActual, in:&MesActual, out:&RubId, out:&RspSuAuxId);
+
+
+=== PROCEDURE SOURCE ===
+&RubId = nullvalue(&RubId)
+&RspSuAuxId = nullvalue(&RspSuAuxId)
+for each order RspId, RspSuA, RspSuM
+    where            RspId = &RspId
+    where            PryId = &PryId
+    where            TpoHonId = &TpoHonId
+    where            MonId = &MonId
+    where            RspSuA <> &AnoActual or RspSuM <> &MesActual
+
+        &RubId = RubId
+        &RspSuAuxId = RspSuAuxId
+
+endfor
+
+
+====== PROPERTIES =======
+Name -> PFRubLiq
+Description -> Busca Rubro de Liquidación
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

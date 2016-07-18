@@ -1,0 +1,27 @@
+======OBJECT = MOD_Horas.Module === MOD_Horas=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-03-14T02:22:11.0000000Z" lastUpdate="2016-03-13T22:49:14.0000000Z" checksum="6b89e47955c4647fed9450acde6f57b8" fullyQualifiedName="MOD_Horas" guid="ef519605-8f4a-4442-969e-2c07364ba5e0" name="MOD_Horas" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="MOD_Horas">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="3f16e626-b78c-48fa-be0b-1ddff1a496b5">
+      <Layers>
+        <Layer Id="3f16e626-b78c-48fa-be0b-1ddff1a496b5">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Horas" Bounds="375.728 321.348 150.0001 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-Root Module" Bounds="383.7881 88.09593 150 50.82518" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="45 448.1324 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-WWPBaseObjects" Bounds="703.2689 443.1727 150.0001 50.8252" Expanded="True" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MOD_Horas</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> MOD_Horas
+IsDefault -> False

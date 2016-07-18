@@ -1,0 +1,26 @@
+======OBJECT = TipoAusenciaComboConEmpty.Domain === Tipo Ausencia Combo Con Empty=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-05T19:48:14.0000000Z" checksum="7a5d61cf816bf7fbddfe6cd21ff29c8a" fullyQualifiedName="TipoAusenciaComboConEmpty" guid="1acca6a4-5812-462d-8001-3e0cb0fc0ff1" name="TipoAusenciaComboConEmpty" type="00972a17-9975-449e-aab1-d26165d51393" description="Tipo Ausencia Combo Con Empty">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>TipoAusenciaComboConEmpty</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Codigo3</Value></Property><Property><Name>ControlType</Name><Value>Dynamic Combo Box</Value></Property><Property><Name>ControlItemValues</Name><Value>AusTpoId</Value></Property><Property><Name>ControlItemDescription</Name><Value>AusTpoDsc</Value></Property><Property><Name>AddEmptyItem</Name><Value>True</Value></Property><Property><Name>EmptyItemText</Name><Value>Todas</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> TipoAusenciaComboConEmpty
+OBJ_TYPE -> id_OTYPE_DOM
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 4
+ControlItemValues -> AusTpoId
+ControlItemDescription -> AusTpoDsc
+AddEmptyItem -> True
+EmptyItemText -> Todas
+IsDefault -> False

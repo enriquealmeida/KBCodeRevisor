@@ -1,0 +1,69 @@
+======OBJECT = ExtraWWResponsableWWResponsableBasicoDS.DataSelector === Extra WWResponsable WWResponsable Basico DS=====
+<Object parent="MOD_Proyectos.WorkWithPlusResponsable" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="790e73d2-d376-0380-3176-521c782d764d" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T19:33:31.0000000Z" checksum="96337479be757dc663a522063731dcd2" fullyQualifiedName="MOD_Proyectos.ExtraWWResponsableWWResponsableBasicoDS" guid="5b38c5f6-f424-4bd5-b237-3942a718c3a4" name="ExtraWWResponsableWWResponsableBasicoDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="Extra WWResponsable WWResponsable Basico DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[RspNom like &RspNom when not &RspNom.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[RspSexo = &RspSexo when not &RspSexo.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[RspVinculoLaboral = &RspVinculoLaboral when not &RspVinculoLaboral.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="RspNom">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>RspNom</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspNom</Value></Property></Properties>
+      </Variable>
+      <Variable Name="RspSexo">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>RspSexo</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspSexo</Value></Property></Properties>
+      </Variable>
+      <Variable Name="RspVinculoLaboral">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>RspVinculoLaboral</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspVinculoLaboral</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>RspNom</Name>
+        <Description>Rsp Nom</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>RspSexo</Name>
+        <Description>Rsp Sexo</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>RspVinculoLaboral</Name>
+        <Description>Rsp Vinculo Laboral</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ExtraWWResponsableWWResponsableBasicoDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Proyectos.WorkWithPlusResponsable</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/extraSelection[1]</Value></Property><Property><Name>PatternObjectId</Name><Value>ExtraGridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ExtraWWResponsableWWResponsableBasicoDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-35
+ElementKey -> /instance/level[1]/extraSelection[1]
+PatternObjectId -> ExtraGridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 35
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

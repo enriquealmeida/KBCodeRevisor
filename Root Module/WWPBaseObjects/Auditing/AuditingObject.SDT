@@ -1,0 +1,22 @@
+======OBJECT = AuditingObject.SDT === Auditing Object=====
+
+=== STRUCTURE ===
+AuditingObject
+	Mode, C(3), Mode 
+	Record, collection: RecordItem
+		TableName, V(128), Table Name 
+		Mode, C(3), Mode 
+		Attribute, collection: AttributeItem
+			Name, V(128), Name 
+			IsPartOfKey, B(4), Is Part Of Key 
+			IsDescriptionAttribute, B(4), Is Description Attribute 
+			OldValue, V(2000), Old Value 
+			NewValue, V(2000), New Value 
+			Description, V(128), Description 
+
+====== PROPERTIES =======
+Name -> AuditingObject
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 74
+ObjectVisibility -> Private
+IsDefault -> False

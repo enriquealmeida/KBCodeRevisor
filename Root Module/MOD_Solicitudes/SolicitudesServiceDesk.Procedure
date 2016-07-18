@@ -1,0 +1,285 @@
+======OBJECT = SolicitudesServiceDesk.Procedure ===  Solicitudes por  Mail - ServiceDesk =====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+&ParPOP3AttachDir = '.\Attachs\' 
+
+&ParSMTPHost = PMTParChr('POP3HOST')	//pop.gmail.com
+&ParPOP3User = "servicedesk@concepto.com.uy" //PMTParChr( 'MAILSOLI')	//'solicitudes@concepto.com.uy'
+&ParPOP3Pass = "Service7Desk" //PMTParChr( 'PWDSOLI')
+
+
+
+&Creado  = 'Se ha creado la orden de cambio'
+&Cerrado = 'Se ha cerrado la orden de cambio'
+&ordenCambio = 'rden de cambio'
+&ActualizacionCampos = 'Actualización de campos'
+
+&pop3.AttachDir = &ParPOP3AttachDir 
+&pop3.newMessages = 0       // para que traiga todos los mensajes
+&pop3.Host = trim(&ParSMTPHost)   
+&pop3.Port = 995
+&pop3.Secure=1
+&pop3.UserName = trim(&ParPOP3User)   
+&pop3.Password = trim(&ParPOP3Pass)   
+
+  //Si no existe el directorio para los attach lo creo.
+  &dir.Source= &ParPOP3AttachDir 
+  if not &dir.Exists()
+     &dir.Create()
+	 if &dir.ErrCode <> 0
+        msg('ERRor AL CREAR DIRECTorIO DE ADJUNTOS: ' + str(&dir.ErrCode) + ' ' + &dir.ErrDescription, status)
+	endif
+	
+  endif
+
+msg( format('%1 Leo mensajes a procesar',now(),&cant), status)
+&Auxiliar=1
+do while &Auxiliar = 1
+      &ret = &pop3.Login()
+      &cant = &pop3.Count
+      
+      // msg( format('%1 Cantidad de mensajes a procesar: %2 ',now(),&cant), status)
+	  
+       
+       for &i = 1 to &cant
+			&err = &pop3.Receive(&mensaje)
+			
+			if &err <> 0
+				msg('Error al recibir: ' + trim(str(&err)) + ' ' + &pop3.ErrDescription, status)
+				exit
+			endif
+		
+			DO 'Buscoresponsable'
+			
+			Do 'buscoCliente'
+			
+			Do 'RecuperoPrbId'
+			
+			Do 'RecuperarHorasPlanificadas'
+			
+			&HayError='N'
+			
+			do case
+				case StrSearch(&mensaje.Subject,&Creado) > 0 
+					Do 'GraboSolicitud'
+				case StrSearch(&mensaje.Subject,&Cerrado) > 0
+					Do 'CerrarSolicitud'
+				case StrSearch(&mensaje.Subject,&ActualizacionCampos) > 0
+					Do 'ActualizacionCampos'
+			endcase
+			
+			Do 'ProcesoAdjuntos'
+			if &Hayerror='N'
+				do 'EnvioPorMail'
+			else
+				do 'EnvioErrorPorMail'
+			endif
+			&pop3.Delete()
+			
+       endfor
+    
+       &pop3.Logout()
+	
+    //endif
+	
+    &ret = sleep(10)
+	
+	for each
+		where          PrbId.IsEmpty()
+		delete
+	endfor
+	
+	if (ExisteArchivo('instalando.FULLCYCLE'))
+		return
+	endif
+	
+enddo
+
+
+Sub 'Buscoresponsable'
+
+	&SegUsr= 'ADECAUX'
+	
+	&Posicion = StrSearch(&mensaje.Subject,'IdAsignatario: ')
+	&Posicion = &Posicion + 15
+
+	&LargoSubString = StrSearch(&mensaje.Subject,' ',&Posicion) - &Posicion
+
+	&CrrUsr = upper(trim(Substr(&mensaje.Subject,&Posicion,&LargoSubString)))
+
+	for each
+	where          RspId = &CrrUsr
+	when None
+		&CrrUsr = '*NADIE'
+	endfor
+		
+EndSub
+
+Sub 'GraboSolicitud'
+   // &Solicitudes = new() 
+
+    msg( '  Procesando mensaje: ' + &mensaje.Subject , status)
+	msg( format('PrbId %4 cliente %1 proyecto %2 sistema %3', &CliId, &PryId, &SisId,&PrbId),status )
+	//&Solicitudes..Mode()
+	 //msg('SOLICITUD DUPLICADA = ' + &PrbId.ToString() ,status)
+    &Subject= ExtraigoTextoEntrePalabras(&mensaje.Text,"Resumen","Solicitante")
+	msg('Subject: ' + &Subject,status) 
+	new
+		PrbId = &PrbId 
+		//CliId = &CliId
+		PryId = &PryId
+		SegUsr=&Segusr
+        CrrUsr=&CrrUsr 
+		//PrbSts=PrbSts.DES
+        IngUsr=&mensaje.From.Address
+        PrbUsr=&SegUsr
+	    PrbFch=today()
+        PrbFchIng=today()
+        PrbDsc=&Subject
+        PrbTxt =  &mensaje.Text.ReplaceRegEx('<[^>]+>','')
+        PrbTxt += newline()  + ' Ingresado por mail: Cliente: ' + &CliId + ' Sistema : ' + &SisId + ' Mail: ' + &mensaje.From.Address
+        PrbSts=DMPrbSts.ING
+        SisId=&sisId
+        PrbTpo='OTR'
+        SolOriId='MAIL'
+		PrbHrsPln = &PrbHrsPln
+		PrbTpoCal = DMPrbTpoCalEnum.SINEFECTO
+		PrbPrio = Prioridad.Normal
+		SolEsPublica= false
+		SolicitudTesteada = false
+	when duplicate
+		 msg('SOLICITUD DUPLICADA = ' + &PrbId.ToString() ,status)
+	endnew
+
+ 
+    commit
+	
+EndSub
+
+
+  Sub 'BuscoCliente'
+      //Si no tiene el nombre de algun cliente en el Subject, lo mando a CONCEPTO. 
+      &CliId='DNA'
+      &PryId='DNMANT'
+      &SisId='GL'
+  EndSub
+
+
+ Sub 'ProcesoAdjuntos'
+      &destino='\PrbFiles\files_'+trim(str(&PrbId))
+      &dir2.Source= '..' + &destino 
+        
+      if not &dir2.Exists()
+         &dir2.Create()
+      endif
+     
+     for &file in &dir.GetFiles()
+        &archivo = &file.GetAbsoluteName()
+        &archivodestino=trim(&dir2.GetAbsoluteName())+ '\' + &file.GetName()
+        
+        msg('    -> Procesando adjunto: ' + &archivo /* + ' copio a ' + &archivodestino */ , status)
+        
+        &file.Copy(&archivodestino) 
+		&PARURLBASE = PMTParChr('PARURLBASE')
+        new 
+	         PrbId= &PrbId
+	         PrbDocId= PCNumera('PRBDOCID')
+	         PrbDocDsc=&file.GetName()
+			 PrbDocBlob=&archivo
+	         PrbDocURL=&PARURLBASE+trim(&destino) + '/'+PrbDocDsc
+	        when duplicate
+           msg('Duplicado al grabar PrbDoc ' + str(PrbId) + ' ' + str(PrbDocId), status)
+           &HayError='S'
+        endnew
+		
+        if &file.Exists()
+            &file.Delete()
+        endif
+    endfor
+    commit  
+  EndSub
+
+  Sub 'CerrarSolicitud'
+       for each
+          where          PrbId=&PrbId
+          where          PrbEstadoActivo=true
+             PrbTxt=PrbTxt + newline() + &mensaje.Text  + newline() + ' Cerrado: Cliente: ' + &CliId + ' Mail: ' + &mensaje.From.Address
+             PrbSts=DMPrbSts.CER  //cierro la solicitud 
+			 CrrFch = ServerDAte()
+		 when none 
+             &HayError='S'
+       endfor
+	   if &HayError<>'S'
+         msg('ACTUALICE LA SOLICITUD: ' + trim(str(&PrbId)) + ' Cliente: ' + &CliId + ' Mail: ' + &mensaje.From.Address  , status)
+	   endif	 
+  EndSub
+
+Sub 'ActualizacionCampos'
+	
+	for each
+	where          PrbId = &PrbId
+		PrbHrsPln = &PrbHrsPln
+		if CrrUsr <> &CrrUsr and &CrrUsr<>'*NADIE'
+			CrrUsr = &CrrUsr
+		endif
+	endfor
+	commit
+EndSub
+
+  Sub 'EnvioPorMail'
+    //Busco direccion de mail del cliente para enviarle copia de la solicitud
+    &CliMailSol.SetEmpty()
+    for each 
+        where          CliId=&CliId  
+        &CliMailSol=CliMailSol
+    endfor
+     
+//   EnvioSolicitudPorMail.call(&PrbId, &mensaje.From.Address , &CliMailSol, '','')
+  // msg('Envio por mail: ' + trim(str(&PrbId)) + ' a ' + &mensaje.From.Address + ' y ' + &CliMailSol , status) 
+   msg(' ',status)
+EndSub
+
+  Sub 'EnvioErrorPorMail'
+      &MailMessage.To.new('awolff@concepto.com.uy','awolff@concepto.com.uy')
+	  &MailMessage.To.new('ealmeida@concepto.com.uy','ealmeida@concepto.com.uy')
+	  &MailMessage.Subject='Error en solicitud ' + &PrbId.ToString()
+	//  EnvioMail3.Call(&MailMessage,&msgError)
+	  msg(&msgError,status)
+  EndSub
+
+
+
+Sub 'RecuperoPrbId'
+	&mensaje.Subject=&mensaje.Subject + '.'
+	&inicio= StrSearch(&mensaje.Subject,&ordenCambio) +  &ordenCambio.Length() 
+	&fin = StrSearch(&mensaje.Subject,'.',&inicio)
+	&PrbId=val(Substr(&mensaje.Subject,&Inicio,&fin))
+	&PrbId = ordenCambioDNAtoPrbId(&PrbId) 
+	msg(format('Nro. Solicitud: %1',&PrbId),status)
+EndSub
+
+Sub 'RecuperarHorasPlanificadas'
+	
+	&Posicion = StrSearch(&mensaje.Subject,'Horas Planificadas: ')
+	&Posicion = &Posicion + 20
+
+	&LargoSubString = 3
+
+	&PrbHrsPln = val(trim(Substr(&mensaje.Subject,&Posicion,&LargoSubString)))
+
+EndSub
+
+
+====== PROPERTIES =======
+Name -> SolicitudesServiceDesk
+Description ->  Solicitudes por  Mail - ServiceDesk 
+IsMain -> True
+CALL_PROTOCOL -> CLINE
+AppLocation -> BATCH
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

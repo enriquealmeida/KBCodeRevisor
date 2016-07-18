@@ -1,0 +1,38 @@
+======OBJECT = HayQuePagarResguardo.Procedure === Hay Que Pagar Resguardo=====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM,in:&RspId,in:&LiqCotizacionDolarenPesos,in:&LiqResguardoMinimoImponiblePesos,out:&CalculoResguardo);
+
+
+=== PROCEDURE SOURCE ===
+//Primero calcular los montos a facturar (Subtotal,adelanto, impuesto, total)
+//Despues calcular para cada persona si lleva resguardos o no
+//   Para eso sumar pesos y dolares pasados a pesos comparados contra el minimo imponible
+//Despues repasar cada liquidación y calcular el resguardo y monto a depositar
+
+&TotHonorario = 0 
+for each
+	where            RspSuA=&RspSuA
+	where            RspSuM=&RspSuM
+	where            RspId=&RspId
+	where            TpoHonCateg = TpoHonCategoriaEnum.Honorario
+	
+	&TotHonorario += iif(MonId = DMMonedaEnum.Dolar,RspSuImp * &LiqCotizacionDolarenPesos,RspSuImp)
+	
+endfor
+
+if &TotHonorario >= &LiqResguardoMinimoImponiblePesos
+	&Calculoresguardo = true
+else
+	&Calculoresguardo = false
+endif
+
+msg(format("Responsable %1 - TotalHonorario %2 - MinimoImponible %3 - Calculoresguardo %4",&RspId,&TotHonorario,&LiqResguardoMinimoImponiblePesos,&Calculoresguardo),status)
+
+
+====== PROPERTIES =======
+Name -> HayQuePagarResguardo
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Private
+IsDefault -> False

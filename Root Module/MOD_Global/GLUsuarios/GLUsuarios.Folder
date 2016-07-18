@@ -1,0 +1,9 @@
+======OBJECT = GLUsuarios.Folder === GLUsuarios=====
+<Object parent="MOD_Global" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="89119908-4f89-4187-8ed5-13e0298fe916" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-06-07T15:11:59.0000000Z" lastUpdate="2016-06-07T15:08:15.0000000Z" checksum="19fb28064743325f7e734251bc774a1e" fullyQualifiedName="MOD_Global.GLUsuarios" guid="c00df66a-cf63-4b53-94d7-780ddc25e4dd" name="GLUsuarios" type="00000000-0000-0000-0000-000000000008" description="GLUsuarios">
+  <Properties><Property><Name>Name</Name><Value>GLUsuarios</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 3
+Name -> GLUsuarios
+IsDefault -> False

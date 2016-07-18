@@ -1,0 +1,49 @@
+======OBJECT = PSMovWCRsp.Procedure === Mover web component del responsable=====
+
+=== RULES ===
+parm(in:RspId, in:MTPCWbp, in:&MTWCWbp, in:&MTPCLugId);
+
+
+=== PROCEDURE SOURCE ===
+// cuento la cantidad de web components
+&MTPCLugMax = nullvalue(&MTPCLugMax)
+for each
+    defined by MTPCWCObligatorio
+
+    &MTPCLugMax += 1
+endfor
+
+// veo en que posición está el web panel actualmente
+for each
+    where          MTWCWbp = &MTWCWbp
+
+    &LugarAnterior = MTPCLugId
+
+//    &MTPCLugMax = MTPCLugMax    // posición máxima, para controlar más abajo
+endfor
+
+if &MTPCLugId > 0 and &MTPCLugId <= &MTPCLugMax
+    // pongo el web panel en la posición nueva, me fijo cual estaba antes
+    for each
+        where          MTPCLugId = &MTPCLugId
+
+        &MTWCWbpOtro = MTWCWbp
+        MTWCWbp = &MTWCWbp
+    endfor
+
+    // pongo el web panel que acabo de sacar en la posición vieja
+    for each
+        where          MTPCLugId = &LugarAnterior
+
+        MTWCWbp = &MTWCWbpOtro
+    endfor
+endif
+
+
+====== PROPERTIES =======
+Name -> PSMovWCRsp
+Description -> Mover web component del responsable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

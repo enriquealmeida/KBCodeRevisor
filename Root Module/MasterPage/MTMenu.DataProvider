@@ -1,0 +1,601 @@
+======OBJECT = MTMenu.DataProvider === Menu de metricas=====
+
+=== RULES ===
+
+<Object parent="MasterPage" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="753a1d10-de36-4506-8688-c97531e0a839" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-30T19:26:42.0000000Z" lastUpdate="2016-05-30T17:22:38.0000000Z" checksum="d4c6fff2d98839a7a4c759622955ca5e" fullyQualifiedName="MasterPage.MTMenu" guid="374238cb-b6ff-4839-9a87-aeaf85abb105" name="MTMenu" type="2a9e9aba-d2de-4801-ae7f-5e3819222daf" description="Menu de metricas">
+  <Part type="1d8aeb5a-6e98-45a7-92d2-d8de7384e432">
+    <Source><![CDATA[	pgxMenuItems 
+	{
+		gpxMenuItem 
+		{ 
+			Title = "Inicio"
+			URL =  PanelControl.Link('')
+			SubItems
+				{
+					Title = "Mis cosas" 
+					URL =  MisCosas.Link()
+				}
+		}
+	}
+	gpxMenuItems
+	{
+		gpxMenuItem
+		{
+			Title = "Horas"
+			URL =  !"#"
+			SubItems
+			{
+				Title = "Horas"
+				URL =  WWHoras.Link()
+			}
+			SubItems
+			{
+				Title = "Horas sin ingresar"
+				URL =  HHrsNoIng2.link(Nullvalue(&Today),NullValue(&Today) )
+			}
+			SubItems
+			{
+				Title = "Resumen de Horas"
+				URL =   ResumenHoras.Link()
+			}
+		}
+	}
+	gpxMenuItems
+	{
+		gpxMenuItem
+		{
+			Title = "Solicitudes"
+			URL =  "" 
+			SubItems
+			{
+				Title = "Solicitudes"
+				URL =  WWSolicitudes.Link()
+			}
+
+			SubItems
+			{
+				Title = "Eficiencia de Solicitudes"
+				URL =   HOEfiRspUrg.Link()
+			}	
+			SubItems
+			{
+				Title = "Resumen de Solicitudes"
+				&DMPrbSts.SetEmpty()
+				URL =  SummaryPrbTab.Link(&DMPrbSts,'',UserId(),'',0,Prioridad.Normal,true,'','',SummaryVisualizationType.Ranking)
+			}
+			SubItems
+			{
+				Title = "Actividades del Mes"
+				URL =   ListoActividadDelMes.Link()
+			}
+			SubItems
+			{
+				Title = "Plan del Mes"
+				URL =    ExtraWWSolicitudesPlanes.Link()
+			}
+			SubItems
+			{
+				Title = "Kanban de Solicitudes"
+				URL =    KanbanSolicitudes.Link()
+			}
+			SubItems
+			{
+				Title = "Calculo de Indicadores"
+				URL =    CalculoIndicadores.Link()
+			}
+			SubItems
+			{
+				Title = "Panel Solicitudes"
+				LinkTarget="_blank"
+				URL =    SolRspPlan3.Link(UserId(), &Today, &Today)
+			}
+		    SubItems
+			{
+				Title = "Armado del Plan"
+				URL =    ArmadoPlan.Link()
+			}
+		    
+			
+		}
+	}
+	gpxMenuItems
+	{
+		gpxMenuItem
+		{
+			Title = "Proyectos"
+			URL =  !"#"
+			
+			SubItems
+			{
+				Title = "Proyectos"
+				URL =  WWProyectos.Link()
+				
+			}
+			SubItems
+			{
+				Title = "Resumen Total de proyectos"
+				URL =  HwResTot.Link()
+			}
+			SubItems
+			{
+				Title = "Resumen por Mes"
+				URL =  HwResMeA.Link()
+			}
+			SubItems
+			{
+				Title = "Proyectos Activos sin Movimientos"
+				URL =  HWPryNAct.Link()
+			}
+			SubItems
+			{
+				Title = "Proyectos Cerrados en un periodo"
+				URL =  WWProyectosCierre.Link()
+			}
+			SubItems
+			{
+				Title = 'Panel de control de Clientes'
+				URL =  HMTPCCli.Link('',&Today,&today )
+			}
+			SubItems
+			{
+				Title = "Valor de Transferencia"
+				URL =  HMTValTransferencia.Link()
+			}
+				SubItems
+			{
+				Title = "Control de Gastos"
+				URL =  ExtraWWTCpRecTrabajarCostos.Link()
+			}
+		}
+	}
+	gpxMenuItems
+	{
+		gpxMenuItem
+		{
+			Title = "Objetivos"
+			URL =  !"#"
+			
+			SubItems
+			{
+				Title = 'Objetivos'
+				URL =  WWObjetivo.Link()
+			}
+			SubItems
+			{
+				Title = "Procesos y Actividades"
+				URL =  WWProcesos.Link()
+			}
+			SubItems
+			{
+					Title = "Politicas"
+					URL =  WWPoliticas.Link()
+			}
+		    SubItems
+			{
+				Title = "Ingreso de Indicadores"
+				URL =  MedicionObjetivos.Link()
+			}
+			SubItems
+			{
+				Title = "Estado de Objetivos"
+				URL =  WWObjetivosEstados.Link()
+			}
+			SubItems
+			{
+				Title = "Tipo de Objetivos"
+				URL =  WWObjetivosTipos.Link()
+			}
+		    SubItems
+			{
+				Title = "Indicadores"
+				URL =  WWIndicadores.Link()
+			}
+		    SubItems
+			{
+				Title = "Tipo de Politicas"
+				URL =  WWPoliticasTipo.Link()
+			}
+		}
+	}
+	gpxMenuItems
+	{
+		gpxMenuItem
+		{
+			Title = "Datos Basicos"
+			URL = !"#"
+			
+			SubItems
+			{
+				Title = "Solicitudes"
+				URL = ""  
+				SubItems 
+				{
+					Title = "Tipos de Solcitudes"
+					URL = WWTTpo.Link()
+				}
+				SubItems 
+				{
+					Title = "Estado de las solicitudes"
+					URL = WWSolicitudesEstado.Link()
+				}
+				SubItems 
+				{
+					Title = "Tipos de solicitudes calidad"
+					URL = WWTTpoCal.Link()
+				}
+				SubItems 
+				{
+					Title = "Origenes de las solicitudes"
+					URL = WWTMTSolOri.Link()
+				}
+			}
+			SubItems
+			{
+				Title = "Seguridad"
+				URL = ""  
+				SubItems 
+				{
+					Title = "Ambientes"
+					URL = HWamb.Link()
+				}
+				SubItems 
+				{
+					Title = "Usuarios"
+					URL = WWUsuario.Link()
+				}
+					
+			}
+		    SubItems
+			{
+				Title = "Consolidados"
+				URL = ""  
+				SubItems 
+				{
+					Title = "Consolidados"
+					URL = WWConsolidado.Link()
+				}
+				SubItems 
+				{
+					Title = "Estado de Consolidados"
+					URL = WWTMTCnsEst.Link()
+				}
+			}
+		    SubItems
+			{
+				Title = "Proyectos"
+				URL = ""  
+			    SubItems 
+				{
+					Title = "Proyectos"
+					URL = WWProyectos.Link()
+				}
+				SubItems 
+				{
+					Title = "Tipo de Proyectos"
+					URL = WWTipoProyecto.Link()
+				}
+				SubItems 
+				{
+					Title = "Productos"
+					URL = WWClaseProyecto.Link()
+				}
+			}
+			 SubItems
+			{
+				Title = "Metadatos"
+				URL = ""  
+				SubItems 
+				{
+					Title = "Parametros"
+					URL = HWMD.Link( 1, 1)
+				}
+				SubItems 
+				{
+					Title = "Administracion de Metadatos"
+					URL = HMDWAdm.Link()
+				}
+			}
+			 SubItems
+			{
+				Title = "Panel de Control"
+				URL = ""  
+				SubItems 
+				{
+					Title = "Componentes WEB"
+					URL =  WWTMTWC.Link()
+				}
+				SubItems 
+				{
+					Title = "Paneles de Control"
+					URL = WWTMTPC.Link()
+				}
+				SubItems 
+				{
+					Title = "Mantener Responsables y Licencias"
+					URL =  WWResponsable.Link()
+				}
+				
+				SubItems 
+				{
+					Title = "Ver Responsables"
+					URL =  ViewResponsables.Link()
+				}
+				SubItems 
+				{
+					Title = "Monedas"
+					URL =  wwMonedas.Link()
+				}
+				SubItems 
+				{
+					Title = "Paises"
+					URL =  WWTMTPaises.Link()
+				}
+			}
+			SubItems
+			{
+				Title = "Clientes"
+				URL = ""  
+				SubItems 
+				{
+					Title = "Clientes"
+					URL =  WWCliente.Link()
+				}
+				SubItems 
+				{
+					Title = "Tipo de Cliente"
+					URL =  WWTCliTpo.Link()
+				}
+				SubItems 
+				{
+					Title = "Sistemas de Clientes"
+					URL =  WWSistemasCliente.Link()
+				}
+			}
+			SubItems
+			{
+				Title = "Otros"
+				URL = ""  
+				SubItems 
+				{
+					Title = "Tareas"
+					//URL =  Tareas.Link(TrnMode.Update,'')
+					URL =  WWTareas.Link()
+				}
+				SubItems 
+				{
+					Title = "Recursos"
+					URL =  WWTCpRec.Link()
+				}
+				SubItems 
+				{
+					Title = "Bases de Conocimiento"
+					URL =  WWKB.Link()
+				}
+			    SubItems 
+				{
+					Title = "Wikis"
+					URL =  WWWiki.Link()
+				}
+			    SubItems 
+				{
+					Title = "Sistemas"
+					URL =  WWSis.Link()
+				}
+			    SubItems 
+				{
+					Title = "Tipo de Legajos"
+					URL =  WWTMTLegTpo.Link()
+				}
+			 SubItems 
+				{
+					Title = "Tipo de Honorario"
+					URL =  WWTMTTpoHon.Link()
+				}
+			 SubItems 
+				{
+					Title = "Tipo de Ausencia"
+					URL =  WWAusenciaTpo.Link()
+				}
+				SubItems 
+				{
+					Title = "Feriados"
+					URL =  TrabajarConFeriados.Link()
+				}
+
+				SubItems 
+				{
+					Title = "Numeradores"
+					URL =  WWTNumera.Link()
+				}
+			 }
+		}
+	}
+	    	
+	gpxMenuItems
+	{
+		gpxMenuItem
+		{
+			Title = "Administración"
+			URL = !"#"
+			SubItems
+			{
+				Title = "Ausencias"
+				URL = ""  
+				SubItems 
+				{
+					Title = "Ausencias"
+					URL = LanzarWWLicenciaTIGERMODE.Link()
+				}
+				SubItems 
+				{   
+					&FchIni = &Today.AddYears(-1)
+					&FchFin = &Today
+					Title = "Licencia por Fecha"
+					URL = LicenciasXFechaCalendario.Link(&FchIni,&FchFin)
+				}
+			}
+			SubItems
+			{
+				Title = "Honorarios"
+				URL = HwSUMes.Link()  
+			}
+			SubItems
+			{
+				Title = "Cierre"
+				URL = ""  
+				SubItems 
+				{
+					Title = "Cierre Mensual"
+					URL =  CierreMensual.Link()
+				}
+				SubItems 
+				{
+					Title = "Movimientos"
+					URL = WWMovimientos.Link()
+				}
+				SubItems 
+				{
+					Title = "Traduccion de Asientos"
+					URL = WWTTradAto.Link()
+				}
+			    SubItems 
+				{
+					Title = "Envio Atrasos por mail"
+					URL = HAvisoHorasAtrasadas.Link()
+				}
+			}
+		  
+		  
+		
+	        Subitems
+			{
+				
+				Title = "Admin."
+				URL =  Link("#")
+				
+				SubItems
+				{
+					Title = "Flujos de Fondos/Cuentas"
+					URL =  link("https://docs.google.com/a/concepto.com.uy/spreadsheet/ccc?key=tToF26QybtKvW5Tefb87rdA#gid=0")
+					LinkTarget="_blank"
+				}
+				SubItems
+				{
+					Title = "Pendiente de Administracion"
+					URL =  link("https://docs.google.com/a/concepto.com.uy/spreadsheet/ccc?key=0Ar8YJXAMSYc2dEhPNDJEMi1kM3VtanJ2VWVzaVRNVkE#gid=0")
+					LinkTarget="_blank"
+				}
+				
+				SubItems
+				{
+					Title = "Calendarios de tareas"
+					URL =  link("http://www.google.com/calendar/embed?src=concepto.com.uy_2jeftrr3qq88lb4ha6ddrraufg%40group.calendar.google.com&ctz=America/Montevideo ")
+					LinkTarget="_blank"
+				}
+				
+				SubItems
+				{
+					Title = "Documentos pendientes"
+					URL =  "https://srv-www:8443/SIGE_VS_I_PRIV/servlet/odocumentospendientes?" 
+					LinkTarget="_blank"
+				}
+			    SubItems
+				{
+					Title = "IPC y Sueldos"
+					URL =  "https://docs.google.com/a/concepto.com.uy/spreadsheet/ccc?key=0AtL4RNvv6h9fdEgtdG0tUGtpWWFPRk9HbzBDRGZBNlE#gid=2" 
+					LinkTarget="_blank"
+				}
+				
+				SubItems
+				{
+					Title = "Tasa Horaria"
+					URL =  "https://docs.google.com/spreadsheets/d/13uCh0Hze7QJon405aMv5XLboiJlniOtj255hX1yCO8A/edit#gid=198662855"
+					LinkTarget="_blank"
+				}
+			}
+		}
+
+	}
+
+
+	gpxMenuItems
+	{
+		gpxMenuItem
+		{
+			Title = 'Laboratorio'
+			SubItems
+			{
+				Title = "En que esta cada uno"
+				URL =  EnQueEstaCadaUno.Link()
+			}	
+
+		 SubItems
+			{
+				Title = "Automatizacion"
+				URL =  Automatizacion.Link()  
+			}
+			SubItems
+			{
+				Title = "QueryMovimientos"
+				URL =  QueryViewerMovimiento.Link()  
+			}
+			SubItems
+			{
+				Title = "QueryHoras"
+				URL =  QueryViewerHoras.Link()  
+			}
+			SubItems
+			{
+				Title = "QuerySolicitudes"
+				URL =  QueryViewerSolicitudes.Link()  
+			}
+			
+		}
+	}
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+    <Source><![CDATA[]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+    <Variable Name="FchFin">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FchFin</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Variable Name="FchIni">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FchIni</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Variable Name="DMPrbSts">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>DMPrbSts</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:DMPrbSts</Value></Property></Properties>
+    </Variable>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MTMenu</Value></Property><Property><Name>Description</Name><Value>Menu de metricas</Value></Property><Property><Name>OutputSDT</Name><Value>447527b5-9210-4523-898b-5dccb17be60a-MasterPage.gpxMenuItems</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> MTMenu
+Description -> Menu de metricas
+OutputSDT -> 447527b5-9210-4523-898b-5dccb17be60a-75
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 17
+ObjectVisibility -> Private
+IsDefault -> False

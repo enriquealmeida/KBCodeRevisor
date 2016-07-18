@@ -1,0 +1,32 @@
+======OBJECT = PrbDiasAbi.Attribute === Días que el Prob. está abierto=====
+NUMERIC(5)-
+0 
+		IF PrbSts = 'BOR' or PrbSts='SUS';
+int(CrrFch - PrbFchIng) 
+	    IF .NOT. CrrFch.isempty();
+int(sysdate() - PrbFchIng) 
+	    IF .NOT. PrbFchIng.isempty();
+		
+0 
+	    OTHERWISE;
+
+====== PROPERTIES =======
+Name -> PrbDiasAbi
+Description -> Días que el Prob. está abierto
+HORIZONTAL_DESCRIPTION -> Días Abierto
+VERTICAL_DESCRIPTION -> Días Abierto
+ContextualTitle -> Días Abierto
+Formula -> 0 
+		IF PrbSts = 'BOR' or PrbSts='SUS';
+int(CrrFch - PrbFchIng) 
+	    IF .NOT. CrrFch.isempty();
+int(sysdate() - PrbFchIng) 
+	    IF .NOT. PrbFchIng.isempty();
+		
+0 
+	    OTHERWISE;
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZZZ9
+IsDefault -> False

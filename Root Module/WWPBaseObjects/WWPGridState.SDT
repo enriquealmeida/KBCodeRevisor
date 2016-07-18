@@ -1,0 +1,26 @@
+======OBJECT = WWPGridState.SDT === Grid State=====
+
+=== STRUCTURE ===
+WWPGridState
+	CurrentPage, N(4), Current Page 
+	OrderedBy, N(4), Ordered By 
+	OrderedDsc, B(4), Ordered Dsc 
+	HidingSearch, N(1), Hiding Search 
+	FilterValues, collection: FilterValue
+		Name, V(200), Name 
+		Value, V(100), Value 
+		Operator, N(4), Operator 
+		ValueTo, V(100), Value To 
+	DynamicFilters, collection: DynamicFilter
+		Selected, V(200), Selected 
+		Value, V(100), Value 
+		Operator, N(4), Operator 
+		ValueTo, V(100), Value To 
+
+====== PROPERTIES =======
+Name -> WWPGridState
+Description -> Grid State
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

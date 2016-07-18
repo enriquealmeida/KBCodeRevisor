@@ -1,0 +1,21 @@
+======OBJECT = Hllmproc.WebPanel === Marca Movimiento como Revisado=====
+
+=== RULES ===
+parm(in:&CpMovId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+  PCPMovR.call(&CpMovId)
+  return
+EndEvent  // Start
+
+
+====== PROPERTIES =======
+Name -> Hllmproc
+Description -> Marca Movimiento como Revisado
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,23 @@
+======OBJECT = SNMdownArrow.Image === SNMdown Arrow=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-04T15:51:45.0000000Z" lastUpdate="2012-05-30T16:08:25.0000000Z" checksum="5af9021a24cd41a513742454d02b970d" fullyQualifiedName="SNMdownArrow" guid="6609ecfd-3147-40bc-b83c-de6f17403755" name="SNMdownArrow" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="SNMdown Arrow">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="SNMdownArrow.png" description="SNMdown Arrow.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMJJREFUeNpiPHn5ngoDAwMP
+EF9gIA4YAPEXFiDxAoivAjEzEK8H4h1AvBuIf0EVsgGxKxB7AHEgVEyDEWgjiOENxFuQTP0CxPuA+C9UEw+SXBDIAhYoZysUe0P5IIV+WJy5FeoqBiYkwQIk
+52EDv6BqGNA13gHiPjwa+6BqMDSCQCsQP8Wi6SlUjgGXRlCglGHRWAaVw6kRBJYB8REk/hGoGAMhjSCQC42Kv1A2BmDBoRGUimYhsYnWCAI1+NIdQIABAFEl
+KUARkGOLAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>SNMdownArrow.png</Value></Property><Property><Name>Description</Name><Value>SNMdown Arrow.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\afernandez\Desktop\SNMdownArrow.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SNMdownArrow</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> SNMdownArrow
+IsDefault -> False

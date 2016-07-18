@@ -1,0 +1,45 @@
+======OBJECT = PlanSolicitudes.SDT === Plan Solicitudes =====
+
+=== STRUCTURE ===
+PlanSolicitudes, collection: PlanSolicitudesItem
+	PrbId, N(6), Identificador de la Solicitud 
+	SisId, C(2), Sistema 
+	SisDsc, V(30), Descripcion 
+	CliId, C(10), Identificador de Cliente 
+	PrbFch, D(8), Fecha de Apertura 
+	PrbDsc, V(150), Titulo Solicitud 
+	PrbDscToolTip, V(1000), Prb Dsc Tool Tip 
+	PrbUsr, C(16), Usuario que reporta problema 
+	PrbSts, C(3), Estado de la Solicitud 
+	PrbTpo, C(3), Tipo del Problema 
+	PrbPlaFch, D(8), Fecha Planificada 
+	SegUsr, C(16), Usuario que sigue 
+	CrrUsr, C(16), Hace 
+	CrrFch, D(8), Fecha de Corrección 
+	PrbPrio, N(1), Prioridad 
+	PrbDiasAbi, N(5)-, Días que el Prob. está abierto 
+	IngUsr, C(16), Quien ingresa el problema 
+	PrbHrsPln, N(8.2)-, Horas Planificadas 
+	PrbHrsReal, N(8.2)-, Horas realizadas 
+	PrbPryId, C(10), Identificador de Proyecto 
+	PrbCnsId, N(3), Consolidado 
+	PrbTpoCal, C(3), Tipo de Problemas Calidad 
+	PrbRequiereDocumentacion, B(4), Requiere Documentación 
+	PrbFchIng, D(8), Fecha de ingresado 
+	SolOriId, C(10), Origen 
+	SolObjId, N(6), Objetivo 
+	SolEsPublica, B(4), Es pública? 
+	PrbSlcFch, D(8), Fecha Solicitada por el Cliente 
+	TagId, C(10), Tag Id 
+	EstadoPlan, C(1), Estado Plan 
+	SolicitudTesteada, B(1), Solicitud Testeada 
+	PrbTxt, L(2097152), Texto del Problema 
+	PrbAvance, N(5)-, Avance 
+
+====== PROPERTIES =======
+Name -> PlanSolicitudes
+Description -> Plan Solicitudes 
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

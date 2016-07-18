@@ -1,0 +1,158 @@
+======OBJECT = PDevuelveRspSolicitudes.Procedure === Devuelve Solicitudes del Responsable =====
+
+=== RULES ===
+parm(IN: &FiltroCrrUsr, OUT:&RspSolicitudes);
+
+
+=== PROCEDURE SOURCE ===
+&RspSolicitudes = new()
+&Mes=month(&Today)
+&Ano=year(&Today)
+&FiltroTagId=&Ano.ToFormattedString() + &Mes.ToFormattedString()  
+
+//Solicitues del plan del mes  
+&CategoriaId = 'PlandelMes'
+for each
+	where            TagId = &FiltroTagId 
+	where            CrrUsr = &FiltroCrrUsr.ToUpper() 
+	where            PrbSts<>'Bor' and PrbSts<>'SUS'
+	
+	&CliId = CliId
+	&Solicitud = new()
+	&Solicitud.PrbId = PrbId
+	&Solicitud.PrbDsc = PrbDsc
+	&Solicitud.PrbSts = PrbSts
+	&Solicitud.PrbHrsPln = PrbHrsPln
+	&Solicitud.PrbHrsReal = PrbHrsReal
+	Do 'AddSolicitud'
+endfor
+
+&CategoriaId = 'OtrasDelMes'
+for each
+	where            TagId = &FiltroTagId.Trim()+'F' 
+	where            CrrUsr = &FiltroCrrUsr.ToUpper() 
+	where            PrbSts<>'Bor' and PrbSts<>'SUS'
+	
+	&CliId = CliId
+	&Solicitud = new()
+	&Solicitud.PrbId = PrbId
+	&Solicitud.PrbDsc = PrbDsc
+	&Solicitud.PrbSts = PrbSts
+	&Solicitud.PrbHrsPln = PrbHrsPln
+	&Solicitud.PrbHrsReal = PrbHrsReal
+	Do 'AddSolicitud'
+endfor
+
+&CategoriaId = 'Extras'
+for each
+	where            TagId = &FiltroTagId.Trim()+'E' 
+	where            CrrUsr = &FiltroCrrUsr.ToUpper() 
+	where            PrbSts<>'Bor' and PrbSts<>'SUS'
+	
+	&CliId = CliId
+	&Solicitud = new()
+	&Solicitud.PrbId = PrbId
+	&Solicitud.PrbDsc = PrbDsc
+	&Solicitud.PrbSts = PrbSts
+	&Solicitud.PrbHrsPln = PrbHrsPln
+	&Solicitud.PrbHrsReal = PrbHrsReal
+	Do 'AddSolicitud'
+endfor
+
+
+//Solicitues del plan del mes (Proximo) 
+&Mes=month(&Today)
+&Ano=year(&Today)
+if &Mes = 12
+	&Ano += 1
+	&Mes = 1
+else
+	&Mes += 1
+endif
+&FiltroTagIdProximo=&Ano.ToFormattedString() + &Mes.ToFormattedString()  
+
+&CategoriaId = 'PlandelMesProximo'
+for each
+	where            TagId = &FiltroTagIdProximo 
+	where            CrrUsr = &FiltroCrrUsr.ToUpper() 
+	where            PrbSts<>'Bor' and PrbSts<>'SUS'
+	
+	&CliId = CliId
+	&Solicitud = new()
+	&Solicitud.PrbId = PrbId
+	&Solicitud.PrbDsc = PrbDsc
+	&Solicitud.PrbSts = PrbSts
+	&Solicitud.PrbHrsPln = PrbHrsPln
+	&Solicitud.PrbHrsReal = PrbHrsReal
+	Do 'AddSolicitud'
+endfor
+
+&CategoriaId = 'Otras'
+for each
+	where            CrrUsr = &FiltroCrrUsr.ToUpper() 
+	where            PrbEstadoActivo=true
+	where            PrbSts<>'Bor' and PrbSts<>'SUS' 
+	
+	//Elimino las que tiene alguno de los tags anteriores
+	for each
+		where            TagId like &FiltroTagId.Trim()+'%' or TagId = &FiltroTagIdProximo 
+		Exit
+	when none
+		&CliId = CliId
+		&Solicitud = new()
+		&Solicitud.PrbId = PrbId
+		&Solicitud.PrbDsc = PrbDsc
+		&Solicitud.PrbSts = PrbSts
+		&Solicitud.PrbHrsPln = PrbHrsPln
+		&Solicitud.PrbHrsReal = PrbHrsReal
+		Do 'AddSolicitud'
+	endfor	
+endfor
+
+Sub 'AddSolicitud'
+	&EncontroCliente = False
+	For &Cliente in &RspSolicitudes.Clientes
+		if &Cliente.CliId = &CliId
+			Do 'AddSolicitudCliente'
+			&EncontroCliente = true
+			Exit
+		endif	
+	endfor
+	if not &EncontroCliente
+		&Cliente = new()
+		&Cliente.CliId = &CliId
+		&RspSolicitudes.Clientes.Add(&Cliente)
+		Do 'AddSolicitudCliente'
+	endif	
+
+EndSub
+
+Sub 'AddSolicitudCliente'
+	&EncontroCategoria = false
+	For &Categoria in &Cliente.Categorias
+		if &Categoria.CategoriaId = &CategoriaId
+			Do 'AddSolicitudCategoria'
+			&EncontroCategoria = true
+			Exit
+		endif	
+	endfor
+	if not &EncontroCategoria
+		&Categoria = new()
+		&Categoria.CategoriaId = &CategoriaId
+		&Cliente.Categorias.Add(&Categoria)
+		Do 'AddSolicitudCategoria'
+	endif	
+EndSub
+
+Sub 'AddSolicitudCategoria'
+	&Categoria.Solicitudes.Add(&Solicitud)
+EndSub
+
+
+====== PROPERTIES =======
+Name -> PDevuelveRspSolicitudes
+Description -> Devuelve Solicitudes del Responsable 
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

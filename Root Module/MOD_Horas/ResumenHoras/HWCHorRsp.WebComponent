@@ -1,0 +1,44 @@
+======OBJECT = HWCHorRsp.WebComponent === Resumen de Horas por Responsab=====
+
+=== RULES ===
+parm(in:&RspId, in:&CliId, in:&PryId, in:&PryCls, in:&PryTpo, in:&TarId, in:&FchIni, in:&FchFin,in:&HrsPrbId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &HrsCntTot = PCntTHrs(&PryId,&TarId,&RspId,&CliId,&FchIni,&FchFin,&prycls,&prytpo,&hrsPrbId)
+EndEvent  // Start
+
+Event SbfRsp.load
+    for each order RspId
+        where      RspId = &RspId when not &RspId.IsEmpty()
+
+        &RspIdSbf = RspId
+       		
+        &HrsCnt = PCntTHrs( &PryId, &TarId, RspId, &CliId, &FchIni, &FchFin, &prycls, &prytpo,&hrsPrbId)
+        
+        if &HrsCnt <> 0
+            &HrsPcj = round(&HrsCnt * 100 / &HrsCntTot, 2)
+            load
+        endif
+    endfor
+    
+    &RspIdSbf = 'Total'
+    &RspIdSbf.FontBold=1
+    &HrsCnt = &HrsCntTot
+    &HrsCnt.FontBold=1
+    &HrsPcj=100
+    load
+EndEvent  // SbfCli.load
+
+
+====== PROPERTIES =======
+Name -> HWCHorRsp
+Description -> Resumen de Horas por Responsab
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 85
+ObjectVisibility -> Private
+IsDefault -> False

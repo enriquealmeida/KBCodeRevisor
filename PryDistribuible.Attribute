@@ -1,0 +1,13 @@
+======OBJECT = PryDistribuible.Attribute === Proyecto Distribuible=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> PryDistribuible
+Description -> Proyecto Distribuible
+ContextualTitle -> Distribuible?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlTitle -> Distribuible?
+IsDefault -> False

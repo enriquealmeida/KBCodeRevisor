@@ -1,0 +1,24 @@
+======OBJECT = BorroHorasNoCargadas.Procedure === Borro Horas No Cargadas=====
+
+=== RULES ===
+parm(in:&HrsFch,in:&RspId);
+
+
+=== PROCEDURE SOURCE ===
+//Borro las lineas de horas que quedan en 0. 
+
+for each
+	where          RspId = &RspId
+	where          HrsFch = &HrsFch
+	where          HrsCnt = 0
+	delete
+endfor
+commit
+
+
+====== PROPERTIES =======
+Name -> BorroHorasNoCargadas
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Private
+IsDefault -> False

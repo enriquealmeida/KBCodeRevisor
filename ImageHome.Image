@@ -1,0 +1,24 @@
+======OBJECT = ImageHome.Image === Image Home=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-24T14:56:37.0000000Z" checksum="f73a925144bc0a8d6b522ba2f8606d59" fullyQualifiedName="ImageHome" guid="49450f48-0b0f-439e-a2be-4df5207dd721" name="ImageHome" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Image Home">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="home_icon_20x20px_A.gif" description="home_icon_20x20px_ A.jpg"><Data>
+<base64Binary>
+R0lGODlhFAAUAMQbAJunp/P09LvCw7S9vbW9vqiys6KsrcHIya+3uKixsuDk5M3T1Pn6+rW9vaGsrdTZ2ezv76Ksrpymp5ymqMfNzrvDxNre3ubp6c3T05yn
+qP///////wAAAAAAAAAAAAAAACH5BAEAABsALAAAAAAUABQAAAWM4CaOZGluWqqurDa2agC7aBsQhgKLrWJkBQClxVMxKoACQZlBQFZFzSUBECAyGYfA4LCo
+igtAooEtSwgIwCFVFCwn5XhCEGHXNJi4PtP43vN7ZQN+KoAZBxgYB4KEKYYXKReMdoVlkFKTNJVYl5JYg5QpC5aRZQKNGgwPiTIaAYkPrZoztC+0RCe5JiEA
+Ow==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>home_icon_20x20px_A.gif</Value></Property><Property><Name>Description</Name><Value>home_icon_20x20px_ A.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\ImgsTransparecncias\i¦üconos gif - fondo transparente\home_icon_20x20px_A.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ImageHome</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ImageHome
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

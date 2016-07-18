@@ -1,0 +1,24 @@
+======OBJECT = ReciboNotificacion.WebPanel === Recibo Notificacion=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event OnMessage(&notificationInfo)	
+	if &notificationInfo.Id = 'PTradAto'
+		msg(&notificationInfo.Message)
+	endif
+EndEvent
+
+Event 'Carga'
+	Testnotification.Submit('')
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> ReciboNotificacion
+IsMain -> True
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 3
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,25 @@
+======OBJECT = DMDistribuible.Domain === Proyecto distribuible=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="EALMEIDANBK\Enrique" versionDate="2016-06-14T19:59:25.0000000Z" lastUpdate="2016-06-09T20:47:27.0000000Z" checksum="354de8657de377f0348cd8a96d71917d" fullyQualifiedName="DMDistribuible" guid="8bf2be00-6280-408d-aa0e-4aa3d3c0f3f2" name="DMDistribuible" type="00972a17-9975-449e-aab1-d26165d51393" description="Proyecto distribuible">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMDistribuible</Value></Property><Property><Name>Description</Name><Value>Proyecto distribuible</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>AttMaxLen</Name><Value>1</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>S, Si, Si; N, No, No; T, Tabla, Tabla</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMDistribuible
+Description -> Proyecto distribuible
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 1
+AttMaxLen -> 1
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

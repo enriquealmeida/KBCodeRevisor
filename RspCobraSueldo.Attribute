@@ -1,0 +1,13 @@
+======OBJECT = RspCobraSueldo.Attribute === Cobra Sueldo?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> RspCobraSueldo
+Description -> Cobra Sueldo?
+ContextualTitle -> Cobra Sueldo?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlTitle -> Cobra Sueldo?
+IsDefault -> False

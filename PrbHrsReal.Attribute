@@ -1,0 +1,15 @@
+======OBJECT = PrbHrsReal.Attribute === Horas realizadas=====
+NUMERIC(8.2)-
+HorasRealizadasSolicitud.udp(PrbId)
+
+====== PROPERTIES =======
+Name -> PrbHrsReal
+Description -> Horas realizadas
+VERTICAL_DESCRIPTION -> Hrs.Real
+ContextualTitle -> Hrs.Real
+Formula -> HorasRealizadasSolicitud.udp(PrbId)
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZ,ZZ9.99
+IsDefault -> False

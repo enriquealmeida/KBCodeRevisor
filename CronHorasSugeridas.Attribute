@@ -1,0 +1,12 @@
+======OBJECT = CronHorasSugeridas.Attribute === Horas Sugeridas=====
+NUMERIC(6.2)-
+tdiff(servernow(),CronIni) / 3600
+
+====== PROPERTIES =======
+Name -> CronHorasSugeridas
+Description -> Horas Sugeridas
+Formula -> tdiff(servernow(),CronIni) / 3600
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

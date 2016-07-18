@@ -1,0 +1,14 @@
+======OBJECT = CpRecTpo.Attribute === Tipo de Recurso=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> CpRecTpo
+Description -> Tipo de Recurso
+HORIZONTAL_DESCRIPTION -> Tipo de Recurso
+VERTICAL_DESCRIPTION -> Tipo 
+ContextualTitle -> Tipo de Recurso
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,56 @@
+======OBJECT = TMTPCRsp.Transaction === Panel de Control del Responsable=====
+
+=== RULES ===
+parm(in:&Mode, in:RspId, in:MTPCWbp);
+
+noaccept(MTPCLugMax);
+
+
+
+//error('No puede realizar cambios en el panel de control de otra persona')
+//    if &user <> RspId;
+//
+//error('El lugar del web component no es correcto: ' + MTWCWbp)
+//    if MTPCLugId > MTPCLugMax or MTPCLugId < 0;
+
+//&error = udp(PChkLugPC, RspId, MTPCWbp)
+//    if (after(insert) or after(update)) and level(MTWCWbp);
+//error('El lugar del web component no es correcto')
+//    if &error = 1 and (after(insert) or after(update)) and level(MTWCWbp);
+//error('Hay lugares repetidos')
+//    if &error = 2 and (after(insert) or after(update)) and level(MTWCWbp);
+//error('Hay componentes obligatorios que no tienen lugar asignado')
+//    if &error = 3 and (after(insert) or after(update)) and level(MTWCWbp);
+
+Prompt(HsMTPCWC, MTPCWbp, MTWCWbp);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &user = upper(userid())
+	RestartCache.call()
+EndEvent  // Start
+
+Event After Trn
+	RestartCache.call()
+EndEvent
+
+
+=== STRUCTURE ===
+RspId*
+MTPCWbp*
+MTPCLugMax
+(MTPCLugId*
+MTWCWbp
+MTWCDsc
+MTPCWCObligatorio
+)
+
+
+====== PROPERTIES =======
+Name -> TMTPCRsp
+Description -> Panel de Control del Responsable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Public
+IsDefault -> False

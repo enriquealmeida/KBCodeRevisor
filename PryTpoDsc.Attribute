@@ -1,0 +1,14 @@
+======OBJECT = PryTpoDsc.Attribute === Descripción del Tipo=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> PryTpoDsc
+Description -> Descripción del Tipo
+HORIZONTAL_DESCRIPTION -> Descripción del Tipo
+VERTICAL_DESCRIPTION -> Descripción del Tipo
+ContextualTitle -> Descripción del Tipo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

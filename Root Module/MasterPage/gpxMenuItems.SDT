@@ -1,0 +1,19 @@
+======OBJECT = gpxMenuItems.SDT === gpx Menu Items=====
+
+=== STRUCTURE ===
+gpxMenuItems, collection: gpxMenuItem
+	Code, C(20), Code 
+	Title, C(64), Title 
+	URL, C(256), URL 
+	LinkTarget, C(20), Link Target 
+	Image, C(256), Image 
+	Description, C(64), Description 
+	Index, N(4), Index 
+	SubItems, G(4), Sub Items 
+
+====== PROPERTIES =======
+Name -> gpxMenuItems
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 17
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = TpoHonDSoc.Attribute === Desc. recibo socios=====
+LONGVARCHAR(1024)
+
+
+====== PROPERTIES =======
+Name -> TpoHonDSoc
+Description -> Desc. recibo socios
+HORIZONTAL_DESCRIPTION -> Desc. recibo socios
+VERTICAL_DESCRIPTION -> Desc. recibo socios
+ContextualTitle -> Desc. recibo socios
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

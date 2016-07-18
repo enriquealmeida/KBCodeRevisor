@@ -1,0 +1,12 @@
+======OBJECT = IFer001.Index === IFer001=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:25.0000000Z" checksum="0d9ef165fc70e51ffa2e5aae6c253015" fullyQualifiedName="IFer001" guid="ff29a9ef-4cc3-4453-8dbb-3ced87474a25" name="IFer001" type="9e750647-3679-0000-0100-2529de263960" description="IFer001">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">FerFecha</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IFer001</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IFer001

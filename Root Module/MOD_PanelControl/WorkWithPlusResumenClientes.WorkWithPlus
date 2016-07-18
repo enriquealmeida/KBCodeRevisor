@@ -1,0 +1,35 @@
+======OBJECT = WorkWithPlusResumenClientes.WorkWithPlus === Work With Plus Resumen Clientes=====
+<Object parent="MOD_PanelControl.ResumenClientes" parentType="c9584656-94b6-4ccd-890f-332d11fc2c25" parentGuid="11f31b7c-2161-4375-ada2-c7e16a234da1" user="" versionDate="2016-04-15T19:56:07.0000000Z" lastUpdate="2016-04-15T16:11:23.0000000Z" checksum="11c6995dd24846b821b5ac0f18e0fbb8" fullyQualifiedName="MOD_PanelControl.WorkWithPlusResumenClientes" guid="16e043ec-779d-0bee-19aa-c1d648d9d2dc" name="WorkWithPlusResumenClientes" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Resumen Clientes">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="7;57;" SecFuntionKey="ResumenClientes" defaultSecFuntionKey="ResumenClientes">
+  <WPRoot childrenOrderedList="7;66;Main Table-7;75;LoadWWPContext" Template="WorkWithWithoutBaseTable" defaultTemplate="WorkWithWithoutBaseTable">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="7;28;ErrorViewer-7;66;TableHeader-7;69;Grid">
+      <errorViewer />
+      <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" allowSelection="False" allowHovering="True" page="">
+        <gridVariable name="&amp;CliId" defaultName="&amp;CliId" description="Cliente" defaultDescription="Cliente" dataType="Based on" themeClass="Attribute" domain="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-CliId" />
+        <gridVariable name="&amp;PryActivos" defaultName="&amp;PryActivos" description="Pry. Activos" defaultDescription="Pry. Activos" dataType="Basic" defaultDataType="Basic" themeClass="Attribute" />
+        <gridVariable name="&amp;SolING" defaultName="&amp;SolING" description="Sol ING" defaultDescription="Sol ING" dataType="Basic" defaultDataType="Basic" themeClass="Attribute" />
+        <gridVariable name="&amp;SolDES" defaultName="&amp;SolDES" description="Sol DES" defaultDescription="Sol DES" dataType="Basic" defaultDataType="Basic" themeClass="Attribute" />
+        <gridVariable name="&amp;SolINS" defaultName="&amp;SolINS" description="Sol INS" defaultDescription="Sol INS" dataType="Basic" defaultDataType="Basic" themeClass="Attribute" />
+        <gridVariable name="USAnual" defaultName="USAnual" description="US Anual" defaultDescription="US Anual" dataType="Basic" defaultDataType="Basic" basicLength="10" defaultBasicLength="10" themeClass="Attribute" />
+        <gridVariable name="&amp;USGan" defaultName="&amp;USGan" description="US Ganado" defaultDescription="US Ganado" dataType="Basic" defaultDataType="Basic" basicLength="10" defaultBasicLength="10" themeClass="Attribute" />
+      </grid>
+    </table>
+    <steps />
+    <events />
+  </WPRoot>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusResumenClientes</Value></Property><Property><Name>KBObject</Name><Value>c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_PanelControl.ResumenClientes</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c9584656-94b6-4ccd-890f-332d11fc2c25
+FolderId -> 953
+Name -> WorkWithPlusResumenClientes
+KBObject -> c9584656-94b6-4ccd-890f-332d11fc2c25-953
+IsDefault -> False

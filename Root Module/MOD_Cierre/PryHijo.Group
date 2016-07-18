@@ -1,0 +1,22 @@
+======OBJECT = PryHijo.Group === Proyecto Hijo=====
+<Object parent="MOD_Cierre" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="acf0fe75-d120-4c8d-8b17-91ba1a5a5419" user="" versionDate="2016-03-15T16:05:02.0000000Z" lastUpdate="2016-03-15T14:57:48.0000000Z" checksum="c15761314e8ed3b9a333ed9c2a8d2b68" fullyQualifiedName="MOD_Cierre.PryHijo" guid="02e6bf82-04b5-453d-8308-6785995e0352" name="PryHijo" type="87313f43-5eb2-41d7-9b8c-e8d9f5bf9588" description="Proyecto Hijo">
+  <Part type="74203da2-41b1-402c-0001-d8d564a2c2fa">
+    <Subtype guid="b35e98b1-cd82-425c-95c4-a0f75db47469">
+      <Name>PryHijId</Name>
+      <Supertype guid="ef2fbe7b-1456-48c4-9b18-2b7d749359e0">PryId</Supertype>
+    </Subtype>
+    <Subtype guid="7e6c9526-d5be-40e4-9cd1-67ec6f71baa0">
+      <Name>PryHijNom</Name>
+      <Supertype guid="e9d4dad9-4ee7-4766-b4ff-7076c907c6fd">PryNom</Supertype>
+    </Subtype>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>PryHijo</Value></Property><Property><Name>Description</Name><Value>Proyecto Hijo</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> PryHijo
+Description -> Proyecto Hijo
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

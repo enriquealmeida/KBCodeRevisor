@@ -1,0 +1,40 @@
+======OBJECT = PGSolObs.Procedure === Graba observación de la solicitud=====
+
+=== RULES ===
+parm(in:&PrbId, in:&SolObsTpo, in:&SolObsDet, in:&SolObsSts);
+
+
+=== PROCEDURE SOURCE ===
+// obtiene el último número de las observaciones
+for each
+    where          PrbId = &PrbId
+
+    PrbUltObs += 1
+    &SolObsLin = PrbUltObs
+	&PryId     = PryId
+endfor
+
+// graba la línea de observaciones
+&SolObsUsr=UserId()
+&SolObsUsr=&SolObsUsr.Substring(1,15)
+new
+	PryId = &PryId
+    PrbId = &PrbId
+    SolObsLin = &SolObsLin
+    SolObsFch = today()
+    SolObsTpo = &SolObsTpo
+    SolObsUsr = trim(userid())
+    SolObsDet = &SolObsDet.Trim()
+	ObsPrbStsId = &SolObsSts.Trim()
+endnew
+commit
+
+
+====== PROPERTIES =======
+Name -> PGSolObs
+Description -> Graba observación de la solicitud
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = PryExterior.Attribute === Proyecto en el exterior?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> PryExterior
+Description -> Proyecto en el exterior?
+VERTICAL_DESCRIPTION -> Exterior?
+ContextualTitle -> Proyecto en el exterior?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlTitle -> Exterior?
+IsDefault -> False

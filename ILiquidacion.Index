@@ -1,0 +1,13 @@
+======OBJECT = ILiquidacion.Index === ILiquidacion=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-04-15T04:20:55.0000000Z" checksum="9f411985e784818a1fd41021487e7cf3" fullyQualifiedName="ILiquidacion" guid="98df1893-bda2-4dc2-bb74-89309b4fa694" name="ILiquidacion" type="9e750647-3679-0000-0100-2529de263960" description="ILiquidacion">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">LiqAnio</Member>
+      <Member Order="Ascending">LiqMes</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ILiquidacion</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ILiquidacion

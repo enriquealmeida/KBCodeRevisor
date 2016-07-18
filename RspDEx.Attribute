@@ -1,0 +1,15 @@
+======OBJECT = RspDEx.Attribute === Días trabajados en el exterior=====
+NUMERIC(2)
+
+
+====== PROPERTIES =======
+Name -> RspDEx
+Description -> Días trabajados en el exterior
+HORIZONTAL_DESCRIPTION -> Días trabajados en el exterior
+VERTICAL_DESCRIPTION -> Días trabajados en el exterior
+ContextualTitle -> Días trabajados en el exterior
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> Z9
+IsDefault -> False

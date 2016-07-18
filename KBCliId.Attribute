@@ -1,0 +1,11 @@
+======OBJECT = KBCliId.Attribute === Cliente=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> KBCliId
+Description -> Cliente
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-68
+IsDefault -> False

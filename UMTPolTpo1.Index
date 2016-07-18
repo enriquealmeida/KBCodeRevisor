@@ -1,0 +1,13 @@
+======OBJECT = UMTPolTpo1.Index === =====
+<Object Type="Unique" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T17:07:36.0000000Z" checksum="d57e484d08f5d0726a8100d0d3f6904c" fullyQualifiedName="UMTPolTpo1" guid="c81f331f-88d8-4af0-b1ce-4aa8a789fd90" name="UMTPolTpo1" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PolTpoDsc</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>UMTPolTpo1</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> UMTPolTpo1
+Description -> 

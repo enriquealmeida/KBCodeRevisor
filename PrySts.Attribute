@@ -1,0 +1,12 @@
+======OBJECT = PrySts.Attribute === Estado=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> PrySts
+Description -> Estado
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_INITIAL_VALUE -> DMPrySts.Aprobado
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = RspSueldo.Attribute === Remuneración 8 hs=====
+NUMERIC(17.2)-
+
+
+====== PROPERTIES =======
+Name -> RspSueldo
+Description -> Remuneración 8 hs
+HORIZONTAL_DESCRIPTION -> Remuneración 8 hs
+VERTICAL_DESCRIPTION -> Remuneración 8 hs
+ContextualTitle -> Remuneración 8 hs
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

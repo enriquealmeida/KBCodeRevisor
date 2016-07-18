@@ -1,0 +1,40 @@
+======OBJECT = WorkWithPlusHHrsNoIng2.WorkWithPlus === Work With Plus HHrs No Ing2=====
+<Object parent="MOD_Horas.HHrsNoIng2" parentType="c9584656-94b6-4ccd-890f-332d11fc2c25" parentGuid="bc3cba98-409b-469e-a2f8-278fbf3f56d4" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:49:55.0000000Z" checksum="f92d0296b726c2fadb865102216a77f7" fullyQualifiedName="MOD_Horas.WorkWithPlusHHrsNoIng2" guid="bb2fe208-1667-0e05-16f0-21b89dc5c9a9" name="WorkWithPlusHHrsNoIng2" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus HHrs No Ing2">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="7;57;">
+  <WPRoot childrenOrderedList="7;66;Main Table" Template="(none)" defaultTemplate="(none)">
+    <table name="MainTable" themeClass="Table100x100" numberOfColumns="2" type="Responsive">
+      <textBlock controlName="Titulo" caption="Horas sin Ingresar" themeClass="TextBlockTitleWWP" />
+      <errorViewer />
+      <table type="Responsive" cellWidth_S="8%" cellVisible_E="False" />
+      <table name="TableFilters" numberOfColumns="2" type="Responsive" cellWidth_S="92%">
+        <table name="TableMesAnio" numberOfColumns="2" type="Regular" cellWidth_S="50%" startCol="1">
+          <textBlock controlName="TextBlock1" caption="Período" themeClass="Label" />
+          <variable name="Mes" defaultName="MesValues" description="Mes" defaultDescription="Mes Values" domain="00972a17-9975-449e-aab1-d26165d51393-MesValues" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-MesValues" startCol="1" showDescription="False" descriptionPosition="Top" />
+          <variable name="Anio" defaultName="Anio" description="Año" defaultDescription="Año" domain="adbb33c9-0906-4971-833c-998de27e0676-Anio" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-Anio" showDescription="False" descriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup name="ActionGroup" cellWidth_S="100%" align="Center">
+        <standardAction name="Refresh" />
+      </actionGroup>
+      <userTable name="UserTableFreeStyleGrid" />
+    </table>
+    <steps />
+    <events />
+  </WPRoot>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusHHrsNoIng2</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Horas.HHrsNoIng2</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c9584656-94b6-4ccd-890f-332d11fc2c25
+FolderId -> 1388
+Name -> WorkWithPlusHHrsNoIng2
+ObjectVisibility -> Private
+KBObject -> c9584656-94b6-4ccd-890f-332d11fc2c25-1388
+IsDefault -> False

@@ -1,0 +1,56 @@
+======OBJECT = AvisoHorasAtrasadas.Procedure === Aviso de Atrasos en el Ingreso de Horas=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+msg(format('%1 Envio de atrasos ',now()),status)
+if &ErrCode = 0
+	for each order RspFchUltimoAvisoAtrasoHoras
+	where          not RspUsrMl.IsEmpty()
+	where          RspActivo = true and RspIngresaHoras = true 
+	where          (RspFchUltimoAvisoAtrasoHoras.AddDays(1)) < &Today
+	
+		msg(format('Procesando Responsable %1', RspId), status)
+		&ActividadesAtrasadas = GetActividadesAtrasadasResponsable(RspId)
+	    if &ActividadesAtrasadas.Count > 0
+			&RspId = RspId
+			&RspUsrMl = RspUsrMl
+			
+			do 'EnviarMailActividadesAtrasadasAlResponsable'
+		
+			if &ErrCode =0
+				RspFchUltimoAvisoAtrasoHoras = ServerNow()
+				commit
+			else
+				msg(format('ERRor AL ENVIAR MAIL DE ATRASOS %1, %2 - %3', RspId, &ErrCode,&ErrDescription),status)
+			endif
+
+	    endif
+	endfor
+else
+	msg(format('No es posible conectarse al servidor SMTP, error: %1  %2',&ErrCode, &ErrDescription))
+endif
+
+Sub 'EnviarMailActividadesAtrasadasAlResponsable'
+    &log = 'Enviando mail'
+    msg(&log, status)
+
+	&Mailmsg.Subject = 'Atrasos en el ingreso de horas y Solicitudes pendientes: ' + &RspId
+    &Wrap.BaseURL = PMTParChr(Parametro.URLDirectorioPublicoMT)
+	&Wrap.BaseURL.Trim()
+	&Wrap.Object = AtrasosWC2.Create(&RspId, &ActividadesAtrasadas)
+    &Mailmsg.HTMLText = &Wrap.GetResponse()
+    &Mailmsg.To.Clear()
+    &Mailmsg.To.new(&RspId, &RspUsrMl.Trim())
+	EnvioMail(&MailMsg,&ErrCode,&ErrDescription)
+EndSub
+
+
+====== PROPERTIES =======
+Name -> AvisoHorasAtrasadas
+Description -> Aviso de Atrasos en el Ingreso de Horas
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Private
+IsDefault -> False

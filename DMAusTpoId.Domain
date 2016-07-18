@@ -1,0 +1,30 @@
+======OBJECT = DMAusTpoId.Domain === Tipo de Ausencia ( Licencia, Enfermedad, Examen)=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-01-09T17:59:34.0000000Z" checksum="c52980e62aec1955ccac4b85ac9e8d73" fullyQualifiedName="DMAusTpoId" guid="bd937e3d-68fd-46fd-b8c0-333a9ac660a7" name="DMAusTpoId" type="00972a17-9975-449e-aab1-d26165d51393" description="Tipo de Ausencia ( Licencia, Enfermedad, Examen)">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMAusTpoId</Value></Property><Property><Name>Description</Name><Value>Tipo de Ausencia ( Licencia, Enfermedad, Examen)</Value></Property><Property><Name>EmptyAsNull</Name><Value>Yes</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>3</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>AttMaxLen</Name><Value>3</Value></Property><Property><Name>AttAvgLen</Name><Value>0</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>L, Licencia, Licencia; E, Enfermedad, Enfermedad; X, Examen, Examen</Value></Property><Property><Name>AttCollection</Name><Value>False</Value></Property><Property><Name>ControlType</Name><Value>Combo Box</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMAusTpoId
+Description -> Tipo de Ausencia ( Licencia, Enfermedad, Examen)
+OBJ_TYPE -> id_OTYPE_DOM
+EmptyAsNull -> Yes
+ATTCUSTOMTYPE -> 5
+Length -> 3
+Decimals -> 0
+AttMaxLen -> 3
+AttAvgLen -> 0
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+AttCollection -> False
+ControlType -> 0
+IsDefault -> False

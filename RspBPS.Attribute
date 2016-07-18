@@ -1,0 +1,15 @@
+======OBJECT = RspBPS.Attribute === Nro. de BPS=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> RspBPS
+Description -> Nro. de BPS
+HORIZONTAL_DESCRIPTION -> Nro. de BPS
+VERTICAL_DESCRIPTION -> Nro. de BPS
+ContextualTitle -> Nro. de BPS
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

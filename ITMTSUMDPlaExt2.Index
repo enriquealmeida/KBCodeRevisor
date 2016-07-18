@@ -1,0 +1,12 @@
+======OBJECT = ITMTSUMDPlaExt2.Index === ITMTSUMDPla Ext2=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-08-20T19:46:04.0000000Z" checksum="0d747b23e4c518d4cc8c90b181e54a0d" fullyQualifiedName="ITMTSUMDPlaExt2" guid="ef5bd8c0-a7ed-4f1b-ae53-d1c12f381129" name="ITMTSUMDPlaExt2" type="9e750647-3679-0000-0100-2529de263960" description="ITMTSUMDPla Ext2">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">TpoHonId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ITMTSUMDPlaExt2</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ITMTSUMDPlaExt2

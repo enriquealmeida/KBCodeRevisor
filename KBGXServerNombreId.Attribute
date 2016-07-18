@@ -1,0 +1,12 @@
+======OBJECT = KBGXServerNombreId.Attribute === Nombre de la KB en GXServer=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> KBGXServerNombreId
+Description -> Nombre de la KB en GXServer
+ContextualTitle -> Nombre KB Server
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

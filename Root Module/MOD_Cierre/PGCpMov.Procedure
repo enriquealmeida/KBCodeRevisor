@@ -1,0 +1,41 @@
+======OBJECT = PGCpMov.Procedure === Grabo CpMov=====
+
+=== RULES ===
+parm(in:&vCpMovSts ,in:&vCpRecId ,in:&vPryId ,in:&vCpMovImp, in:&CpMovPesos ,in:&vCpMovEST ,in:&vCpMovFch ,in:&vCpMovHrs, in:&CpMovObs, in:&CpMovRubId, in:&CpMovCod ) ;
+
+
+=== PROCEDURE SOURCE ===
+new
+    CpMovId  = PCNumera('CPMOVIM')
+    CpMovSts = &vCpMovSts
+    CpMovEST = &vCpMovEST
+    CpMovFch = &vCpMovFch
+    CpMovHrs = &vCpMovHrs
+    CpMovImp = &vCpMovImp
+    PryId    = &vPryId
+    CpRecId  = &vCpRecId
+    CpMovPesos = &CpMovPesos
+    CpMovObs = &CpMovObs
+    CpMovRubId = &CpMovRubId
+	CpMovCod = &CpMovCod
+	if &vCpMovEST = 'E'
+        CpMovFchFac = nullvalue(CpMovFchFac)
+        CpMovFchCob = nullvalue(CpMovFchCob)
+    else
+        CpMovFchFac = &vCpMovFch
+        CpMovFchCob = &vCpMovFch
+    endif
+when duplicate
+    msg('Clave Duplicada al Grabar Movimiento')
+endnew
+
+
+====== PROPERTIES =======
+Name -> PGCpMov
+Description -> Grabo CpMov
+CANCEL -> NO
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

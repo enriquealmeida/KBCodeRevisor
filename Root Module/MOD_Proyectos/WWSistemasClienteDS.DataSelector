@@ -1,0 +1,110 @@
+======OBJECT = WWSistemasClienteDS.DataSelector === WWSistemas Cliente DS=====
+<Object parent="MOD_Proyectos.WorkWithPlusSistemasCliente" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="5d2a6054-79aa-0a47-15f9-9429576e3bea" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T19:33:26.0000000Z" checksum="05fd0a71eb06ae69cc002ad006049c4d" fullyQualifiedName="MOD_Proyectos.WWSistemasClienteDS" guid="1be9ee79-50de-4789-a94e-306547d7555b" name="WWSistemasClienteDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWSistemas Cliente DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[CliNom like &CliNom when not &CliNom.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[SisDsc like &SisDsc when not &SisDsc.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="DynamicFiltersSelector1">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersSelector1</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliNom1">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliNom1</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliNom</Value></Property></Properties>
+      </Variable>
+      <Variable Name="SisDsc1">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>SisDsc1</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:SisDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersEnabled2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersEnabled2</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Boolean</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersSelector2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersSelector2</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliNom2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliNom2</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliNom</Value></Property></Properties>
+      </Variable>
+      <Variable Name="SisDsc2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>SisDsc2</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:SisDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersEnabled3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersEnabled3</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Boolean</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersSelector3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersSelector3</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliNom3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliNom3</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliNom</Value></Property></Properties>
+      </Variable>
+      <Variable Name="SisDsc3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>SisDsc3</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:SisDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliNom">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliNom</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliNom</Value></Property></Properties>
+      </Variable>
+      <Variable Name="SisDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>SisDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:SisDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliNom</Name>
+        <Description>Cli Nom</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>SisDsc</Name>
+        <Description>Sis Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWSistemasClienteDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Proyectos.WorkWithPlusSistemasCliente</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWSistemasClienteDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-30
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 30
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

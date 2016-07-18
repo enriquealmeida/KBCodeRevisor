@@ -1,0 +1,11 @@
+======OBJECT = PryEvaluacionCierre.Attribute === Evaluacion Cierre proyecto=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> PryEvaluacionCierre
+Description -> Evaluacion Cierre proyecto
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = ObjDsc.Attribute === Descripción del Objetivo=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> ObjDsc
+Description -> Descripción del Objetivo
+HORIZONTAL_DESCRIPTION -> Descripción del Objetivo
+VERTICAL_DESCRIPTION -> Descripción
+ContextualTitle -> Descripción del Objetivo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

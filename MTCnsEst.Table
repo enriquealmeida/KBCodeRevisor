@@ -1,0 +1,8 @@
+======OBJECT = MTCnsEst.Table === Estado de los consolidados=====
+*MTCnsEstId  Codigo3- Null=False
+ MTCnsEstDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MTCnsEst
+Description -> Estado de los consolidados
+CACHE_LEVEL -> 3

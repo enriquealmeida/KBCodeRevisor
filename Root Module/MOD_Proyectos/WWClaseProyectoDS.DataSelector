@@ -1,0 +1,45 @@
+======OBJECT = WWClaseProyectoDS.DataSelector === WWClase Proyecto DS=====
+<Object parent="MOD_Proyectos.WorkWithPlusClaseProyecto" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="9ecf8188-e105-4f39-9d15-7aa08100c2ab" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T19:33:28.0000000Z" checksum="d8ebcecee7006ff6bddaa9c01b919750" fullyQualifiedName="MOD_Proyectos.WWClaseProyectoDS" guid="9b112b41-2eba-4036-9e13-9e244603fc50" name="WWClaseProyectoDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWClase Proyecto DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[PryClsDsc like &PryClsDsc when &PryClsDscOperator = 0 AND (not &PryClsDsc.IsEmpty())
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryClsDsc like '%' +  &PryClsDsc when &PryClsDscOperator = 1 AND (not &PryClsDsc.IsEmpty())
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="PryClsDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryClsDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryClsDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryClsDsc</Name>
+        <Description>Pry Cls Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWClaseProyectoDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Proyectos.WorkWithPlusClaseProyecto</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWClaseProyectoDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-80
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 80
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

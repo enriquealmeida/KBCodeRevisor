@@ -1,0 +1,18 @@
+======OBJECT = DevuelvoSolxMailDateTime.Procedure === Devuelvo Solx Mail Date Time=====
+
+=== RULES ===
+parm(out:&SolXMailDateTime);
+
+
+=== PROCEDURE SOURCE ===
+	for each 
+		where            ParId=1
+		&SolXMailDateTime = SolxMailDateTime
+	endfor
+
+
+====== PROPERTIES =======
+Name -> DevuelvoSolxMailDateTime
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 21
+IsDefault -> False

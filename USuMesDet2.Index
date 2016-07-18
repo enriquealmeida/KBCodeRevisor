@@ -1,0 +1,19 @@
+======OBJECT = USuMesDet2.Index === USu Mes Det2=====
+<Object Type="Duplicate" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-04T14:41:24.0000000Z" lastUpdate="2015-08-04T14:41:21.0000000Z" checksum="32e9334dc1d0d9672b40c1cf84fc24d7" fullyQualifiedName="USuMesDet2" guid="7713ad28-4d9d-4481-a730-e2a397221434" name="USuMesDet2" type="9e750647-3679-0000-0100-2529de263960" description="USu Mes Det2">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspId</Member>
+      <Member Order="Ascending">RspSuA</Member>
+      <Member Order="Ascending">RspSuM</Member>
+      <Member Order="Ascending">MonId</Member>
+      <Member Order="Ascending">RspSuPlaExt</Member>
+      <Member Order="Ascending">TpoHonId</Member>
+      <Member Order="Ascending">RspSuFch</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>USuMesDet2</Value></Property><Property><Name>Description</Name><Value>USu Mes Det2</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> USuMesDet2
+Description -> USu Mes Det2

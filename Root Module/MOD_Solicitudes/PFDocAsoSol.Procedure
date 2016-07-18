@@ -1,0 +1,23 @@
+======OBJECT = PFDocAsoSol.Procedure === Hay documento asociado en solicitud?=====
+
+=== RULES ===
+parm(in:PrbId, out:&hayDoc);
+
+
+=== PROCEDURE SOURCE ===
+&hayDoc = Bool.false
+for each
+    defined by PrbDocDsc
+
+    &hayDoc = Bool.true
+    exit
+endfor
+
+
+====== PROPERTIES =======
+Name -> PFDocAsoSol
+Description -> Hay documento asociado en solicitud?
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

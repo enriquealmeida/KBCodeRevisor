@@ -1,0 +1,30 @@
+======OBJECT = MOD_Proyectos.Module === MOD_Proyectos=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-03-14T02:22:11.0000000Z" lastUpdate="2016-03-13T22:48:47.0000000Z" checksum="2e7432f176e19b24776599bfcc5df07d" fullyQualifiedName="MOD_Proyectos" guid="63d3e12e-5311-4674-aab2-7be88ec310ed" name="MOD_Proyectos" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="MOD_Proyectos">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="f53c9560-2c77-4f00-8e08-1141466b9068">
+      <Layers>
+        <Layer Id="f53c9560-2c77-4f00-8e08-1141466b9068">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Proyectos" Bounds="460.725 411.0815 150 32.00003" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-Root Module" Bounds="971.8864 396.0308 150.0001 32.00003" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-GLFeriados" Bounds="158.3793 20.00232 150 32.00003" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-WWPBaseObjects" Bounds="322.7526 338.2888 150.0001 32.00003" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="108.0197 644.4733 149.9999 32.00006" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Horas" Bounds="285.8864 194 150.0001 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MD" Bounds="543.8864 469.0308 150.0001 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MOD_Proyectos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> MOD_Proyectos
+IsDefault -> False

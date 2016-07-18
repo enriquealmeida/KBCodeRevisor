@@ -1,0 +1,217 @@
+======OBJECT = HWCSegPryTxt.WebComponent === Seguimiento de proyectos texto=====
+
+=== RULES ===
+parm(in:&RspId, in:&FchIniPar, in:&FchFinPar);
+// los parámetros &FchIniPar y &FchFinPar son por compatibilidad con el panel de control.
+
+
+=== EVENTS SOURCE ===
+
+Event Start
+
+    if &FchFinPar.IsEmpty()
+        &FchIni = ymdtod( year(&Today), month(&Today), 1 )
+        &FchFin = eom(&FchIni)
+    else
+        &FchIni = &FchIniPar
+        &FchFin = &FchFinPar
+    endif
+
+EndEvent  // Start
+
+Event Refresh
+    // cargo los clientes o los clientes de los proyectos que está suscrito el responsable
+    &clientesAux.Clear()
+    for each
+        where     RspId = &RspId
+
+        if SegTpoRef = 'CLI'
+            &CliId = SegRef
+            do 'AgregoCliente'
+        else    // SegTporef = 'PRY'
+            // busco el cliente del proyecto
+            for each
+                where     PryId = SegRef
+
+                &CliId = CliId
+            endfor
+            do 'AgregoCliente'
+        endif
+    endfor
+
+    // saco de la colexión los elementos repetidos
+    &clientesAux.Sort('CliId')
+    &clientes.Clear()
+    &CliIdAnt = nullvalue(&CliIdAnt)
+    for &clientesItem in &clientesAux
+        if &clientesItem.CliId <> &CliIdAnt
+            &clientes.Add(&clientesItem)
+        endif
+        &CliIdAnt = &clientesItem.CliId
+    endfor
+
+    if &clientes.Count > 0
+        tbkMensaje.Visible = 0
+        Grid1.Visible = 1
+    else
+        tbkMensaje.Caption = 'No existen proyectos seguidos por ' + trim(&RspId)
+        tbkMensaje.Visible = 1
+        Grid1.Visible = 0
+    endif
+EndEvent  // Refresh
+
+Event Grid1.load
+    for &clientesItem in &clientes
+        &CliId = &clientesItem.CliId
+
+        do 'VeoSiSigoCliente'
+
+        // veo las horas en los proyectos que son de ese cliente
+        for each
+            where     CliId = &CliId
+            defined by PryNom
+			
+			
+			 &HrsCnt=0
+			 &HrsCntErr=0
+			 &HrsCntTrf=0
+			 &PryId = PryId
+			 &PryTpo = PryTpo 
+			 &PryId.Link=Proyectos.Link(TrnMode.Update,&PryId)
+			// &HrsTotal.Link = HDHrPryP.Popup('','',&CliId,&FchIni ,&FchFin ,'','' ) 
+			do 'VeoHorasPlanificadas'   
+            do 'VeoSiSigoProyecto'
+			
+            if &SegPorCli = Bool.true or &SegPry = Bool.true
+				 
+				 do 'VeoHorasYErrores'
+				 &HrsCntTrf = DevuelvoHorasTransferenciasPeriodo(&PryId, &FchIni, &FchFin)
+				// do 'VeoHoraTransferencia'
+				 
+				 &HrsTotal = &HrsCnt + &HrsCntErr + &HrsCntTrf
+		  		 &Diff = &CliCntHras - &HrsTotal  
+				if  (&HrsTotal.Truncate(0) > 0 or &CliCntHras.Truncate(0) > 0) 
+					//				msg(format('Cliente %1 Proyecto %2 Horas %3 Planificadas %4',&CliId, &PryId, &HrsTotal, &CliCntHras)) 
+					load
+					
+					if &PryTpo='MANTENIMIE'
+						&HorasMant += &HrsTotal
+						&CliCntHrasMant += &CliCntHras
+						&CantPryMant +=1
+					endif
+				endif  
+            endif
+        endfor
+	    
+		if &CantPryMant > 1 
+			&PryId = ''
+		    &PryId.Link=''
+		    &HrsTotal = &HorasMant
+			&HrsCnt=0
+			&HrsCntErr=0
+			&HrsCntTrf=0
+			&CliCntHras=&CliCntHrasMant
+			&Diff= &CliCntHras  - &HrsTotal  
+		    &CliId.FontBold=1
+			&HrsTotal.FontBold=1
+			&CliCntHras.FontBold=1
+			&CliId=&CliId + '_MANT'
+			load
+		    &CliId.FontBold=0
+			&HrsTotal.FontBold=0
+			&CliCntHras.FontBold=0
+		endif
+		&HorasMant = 0 
+		&CantPryMant = 0
+		&CliCntHrasMant =0
+    endfor
+EndEvent  // load
+
+
+Sub 'AgregoCliente'
+    // veo si el cliente está en la tabla de clientes
+    &existe = Bool.false
+    for each
+        where     CliId = &CliId
+		
+        &existe = Bool.true
+    endfor
+	
+    if &existe = Bool.true
+        &clientesItem.CliId = &CliId
+        &clientesAux.Add(&clientesItem)
+        &clientesItem = new SdtClientes.SdtClientesItem()
+    endif
+EndSub  // 'AgregoCliente'
+
+
+Sub 'VeoHorasPlanificadas'  
+       // veo las horas Planificadas del cliente
+       &CliCntHras = nullvalue(&CliCntHras)
+       for each
+		   where     PryId = &PryId 
+		   where     PryAct = DMPryAct.Activo
+		   
+           &CliCntHras += PryHrsPln //CliCntHras
+       endfor
+   // msg(format('Cliente %1 - Horas Planificadas %2',&CliId, &CliCntHras))
+EndSub
+
+Sub 'VeoHorasYErrores'
+       &HrsCnt = 0
+       &HrsCntErr = 0
+       for each
+		where     PryId = &PryId
+           where     HrsFch >= &FchIni when &SegVerRango = true
+           where     HrsFch <= &FchFin
+		
+           if TarId <> 'ERRorES'
+               &HrsCnt += HrsCnt
+           else
+               &HrsCntErr += HrsCnt
+           endif
+       endfor
+EndSub
+
+
+Sub 'VeoSiSigoProyecto'
+    if &SegPorCli = Bool.false
+        // veo si el proyecto lo tengo que seguir
+        &SegPry = Bool.false
+        for each
+            where     RspId = &RspId
+            where     SegTpoRef = 'PRY'
+            where     SegRef = &PryId
+			
+            &SegPry = Bool.true
+            &SegVerRango = SegVerRango
+        endfor
+    endif
+EndSub	
+
+Sub 'VeoSiSigoCliente'
+       // veo si la suscripción es al cliente
+       &SegPorCli = Bool.false
+       for each
+           where     RspId = &RspId
+           where     SegTpoRef = 'CLI'
+           where     SegRef = &CliId
+		
+           &SegPorCli = Bool.true
+           &SegVerRango = SegVerRango
+       endfor
+EndSub
+
+
+
+====== PROPERTIES =======
+Name -> HWCSegPryTxt
+Description -> Seguimiento de proyectos texto
+WEB_COMP -> Yes
+URLAccess -> No
+AUTO_REFRESH -> VARS_CHANGE
+WebUX -> SMOOTH
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

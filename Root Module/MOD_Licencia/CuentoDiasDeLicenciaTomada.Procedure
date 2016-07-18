@@ -1,0 +1,36 @@
+======OBJECT = CuentoDiasDeLicenciaTomada.Procedure === Cuento Dias De Licencia Tomada=====
+
+=== RULES ===
+parm(in:&RspId,in:&FchIni,in:&FchFin, out:&Ausencias);
+
+
+=== PROCEDURE SOURCE ===
+    &Ausencias = 0
+	&FchAux=&FchIni
+
+    do while &FchAux <= &FchFin
+        if dow(&FchAux) <> 1 and dow(&FchAux) <> 7  // que no sea sabado ni domingo
+            &EsFeriado = EsFeriado(&FchAux)
+            if &EsFeriado = 'N'         // que no sea feriado
+                // busca si hay ausencias para ese día
+                for each
+                    where            RspId = &RspId
+                    where            LicFecIni <= &FchAux
+                    where            LicFecFin >= &FchAux
+                    where            LicTpo = DMLicTpo.Tomada
+                    where            LicEst = EstadoLicencia.Autorizada
+                    where            AusTipoLiquidacion = true
+
+                    &Ausencias += 1
+                endfor
+            endif
+        endif
+        &FchAux += 1
+    enddo
+
+
+====== PROPERTIES =======
+Name -> CuentoDiasDeLicenciaTomada
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+IsDefault -> False

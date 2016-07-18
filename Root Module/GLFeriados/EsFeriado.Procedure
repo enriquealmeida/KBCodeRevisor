@@ -1,0 +1,23 @@
+======OBJECT = EsFeriado.Procedure === Indica si es Feriado=====
+
+=== RULES ===
+parm(IN:&Fecha ,OUT:&EsFeriado ) ;
+
+
+=== PROCEDURE SOURCE ===
+&EsFeriado = Bool.False 
+for each order FerFecha
+    where            FerFecha = &Fecha
+    &EsFeriado = Bool.True 
+endfor
+
+
+====== PROPERTIES =======
+Name -> EsFeriado
+Description -> Indica si es Feriado
+CANCEL -> NO
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+ObjectVisibility -> Public
+IsDefault -> False

@@ -1,0 +1,44 @@
+======OBJECT = Rsp.Table === Responsables=====
+*RspId  DMUsuarios- Null=False
+ RspNom  DESC- Null=False
+ RspDir  Address- Null=False
+ RspTel  Telefono- Null=False
+ RspCel  Telefono- Null=False
+ RspCred  Credencial- Null=True
+ RspFchIng  Fecha- Null=False
+ RspHorAlm  Horas- Null=False
+ RspUsrMl  Email- Null=False
+ RspFchUltimoAvisoAtrasoHoras  FechaHora- Null=False
+ RspChequeoAtrasos  OBLIGATORIO- Null=False
+ RspSaldoLicenciaTomada  Dias-EmpleadoSaldoLicenciaTomada(RspId) Null=False
+ RspFormaPagoPesos  DESC- Null=False
+ RspFormaPagoDolares  DESC- Null=False
+ RspSaldoLicenciaLiquidada  Dias-EmpleadoSaldoLicenciaLiquidada(RspId) Null=False
+ RspLicenciaPendienteAutorizar  Dias-0-sum(LicDias, LicTpo=DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Licencia and LicEst = EstadoLicencia.Ingresada) Null=False
+ RspDiasExamenAnioCorriente  Dias-sum(LicDias, LicTpo=DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Examen and LicEst <> EstadoLicencia.Eliminada  and year(LicFecIni)=year(serverdate()) ) Null=False
+ RspDiasExamenUltimos12Meses  Dias-sum(LicDias, LicTpo=DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Examen and LicEst <> EstadoLicencia.Eliminada and LicFecIni.addyears(1)>= serverdate()) Null=False
+ RspDiasEnfermedadAnioCorriente  Dias-sum(LicDias, LicTpo=DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Enfermedad and LicEst <> EstadoLicencia.Eliminada and year(LicFecIni)=year(serverdate()) ) Null=False
+ RspDiasEnfermedadUltimos12Meses  Dias-sum(LicDias, LicTpo=DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Enfermedad and LicEst <> EstadoLicencia.Eliminada and LicFecIni.addyears(1)>= serverdate()) Null=False
+ RspDiasLicenciaAnioCorriente  Dias-sum(LicDias, LicTpo=DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Licencia and LicEst = EstadoLicencia.Autorizada and year(LicFecIni)=year(serverdate()) ) Null=False
+ RspDiasLicenciaUltimos12Meses  Dias-sum(LicDias, LicTpo=DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Licencia and LicEst = EstadoLicencia.Autorizada and LicFecIni.addyears(1)>= serverdate() ) Null=False
+ RspVinculoLaboral  DMRspVinculoLaboral- Null=True
+ RspSaldoFuturo  Dias-RspSaldoLicenciaTomada-RspLicenciaPendienteAutorizar Null=False
+ RspSue  Importe- Null=False
+ RspSueEx  Importe- Null=False
+ RspSueHr  Horas- Null=False
+ RspBPS  Codigo10- Null=False
+ RspRUC  RUC- Null=False
+ RspCntImp  Importe- Null=False
+ RspCntFchI  Fecha- Null=False
+ RspCntFchF  Fecha- Null=False
+ RspCedNro  DMCedula- Null=True
+ RspSexo  Sexo- Null=False
+ RspFchNacimiento  MDDate- Null=False
+ RspActivo  OBLIGATORIO- Null=False
+ RspIngresaHoras  OBLIGATORIO- Null=False
+ RspCobraSueldo  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> Rsp
+Description -> Responsables
+CACHE_LEVEL -> 2

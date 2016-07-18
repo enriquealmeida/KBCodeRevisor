@@ -1,0 +1,112 @@
+======OBJECT = WWSolicitudesDocumentosDS.DataSelector === WWSolicitudes Documentos DS =====
+<Object parent="MOD_Solicitudes.WorkWithPlusSolicitudesDocumentos" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="c0613a41-7d4d-4696-ab96-c92524b02931" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-27T17:15:40.0000000Z" lastUpdate="2016-05-26T19:00:30.0000000Z" checksum="3dd3c2051eb29d5e417f318819611d80" fullyQualifiedName="MOD_Solicitudes.WWSolicitudesDocumentosDS" guid="cb97a19d-83a8-48aa-a617-5b5d1754c15e" name="WWSolicitudesDocumentosDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWSolicitudes Documentos DS ">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[PryId = &PryId when not &PryId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrbId = &PrbId when not &PrbId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrbDocDsc like &PrbDocDsc when not &PrbDocDsc.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrbSts = &PrbSts when not &PrbSts.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CliId = &CliId when not &CliId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CrrUsr = &CrrUsr when not &CrrUsr.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="PryId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PrbId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrbId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrbId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PrbDocDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrbDocDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrbDocDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PrbSts">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrbSts</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrbSts</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CrrUsr">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CrrUsr</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CrrUsr</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryId</Name>
+        <Description>Pry Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrbId</Name>
+        <Description>Prb Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrbDocDsc</Name>
+        <Description>Prb Doc Dsc</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrbSts</Name>
+        <Description>Prb Sts</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliId</Name>
+        <Description>Cli Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CrrUsr</Name>
+        <Description>Crr Usr</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWSolicitudesDocumentosDS</Value></Property><Property><Name>Description</Name><Value>WWSolicitudes Documentos DS </Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Solicitudes.WorkWithPlusSolicitudesDocumentos</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWSolicitudesDocumentosDS
+Description -> WWSolicitudes Documentos DS 
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-74
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 74
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

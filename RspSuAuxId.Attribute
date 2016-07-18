@@ -1,0 +1,15 @@
+======OBJECT = RspSuAuxId.Attribute === Auxiliar=====
+CHARACTER(16)
+
+
+====== PROPERTIES =======
+Name -> RspSuAuxId
+Description -> Auxiliar
+HORIZONTAL_DESCRIPTION -> Auxiliar
+VERTICAL_DESCRIPTION -> Auxiliar
+ContextualTitle -> Auxiliar
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+idCHARCASE -> idCHARCASE_UPPER
+IsDefault -> False

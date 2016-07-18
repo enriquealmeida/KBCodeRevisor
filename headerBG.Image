@@ -1,0 +1,25 @@
+======OBJECT = headerBG.Image === header BG=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-09-05T14:47:16.0000000Z" checksum="dccf019aa1ee42878c2da858a8ee2131" fullyQualifiedName="headerBG" guid="4a39fa06-4c8d-4d16-84c8-dc563e8cb0e1" name="headerBG" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="header BG">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="new_header_back_1x100px.jpg" description="header BG.png"><Data>
+<base64Binary>
+/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMD/8AAEQgAZAABAwERAAIRAQMRAf/EAHMAAAICAwAAAAAAAAAAAAAAAAAGBAUBBwgBAAMBAQEAAAAAAAAAAAAAAAABAgMHCBAAAQIBCAsAAAAA
+AAAAAAAAAAECoVFhkeESUxQV8BFxYpKi0uITI2MRAQACAwADAAAAAAAAAAAAAAABEVFhEpEiE//aAAwDAQACEQMRAD8A4gyJl2zhTpOgPN9Rhs3LWSLRUZ9z
+hVGrCJojTI15YnWkVRocperaJXMMjUAAArhHtLLzCuE3GFb5d6FRRF/GTR7QBOzFl7A1+cbTZT9n1gP30vy//9k=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>new_header_back_1x100px.jpg</Value></Property><Property><Name>Description</Name><Value>header BG.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\Especificaciones 1\new_header_back_1x100px.jpg</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>headerBG</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> headerBG
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

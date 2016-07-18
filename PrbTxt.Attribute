@@ -1,0 +1,18 @@
+======OBJECT = PrbTxt.Attribute === Texto del Problema=====
+LONGVARCHAR(2097152)
+
+
+====== PROPERTIES =======
+Name -> PrbTxt
+Description -> Texto del Problema
+HORIZONTAL_DESCRIPTION -> Texto del Problema
+VERTICAL_DESCRIPTION -> Texto
+ContextualTitle -> Texto del Problema
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AutoResize -> False
+GxWidth -> 120chr
+GxHeight -> 20row
+Font -> [Font: Name=Verdana, Size=10, Units=3, GdiCharSet=1, GdiVerticalFont=False]
+IsDefault -> False

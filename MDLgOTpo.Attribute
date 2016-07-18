@@ -1,0 +1,14 @@
+======OBJECT = MDLgOTpo.Attribute === Tipo de Objeto=====
+NUMERIC(8)
+
+
+====== PROPERTIES =======
+Name -> MDLgOTpo
+Description -> Tipo de Objeto
+VERTICAL_DESCRIPTION -> Tipo
+ContextualTitle -> Tipo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZZZZZZ9
+IsDefault -> False

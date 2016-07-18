@@ -1,0 +1,38 @@
+======OBJECT = DevuelveResumenCliente.Procedure === Devuelve Resumen Cliente=====
+
+=== RULES ===
+parm(in:&FchIni, in:&FchFin, out:&ResumenClientes);
+
+
+=== PROCEDURE SOURCE ===
+	//&FchIni = &Today - 80
+	//&FchFin = &Today 
+     
+		//msg(format('Fechas %1 %2',&FchIni, &FchFin ) ,status)	
+	&Anio = &FchFin.Year()
+	&FchIniAnio = YMDtoD(&Anio,1,1)
+	for each order CliTpoId CliId
+		where            CliActivo=true
+		&ResumenClientesItem.CliId=CliId
+		&ResumenClientesItem.HrsCnt = DevuelveHorasCliente(CliId,&FchIni,&FchFin)
+		&ResumenClientesItem.PryActivos = DevuelveProyectosActivos(CliId)
+		&ResumenClientesItem.SolING = DevuelveCantidadSolicitudesEstado(CliId,DMPrbSts.ING)
+		&ResumenClientesItem.SolDES = DevuelveCantidadSolicitudesEstado(CliId,DMPrbSts.DES)
+		&ResumenClientesItem.SolINS = DevuelveCantidadSolicitudesEstado(CliId,DMPrbSts.INS)
+		&ResumenClientesItem.USAnual= DevuelveDolaresCliente(CliId,&FchIniAnio, &FchFin,'E')
+		&ResumenClientesItem.USGan  = DevuelveDolaresCliente(CliId,&FchIniAnio, &FchFin,' ')
+		
+		&ResumenClientes.Add(&ResumenClientesItem.Clone())
+		
+		//msg(format('Cliente %1 %2',CliId,&ResumenClientesItem.HrsCnt,		&ResumenClientesItem.SolING, &ResumenClientesItem.SolDES ,&ResumenClientesItem.SolINS ,		&ResumenClientesItem.USAnual , &ResumenClientesItem.USGan  ),status)
+	endfor
+//msg(&ResumenClientes.ToXml().Substring(1,1000),status)
+
+
+====== PROPERTIES =======
+Name -> DevuelveResumenCliente
+IsMain -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

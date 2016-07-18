@@ -1,0 +1,117 @@
+======OBJECT = DistribuyoPremiosBatch.Procedure === Distribuyo Premios Batch=====
+
+=== RULES ===
+parm(in:&RspId, in:&CpMovImp, in:&CpMovFchIni, in:&CpMovFchFin, in:&Cotizacion);
+
+
+=== PROCEDURE SOURCE ===
+Do 'ValidacionesPrevias'
+
+//Cuento cantidad de horas. 
+&CpMovHrs=0
+&CpMovImpAnterior=0
+for each
+	where          CpRecId=&RspId
+	where          &CpMovFchIni <= CpMovFch and CpMovFch <= &CpMovFchFin
+	&CpMovHrs += CpMovHrs
+	&CPMovImpAnterior += CpMovImp
+endfor
+
+&TasaHoraria= iif(&CpmovHrs =0 , 0, &CpMovImp / &CpMovHrs)
+&Ano = &CpMovFchIni.Year()
+&CpMovImpPesos = &CpMovImp * &Cotizacion 
+
+msg(format('Tasa Horaria %1 Cantidad de Horas=%2 Importe Previo=%3',&TasaHoraria,&CpMovHrs, &CpMovImpAnterior))
+
+msg(format('Se grabara movimiento RspId=%1 Pry=%2 Importe=%3 Fecha=%4 ',&RspId,&Pryid,&CpMovImp,&CpMovFchFin,&TasaHoraria))
+PGCpMov.Call(DMMovSts.Valorizado,&RspId,&Pryid,&CpMovImp,&CpMovImpPesos,DMEst.Transferencia,&CpMovFchFin,0,'','','')
+
+for each order PryId
+	where          CpRecId = &RspId
+	where          &CpMovFchIni <= CpMovFch and CpMovFch <= &CpMovFchFin
+	
+	&CpMovHrs=0
+	&PryId = PryId 
+	for each order PryId
+		where          CpRecId = &RspId
+		where          &CpMovFchIni <= CpMovFch and CpMovFch <= &CpMovFchFin
+	    &CpMovHrs += CpMovHrs 
+	endfor
+    &CpMovImp2 = &CpMovHrs * &TasaHoraria
+	&CpMovImpPesos=&CpMovImp * &Cotizacion
+    msg(format('Se grabara RspId= %1 Pry= %2  Importe= %3 Horas= %5 ',&RspId,&Pryid,-&CpMovImp2,&CpMovFchFin,&CpMovHrs))
+    PGCpMov.Call(DMMovSts.Valorizado,&RspId,&Pryid,-&CpMovImp2,-&CpMovImpPesos,DMEst.Transferencia,&CpMovFchFin,0,'','','')
+
+endfor
+
+//DistribuyoPremiosMes.Call(&Ano,&RspId,&TasaHoraria,&Cotizacion)
+
+
+//Cuento cantidad de horas e importe
+&CpMovHrs=0
+&CpMovImpPosterior=0
+for each
+	where          CpRecId=&RspId
+	where          &CpMovFchIni <= CpMovFch and CpMovFch <= &CpMovFchFin
+	&CpMovHrs += CpMovHrs
+	&CPMovImpPosterior += CpMovImp
+endfor
+
+
+&Dif = &CpMovImpPosterior - &CpMovImpAnterior  + &CpMovImp
+&Pryid='CONCEPTO'
+msg(format('Diferencia %1',&Dif))
+if &Dif <> 0 
+    msg(format('Se grabara AJUSTE RspId=%1 Pry= %2 Importe= %3 Fecha= %4 ',&RspId,&Pryid,&Dif,&CpMovFchFin,&TasaHoraria))
+    &DifPesos = &Dif * &Cotizacion
+	PGCpMov.Call(DMMovSts.Valorizado,&RspId,&Pryid,-&Dif,-&DifPesos,DMEst.Transferencia,&CpMovFchFin,0,'','','')
+endif
+commit
+	
+
+/*************************************************************************/
+Sub 'ValidacionesPrevias'
+//&Cotizacion = 20
+&Pryid='DISTRIB'
+&CliId='DISTRIB'
+&CpRecId='DISTRIB'
+&Dsc = 'Distribucion de premios'
+new 
+	CliId = &CliId
+	CliNom = &Dsc 
+endnew
+
+new
+	PryId = &Pryid 
+	PryNom = &Dsc
+	CliId = &CliId
+	PryCls = ''
+endnew
+
+new 
+	CpRecId = &CpRecId 
+	CpRecDsc = &Dsc
+    CpRecTpo = DMRecTpo.Gastos
+endnew
+
+msg(format('Se borrarán todos los movimientos del proyecto %1',&Pryid))
+for each
+   where          CpRecId = &RspId
+   where          PryId = &Pryid
+   where          &CpMovFchIni <= CpMovFch and CpMovFch <= &CpMovFchFin
+     delete
+endfor
+
+	
+EndSub
+
+
+
+
+====== PROPERTIES =======
+Name -> DistribuyoPremiosBatch
+GenerateObject -> True
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

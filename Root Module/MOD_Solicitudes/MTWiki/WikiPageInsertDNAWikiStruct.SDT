@@ -1,0 +1,25 @@
+======OBJECT = WikiPageInsertDNAWikiStruct.SDT === Wiki Page Insert DNAWiki Struct=====
+
+=== STRUCTURE ===
+WikiPageInsertDNAWikiStruct
+	PageId, N(9), Page Id 
+	PageVersionId, N(9), Page Version Id 
+	PageName, C(9999), Page Name 
+	PageType, N(4), Page Type 
+	PageFullName, C(9999), Page Full Name 
+	PageContent, C(9999), Page Content 
+	isPrivate, N(4), is Private 
+	override, N(2), override 
+	PageLink, C(9999), Page Link 
+	FileName, C(9999), File Name 
+	CreateCategories, N(2), Create Categories 
+	Categories, C(9999), Categories , collection item
+
+====== PROPERTIES =======
+Name -> WikiPageInsertDNAWikiStruct
+ExternalName -> WikiStruct
+ExternalNamespace -> iwiki
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 82
+ObjectVisibility -> Private
+IsDefault -> False

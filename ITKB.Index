@@ -1,0 +1,12 @@
+======OBJECT = ITKB.Index === ITKB=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:39.0000000Z" checksum="9016354790439e7d833dc40e0d357339" fullyQualifiedName="ITKB" guid="f5044a6a-91b5-4218-abc0-6870eeaf0dae" name="ITKB" type="9e750647-3679-0000-0100-2529de263960" description="ITKB">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">KBId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ITKB</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ITKB

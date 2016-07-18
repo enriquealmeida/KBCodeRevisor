@@ -1,0 +1,10 @@
+======OBJECT = MDObj.Table === Objetos metadata=====
+*MDObjTpo  DMTipoObjetoMetadatos- Null=False
+*MDObjSec  Numerador- Null=False
+ MDObjFch  Fecha- Null=False
+ MDObjDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MDObj
+Description -> Objetos metadata
+CACHE_LEVEL -> 2

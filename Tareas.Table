@@ -1,0 +1,9 @@
+======OBJECT = Tareas.Table === Tareas=====
+*TarId  Tareas- Null=False
+ TarDsc  DESC- Null=False
+ TarNoIngresable  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> Tareas
+Description -> Tareas
+CACHE_LEVEL -> 3

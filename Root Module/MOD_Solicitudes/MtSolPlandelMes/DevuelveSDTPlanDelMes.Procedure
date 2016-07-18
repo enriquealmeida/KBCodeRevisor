@@ -1,0 +1,142 @@
+======OBJECT = DevuelveSDTPlanDelMes.Procedure === Devuelve SDT Plan Del Mes =====
+
+=== RULES ===
+parm(in:&FiltroCliTpoId, in:&FiltroCliId,IN: &FiltroCrrUsr, in: &FiltroSegUsr,  in: &FiltroPrbSts ,
+in:&FiltroTagId, in:&FiltroSoloTag, 
+in:&OrdenarPor, in:&PrbEstadoActivo, in:&FiltroPrbPryId , in:&FiltroConsolidado, OUT:&PlanSolicitudes);
+
+
+=== PROCEDURE SOURCE ===
+&PlanSolicitudes.Clear()
+for each 
+     where            CliTpoId = &FiltroCliTpoId when  not &FiltroCliTpoId.IsEmpty() 
+     where            TagId like &FiltroTagId 
+     where            CliId=&FiltroCliId when  not &FiltroCliId.IsEmpty()
+     where            CrrUsr=&FiltroCrrUsr when not &FiltroCrrUsr.IsEmpty()
+     where            SegUsr=&FiltroSegUsr when not &FiltroSegUsr.IsEmpty()
+     where            PrbSts<>DMPrbSts.Bor and PrbSts<>DMPrbSts.SUS 
+     where            not (PrbSts<>DMPrbSts.ING and PrbEstadoActivo=true)   
+     where            PrbSts=&FiltroPrbSts when not &FiltroPrbSts.IsEmpty()
+     where            PrbEstadoActivo=&PrbEstadoActivo when not &PrbEstadoActivo.IsEmpty()
+	 where            PryId = &FiltroPrbPryId when not &FiltroPrbPryId.IsEmpty()
+	 where            PrbCnsId = &FiltroConsolidado when  not &FiltroConsolidado.IsEmpty()
+	 where            PrbId <> 1
+        
+       &Solicitud.CliId=CliId
+       &Solicitud.prbplafch=PrbPlaFch
+       &Solicitud.prbsts=PrbSts
+       &Solicitud.crrusr=CrrUsr
+       &Solicitud.prbdsc=PrbDsc
+       &Solicitud.prbid=PrbId
+       &Solicitud.prbcnsid=PrbCnsId
+       &Solicitud.prbtpo=PrbTpo
+       &Solicitud.prbprio=PrbPrio
+       &Solicitud.Prbpryid=PryId
+       &Solicitud.TagId=TagId
+       &Solicitud.PrbDiasAbi=PrbDiasAbi
+       &Solicitud.PrbHrsPln=PrbHrsPln
+       &Solicitud.SegUsr=SegUsr
+       &Solicitud.PrbRequiereDocumentacion=PrbRequiereDocumentacion
+       &Solicitud.SolicitudTesteada =GetSolicitudTesteada(PryId,PrbId)
+	   &Solicitud.PrbTxt = PrbTxt
+	   &Solicitud.Prbavance = PrbAvance
+	   &Solicitud.PrbHrsReal = PrbHrsReal
+       do 'EstadoPlan'
+      // &Solicitud.PrbTesteada=PSolTesteada2(PrbId) // Do 'EstaTesteada'
+       &PlanSolicitudes.Add(&Solicitud.Clone())
+
+       
+endfor
+        
+for each
+         where            CliTpoId = &FiltroCliTpoId when  not &FiltroCliTpoId.IsEmpty() 
+          where            CliId=&FiltroCliId when  not &FiltroCliId.IsEmpty() 
+          where            CrrUsr=&FiltroCrrUsr when not &FiltroCrrUsr.IsEmpty()
+          where            SegUsr=&FiltroSegUsr when not &FiltroSegUsr.IsEmpty()
+          where            PrbSts<>DMPrbSts.ING and PrbEstadoActivo=true   
+          where            PrbSts<>DMPrbSts.Bor and PrbSts<>DMPrbSts.SUS
+          where            PrbSts=&FiltroPrbSts when not &FiltroPrbSts.IsEmpty()
+          where            PrbEstadoActivo=&PrbEstadoActivo when not &PrbEstadoActivo.IsEmpty()
+		  where            PryId = &FiltroPrbPryId when not &FiltroPrbPryId.IsEmpty()
+		  where            PrbCnsId = &FiltroConsolidado when not &FiltroConsolidado.IsEmpty()
+		  where            PrbId <> 1
+       
+			&Solicitud.CliId=CliId
+			&Solicitud.prbplafch=PrbPlaFch
+			&Solicitud.prbsts=PrbSts
+			&Solicitud.crrusr=CrrUsr
+			&Solicitud.prbdsc=PrbDsc
+			&Solicitud.PrbDscToolTip=Substr(PrbTxt,1,200)
+			&Solicitud.prbid=PrbId
+			&Solicitud.prbcnsid=PrbCnsId
+			&Solicitud.prbtpo=PrbTpo
+			&Solicitud.prbprio=PrbPrio
+			&Solicitud.prbpryid=PryId
+			&Solicitud.TagId = DevuelveTagDeSolicitud(PryId, PrbId, &FiltroTagId)
+			&Solicitud.PrbDiasAbi=PrbDiasAbi
+			&Solicitud.PrbHrsPln=PrbHrsPln
+			&Solicitud.SegUsr=SegUsr
+			&Solicitud.PrbRequiereDocumentacion=PrbRequiereDocumentacion
+			&Solicitud.SolicitudTesteada =GetSolicitudTesteada(PryId,PrbId)
+			&Solicitud.PrbTxt = PrbTxt
+			&Solicitud.Prbavance = PrbAvance
+			&Solicitud.PrbHrsReal = PrbHrsReal
+			
+			Do 'EstadoPlan'
+		//       &Solicitud.PrbTesteada=PSolTesteada2(PrbId) 
+			if  not (&FiltroSoloTag='S' and &Solicitud.TagId = '*Null')
+					&PlanSolicitudes.Add(&Solicitud.Clone())
+			endif 
+
+endfor
+
+do case
+      case &ordenarPor='I'
+          &PlanSolicitudes.Sort('PrbId')
+      case &ordenarPor='C'
+          &PlanSolicitudes.Sort('CliId,PrbPlaFch,PrbId')
+      case &ordenarPor='D'
+          &PlanSolicitudes.Sort('CliId,PrbSts,PrbId')          
+      case &ordenarPor='K'
+          &PlanSolicitudes.Sort('PrbCnsId,PrbId')
+      case &ordenarPor='S'
+          &PlanSolicitudes.Sort('PrbSts,PrbId')
+      case &ordenarPor='R'
+          &PlanSolicitudes.Sort('CrrUsr,PrbPlaFch,PrbId')
+      case &ordenarPor='P'
+          &PlanSolicitudes.Sort('PrbPrio,PrbId')
+      case &ordenarPor='T'
+            &PlanSolicitudes.Sort('PrbTpo,PrbId')
+      case &ordenarPor='A'
+           &PlanSolicitudes.Sort('TagId,PrbId')
+      case &ordenarPor='B'
+           &PlanSolicitudes.Sort('[PrbDiasAbi],PrbId')
+
+endcase
+
+
+Sub 'EstadoPlan'
+do case  
+    case &Solicitud.PrbSts=DMPrbSts.ING  //NO EMPEZADO
+         &Solicitud.EstadoPlan='N'
+    case &Solicitud.CrrUsr='*NADIE' //NO ASIGNADO
+         &Solicitud.EstadoPlan='P'
+    case &Solicitud.PrbSts=DMPrbSts.DES //EN PROCESO
+         &Solicitud.EstadoPlan='R'
+    case &Solicitud.PrbSts=DMPrbSts.INS    //A INSTALAR
+         &Solicitud.EstadoPlan='L'
+    case &Solicitud.PrbSts=DMPrbSts.CER    //YA HECHO
+         &Solicitud.EstadoPlan='H'
+    Otherwise
+         &Solicitud.EstadoPlan='X'  //ERRor.
+endcase
+EndSub
+
+
+====== PROPERTIES =======
+Name -> DevuelveSDTPlanDelMes
+Description -> Devuelve SDT Plan Del Mes 
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

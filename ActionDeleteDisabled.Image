@@ -1,0 +1,36 @@
+======OBJECT = ActionDeleteDisabled.Image === Action Delete Disabled=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:52.0000000Z" checksum="90718f26e513bf338742cd2b6230e515" fullyQualifiedName="ActionDeleteDisabled" guid="138fdfa8-ae9b-4664-8007-e04d47468418" name="ActionDeleteDisabled" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Delete Disabled">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionDeleteDisabled.png" description="Action Delete Disabled.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADdYAAA3WAZBveZwAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAXBJREFUSEvllMGrAVEUxv3/UkMIUZJSw2TDzkbssBA2jIXYMLG00/fmnN7TdX1M79W1ead+dfrN
+PefrTtOkAHwcKl1DpWuodA2VrqHSNVS+Y7fboV6vI5/Po1AooNfrxVqLnmdQ+Qak02kMBgOsVivM53OUy2WMRiN5xM5TqLTQiqII4/FYQyVkuVwq1WpVgw+H
+A67X6/dpLbZLodKkVCpp0G+43W7xKN8nUGlyuVwwHA7R6XRQqVSQzWYfAjKZDIrFIhqNBvr9PhaLRTymRfcJVLqGSpvtdqs3lNv4vo8gCNDtdtFut9Fqte5f
+s9zcnmVQaSOhsvB0Oulrtvvz+Xzv7VkGlTZhGP4sxGw2S+rpDhMqbczQ6XSa1NMdJlTabDabfxg6mUySerrDhEqb9Xr9+dD9fq8L5Z9bq9WeevknS5/L5eLj
+fIcJlQQ0m00NeIXneTgej3KUzT9A5R+RYv4JKl1DpWuodA2VrqHSLUh9AZfclnlN0f0sAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionDeleteDisabled.png</Value></Property><Property><Name>Description</Name><Value>Action Delete Disabled.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\buttons\ActionDeleteDisabled.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="ActionDeleteDisabled.png" description="Action Delete Disabled.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADdYAAA3WAZBveZwAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAXBJREFUSEvllMGrAVEUxv3/UkMIUZJSw2TDzkbssBA2jIXYMLG00/fmnN7TdX1M79W1ead+dfrN
+PefrTtOkAHwcKl1DpWuodA2VrqHSNVS+Y7fboV6vI5/Po1AooNfrxVqLnmdQ+Qak02kMBgOsVivM53OUy2WMRiN5xM5TqLTQiqII4/FYQyVkuVwq1WpVgw+H
+A67X6/dpLbZLodKkVCpp0G+43W7xKN8nUGlyuVwwHA7R6XRQqVSQzWYfAjKZDIrFIhqNBvr9PhaLRTymRfcJVLqGSpvtdqs3lNv4vo8gCNDtdtFut9Fqte5f
+s9zcnmVQaSOhsvB0Oulrtvvz+Xzv7VkGlTZhGP4sxGw2S+rpDhMqbczQ6XSa1NMdJlTabDabfxg6mUySerrDhEqb9Xr9+dD9fq8L5Z9bq9WeevknS5/L5eLj
+fIcJlQQ0m00NeIXneTgej3KUzT9A5R+RYv4JKl1DpWuodA2VrqHSLUh9AZfclnlN0f0sAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionDeleteDisabled.png</Value></Property><Property><Name>Description</Name><Value>Action Delete Disabled.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\buttons\ActionDeleteDisabled.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionDeleteDisabled</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionDeleteDisabled
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

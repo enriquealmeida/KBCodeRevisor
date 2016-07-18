@@ -1,0 +1,12 @@
+======OBJECT = IndActivo.Attribute === Activo?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> IndActivo
+Description -> Activo?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_INITIAL_VALUE -> True
+IsDefault -> False

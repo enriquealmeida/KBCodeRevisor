@@ -1,0 +1,15 @@
+======OBJECT = MDLgUsr.Attribute === Usuario=====
+CHARACTER(16)
+
+
+====== PROPERTIES =======
+Name -> MDLgUsr
+Description -> Usuario
+HORIZONTAL_DESCRIPTION -> Usuario
+VERTICAL_DESCRIPTION -> Usuario
+ContextualTitle -> Usuario
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

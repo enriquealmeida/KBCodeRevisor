@@ -1,0 +1,21 @@
+======OBJECT = DMOrden.Domain === DMOrden=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-23T19:13:21.0000000Z" lastUpdate="2016-05-23T17:38:25.0000000Z" checksum="a8afe4df1a052dd5b2a15bf31aa6d344" fullyQualifiedName="DMOrden" guid="5f69b59e-9315-4fd1-8566-7ba5b6f7bcca" name="DMOrden" type="00972a17-9975-449e-aab1-d26165d51393" description="DMOrden">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMOrden</Value></Property><Property><Name>Description</Name><Value>DMOrden</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMOrden
+Description -> DMOrden
+OBJ_TYPE -> id_OTYPE_DOM
+IsDefault -> False

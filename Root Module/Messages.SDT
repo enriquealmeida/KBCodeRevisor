@@ -1,0 +1,15 @@
+======OBJECT = Messages.SDT === Messages=====
+
+=== STRUCTURE ===
+Messages, collection: Message
+	Id, V(128), Id 
+	Type, N(2), Type 
+	Description, V(256), Description 
+
+====== PROPERTIES =======
+Name -> Messages
+ExternalNamespace -> Genexus
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+ObjectVisibility -> Private
+IsDefault -> False

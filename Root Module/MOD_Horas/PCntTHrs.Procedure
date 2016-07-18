@@ -1,0 +1,20 @@
+======OBJECT = PCntTHrs.Procedure === Calc. Cantidad Total de Horas=====
+
+=== RULES ===
+parm(IN:&PryId ,IN:&TarId ,IN:&RspId ,IN:&CliId ,IN:&FchIni ,IN:&FchFin ,IN:&prycls ,IN:&prytpo , in:&Prbid, OUT:&HrsTot ) ;
+
+
+=== PROCEDURE SOURCE ===
+&HrsTot = 0
+for each order none using HorasSolicitudesDS(&FchIni,&FchFin,&CliId,&PryTpo,&PryCls,&PryId,&TarId,&RspId,&PrbId)
+          &HrsTot = &HrsTot + HrsCnt
+endfor
+
+
+====== PROPERTIES =======
+Name -> PCntTHrs
+Description -> Calc. Cantidad Total de Horas
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Private
+IsDefault -> False

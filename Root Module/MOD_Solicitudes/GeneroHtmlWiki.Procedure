@@ -1,0 +1,100 @@
+======OBJECT = GeneroHtmlWiki.Procedure === Genero Html Wiki=====
+
+=== RULES ===
+parm(in:PrbId, in:&HTMLCabezalWiki, out:&Html);
+
+
+=== PROCEDURE SOURCE ===
+//for each
+//	&Html = '<table border="1" cellpadding="1" cellspacing="1" style="100% ">'
+//	&Html +=format('	<tbody><tr><td>Solicitud</td><td><strong>%1 - %2</strong></td></tr>',PrbId,PrbDsc)
+//	&Html +=format('<tr><td>Sistema:</td><td>%1-%2</td></tr>',SisId,SisDsc)
+//	&Html +=format('<tr><td>Solicitado por:</td><td>%1</td><td>Realizado por:</td><td>%2</td></tr>',PrbUsr,CrrUsr)
+//	//&Html +=format('<tr></tr>',CrrUsr)
+//	&Html +=format('<tr><td>Descripción del cambio:</td><td>%1</td></tr></tbody></table>',PrbTxtCam)
+//endfor
+//&Html 
+
+&Html = ''
+for each
+	do case
+		case &HTMLCabezalWiki = HTMLCabezalWiki.DETALLADO
+		
+			&Html +=format('<table align="left" border="1" cellpadding="1" cellspacing="0" style="width: 100%; ">')
+			&Html +=format('	<tbody>')
+			&Html +=format('		<tr>')
+			&Html +=format('			<td style="width: 10%; ">')
+			&Html +=format('				<strong>Solicitud:</strong></td>')
+			&Html +=format('			<td colspan="3" rowspan="1">')
+			&Html +=format('				%1-%2</td>',PrbId,PrbDsc)
+			&Html +=format('		</tr>')
+			&Html +=format('		<tr>')
+			&Html +=format('			<td>')
+			&Html +=format('				<strong>Sistema:</strong></td>')
+			&Html +=format('			<td colspan="3" rowspan="1">')
+			&Html +=format('				%1 - %2</td>',SisId,SisDsc)
+			&Html +=format('		</tr>')
+			&Html +=format('		<tr>')
+			&Html +=format('			<td>')
+			&Html +=format('				<strong>Solicitado por:</strong></td>')
+			&Html +=format('			<td>')
+			&Html +=format('				%1</td>',PrbUsr)
+			&Html +=format('			<td style="width: 10%; ">')
+			&Html +=format('				<strong>Realizado por:</strong></td>')
+			&Html +=format('			<td>')
+			&Html +=format('				%1</td>',CrrUsr)
+			&Html +=format('		</tr>')
+			&Html +=format('		<tr>')
+			&Html +=format('			<td>')
+			&Html +=format('				<strong>Descripcion del Cambio:</strong></td>')
+			&Html +=format('			<td colspan="3" rowspan="1">')
+			&Html +=format('				%1</td>',PrbTxtCam)
+			&Html +=format('		</tr>')
+			&Html +=format('	</tbody>')
+			&Html +=format('</table>')
+		case &HTMLCabezalWiki = HTMLCabezalWiki.SIMPLifICADO
+		
+			&Html +=format('<table align="left" border="1" cellpadding="1" cellspacing="0" style="width: 100%; ">')
+			&Html +=format('	<tbody>')
+			&Html +=format('		<tr>')
+			&Html +=format('			<td style="width: 10%; ">')
+			&Html +=format('				<strong>Solicitud:</strong></td>')
+			&Html +=format('			<td colspan="3" rowspan="1">')
+			&Html +=format('				%1-%2</td>',PrbId,PrbDsc)
+			&Html +=format('		</tr>')
+			&Html +=format('		<tr>')
+			&Html +=format('			<td>')
+			&Html +=format('				<strong>Descripcion del Cambio:</strong></td>')
+			&Html +=format('			<td colspan="3" rowspan="1">')
+			&Html +=format('				%1</td>',PrbTxtCam)
+			&Html +=format('		</tr>')
+			&Html +=format('	</tbody>')
+			&Html +=format('</table>')
+		endcase
+endfor
+
+
+
+//&Html = format('<table border="0" cellpadding="1" cellspacing="1" style="width: 100%; " ><tbody><tr><td colspan="2"  "><span style="color: rgb(0, 0, 128); ">Solicitud:</span></td><td colspan="2"><strong>%1 - %2</strong></td>',PrbId,PrbDsc)
+//&Html+= format('</tr><tr><td><span style="color: rgb(0, 0, 128); ">Sistema:</span></td><td>MCRISPINO</td>
+//			<td>
+//				<span style="color: rgb(0, 0, 128); ">Realizado por:</span></td>
+//			<td>
+//				*NADIE</td>
+//		</tr>
+//		<tr>
+//			<td colspan="2">
+//				<span style="color: rgb(0, 0, 128); ">Solicitado por:</span></td>
+//			<td colspan="2">
+//				_</td>
+//		</tr>
+//	</tbody>
+//</table>
+
+
+====== PROPERTIES =======
+Name -> GeneroHtmlWiki
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

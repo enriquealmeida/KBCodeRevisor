@@ -1,0 +1,16 @@
+======OBJECT = IsAuthorized.Procedure === Is Authorized=====
+
+=== RULES ===
+Parm(in:&GxObject,  out:&Authorized);
+
+
+=== PROCEDURE SOURCE ===
+&Authorized=True
+
+
+====== PROPERTIES =======
+Name -> IsAuthorized
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 5
+ObjectVisibility -> Private
+IsDefault -> False

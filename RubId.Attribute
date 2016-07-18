@@ -1,0 +1,14 @@
+======OBJECT = RubId.Attribute === Rubro Contable=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> RubId
+Description -> Rubro Contable
+HORIZONTAL_DESCRIPTION -> Rubro Contable
+VERTICAL_DESCRIPTION -> Rubro 
+ContextualTitle -> Rubro 
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

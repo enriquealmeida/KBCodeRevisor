@@ -1,0 +1,15 @@
+======OBJECT = PryFchFinP.Attribute === Fecha fin planificada=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> PryFchFinP
+Description -> Fecha fin planificada
+HORIZONTAL_DESCRIPTION -> Fecha fin planificada
+VERTICAL_DESCRIPTION -> Fecha fin planificada
+ContextualTitle -> Fecha fin planificada
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

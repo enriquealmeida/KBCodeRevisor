@@ -1,0 +1,53 @@
+======OBJECT = SaveUserKeyValue.Procedure === Save User Key Value=====
+
+=== RULES ===
+parm(in:&UserCustomKey,in:&UserCustomValue);
+
+
+=== PROCEDURE SOURCE ===
+//This is a procedure in which user has to define how to load information related to each end user
+//By default it loads the ColumnsSelector State, the Grid State (filters, orders, etc) and Filters within 'ManageFilters' Action
+
+//Example to save in Session
+&Session.Set(&UserCustomKey, &UserCustomValue)
+
+//This is a procedure in which user has to define the behaviour of columns selector state.
+//There is an example below of a way to save grid state in DataBase for each user (but this can be modified to do whatever you wants):
+
+//if you want to save grid state for each user(save columns that are visible, invisible and its order)
+//you should create a transaction with the following structure:
+
+//Transaction:: UserCustom
+//				* UserId (Id)
+//				* UserCustomKey (VarChar(120))
+//				  UserCustomValue (VarChar(1000))
+//
+//Set this transaction as bussiness component
+
+//Then uncomment the code below and define the variables: 
+//														Context:: WWPContext
+//														UserCustom:: UserCustom                                                                                                                                 
+
+//After that, you should create the following attribute to SDT WWPContext:
+//                            UserId:: Id
+
+//Finally you should uncomment the code and define the correspondend variables in procedure: loadColumnsSelectorState
+
+//loadWWPContext.Call(&Context)
+//&UserCustom.load(&Context.UserId, &UserCustomKey)
+//if not &UserCustom.Success()
+//	&UserCustom = new()
+//	&UserCustom.UserId = &Context.UserId
+//	&UserCustom.UserCustomKey = &UserCustomKey
+//endif
+//&UserCustom.UserCustomValue = &UserCustomValue
+//&UserCustom.Save()
+//ommit
+
+
+====== PROPERTIES =======
+Name -> SaveUserKeyValue
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

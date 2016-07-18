@@ -1,0 +1,75 @@
+======OBJECT = HOConsDoc.WebPanel === Documentación del consolidado=====
+
+=== RULES ===
+parm(in:&CnsId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    tbkNomSis.Visible = 0
+    tblNomSis.Visible = 0
+    //tbkRefMenu.Caption = '<a name="Menu"></a>'
+EndEvent  // Start
+
+Event Refresh
+    for each
+        where      CnsId = &CnsId
+        &MesTxt = CMonth(CnsFch, 'spa')
+        &Dia = day(CnsFch)
+        &Mes = month(CnsFch)
+        &Anio = year(CnsFch)
+    endfor
+    //&Titulo = 'Manual de cambios de consolidado de ' + trim(&MesTxt) + ' de ' + trim(str(&Anio))
+    &Titulo = 'Manual de cambios: upgrade ' + trim(str(&Anio))
+    if &Mes < 10
+        &Titulo += '0'
+    endif
+    &Titulo += trim(str(&Mes))
+    if &Dia < 10
+        &Titulo += '0'
+    endif
+    &Titulo += trim(str(&Dia)) + '_' + trim(str(&CnsId))
+EndEvent  // Refresh
+
+Event grdDocs.load
+    &SisId = nullvalue(&SisId)
+
+    for each order SisId, PrbId
+        where      PrbCnsId = &CnsId
+        where      PrbSts = DMPrbSts.CER
+        where      PrbRequiereDocumentacion = true
+       // defined byPrbHrsPln
+
+        if SisId <> &SisId
+            &SisId = SisId
+            tbkNomSis.Caption = '<a name="#sistema' + trim(SisId) + '"></a><FONT color=#ffffff size=4>' + SisDsc + '</font>'
+            tbkNomSis.Visible = 1
+            tblNomSis.Visible = 1
+            tbkSeparacion.Caption = '<hr><p>&nbsp;</p>'
+        else
+            tbkNomSis.Visible = 0
+            tblNomSis.Visible = 0
+            tbkSeparacion.Caption = '<p>&nbsp;</p>'
+        endif
+
+        wbcDocPrb.Object = HODocCam.Create(PrbId)
+        load
+    when none
+        tbkNomSis.Caption = 'No existen solicitudes para el consoliado seleccionado.'
+        load
+    endfor
+EndEvent  // grdDocs.load
+
+
+
+
+====== PROPERTIES =======
+Name -> HOConsDoc
+Description -> Documentación del consolidado
+MasterPage -> Artech.Genexus.Common.CustomTypes.WebPanelReference
+AUTO_REFRESH -> VARS_CHANGE
+SPC_WARNINGS_DISABLED -> spc0096 spc0038
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

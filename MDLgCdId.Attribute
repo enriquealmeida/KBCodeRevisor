@@ -1,0 +1,15 @@
+======OBJECT = MDLgCdId.Attribute === Codigo de MD que se modifico=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> MDLgCdId
+Description -> Codigo de MD que se modifico
+HORIZONTAL_DESCRIPTION -> Codigo de MD que se modifico
+VERTICAL_DESCRIPTION -> Codigo de MD que se modifico
+ContextualTitle -> Codigo de MD que se modifico
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

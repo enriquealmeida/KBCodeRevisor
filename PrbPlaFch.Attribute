@@ -1,0 +1,16 @@
+======OBJECT = PrbPlaFch.Attribute === Fecha Planificada=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> PrbPlaFch
+Description -> Fecha Planificada
+HORIZONTAL_DESCRIPTION -> Fecha Planificada
+VERTICAL_DESCRIPTION -> Planificada
+ContextualTitle -> Fecha Planificada
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+EmptyAsNull -> No
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

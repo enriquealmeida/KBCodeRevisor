@@ -1,0 +1,9 @@
+======OBJECT = Auditing.Folder === Auditing=====
+<Object parent="WWPBaseObjects" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="f952860a-9553-4095-82c8-dedaadd8cf64" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-11-21T13:53:00.0000000Z" checksum="119f7e9cc97b83fea40bae0e920159fe" fullyQualifiedName="WWPBaseObjects.Auditing" guid="9d7573d2-332b-406f-b4f2-1b7620252bed" name="Auditing" type="00000000-0000-0000-0000-000000000008" description="Auditing">
+  <Properties><Property><Name>Name</Name><Value>Auditing</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+Name -> Auditing
+IsDefault -> False

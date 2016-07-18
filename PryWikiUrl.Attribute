@@ -1,0 +1,11 @@
+======OBJECT = PryWikiUrl.Attribute === Wiki=====
+VARCHAR(1000)
+
+
+====== PROPERTIES =======
+Name -> PryWikiUrl
+Description -> Wiki
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

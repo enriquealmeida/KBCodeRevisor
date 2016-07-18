@@ -1,0 +1,36 @@
+======OBJECT = FooterCenterBackground.Image === Footer Center Background=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T17:40:23.0000000Z" checksum="8bb1f681151587580f72c68bb3c2ae2a" fullyQualifiedName="FooterCenterBackground" guid="77387017-5423-4ce7-bcc9-8194117b96e2" name="FooterCenterBackground" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Footer Center Background">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="PiePagina.png" description="pie_1024x29px.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAABAAAAAABCAMAAAB30CwHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUw
+AADqYAAAOpgAABdwnLpRPAAAAwBQTFRFUGlmUWpnUGhoUWlpUmtoUmpqU2trU2xpVGlqVWtpVWprVWxqV21rVW5qVW5rVm9sWG5rWG5sWW9tV3BtWnBtWnBu
+W3FvXHNtXHJvXXRuXnVvXXNwXnRxX3VyX3ZwYHdxYndyYHZzYXd0YXhyYnhzY3pyY3p0ZHlyZXpzZHl0Znt0ZHp1Znt2ZXx0Znx1Znx3Z352aH12aX53aH14
+an94a4B5bIF6bYJ5boN6bYJ7b4R7cIR7cYZ7cIV8c4d8cYZ9cod+dIh9dYl+dIh/dop/d4uAeIyAeIyBeY2Ceo6Ceo6Df5GDfZKDfJCEfZGFfpOEfpKGf5OH
+f5SFgJKEgZOFgJKGgZOHgZSGg5WHgZaHgpeIhJaIhZeJg5iJhpiIh5mJhpiKh5mLiJqKiZuLiJqMipyMi52NjJ2NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfYSEYwAAABl0RVh0U29mdHdh
+cmUAUGFpbnQuTkVUIHYzLjUuODc7gF0AAAHWSURBVDhPrdPrVtpAFAVgqVCKQaSt0dhAsaZgUURNodQoRS6FYutUEI2BSGK88P5v4D4zBFzU/vNjTuayshYw
+s2du/tU8hEJvQq8XImFJkmKxaHRp6S28g/cyrKwsy4osK4pKEglVTSYTiWTyU4poGxvaZy6bzWQy25DL5VC7wldO1/d1vaBDAYqFYrH4jRyQUum7YBwahlE+
+LBvlcqWCVqkcH1ORer1ehZqvUWs0Gj/HWr5fwkm73W6hToCepzQ49TH2m7Ez7gKo71ySXrfT6ZmmSWVa1pXPsgZP2LbNZ+jta9t2CTrMXNdxnBviuqIwdxzP
+8/gidwfeLZYmbsGjB9zP+Gdh9oXx/GFqNBo9mb3g8D9f/ezy+O9Mfr4/n+09j/bjTuzT1HC6X8OhM+RbzNGQ9p/2nvT74mD6V4OBhRMzTTozOj5fF3Cyvd5f
+6J7jtBljf1CMTQKBAQWEZwWpEdlptZrNJnJFhaFIGjI3Rjms1iiS1eoPcnSEhtTiwyHKyDNSTfEuwQFPPJKP+NMtEPdB34e9vLCzk89vbX2BzXQ6ncmKi6Vp
+6xqkUh/hA7e2pqqKsrqqKLiZsrwMdGfjsXh8MSZFcZGlcDgSCQeDwQBaIDD3vEdjch2lM2psIgAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>PiePagina.png</Value></Property><Property><Name>Description</Name><Value>pie_1024x29px.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\PiePagina.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>FooterCenterBackground</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> FooterCenterBackground
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

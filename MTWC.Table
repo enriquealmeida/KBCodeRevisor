@@ -1,0 +1,9 @@
+======OBJECT = MTWC.Table === Web Components=====
+*MTWCWbp  DESC- Null=False
+ MTWCDsc  DMDescLarga- Null=False
+ MTWCMod  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MTWC
+Description -> Web Components
+CACHE_LEVEL -> 2

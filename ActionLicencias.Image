@@ -1,0 +1,30 @@
+======OBJECT = ActionLicencias.Image === Action Licencias=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-03-18T18:30:57.0000000Z" checksum="202d3e37063997694e31975233e707cc" fullyQualifiedName="ActionLicencias" guid="f7f4d228-f8a4-41bd-9416-eaacaf6c5853" name="ActionLicencias" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Licencias">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionLicencias.png" description="Action Licencias.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAArxJREFUSEu1VztoU1EY/s7NpeTRNAkdmiWBRO3k2AwBuxUKdXFzdJBAOxSx4JTZwcGKdKjg5Ojg
+JIoFtwoZ4hAciqK0Q0tpU0LIg6SkN7me/+Se5F5z8jT54OPc8z/Od/9zcx5hJgc4SqUS6vU6rO5Uoes6/H4/3G636LNarWZeXFyAMQav1wtN04Rjmri+vkaj
+0YDP58PS0hLY+fm52Wq1EA6HZyIoUalUkM/nEY1GoVWrVSwsLIhKaWpnxfn5ebhcLpTLZWhUJXVUgdMm6TSbTWjSQCAjVTwrSi1RKT1QS5COWVBqdSolEhg7
+xt6qDn11D8eKtx3u70+p0yNqmr9wlBFPaNl8XcaxfWjAONxGXOkfTEJneqWBMblsGDTF26ortWx8E2hzCweOnDb7Tq9ptr9t/0p5osP/G6/vLeNpJoWPBp8B
+4yd2k29x37WJz//kiizeTlCpxj02/8FL7PDPkXz1DBvCfwdPvn1CKvXA6nc5vUqt8Lu347aYdezvr9v6TvaIlko1NOjBqKPKDwE6CJysom7Y/DURjdyPXDcm
+9wJJ/TE+dHLalBpieom0IU+EtQ084k02vYevwnCCN1tpZHGEPyfC0IHU6lTaxS0sJ3iTTWNlcRGLdu60h3ViDbuF91z4HR6KuBWkswk8//4FmzErxILUYZlM
+xozFYuKsCwQCYhpof5wFzs7OxLmq+CHxDz3BEUc5wyh1HEumWCyKlmzjgJaDHGMUOiqVHBeqMQbxv0X75avsRIJjeu2OUWHfcST72XuWjJ306zX4PjoMFDcO
+aWyCslLpHCasyhtEqSUqpd3I7rTz5uamL1Xxg0g5YvmEQiEUCgVl0DRJV1C6/9JVl11eXpq5XA5zc3NiR6I3GQc04DCQGIkGg0EkEgmIvxX8lo/T01NcXV2N
+NMi48Hg8iEQi4nYPAH8BTE+mmZdVIgwAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionLicencias.png</Value></Property><Property><Name>Description</Name><Value>Action Licencias.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\awolff\Desktop\ActionLicencias.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionLicencias</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionLicencias
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

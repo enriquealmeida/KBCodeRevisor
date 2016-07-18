@@ -1,0 +1,32 @@
+======OBJECT = HOConsPrbRsp.WebPanel === Problemas del responsable en el consolidado=====
+
+=== RULES ===
+parm(in:PrbCnsId, in:CrrUsr, in:PrbSts, in:&Texto);
+
+
+=== EVENTS SOURCE ===
+Event Refresh
+    &ParUrlBase = PMTParChr('PARURLBASE')
+	
+    tbkmsg.Caption = &Texto
+EndEvent 
+
+Event Load
+	&PrbStsDescripcion = DMPrbSts.EnumerationDescription(PrbSts)
+    PrbId.Link = &ParUrlBase + GetSolicitudesLink(TrnMode.Update, PryId, PrbId)
+EndEvent 
+ 
+ 
+  // Refresh
+
+
+
+
+====== PROPERTIES =======
+Name -> HOConsPrbRsp
+Description -> Problemas del responsable en el consolidado
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

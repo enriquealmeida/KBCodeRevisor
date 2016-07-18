@@ -1,0 +1,21 @@
+======OBJECT = MarcarSolicitudComoTesteada.Procedure === Marca Solicitud como Testeada=====
+
+=== RULES ===
+parm(IN:PryId,IN:PrbId);
+
+
+=== PROCEDURE SOURCE ===
+
+for each order PryId, PrbId
+	SolicitudTesteada=true
+endfor
+
+
+====== PROPERTIES =======
+Name -> MarcarSolicitudComoTesteada
+Description -> Marca Solicitud como Testeada
+CommitOnExit -> Yes
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = AuxId.Attribute === Auxiliar Contable=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> AuxId
+Description -> Auxiliar Contable
+HORIZONTAL_DESCRIPTION -> Auxiliar Contable
+VERTICAL_DESCRIPTION -> Auxiliar
+ContextualTitle -> Auxiliar
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

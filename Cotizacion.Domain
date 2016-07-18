@@ -1,0 +1,27 @@
+======OBJECT = Cotizacion.Domain === Cotizacion=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-02-25T20:28:44.0000000Z" lastUpdate="2016-02-25T20:19:28.0000000Z" checksum="22c6216ea130add7d3c220d061b5b6df" fullyQualifiedName="Cotizacion" guid="6d0ea7e0-738f-4b55-8d26-d67148be74ab" name="Cotizacion" type="00972a17-9975-449e-aab1-d26165d51393" description="Cotizacion">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Cotizacion</Value></Property><Property><Name>Description</Name><Value>Cotizacion</Value></Property><Property><Name>Length</Name><Value>12</Value></Property><Property><Name>Decimals</Name><Value>3</Value></Property><Property><Name>AttMaxLen</Name><Value>12</Value></Property><Property><Name>AttAvgLen</Name><Value>3</Value></Property><Property><Name>Signed</Name><Value>True</Value></Property><Property><Name>idTHOUSANDSEP</Name><Value>True</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Cotizacion
+Description -> Cotizacion
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 12
+Decimals -> 3
+AttMaxLen -> 12
+AttAvgLen -> 3
+Signed -> True
+idTHOUSANDSEP -> True
+IsDefault -> False

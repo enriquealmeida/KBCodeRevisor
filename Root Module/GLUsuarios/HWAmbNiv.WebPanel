@@ -1,0 +1,42 @@
+======OBJECT = HWAmbNiv.WebPanel === Trabajar con nivles de un ambi=====
+
+=== RULES ===
+parm(in:GLUsAmbId ) ;
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &nivel = 9
+    PFUsuInt.call('CLAVES',&nivel,&vOk)
+EndEvent
+
+Event load
+    if &vOk = 'S'
+        &vEliminar ='Eliminar'
+        &vEliminar.Link =  TGLNIVHAB.link( GLUsAmbId ,GLUsAmbNvl ,TrnMode.Delete)
+        GLUsAmbNvl.Link = TGLNIVHAB.link(GLUsAmbId ,GLUsAmbNvl ,TrnMode.Update)
+    else
+        &vEliminar.Link = link( '')
+        GLUsAmbNvl.Link = link('')
+    endif
+EndEvent  // load
+
+Event 'Agregar'
+    if &vOk ='S'
+        TGLNIVHAB.call(GLUsAmbId,0,TrnMode.Insert)
+    endif
+EndEvent
+
+Event 'Cerrar'
+    HWamb.call()
+EndEvent    // 'Cerrar'
+
+
+====== PROPERTIES =======
+Name -> HWAmbNiv
+Description -> Trabajar con nivles de un ambi
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 20
+ObjectVisibility -> Private
+IsDefault -> False

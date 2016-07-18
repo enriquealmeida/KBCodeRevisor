@@ -1,0 +1,22 @@
+======OBJECT = HorasRealizadasSolicitud.Procedure === Horas Realizadas Solicitud=====
+
+=== RULES ===
+parm(in:&PrbId,out:&Horas);
+
+
+=== PROCEDURE SOURCE ===
+&Horas = 0 
+if &PrbId<>0
+	for each
+		where            PrbId = &PrbId
+		&Horas += HrsCnt
+	endfor
+endif
+
+
+====== PROPERTIES =======
+Name -> HorasRealizadasSolicitud
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

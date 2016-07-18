@@ -1,0 +1,61 @@
+======OBJECT = HMTValTransferencia.WebPanel === Valor Transferencia=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+Event Start
+
+&anoAux=year(today())
+
+EndEvent  
+
+Event load
+For &Ano=&anoAux-4 to &anoaux  
+  For &Mes=1 to 12
+      &FchIni=YMDtoD(&Ano,&Mes,1)
+      &FchFin=eom(&FchIni)
+     
+      if &FchFin > today()
+         exit
+      endif
+      
+      &HorasNoDistribuibles=0
+      &ImporteNoDistribuible=0
+      for each 
+        where      &FchIni <= CpMovFch and CpMovFch <= &FchFin
+        where      PryDist='N' 
+        where      CpMovEST='S'  //SOLO TOMO LAS SALIDAS PARA CALCULAR LAS HorAS. 
+          &ImporteNodistribuible += CpMovImp
+          &HorasNoDistribuibles += CpMovHrs
+      endfor
+
+      &ImporteDistribuible=0
+      &HorasDistribuibles=0
+      for each 
+        where      &FchIni <= CpMovFch and CpMovFch <= &FchFin
+        where      PryDist='S'
+        where      CpMovEST <> 'T' //NO TOMO LAS TRANSFERENCIAS
+          &HorasDistribuibles +=  CpMovHrs
+          &ImporteDistribuible += CpMovImp
+      endfor
+
+      if &HorasNoDistribuibles <> 0   
+          &TasaTransferencia= &ImporteDistribuible / &HorasNoDistribuibles
+      endif
+      load
+  endfor
+endfor
+
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HMTValTransferencia
+Description -> Valor Transferencia
+IsMain -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+IsDefault -> False

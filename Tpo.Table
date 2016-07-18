@@ -1,0 +1,8 @@
+======OBJECT = Tpo.Table === Tipo de Problemas=====
+*PrbTpo  SolicitudTipo- Null=False
+ PrbTpoDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> Tpo
+Description -> Tipo de Problemas
+CACHE_LEVEL -> 3

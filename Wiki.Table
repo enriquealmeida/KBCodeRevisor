@@ -1,0 +1,13 @@
+======OBJECT = Wiki.Table === Wiki=====
+*KBWikiId  Codigo10- Null=False
+ KBWikiDSC  DESC- Null=False
+ KBWikiBaseUrl  Url- Null=False
+ KBWikiUserId  Nombre- Null=False
+ KBWikiUserPassword  Password- Null=False
+ KBWikiHost  Nombre- Null=False
+ KBWikiHttps  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> Wiki
+Description -> Wiki
+CACHE_LEVEL -> 2

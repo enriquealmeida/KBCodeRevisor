@@ -1,0 +1,25 @@
+======OBJECT = DMBoleta.Domain === Número de boleta=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-23T19:13:21.0000000Z" lastUpdate="2016-05-23T17:46:28.0000000Z" checksum="83acfbe9645ecffde9a5a0a037053de3" fullyQualifiedName="DMBoleta" guid="d6a052a0-4ef5-4b0b-ab97-1a28af75cd48" name="DMBoleta" type="00972a17-9975-449e-aab1-d26165d51393" description="Número de boleta">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMBoleta</Value></Property><Property><Name>Description</Name><Value>Número de boleta</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>8</Value></Property><Property><Name>AttMaxLen</Name><Value>8</Value></Property><Property><Name>idCHARCASE</Name><Value>idCHARCASE_UPPER</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMBoleta
+Description -> Número de boleta
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 8
+AttMaxLen -> 8
+idCHARCASE -> idCHARCASE_UPPER
+IsDefault -> False

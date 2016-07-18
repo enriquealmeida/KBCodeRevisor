@@ -1,0 +1,41 @@
+======OBJECT = TabUnselectedUnselected.Image === Tab Unselected Unselected=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:55.0000000Z" checksum="757375ae447a6457fda48f1050061f11" fullyQualifiedName="TabUnselectedUnselected" guid="ce463bdd-5a79-4a33-a6e5-8b0b7cb85bcd" name="TabUnselectedUnselected" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Tab Unselected Unselected">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="Entre_Tab_secundarios.jpg" description="Tab Unselected Unselected.jpg"><Data>
+<base64Binary>
+/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMD/8AAEQgAGQARAwERAAIRAQMRAf/EAJcAAAIDAAAAAAAAAAAAAAAAAAEEAwUIAQACAQQDAAAAAAAAAAAAAAABAwQAAgUHBggJEAACAQIEAgMR
+AAAAAAAAAAABAgMRBAAhMQZBBVESVaHBIjJCUnKS0hMzFNSl1QgYEQABAgIFCAYLAAAAAAAAAAABAAIRAyExQVEEYXGREjLSBReBQkMUVAfwscHRUmJyM1Oj
+JP/aAAwDAQACEQMRAD8Au1JvrExk1vOXxs8R0a4sKmSZOJL2TEuBr7tm4KAO3B/nxGt2E1wB+V9ABzPq+rVvK89AO8SNTt5TTDKyMT0trzRuCqqnpyrlqMtR
+rnWhxNAvUOiKNT04ugFSkgnktporiE9WWFwyZdYVHAroysMiDkQSOOFTpTJksy3bBED6ZK41hMlvdLe17NoEEe7MbRamr+GNTFdWy0tbwM8S5kQyKQbi0LUG
+cLnwa5sjK3HCcNMdTImfel0HKOq4ZxXc4EWJ2IY0QnMokzKRkPWb0Gq9pBtSGfm90+ziRA/F6lFWM/6S3X2Ft71eZ/kMb75T8G8TitMvcWmOZXFfwYfQ/eTK
+fs3u1bea1bkG3XjlaOVSV5mGhmjPxIz8/q8bFWByIpXxVop3lFwQzWzu9YoObEdnSCKtiwwIusrKc3zP4uJbpXd8OQ6BqfQRbtXUFL/0nursXbX3H6/B5ScK
+8XitErcS+aHE/DYf9m8tnYxq5KgfJ9LvHBCI9igwEF//2Q==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Entre_Tab_secundarios.jpg</Value></Property><Property><Name>Description</Name><Value>Tab Unselected Unselected.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\Entre_Tab_secundarios.jpg</Value></Property></Properties></ImageItem>
+      <ImageItem><Image name="TabUnselectedUnselected.png" description="Tab Unselected Unselected.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAcAAAAqCAIAAADwAtZsAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACFJREFUOE9j+I8NMIyKgkNg
+NBwgCWE0HKgWDnexAezhCwCItWvydbLwGQAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>TabUnselectedUnselected.png</Value></Property><Property><Name>Description</Name><Value>Tab Unselected Unselected.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\Tabs\BootstrapTabs_images\TabUnselectedUnselected.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="TabUnselectedUnselected.png" description="Tab Unselected Unselected.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAcAAAAqCAIAAADwAtZsAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACFJREFUOE9j+I8NMIyKgkNg
+NBwgCWE0HKgWDnexAezhCwCItWvydbLwGQAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>TabUnselectedUnselected.png</Value></Property><Property><Name>Description</Name><Value>Tab Unselected Unselected.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\Tabs\BootstrapTabs_images\TabUnselectedUnselected.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>TabUnselectedUnselected</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> TabUnselectedUnselected
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

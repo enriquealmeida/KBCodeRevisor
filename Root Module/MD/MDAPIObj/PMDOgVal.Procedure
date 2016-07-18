@@ -1,0 +1,27 @@
+======OBJECT = PMDOgVal.Procedure === get de Valor de Metadata=====
+
+=== RULES ===
+Parm(IN:MDObjTpo ,IN:MDObjSec ,IN:MDCdId , OUT:&MDCdVal , OUT:&error );
+
+
+=== PROCEDURE SOURCE ===
+&MDCdVal = nullvalue(&MDCdVal)
+for each
+    &MDCdVal = trim(MDCdVal )
+     &error =0   
+     if MDCdLog = DMNivelLog.AlAcceder
+        PMDLgIns.call(MDObjTpo,MDObjSec,MDCdId,MDCdVal,DMAccion.Lectura)
+     endif
+when None
+     &error =1   
+endfor
+
+
+====== PROPERTIES =======
+Name -> PMDOgVal
+Description -> get de Valor de Metadata
+CommitOnExit -> No
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 36
+ObjectVisibility -> Private
+IsDefault -> False

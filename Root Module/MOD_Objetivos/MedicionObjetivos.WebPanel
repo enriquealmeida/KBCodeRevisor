@@ -1,0 +1,41 @@
+======OBJECT = MedicionObjetivos.WebPanel === Medicion Objetivos=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+//Event Start
+//	//&ObjFchIni =ymdtod(&Today.Year(),1,1)
+//	&ObjFchFin = &Today.AddYears(1)
+//	&ObjStsId='ABI'
+//	
+//    &Objetivos_SDT = CargoObjetivosIndicador(&ObjFchIni,&ObjFchFin,&ObjStsId)
+//	&Llamado = 'Ing'
+//	
+//	
+//EndEvent
+//
+//Event Refresh
+//   &Objetivos_SDT = 	(&ObjFchIni,&ObjFchFin,&ObjStsId)
+//EndEvent
+//
+////Event &ObjId.Click
+////   Objetivo.Call(TrnMode.Update,&ObjId)
+////EndEvent
+//
+//Event load
+//  &IndId = &Objetivos_SDT.CurrentItem.IndId
+//  &IndGrpId = &Objetivos_SDT.CurrentItem.IndGrpId
+//  &ObjId = &Objetivos_SDT.CurrentItem.ObjId
+//  &Fecha = iif(&Objetivos_SDT.CurrentItem.ObjFechaUltimaMedicion.IsEmpty(),&Today,&Objetivos_SDT.CurrentItem.ObjFechaUltimaMedicion)
+//  &Llamado.link = IndicadoresMediciones.Link(TrnMode.Update,&IndId,&IndGrpId,&Fecha) 
+//  &ObjId.Link = ViewObjetivo.Link(&ObjId,'')
+//EndEvent
+//
+
+
+====== PROPERTIES =======
+Name -> MedicionObjetivos
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 9
+IsDefault -> False

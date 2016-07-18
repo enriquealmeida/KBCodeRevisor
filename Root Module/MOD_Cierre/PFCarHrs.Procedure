@@ -1,0 +1,36 @@
+======OBJECT = PFCarHrs.Procedure === Se puede cargar horas ?=====
+
+=== RULES ===
+parm(in:&CpMovFch, out:&ErrCod );
+
+
+=== PROCEDURE SOURCE ===
+&ErrCod = Bool.True //'S'
+for each
+where          CpMovFch = &CpMovFch 
+where          CpMovEST = 'S'        // Salidas
+where          CpMovSts = 'V'        // Valorizados
+where          CpRecTpo = 'Hor'      // Recursos = Responsables
+where          CpMovHrs <> 0
+    &ErrCod = Bool.False //'N'
+when none
+    for each
+    where          CpMovFch = &CpMovFch 
+    where          CpMovEST = 'S'        // Salidas
+    where          CpMovSts = 'S'        // Sin valorizar
+    where          CpRecTpo = 'Hor'      // Recursos = Responsables 
+    where          CpMovHrs <> 0
+          delete
+    endfor
+endfor
+commit
+
+
+====== PROPERTIES =======
+Name -> PFCarHrs
+Description -> Se puede cargar horas ?
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

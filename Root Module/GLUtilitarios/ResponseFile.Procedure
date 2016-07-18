@@ -1,0 +1,61 @@
+======OBJECT = ResponseFile.Procedure === Response File=====
+
+=== RULES ===
+Parm(in:&ParameterGUIDString,in:&DBMIMETypeIIS,in:&ContentDisposition, in:&FilePrettyDownloadName);
+
+/* &FileName puede ser ruta completa en file system o ruta relativo al directorio de ejecución*/
+
+
+=== PROCEDURE SOURCE ===
+&WebSessionGUIDString = &WebSession.Get(ResponseFileEnum.PRIVATETEMPSTorAGEGUID)
+if &ParameterGUIDString = &WebSessionGUIDString
+	&errorDescription.SetEmpty()
+	
+	&FileName = &WebSession.Get(ResponseFileEnum.FILENAME)
+
+	
+//	&DBMIMETypeIIS = PFMIMEType(&DBMIMETypeExt)
+//	if &DBMIMETypeIIS.IsEmpty()
+//		&errorDescription = &errorDescription + ' El programa no puede asociar un tipo MIME para ' + &DBMIMETypeExt
+//	endif
+	
+	&httpResponse.AddHeader(!"X-Frame-Options","SAMEorIGIN")
+	&httpResponse.AddHeader(!"Type-Options","nosniff")
+	&HttpResponse.AddHeader(!"Content-Type",&DBMIMETypeIIS)
+	
+	if &FilePrettyDownloadName.IsEmpty()
+		&errorDescription = &errorDescription + ' El nombre del archivo de download no puede ser vacío' 
+	endif
+	
+	if &ContentDisposition <> ContentDispositionEnum.inline and &ContentDisposition <> ContentDispositionEnum.attachment
+		&errorDescription = &errorDescription + ' El programa no puede manejar Content-Disposition=' + &ContentDisposition
+	endif
+else
+	&errorDescription = &errorDescription + ' El request no pertenece a la misma sesión del programa llamador'
+endif
+
+if &errorDescription.IsEmpty()
+	do case 
+		case &ContentDisposition = ContentDispositionEnum.inline
+			&httpResponse.AddHeader(!"Content-Disposition", !"inline;filename=" + &FilePrettyDownloadName)
+		case &ContentDisposition = ContentDispositionEnum.attachment
+			&httpResponse.AddHeader(!"Content-Disposition", !"attachment;filename=" + &FilePrettyDownloadName)
+	endcase
+	&HttpResponse.AddFile(&FileName)
+else
+	/* Cuando hay errores el Content-Disposition se ajuste para que los errores se 
+	vean en pantalla y nunca en el archivo generado que podría quedar ilegible */
+	//&httpResponse.AddHeader(!"Content-Disposition", !"inline;filename=" + 'errores.txt')
+	&httpResponse.AddHeader(!"Content-Disposition", !"inline")
+	&HttpResponse.AddString(&errorDescription)
+endif
+
+
+====== PROPERTIES =======
+Name -> ResponseFile
+IsMain -> True
+CALL_PROTOCOL -> HTTP
+AppLocation -> LUCIAX
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

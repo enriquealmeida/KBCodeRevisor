@@ -1,0 +1,15 @@
+======OBJECT = HaceCommit.Procedure === Hace Commit=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+commit
+
+
+====== PROPERTIES =======
+Name -> HaceCommit
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

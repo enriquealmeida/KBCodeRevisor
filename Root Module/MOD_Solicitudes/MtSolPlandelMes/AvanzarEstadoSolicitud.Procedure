@@ -1,0 +1,37 @@
+======OBJECT = AvanzarEstadoSolicitud.Procedure === Avanzar Estado Solicitud=====
+
+=== RULES ===
+Parm(in:&PryId, in:&PrbId, out:&errorDescription);
+
+
+=== PROCEDURE SOURCE ===
+&errorDescription.SetEmpty()
+for each
+where          PrbId = &PrbId
+	&PrbStsSiguiente = SiguienteEstadoSolicitud(PrbSts)
+	if &PrbStsSiguiente.IsEmpty()
+		&errorDescription = format('No existe la definición de siguiente estado para el estado: %1',PrbSts)
+	else
+		&BCSolicitudes.load(&PryId, &PrbId)
+		&BCSolicitudes.PrbSts = &PrbStsSiguiente
+		&BCSolicitudes.Save()
+		if &BCSolicitudes.Success()
+			commit
+		else
+			&Messages = &BCSolicitudes.GetMessages()
+			for &Message in &Messages
+				&errorDescription = &errorDescription + newLine() + &Message.Description
+			endfor
+		endif
+	endif
+when none
+	&errorDescription = format('La solicitud %1 no existe',&PrbId)
+endfor
+
+
+====== PROPERTIES =======
+Name -> AvanzarEstadoSolicitud
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,9 @@
+======OBJECT = MTCPGL.Folder === MTCPGL=====
+<Object parent="MOD_Costos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="369d3627-bc9f-467c-8d20-e200def4955e" user="" versionDate="2016-03-15T17:55:23.0000000Z" lastUpdate="2016-03-15T16:26:46.0000000Z" checksum="13ccd3fdb8ad1a63e7c3add6dd5b07a3" fullyQualifiedName="MOD_Costos.MTCPGL" guid="6e9e8711-f401-45e1-83ac-db54a73a864e" name="MTCPGL" type="00000000-0000-0000-0000-000000000008" description="MTCPGL">
+  <Properties><Property><Name>Name</Name><Value>MTCPGL</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+Name -> MTCPGL
+IsDefault -> False

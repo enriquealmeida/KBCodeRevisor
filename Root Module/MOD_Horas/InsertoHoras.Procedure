@@ -1,0 +1,62 @@
+======OBJECT = InsertoHoras.Procedure === Ingreso Horas=====
+
+=== RULES ===
+parm(IN:&HrsFch ,IN:&RspId ,IN:&PryId , IN:&TarId ,IN:&CliId,  IN: &PrbId ) ;
+
+
+=== PROCEDURE SOURCE ===
+if &HrsFch.IsEmpty()
+	//msg('No se puede ingresar horas a la fecha nula')
+else
+	if &RspId.IsEmpty() 
+		//msg('Se debe ingresar un responsable')
+	else
+		new 
+			HrsFch=&HrsFch
+		    RspId=&RspId.ToUpper()
+			UltimoRenglonId=1
+			when duplicate    
+		endnew
+		
+		for each
+		   where           RspId=&RspId
+		   &HrsIng=RspHorAlm
+		endfor
+		
+	    //do 'AgregoSolicitud'
+           
+		if &HrsIng > 0
+		    &hrs = 0
+		    for each
+				where           HrsFch=&HrsFch
+				where           RspId =&RspId
+		        &hrs =HrsTot
+		    endfor
+		    if &hrs = 0
+		        new 
+					RenglonId=1
+		            Anio =year(HrsFch)
+		            Mes=month(HrsFch)
+		            HrsCnt=&HrsIng
+		            HrsObs='Ingresada automaticamente'
+					PryId=&PryId.ToUpper()
+					TarId=&TarId.ToUpper()
+					PrbId=&PrbId
+			        when duplicate
+				    
+		        endnew
+		    endif
+		endif
+		commit
+	endif
+endif
+
+
+====== PROPERTIES =======
+Name -> InsertoHoras
+Description -> Ingreso Horas
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Public
+IsDefault -> False

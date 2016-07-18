@@ -1,0 +1,41 @@
+======OBJECT = WWTMTSolOriDS.DataSelector === WWTMTSol Ori DS=====
+<Object parent="MOD_Solicitudes.WorkWithPlusTMTSolOri" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="ff2e0f27-0938-03ea-2fee-099bcdcf8202" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:31.0000000Z" checksum="baf6def163e7ddc2c64aeac60d54ccb7" fullyQualifiedName="MOD_Solicitudes.WWTMTSolOriDS" guid="7e670695-ae6f-46f8-b558-3122604228d8" name="WWTMTSolOriDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWTMTSol Ori DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[SolOriDsc like &SolOriDsc when not &SolOriDsc.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="SolOriDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>SolOriDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:SolOriDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>SolOriDsc</Name>
+        <Description>Sol Ori Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWTMTSolOriDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Solicitudes.WorkWithPlusTMTSolOri</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWTMTSolOriDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-117
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 117
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

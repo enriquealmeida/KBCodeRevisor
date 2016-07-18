@@ -1,0 +1,43 @@
+======OBJECT = ResponsablesActivos.DataProvider === Responsables Activos=====
+
+=== RULES ===
+
+<Object parent="MOD_Proyectos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="63d3e12e-5311-4674-aab2-7be88ec310ed" user="" versionDate="2016-04-13T14:35:58.0000000Z" lastUpdate="2016-04-13T14:10:28.0000000Z" checksum="c725f3ec15ba22cc28db6145d6723f87" fullyQualifiedName="MOD_Proyectos.ResponsablesActivos" guid="f8c1afde-d452-479c-abd1-2ba27642efbb" name="ResponsablesActivos" type="2a9e9aba-d2de-4801-ae7f-5e3819222daf" description="Responsables Activos">
+  <Part type="1d8aeb5a-6e98-45a7-92d2-d8de7384e432">
+    <Source><![CDATA[SDTResponsablesActivos
+{
+	SDTResponsablesActivosItem USING ResponsablesActivosDS() 
+	{
+		DRspId = RspId
+	}
+}
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+    <Source><![CDATA[]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+    <Properties />
+  </Part>
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ResponsablesActivos</Value></Property><Property><Name>OutputSDT</Name><Value>447527b5-9210-4523-898b-5dccb17be60a-MOD_Proyectos.SDTResponsablesActivos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ResponsablesActivos
+OutputSDT -> 447527b5-9210-4523-898b-5dccb17be60a-80
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

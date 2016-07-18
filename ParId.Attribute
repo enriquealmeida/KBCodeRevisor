@@ -1,0 +1,11 @@
+======OBJECT = ParId.Attribute === Par Id=====
+NUMERIC(8)
+
+
+====== PROPERTIES =======
+Name -> ParId
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AUTONUMBER -> False
+IsDefault -> False

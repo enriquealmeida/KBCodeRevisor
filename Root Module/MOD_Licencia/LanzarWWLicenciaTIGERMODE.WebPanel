@@ -1,0 +1,20 @@
+======OBJECT = LanzarWWLicenciaTIGERMODE.WebPanel === Lanzar WWLicencia TIGERMODE=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Start
+	&Session.Set('MODOLICENCIA',ModoLicencias.TIGERMODE)
+	WWLicencia()
+EndEvent	
+
+
+====== PROPERTIES =======
+Name -> LanzarWWLicenciaTIGERMODE
+WEB_COMP -> No
+MasterPage -> Artech.Genexus.Common.CustomTypes.WebPanelReference
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Public
+IsDefault -> False

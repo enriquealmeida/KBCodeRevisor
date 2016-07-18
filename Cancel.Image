@@ -1,0 +1,37 @@
+======OBJECT = Cancel.Image === Cancel=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:53.0000000Z" checksum="2be5ac98f6aa311458ccdf81c988e42b" fullyQualifiedName="Cancel" guid="0e94ced8-bc34-47ff-9a53-bc683736a686" name="Cancel" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Cancel">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="Cancel.png" description="Cancel.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAK8AAACvABQqw0mAAAABh0RVh0U29mdHdhcmUAQWRv
+YmUgRmlyZXdvcmtzT7MfTgAAAZ1JREFUOI2lkz1rVFEQhp+59+yuQckmBDaIBIvYSxQxkaCkyB+w1MKUFjb5C6JgKyKChQaV/ICgkCqFhboqCQS0sxFEXBJ3
+s3q/zr3njMUly5pgou7A2xxmnpl5mSOqyiARDFR9EODZ5uzc8ubpyn8BHq1PLyV5Zy3Kf5w9DGD2Pjx8P7tkXeda7tvUTH2k+eVBNc5b0usoQ5yqr9oTI2sK
+IP0m3n976bF12wvW7SAINdPomuCYBS+/t9HIOntucabZ6k1wtzl3Lyu6C1kRI3IEAGvbw6rbQH+9EogZq4RHR4EScPvlhQnnsxvWRYjUDlsbgNw73/MgydKt
+xNpPSnVS5O/uIpBy+ADg1vx6EmfV+TgNvkVJSJSW+pn8WXEqbp+JV59OTXrnXik0BDAmvBMEfOg3QRBR1a6KWXly5Z2Xvad8efn8yfR7+torx8PK0JkX199s
+HLSKqCpGpA6MAjUH6cTFxtT49Nji5+dfb2597LQEQsADDiiADGgXqju7AANUKRMDB5mqpiIyHJZGa592QbZQLfat8K8x8G/8Bcc0xz8gnRZ4AAAAAElFTkSu
+QmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Cancel.png</Value></Property><Property><Name>Description</Name><Value>Cancel.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\claudia\Downloads\Img_Pesobook_theme\Cancel.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="Cancel.png" description="Cancel.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAK8AAACvABQqw0mAAAABh0RVh0U29mdHdhcmUAQWRv
+YmUgRmlyZXdvcmtzT7MfTgAAAZ1JREFUOI2lkz1rVFEQhp+59+yuQckmBDaIBIvYSxQxkaCkyB+w1MKUFjb5C6JgKyKChQaV/ICgkCqFhboqCQS0sxFEXBJ3
+s3q/zr3njMUly5pgou7A2xxmnpl5mSOqyiARDFR9EODZ5uzc8ubpyn8BHq1PLyV5Zy3Kf5w9DGD2Pjx8P7tkXeda7tvUTH2k+eVBNc5b0usoQ5yqr9oTI2sK
+IP0m3n976bF12wvW7SAINdPomuCYBS+/t9HIOntucabZ6k1wtzl3Lyu6C1kRI3IEAGvbw6rbQH+9EogZq4RHR4EScPvlhQnnsxvWRYjUDlsbgNw73/MgydKt
+xNpPSnVS5O/uIpBy+ADg1vx6EmfV+TgNvkVJSJSW+pn8WXEqbp+JV59OTXrnXik0BDAmvBMEfOg3QRBR1a6KWXly5Z2Xvad8efn8yfR7+torx8PK0JkX199s
+HLSKqCpGpA6MAjUH6cTFxtT49Nji5+dfb2597LQEQsADDiiADGgXqju7AANUKRMDB5mqpiIyHJZGa592QbZQLfat8K8x8G/8Bcc0xz8gnRZ4AAAAAElFTkSu
+QmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Cancel.png</Value></Property><Property><Name>Description</Name><Value>Cancel.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\claudia\Downloads\Img_Pesobook_theme\Cancel.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Cancel</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Cancel
+IsDefault -> False

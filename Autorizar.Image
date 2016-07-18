@@ -1,0 +1,35 @@
+======OBJECT = Autorizar.Image === Autorizar=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-03-10T18:10:31.0000000Z" checksum="f306f0fcf2169caebe10348a8121c12e" fullyQualifiedName="Autorizar" guid="57536156-6cd0-4756-97b0-20ef2fa0df79" name="Autorizar" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Autorizar">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionAutorizar.png" description="Autorizar.gif"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAASaSURB
+VEhLvZZtaFtVGMf/997cpElf0qRv6XSttsUOdYpbrZsv7MUps4I6KiroB6WIbKIoMvyinwYK4tikykC/KAxfNpAxZOialeGsczjazomsZl3Tl6xJ06Rt0uTe
+m5t7r+fcnZulXZu20PqDh+Se85zzP885z73n4QwCCNPT05AkCexxVbHZbCgtLYXT6TSfuVQqZYTDYXAcB5fLBZ7nzY7VRJZlZDIZFBcXw+fzgQuFQoau6ygv
+L2cua4OmaZiYmEBdXR342dlZlJWVsa61QxAE0xKJBHgaJX34P6A6NGKeJs5ykic8eBVf7WvH4RcewV/+n1nryrC0zEiXEv3t60/x0/tPw/jXD1f8b1w8+Bp+
+ObCXzsI8loellYtUFEXWNZeuzg9w6fuPYEgxCCSzqRmajKnff8Txt55lXktD57e0cqLU5pOajGDg9DdwkFcJvA06JyCrcqZlyJslDV3AtfNnmHdh8jVy27uQ
+6HjgMgSbAZV2CQYcxRq8VVnTMooBjrSP/Om/4cwwbBoGpT/Y003o/JYW19fXZ9TX18PhcJiN+Tj0KNRLL5r/BX0GIh8HjxlkkxqOHhGRljy4fdse7Hz3E9OH
+0qseheQYgXN8KzbV7GCtJDpyLGNjY+ZXqWCkCl8FV/W9cPka4fCuA++qJSvxEF8dD25WkJJTqLnnIeYNXJZPQvMEybso4j7fo6z1BvmRFjxTiuzaA9jdgKuO
+/HogT5VictSO6iIe25/Zhrt3tZt+15QexMp6EE2HcZfxJGzG3MTM11lS9PC5E9j3ZhdmphSyx24Iig0CycRjA07c9uqXkOQ0wuoVXLF/h6yYRCJchMbS+9no
+m+Rr2GjIuQMmH/18Mq5BqPoIhu8U8cqhX+Ec4uC0y+i9yiHVXAy57z20t3yIC9pB8M40IpMZvFx9nI2eC53f0spFutDtMpH4B21tT+CHziPY+vzj6I4JOE+S
+p2XvRnz8xWZkHQM4Gd0PWYwiraSgxcgRLIKlQyn4RbqudMNVZEckMQXvAym8c7oMHZ834PWOHai0V8JR5QUq40ipZIsnp7Cr4m028laohqWVi3Q+6XQaaX0M
+16UeKNwodImsUFCh1Q7jVOgEehMjyLgj5K6cNa1K3oJ1zno2+lYsHVN0sUjphT42TqLQhxFSz6C5vArpKKDKGYhusqCSIEmipGnRaAK7a/ezkQszR9T6oygk
+O+chRTcgNqnBsEfIKgZQay/BTHIacjo1x+qzbfCS7S7EgqL0izSfjsc+Q3xwE86dTWJweAYl5D7MxMliFFJPMQuHEtjg3MlGLI6lQymYSLxuwxvbD+Gphk7E
+Aw/j4llS0gRbkJFEsjMqFDmLBvE5bLljNxuxMFbBR7Wocd3d3UZjYyO8XpKJy6Qn8i38gWNo9m3ES00HWOvi0KSkBINBuN1ucH6/32hqakJFRYXZsdqQapP9
+A4aGhswCkOvq6jJvGVqXrjWBQAA1NTXgPR4PYrFY7qDXypLJpFn/mnUvKbSN/v5+2O12c79XWmzTCZeCilFRurWtra3k8ifQfR8dHSUveXRZk6wUenGvX7/e
+jBIA/gOMCgembp4NxgAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionAutorizar.png</Value></Property><Property><Name>Description</Name><Value>Autorizar.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\awolff\Desktop\ActionAutorizar.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Autorizar</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Autorizar
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,17 @@
+======OBJECT = PrbTpoCal.Attribute === Tipo de Problemas Calidad=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> PrbTpoCal
+Description -> Tipo de Problemas Calidad
+HORIZONTAL_DESCRIPTION -> Tipo de Problemas Calidad
+VERTICAL_DESCRIPTION -> Tipo de Problemas Calidad
+ContextualTitle -> Tipo de Problemas Calidad
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+ControlType -> 4
+ControlItemDescription -> PrbTpoCalDsc
+IsDefault -> False

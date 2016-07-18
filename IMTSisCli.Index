@@ -1,0 +1,13 @@
+======OBJECT = IMTSisCli.Index === IMTSis Cli=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:31.0000000Z" checksum="0102804def19c45e1483f0131b80ee9b" fullyQualifiedName="IMTSisCli" guid="3fabc221-7399-457f-ae88-e1c05c88b1f0" name="IMTSisCli" type="9e750647-3679-0000-0100-2529de263960" description="IMTSis Cli">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CliId</Member>
+      <Member Order="Ascending">SisId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IMTSisCli</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IMTSisCli

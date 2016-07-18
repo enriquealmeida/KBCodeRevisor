@@ -1,0 +1,43 @@
+======OBJECT = WorkWithPlusListoActividadDelMes.WorkWithPlus === Work With Plus Listo Actividad Del Mes=====
+<Object parent="MOD_Solicitudes.ListoActividadDelMes" parentType="c9584656-94b6-4ccd-890f-332d11fc2c25" parentGuid="edabbf62-99c4-4a28-a1e0-72a846bd8bef" user="AW\awolff" versionDate="2016-07-02T22:29:54.0000000Z" lastUpdate="2016-07-02T21:55:02.0000000Z" checksum="877d25e00040e0c8b65db62e5432dfea" fullyQualifiedName="MOD_Solicitudes.WorkWithPlusListoActividadDelMes" guid="eab8e7f2-cf38-02b3-15e8-749f64471492" name="WorkWithPlusListoActividadDelMes" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Listo Actividad Del Mes">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="7;57;">
+  <WPRoot childrenOrderedList="7;66;Main Table" Template="(none)" defaultTemplate="(none)">
+    <table name="MainTable" numberOfColumns="2" type="Responsive">
+      <textBlock controlName="Texblock1" caption="Se listaran todas las solicitudes que hayan pasado por los estados CER y INS en el periodo. " themeClass="Label" cellWidth_S="100%" />
+      <table type="Responsive" cellWidth_S="8%" startCol="1" />
+      <table name="TableFilters" numberOfColumns="2" type="Responsive" cellWidth_S="92%">
+        <table name="TableFechas" numberOfColumns="2" type="Regular">
+          <textBlock controlName="Fechas" caption="Fechas" themeClass="Label" />
+          <variable name="FchIni" defaultName="Fecha" description="Fecha" defaultDescription="Fecha" domain="00972a17-9975-449e-aab1-d26165d51393-Fecha" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-Fecha" startCol="1" showDescription="False" />
+          <variable name="FchFin" defaultName="Fecha" description="Fecha" defaultDescription="Fecha" domain="00972a17-9975-449e-aab1-d26165d51393-Fecha" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-Fecha" showDescription="False" />
+        </table>
+        <variable name="CliId" defaultName="CliId" description="Cliente" defaultDescription="Cliente" domain="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-CliId" descriptionPosition="Top" />
+        <variable name="PrbPryId" description="Proyecto" dataType="Basic" basicType="Character" basicCLength="10" controlInfo="00972a17-9975-449e-aab1-d26165d51393-PROYECTO" cellWidth_S="50%" descriptionPosition="Top" />
+        <variable name="SoloTitulos" description=" " dataType="Basic" basicType="Boolean" controlInfoDef="Custom" controlType="Check Box" controlControlTitle="Solo títulos" showDescription="True" descriptionPosition="Top" />
+      </table>
+      <userTable name="GridUserTable" themeClass="Table100x100" />
+      <table name="TableTotales" type="Responsive" cellWidth_S="100%" align="Left">
+        <variable name="Abiertos" description="Solicitudes Abiertas en el Periodo" dataType="Basic" basicLength="10" cellWidth_S="100%" readOnly="True" />
+        <variable name="i" description="Solicitudes CER o INS del Periodo" dataType="Basic" basicLength="10" readOnly="True" />
+      </table>
+    </table>
+    <steps />
+    <events />
+  </WPRoot>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusListoActividadDelMes</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.ListoActividadDelMes</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c9584656-94b6-4ccd-890f-332d11fc2c25
+FolderId -> 270
+Name -> WorkWithPlusListoActividadDelMes
+ObjectVisibility -> Private
+KBObject -> c9584656-94b6-4ccd-890f-332d11fc2c25-270
+IsDefault -> False

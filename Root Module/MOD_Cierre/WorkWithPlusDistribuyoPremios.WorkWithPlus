@@ -1,0 +1,42 @@
+======OBJECT = WorkWithPlusDistribuyoPremios.WorkWithPlus === Work With Plus Distribuyo Premios=====
+<Object parent="MOD_Cierre.DistribuyoPremios" parentType="c9584656-94b6-4ccd-890f-332d11fc2c25" parentGuid="c092d008-3b77-4516-8cb1-53746d0caced" user="" versionDate="2016-04-14T19:32:29.0000000Z" lastUpdate="2016-04-14T17:18:38.0000000Z" checksum="222eb4b62a81f049775c07077cd52ec2" fullyQualifiedName="MOD_Cierre.WorkWithPlusDistribuyoPremios" guid="c7818898-6d8b-0d8d-38b9-55434ff63390" name="WorkWithPlusDistribuyoPremios" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Distribuyo Premios">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="7;57;" SecFuntionKey="DistribuyoPremios" defaultSecFuntionKey="DistribuyoPremios">
+  <WPRoot childrenOrderedList="7;66;Main Table-7;75;ShowMessages-7;75;LoadWWPContext" Template="CreateData" defaultTemplate="CreateData">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="7;27;TextBlockTitle-7;28;ErrorViewer-7;66;TableContent-7;88;Actions">
+      <textBlock controlName="TextBlockTitle" defaultControlName="TextBlockTitle" caption="Data" defaultCaption="Data" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellThemeClass="" colSpan="1" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="7;66;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" defaultCellWidth_S="75%" defaultCellWidth_L="50%" cellThemeClass="">
+          <variable name="RspId" defaultName="RspId" description="Responsable" defaultDescription="Responsable" themeClass="" descriptionThemeClass="" domain="adbb33c9-0906-4971-833c-998de27e0676-RspId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-RspId" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" />
+          <variable name="CpMovImp" defaultName="CpMovImp" description="Importe del Premio" defaultDescription="Importe del Movimiento" themeClass="" descriptionThemeClass="" domain="adbb33c9-0906-4971-833c-998de27e0676-CpMovImp" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-CpMovImp" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" />
+          <variable name="CpMovFchIni" defaultName="CpMovFchIni" description="Desde" defaultDescription="Fecha del Movimiento" themeClass="" descriptionThemeClass="" domain="adbb33c9-0906-4971-833c-998de27e0676-CpMovFch" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-CpMovFch" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" />
+          <variable name="CpMovFchFin" defaultName="CpMovFchFin" description="Hasta" defaultDescription="Fecha del Movimiento" themeClass="" descriptionThemeClass="" domain="adbb33c9-0906-4971-833c-998de27e0676-CpMovFch" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-CpMovFch" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" mergeWithPrevious="True" />
+          <variable name="CpMovCot" defaultName="CpMovCot" description="Cotización" defaultDescription="Cotización" themeClass="Attribute" descriptionThemeClass="" domain="adbb33c9-0906-4971-833c-998de27e0676-CpMovCot" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-CpMovCot" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" />
+        </table>
+      </table>
+      <actionGroup themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" name="Actions" defaultName="Actions" childrenOrderedList="7;91;Enter-7;91;Cancel">
+        <standardAction name="Enter" defaultName="Enter" />
+        <standardAction name="Cancel" defaultName="Cancel" />
+      </actionGroup>
+    </table>
+    <steps />
+    <events>
+      <eventBlock BlockName="LoadWWPContext" defaultBlockName="LoadWWPContext" />
+    </events>
+  </WPRoot>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusDistribuyoPremios</Value></Property><Property><Name>KBObject</Name><Value>c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Cierre.DistribuyoPremios</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c9584656-94b6-4ccd-890f-332d11fc2c25
+FolderId -> 1089
+Name -> WorkWithPlusDistribuyoPremios
+KBObject -> c9584656-94b6-4ccd-890f-332d11fc2c25-1089
+IsDefault -> False

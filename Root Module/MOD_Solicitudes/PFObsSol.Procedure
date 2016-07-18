@@ -1,0 +1,23 @@
+======OBJECT = PFObsSol.Procedure === Hay observaciones en solicitud?=====
+
+=== RULES ===
+parm(in:PrbId, out:&hayObs);
+
+
+=== PROCEDURE SOURCE ===
+&hayObs = Bool.false
+for each
+    where            SolObsTpo = 'OBS'
+
+    &hayObs = Bool.true
+    exit
+endfor
+
+
+====== PROPERTIES =======
+Name -> PFObsSol
+Description -> Hay observaciones en solicitud?
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

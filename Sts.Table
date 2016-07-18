@@ -1,0 +1,11 @@
+======OBJECT = Sts.Table === Estado de los Problemas=====
+*PrbSts  DMPrbSts- Null=False
+ PrbStsDsc  DESC- Null=False
+ PrbStsOrden  DMOrden- Null=False
+ PrbEstadoActivo  OBLIGATORIO- Null=False
+ PrbStsRequiereUsuario  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> Sts
+Description -> Estado de los Problemas
+CACHE_LEVEL -> 3

@@ -1,0 +1,37 @@
+======OBJECT = TMTSUMDPlaExt.Transaction === Detalle de sueldo en planilla =====
+
+=== RULES ===
+parm(in:RspId, in:RspSuA,in: RspSuM, in:PryId, in:RspSuFch, in:TpoHonId, in:MonId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &ErrCod = 0
+    PFUsuHab.call('SUELDOS',9,&Ok)//Seguridad
+    if &Ok <> 'S'
+        &ErrCod = 1
+        &ErrDsc = 'Debe tener nivel 9 en el ambiente SUELDOS para poder modificar'
+    endif
+
+    &ParFchLiq = PMTParFch('PARULTLIQ')
+EndEvent  // Start
+
+
+=== STRUCTURE ===
+RspId*
+RspSuA*
+RspSuM*
+PryId*
+RspSuFch*
+TpoHonId*
+MonId*
+RspSuPlaExt
+
+
+====== PROPERTIES =======
+Name -> TMTSUMDPlaExt
+Description -> Detalle de sueldo en planilla 
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Private
+IsDefault -> False

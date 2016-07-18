@@ -1,0 +1,9 @@
+======OBJECT = MTHorasAtrasos.Folder === MTHoras Atrasos=====
+<Object parent="MOD_Horas" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="ef519605-8f4a-4442-969e-2c07364ba5e0" user="" versionDate="2016-03-14T12:23:37.0000000Z" lastUpdate="2016-03-14T11:15:28.0000000Z" checksum="d15526c41147ca832e80808485f8e4f8" fullyQualifiedName="MOD_Horas.MTHorasAtrasos" guid="425613f5-2479-4b39-bb7f-1d5685ffffd4" name="MTHorasAtrasos" type="00000000-0000-0000-0000-000000000008" description="MTHoras Atrasos">
+  <Properties><Property><Name>Name</Name><Value>MTHorasAtrasos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+Name -> MTHorasAtrasos
+IsDefault -> False

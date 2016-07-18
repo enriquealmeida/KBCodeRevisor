@@ -1,0 +1,7 @@
+======OBJECT = MTObjRsp.Table === Responsables de los objetivos=====
+*ObjId  Id6- Null=False
+*RspId  DMUsuarios- Null=False
+
+====== PROPERTIES =======
+Name -> MTObjRsp
+Description -> Responsables de los objetivos

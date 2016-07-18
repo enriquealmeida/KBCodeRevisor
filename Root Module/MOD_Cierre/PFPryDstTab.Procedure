@@ -1,0 +1,24 @@
+======OBJECT = PFPryDstTab.Procedure === Proyecto distribuible por tabla=====
+
+=== RULES ===
+parm(in:PryPadId, out:&distPorTabla);
+
+
+=== PROCEDURE SOURCE ===
+&distPorTabla = Bool.false
+
+for each
+    defined by PryDisPor
+
+    &distPorTabla = Bool.true
+    exit
+endfor
+
+
+====== PROPERTIES =======
+Name -> PFPryDstTab
+Description -> Proyecto distribuible por tabla
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

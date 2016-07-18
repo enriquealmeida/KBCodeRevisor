@@ -1,0 +1,63 @@
+======OBJECT = AtrasadosHoras.WebComponent === Responsables Atrasados=====
+
+=== RULES ===
+//parm(in:&RspId2,in:&FchIni,in:&FchFin);
+
+
+=== EVENTS SOURCE ===
+Event Start
+     &FchCrr = PMTParFch('PARFCHCRR')
+     txbAtrasos.Caption = "Atrasos:"
+EndEvent  // Start
+
+
+Event load
+    &Cargo = false
+
+
+	&Feriados = FeriadosEntreFechas(&FchCrr, &Today)
+
+	&DiasHabiles = DiasHabilesEntreFechas(&FchCrr, &Today,&Feriados)
+	&ResponsablesActivos = MOD_Proyectos.ResponsablesActivos()
+	For &Responsable in &ResponsablesActivos
+        &RspId=&Responsable.DRspId
+		&RspId.Link = PanelControl.link(&RspId)
+        &DiasAtraso=0
+		&LicenciasPorResponsable = LicenciaEntreFechas(&RspId,&FchCrr,&Today)
+		&DiasTrabajados = DiasTrabajadosPorResponsable(&RspId,&FchCrr,&Today)
+		For &Dia in &DiasHabiles
+			if not EsLicencia(&Dia, &Responsable, &LicenciasPorResponsable)
+				if not PerteneceDia(&Dia,&DiasTrabajados)
+					&DiasAtraso = &DiasAtraso + 1
+				endif
+			endif
+		endfor
+		if &DiasAtraso >  2 
+            load
+			&Cargo=true
+        endif
+	endfor
+
+    if &Cargo
+		txbAtrasos.Caption="Atrasos:"
+		txbAtrasos.Enabled=1
+	else
+		txbAtrasos.Caption=""
+		txbAtrasos.Enabled=0
+	endif
+    
+EndEvent  // load
+
+
+
+
+====== PROPERTIES =======
+Name -> AtrasadosHoras
+Description -> Responsables Atrasados
+WEB_COMP -> Yes
+AUTO_REFRESH -> VARS_CHANGE
+WebUX -> SMOOTH
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Public
+IsDefault -> False

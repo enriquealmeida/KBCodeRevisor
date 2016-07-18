@@ -1,0 +1,24 @@
+======OBJECT = CantidadEnteraCorta.Domain === Cantidad Entera Corta=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-10-16T10:48:56.0000000Z" checksum="bcf6394c049c1c28649a45c5bb99f4b6" fullyQualifiedName="CantidadEnteraCorta" guid="f6c803ef-cac8-4d6f-b125-391f4d149798" name="CantidadEnteraCorta" type="00972a17-9975-449e-aab1-d26165d51393" description="Cantidad Entera Corta">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>CantidadEnteraCorta</Value></Property><Property><Name>Length</Name><Value>6</Value></Property><Property><Name>AttMaxLen</Name><Value>6</Value></Property><Property><Name>Signed</Name><Value>True</Value></Property><Property><Name>idTHOUSANDSEP</Name><Value>True</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> CantidadEnteraCorta
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 6
+AttMaxLen -> 6
+Signed -> True
+idTHOUSANDSEP -> True
+IsDefault -> False

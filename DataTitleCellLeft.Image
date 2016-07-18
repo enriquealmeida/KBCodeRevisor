@@ -1,0 +1,21 @@
+======OBJECT = DataTitleCellLeft.Image === Data Title Cell Left=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2009-06-15T16:29:27.0000000Z" checksum="5c59cf93be9001faee3ca8f650139e4a" fullyQualifiedName="DataTitleCellLeft" guid="59525333-38bf-4e85-a670-f0faf0e85842" name="DataTitleCellLeft" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Data Title Cell Left">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="DataTitleCellLeft.gif" description="img-grid-title-left.gif"><Data>
+<base64Binary>
+R0lGODlhEgAWAIABAP///////yH5BAEAAAEALAAAAAASABYAAAIdjI+py+0PYwKBWonvxVFX3n0b6HgUWYofyrbuuxQAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>DataTitleCellLeft.gif</Value></Property><Property><Name>Description</Name><Value>img-grid-title-left.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Desktop\DataTitleCellLeft.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DataTitleCellLeft</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DataTitleCellLeft
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

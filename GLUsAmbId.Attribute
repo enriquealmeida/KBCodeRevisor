@@ -1,0 +1,14 @@
+======OBJECT = GLUsAmbId.Attribute === Ambiente=====
+CHARACTER(15)
+
+
+====== PROPERTIES =======
+Name -> GLUsAmbId
+Description -> Ambiente
+HORIZONTAL_DESCRIPTION -> Ambiente
+VERTICAL_DESCRIPTION -> Ambiente
+ContextualTitle -> Ambiente
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

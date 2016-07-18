@@ -1,0 +1,25 @@
+======OBJECT = ClienteComboBox.Domain === Cliente Combo Box=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-09-25T17:45:41.0000000Z" checksum="7f3f60b7d4038cbca7f2a1de097f9f61" fullyQualifiedName="ClienteComboBox" guid="1188f0ab-b861-4eac-a6b9-2b92e85815e4" name="ClienteComboBox" type="00972a17-9975-449e-aab1-d26165d51393" description="Cliente Combo Box">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ClienteComboBox</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Cliente</Value></Property><Property><Name>ControlType</Name><Value>Dynamic Combo Box</Value></Property><Property><Name>ControlItemValues</Name><Value>CliId</Value></Property><Property><Name>ControlItemDescription</Name><Value>CliId</Value></Property><Property><Name>AddEmptyItem</Name><Value>True</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ClienteComboBox
+OBJ_TYPE -> id_OTYPE_DOM
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 4
+ControlItemValues -> CliId
+ControlItemDescription -> CliId
+AddEmptyItem -> True
+IsDefault -> False

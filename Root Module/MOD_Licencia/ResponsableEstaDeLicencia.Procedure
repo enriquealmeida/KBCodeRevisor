@@ -1,0 +1,22 @@
+======OBJECT = ResponsableEstaDeLicencia.Procedure === Responsable Esta De Licencia=====
+
+=== RULES ===
+Parm(in:RspId, in:&FechaAEvaluar, out:&EstaDeLicencia);
+
+
+=== PROCEDURE SOURCE ===
+&EstaDeLicencia = false
+for each 
+where            LicFecIni <= &FechaAEvaluar and &FechaAEvaluar <= LicFecFin
+where            LicEst <> EstadoLicencia.Eliminada
+where            LicTpo = DMLicTpo.Tomada
+	&EstaDeLicencia = true
+endfor
+
+
+====== PROPERTIES =======
+Name -> ResponsableEstaDeLicencia
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Public
+IsDefault -> False

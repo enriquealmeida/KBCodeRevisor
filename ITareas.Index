@@ -1,0 +1,12 @@
+======OBJECT = ITareas.Index === ITareas=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:36.0000000Z" checksum="656ddd1e740ec0676735f93a1b62c9cb" fullyQualifiedName="ITareas" guid="a7ff7ab9-1da7-456d-b829-058969f023d6" name="ITareas" type="9e750647-3679-0000-0100-2529de263960" description="ITareas">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">TarId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ITareas</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ITareas

@@ -1,0 +1,18 @@
+======OBJECT = SuMonExt.Group === Moneda exterior=====
+<Object parent="MOD_Sueldos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="81161df1-5a38-44db-a6ea-b59d9601d454" user="" versionDate="2016-03-14T16:43:03.0000000Z" lastUpdate="2016-03-14T16:00:28.0000000Z" checksum="310e618e3263cbe051c0e81ec9396220" fullyQualifiedName="MOD_Sueldos.SuMonExt" guid="7617076f-7cf5-42ba-be9c-88b24daaec43" name="SuMonExt" type="87313f43-5eb2-41d7-9b8c-e8d9f5bf9588" description="Moneda exterior">
+  <Part type="74203da2-41b1-402c-0001-d8d564a2c2fa">
+    <Subtype guid="90ba80de-59e5-4a88-abb5-7b9ae8ff2842">
+      <Name>RspSuMonExt</Name>
+      <Supertype guid="a4ffe014-3bdd-403e-81aa-65cc9fbbb681">MonId</Supertype>
+    </Subtype>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SuMonExt</Value></Property><Property><Name>Description</Name><Value>Moneda exterior</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> SuMonExt
+Description -> Moneda exterior
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Private
+IsDefault -> False

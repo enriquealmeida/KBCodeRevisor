@@ -1,0 +1,75 @@
+======OBJECT = PSMailCons.Procedure === Mails Consolidado =====
+
+=== RULES ===
+parm(in:&PrbCnsId);
+
+
+=== PROCEDURE SOURCE ===
+
+&ParSis = PMTParChr('PARSIS')
+&ParUrlBase = PMTParChr('URLMTPUB')
+
+//DMPrbSts.ABI = PMTParChr('PARABIERTO')
+//DMPrbSts.CER = PMTParChr('PARCERRADO')
+
+    &Wrap.BaseURL = trim(&ParUrlBase)
+
+    // recorre los responsables y se fija si le tiene que mandar mail
+    for each
+        where            RspActivo = true 
+
+        &hayCer = Bool.false 
+        &hayAbi = Bool.false 
+        for each
+            where            PrbCnsId = &PrbCnsId
+            where            CrrUsr = RspId
+
+            if PrbSts = DMPrbSts.CER
+                &hayCer = Bool.true 
+            endif
+//            if PrbSts = DMPrbSts.ABI
+//                &hayAbi = Bool.true 
+//            endif
+        endfor
+
+        &Mailmsg.Subject = 'Consolidado ' + trim(str(&PrbCnsId)) + ' - ' + trim(RspId)
+
+        // manda el mail por las solicitudes abiertas
+        if &hayAbi = Bool.true 
+            &txtmsg = 'Los siguientes problemas se encuentran abiertos en el consolidado ' + trim(str(&PrbCnsId))
+            &txtmsg += '. Por favor, revise si hay alguno para cerrar.'
+            &Wrap.Object = HOConsPrbRsp.Create(&PrbCnsId, RspId, DMPrbSts.ING, &txtmsg)
+    
+            &Mailmsg.HTMLText = &Wrap.GetResponse()
+    
+            &Mailmsg.To.Clear()
+			&RspUsrMl = RspUsrMl.Trim()
+            &Mailmsg.To.new(&RspUsrMl, &RspUsrMl)
+            EnvioMail(&Mailmsg, &ErrorCode,&msg )
+        endif
+
+        // manda el mail por las solicitudes cerradas
+        if &hayCer = Bool.true 
+            &txtmsg = 'Los siguientes problemas se encuentran cerrados en el consolidado ' + trim(str(&PrbCnsId))
+            &txtmsg += '. Por favor, revise la documentación de los mismos.'
+            &Wrap.Object = HOConsPrbRsp.Create(&PrbCnsId, RspId, DMPrbSts.CER, &txtmsg)
+    
+            &Mailmsg.HTMLText = &Wrap.GetResponse()
+    
+            &Mailmsg.To.Clear()
+            &Mailmsg.To.new(&RspUsrMl, &RspUsrMl)
+			
+			EnvioMail(&Mailmsg ,&ErrorCode, &msg )
+
+        endif
+    endfor
+
+
+
+====== PROPERTIES =======
+Name -> PSMailCons
+Description -> Mails Consolidado 
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

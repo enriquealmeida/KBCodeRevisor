@@ -1,0 +1,50 @@
+======OBJECT = SaveGridState.Procedure === Save Grid State=====
+
+=== RULES ===
+parm(in:&UserCustomKey,in:&UserCustomValue);
+
+
+=== PROCEDURE SOURCE ===
+
+//This is a procedure in which user has to define the behaviour of grid state.
+//You can save the grid state in session, in database or whatever you want
+
+//Example to save in Session
+&Session.Set(&UserCustomKey, &UserCustomValue)
+
+//There is an example below of a way to save grid state in DataBase for each user (but this can be modified to do whatever you want):
+
+//if you want to save grid state for each user(save columns that are visible, invisible and its order)
+//you should create a transaction with the following structure:
+
+//Transaction:: UserCustom
+//				* UserId (Id)
+//				* UserCustomKey (VarChar(120))
+//				  UserCustomValue (VarChar(1000))
+//
+//Set this transaction as bussiness component
+
+//Then uncomment the code below and define the variables: 
+//														UserCustom:: UserCustom
+//														&Context:: WWPContext
+
+//note: the SDT WWPContext should contain the user logged in the property UserId
+
+//loadWWPContext.Call(&Context)
+//&UserCustom.load(&Context.UserId, &UserCustomKey)
+//if not &UserCustom.Success()
+//	&UserCustom = new()
+//	&UserCustom.SecUserId = &Context.UserId
+//	&UserCustom.UserCustomKey = &UserCustomKey
+//endif
+//&UserCustom.UserCustomValue = &UserCustomValue
+//&UserCustom.Save()
+//ommit
+
+
+====== PROPERTIES =======
+Name -> SaveGridState
+Description -> Save Grid State
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+IsDefault -> False

@@ -1,0 +1,77 @@
+======OBJECT = EditWiki.WebPanel === Edit Wiki=====
+
+=== RULES ===
+parm(in:&PryId, in:&PrbId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+for each
+	where      PrbId = &PrbId and PryId = &PryId
+ 	
+		do case
+		case CliTpoId = EnumCliTpoId.OFI
+			&WikiPageInsertWikiStruct.PageName=format('sol%1',PrbId)
+			&WikiPageInsertWikiStruct.isPrivate=false
+			&WikipageInsertWikiStruct.override=false
+			&WikipageInsertWikiStruct.PageContent=GeneroHtmlWiki(PrbId, HTMLCabezalWiki.DETALLADO)
+			&WikipageInsertWikiStruct.PageType=0
+			&WikipageInsertWikiStruct.PageVersionId=0
+			&WikipageInsertWikiStruct.CreateCategories=false
+					
+			&location = GetLocation('WikiPageInsert')
+			//&KBWikiId = 'SIGEWIKI'
+			&KBWikiId = KBWikiId
+			do 'SetearLocation'
+			&AgregarWiki.Execute(KBWikiUserId,KBWikiUserPassword,&WikipageInsertWikiStruct,&wikistatus,&PageId)		
+		case  CliId = 'DNA'
+			&WikiPageInsertDNAWikiStruct.PageName=format('sol%1',PrbId)
+			&WikiPageInsertDNAWikiStruct.isPrivate=false
+			&WikiPageInsertDNAWikiStruct.override=false
+			&WikiPageInsertDNAWikiStruct.PageContent=GeneroHtmlWiki(PrbId, HTMLCabezalWiki.SIMPLifICADO)
+			&WikiPageInsertDNAWikiStruct.PageType=0
+			&WikiPageInsertDNAWikiStruct.PageVersionId=0
+			&WikiPageInsertDNAWikiStruct.CreateCategories=false	
+			&location = GetLocation('MOD_Solicitudes_WikiPageInsertDNA')
+			//&KBWikiId = 'DNANOVE'
+			&KBWikiId = KBWikiId
+			do 'SetearLocation'
+			&AgregarWikiDNA.Execute(&KBWikiUserId,&KBWikiUserPassword,&WikiPageInsertDNAWikiStruct,&wikistatusDNA,&PageId)
+		endcase
+		
+		if &PageId<>0
+			ActualizoPageId.Call(PrbId,&PageId)
+		else
+			&PageId = PageId  //Le asigno el numero de pagina ya asignada.
+		endif
+		&UrlEditPage = &UrlEditPage + &PageId.ToString()
+		Link(&UrlEditPage)
+
+endfor
+
+EndEvent
+
+Sub 'SetearLocation'
+	for each
+	where      KBWikiId = &KBWikiId
+		&location.CancelOnError = 2
+		&location.BaseUrl = KBWikiBaseUrl
+		&location.Host = KBWikiHost
+		&location.Secure = Iif(KBWikiHttps,1,0)
+		if KBWikiHttps
+			&location.Port = 443
+		endif
+		&KBWikiUserId = KBWikiUserId
+		&KBWikiUserPassword = KBWikiUserPassword
+		&UrlEditPage = Iif(KBWikiHttps,'https://', 'http://')
+		&UrlEditPage = &UrlEditPage + KBWikiHost + KBWikiBaseUrl + 'heditpage.aspx?'
+	endfor
+EndSub
+
+
+====== PROPERTIES =======
+Name -> EditWiki
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

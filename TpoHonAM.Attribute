@@ -1,0 +1,17 @@
+======OBJECT = TpoHonAM.Attribute === Automático o Manual=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> TpoHonAM
+Description -> Automático o Manual
+HORIZONTAL_DESCRIPTION -> Automático o Manual
+VERTICAL_DESCRIPTION -> Automático o Manual
+ContextualTitle -> Automático o Manual
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttValueRange -> 'A' 'M'
+ControlType -> 0
+ControlValues -> Automático:A,Manual:M
+IsDefault -> False

@@ -1,0 +1,31 @@
+======OBJECT = flechita.Image === flechita=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:31:08.0000000Z" checksum="09831d8c4b81267822ac4b854733e174" fullyQualifiedName="flechita" guid="7d09ce81-9a1d-4053-9f57-f2ce2fd78836" name="flechita" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="flechita">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="flechita.gif" description=""><Data>
+<base64Binary>
+R0lGODlhEAAJAPcAAEhiMkhiMlh5PWCEQmOJRUtoNFx/P1NzOWCEQlx/P2CEQmCEQmePR1R0OmOJRWOJRWePR3ilU2OJRWuUSmuUSnilU2ePR2uUSm+ZTXyr
+VYSxX2uUSm+ZTWePR3OfT3OfT3ekUnyrVXOfT3yrVYCuWoCuWoSxX3CbTXilU3yrVYCuWnilU4CuWoSxX4CuWpC5b5m/e5m/e5S7dZi+eqrJka7MlrfRoZG5
+cZm/e6bHi57BgZm/e6rJka7MlqLEhrLOnLzUqK7Mlq7MlrLOnLfRobvUpsjcuLjSorzUqLjSosTast7q1MDXrcjcuMTassjcuMzfvcjcuMzfvcjcuNDiwtXk
+yMTassTasszfvdDiwsjcuNXkyOLt2ery5NDiwtDiwtXkyNXkyNnnzd3q0tXkyNnnzeLt2ebw3ury5PL47vf69Pf69Pv9+f//////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////ywAAAAAEAAJAAAImwBtRKhAAgQIDAgxpDBIok2b
+JRqMAAnxRMmBKFEuyFDSg4bDDEageCDixIWLKUgsNCkiwGGbEGKCNAiTJIATKxZ0KMkBw2EKKFhOaHHSYYcXHSe48KDg8AWYISvECClAhsmNIERm9CxBBQuK
+IE5msAgjpIEZKCMcDqDyQ8IWJQCm5EjRAkqODG1qEGCA4MGDBAIWKBAwAcIAhwEBADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>flechita.gif</Value></Property><Property><Name>Description</Name><Value /></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\102\Mt201103\CSharp\web20110324\Resources\flechita.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>flechita</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> flechita
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

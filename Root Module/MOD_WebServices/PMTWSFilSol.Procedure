@@ -1,0 +1,60 @@
+======OBJECT = PMTWSFilSol.Procedure === Filtros para WS de Solicitudes=====
+
+=== RULES ===
+parm(out:&xmlResult);
+
+
+=== PROCEDURE SOURCE ===
+
+    &writer.OpenToString()
+
+    &writer.WriteStartDocument()
+
+    &writer.WriteStartElement('FILTROS')
+
+        &writer.WriteStartElement('CLIENTES')
+        for each
+            &writer.WriteElement('CliId', CliId)
+        endfor
+        &writer.WriteEndElement()   // 'CLIENTES'
+
+        &writer.WriteStartElement('ESTADOS')
+        for each
+            &writer.WriteElement('PrbSts', PrbSts)
+            &writer.WriteElement('PrbStsDsc', PrbStsDsc)
+        endfor
+        &writer.WriteEndElement()   // 'ESTADOS'
+
+        &writer.WriteStartElement('RESPONSABLES')
+        for each
+            where            RspActivo = true
+
+            &writer.WriteElement('RspId', RspId)
+        endfor
+        &writer.WriteEndElement()   // 'RESPONSABLES'
+
+        &writer.WriteStartElement('SISTEMAS')
+        for each
+            &writer.WriteElement('SisId', SisId)
+            &writer.WriteElement('SisDsc', SisDsc)
+        endfor
+        &writer.WriteEndElement()   // 'SISTEMAS'
+
+    &writer.WriteEndElement()   // 'FILTROS'
+
+    &writer.Close()
+
+    &xmlResult = &writer.ResultingString
+
+
+====== PROPERTIES =======
+Name -> PMTWSFilSol
+Description -> Filtros para WS de Solicitudes
+IsMain -> True
+CALL_PROTOCOL -> SOAP
+AppLocation -> MTWebServices
+SOAP_CANCELERROR -> NO
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,23 @@
+======OBJECT = HayFeriadosEspeciales.Procedure === Hay Feriados Especiales=====
+
+=== RULES ===
+parm(in:&FecIni,in:&FecFin,out:&TieneFeriadoEspecial);
+
+
+=== PROCEDURE SOURCE ===
+	for each
+		where     &FecIni <= FerFecha and FerFecha <= &FecFin
+		where     FerDescuentoLicencia=true
+		  &TieneFeriadoEspecial=True
+		  msg('FeriadoEspecial ' + FerFecha.ToString() + ' Dias ' + &Dias.toString() ,status)
+		  exit
+	when none
+		&TieneFeriadoEspecial=False
+	endfor
+
+
+====== PROPERTIES =======
+Name -> HayFeriadosEspeciales
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+IsDefault -> False

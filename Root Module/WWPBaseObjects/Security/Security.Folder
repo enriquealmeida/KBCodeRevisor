@@ -1,0 +1,9 @@
+======OBJECT = Security.Folder === Security=====
+<Object parent="WWPBaseObjects" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="f952860a-9553-4095-82c8-dedaadd8cf64" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2007-06-28T21:58:22.0000000Z" checksum="3c4ebdd36e99b1ad25da17997ce30b53" fullyQualifiedName="WWPBaseObjects.Security" guid="2c01440d-1215-4aa3-81fe-3334dd0a38f6" name="Security" type="00000000-0000-0000-0000-000000000008" description="Security">
+  <Properties><Property><Name>Name</Name><Value>Security</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+Name -> Security
+IsDefault -> False

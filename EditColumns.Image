@@ -1,0 +1,31 @@
+======OBJECT = EditColumns.Image === Edit Columns=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-19T16:26:24.0000000Z" lastUpdate="2014-11-30T20:53:05.0000000Z" checksum="a2445c20f507e6420496201662755453" fullyQualifiedName="EditColumns" guid="d9247895-ebc6-42a8-9963-96a3a06a60c5" name="EditColumns" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Edit Columns">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="EditColumns.png" description="Edit Columns.gif"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAcGFp
+bnQubmV0IDQuMC4zjOaXUAAAAxlJREFUSEu1lr9LcmEUx7WCCAJDEhwiGiISJAIXR/8HGwyCoKVFiDaHSNDBocHRKfwPbBFCHBycAxEH0SEJQhoK4gWNzHw/
+zz3Pq9frr8sbfQc5z/ee8/Xc85znPNcxmItyuXx1dRUKhfb399cNYLCMxWI80k4zMF262+2m02mv1+uYi83NzVQqhbMOG8cU6bu7u52dHQn2+/1kXSwWHx8f
+/xjAYAnJI/HZ2toiRAebYJVOJpMScHh4WCqVNDsDOOAm/vF4XLP/MCYdjUZxWllZubm56fV6mp0L3HAmhMCTkxPNGhhJS74bGxu8r6ZmoNPp5HK5+/v74d8T
+wg5bctfSFEvynaP79fX1+fmJ0Ww29/b2AoHA6+sry4+Pj+/vb4ojuQ/rrqTZYtk3Xk3YSaDLa/l8vmw2e3x8vLq6ura2dnZ2dnt7u7u7Szv1+/1MJoMIUtIz
+SpoHUGzInPoSeXFx4XQ6l5aW+MUfYAhocxLHLRgMwiOIraSlfxf2Qz6fR9fQHAN1eHh4EB9EYGhHbAeHigVNKs8ERohdkPXl5WWj0aBoxEq/K1maH4tfERXA
+aMtAq9Vyu91KxkAikUCF6l1fXwuzvLzs8Xhww3ko6GAgYFkaA0ZbBl5eXo6OjpSGgfPz87e3N8jT01Nhtre3I5EIDM5IwShZxg0Wx1dUBIa/XVAQ+oQZIDuJ
+FKSSlVbngYgKYLRlgqjwawF7W6lUtNNggBSkkrUpzWGBpKYul4umVh3ndNLakBhUhu4Uz5H0zwsSDocLhYKONBfEzjYKIKWaT09PBwcHBL6/v0NWq1VxEIy2
+kYOENb/5BEOSd39+fm632/wTZK1WE14gzadkf35kLNKjI8OCe4iF+aCz1JYJs0iztBx0BLGVN/cba/N4+m9pGU8IYitvZiADBWo4VLHto16vS5QMVaRGQxVM
+XgXkYh/4T78KBNw9POACWzhdJ0GIHD1zp42Vj3tTcufVNGUDOEu+jDDzZWLdGckdsCEL08dB9g2Qr+WSskoDivUrnzgCtvhXPszM4FCRIAOBccNGAQyWiz8n
+B4O/jmGRddJ6FwMAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>EditColumns.png</Value></Property><Property><Name>Description</Name><Value>Edit Columns.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Desktop\EditColumns.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>EditColumns</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> EditColumns
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

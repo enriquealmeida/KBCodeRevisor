@@ -1,0 +1,22 @@
+======OBJECT = HorasRealizadasEnProyecto.Procedure === Horas Realizadas En Proyecto=====
+
+=== RULES ===
+parm(in:&PryId, in:&FchIni, in:&FchFin, out:&HrsCnt);
+
+
+=== PROCEDURE SOURCE ===
+ &HrsCnt=0
+ for each
+     where            &FchIni <= HrsFch and HrsFch <= &FchFin
+     where            PryId = &PryId 
+	        
+             &HrsCnt += HrsCnt
+ endfor
+
+
+====== PROPERTIES =======
+Name -> HorasRealizadasEnProyecto
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

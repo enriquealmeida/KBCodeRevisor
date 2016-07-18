@@ -1,0 +1,16 @@
+======OBJECT = RspFchUltimoAvisoAtrasoHoras.Attribute === Fecha Hora de último Aviso de Atraso de Horas=====
+DATETIME(10.5)
+
+
+====== PROPERTIES =======
+Name -> RspFchUltimoAvisoAtrasoHoras
+Description -> Fecha Hora de último Aviso de Atraso de Horas
+HORIZONTAL_DESCRIPTION -> Ultimo Aviso Atraso
+VERTICAL_DESCRIPTION -> Ultimo Aviso Atraso 
+ContextualTitle -> Ultimo Aviso Atraso
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttCollection -> False
+ControlType -> 2
+IsDefault -> False

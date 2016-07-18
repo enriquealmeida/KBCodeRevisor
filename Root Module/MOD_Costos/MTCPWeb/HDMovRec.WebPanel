@@ -1,0 +1,45 @@
+======OBJECT = HDMovRec.WebPanel === Movimientos del Recurso=====
+
+=== RULES ===
+parm(in:&CpRecId, in:&FchIni, in:&FchFin, in:&CpMovFTpo,    in:&cCliId, in:&cPryId, in:&PryRspId, in:&cprycls, in:&cprytpo,  in:&vTomaTrf);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    if null(&cCliId)
+        &vCliId = 'TODOS'    
+    else
+        &vCliId = &cCliId
+    endif
+    if null(&cPryId)
+        &vPryId = 'TODOS'
+    else
+        &vPryId = &cPryId
+    endif
+    if null(&PryRspId)
+        &vPryRspId = 'TODOS'
+    else
+        &vPryRspId = &PryRspId
+    endif
+    if null(&cprycls)
+        &vPryCls = 'TODOS'
+    else
+        &vPryCls = &cprycls
+    endif
+    if null(&cprytpo)
+        &vPryTpo = 'TODOS'
+    else
+        &vPryTpo = &cprytpo
+    endif
+EndEvent  // Start
+
+
+====== PROPERTIES =======
+Name -> HDMovRec
+Description -> Movimientos del Recurso
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 43
+ObjectVisibility -> Private
+IsDefault -> False

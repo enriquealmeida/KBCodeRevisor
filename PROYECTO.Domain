@@ -1,0 +1,28 @@
+======OBJECT = PROYECTO.Domain === PROYECTO=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="AW\awolff" versionDate="2016-07-02T20:20:53.0000000Z" lastUpdate="2016-07-02T20:10:54.0000000Z" checksum="fc3c82fad952b31b6d5ae2b78972381e" fullyQualifiedName="PROYECTO" guid="982f9ea8-138f-40d8-a86d-9854346821ca" name="PROYECTO" type="00972a17-9975-449e-aab1-d26165d51393" description="PROYECTO">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>PROYECTO</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>10</Value></Property><Property><Name>AttMaxLen</Name><Value>10</Value></Property><Property><Name>idCHARCASE</Name><Value>idCHARCASE_UPPER</Value></Property><Property><Name>ControlType</Name><Value>Edit</Value></Property><Property><Name>EditAutocomplete</Name><Value>Incremental</Value></Property><Property><Name>ControlItemValues</Name><Value>PryId</Value></Property><Property><Name>ControlItemDescription</Name><Value>PryId</Value></Property><Property><Name>MaxItems</Name><Value>10</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> PROYECTO
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 10
+AttMaxLen -> 10
+idCHARCASE -> idCHARCASE_UPPER
+ControlType -> 2
+EditAutocomplete -> 2
+ControlItemValues -> PryId
+MaxItems -> 10
+IsDefault -> False

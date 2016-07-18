@@ -1,0 +1,26 @@
+======OBJECT = HIngPrb.WebComponent === Solicitud ingresada (mail) =====
+
+=== RULES ===
+parm(in:&PryId, in:&PrbId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+	
+    tbkModificar.Link = &ParUrlBase + GetSolicitudesLink(TrnMode.Update, &PryId, &PrbId)
+	
+EndEvent  // Start
+
+
+
+====== PROPERTIES =======
+Name -> HIngPrb
+Description -> Solicitud ingresada (mail) 
+WEB_COMP -> Yes
+URLAccess -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

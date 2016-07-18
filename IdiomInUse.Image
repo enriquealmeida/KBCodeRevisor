@@ -1,0 +1,23 @@
+======OBJECT = IdiomInUse.Image === Idiom In Use=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T18:05:08.0000000Z" checksum="1215b14341c89d8258ee8a002149dcf1" fullyQualifiedName="IdiomInUse" guid="65143e31-bef1-4344-bba5-ba8ff01f1d62" name="IdiomInUse" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Idiom In Use">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="IdiomInUse.png" description="idioma_en_uso_32x20px.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqY
+AAAXb5JfxUYAAABYSURBVHja7NaxEYQACATAxUa1o7cDbcHO7ACTr8EzgBnynYPgqrslZ4Gqgh/67a1/AhuOWAJYoyeI/8AABjCAAQzgC4A7DbjSheTEngBU
+upI9AAAA//8DAJxiKsQb0T9qAAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>IdiomInUse.png</Value></Property><Property><Name>Description</Name><Value>idioma_en_uso_32x20px.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\KB Demo WorkWithPlus\DemoWWP4\CSharpModel\web\Resources\IdiomInUse.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IdiomInUse</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IdiomInUse
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

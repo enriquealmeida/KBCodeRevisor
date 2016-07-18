@@ -1,0 +1,47 @@
+======OBJECT = SolicitudesEnUnEstado.WebComponent === Solicitudes En Un Estado=====
+
+=== RULES ===
+Parm(in:&CliId,in:&TagId,in:&PrbSts,in:&RspId, in:&CliTpoId);
+
+
+=== EVENTS SOURCE ===
+Event load
+	&PrbId.Title=&PrbSts
+	&Cant = 0
+	&TotalDias=0
+	for each 
+		where      PrbSts = &PrbSts
+        where      CliId = &CliId when not &CliId.IsEmpty()
+        where      TagId like &TagId
+        where      CrrUsr = &RspId  when not &RspId.IsEmpty()
+		where      CliTpoId = &CliTpoId when not &CliTpoId.IsEmpty()
+		
+		&PrbId = PrbId
+		&PryId = PryId
+		&PrbId.Tooltiptext=format('%3 - %1 - %2', CrrUsr,PrbTxt.Substring(1,500),CliId)
+		&PrbDsc = PrbDsc.Substring(1,45)
+		&Cant = &Cant + 1
+		&TotalDias = &TotalDias + PrbDiasAbi
+		load
+		
+	endfor
+    &TotalDiasProm = iif(&Cant = 0, 0,  &TotalDias / &Cant )
+    &Total = format('Cantidad: %1 - Dias promedio: %2' , &Cant, &TotalDiasProm )
+EndEvent
+
+Event 'Solicitudes'
+	&Window.Object = Solicitudes.Create(TrnMode.Update,&PryId,&PrbId)
+	&Window.Open()
+EndEvent
+
+
+
+
+====== PROPERTIES =======
+Name -> SolicitudesEnUnEstado
+WEB_COMP -> Yes
+URLAccess -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

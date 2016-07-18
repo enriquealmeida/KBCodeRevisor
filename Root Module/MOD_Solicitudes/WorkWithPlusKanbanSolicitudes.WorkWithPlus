@@ -1,0 +1,58 @@
+======OBJECT = WorkWithPlusKanbanSolicitudes.WorkWithPlus === Work With Plus Kanban Solicitudes=====
+<Object parent="MOD_Solicitudes.KanbanSolicitudes" parentType="c9584656-94b6-4ccd-890f-332d11fc2c25" parentGuid="f0668a87-30c3-466b-8596-de7d945da4a4" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:49:55.0000000Z" checksum="2a7a6fd884fad2d305f471a10da50474" fullyQualifiedName="MOD_Solicitudes.WorkWithPlusKanbanSolicitudes" guid="f775d217-663f-0ef0-319e-d84ab6a73bd9" name="WorkWithPlusKanbanSolicitudes" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Kanban Solicitudes">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="7;57;" SecFuntionKey="KanbanSolicitudes" defaultSecFuntionKey="KanbanSolicitudes">
+  <WPRoot childrenOrderedList="7;66;Main Table-7;75;LoadWWPContext" Template="WorkWithWithoutBaseTable" defaultTemplate="WorkWithWithoutBaseTable">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" type="Responsive" defaultType="Responsive" childrenOrderedList="7;28;ErrorViewer-7;66;TableHeader-7;69;Grid">
+      <textBlock controlName="TextBlockTitle" defaultControlName="TextBlockTitle" caption="Kanban Solicitudes" defaultCaption="Work With Title" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+      <errorViewer />
+      <table name="TableHeader" defaultName="TableHeader" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="7;27;TextBlockTitle-7;66;TableActions-7;66;TableFilters">
+        <table name="TableActions" defaultName="TableActions" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" cellWidth_S="8%" childrenOrderedList="7;88;Actions" />
+        <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="4" type="Responsive" cellVisible_E="False" defaultCellVisible_E="False" defaultCellThemeClass="CellFloatRight">
+          <variable name="TagId" defaultName="TagId" description="Tag" defaultDescription="Tag" descriptionThemeClass="Label" defaultDescriptionThemeClass="DataFilterDescription" domain="adbb33c9-0906-4971-833c-998de27e0676-TagId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-TagId" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <variable name="CliId" defaultName="CliId" description="Cliente" defaultDescription="Cliente" descriptionThemeClass="Label" defaultDescriptionThemeClass="DataFilterDescription" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlInputValue="adbb33c9-0906-4971-833c-998de27e0676-CliId" controlInputDescription="adbb33c9-0906-4971-833c-998de27e0676-CliId" controlEmptyItem="True" domain="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-CliId" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <variable name="CliTipo" description="Tipo de cliente" dataType="Basic" basicType="Character" basicCLength="10" descriptionThemeClass="Label" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <variable name="RspId" defaultName="RspId" description="Responsable" defaultDescription="Responsable" descriptionThemeClass="Label" defaultDescriptionThemeClass="DataFilterDescription" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlInputValue="adbb33c9-0906-4971-833c-998de27e0676-RspId" controlInputDescription="adbb33c9-0906-4971-833c-998de27e0676-RspId" controlEmptyItem="True" domain="adbb33c9-0906-4971-833c-998de27e0676-RspId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-RspId" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <variable name="DiasPendiente" description="DiasPendiente" dataType="Basic" basicType="Character" basicCLength="100" showDescription="False" readOnly="True" />
+        </table>
+        <actionGroup name="Actions" defaultName="Actions" descriptionThemeClass="Label" defaultDescriptionThemeClass="Label" align="Center">
+          <standardAction name="Refresh" />
+          <userAction caption="Solicitudes Sin Plan" name="SolicitudesSinPlan" />
+        </actionGroup>
+      </table>
+      <table name="TableWebComponents" numberOfColumns="4" type="Responsive">
+        <webComponent name="WCIng">
+          <parameters />
+        </webComponent>
+        <webComponent name="WCDes">
+          <parameters />
+        </webComponent>
+        <webComponent name="WCIns">
+          <parameters />
+        </webComponent>
+        <webComponent name="WCCer">
+          <parameters />
+        </webComponent>
+      </table>
+    </table>
+    <steps />
+    <events>
+      <eventBlock BlockName="LoadWWPContext" defaultBlockName="LoadWWPContext" />
+    </events>
+  </WPRoot>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusKanbanSolicitudes</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.KanbanSolicitudes</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c9584656-94b6-4ccd-890f-332d11fc2c25
+FolderId -> 280
+Name -> WorkWithPlusKanbanSolicitudes
+ObjectVisibility -> Private
+KBObject -> c9584656-94b6-4ccd-890f-332d11fc2c25-280
+IsDefault -> False

@@ -1,0 +1,13 @@
+======OBJECT = UPryTpo1.Index === =====
+<Object Type="Unique" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T17:07:37.0000000Z" checksum="806899bda704d6a0456500abbcaa0d79" fullyQualifiedName="UPryTpo1" guid="b7f5dd6c-1aff-4a58-95a2-181033d0fb7e" name="UPryTpo1" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PryTpoDsc</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>UPryTpo1</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> UPryTpo1
+Description -> 

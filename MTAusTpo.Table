@@ -1,0 +1,9 @@
+======OBJECT = MTAusTpo.Table === Tipos de ausencias=====
+*AusTpoId  TipoAusenciaComboConEmpty- Null=False
+ AusTpoDsc  DESC- Null=False
+ AusTpoColor  TpoColor- Null=False
+ AusTipoLiquidacion  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> MTAusTpo
+Description -> Tipos de ausencias

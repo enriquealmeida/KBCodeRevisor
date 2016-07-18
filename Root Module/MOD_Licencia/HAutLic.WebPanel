@@ -1,0 +1,72 @@
+======OBJECT = HAutLic.WebPanel === Autorizar licencia=====
+
+=== RULES ===
+parm(in:&RspLicId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+
+	&ParMailco = &ParMailCo.Trim()
+
+    for each
+    defined by LicDias
+        &RspVinculoLaboral = RspVinculoLaboral
+        &txtLic = 'Ausencia'
+        &txtLicMin = 'ausencia'
+    endfor
+
+    for each 
+		where     RspLicId = &RspLicId
+		
+		if LicEst = EstadoLicencia.Autorizada
+			&msg = 'La ' + trim(&txtLicMin) + ' ya estaba autorizada. No se envía mail.'
+			msg(&msg)
+		else
+			PFUsuHab.Call('LICENCIAS',9, &vOk)  // Seguridad
+			if &vOk = 'S'
+				AutorizarLicencia(RspLicId )
+				Hacecommit()
+				
+				// --------- Mail a todo concepto -----------//
+				
+				//for each 
+				if &RspVinculoLaboral = DMRspVinculoLaboral.EMPLEADO
+					&Mailmsg.Subject = trim(&txtLic) + ' autorizada a ' + trim(RspId)  + ' del ' + dtoc(LicFecIni ) + ' al '+ dtoc(LicFecFin ) 
+				else
+					&Mailmsg.Subject = trim(&txtLic) + ' coordinada con ' + trim(RspId)  + ' del ' + dtoc(LicFecIni ) + ' al '+ dtoc(LicFecFin ) 
+				endif
+				&LicDsc= LicDsc
+				//endfor
+				if &RspVinculoLaboral = DMRspVinculoLaboral.EMPLEADO
+					&Mailmsg.HTMLText = trim(&txtLic) + ' autorizada por ' + userid()  + newline() + '<BR /> Motivo: ' + &LicDsc
+				else
+					&Mailmsg.HtmlText = trim(&txtLic) + ' coordinada por ' + userid() + newline()  + '<BR /> Motivo: ' + &LicDsc
+				endif
+				
+				&Mailmsg.To.new('', 'licencias@concepto.com.uy')	//para que le llegue a "la contadora"
+				&Mailmsg.To.new('','concepto@concepto.com.uy') 
+				EnvioMail(&Mailmsg,&errorcode,&msg)
+				
+				msg(trim(&txtLic) + ' autorizada')
+			else
+				msg('Usted no tiene permisos para autorizar ausencias. Debe tener nivel 9 en el ambiente LICENCIAS')
+			endif
+		endif
+	when none
+		msg('No hay licencia/ausencia a autorizar')
+   endfor
+
+EndEvent  // Start
+
+
+====== PROPERTIES =======
+Name -> HAutLic
+Description -> Autorizar licencia
+IsMain -> True
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

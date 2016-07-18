@@ -1,0 +1,26 @@
+======OBJECT = MOD_WebServices.Module === MOD_Web Services=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-03-15T19:42:43.0000000Z" lastUpdate="2016-03-15T19:00:25.0000000Z" checksum="36032fc61973d6c4d4831849cf0ffc3a" fullyQualifiedName="MOD_WebServices" guid="96d8297c-3ae3-4d84-80a4-c81a33f56c2a" name="MOD_WebServices" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="MOD_Web Services">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="782170de-bfce-480d-8eb1-c13ee24e2367">
+      <Layers>
+        <Layer Id="782170de-bfce-480d-8eb1-c13ee24e2367">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_WebServices" Bounds="314 268 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_PanelControl" Bounds="492 -16 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="1.816877E-06 34 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MOD_WebServices</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> MOD_WebServices
+IsDefault -> False

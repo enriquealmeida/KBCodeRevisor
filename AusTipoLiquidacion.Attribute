@@ -1,0 +1,12 @@
+======OBJECT = AusTipoLiquidacion.Attribute === Liquidación ?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> AusTipoLiquidacion
+Description -> Liquidación ?
+HORIZONTAL_DESCRIPTION -> Liquidación?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

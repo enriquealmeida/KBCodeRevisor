@@ -1,0 +1,21 @@
+======OBJECT = TipoLicencia.Procedure === Tipo Licencia=====
+
+=== RULES ===
+parm(in: &Dia, in: &RspId, out: &Char);
+
+
+=== PROCEDURE SOURCE ===
+&Char = '*'
+for each 
+	where            RspId = &RspId 
+	and LicFecIni <= &Dia
+	and LicFecFin >= &Dia
+		&Char = Substr(AusTpoId,1,1)
+endfor
+
+
+====== PROPERTIES =======
+Name -> TipoLicencia
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+IsDefault -> False

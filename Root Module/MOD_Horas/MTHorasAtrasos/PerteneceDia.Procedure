@@ -1,0 +1,21 @@
+======OBJECT = PerteneceDia.Procedure === Pertenece Dia=====
+
+=== RULES ===
+parm(in: &Dia, in: &Lista, out: &Pertenece);
+
+
+=== PROCEDURE SOURCE ===
+&Pertenece = false
+for &AuxDia in &Lista
+		if &AuxDia.Dias = &Dia.Dias	
+			&Pertenece = true
+		endif
+endfor
+
+
+====== PROPERTIES =======
+Name -> PerteneceDia
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Private
+IsDefault -> False

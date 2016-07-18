@@ -1,0 +1,8 @@
+======OBJECT = MTPCRsp.Table === Panel de Control del Responsab=====
+*RspId  DMUsuarios- Null=False
+*MTPCWbp  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MTPCRsp
+Description -> Panel de Control del Responsab
+CACHE_LEVEL -> 3

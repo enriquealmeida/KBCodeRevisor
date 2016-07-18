@@ -1,0 +1,24 @@
+======OBJECT = ActionUnCheckALL.Image === Action Un Check ALL=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-04-22T04:45:41.0000000Z" checksum="a44f7c4e31be264005eaf6c28d6c1af7" fullyQualifiedName="ActionUnCheckALL" guid="fe3f37ea-c294-404b-b80f-6bc819db6caf" name="ActionUnCheckALL" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Un Check ALL">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionUnCheckALL.png" description="Action Un Check ALL.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUw
+AADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAbrgAAG64BjF1z+AAAANtJREFUOE+dk30KgkAUxPUeXaoT1Ym6TkQiYggGgoiZmbnPZmHchyh+LOw/4fz2zZvJ
+PxzP4m08j8vJHyQABMF1uGF4kyi6SxyHkiSxpGkiWfaUPM+kKHLB9//j8XoasCQuy2IeADFgW6+dgC/vsWMB9LzHjgVwYQSs2UVVvaxdC+C2tZ25FLBIiOv6
+7QCMStuZilCLm+bjAMxZ2xnnPxa37dcBdEnWvAxx1/0cAA1jSda8DLExxgF0eXRtp8amGH22Kehe4wfaWRLPAmiHUWHb9Iyx9ZmcYOt/oQc6zAolwhby3QAA
+AABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionUnCheckALL.png</Value></Property><Property><Name>Description</Name><Value>Action Un Check ALL.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\awolff\Desktop\ActionUnCheckALL.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionUnCheckALL</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionUnCheckALL
+IsDefault -> False

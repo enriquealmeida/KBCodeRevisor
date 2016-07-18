@@ -1,0 +1,8 @@
+======OBJECT = GLParametros.Table === Parametros=====
+*ParId  Id- Null=False
+ SolxMailDateTime  FechaHora- Null=False
+
+====== PROPERTIES =======
+Name -> GLParametros
+Description -> Parametros
+CACHE_LEVEL -> 3

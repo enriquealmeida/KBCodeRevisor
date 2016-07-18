@@ -1,0 +1,27 @@
+======OBJECT = PMDLgIns.Procedure === Insert en log=====
+
+=== RULES ===
+Parm(IN:MDObjTpo ,IN:MDObjSec ,IN:MDCdId ,IN:&MDCdVal, IN:&MDLgAcc );
+
+
+=== PROCEDURE SOURCE ===
+new
+    MDLgId = PCNumera('MDLOGS')
+    MDLgOTpo = MDObjTpo 
+    MDLgOSec = MDObjSec 
+    MDLgCdId = MDCdId
+    MDLgAcc = &MDLgAcc 
+    MDLgValAnt = &MDCdVal 
+    MDLgUsr = UserID()
+    MDLgFch = now()
+ endnew
+
+
+====== PROPERTIES =======
+Name -> PMDLgIns
+Description -> Insert en log
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+ObjectVisibility -> Private
+IsDefault -> False

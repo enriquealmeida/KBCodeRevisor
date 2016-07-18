@@ -1,0 +1,20 @@
+======OBJECT = PFisDig.Procedure === Es dígito ?=====
+
+=== RULES ===
+Parm(IN:&Char , OUT:&EsDigit );
+
+
+=== PROCEDURE SOURCE ===
+if &Char >= "0"  and  &Char <="9"
+    &EsDigit ='S'
+else
+    &EsDigit ='N'
+endif
+
+
+====== PROPERTIES =======
+Name -> PFisDig
+Description -> Es dígito ?
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

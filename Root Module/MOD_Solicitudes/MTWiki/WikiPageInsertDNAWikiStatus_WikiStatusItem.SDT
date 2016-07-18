@@ -1,0 +1,15 @@
+======OBJECT = WikiPageInsertDNAWikiStatus_WikiStatusItem.SDT === Wiki Page Insert DNAWiki Status_Wiki Status Item=====
+
+=== STRUCTURE ===
+WikiPageInsertDNAWikiStatus_WikiStatusItem
+	ErrCode, N(9), Err Code 
+	ErrDesc, C(9999), Err Desc 
+
+====== PROPERTIES =======
+Name -> WikiPageInsertDNAWikiStatus_WikiStatusItem
+ExternalName -> WikiStatus.WikiStatusItem
+ExternalNamespace -> iwiki
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 82
+ObjectVisibility -> Private
+IsDefault -> False

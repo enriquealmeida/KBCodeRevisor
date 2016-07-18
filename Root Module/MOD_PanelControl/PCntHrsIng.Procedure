@@ -1,0 +1,24 @@
+======OBJECT = PCntHrsIng.Procedure === Cantidad de horas ingresadas=====
+
+=== RULES ===
+parm(in:&RspId , in:&PryId , in:&HrsFchIni , in:&HrsFchFnl , out:&CntHrs );
+
+
+=== PROCEDURE SOURCE ===
+&CntHrs = 0
+for each
+where            RspId = &RspId 
+where            PryId = &PryId
+where            HrsFch >= &HrsFchIni 
+where            HrsFch <= &HrsFchFnl 
+    &CntHrs += HrsCnt   
+endfor
+
+
+====== PROPERTIES =======
+Name -> PCntHrsIng
+Description -> Cantidad de horas ingresadas
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Public
+IsDefault -> False

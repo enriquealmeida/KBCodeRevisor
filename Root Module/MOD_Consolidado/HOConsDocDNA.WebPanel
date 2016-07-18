@@ -1,0 +1,59 @@
+======OBJECT = HOConsDocDNA.WebPanel === Documentación de consolidado DNA=====
+
+=== RULES ===
+parm(in:&CnsId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    tbkNomSis.Visible = 0
+
+    &PrbStsCER = DMPrbSts.CER
+    &PrbStsINS = DMPrbSts.INS
+EndEvent  // Start
+
+Event Refresh
+    for each
+        where     CnsId = &CnsId
+        &CnsFch = CnsFch
+    endfor
+    &Titulo = 'Novedades del Sistema LUCIA al ' + trim(dtoc(&CnsFch))
+    &Titulo.FontUnderline = 1
+EndEvent  // Refresh
+
+Event grdDocs.load
+    &SisId = nullvalue(&SisId)
+
+    for each order PrbDsc, SisId, PrbId
+        where     PrbCnsId = &CnsId
+        where     PrbRequiereDocumentacion = true
+        where     PrbSts = &PrbStsCER or PrbSts = &PrbStsINS      // cerrado o instalar
+        defined by PrbHrsPln
+
+        if SisId <> &SisId
+            &SisId = SisId
+            tbkNomSis.Caption = SisDsc + '<br>'
+            tbkNomSis.Visible = 1
+        else
+            tbkNomSis.Visible = 0
+        endif
+
+        wbcDocPrb.Object = HODocCamDNA.create(PrbId)
+        load
+    when none
+        tbkNomSis.Caption = 'No existen solicitudes para el consoliado seleccionado.'
+        load
+    endfor
+EndEvent  // grdDocs.load
+
+
+====== PROPERTIES =======
+Name -> HOConsDocDNA
+Description -> Documentación de consolidado DNA
+MasterPage -> Artech.Genexus.Common.CustomTypes.WebPanelReference
+AUTO_REFRESH -> VARS_CHANGE
+SPC_WARNINGS_DISABLED -> spc0096 spc0038
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,19 @@
+======OBJECT = SisId.Attribute === Sistema=====
+CHARACTER(2)
+
+
+====== PROPERTIES =======
+Name -> SisId
+Description -> Sistema
+HORIZONTAL_DESCRIPTION -> Sistema
+VERTICAL_DESCRIPTION -> Sistema
+ContextualTitle -> Sistema
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+ControlType -> 4
+ControlItemDescription -> SisDsc
+ControlRestrictedBy -> Artech.Genexus.Common.CustomTypes.ParseAttributesList
+AddEmptyItem -> False
+IsDefault -> False

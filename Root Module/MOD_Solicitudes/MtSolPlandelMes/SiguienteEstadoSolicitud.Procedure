@@ -1,0 +1,25 @@
+======OBJECT = SiguienteEstadoSolicitud.Procedure === Siguiente Estado Solicitud=====
+
+=== RULES ===
+Parm(in:&PrbSts, out:&PrbStsSiguiente);
+
+
+=== PROCEDURE SOURCE ===
+do case
+	case &PrbSts = DMPrbSts.ING
+		&PrbStsSiguiente = DMPrbSts.DES 
+	case &PrbSts = DMPrbSts.DES
+		&PrbStsSiguiente = DMPrbSts.INS
+	case &PrbSts = DMPrbSts.INS
+		&PrbStsSiguiente = DMPrbSts.CER
+	otherwise
+		&PrbStsSiguiente.SetEmpty()
+endcase
+
+
+====== PROPERTIES =======
+Name -> SiguienteEstadoSolicitud
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

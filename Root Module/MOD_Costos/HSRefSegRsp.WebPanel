@@ -1,0 +1,52 @@
+======OBJECT = HSRefSegRsp.WebPanel === Selección de referencia para seguimiento=====
+
+=== RULES ===
+parm(in:&SegTpoRef, out:&SegRef);
+
+
+=== EVENTS SOURCE ===
+Event Start
+
+EndEvent  // Start
+
+Event Refresh
+
+EndEvent  // Refresh
+
+Event load
+    &DscAux = '%' + &Dsc + '%'
+    if &SegTporef = 'CLI'
+        for each
+            where      CliNom like &DscAux
+			where      CliActivo = true
+
+            &RefId = CliId
+            &RefDsc = CliNom
+            load
+        endfor
+    else    // PRY
+        for each
+            where      PryNom like &DscAux
+            where      PryAct = 'A'
+
+            &RefId = PryId
+            &RefDsc = PryNom
+            load
+        endfor
+    endif
+EndEvent  // load
+
+Event Enter
+    &SegRef = &RefId
+    return
+EndEvent  // Enter
+
+
+====== PROPERTIES =======
+Name -> HSRefSegRsp
+Description -> Selección de referencia para seguimiento
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

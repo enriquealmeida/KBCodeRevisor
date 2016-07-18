@@ -1,0 +1,46 @@
+======OBJECT = PBorRspLic.Procedure === Borra Licencia del Responsable=====
+
+=== RULES ===
+parm(IN:&RspLicId);
+
+
+=== PROCEDURE SOURCE ===
+&Aut = Bool.False //'N'
+for each
+    where          RspLicId = &RspLicId
+
+    if LicEst = EstadoLicencia.Autorizada
+        &Aut = Bool.True // 'S'
+        &LicFecIni = LicFecIni
+        &LicFecFin = LicFecFin
+        &RspId = RspId
+
+        RspAutId = ''
+    endif
+    LicEst = EstadoLicencia.Eliminada
+endfor
+
+//if &Aut = 'S'
+//    do while &LicFecIni <= &LicFecFin
+//        for each
+//            where          HrsFch = &LicFecIni
+//            where          RspId = &RspId
+//            where          PryId = 'LICENCIA'
+//            where          TarId = 'LICTOM'
+//			
+//            delete
+//        endfor
+//		
+//        &LicFecIni += 1
+//    enddo
+//endif
+commit
+
+
+====== PROPERTIES =======
+Name -> PBorRspLic
+Description -> Borra Licencia del Responsable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

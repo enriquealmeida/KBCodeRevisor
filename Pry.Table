@@ -1,0 +1,34 @@
+======OBJECT = Pry.Table === Proyectos=====
+*PryId  PROYECTO- Null=False
+ PryNom  DESC- Null=False
+ CliId  Cliente- Null=False
+ PryCls  Producto- Null=False
+ PryTpo  Codigo10- Null=False
+ PryRspId  DMUsuarios- Null=False
+ PryDist  DMDistribuible- Null=False
+ PryFchIni  Fecha- Null=False
+ PryFchAprCli  Fecha- Null=True
+ PryFchFinP  Fecha- Null=False
+ PryFchFin  Fecha- Null=False
+ PryAct  DMPryAct-DMPryAct.Activo IF PrySts=DMPrySts.Aprobado;
+DMPryAct.Activo IF PrySts=DMPrySts.EnEspera;
+DMPryAct.Activo IF PrySts=DMPrySts.Propuesta;
+DMPryAct.Finalizado IF PrySts=DMPrySts.Cerrado;
+DMPryAct.Finalizado IF PrySts=DMPrySts.Rechazado;
+DMPryAct.Finalizado OTHERWISE; Null=False Redundant
+ PrySts  DMPrySts- Null=False
+ PryHorDscObligatoria  OBLIGATORIO- Null=False
+ PryPcjDst  PORCENTAJE- Null=False
+ PryObsIng  ObservacionesLarga- Null=False
+ PryObsCie  ObservacionesLarga- Null=False
+ PryValHrs  ValorHora- Null=False
+ PryHrsPln  HorasLargas- Null=False
+ MTPryPais  Pais- Null=True
+ MTPryFrmFct  Codigo3- Null=False
+ PryEvaluacionCierre  EvaluacionCierre- Null=True
+ KBId  Codigo10- Null=True
+ PryExterior  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> Pry
+Description -> Proyectos

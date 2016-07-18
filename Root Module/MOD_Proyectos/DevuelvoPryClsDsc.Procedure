@@ -1,0 +1,20 @@
+======OBJECT = DevuelvoPryClsDsc.Procedure === Devuelvo Pry Cls Dsc=====
+
+=== RULES ===
+parm(in:&prycls, out:&PryClsDsc);
+
+
+=== PROCEDURE SOURCE ===
+      for each
+	      where            PryCls=&prycls
+        &pryclsdsc=PryClsDsc
+		when none
+			&PryClsDsc='TODAS LAS CLASES'
+      endfor  
+
+
+====== PROPERTIES =======
+Name -> DevuelvoPryClsDsc
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

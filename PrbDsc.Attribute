@@ -1,0 +1,15 @@
+======OBJECT = PrbDsc.Attribute === Titulo Solicitud=====
+VARCHAR(150)
+
+
+====== PROPERTIES =======
+Name -> PrbDsc
+Description -> Titulo Solicitud
+HORIZONTAL_DESCRIPTION -> Titulo
+VERTICAL_DESCRIPTION -> Titulo
+ContextualTitle -> Titulo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+idCHARCASE -> idCHARCASE_NONE
+IsDefault -> False

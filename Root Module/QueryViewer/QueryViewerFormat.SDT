@@ -1,0 +1,13 @@
+======OBJECT = QueryViewerFormat.SDT === Query Viewer Format=====
+
+=== STRUCTURE ===
+QueryViewerFormat
+	ChartValuesColors, collection: ValueColor
+		Value, C(20), Value 
+		Color, N(8), Color 
+
+====== PROPERTIES =======
+Name -> QueryViewerFormat
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 67
+IsDefault -> False

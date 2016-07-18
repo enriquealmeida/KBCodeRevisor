@@ -1,0 +1,17 @@
+======OBJECT = OrdenCambioDNAtoPrbId.Procedure === Mapear Orden Cambio DNA a PrbId=====
+
+=== RULES ===
+Parm(in:&OrdenCambio, out:&PrbId);
+
+
+=== PROCEDURE SOURCE ===
+&PrbId = 900000 + &ordenCambio
+
+
+====== PROPERTIES =======
+Name -> OrdenCambioDNAtoPrbId
+Description -> Mapear Orden Cambio DNA a PrbId
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

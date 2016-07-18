@@ -1,0 +1,13 @@
+======OBJECT = RangoLicencias.SDT === Rango Licencias=====
+
+=== STRUCTURE ===
+RangoLicencias, collection: RangoLicenciasItem
+	DLicFecIni, D(8), Fecha Inicial 
+	DLicFecFin, D(8), Fecha Final 
+
+====== PROPERTIES =======
+Name -> RangoLicencias
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

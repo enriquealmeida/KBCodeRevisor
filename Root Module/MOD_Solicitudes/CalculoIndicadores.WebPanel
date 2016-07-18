@@ -1,0 +1,87 @@
+======OBJECT = CalculoIndicadores.WebPanel === Calculo Indicadores=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Start
+	&Year = &Today.Year()
+	&Month = &Today.Month()
+   
+	&CliId = 'DNA'
+	&FchIni = ymdtod(&Year,&Month,01)
+	&FchFin = &FchIni.EndOfMonth()
+	TablaIndicadores.Visible=0
+EndEvent
+
+
+Event 'Otro'
+    &IndicadorHoras = IndicadorHoras(&FchIni, &FchFin,&CliId, &CrrUsr,&PrbSts, &FormaCalculoHoras)
+	&IndicadorCiclo = IndicadorCiclo(&FchIni, &FchFin,&CliId, &CrrUsr,&PrbSts, &FormaCalculoCiclo)
+	
+	FormaCalculoHoras.Caption = &FormaCalculoHoras
+	FormaCalculoCiclo.Caption = &formaCalculoCiclo
+	TablaIndicadores.Visible=1
+EndEvent
+
+Event load
+	&PrbDsc = PrbDsc.Substring(1,120)
+	if (PrbIndicadorHoras > 20 or PrbIndicadorHoras < -20) and PrbHrsPln > 0
+		PrbIndicadorHoras.Class= 'AttAttention'	
+	else
+		PrbIndicadorHoras.Class= 'Attribute'
+	endif
+
+	if not (&FchIni <= CrrFch and CrrFch <= &FchFin) 
+		CrrFch.Class= 'AttAttention'
+	else
+		CrrFch.Class='Attribute'
+	endif
+    
+
+	if &IndicadorHoras > 20 or &IndicadorHoras< -20
+		&IndicadorHoras.Class='AttAttention'
+	else
+		&IndicadorHoras.Class='Attribute'
+	endif
+
+	if &IndicadorCiclo > 20 or &IndicadorCiclo< -20
+		&IndicadorCiclo.Class='AttAttention'
+	else
+		&IndicadorCiclo.Class='Attribute'
+	endif
+
+
+EndEvent
+
+
+Event PrbId.Click
+	
+ &Window.Object=Solicitudes.Create(TrnMode.Update,PryId,PrbId)
+ &Window.Open()
+	
+EndEvent
+
+Event PrbAvance.Click
+	
+ &Window.Object=CambioAvanceSolicitud.Create(PryId,PrbId)
+ &Window.Open()
+	
+EndEvent
+
+
+
+
+
+
+
+
+
+====== PROPERTIES =======
+Name -> CalculoIndicadores
+IsMain -> True
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

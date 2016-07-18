@@ -1,0 +1,24 @@
+======OBJECT = DMDescLarga.Domain === Descripcion Larga=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="EALMEIDANBK\Enrique" versionDate="2016-06-14T19:59:25.0000000Z" lastUpdate="2016-06-14T18:33:16.0000000Z" checksum="c2e9e2ae4ce46ebbe6332f66a1975f67" fullyQualifiedName="DMDescLarga" guid="68143eeb-659f-44b7-bc6d-5417f0de670d" name="DMDescLarga" type="00972a17-9975-449e-aab1-d26165d51393" description="Descripcion Larga">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMDescLarga</Value></Property><Property><Name>Description</Name><Value>Descripcion Larga</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>100</Value></Property><Property><Name>AttMaxLen</Name><Value>100</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMDescLarga
+Description -> Descripcion Larga
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 13
+Length -> 100
+AttMaxLen -> 100
+IsDefault -> False

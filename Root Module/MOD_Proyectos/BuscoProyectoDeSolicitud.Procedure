@@ -1,0 +1,20 @@
+======OBJECT = BuscoProyectoDeSolicitud.Procedure === Busco Proyecto De Solicitud=====
+
+=== RULES ===
+parm(in:&PrbId, out:&PryId);
+
+
+=== PROCEDURE SOURCE ===
+for each
+	where            PrbId=&PrbId
+	&PryId = PryId
+when none
+	&PryId.SetEmpty()
+endfor
+
+
+====== PROPERTIES =======
+Name -> BuscoProyectoDeSolicitud
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

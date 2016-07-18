@@ -1,0 +1,15 @@
+======OBJECT = RspCntFchI.Attribute === Fecha Inicial del contrato=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> RspCntFchI
+Description -> Fecha Inicial del contrato
+HORIZONTAL_DESCRIPTION -> Fecha Inicial del contrato
+VERTICAL_DESCRIPTION -> Fecha Inicial del contrato
+ContextualTitle -> Fecha Inicial del contrato
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

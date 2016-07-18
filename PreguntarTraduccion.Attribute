@@ -1,0 +1,13 @@
+======OBJECT = PreguntarTraduccion.Attribute === Preguntar Traducción?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> PreguntarTraduccion
+Description -> Preguntar Traducción?
+VERTICAL_DESCRIPTION -> Preguntar?
+ContextualTitle -> Preguntar?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

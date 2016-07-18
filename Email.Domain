@@ -1,0 +1,26 @@
+======OBJECT = Email.Domain === Email=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-11-19T17:13:07.0000000Z" checksum="3422a7f1b7b135d4451d115bee785468" fullyQualifiedName="Email" guid="0e8fc26e-909b-4daa-85f6-3c0d2d412950" name="Email" type="00972a17-9975-449e-aab1-d26165d51393" description="Email">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Email</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>100</Value></Property><Property><Name>AttMaxLen</Name><Value>100</Value></Property><Property><Name>AttRegEx</Name><Value>^((\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$</Value></Property><Property><Name>AutoCorrection</Name><Value>False</Value></Property><Property><Name>AutoCapitalization</Name><Value>None</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Email
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 13
+Length -> 100
+AttMaxLen -> 100
+AttRegEx -> ^((\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$
+AutoCorrection -> False
+AutoCapitalization -> None
+IsDefault -> False

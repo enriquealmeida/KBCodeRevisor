@@ -1,0 +1,10 @@
+======OBJECT = Feriados.Table === Feriados=====
+*FerFecha  Fecha- Null=False
+ FerTipo  TpoFeriado- Null=False
+ FerDsc  DESC- Null=False
+ FerDescuentoLicencia  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> Feriados
+Description -> Feriados
+CACHE_LEVEL -> 3

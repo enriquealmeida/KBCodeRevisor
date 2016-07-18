@@ -1,0 +1,14 @@
+======OBJECT = CliTpoDsc.Attribute === Tipo de Cliente=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> CliTpoDsc
+Description -> Tipo de Cliente
+HORIZONTAL_DESCRIPTION -> Tipo de Cliente
+VERTICAL_DESCRIPTION -> Tipo de Cliente
+ContextualTitle -> Tipo de Cliente
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

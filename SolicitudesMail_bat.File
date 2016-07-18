@@ -1,0 +1,16 @@
+======OBJECT = SolicitudesMail_bat.File === Solicitudes Mail_bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-07-01T16:42:46.0000000Z" lastUpdate="2016-07-01T15:56:34.0000000Z" checksum="2426329fca0bf4c78a6bbdc5b7bbce74" fullyQualifiedName="SolicitudesMail_bat" guid="f3b7bd2b-1e8b-43bc-9c3c-4b8a92ef3816" name="SolicitudesMail_bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Solicitudes Mail_bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>QGVjaG8gb24NCnNldCBjdXJuZGF0ZT0lZGF0ZSUNCnNldCBkZD0lY3VybmRhdGU6fjAsMiUNCnNldCBtbT0lY3VybmRhdGU6fjQsMiUNCnNldCBhYWFhPSVjdXJuZGF0ZTp+Nyw0JQ0KYzoNCmNkIEM6XFNpc3RlbWFzXE1UQmF0Y2hFdjMNCm1vZF9zb2xpY2l0dWRlcy5hcHNvbHhtYWlsLmV4ZSA+PiBsb2dzXHNvbGljaXR1ZGVzX3Bvcl9tYWlsLmxvZw0KUkVNID4+IExvZ3NcTG9nXyVhYWFhJV8lbW0lXyVkZCUubG9n</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>SolicitudesMail.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SolicitudesMail_bat</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>.\bin</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> SolicitudesMail_bat
+Extract -> Newer
+ExtractToPath -> .\bin
+IsDefault -> False

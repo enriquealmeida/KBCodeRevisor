@@ -1,0 +1,25 @@
+======OBJECT = menu_icon2.Image === menu_icon2=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2015-05-04T13:41:22.0000000Z" checksum="301b7e6500371344019d85ae5d960754" fullyQualifiedName="menu_icon2" guid="70d5df5e-e723-4cca-9402-f0ce8679d27f" name="menu_icon2" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="menu_icon2">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="menu_icon2.png" description="menu_icon2.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVY
+dFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAENSURBVDhP7dMxSwJhHMfxpxAsU2pxMNAgm30JvoamegFBhGPQlG/ARcHdVxBKTU2u0hA4iLqEjWEQ
+FImCmfn9Bc8N5x2nt9YPPstzv3v8+9yd8ckmsrhGD1OM0cQJklgreTziGz8uX7hDDitlD23o5g9UcYxT1KFJde0BuwjMJeZ4xxl00wZ0DCk0MIM6uh6YFjTB
+Lfa14IqOYwh1brQQlFeoXEZEC65sYQB1dM6BGUHlEvRXvfIEdbrw6/wmBrthBQnEPdgJ+4hiKRnUoF/WYaush/LsQ6+OOno/O7jANpycw04WxgvScHIFO1lY
+h3Dyv2Eof33DAibwKq7iDQdwcoR72E9qHZ8oYscYYxZxgvFJAs8o7AAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>menu_icon2.png</Value></Property><Property><Name>Description</Name><Value>menu_icon2.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Desktop\menu_icon2.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>menu_icon2</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> menu_icon2
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

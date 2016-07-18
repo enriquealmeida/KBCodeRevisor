@@ -1,0 +1,14 @@
+======OBJECT = USuMes1.Index === USu Mes1=====
+<Object Type="Duplicate" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-03-29T20:27:17.0000000Z" lastUpdate="2016-03-29T20:27:14.0000000Z" checksum="08c174b5b201ae098094a53243102cc7" fullyQualifiedName="USuMes1" guid="86badcd1-51d3-4dda-a78b-85c88a30596c" name="USuMes1" type="9e750647-3679-0000-0100-2529de263960" description="USu Mes1">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspSuA</Member>
+      <Member Order="Ascending">RspSuM</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>USuMes1</Value></Property><Property><Name>Description</Name><Value>USu Mes1</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> USuMes1
+Description -> USu Mes1

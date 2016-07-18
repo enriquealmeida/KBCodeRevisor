@@ -1,0 +1,10 @@
+======OBJECT = KBGXServerPass.Attribute === KBGXServer Pass=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> KBGXServerPass
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

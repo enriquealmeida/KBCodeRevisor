@@ -1,0 +1,142 @@
+======OBJECT = WCResumendeProyectos.WebComponent === WCResumende Proyectos=====
+
+=== RULES ===
+parm(IN:&cCliId, IN:&cPryId, IN:&cCpRecId, IN:&PryRspId,IN: &cFchIni,IN: &cFchFin, IN:&Moneda,IN: &cprycls, IN:&cprytpo, IN:&vCpMovTpo,IN: &vTomaTrf,IN: &CpMovFTpo,IN: &TipoResumen, IN: &Movimientos);
+
+
+=== EVENTS SOURCE ===
+
+Event Start
+
+	&Dimension.Title = &TipoResumen.EnumerationDescription()
+
+EndEvent
+
+//Grid.load
+Event Grid.load
+    Do 'Apago'
+	CargarDimension(&Movimientos,&Tiporesumen)
+	&MovimientosAgrupados = AgruparMovimientos(&Movimientos,&Moneda,&vTomaTrf)
+	For &Movimiento in &MovimientosAgrupados
+        &HrsAux = &Movimiento.CpMovHrs
+        &vCob = &Movimiento.Cobrado
+        &vCobScr = round(&Movimiento.Cobrado,0)
+        &vPag = &Movimiento.Pagado
+        &vTranf = &Movimiento.Transferido
+        &Dimension = &Movimiento.Texto
+		
+		if &Tiporesumen = TipoRes.Cli
+        	&Dimension.Link = HMTPCCli.link( &Movimiento.CliId, &cFchIni, &cFchFin)
+		else
+			if &Tiporesumen = TipoRes.Rec
+				do case
+					case &Movimiento.CpRecTpo = DMRecTpo.Porhoras
+						&Dimension.Link = HDHorTaP.Link( &Movimiento.CpRecId, &cFchIni, &cFchFin)
+					case &Movimiento.CpRecTpo = DMRecTpo.Gastos
+						&Dimension.Link = HDMovRec.Link( &Movimiento.CpRecId, &cFchIni, &cFchFin, &CpMovFTpo, &cCliId, &cPryId, &PryRspId, &cprycls, &cprytpo,  &vTomaTrf)
+					otherwise
+						&Dimension.Link = Link('')
+				endcase
+			else
+				&Dimension.Link = Link('')
+			endif
+		endif
+        
+        &vHrs = round(&HrsAux, 0)
+
+        Do 'Totalizo'
+        if &vHrs <> 0  or   &vPag <> 0  or  &vGan<> 0
+            &vCobScr = round(&vCob, 0)
+            &vPagScr = round(&vPag, 0)
+            &vTranfScr = round(&vTranf, 0)
+            &vGanScr = round(&vGan, 0)
+			Grid.load() 
+        endif
+    endfor
+    Do 'Prendo'
+	load
+EndEvent
+
+//Apago
+Sub 'Apago'
+    &Dimension.FontBold=0
+    &vHrs.FontBold=0
+    &vCobScr.FontBold = 0
+    &vPagScr.FontBold = 0
+    &vGanScr.FontBold = 0
+    &vTranfScr.FontBold = 0
+    &vCobxHr.FontBold=0
+    &vPagxHr.FontBold=0
+    &vGanxHr.FontBold=0
+    &vTranfxHr.FontBold=0
+    &vMargen.FontBold=0
+	
+    //Inicializo en Cero
+    &vTotHrs    = 0
+    &vTotCob    = 0
+   // &vTotCobxHr = 0
+    &vTotPag    = 0
+   // &vTotPagxHr = 0
+    &vTotGan    = 0
+   // &vTotGanxHr = 0
+    &vTotTranf  = 0
+   // &vToTranpHr = 0
+EndSub
+
+//Totalizo
+Sub 'Totalizo'
+     &vGan = &vCob + &vPag + &vTranf
+
+    &vCobxHr =   PClcTas(&vCob,&vHrs)
+    &vPagxHr =   PClcTas(&vPag,&vHrs)
+    &vGanxHr =   PClcTas(&vGan,&vHrs)
+    &vTranfxHr = PClcTas(&vTranf,&vHrs)
+
+    &vMargen=PClcMrg(&vGan,&vCob)
+
+    // Calculo Totales
+    &vTotHrs = &vTotHrs + &HrsAux
+    &vTotPag = &vTotPag + &vPag
+    &vTotGan = &vTotGan + &vGan
+    &vTotCob = &vTotCob + &vCob
+    &vTotTranf = &vTotTranf + &vTranf
+EndSub
+
+//Prendo
+Sub 'Prendo'
+    &Dimension.FontBold=1
+    &vHrs.FontBold=1
+    &vCobScr.FontBold = 1
+    &vPagScr.FontBold = 1
+    &vGanScr.FontBold = 1
+    &vTranfScr.FontBold = 1
+    &vCobxHr.FontBold=1
+    &vPagxHr.FontBold=1
+    &vGanxHr.FontBold=1
+    &vTranfxHr.FontBold=1
+    &vMargen.FontBold=1
+    &Dimension    = ' TOTALES'
+    &Dimension.Link=link('')
+    &vHrs      = round(&vTotHrs, 0)
+    &vCobScr = round(&vTotCob, 0)
+    &vPagScr = round(&vTotPag, 0)
+    &vGanScr = round(&vTotGan, 0)
+    &vTranfScr = round(&vTotTranf, 0)
+    &vCobxHr   = PClcTas(&vTotCob,&vTotHrs)
+    &vPagxHr   = PClcTas(&vTotPag,&vTotHrs)
+    &vGanxHr   = PClcTas(&vTotGan,&vTotHrs)
+    &vTranfxHr = PClcTas(&vTotTranf,&vTotHrs)
+    &vMargen   = PClcMrg(&vTotGan,&vTotCob)
+EndSub
+
+
+====== PROPERTIES =======
+Name -> WCResumendeProyectos
+Description -> WCResumende Proyectos
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 43
+ObjectVisibility -> Private
+IsDefault -> False

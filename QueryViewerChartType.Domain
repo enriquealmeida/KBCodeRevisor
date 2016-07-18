@@ -1,0 +1,25 @@
+======OBJECT = QueryViewerChartType.Domain === Query Viewer Chart Type=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="ARTECH\GeneXus" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="0001-01-01T00:00:00.0000000Z" checksum="9e61e8989f5ff09b1e4c5b5f9acd5f0a" fullyQualifiedName="QueryViewerChartType" guid="10542562-9767-4b74-90ed-ef20357ecc24" name="QueryViewerChartType" type="00972a17-9975-449e-aab1-d26165d51393" description="Query Viewer Chart Type">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <InnerHtml><![CDATA[]]></InnerHtml>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>QueryViewerChartType</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>40</Value></Property><Property><Name>AttMaxLen</Name><Value>40</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>Column, Column, Column; Column3D, Column3D, Column3D; StackedColumn, StackedColumn, StackedColumn; StackedColumn3D, StackedColumn3D, StackedColumn3D; Bar, Bar, Bar; StackedBar, StackedBar, StackedBar; Area, Area, Area; StackedArea, StackedArea, StackedArea; Line, Line, Line; Pie, Pie, Pie; Pie3D, Pie3D, Pie3D; Doughnut, Doughnut, Doughnut; Funnel, Funnel, Funnel; ColumnLine, ColumnLine, Column Line; Column3DLine, Column3DLine, Column 3D Line; Timeline, Timeline, Timeline</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> QueryViewerChartType
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 40
+AttMaxLen -> 40
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

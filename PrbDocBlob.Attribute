@@ -1,0 +1,16 @@
+======OBJECT = PrbDocBlob.Attribute === Blob=====
+BINARY(4)
+
+
+====== PROPERTIES =======
+Name -> PrbDocBlob
+Description -> Blob
+HORIZONTAL_DESCRIPTION -> Blob
+VERTICAL_DESCRIPTION -> Blob
+ContextualTitle -> Blob
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttFileTypeAtt -> PrbDocFileExt
+AttFileNameAtt -> PrbDocFileName
+IsDefault -> False

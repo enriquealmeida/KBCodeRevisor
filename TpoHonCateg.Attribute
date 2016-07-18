@@ -1,0 +1,11 @@
+======OBJECT = TpoHonCateg.Attribute === Categoría tipo Honorario=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> TpoHonCateg
+Description -> Categoría tipo Honorario
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

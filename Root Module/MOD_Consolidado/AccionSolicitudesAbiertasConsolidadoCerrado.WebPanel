@@ -1,0 +1,92 @@
+======OBJECT = AccionSolicitudesAbiertasConsolidadoCerrado.WebPanel === Accion sobre solicitudes abiertas del consolidado que se cerró .=====
+
+=== RULES ===
+parm(in:&CnsId);
+order(PrbCnsId,PrbId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    PFUsuInt.call('CONS',9,&Ok)
+    if &Ok <> Bool.true 
+        HSinPermiso.call()
+    endif
+
+    for each
+	where      CnsId = &CnsId
+    	&CnsFch = CnsFch
+        &KBId = KBId
+		&MTCnsDsc = MTCnsDsc
+    endfor
+
+    &MTCnsEstCER = PMTParChr('MTCNSCER')
+    &selec = 'P'
+    &selecDef = 'P' 
+	
+
+EndEvent  // Start
+
+Event Enter
+    do 'BuscaConsolidadoSiguiente'
+
+    for each line in Problemas
+        do case
+        case &selec = 'P' 
+            // pasar al siguiente consolidado
+            PGraCnsSol.call(PrbId,&ProxCons)
+        case &selec = 'N' 
+            // no asignar consolidado
+            PGraCnsSol.call(PrbId,0)
+        case &selec = 'C'
+            // cerrar solicitud
+            PCrrPrb.call(PryId,PrbId)
+        endcase
+    endfor
+
+    WWConsolidado.call()
+EndEvent  // Enter
+
+Event &selecDef.Click
+	for each line
+		if &selecDef = 'I'
+			if PrbSts = DMPrbSts.INS
+				&selec = 'C'
+			else
+				&selec = 'P'
+			endif
+		else
+			&selec = &selecDef
+		endif
+	endfor
+	Problemas.refresh()
+
+	//refresh
+EndEvent  // &selecDef.Click
+
+Sub 'BuscaConsolidadoSiguiente'
+
+    for each
+        where      KBId = &KBId
+        where      CnsFch >= &CnsFch or null(&CnsFch)
+        where      MTCnsEstId <> &MTCnsEstCER
+
+        &ProxCons = CnsId
+        //exit  // MCrispino, 2/5/05. Antes se quedaba con el primer consolidado abierto, pero en DNA tienen
+                // el consolidado 11 que siempre está abierto y siempre está primero. Por eso ahora se queda
+                // con el último. En el caso de DNA, tienen que abrir a mano el próximo consolidado, porque
+                // si no les va a tomar el 11.
+    when none
+        &ProxCons = PFNueCns(&KBId)
+    endfor
+EndSub  // 'BuscaConsolidadoSiguiente'
+
+
+====== PROPERTIES =======
+Name -> AccionSolicitudesAbiertasConsolidadoCerrado
+Description -> Accion sobre solicitudes abiertas del consolidado que se cerró .
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

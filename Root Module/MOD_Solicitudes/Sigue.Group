@@ -1,0 +1,22 @@
+======OBJECT = Sigue.Group === Usuario que sigue el problema=====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="" versionDate="2016-03-10T18:31:16.0000000Z" lastUpdate="2016-03-10T16:37:39.0000000Z" checksum="dd5e947b9ba187d54c07374356c87e22" fullyQualifiedName="MOD_Solicitudes.Sigue" guid="6908bb65-cf3e-456a-86d9-22b1eacc2d0c" name="Sigue" type="87313f43-5eb2-41d7-9b8c-e8d9f5bf9588" description="Usuario que sigue el problema">
+  <Part type="74203da2-41b1-402c-0001-d8d564a2c2fa">
+    <Subtype guid="5b75991a-f500-416a-a901-d44585ed267d">
+      <Name>SegUsr</Name>
+      <Supertype guid="947a8983-7214-41b9-be70-4cc2072fe122">RspId</Supertype>
+    </Subtype>
+    <Subtype guid="16a03c39-d83e-4889-92c4-2103ce66b895">
+      <Name>SegUsrMail</Name>
+      <Supertype guid="d4218e49-a1a6-4683-add6-aea188cdc37e">RspUsrMl</Supertype>
+    </Subtype>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Sigue</Value></Property><Property><Name>Description</Name><Value>Usuario que sigue el problema</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Sigue
+Description -> Usuario que sigue el problema
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

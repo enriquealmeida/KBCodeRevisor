@@ -1,0 +1,39 @@
+======OBJECT = ActionExportReport.Image === Action Export Report=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-19T16:26:24.0000000Z" lastUpdate="2014-09-18T18:18:55.0000000Z" checksum="14e7b3382e5c2079e947a9a3d76d6969" fullyQualifiedName="ActionExportReport" guid="776fb79c-a0a1-4302-b5e5-d773dbe1a297" name="ActionExportReport" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Export Report">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionExportReport.png" description="Action Export Report.png"><Data>
+<base64Binary>
+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
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionExportReport.png</Value></Property><Property><Name>Description</Name><Value>Action Export Report.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Downloads\ActionExportReport.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionExportReport</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionExportReport
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

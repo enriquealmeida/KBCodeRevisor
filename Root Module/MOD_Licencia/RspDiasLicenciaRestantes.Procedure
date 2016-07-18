@@ -1,0 +1,32 @@
+======OBJECT = RspDiasLicenciaRestantes.Procedure === Rsp Dias Licencia Restantes=====
+
+=== RULES ===
+Parm(in:&RspId, in:&FechaDesde, out:&Dias);
+
+
+=== PROCEDURE SOURCE ===
+&CantidadDias=0
+&FechaFin.SetEmpty()
+for each order LicFecIni
+where            RspId = &RspId
+where            LicFecIni <= &FechaDesde and &FechaDesde <= LicFecFin 
+where            LicTpo = DMLicTpo.Tomada
+where            LicEst = EstadoLicencia.Autorizada
+	&FechaFin = LicFecFin
+	exit
+endfor
+
+if not &FechaFin.IsEmpty()
+	for each
+	where            RspId =&RspId
+		&Dias = CalculoDiasLicencia(&RspId, &FechaDesde, &FechaFin)
+	endfor
+endif
+
+
+====== PROPERTIES =======
+Name -> RspDiasLicenciaRestantes
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

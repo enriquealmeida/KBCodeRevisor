@@ -1,0 +1,96 @@
+======OBJECT = PRecAto.Procedure === Recupero Asientos=====
+
+=== RULES ===
+parm(in:&FchIni, in:&FchFin); //, in:&UsarUltAsiNro);
+
+
+=== PROCEDURE SOURCE ===
+&location = GetLocation('AsientosDP')
+&SI_SDTAsientos = &AsientosDP.Execute(&FchIni, &FchFin,'M','')
+msg(format('Se cargararon %1 lineas de asientos', &SI_SDTAsientos.Count  ))
+
+for &SI_SDTAsientosItem in &SI_SDTAsientos
+	if not (&SI_SDTAsientosItem.AsiLinDes like '##%')  // son los movimientos de caja transitoria
+	    //CorRIJO PROYECTO YCONCEPTO
+		if &SI_SDTAsientosItem.AuxId='YCONCEPTO'
+			&SI_SDTAsientosItem.AuxId='CONCEPTO'
+		endif
+	   
+	    if &SI_SDTAsientosItem.AsiLinDH = 'D'
+	        &AsiLinMC = (-1) * &SI_SDTAsientosItem.AsiLinMC
+	        &AsiLinMN = (-1) * &SI_SDTAsientosItem.AsiLinMN
+	    else
+	        &AsiLinMC = &SI_SDTAsientosItem.AsiLinMC
+	        &AsiLinMN = &SI_SDTAsientosItem.AsiLinMN
+	    endif      
+	    &Asifec=&SI_SDTAsientosItem.Asifec
+	    &RubId=&SI_SDTAsientosItem.RubId
+	    &AuxId=&SI_SDTAsientosItem.AuxId
+	    &AsiLinDoc = &SI_SDTAsientosItem.AsiLinDoc
+		&CpMovObs = format('%1 - %2 - %3 - %4',&SI_SDTAsientosItem.AsiLinDes,&SI_SDTAsientosItem.AsiNro,&SI_SDTAsientosItem.RubId,&SI_SDTAsientosItem.AuxId)
+	    // me quedo con los que no son sueldos
+		
+	    if not (&SI_SDTAsientosItem.RubId >= '5112' and &SI_SDTAsientosItem.RubId <= '5117') and not (&SI_SDTAsientosItem.RubId like '5121%')
+	        ///////////////////////////////////////////////////////////////////////////////
+	        // ATENCIÓN: La lista de los rubros que se excluyen acá, se deben incluir en //
+	        //           el prc FImpRsp. Mantener los dos programas consistentes.        //
+	        //           También van en el wkp orecAto, en el form.                      //
+	        ///////////////////////////////////////////////////////////////////////////////
+	        //msg(&SI_SDTAsientosItem.RubId)
+	        do 'BuscoVar'
+			
+		    if &AsiLinMN > 1.00 or &AsiLinMN < -1.00    // Solo paso movimientos que sean mayores a 1
+				&CpMovId=PCNumera('CPMOVIM')
+				
+				//msg(format('Voy a grabar CPMOV %2 / %1 ',&CPRecID , &PryId) )
+				
+				if &Pregunta
+					&CpMovCod='R'
+				else
+					&CpMovCod='N'
+				endif
+			    &CpMovSts = DMMovSts.Valorizado
+				&CpMovTpo= 'R'
+				&cpMovHrs= 0
+				
+			    PGCpMov.Call(&CpMovSts,&CPRecID,&PryId,&AsiLinMC,&AsiLinMN,&CPMovest,&Asifec,&cpMovHrs,&CpMovObs,&RubId,&CpMovCod)
+
+			endif
+	    endif 
+   endif  
+endfor
+commit
+
+
+Sub 'BuscoVar'
+    &Pregunta=false
+    &CPMovEst=DMEst.Convert(NullValue(&CPMovest))
+    &CpRecId.SetEmpty() //=NullValue(&CPRecID)
+    &PryId.SetEmpty() //=NullValue(&PryId)
+
+    for each     // TRADATO
+	    where        RubId=&RubId and AuxId=&AuxId
+	    defined by PreguntarTraduccion
+        &Pregunta=PreguntarTraduccion
+        &CPMovEst=TDCpMovEST
+        &CpRecId= CpRecId
+        &PryId = PryId
+		msg(format('Traduccion Rubro=%1 , Auxiliar=%2 se traduce por %3 / %4 ',&RubId,&AuxId,&PryId,&CPRecID ))
+		exit
+	when none
+		msg(format('ERRor: No se encuentra traduccion para Rubro=%1 , Auxiliar=%2',&RubId,&AuxId))
+    endfor
+
+EndSub  // 'BuscoVar'
+
+
+
+
+
+====== PROPERTIES =======
+Name -> PRecAto
+Description -> Recupero Asientos
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,28 @@
+======OBJECT = MOD_Consolidado.Module === MOD_Consolidado=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-03-14T14:41:38.0000000Z" lastUpdate="2016-03-14T12:47:21.0000000Z" checksum="cffe6338b121aa6f671de3751661f071" fullyQualifiedName="MOD_Consolidado" guid="9645d67a-4026-42d5-b7af-fe6e4c3f5cd3" name="MOD_Consolidado" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="MOD_Consolidado">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="4dc0dbdc-14bf-4d38-99e4-83882e891492">
+      <Layers>
+        <Layer Id="4dc0dbdc-14bf-4d38-99e4-83882e891492">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Consolidado" Bounds="391.0226 270.3996 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MD" Bounds="306.0453 519.8918 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="744.0314 497.4392 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-Root Module" Bounds="25.00001 240.561 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Solicitudes" Bounds="684.7657 181.9575 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MOD_Consolidado</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> MOD_Consolidado
+IsDefault -> False

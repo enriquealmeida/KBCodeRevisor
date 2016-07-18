@@ -1,0 +1,24 @@
+======OBJECT = EsDiaHabil.Procedure === Es Dia Habil=====
+
+=== RULES ===
+parm(in:&Fecha,out:&EsHabil);
+
+
+=== PROCEDURE SOURCE ===
+&EsHabil = True
+if (&Fecha.DayOfWeek() = 1 or &Fecha.DayOfWeek() = 7 )
+	&EsHabil = False
+else 
+	for each
+		where            FerFecha = &Fecha
+		 &EsHabil = False
+	endfor
+endif
+
+
+
+====== PROPERTIES =======
+Name -> EsDiaHabil
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+IsDefault -> False

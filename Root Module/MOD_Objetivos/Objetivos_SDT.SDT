@@ -1,0 +1,20 @@
+======OBJECT = Objetivos_SDT.SDT === Objetivos_SDT=====
+
+=== STRUCTURE ===
+Objetivos_SDT, collection: Objetivos_SDTItem
+	ObjId, N(6), Objetivo 
+	ObjDsc, V(100), Descripcion 
+	IndId, C(10), Indicador 
+	ObjMeta, V(40), Meta 
+	ObjPcjAva, N(5)-, Porcentaje de avance 
+	ObjUltimaMedicion, V(40), Ultima Medicion 
+	Ingreso, V(40), Ingreso 
+	ObjFechaUltimaMedicion, D(8), Fecha Ultima Medicion 
+	ObjStsId, C(3), Estado del Objetivo 
+
+====== PROPERTIES =======
+Name -> Objetivos_SDT
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 9
+ObjectVisibility -> Private
+IsDefault -> False

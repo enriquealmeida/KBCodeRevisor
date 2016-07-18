@@ -1,0 +1,15 @@
+======OBJECT = PrbUltObs.Attribute === Última observación=====
+NUMERIC(8)
+
+
+====== PROPERTIES =======
+Name -> PrbUltObs
+Description -> Última observación
+HORIZONTAL_DESCRIPTION -> Última observación
+VERTICAL_DESCRIPTION -> Última observación
+ContextualTitle -> Última observación
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZZZZZZ9
+IsDefault -> False

@@ -1,0 +1,31 @@
+======OBJECT = PCpBorHrs.Procedure === Borra Horas Cargadas=====
+
+=== RULES ===
+parm(IN:&FchIni, IN:&FchFin);
+
+
+=== PROCEDURE SOURCE ===
+
+    &FchCrr = PMTParFch('PARFCHCRR')
+
+    // veo que el período no esté cerrado
+    if &FchIni > &FchCrr and &FchFin > &FchCrr
+        for each order CpRecId, CpMovFch
+            where          CpMovSts = DMMovSts.S
+            where          CpMovEST = DMEst.Salidas
+            where          CpMovFch >= &FchIni and CpMovFch <= &FchFin
+			
+            delete
+        endfor
+    endif
+commit
+
+
+====== PROPERTIES =======
+Name -> PCpBorHrs
+Description -> Borra Horas Cargadas
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,12 @@
+======OBJECT = IMTLeg2.Index === IMTLeg2=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:29.0000000Z" checksum="96597093895b4140e520521a2a17658d" fullyQualifiedName="IMTLeg2" guid="136db252-e3a1-42d2-a2be-790431289060" name="IMTLeg2" type="9e750647-3679-0000-0100-2529de263960" description="IMTLeg2">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IMTLeg2</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IMTLeg2

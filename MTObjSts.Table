@@ -1,0 +1,8 @@
+======OBJECT = MTObjSts.Table === Estado de los objetivos=====
+*ObjStsId  Codigo3- Null=False
+ ObjStsDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MTObjSts
+Description -> Estado de los objetivos
+CACHE_LEVEL -> 3

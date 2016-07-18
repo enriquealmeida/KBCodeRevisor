@@ -1,0 +1,13 @@
+======OBJECT = CliActivo.Attribute === Cliente Activo?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> CliActivo
+Description -> Cliente Activo?
+HORIZONTAL_DESCRIPTION -> Cliente Activo?
+VERTICAL_DESCRIPTION -> Activo?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

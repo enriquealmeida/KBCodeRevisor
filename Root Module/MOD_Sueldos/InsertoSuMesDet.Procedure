@@ -1,0 +1,18 @@
+======OBJECT = InsertoSuMesDet.Procedure === Inserto Su Mes Det=====
+
+=== RULES ===
+parm(in:RspId, in:RspSuA, in:RspSuM, in:PryId, in:RspSuFch, in:TpoHonId, in:MonId, in:RspSuPlaExt, in:RspSuImp, in:RspSuObs, in:RubId, in:RspSuAuxId, in:RspSuBol);
+
+
+=== PROCEDURE SOURCE ===
+//Insert into SuMesDet (con valores en parametros)
+new defined by RspSuBol
+endnew
+
+
+====== PROPERTIES =======
+Name -> InsertoSuMesDet
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = LicFecIni.Attribute === Fecha Inicial=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> LicFecIni
+Description -> Fecha Inicial
+HORIZONTAL_DESCRIPTION -> Fecha Inicial
+VERTICAL_DESCRIPTION -> Inicio
+ContextualTitle -> Inicio
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

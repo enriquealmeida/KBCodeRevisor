@@ -1,0 +1,97 @@
+======OBJECT = WWLicenciaDS.DataSelector === WWLicencia DS=====
+<Object parent="MOD_Licencia.WorkWithPlusLicencia" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="3db7911f-db1c-0660-1e26-5bbd51d17475" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:33.0000000Z" checksum="efbe4434c17d7dedd511e9e1a63fdc45" fullyQualifiedName="MOD_Licencia.WWLicenciaDS" guid="179336c6-fc3b-45ba-8d64-5f8c0b9d7f2c" name="WWLicenciaDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWLicencia DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[AusTpoId = &AusTpoId when not &AusTpoId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[RspId = &RspId when not &RspId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[LicEst = &LicEst when not &LicEst.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[LicFecIni >= &LicFecIni when not &LicFecIni.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[LicFecIni <= &LicFecIni_To when not &LicFecIni_To.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="AusTpoId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>AusTpoId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:AusTpoId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="RspId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>RspId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="LicEst">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>LicEst</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:EstadoLicenciaComboConEmpty</Value></Property></Properties>
+      </Variable>
+      <Variable Name="LicFecIni">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>LicFecIni</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:LicFecIni</Value></Property></Properties>
+      </Variable>
+      <Variable Name="LicFecIni_To">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>LicFecIni_To</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:LicFecIni</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>AusTpoId</Name>
+        <Description>Aus Tpo Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>RspId</Name>
+        <Description>Rsp Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>LicEst</Name>
+        <Description>Lic Est</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>LicFecIni</Name>
+        <Description>Lic Fec Ini</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>LicFecIni_To</Name>
+        <Description>Lic Fec Ini_To</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWLicenciaDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Licencia.WorkWithPlusLicencia</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWLicenciaDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-47
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 47
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

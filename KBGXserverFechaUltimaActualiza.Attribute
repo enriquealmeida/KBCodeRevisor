@@ -1,0 +1,15 @@
+======OBJECT = KBGXserverFechaUltimaActualiza.Attribute === Ultima Actualizacion=====
+DATETIME(10.5)
+
+
+====== PROPERTIES =======
+Name -> KBGXserverFechaUltimaActualiza
+Description -> Ultima Actualizacion
+VERTICAL_DESCRIPTION -> Ultima Actualizacion
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+idDATEFORMAT -> idDATEFORMAT_LONG
+idHOURFORMAT -> idHOURFORMAT_HOURMINSEC
+WWP_DATE_DISPLAY_FLAT -> True
+IsDefault -> False

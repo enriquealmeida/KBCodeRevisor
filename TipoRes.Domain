@@ -1,0 +1,23 @@
+======OBJECT = TipoRes.Domain === Tipo Res=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="EALMEIDANBK\Enrique" versionDate="2016-04-07T19:49:31.0000000Z" lastUpdate="2016-06-22T18:51:06.0000000Z" checksum="d7358969dd746ca4b93adaefbd9f5e93" fullyQualifiedName="TipoRes" guid="28fbda91-2f97-4144-829d-648a784608a2" name="TipoRes" type="00972a17-9975-449e-aab1-d26165d51393" description="Tipo Res">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>TipoRes</Value></Property><Property><Name>Description</Name><Value>Tipo Res</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Numeric</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>0, Cli, Cliente; 1, Mes, Mes; 2, Rec, Recurso; 3, Pry, Proyecto; 4, PCls, Clases; 5, PTpo, Tipos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> TipoRes
+Description -> Tipo Res
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 4
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

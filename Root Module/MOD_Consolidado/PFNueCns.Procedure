@@ -1,0 +1,28 @@
+======OBJECT = PFNueCns.Procedure === Crea un nuevo consolidado=====
+
+=== RULES ===
+parm(in:&KBId, out:&CnsId);
+
+
+=== PROCEDURE SOURCE ===
+//&MTCnsEstPLA = PMTParChr('MTCNSPLA')
+&MTCnsEstABI = PMTParChr('MTCNSABI')
+
+new
+    CnsFch = nullvalue(CnsFch)
+    KBId = &KBId
+//    MTCnsEstId = &MTCnsEstPLA
+    MTCnsEstId = &MTCnsEstABI
+    MTCnsFchRea = nullvalue(MTCnsFchRea)
+    MTCnsObs = 'GENERADO AUTOMATICAMENTE'
+endnew
+&CnsId = CnsId
+
+
+====== PROPERTIES =======
+Name -> PFNueCns
+Description -> Crea un nuevo consolidado
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,39 @@
+======OBJECT = PMTWSCli.Procedure === Devuelve clientes=====
+
+=== RULES ===
+parm(out:&Result);
+
+
+=== PROCEDURE SOURCE ===
+    RegistraGoogleAnalyticsParaWS2.Call(&Pgmname,&Pgmdesc,&Error)
+    &XmlWrite.OpenToString()
+    &XmlWrite.WriteRawText("<?xml version='1.0' encoding='ISO-8859-1' ?>")
+    &XmlWrite.WriteRawText(newLine())
+    &XmlWrite.WriteStartElement('CLIENTES')
+
+        // recorro la tabla de clientes y los agrego en el XML
+        &i = 0
+        for each
+        defined by CliNom
+            &XmlWrite.WriteStartElement('CLIENTE')
+                &XmlWrite.WriteAttribute('NUM', str(&i))
+                &XmlWrite.WriteElement( 'CLIID' , trim(CliId))
+                &XmlWrite.WriteElement('CLINOM', trim(CliNom))
+                &i = &i + 1
+            &XmlWrite.WriteEndElement() 
+        endfor
+    &XmlWrite.WriteEndElement()
+    &XmlWrite.Close()
+    &Result = &XmlWrite.ResultingString
+
+
+====== PROPERTIES =======
+Name -> PMTWSCli
+Description -> Devuelve clientes
+IsMain -> True
+CALL_PROTOCOL -> SOAP
+AppLocation -> MTWebServices
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

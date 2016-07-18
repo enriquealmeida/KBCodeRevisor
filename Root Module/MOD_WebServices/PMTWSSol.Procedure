@@ -1,0 +1,59 @@
+======OBJECT = PMTWSSol.Procedure === Devuelve solicitudes cli sel.=====
+
+=== RULES ===
+parm(in:&CliXML, out:&Result);
+
+
+=== PROCEDURE SOURCE ===
+
+    &ParCerrado = PMTParChr('PARCERRADO')
+    &ParPrbBor = PMTParChr('PARPRBBor')
+
+    &XmlWrite.OpenToString()
+    &XmlWrite.WriteStartDocument('ISO-8859-1')
+    //&XmlWrite.WriteRawText(newLine())
+    &XmlWrite.WriteStartElement('SOLICITUDES')
+
+    &XmlRead.OpenFromString(&CliXML)
+    &XmlRead.Read()   // CLISEL
+    do while &XmlRead.Read() > 0
+        if &XmlRead.Name = 'CLIENTE'
+            &CliId = &XmlRead.Value
+            for each order CliId
+                where          CliId = &CliId
+                defined by CliNom
+
+                // recorro las solicitudes del cliente
+                for each
+                    where          PrbSts <> &ParCerrado and PrbSts <> &ParPrbBor
+                    
+                    &XmlWrite.WriteStartElement('SOLICITUD')
+                        &XmlWrite.WriteElement('CLIID', CliId)
+                        &XmlWrite.WriteElement('PRBID', PrbId)
+                        &XmlWrite.WriteElement('PRBPEDFCH', PrbPlaFch)
+                        &XmlWrite.WriteElement('PRBPRIO', PrbPrio)
+                        &XmlWrite.WriteElement('PRBDIASABI', PrbDiasAbi)
+                        &XmlWrite.WriteElement('PRBSTS', PrbSts)
+                        &XmlWrite.WriteElement('PRBTXT', PrbTxt)
+                    &XmlWrite.WriteEndElement()
+                endfor
+            endfor
+        endif
+    enddo
+    &XmlRead.Close()
+    
+    &XmlWrite.WriteEndElement()
+    &XmlWrite.Close()
+    &Result = &XmlWrite.ResultingString
+
+
+====== PROPERTIES =======
+Name -> PMTWSSol
+Description -> Devuelve solicitudes cli sel.
+IsMain -> True
+CALL_PROTOCOL -> SOAP
+AppLocation -> MTWebServices
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

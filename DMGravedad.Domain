@@ -1,0 +1,24 @@
+======OBJECT = DMGravedad.Domain === DMGravedad=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-23T19:13:21.0000000Z" lastUpdate="2016-05-23T17:32:20.0000000Z" checksum="25e937ee6d05b785dda0cef00d849172" fullyQualifiedName="DMGravedad" guid="a0d890c7-ba6d-47b0-a4df-53c6caef9c9d" name="DMGravedad" type="00972a17-9975-449e-aab1-d26165d51393" description="DMGravedad">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMGravedad</Value></Property><Property><Name>Description</Name><Value>DMGravedad</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>AttMaxLen</Name><Value>1</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>0, NoConsiderado, No considerado; 1, Leve, Leve; 2, Medio, Medio; 3, Grave, Grave</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMGravedad
+Description -> DMGravedad
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 1
+AttMaxLen -> 1
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

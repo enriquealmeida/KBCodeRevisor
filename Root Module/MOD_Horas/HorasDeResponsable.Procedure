@@ -1,0 +1,20 @@
+======OBJECT = HorasDeResponsable.Procedure === Horas De Responsable=====
+
+=== RULES ===
+parm(in:&RspId, in:&PrbId, out:&HrsObs);
+
+
+=== PROCEDURE SOURCE ===
+for each order (HrsFch)
+where            RspId = &RspId
+where            PrbId = &PrbId
+	&HrsObs 	= HrsObs
+	exit
+endfor
+
+
+====== PROPERTIES =======
+Name -> HorasDeResponsable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+IsDefault -> False

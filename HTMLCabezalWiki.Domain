@@ -1,0 +1,24 @@
+======OBJECT = HTMLCabezalWiki.Domain === HTMLCabezal Wiki=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-12-10T16:01:13.0000000Z" checksum="1d9725662cd24f164a2e7a75b9d86cbf" fullyQualifiedName="HTMLCabezalWiki" guid="bed2f3df-2fa1-4a99-aa82-d0dd3eee7d89" name="HTMLCabezalWiki" type="00972a17-9975-449e-aab1-d26165d51393" description="HTMLCabezal Wiki">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>HTMLCabezalWiki</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>15</Value></Property><Property><Name>AttMaxLen</Name><Value>15</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>DETALLADO, DETALLADO, DETALLADO; SIMPLIFICADO, SIMPLIFICADO, SIMPLIFICADO</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> HTMLCabezalWiki
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 15
+AttMaxLen -> 15
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

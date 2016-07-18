@@ -1,0 +1,36 @@
+======OBJECT = WCMisCosas2.WebComponent === Mis cosas.=====
+
+=== RULES ===
+parm(in:&RspId, in:&FchIni, in:&FchFin);
+
+
+=== EVENTS SOURCE ===
+
+Event Refresh
+	loadWWPContext.Call(&Context)
+EndEvent
+
+Event PrbId.Click
+    &Window.Object=ViewSolicitudes.Create(PrbId,'')
+    &Window.Width=1000
+	&Window.open()
+EndEvent
+
+Event Start
+	&Mes = &FchIni.Month()
+	&Tagid = trim(&FchIni.Year().ToString())   + trim(&Mes.ToFormattedString()) 
+	//&Tagid = '201310'
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> WCMisCosas2
+Description -> Mis cosas.
+WEB_COMP -> Yes
+URLAccess -> No
+AUTO_REFRESH -> VARS_CHANGE
+Apply:07135890-56fc-489b-b408-063722fa9f7d -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,9 @@
+======OBJECT = HrsCab.Table === Cabezal de Horas=====
+*HrsFch  Fecha- Null=False
+*RspId  DMUsuarios- Null=False
+ HrsTot  Horas-sum(HrsCnt) Null=False
+ UltimoRenglonId  Renglon- Null=False
+
+====== PROPERTIES =======
+Name -> HrsCab
+Description -> Cabezal de Horas

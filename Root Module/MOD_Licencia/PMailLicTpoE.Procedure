@@ -1,0 +1,33 @@
+======OBJECT = PMailLicTpoE.Procedure === Mail Licencia Tipo E=====
+
+=== RULES ===
+parm(in:RspLicId);
+
+
+=== PROCEDURE SOURCE ===
+//&ParSMTPHots = PMTParChr('PARSMTPHOS')
+//&ParMailLic = PMTParChr('PARMAILLIC')
+&ParMailLic = PMTParChr('PARMAILCO')//paraquelaslicenciasdetipoEsemandenatodoelmundo
+&ParMailLic = &ParMailLic.Trim()
+&ParSis = PMTParChr('PARSIS')
+
+for each
+        &txtAux = 'Se ingresó una ausencia de tipo ' + trim(AusTpoId) + ' para ' + trim(RspId)
+        &txtAux += ' en las fechas ' + dtoc(LicFecIni) + ' hasta ' + dtoc(LicFecFin) + '.'
+        &Mailmsg.Text = &txtAux
+		
+		&Mailmsg.HTMLText = &txtAux 
+        
+        &Mailmsg.To.new('Ausencias', &ParMailLic)
+        &Mailmsg.Subject = 'Ausencia de tipo ' + trim(AusTpoId) + ': ' + trim(RspId) + ' Motivo: ' + LicDsc
+        EnvioMail(&Mailmsg,&ErrorCode,&errtxt) 
+endfor
+
+
+====== PROPERTIES =======
+Name -> PMailLicTpoE
+Description -> Mail Licencia Tipo E
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

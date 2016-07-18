@@ -1,0 +1,15 @@
+======OBJECT = RspParIVA.Attribute === Porcentaje de IVA=====
+NUMERIC(8.4)
+
+
+====== PROPERTIES =======
+Name -> RspParIVA
+Description -> Porcentaje de IVA
+HORIZONTAL_DESCRIPTION -> Porcentaje de IVA
+VERTICAL_DESCRIPTION -> Porcentaje de IVA
+ContextualTitle -> Porcentaje de IVA
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZ9.9999
+IsDefault -> False

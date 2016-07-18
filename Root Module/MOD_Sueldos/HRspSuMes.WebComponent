@@ -1,0 +1,157 @@
+======OBJECT = HRspSuMes.WebComponent === Sueldo del mes de responsable=====
+
+=== RULES ===
+parm(in:&RspId, in:&RspSuA, in:&RspSuM);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &MTParRubAd = PMTParChr('RUBAD')
+    &MTParRubAdMN = PMTParChr('RUBADMN')
+    &ParUrlBase = PMTParChr('PARURLBASE')
+EndEvent  // Start
+
+Event Refresh
+	
+	for each
+	where      LiqAnio 	= &RspSuA
+	where      LiqMes 	= &RspSuM
+		&LiqFacturasFch = LiqFacturasFch
+	endfor
+
+    &vPrimD = ymdtod(RspSuA, RspSuM, 1) //Ymdtod(RspSuA, 01, 01)
+    &vPrimD = AddMth(&vPrimD ,-6)
+    &vUltD = ymdtod(RspSuA, RspSuM, 1)
+    &vUltD = Eom( &vUltD )
+
+    for each
+		where      RspId = &RspId
+        where      RspSuA = &RspSuA
+		where      RspSuM = &RspSuM
+        &RspSuMonPla = RspSuMonPla
+        &RspSuMonExt = RspSuMonExt
+        &RspSueldo = RspSueldo
+        &RspSuEx = RspSuEx
+        &RspHrT = RspHrT
+        &RspDEx = RspDEx
+        &RspDPla = RspDPla
+    endfor
+EndEvent  // Refresh
+
+Event sbfDetLiq.load
+    &MonIdUlt = nullvalue(&MonIdUlt)
+
+    &RspSuImpTot = 0
+
+    for each order RspId, RspSuA, RspSuM, MonId, RspSuPlaExt, (TpoHonId), RspSuFch
+
+        if (MonId <> &MonIdUlt) and (not null(&MonIdUlt))
+			//antes se hacía un load con una linea mas que era el "Total" 
+			//pero ya no pues el Total está en la grilla de Facturas y ademas no se quiere sumar el rubro adelantos
+			
+            &RspSuImpTot = 0
+            &PryId.FontBold = 0
+            //&MonId.FontBold = 0
+            &RspSuImp.FontBold = 0
+        endif
+
+        &PryId = PryId
+        &TpoHonId = TpoHonId
+		&TpoHonDsc=TpoHonDsc
+        &MonId = MonId
+		&MonSmb = MonSmb //,MonId=&MonId,'*')
+		&PlazaExterior=iif(RspSuPlaExt='E', 'EXTERIor','PLAZA')
+     	
+		&RspSuImp = RspSuImp
+		
+        &RubId = RubId
+        &RspSuPlaExt = RspSuPlaExt
+        &RspSuObs = RspSuObs
+
+        load
+
+        &RspSuImpTot += &RspSuImp
+        &MonIdUlt = MonId
+    endfor
+
+  
+    &RspSuImpTot = 0
+    &PryId.FontBold = 0
+    //&MonId.FontBold = 0
+    &RspSuImp.FontBold = 0
+EndEvent  // sbfDetLiq.load
+
+Event sbfFac.load
+    &MonIdUlt = nullvalue(&MonIdUlt)
+    &RspSuPlaExtUlt = nullvalue(&RspSuPlaExtUlt)
+
+    &RspSueHon = 0
+    &RspSueVia = 0
+    &RspSuePas = 0
+    &RspSueOtr = 0
+    &RspSueIVA = 0
+    &RspSueTot = 0
+
+    &RspSueTot.FontBold = 1
+
+    for each order RspId, RspSuA, RspSuM, MonId, RspSuPlaExt, (TpoHonId)
+        if ((MonId <> &MonIdUlt) and (not null(&MonIdUlt))) or ((RspSuPlaExt <> &RspSuPlaExtUlt) and (not null(&RspSuPlaExtUlt)))
+
+            &RspSueTot = &RspSueHon + &RspSueVia + &RspSuePas + &RspSueOtr + &RspSueIVA
+
+            //&BoletaLink.Link = &ParUrlBase + HOIngBol.Link( RspId, RspSuA, RspSuM, &RspSuPlaExt, &MonId2)
+
+            if &RspSueTot <> 0
+                load
+            endif
+
+            &RspSueHon = 0
+            &RspSueVia = 0
+            &RspSuePas = 0
+            &RspSueOtr = 0
+            &RspSueIVA = 0
+            &RspSueTot = 0
+
+        endif
+
+        &MonId2 = MonId
+        &RspSuPlaExt = RspSuPlaExt
+		
+		do case 
+			case TpoHonCateg = TpoHonCategoriaEnum.Honorario
+				&RspSueHon += RspSuImp
+			case TpoHonCateg = TpoHonCategoriaEnum.Viatico
+				&RspSueVia += RspSuImp
+			case TpoHonCateg = TpoHonCategoriaEnum.Pasaje
+				&RspSuePas += RspSuImp
+			case TpoHonCateg = TpoHonCategoriaEnum.Otros
+				&RspSueOtr += RspSuImp
+			case TpoHonCateg = TpoHonCategoriaEnum.Iva and &RspSuPlaExt='P'
+				&RspSueIVA += RspSuImp
+				
+		endcase
+		
+        &MonIdUlt = MonId
+		&MonSmb = MonSmb
+        &RspSuPlaExtUlt = RspSuPlaExt
+		&PlazaExterior=iif(RspSuPlaExt='E', 'EXTERIor','PLAZA')
+    endfor
+
+    &RspSueTot = &RspSueHon + &RspSueVia + &RspSuePas + &RspSueOtr + &RspSueIVA
+
+    load
+EndEvent  // sbfFac.load
+
+
+====== PROPERTIES =======
+Name -> HRspSuMes
+Description -> Sueldo del mes de responsable
+WEB_COMP -> Yes
+URLAccess -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+idUSE_WEB_DATEPICKER -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Private
+IsDefault -> False

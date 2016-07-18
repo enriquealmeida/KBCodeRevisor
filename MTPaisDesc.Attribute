@@ -1,0 +1,15 @@
+======OBJECT = MTPaisDesc.Attribute === Descripcion=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> MTPaisDesc
+Description -> Descripcion
+HORIZONTAL_DESCRIPTION -> Descripcion
+VERTICAL_DESCRIPTION -> Descripcion
+ContextualTitle -> Descripcion
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

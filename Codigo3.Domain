@@ -1,0 +1,23 @@
+======OBJECT = Codigo3.Domain === Codigo3=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-07-04T18:31:10.0000000Z" checksum="140106e4694043b0d465404633d5d2b3" fullyQualifiedName="Codigo3" guid="0a2806ae-6177-4358-a91f-50a6a1db0f1d" name="Codigo3" type="00972a17-9975-449e-aab1-d26165d51393" description="Codigo3">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Codigo3</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>3</Value></Property><Property><Name>ATT_PICTURE</Name><Value>@!</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Codigo3
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 3
+ATT_PICTURE -> @!
+IsDefault -> False

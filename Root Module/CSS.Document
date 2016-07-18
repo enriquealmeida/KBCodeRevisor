@@ -1,0 +1,19 @@
+======OBJECT = CSS.Document === CSS=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-04-13T18:38:37.0000000Z" lastUpdate="2016-04-13T18:35:32.0000000Z" checksum="86730394e547973cd22fd9ec649efa23" fullyQualifiedName="CSS" guid="0cd5645f-b528-4fb2-9ccd-edde662f62c2" name="CSS" type="faeb588c-dcce-4dad-9af3-cdd11b961a32" description="CSS">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <InnerHtml><![CDATA[<P>Se agregan en forma de Files los archivos: </P>
+<P>- slimmenu_min_css</P>
+<P>Permite configurar el color de la propiedad "hover" del menú. </P>
+<P>- reset_css</P>
+<P>Permite cambiar los márgenes en las tablas. </P>
+<P>- bootstrap_css</P>
+<P>Permite cambiar el tamaño de los campos destinados al ingreso&nbsp;de valores para que estos sean consistentes a lo largo de toda la aplicación. </P>]]></InnerHtml>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>CSS</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> CSS
+IsDefault -> False

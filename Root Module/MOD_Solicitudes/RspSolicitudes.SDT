@@ -1,0 +1,16 @@
+======OBJECT = RspSolicitudes.SDT === Rsp Solicitudes=====
+
+=== STRUCTURE ===
+RspSolicitudes
+	Clientes, collection: Cliente
+		CliId, C(10), Cli Id 
+		Categorias, collection: Categoria
+			CategoriaId, C(20), Categoria Id 
+			Solicitudes, G(4), Solicitudes 
+
+====== PROPERTIES =======
+Name -> RspSolicitudes
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

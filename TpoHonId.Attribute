@@ -1,0 +1,15 @@
+======OBJECT = TpoHonId.Attribute === Tipo de Honorarios=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> TpoHonId
+Description -> Tipo de Honorarios
+HORIZONTAL_DESCRIPTION -> Tipo de Honorarios
+VERTICAL_DESCRIPTION -> Tipo de Honorarios
+ContextualTitle -> Tipo de Honorarios
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

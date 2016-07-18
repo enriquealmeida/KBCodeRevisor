@@ -1,0 +1,14 @@
+======OBJECT = LegTpoDsc.Attribute === Descripción del Tipo de Legajo=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> LegTpoDsc
+Description -> Descripción del Tipo de Legajo
+HORIZONTAL_DESCRIPTION -> Descripción del Tipo de Legajo
+VERTICAL_DESCRIPTION -> Descripción del Tipo de Legajo
+ContextualTitle -> Descripción del Tipo de Legajo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

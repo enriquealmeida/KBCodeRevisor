@@ -1,0 +1,145 @@
+======OBJECT = DSResumenProyectos.DataSelector === DSResumen Proyectos=====
+<Object parent="MOD_Costos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="369d3627-bc9f-467c-8d20-e200def4955e" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:33.0000000Z" checksum="2a08a1222a9f3656dedb330372ded473" fullyQualifiedName="MOD_Costos.DSResumenProyectos" guid="c1f59bd1-fd06-4701-8e2c-8375c8ccf732" name="DSResumenProyectos" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="DSResumen Proyectos">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[CliId = &CliId when not &CliId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryId = &PryId when not &PryId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryTpo = &PryTpo when not &PryTpo.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryCls = &PryCls when not &PryCls.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryRspId = &PryRspId when not &PryRspId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CpRecId = &CpRecId when not &CpRecId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[&FchIni <= CpMovFch and CpMovFch <= &FchFin
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[ CpMovEST <> 'T' or &TomarTransf = 'S'
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="Pryid">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>Pryid</Value></Property><Property><Name>Description</Name><Value>Identificador de Proyecto</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliId</Value></Property><Property><Name>Description</Name><Value>Identificador de Cliente</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryRspId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryRspId</Value></Property><Property><Name>Description</Name><Value>Responsable del Proyecto</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryRspId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryCls">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryCls</Value></Property><Property><Name>Description</Name><Value>Producto</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryCls</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryTpo">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryTpo</Value></Property><Property><Name>Description</Name><Value>Tipo de Proyecto</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryTpo</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CpRecId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CpRecId</Value></Property><Property><Name>Description</Name><Value>Identificador de Recurso</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CpRecId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="TomarTransf">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>TomarTransf</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>AttMaxLen</Name><Value>1</Value></Property></Properties>
+      </Variable>
+      <Variable Name="FchIni">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>FchIni</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+      </Variable>
+      <Variable Name="FchFin">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>FchFin</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>Pryid</Name>
+        <Description>Identificador de Proyecto</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliId</Name>
+        <Description>Identificador de Cliente</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryRspId</Name>
+        <Description>Responsable del Proyecto</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryCls</Name>
+        <Description>Producto</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryTpo</Name>
+        <Description>Tipo de Proyecto</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CpRecId</Name>
+        <Description>Identificador de Recurso</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>TomarTransf</Name>
+        <Description>Tomar Transf</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>FchIni</Name>
+        <Description>Fch Ini</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>FchFin</Name>
+        <Description>Fch Fin</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DSResumenProyectos</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DSResumenProyectos
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

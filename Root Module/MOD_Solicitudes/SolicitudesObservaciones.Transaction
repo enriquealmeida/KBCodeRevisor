@@ -1,0 +1,30 @@
+======OBJECT = SolicitudesObservaciones.Transaction === Observaciones de las solicitudes=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+PryId*
+PrbId*
+SolObsLin*
+SolObsDet
+SolObsFch
+SolObsTpo
+SolObsUsr
+PrbUltObs
+ObsPrbStsId
+
+
+====== PROPERTIES =======
+Name -> SolicitudesObservaciones
+Description -> Observaciones de las solicitudes
+WEB_COMP -> Yes
+URLAccess -> Yes
+GenerateObject -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

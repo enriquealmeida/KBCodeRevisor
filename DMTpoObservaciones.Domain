@@ -1,0 +1,25 @@
+======OBJECT = DMTpoObservaciones.Domain === Tipos de observaciones=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-23T19:13:21.0000000Z" lastUpdate="2016-05-23T18:10:56.0000000Z" checksum="d91afa70fb09f04c78987b0583ff1c5a" fullyQualifiedName="DMTpoObservaciones" guid="4ebf55ab-14f3-4166-9e15-23e5dadd45ce" name="DMTpoObservaciones" type="00972a17-9975-449e-aab1-d26165d51393" description="Tipos de observaciones">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMTpoObservaciones</Value></Property><Property><Name>Description</Name><Value>Tipos de observaciones</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>3</Value></Property><Property><Name>AttMaxLen</Name><Value>3</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>OBS, Observacion, Observación; EST, CambioDeEstado, Cambio de estado; SOL, CambioEnFechaDeSolicitud, Cambio en fecha de solicitud; CRR, Cerrada, Cerrada</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMTpoObservaciones
+Description -> Tipos de observaciones
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 3
+AttMaxLen -> 3
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

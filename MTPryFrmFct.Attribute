@@ -1,0 +1,17 @@
+======OBJECT = MTPryFrmFct.Attribute === Forma de facturacion=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> MTPryFrmFct
+Description -> Forma de facturacion
+HORIZONTAL_DESCRIPTION -> Forma de facturacion
+VERTICAL_DESCRIPTION -> Forma de facturacion
+ContextualTitle -> Forma de facturacion
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+ControlType -> 0
+ControlValues -> Por Horas:HOR,Contrato:CON,Interno:INT
+IsDefault -> False

@@ -1,0 +1,12 @@
+======OBJECT = PryTpoHorasOblig.Attribute === Estimacion horas obligatoria=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> PryTpoHorasOblig
+Description -> Estimacion horas obligatoria
+ContextualTitle -> Estimacion de horas obligatoria
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

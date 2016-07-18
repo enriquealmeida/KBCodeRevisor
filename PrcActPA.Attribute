@@ -1,0 +1,18 @@
+======OBJECT = PrcActPA.Attribute === Proceso o actividad?=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> PrcActPA
+Description -> Proceso o actividad?
+HORIZONTAL_DESCRIPTION -> Proceso o actividad?
+VERTICAL_DESCRIPTION -> Proceso/Actividad
+ContextualTitle -> Proceso/Actividad
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttValueRange -> 'P' 'A'
+ATT_PICTURE -> @!
+ControlType -> 0
+ControlValues -> Proceso:P,Actividad de apoyo:A
+IsDefault -> False

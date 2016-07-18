@@ -1,0 +1,14 @@
+======OBJECT = Reorg-EALMEIDANBK_Enrique-2016-06-14T172040.File === Reorg- EALMEIDANBK_Enrique-2016-06-14 T172040=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="EALMEIDANBK\Enrique" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2016-06-14T20:20:40.0000000Z" checksum="1374105876ef90727772dbb1e885fecb" fullyQualifiedName="Reorg-EALMEIDANBK_Enrique-2016-06-14T172040" guid="066d4d3c-cd17-464f-b17f-163e0b562898" name="Reorg-EALMEIDANBK_Enrique-2016-06-14T172040" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Reorg- EALMEIDANBK_Enrique-2016-06-14 T172040">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>LyogS0JTYXZlUmVvcmdhbml6YXRpb24gMTQvMDYvMjAxNiAxNzoyMDo0MCBFQUxNRUlEQU5CS1xFbnJpcXVlICAqLyANCkFMVEVSIFRBQkxFIFtTTENvbnNvbGlkXSBBTFRFUiBDT0xVTU4gW01UQ25zT2JzXSB2YXJjaGFyKDEwMCkgTk9UIE5VTEwNCg0K</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>Reorg-EALMEIDANBK_Enrique-2016-06-14T172040.sql</Value></Property><Property><Name>FileExtension</Name><Value>.sql</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Reorg-EALMEIDANBK_Enrique-2016-06-14T172040</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Reorg-EALMEIDANBK_Enrique-2016-06-14T172040
+IsDefault -> False

@@ -1,0 +1,35 @@
+======OBJECT = TestNotification.Procedure === Test Notification=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+&CantidadTraducciones = 0 //&SI_SDTAsientos.Count
+&ProgresoActual = 0
+if &CantidadTraducciones = 0	
+	&notificationInfo.Id = 'PTradAto'
+	&notificationInfo.Message = 'Cargando... 0%'
+	&Webnotification.notify(&notificationInfo)
+	&i = 10
+	&total = 15
+	for &i = 0 to &total  
+		&notificationInfo.Id = 'PTradAto'
+		&ProgresoActual = round(&i/&total*100,1)
+		&notificationInfo.Message = 'Cargando... ' + &ProgresoActual.ToString() + '%'
+		&Webnotification.notify(&notificationInfo)
+		&j = sleep(1)
+	endfor		
+	&notificationInfo.Id = 'PTradAto'
+	&notificationInfo.Message = 'Carga Finalizada!'
+	&Webnotification.notify(&notificationInfo)
+endif
+
+
+====== PROPERTIES =======
+Name -> TestNotification
+Description -> Test Notification
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 3
+ObjectVisibility -> Private
+IsDefault -> False

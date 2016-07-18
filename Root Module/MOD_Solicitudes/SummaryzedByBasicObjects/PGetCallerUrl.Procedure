@@ -1,0 +1,22 @@
+======OBJECT = PGetCallerUrl.Procedure === Get Caller Url=====
+
+=== RULES ===
+parm(out:&CallerUrl);
+
+
+=== PROCEDURE SOURCE ===
+&Pos=StrSearch(&Httprequest.Referrer,'?')-1
+if &Pos > 0
+    &CallerUrl=Substr(&HttpRequest.Referrer,1,&pos)
+else 
+    &CallerUrl=&HttpRequest.Referrer
+endif
+
+
+====== PROPERTIES =======
+Name -> PGetCallerUrl
+Description -> Get Caller Url
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 41
+ObjectVisibility -> Private
+IsDefault -> False

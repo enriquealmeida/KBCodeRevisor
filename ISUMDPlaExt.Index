@@ -1,0 +1,14 @@
+======OBJECT = ISUMDPlaExt.Index === ISUMDPla Ext=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-08-20T19:46:04.0000000Z" checksum="aa609d6921e821cf784c6a09ed4e36e2" fullyQualifiedName="ISUMDPlaExt" guid="7a2925db-a4d3-4d9b-aea5-a7130f06614c" name="ISUMDPlaExt" type="9e750647-3679-0000-0100-2529de263960" description="ISUMDPla Ext">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspId</Member>
+      <Member Order="Ascending">RspSuA</Member>
+      <Member Order="Ascending">RspSuM</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ISUMDPlaExt</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ISUMDPlaExt

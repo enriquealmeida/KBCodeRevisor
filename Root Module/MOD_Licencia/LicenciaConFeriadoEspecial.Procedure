@@ -1,0 +1,26 @@
+======OBJECT = LicenciaConFeriadoEspecial.Procedure === Licencia Con Feriado Especial=====
+
+=== RULES ===
+parm(in:&FecIni, in:&FecFin, out:&TieneFeriadoEspecial);
+
+
+=== PROCEDURE SOURCE ===
+
+&Dias = CalculoDiasHabilesEntreFechasSinConsiderarFeriadosEspeciales(&FecIni, &FecFin)
+if &Dias < 5
+	&TieneFeriadoEspecial=HayFeriadosEspeciales(&FecIni,&FecFin)
+else
+	//Si la licencia es mas de una semana ya no importa. 
+	msg('Mas de 5 dias' + &Dias.toString(),status)
+	&TieneFeriadoEspecial=false
+endif
+	
+
+
+
+====== PROPERTIES =======
+Name -> LicenciaConFeriadoEspecial
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

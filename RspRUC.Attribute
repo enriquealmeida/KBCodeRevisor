@@ -1,0 +1,15 @@
+======OBJECT = RspRUC.Attribute === RUC=====
+CHARACTER(12)
+
+
+====== PROPERTIES =======
+Name -> RspRUC
+Description -> RUC
+HORIZONTAL_DESCRIPTION -> RUC
+VERTICAL_DESCRIPTION -> RUC
+ContextualTitle -> RUC
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

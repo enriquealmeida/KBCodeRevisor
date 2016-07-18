@@ -1,0 +1,92 @@
+======OBJECT = DiagramaDeTabla.Diagram === Diagrama De Tabla=====
+<Object parent="Documentacion" parentType="00000000-0000-0000-0000-000000000008" parentGuid="ef7241f9-ade9-45ec-8241-bd93497057b9" user="" versionDate="2016-03-15T18:09:11.0000000Z" lastUpdate="2016-03-15T17:59:12.0000000Z" checksum="2a7046bebd674a9ed6a6c36c36266caa" fullyQualifiedName="DiagramaDeTabla" guid="0174cd61-509f-4e84-9e8a-c6664e5a2739" name="DiagramaDeTabla" type="280c149c-48b2-4284-a532-0c999df9e006" description="Diagrama De Tabla">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="72efba8b-4f6a-4f91-931b-8a9eacd357a7">
+      <Layers>
+        <Layer Id="72efba8b-4f6a-4f91-931b-8a9eacd357a7">
+          <Nodes>
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Cli" Bounds="-44.69056 445.4447 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-CliTpo" Bounds="-252.9167 401.3118 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-CpMov" Bounds="698.9868 450.2007 150.0002 32" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-(none)" Bounds="700.7737 511.0449 150.0002 32" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-CpRec" Bounds="884.0784 405.6602 150.0002 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Cronometradas" Bounds="1551.988 -292.1078 150.0004 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Feriados" Bounds="-329.0681 -257.6184 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-GLParametros" Bounds="-325.8678 -322.3589 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-GLUsuAmb" Bounds="-252.5 70.59579 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-HorasRenglones" Bounds="1303.95 -354.7745 150.0004 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-HrsCab" Bounds="1300.962 -281.6317 150.0004 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-KB" Bounds="245.8698 272.3624 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Liquidacion" Bounds="1280.746 178.8316 150.0004 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MDCod" Bounds="-122.8649 -195.9286 150 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MDLog" Bounds="-325.5001 -354.937 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MDObj" Bounds="-334.6276 -115.6121 150 32.00001" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MDObjVal" Bounds="-119.7823 -116.7671 150 32.00001" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MDTipo" Bounds="-332.7051 -192.5206 150 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTAusTpo" Bounds="2268.096 71.93042 150.0007 32.00001" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTCnsEst" Bounds="180.3729 124.2909 150.0002 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTDstPor" Bounds="721.4113 365.8603 150.0001 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTInd" Bounds="1094.719 -571.5615 150.0004 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTLeg" Bounds="2056.841 19.11436 150.0007 32" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTLegTpo" Bounds="2263.915 13.72428 150.0007 32" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTMon" Bounds="1062.674 95.72501 150.0004 32.00001" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTObjRsp" Bounds="1794.186 -314.6078 150.0004 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTObjSts" Bounds="1189.237 -635.6517 150.0004 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTObjTpo" Bounds="1097.973 -520.858 150.0004 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTPaises" Bounds="174.5266 449.1756 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTPC" Bounds="2203.108 -137.613 150.0005 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTPCRsp" Bounds="2021.087 -74.70454 150.0002 32.00001" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTPCRspWC" Bounds="1926.412 -126.5751 150.0007 32.00001" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTPCWC" Bounds="2022.772 -179.9324 150.0004 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTPol" Bounds="1451.316 -605.6703 150.0004 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTPolTpo" Bounds="1476.418 -780.4749 150.0004 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTPrcAct" Bounds="1321.184 -690.8964 150.0004 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTSegRsp" Bounds="2073.24 132.7111 150.0007 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTSisCli" Bounds="-25.64175 124.5317 150 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTSolOri" Bounds="393.1496 -341.138 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTTpoHon" Bounds="1089.682 252.5143 150.0004 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-MTWC" Bounds="1978.709 -245.5169 150.0004 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-NIVHAB" Bounds="-255.8333 136.2078 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Numera" Bounds="-327.7311 -290.0744 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-ObjetivoMediciones" Bounds="1644.11 -573.04 150.0004 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Objetivos" Bounds="1394.357 -520.5096 150.0004 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Prio" Bounds="620.0864 -518.426 150.0002 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Pry" Bounds="503.0112 269.4741 150.0001 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-PryCls" Bounds="360.7701 439.8949 150.0002 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-PryTpo" Bounds="528.5579 440.1932 150.0002 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Rsp" Bounds="1837.341 37.40988 150.0004 32.00001" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-RspLic" Bounds="2055.283 73.31994 150.0007 32.00001" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Sis" Bounds="95.98981 27.81303 150 32" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-SLConsolid" Bounds="246.0763 213.9637 150 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Solicitudes2" Bounds="656.5828 -323.3886 150.0002 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-SolicitudesDocumentos" Bounds="790.7924 -522.2246 150.0002 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-SolicitudesObservaciones" Bounds="382.131 -242.1078 150 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-SolicitudesTAG2" Bounds="538.0292 -472.946 150.0002 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Sts" Bounds="431.3471 -383.1379 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-(none)" Bounds="1454.92 174.9475 150.0004 32" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-SuMes" Bounds="1274.288 92.04469 150.0004 32.00001" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-SuMesDet" Bounds="1070.245 172.5338 150.0004 32.00002" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-TAG" Bounds="438.1148 -547.6382 150 32.00006" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Tareas" Bounds="1556.821 -356.0245 150.0004 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Tpo" Bounds="378.8925 -288.4435 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-TpoCal" Bounds="474.6503 -425.1379 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-TradAto" Bounds="898.9014 338.2452 150.0002 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Usuarios" Bounds="-269.1667 331.0804 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-UsuHab" Bounds="-252.5001 209.4617 150 32.00003" Expanded="False" />
+            <TableNode KBObjectReference="857ca50e-7905-0000-0007-c5d9ff2975ec-Wiki" Bounds="-253.8685 458.7703 150 32.00003" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DiagramaDeTabla</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 86
+Name -> DiagramaDeTabla
+IsDefault -> False

@@ -1,0 +1,24 @@
+======OBJECT = SummarizedInfo.SDT === Sumarized Info=====
+
+=== STRUCTURE ===
+SummarizedInfo
+	Total, N(14.2), Total 
+	Min, N(14.2), Min 
+	Max, N(14.2), Max 
+	ListTotalUrl, V(1000), List Total Url 
+	DrillTotalUrl, V(1000), Drill Total Url 
+	GraphUrl, V(1000), Graph Url 
+	Items, collection: Item
+		DimensionId, V(100), Dimension Id 
+		DimensionDesc, V(100), Dimension Desc 
+		Indicator, N(14.2), Indicator 
+		ListUrl, V(1000), List Url 
+		DrillUrl, V(1000), Drill Url 
+
+====== PROPERTIES =======
+Name -> SummarizedInfo
+Description -> Sumarized Info
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 40
+ObjectVisibility -> Private
+IsDefault -> False

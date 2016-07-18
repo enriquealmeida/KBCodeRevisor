@@ -1,0 +1,26 @@
+======OBJECT = ControlLicenciaSuperpuesta.Procedure === Ya hay una licencia que se superpone para el responsable ?=====
+
+=== RULES ===
+parm(in:&RspLicIdNueva, in: RspId, in:&LicFecIni, in:&LicFecFin, in:&LicTpo, out:&RspLicIdSuperpuesta);
+
+
+=== PROCEDURE SOURCE ===
+&RspLicIdSuperpuesta.SetEmpty()
+
+for each
+where          RspLicId <> &RspLicIdNueva when not &RspLicIdNueva.IsEmpty()
+where          LicTpo = &LicTpo
+where          LicEst <> EstadoLicencia.Eliminada
+where          (&LicFecIni >= LicFecIni and &LicFecIni <= LicFecFin) or (&LicFecFin >= LicFecIni and &LicFecFin <= LicFecFin)
+defined by LicFecIni
+	&RspLicIdSuperpuesta = RspLicId
+endfor
+
+
+====== PROPERTIES =======
+Name -> ControlLicenciaSuperpuesta
+Description -> Ya hay una licencia que se superpone para el responsable ?
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

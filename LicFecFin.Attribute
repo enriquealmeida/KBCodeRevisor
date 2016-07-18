@@ -1,0 +1,15 @@
+======OBJECT = LicFecFin.Attribute === Fecha Final=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> LicFecFin
+Description -> Fecha Final
+HORIZONTAL_DESCRIPTION -> Fecha Final
+VERTICAL_DESCRIPTION -> Fin
+ContextualTitle -> Fin
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

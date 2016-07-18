@@ -1,0 +1,16 @@
+======OBJECT = Urchin.File === Urchin=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-07-25T11:53:10.0000000Z" checksum="b9416bd15c91648ae1ab7d453705efcf" fullyQualifiedName="Urchin" guid="4278e4ca-cb1a-4d1f-8a28-d2e73df5b9ea" name="Urchin" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Urchin">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>DQogIHZhciBfZ2FxID0gX2dhcSB8fCBbXTsNCiAgX2dhcS5wdXNoKFsnX3NldEFjY291bnQnLCAnVUEtMjA3NDEwNTMtMiddKTsNCiAgX2dhcS5wdXNoKFsnX3RyYWNrUGFnZXZpZXcnXSk7DQoNCiAgKGZ1bmN0aW9uKCkgew0KICAgIHZhciBnYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOyBnYS50eXBlID0gJ3RleHQvamF2YXNjcmlwdCc7IGdhLmFzeW5jID0gdHJ1ZTsNCiAgICBnYS5zcmMgPSAoJ2h0dHBzOicgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2wgPyAnaHR0cHM6Ly9zc2wnIDogJ2h0dHA6Ly93d3cnKSArICcuZ29vZ2xlLWFuYWx5dGljcy5jb20vZ2EuanMnOw0KICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOyBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGdhLCBzKTsNCiAgfSkoKTsNCg==</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>urchin.js</Value></Property><Property><Name>FileExtension</Name><Value>.js</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Urchin</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>.</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Urchin
+Extract -> Newer
+ExtractToPath -> .
+IsDefault -> False

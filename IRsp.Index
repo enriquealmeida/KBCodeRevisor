@@ -1,0 +1,12 @@
+======OBJECT = IRsp.Index === IRsp=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:29.0000000Z" checksum="5a7917ae335f33e937252525ef72aa7e" fullyQualifiedName="IRsp" guid="d6b44419-5726-4fa0-a6cb-060149e254e0" name="IRsp" type="9e750647-3679-0000-0100-2529de263960" description="IRsp">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IRsp</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IRsp

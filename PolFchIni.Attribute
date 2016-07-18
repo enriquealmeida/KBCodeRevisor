@@ -1,0 +1,15 @@
+======OBJECT = PolFchIni.Attribute === Fecha inicial=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> PolFchIni
+Description -> Fecha inicial
+HORIZONTAL_DESCRIPTION -> Fecha inicial
+VERTICAL_DESCRIPTION -> Fecha inicial
+ContextualTitle -> Fecha inicial
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

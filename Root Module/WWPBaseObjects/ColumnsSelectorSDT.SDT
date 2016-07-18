@@ -1,0 +1,13 @@
+======OBJECT = ColumnsSelectorSDT.SDT === Columns Selector SDT=====
+
+=== STRUCTURE ===
+ColumnsSelectorSDT, collection: ColumnsSelectorSDTItem
+	Visible, B(4), Visible 
+	ColumnName, V(100), Column Name 
+
+====== PROPERTIES =======
+Name -> ColumnsSelectorSDT
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

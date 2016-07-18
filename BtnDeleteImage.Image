@@ -1,0 +1,30 @@
+======OBJECT = BtnDeleteImage.Image === Btn Delete Image=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2015-05-05T17:22:56.0000000Z" checksum="5f985a679f9d1219ea48e439184cb7b5" fullyQualifiedName="BtnDeleteImage" guid="2ada89cf-b959-4c44-b543-f17ad3083785" name="BtnDeleteImage" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Btn Delete Image">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="BtnDeleteImage.png" description="Btn Delete Image.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEQAACxEBf2RfkQAAABh0RVh0U29mdHdhcmUAcGFp
+bnQubmV0IDQuMC41ZYUyZQAAAyVJREFUSEu1litPa0EUhUdUIBBIBAKBqEAQHgmPVPBKeD8SBCEVV4BDIJAkSMQVSAQCgUAg+AEIBD8BgUAgEAiSNkBaXiHn
+fues3WF62nLLTe6netbsWWfO3jN76qK/8fz8fHFxcXJy8juBH5eXl4g23JiG1h8fH4eHh1NTUy0tLa4GxImJiYODg5eXF5tQQ33r09PTrq4us/mWzs7O4+Nj
+m1ZN2ppV5PN5m1eB17DGXwn8wM4GKiwtLdWmqMr6/v5+cHDQwp1ra2vb3d29vr624QDEvb09AizUue7ubqbbcMKXNa8NfTc3N4vFoo01gADCbIJz2Ww2XPuX
+9crKiiIymQz1MbUJCGaK5pIu6i/drM/OzjQGP/IV7CWb7NzR0ZHE2Jr3+P1AoTSAuLa2NjMzUy6XpYSUSqXp6en19fXPz08pW1tbcujo6NCOjK05BVIpy8PD
+QxIZ+X0yOTmZcsd3bGxMoxsbGxLJcnt7u0Q+AiW29i7shyQsZnx8XCJghJ300BdmZ2elw/7+vkQOGo+OD/d76ObmRkHASqmJdBgeHn58fHx6ehoZGTHJuYWF
+hbe3N5sQRXd3d9I5q3yEu7q60jMb00IqMJzL5TQKAwMDQ0ND9pBshtoy9PT0aJQ+487Pz/Wwurpq4wGptXvm5+fD9XowUUBcP/aKHra3t228Gtbe19enGEFy
+fOpTYKIYemRT1r29vYoRHNqmrL9PSKFQSPkKiklJLSigKiHNl5HfPysjm6+1tVXPt7e3FhJFbLWwWy0vL7+/v1M6CmhSzdrpfNJt8yH5ryBBCoLR0VGJwJl+
+fX2Vnjoyc3Nz0oHmI5EP4jG25pqQxNnxjdQfUY5W6pbC3b/YH3Ri6B4S1eDS7Ykuk0TGIu6Li4t1bz/ceSW+vj3t7OzIgU7y1Z7AdyjwXbF5wunqTWDWEF4F
+hJraBAR/dxUANQ23BF2wbipCCPB5gIYXGLB7+vv7LTDJGn2SfmbDAURSK183wLfhtSt4LTe/hVfgILBBOcTAD38uPOQhXK9IWwPJopK1fzbqwpdRN5/fkDrW
+gjz+lz9mIXzpv/ydjKI/4op9/o7sycEAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>BtnDeleteImage.png</Value></Property><Property><Name>Description</Name><Value>Btn Delete Image.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Desktop\BtnDeleteImage.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>BtnDeleteImage</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> BtnDeleteImage
+IsDefault -> False

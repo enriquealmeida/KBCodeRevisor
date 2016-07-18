@@ -1,0 +1,33 @@
+======OBJECT = PCpDesVal.Procedure === Deshacer Valorizacion=====
+
+=== RULES ===
+parm(IN:&vFchIni, IN:&vFchFin);
+
+
+=== PROCEDURE SOURCE ===
+////Para lo planes tipo real  que esten valorizados deshago la valorizacion
+
+&FchCrr = PMTParFch('PARFCHCRR')
+
+// veo que el período no esté cerrado
+if &vFchIni > &FchCrr and &vFchFin > &FchCrr
+    for each
+        where          &vFchIni <= CpMovFch  and  CpMovFch <= &vFchFin
+        if CpMovSts = 'V' and CpMovEST='S' and CpRecTpo=DMRecTpo.Porhoras and CpMovHrs <> 0
+            CpMovSts = DMMovSts.S
+            CpMovImp = 0
+            CpMovPesos = 0
+        endif    
+    endfor
+endif
+commit
+
+
+====== PROPERTIES =======
+Name -> PCpDesVal
+Description -> Deshacer Valorizacion
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

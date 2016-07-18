@@ -1,0 +1,16 @@
+======OBJECT = MDLgId.Attribute === Identificador de log=====
+NUMERIC(8)
+
+
+====== PROPERTIES =======
+Name -> MDLgId
+Description -> Identificador de log
+HORIZONTAL_DESCRIPTION -> Identificador de log
+VERTICAL_DESCRIPTION -> Identificador de log
+ContextualTitle -> Identificador de log
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AUTONUMBER -> False
+ATT_PICTURE -> ZZZZZZZ9
+IsDefault -> False

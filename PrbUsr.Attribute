@@ -1,0 +1,16 @@
+======OBJECT = PrbUsr.Attribute === Usuario que reporta problema=====
+CHARACTER(16)
+
+
+====== PROPERTIES =======
+Name -> PrbUsr
+Description -> Usuario que reporta problema
+HORIZONTAL_DESCRIPTION -> Reporto
+VERTICAL_DESCRIPTION -> Reporto
+ContextualTitle -> Reporto
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+DomainKey -> 00972a17-9975-449e-aab1-d26165d51393-26
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

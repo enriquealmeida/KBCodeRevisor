@@ -1,0 +1,14 @@
+======OBJECT = LiqResguardoMinimoImponiblePes.Attribute === Minimo Imponible para Resguardo en pesos ($)=====
+NUMERIC(17.2)-
+
+
+====== PROPERTIES =======
+Name -> LiqResguardoMinimoImponiblePes
+Description -> Minimo Imponible para Resguardo en pesos ($)
+HORIZONTAL_DESCRIPTION -> Minimo Imponible Resguardo ($)
+VERTICAL_DESCRIPTION -> Minimo Resguardo ($)
+ContextualTitle -> Minimo Resguardo ($)
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

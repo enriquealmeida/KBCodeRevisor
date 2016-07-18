@@ -1,0 +1,39 @@
+======OBJECT = HODocCam.WebComponent === Documentacion de Cambios =====
+
+=== RULES ===
+parm(in:PrbId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &Separador = ' - '
+EndEvent  // Start
+
+Event Refresh
+//    if PrbReqDatBas='S'
+//      
+//        PrbTxtDatBas.Visible=1
+//    else
+//       
+//        PrbTxtDatBas.Visible=0
+//    endif
+
+//    for each
+//        where      PrbId = PrbId
+//
+//        PrbRefDocTec.Link = '#' + trim(PrbRefDocTec)
+//        PrbRefDatBas.Link = '#' + trim(PrbRefDatBas)
+//    endfor
+EndEvent  // Refresh
+
+
+====== PROPERTIES =======
+Name -> HODocCam
+Description -> Documentacion de Cambios 
+WEB_COMP -> Yes
+URLAccess -> Yes
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

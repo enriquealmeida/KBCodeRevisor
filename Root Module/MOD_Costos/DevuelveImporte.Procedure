@@ -1,0 +1,19 @@
+======OBJECT = DevuelveImporte.Procedure === Devuelve Importe=====
+
+=== RULES ===
+parm(in:&CpRecId,in:&PryId,in:&CliId,in:&FchIni,in:&FchFin,out:&Importe);
+
+
+=== PROCEDURE SOURCE ===
+&Importe=0
+for each using CostosDS(&CpRecId,&PryId,&CliId,&FchIni,&FchFin)
+ &Importe += CpMovImp
+endfor
+
+
+====== PROPERTIES =======
+Name -> DevuelveImporte
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

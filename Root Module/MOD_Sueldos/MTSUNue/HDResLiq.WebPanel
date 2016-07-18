@@ -1,0 +1,241 @@
+======OBJECT = HDResLiq.WebPanel === Resumen de Liquidación=====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM);
+
+
+=== EVENTS SOURCE ===
+Event Start
+  &Filler='|'
+  &Filler2='|'
+  &SoloActivos=true
+EndEvent
+
+Event sbfLiq.load
+    do 'Inicializo'
+
+    //Recupero parametros de liquidacion
+	for each
+	where      LiqAnio 	= &RspSuA
+	where      LiqMes 	= &RspSuM
+		&LiqCotizacionDolarenPesos			= LiqCotizacionDolarenPesos
+		&LiqFacturasFch						= LiqFacturasFch
+		&LiqResguardoMinimoImponiblePesos	= LiqResguardoMinimoImponiblePes
+	endfor
+
+   for each
+	   where      not MonId.IsEmpty()
+	    
+		&MonId=MonId
+		
+		for each 
+			where      RspId <> '*NADIE'
+			where      RspSuA = &RspSuA
+			where      RspSuM = &RspSuM
+			//where      RspAct='S' when  &SoloActivos
+			
+			
+			&RspVinculoLaboral = RspVinculoLaboral
+			&RspFormaPagoPesos 	= RspFormaPagoPesos
+			&RspFormaPagoDolares= RspFormaPagoDolares
+			&RspId = RspId
+				
+		    do 'Lineas'
+
+			&HayRegistroParaEseRsp=false
+			
+			for each order RspSuA, RspSuM, MonId, RspId
+				where      MonId=&MonId
+
+				
+				&HayRegistroParaEseRsp=true 
+
+			
+				do case
+					case RspSuPlaExt = 'P' and TpoHonCateg = TpoHonCategoriaEnum.Honorario
+						&RspSuUyHon += RspSuImp
+					case RspSuPlaExt = 'P' and TpoHonCateg = TpoHonCategoriaEnum.Otros
+						&RspSuUyOtr += RspSuImp
+					case RspSuPlaExt = 'P' and TpoHonCateg = TpoHonCategoriaEnum.Iva
+						&RspSuUyIVA += RspSuImp
+					case RspSuPlaExt = 'P' and TpoHonCateg = TpoHonCategoriaEnum.Adelanto
+						&RspSuUyAde -= RspSuImp
+						
+					case RspSuPlaExt = 'E' and TpoHonCateg = TpoHonCategoriaEnum.Honorario
+						&RspSuExHon += RspSuImp
+					case RspSuPlaExt = 'E' and TpoHonCateg = TpoHonCategoriaEnum.Viatico
+						&RspSuExVia += RspSuImp
+					case RspSuPlaExt = 'E' and TpoHonCateg = TpoHonCategoriaEnum.Pasaje
+						&RspSuExPas += RspSuImp
+					case RspSuPlaExt = 'E' and TpoHonCateg = TpoHonCategoriaEnum.Otros
+						&RspSuExOtr += RspSuImp
+					case RspSuPlaExt = 'E' and TpoHonCateg = TpoHonCategoriaEnum.Adelanto
+						&RspSuExAde -= RspSuImp
+				endcase
+			    Do 'Cargoregistro'
+				//do 'Acumulo'
+				
+			endfor
+			if &HayRegistroParaEseRsp
+				//Solo pongo la forma de pago, si hay algo para depositar.
+				if &RspSuUyDep.IsEmpty()
+					&RspFormaPagoIzq=''
+				else
+					&RspFormaPagoIzq=iif(MonId=DMMonedaEnum.Dolar,&RspFormaPagoDolares,&RspFormaPagoPesos)
+				endif
+			    
+				if &RspSuExDep.IsEmpty()
+					&RspFormaPagoDer=''
+				else
+					&RspFormaPagoDer=iif(MonId=DMMonedaEnum.Dolar,&RspFormaPagoDolares,&RspFormaPagoPesos)
+				endif
+			
+				load
+			endif	
+	    endfor
+	  
+	  //do 'Totales'
+	  do 'Lineas'
+      endfor
+EndEvent  // sbfLiq.load
+
+
+Sub 'Lineas'
+    &RspSuUyHon = 0
+    &RspSuUyOtr = 0
+    &RspSuUyIVA = 0
+    &RspSuUyTot = 0
+    &RspSuUyAde = 0
+    &RspSuUyDep = 0
+    &RspSuExHon = 0
+    &RspSuExVia = 0
+    &RspSuExPas = 0
+    &RspSuExOtr = 0
+    &RspSuExTot = 0
+    &RspSuExAde = 0
+    &RspSuExDep = 0
+
+    &Resguardo=0
+    &ResguardoUS=0
+	&ResguardoUSenPesos=0
+
+    &MonId.FontBold = 0
+    &RspId.FontBold = 0
+    &RspSuExAde.FontBold = 0
+    &RspSuExDep.FontBold = 0
+    &RspSuExHon.FontBold = 0
+    &RspSuExOtr.FontBold = 0
+    &RspSuExPas.FontBold = 0
+    &RspSuExTot.FontBold = 0
+    &RspSuExVia.FontBold = 0
+    &RspSuUyAde.FontBold = 0
+    &RspSuUyDep.FontBold = 0
+    &RspSuUyHon.FontBold = 0
+    &RspSuUyIVA.FontBold = 0
+    &RspSuUyOtr.FontBold = 0
+    &RspSuUyTot.FontBold = 0
+    &Resguardo.FontBold=0
+    //&ResguardoUSenPesos.FontBold=0
+	&RspFormaPagoDer=''
+	&RspFormaPagoIzq=''
+EndSub  // 'Lineas'
+
+
+Sub 'Cargoregistro'
+	&ResguardoUS=0
+	&ResguardoUSenPesos=0
+    &Resguardo=0
+    
+	&RspSuUyTot = &RspSuUyHon + &RspSuUyOtr + &RspSuUyIVA
+	
+	if &RspVinculoLaboral = DMRspVinculoLaboral.PROFESIONAL and HayQuePagarResguardo(&RspSuA,&RspSuM,&RspId,&LiqCotizacionDolarenPesos,&LiqResguardoMinimoImponiblePesos)
+		
+		&RspSuExTot = &RspSuExHon + &RspSuExPas + &RspSuExVia + &RspSuExOtr
+		&RspSuUyDep = &RspSuUyHon + &RspSuUyOtr + &RspSuUyAde 
+        
+		&ResguardoUS=0
+        &Resguardo=0
+		&ResguardoExtUS=0
+		&ResguardoExt=0
+		
+		do case
+			case &MonId = DMMonedaEnum.Peso
+                &Resguardo = Round( ((&RspSuUyHon + &RspSuUyOtr) * -0.07),0)   //Calculo el 0.07 % de descuento del resguardo.  
+				&RspSuUyDep = &RspSuUyTot + &RspSuUyAde + &Resguardo
+				
+				&ResguardoExt = Round( (&RspSuExTot * -0.07),0)   //Calculo el 0.07 % de descuento del resguardo.  
+				&RspSuExDep = &RspSuExTot + &RspSuExAde + &ResguardoExt
+				
+			case &MonId = DMMonedaEnum.Dolar
+				&ResguardoUS = ((&RspSuUyHon + &RspSuUyOtr) * -0.07)
+				&Resguardo = &ResguardoUS*&LiqCotizacionDolarenPesos
+				&Resguardo = Round(&Resguardo,0)
+				&RspSuUyDep = &RspSuUyTot + &RspSuUyAde + &ResguardoUS
+				
+				&ResguardoExtUS = (&RspSuExTot * -0.07)
+				&ResguardoExt = &ResguardoExtUS*&LiqCotizacionDolarenPesos
+				&ResguardoExt = Round(&ResguardoExt,0)
+				&RspSuExDep = &RspSuExTot + &RspSuExAde + &ResguardoExtUS
+		endcase	
+	else
+		&RspSuUyDep = &RspSuUyHon + &RspSuUyOtr + &RspSuUyAde 
+	    &ResguardoUS=0
+        &Resguardo=0
+		&ResguardoExtUS=0
+		&ResguardoExt=0
+    endif
+
+	
+  
+	
+EndSub
+
+Sub 'Inicializo'
+   &MonIdUlt = nullvalue(&MonIdUlt)
+    &RspIdUlt = nullvalue(&RspIdUlt)
+	
+    &MonId = nullvalue(&MonId)
+    &RspId = nullvalue(&RspId)
+	
+    &RspSuUyHonTot = 0
+    &RspSuUyOtrTot = 0
+    &RspSuUyIVATot = 0
+    &RspSuUyAdeTot = 0
+    &RspSuUyDepTot = 0
+	&RspSuExHonTot = 0
+    &RspSuExViaTot = 0
+    &RspSuExPasTot = 0
+    &RspSuExOtrTot = 0
+    &RspSuExAdeTot = 0
+	
+    &RspSuUyHon = 0
+    &RspSuUyOtr = 0
+    &RspSuUyIVA = 0
+    &RspSuUyTot = 0
+    &RspSuUyAde = 0
+    &RspSuUyDep = 0
+	
+	&RspSuExHon = 0
+    &RspSuExPas = 0
+    &RspSuExVia = 0
+    &RspSuExOtr = 0
+    &RspSuExTot = 0
+    &RspSuExAde = 0
+    &RspSuExDep = 0
+	
+EndSub
+
+
+
+
+
+
+====== PROPERTIES =======
+Name -> HDResLiq
+Description -> Resumen de Liquidación
+IsMain -> True
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

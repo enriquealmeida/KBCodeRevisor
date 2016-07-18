@@ -1,0 +1,25 @@
+======OBJECT = ActionNewDynamicFilter.Image === Action New Dynamic Filter=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-08-22T14:24:10.0000000Z" checksum="44654ba9e9b2ea00d92594631c11c14d" fullyQualifiedName="ActionNewDynamicFilter" guid="27283ea5-332f-423b-b880-64b762622df3" name="ActionNewDynamicFilter" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action New Dynamic Filter">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionNewDynamicFilter.png" description="icon_mas_11x10px.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAOtJREFUKFNtjz0KwkAQhaewtzWQLl3IL5EQUoSFNLnFXiEXsPZIlhZiaWJvYSUpBXOAOG/ZxWXj
+wIPd976d2SG7PM+TrDPryXrrs9Txr9jcssYgCJY4jpcsy5Y8z9UZHjIwGifyff+eJMlSFMVfIQOjYIx0YS4B2R4YsBSG4dUOINWJy/WjKDpRmqYfY5jOmid3
+Eu/1oqqqJmNoblUmZ83UNM3NGPxHJc1hP3U3uRBiICnlwRhGml/tABb/3PGUhx24nSEwYFWnYRiE+8gWMjAKRvHLDWvf9/2xbduxLMu5ruup67oLPGRgiIi+
+NRfAluurJcEAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionNewDynamicFilter.png</Value></Property><Property><Name>Description</Name><Value>icon_mas_11x10px.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\buttons\ActionNewDynamicFilter.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionNewDynamicFilter</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionNewDynamicFilter
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,28 @@
+======OBJECT = SDTResumenMovimientos.SDT === Resumen de Movimientos=====
+
+=== STRUCTURE ===
+SDTResumenMovimientos, collection: SDTResumenMovimientosItem
+	CliId, C(10), Identificador de Cliente 
+	Texto, C(10), Texto 
+	PryId, C(10), Identificador de Proyecto 
+	PryTpo, C(10), Tipo de Proyecto 
+	PryCls, C(10), Producto 
+	PryRspId, C(16), Responsable del Proyecto 
+	CpRecId, C(16), Identificador de Recurso 
+	CpMovEST, C(1), Entrada/Salida/Transferencia 
+	CpRecTpo, C(3), Tipo de Recurso 
+	CpMovHrs, N(6.2)-, Horas del movimiento 
+	CpMovPesos, N(15.2)-, Importe en Pesos 
+	CpMovImp, N(15.2)-, Importe del Movimiento 
+	CpMovFch, D(8), Fecha del Movimiento 
+	Cobrado, N(15.2)-, Cobrado 
+	Pagado, N(15.2)-, Pagado 
+	Transferido, N(15.2)-, Transferido 
+
+====== PROPERTIES =======
+Name -> SDTResumenMovimientos
+Description -> Resumen de Movimientos
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

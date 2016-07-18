@@ -1,0 +1,10 @@
+======OBJECT = ErroresAArreglar.Category === Errores AArreglar=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-11-27T16:23:24.0000000Z" checksum="f86ec51f2bd1bcad3349c516a0f05b85" fullyQualifiedName="ErroresAArreglar" guid="ffbf62b0-90ae-4bcf-b0e2-31d115af06a0" name="ErroresAArreglar" type="00000000-0000-0000-0000-000000000006" description="Errores AArreglar">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ErroresAArreglar</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ErroresAArreglar
+IsDefault -> False

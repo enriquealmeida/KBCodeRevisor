@@ -1,0 +1,121 @@
+======OBJECT = PGraAdeMes.Procedure === Graba Adelantos del Mes=====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM, in:&RspIdPar);
+
+
+=== PROCEDURE SOURCE ===
+// Graba Adelantos del Mes
+    &MTParRubAd = PMTParChr('RUBAD')
+//    &MTParRubAdME2 = PMTParChr('RUBADME2')
+    &MTParRubAdMN = PMTParChr('RUBADMN')
+    &PryDef = PMTParChr('PRYDEF')
+
+    &vPrimD = PMTParFch('CIEEJECON')+1//tienequeusarlafechadeaperturadeejercicioencontabilidad
+//    &vPrimD = Ymdtod(&RspSuA - 1, 1, 1)
+    &vUltD = ymdtod(&RspSuA, &RspSuM, 1)
+    &vUltD = eom(&vUltD)
+
+    &MonIdMN = '0'
+    &MonIdME = '2222'
+
+    do 'BorraAdelantos'
+
+    for each
+    where          RspId = &RspIdPar or null(&RspIdPar)
+    where          RspActivo = true
+	where          RspSuA = &RspSuA 
+	where          RspSuM = &RspSuM 
+	//where          RspCnt <> 'N' or RspSoc = 'S'
+	where          RspVinculoLaboral= DMRspVinculoLaboral.PROFESIONAL or RspVinculoLaboral = DMRspVinculoLaboral.SOCIO
+       // defined by RspSueldo
+
+        &RspId = RspId
+        &RspSuMonPla = RspSuMonPla
+        &RspSuMonExt = RspSuMonExt
+
+        // Obtengo los adelantos en pesos, salen de la contabilidad de Concepto
+        &RspSuAdMN = 0 
+		//		PFImpRsp.Call(&RspId,&RspSuA,&RspSuM,&RspSuAdMN,&RspSuAdMN)
+		msg('Busco adelantos ' + &Rspid,status)
+		&location = GetLocation('DevuelvoAdelanto')
+        &DevuelvoAdelanto.Execute(&vUltD,&RspId,&RspSuAdMN,&RspSuAdME)
+		
+        &Asifec = &vUltD
+
+        // veo si son de plaza o exterior
+        &MonId = &MonIdMN
+        do 'AdelantoPlazaOExterior'
+
+        // Grabo los adelantos en pesos
+	    msg('Grabo adelantos en pesos',status)
+        if &RspSuAdMN <> 0
+			&RspSuObs = ''
+			&RspSubol = ''
+			InsertoSuMesDet.Call(RspId,&RspSuA,&RspSuM,&PryDef,&Asifec,'ADE',&MonIdMN,&RspSuPlaExt,&RspSuAdMN,&RspSuObs,&MTParRubAdMN,RspId,&RspSubol)
+        endif
+
+        // Obtengo los adelantos en dolares, salen de la contabilidad de Concepto
+        &RspSuAdME = 0
+
+        &Asifec = &vUltD
+
+        // veo si son de plaza o exterior
+        &MonId = &MonIdME
+        do 'AdelantoPlazaOExterior'
+
+        // Grabo los adelantos en dolares
+        if &RspSuAdME <> 0
+		    InsertoSuMesDet.Call(RspId,&RspSuA,&RspSuM,&PryDef,&Asifec,'ADE',&MonIdME,&RspSuPlaExt,&RspSuAdME,&RspSuObs,&MTParRubAdMN,RspId,&RspSubol)
+        endif
+
+    endfor
+
+// Fin de Main.
+
+Sub 'BorraAdelantos'
+    // borra las líneas
+	msg('Borra adelantos',status)
+    for each
+        where          RspSuA = &RspSuA
+        where          RspSuM = &RspSuM
+        where          TpoHonCateg = TpoHonCategoriaEnum.Adelanto
+        defined by RspSuObs
+
+        delete
+    endfor
+EndSub  // 'BorraAdelantos'
+
+Sub 'AdelantoPlazaOExterior'
+    if &MonId = &MonIdMN
+        if &RspSuMonPla = &MonIdMN
+            &RspSuPlaExt = DMTpoSueldo.Plaza
+        else
+            if &RspSuMonExt = &MonIdMN
+                &RspSuPlaExt = DMTpoSueldo.Exterior
+            else
+                &RspSuPlaExt = DMTpoSueldo.Plaza
+            endif
+        endif
+    else
+        if &RspSuMonPla = &MonIdME
+            &RspSuPlaExt = DMTpoSueldo.Plaza
+        else
+            if &RspSuMonExt = &MonIdME
+                &RspSuPlaExt = DMTpoSueldo.Exterior
+            else
+                &RspSuPlaExt = DMTpoSueldo.Plaza
+            endif
+        endif
+    endif
+EndSub  // 'AdelantoPlazaOExterior'
+
+
+====== PROPERTIES =======
+Name -> PGraAdeMes
+Description -> Graba Adelantos del Mes
+CommitOnExit -> No
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

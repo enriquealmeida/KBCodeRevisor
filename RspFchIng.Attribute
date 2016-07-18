@@ -1,0 +1,15 @@
+======OBJECT = RspFchIng.Attribute === Fecha de Ingreso=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> RspFchIng
+Description -> Fecha de Ingreso
+HORIZONTAL_DESCRIPTION -> Fecha de Ingreso
+VERTICAL_DESCRIPTION -> Ingreso
+ContextualTitle -> Ingreso
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

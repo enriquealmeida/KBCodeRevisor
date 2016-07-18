@@ -1,0 +1,22 @@
+======OBJECT = SaveManageFiltersState.Procedure === Save Grid State=====
+
+=== RULES ===
+parm(in:&UserCustomKey,in:&UserCustomValue);
+
+
+=== PROCEDURE SOURCE ===
+//This is a procedure in which user has to define how to save the filters created with 'ManageFilters' StandardAction.
+//You can save the filters's configuration in session, in database or whatever you want
+//By default, it calls to SaveUserKeyValue Procedure in order to have the same mechanism in all the end users configurations
+SaveUserKeyValue(&UserCustomKey, &UserCustomValue)
+
+
+
+
+====== PROPERTIES =======
+Name -> SaveManageFiltersState
+Description -> Save Grid State
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

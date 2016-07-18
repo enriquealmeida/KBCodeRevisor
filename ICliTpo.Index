@@ -1,0 +1,12 @@
+======OBJECT = ICliTpo.Index === ICli Tpo=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:24.0000000Z" checksum="94e38f6705025f77a1429856ec228568" fullyQualifiedName="ICliTpo" guid="76a131ab-14e2-4686-be70-bcce1e6c3c00" name="ICliTpo" type="9e750647-3679-0000-0100-2529de263960" description="ICli Tpo">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CliTpoId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ICliTpo</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ICliTpo

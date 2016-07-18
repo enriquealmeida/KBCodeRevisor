@@ -1,0 +1,17 @@
+======OBJECT = UploadifyOutput.SDT === Uploadify Output=====
+
+=== STRUCTURE ===
+UploadifyOutput
+	OriginalFileName, C(200), Original File Name 
+	TemporalFileName, C(200), Temporal File Name 
+	FileSize, N(10.2), File Size 
+	FileType, C(20), File Type 
+	CreationDate, D(8.5), Creation Date 
+	ModificationDate, D(8.5), Modification Date 
+
+====== PROPERTIES =======
+Name -> UploadifyOutput
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 65
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,25 @@
+======OBJECT = PMTParNum.Procedure === Devuelve Parámetro Numérico=====
+
+=== RULES ===
+parm(in:&ParNom, OUT:&ParNum);
+
+
+=== PROCEDURE SOURCE ===
+&ParNum = nullvalue(&ParNum)
+
+&MDObjTpo = 1
+&MDObjSec = 1
+
+PMDOgNum.call( &MDObjTpo, &MDObjSec, &ParNom, &MDResult, &MDError)
+
+if &MDError = 0
+    &ParNum = &MDResult
+endif
+
+
+====== PROPERTIES =======
+Name -> PMTParNum
+Description -> Devuelve Parámetro Numérico
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 33
+IsDefault -> False

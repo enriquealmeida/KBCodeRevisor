@@ -1,0 +1,28 @@
+======OBJECT = calendar.Image === calendar=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2015-07-07T16:50:54.0000000Z" checksum="1e0ad50dba9c48bd55201d2780f9904d" fullyQualifiedName="calendar" guid="61b9b5d3-dff6-4d59-9b00-da61bc2cbe93" name="calendar" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="calendar">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="calendar.png" description="calendar.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFp
+bnQubmV0IDQuMC41ZYUyZQAAAgBJREFUOE+tlDtII1EYheOuWR+VW1poZWVlsVYiYiPYiIWFvaBoYb3NstUWig8EtxFdlO1iZ2EnMUYiyUwSTCZERiQWvkBR
+tzAYE3b8frmGm0RDQvzh8GfOOffMnfuIy3GcT4FAoMk0zWbgDofDG4ZhHPp8vlaNz8OyrC/oP8BdMBjsevXYtt1AVp0LoYeQWfA7FAoN0jcxHEcikRG0JeF1
+wI/R59ByYIAxM8Iz5idapwTugScIB2GWvgVsjAvwj8IXQfQ1kMY/Dq6Fx/sAtiUwp4wSuM/zCn2Vt+3omoYjsIb+B9+6BGla1qU9SGCaNbISiYTJgH+Y/+u6
+QiYej9vJZPIgGo1eFXsKAj8CEpgFu8xuuRaQcfsamGba016vt7EWkCNr68impNnRKVeNRU7y3UA5rPC/wB3agw64v7FY7Kuy5qtsoHwCu/xdfcYJa3RCf8Qr
+x2iD3W1R1nyVDZTrCNfG1fpG78Y4jE8O8CV9MpVKNSprvsoG6kV4PTOUG5TFu8fsul7ubFFVHIipF8gBzuBb8Pv9JesnVU3gOsgxyxswKsuhpIKqKJCN6UM/
+FSP9kMAOJZVURYEEDKEv0uU2THg8ns9KKik9MMOP+beOArxbuwluRReU8GT00M/Ay9WzwD3ksbylWjBWzuo5kDNqyAz7wQUPb/57VAHDNM32Z24WlJswDcEq
+AAAAAElFTkSuQmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>calendar.png</Value></Property><Property><Name>Description</Name><Value>calendar.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Projects\WorkWithPlus\KB Demo WorkWithPlus\KBDemoWWPEv3Responsive\J1\web\Resources\WorkWithPlusBootstrapResponsiveTheme\calendar.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>calendar</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> calendar
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

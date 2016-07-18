@@ -1,0 +1,41 @@
+======OBJECT = WWTCliTpoDS.DataSelector === WWTCli Tpo DS=====
+<Object parent="MOD_Proyectos.WorkWithPlusTCliTpo" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="90d0a15d-9c80-0373-3fc2-4d3c2d31b285" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T19:33:32.0000000Z" checksum="f6c0dd9982446c150760a3c82f58570c" fullyQualifiedName="MOD_Proyectos.WWTCliTpoDS" guid="32ab3bb9-db36-4393-8efe-8d4d0f92e413" name="WWTCliTpoDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWTCli Tpo DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[CliTpoDsc like &CliTpoDsc when not &CliTpoDsc.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="CliTpoDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliTpoDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliTpoDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliTpoDsc</Name>
+        <Description>Cli Tpo Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWTCliTpoDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Proyectos.WorkWithPlusTCliTpo</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWTCliTpoDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-125
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 125
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

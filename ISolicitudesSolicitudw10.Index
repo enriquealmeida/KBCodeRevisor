@@ -1,0 +1,12 @@
+======OBJECT = ISolicitudesSolicitudw10.Index === ISolicitudes Solicitudw10=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-11-27T16:23:41.0000000Z" checksum="a021feb11021fbe5ba315c8f56268ba1" fullyQualifiedName="ISolicitudesSolicitudw10" guid="8c6248c1-deba-4e7f-856e-cb4298d531f5" name="ISolicitudesSolicitudw10" type="9e750647-3679-0000-0100-2529de263960" description="ISolicitudes Solicitudw10">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CrrUsr</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ISolicitudesSolicitudw10</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ISolicitudesSolicitudw10

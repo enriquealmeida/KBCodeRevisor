@@ -1,0 +1,15 @@
+======OBJECT = RspCntFchF.Attribute === Fecha final del contrato=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> RspCntFchF
+Description -> Fecha final del contrato
+HORIZONTAL_DESCRIPTION -> Fecha final del contrato
+VERTICAL_DESCRIPTION -> Fecha final del contrato
+ContextualTitle -> Fecha final del contrato
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

@@ -1,0 +1,11 @@
+======OBJECT = KBAgregoTAGaSolicitudes.Attribute === TAG a nuevas solicitudes?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> KBAgregoTAGaSolicitudes
+Description -> TAG a nuevas solicitudes?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

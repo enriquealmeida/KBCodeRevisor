@@ -1,0 +1,81 @@
+======OBJECT = WWSisDS.DataSelector === WWSis DS=====
+<Object parent="MOD_Proyectos.WorkWithPlusSis" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="e71d30fd-c3b3-0070-12a0-d99e72646c77" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T19:33:26.0000000Z" checksum="ab6dd8b96bde74499f7b10468d91746f" fullyQualifiedName="MOD_Proyectos.WWSisDS" guid="46c9c835-a77b-458b-9545-05f73b5fcf22" name="WWSisDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWSis DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[SisDsc like &SisDsc when not &SisDsc.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="DynamicFiltersSelector1">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersSelector1</Value></Property></Properties>
+      </Variable>
+      <Variable Name="SisDsc1">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>SisDsc1</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:SisDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersEnabled2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersEnabled2</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Boolean</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersSelector2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersSelector2</Value></Property></Properties>
+      </Variable>
+      <Variable Name="SisDsc2">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>SisDsc2</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:SisDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersEnabled3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersEnabled3</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Boolean</Value></Property></Properties>
+      </Variable>
+      <Variable Name="DynamicFiltersSelector3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>DynamicFiltersSelector3</Value></Property></Properties>
+      </Variable>
+      <Variable Name="SisDsc3">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>SisDsc3</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:SisDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="SisDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>SisDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:SisDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>SisDsc</Name>
+        <Description>Sis Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWSisDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Proyectos.WorkWithPlusSis</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWSisDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-36
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 36
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

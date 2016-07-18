@@ -1,0 +1,19 @@
+======OBJECT = LoadColumnsSelectorState.Procedure === Load Columns Selector State=====
+
+=== RULES ===
+parm(in:&UserCustomKey, out:&UserCustomValue);
+
+
+=== PROCEDURE SOURCE ===
+//This is a procedure in which user has to define the behaviour of columns selector state.
+//You can save the ColumnsSelector state in session, database or whatever you want.
+//By default, it calls to loadUserKeyValue Procedure in order to have the same mechanism in all the end users configurations
+loadUserKeyValue(&UserCustomKey, &UserCustomValue)
+
+
+====== PROPERTIES =======
+Name -> LoadColumnsSelectorState
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 75
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = PrcActDue.Attribute === Dueño=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> PrcActDue
+Description -> Dueño
+HORIZONTAL_DESCRIPTION -> Dueño
+VERTICAL_DESCRIPTION -> Dueño
+ContextualTitle -> Dueño
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

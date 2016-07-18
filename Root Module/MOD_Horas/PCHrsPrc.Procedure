@@ -1,0 +1,30 @@
+======OBJECT = PCHrsPrc.Procedure === Calculo Porcentaje en Horas=====
+
+=== RULES ===
+parm(IN:&Hrs ,IN:&HrsTot ,OUT:&Prc ) ;
+
+
+=== PROCEDURE SOURCE ===
+if &HrsTot <> 0
+   &Aux=round(&Hrs  * 100 / &HrsTot,0)
+   if (-999 <= &Aux)  and  (&Aux <= 999)
+     &Prc=&Aux
+   else
+     if &Aux <= -999
+        &Prc=-999
+     else
+        &Aux= 999
+     endif   
+   endif
+else
+     &Prc=0
+endif
+
+
+====== PROPERTIES =======
+Name -> PCHrsPrc
+Description -> Calculo Porcentaje en Horas
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Private
+IsDefault -> False

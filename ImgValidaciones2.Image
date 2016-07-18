@@ -1,0 +1,31 @@
+======OBJECT = ImgValidaciones2.Image === Validaciones=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-10-25T12:56:36.0000000Z" checksum="bb1b0065cf76e197159f69f6b75c8c7e" fullyQualifiedName="ImgValidaciones2" guid="eac74964-2bca-4a02-be76-a84099936fdc" name="ImgValidaciones2" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Validaciones">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="imgValidaciones.GIF" description=""><Data>
+<base64Binary>
+R0lGODlhFAAPAPcAABRHg////wAAAP7+/uvw9fX19ebt89Ti7dnZ2cnQ1+Hr9LbI3M/Pz9Le69jk7lSCsuvx97nO4RlTk5Kyz6C406O50lJ8rJ6zznaVvPb6
+/dXh7enp6VF8rN7e3VuBr4eDfTlhneXu9neeyx5QknCawYqKiuTs89Xi7pOTk6O61ouJibvM3naZwvv8/jJkozdoomFhYWSMuV6GtKfA132dwm+XvXiawCpi
+nkVqmoCkzsbGxkVwp83NzYmIgr29vWmQuvv9/b3Hzm+UvNXT0mGLtqysrE59rkd2qai/15Oszdnj7Udwp/n7/JKzzlOBsPz8/Orw9v39/bHF2/j5/NnV0svY
+57jG3cLAvjBinbrM4Jq40lZWVvj6+0pto5+304Kev1N/rjptpLWyrba2tq/D3Dk4N4aGhHmewy5fnGmUvUFso////uvy95yx0EBsoszY50pKSu/z99zc336f
+xPb4+/v8/SJUlZ+61eXu8/n7/XuixKGhoYanyfn39CZYl4SmycTV5SVVluzs7Pr8/Nra2sfY587Ozjtwqezn452yz16Mt/v8/MTU5YOnyGOGswA1ggAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAFAAPAAAIVAAFCBxIsKDBAAgTKlyYUGAA
+ABAjSpwIIIBDihIRZryIsaLGiBYFPMSocKNIkCBLguTo0WPCiSFHulRpUiZDkixndowJUyZFnh1ximRIVKHBo0gDAgA7
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>imgValidaciones.GIF</Value></Property><Property><Name>Description</Name><Value /></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>\\hugo\inetpub\Produccion\PrivateExterno\GXBasedWeb\ConceptoComUyMT2007\imagenes\Validaciones.GIF</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ImgValidaciones2</Value></Property><Property><Name>Description</Name><Value>Validaciones</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ImgValidaciones2
+Description -> Validaciones
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

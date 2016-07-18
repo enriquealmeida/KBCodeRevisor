@@ -1,0 +1,24 @@
+======OBJECT = DMNivel.Domain === Nivel de acceso=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-07-04T18:31:13.0000000Z" checksum="49ac4b9fe333d00681138f5f95ceff64" fullyQualifiedName="DMNivel" guid="63bd74ff-3512-4aac-8934-69cdb72fc5f2" name="DMNivel" type="00972a17-9975-449e-aab1-d26165d51393" description="Nivel de acceso">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMNivel</Value></Property><Property><Name>Description</Name><Value>Nivel de acceso</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>ATT_PICTURE</Name><Value>9</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMNivel
+Description -> Nivel de acceso
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 1
+Decimals -> 0
+ATT_PICTURE -> 9
+IsDefault -> False

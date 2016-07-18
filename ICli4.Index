@@ -1,0 +1,12 @@
+======OBJECT = ICli4.Index === ICli4=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:20.0000000Z" checksum="66d1572de5aac6cd4f5b78f7db5e08aa" fullyQualifiedName="ICli4" guid="2c307260-c8bc-4a9a-af01-378c242851e2" name="ICli4" type="9e750647-3679-0000-0100-2529de263960" description="ICli4">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CliId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ICli4</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ICli4

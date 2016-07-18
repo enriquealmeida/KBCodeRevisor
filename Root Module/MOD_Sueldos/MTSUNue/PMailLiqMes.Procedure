@@ -1,0 +1,43 @@
+======OBJECT = PMailLiqMes.Procedure === Mail Liquidación Mensual=====
+
+=== RULES ===
+parm(in:&RspId, in:&RspSuA, in:&RspSuM);
+
+
+=== PROCEDURE SOURCE ===
+&ParDirWProc = PMTParChr('URLMTPUB')
+&ParSis = PMTParChr('PARSIS')
+msg(format('RspId: %1, %2, %3',&RspId, &RspSuA, &RspSuM))
+&Wrap.BaseURL = trim(&ParDirWProc)
+for each
+    where            RspId = &RspId
+	
+	&RspUsrMl = RspUsrMl.Trim()
+
+    if not &RspUsrMl.IsEmpty()
+        
+        if RspVinculoLaboral = DMRspVinculoLaboral.EMPLEADO 
+            &Mailmsg.Subject = format('Liquidación Mensual y Control de Licencias: %1 Año: %2 Mes:%3',&RspId,&RspSuA,&RspSuM)
+        else    // contratados o contratados exterior
+            &Mailmsg.Subject =  format('Liquidación de Honorarios: %1 Año: %2 Mes:%3',&RspId,&RspSuA,&RspSuM)
+        endif
+	    &Wrap.Object = HRspSuMes.Create(&RspId, &RspSuA, &RspSuM)
+        &Mailmsg.HTMLText = &Wrap.GetResponse()
+
+		&Mailmsg.To.new('Administracion','administracion@concepto.com.uy')
+		&Mailmsg.To.new(&RspUsrMl,&RspUsrMl)
+
+		EnvioMail(&Mailmsg ,&ErrorCode,  &msg )
+        &Mailmsg.To.Clear()
+    endif
+endfor
+
+
+
+====== PROPERTIES =======
+Name -> PMailLiqMes
+Description -> Mail Liquidación Mensual
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

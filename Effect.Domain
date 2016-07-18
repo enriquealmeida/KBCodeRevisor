@@ -1,0 +1,24 @@
+======OBJECT = Effect.Domain === Effect=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="ARTECH\GeneXus" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-11-12T17:31:55.0000000Z" checksum="2f041701b3b7e3b7b4f7fa2d47af944f" fullyQualifiedName="Effect" guid="5472bfdf-e7f1-4d37-978d-d9fe8ce6d8a1" name="Effect" type="00972a17-9975-449e-aab1-d26165d51393" description="Effect">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Effect</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>20</Value></Property><Property><Name>AttMaxLen</Name><Value>20</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>gx_default, Default, Default; gx_curl_up, CurlUp, Curl Up (iOS Only); gx_curl_down, CurlDown, Curl Down (iOS Only); gx_flip_from_left, FlipFromLeft, Flip From Left (iOS only); gx_flip_from_right, FlipFromRight, Flip From Right (iOS only); gx_slide_down, SlideDown, Slide Down; gx_slide_up, SlideUp, Slide Up; gx_slide_left, SlideLeft, Slide Left; gx_slide_right, SlideRight, Slide Right; gx_push_down, PushDown, Push Down; gx_push_up, PushUp, Push Up; gx_push_left, PushLeft, Push Left; gx_push_right, PushRight, Push Right; gx_fade, Fade, Fade; gx_none, None, None</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Effect
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 20
+AttMaxLen -> 20
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

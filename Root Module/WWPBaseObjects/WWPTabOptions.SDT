@@ -1,0 +1,19 @@
+======OBJECT = WWPTabOptions.SDT === Tab Options=====
+
+=== STRUCTURE ===
+WWPTabOptions, collection: TabOptionsItem
+	Code, C(50), Code 
+	Description, V(255), Description 
+	Link, V(1000), Link 
+	WebComponent, V(1000), Web Component 
+	IncludeInPanel, N(1), Include In Panel 
+	CollapsedByDefault, B(10), Collapsed By Default 
+	Collapsable, B(10), Collapsable 
+
+====== PROPERTIES =======
+Name -> WWPTabOptions
+Description -> Tab Options
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

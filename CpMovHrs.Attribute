@@ -1,0 +1,15 @@
+======OBJECT = CpMovHrs.Attribute === Horas del movimiento=====
+NUMERIC(6.2)-
+
+
+====== PROPERTIES =======
+Name -> CpMovHrs
+Description -> Horas del movimiento
+HORIZONTAL_DESCRIPTION -> Horas del movimiento
+VERTICAL_DESCRIPTION -> Horas del movimiento
+ContextualTitle -> Horas del movimiento
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZ9.99
+IsDefault -> False

@@ -1,0 +1,12 @@
+======OBJECT = PryTpoAprOblig.Attribute === Aprobacion de Cliente obligatoria=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> PryTpoAprOblig
+Description -> Aprobacion de Cliente obligatoria
+ContextualTitle -> Aprocacion de Cliente obligatoria
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

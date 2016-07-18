@@ -1,0 +1,15 @@
+======OBJECT = MTPCWbp.Attribute === Web Panel=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> MTPCWbp
+Description -> Web Panel
+HORIZONTAL_DESCRIPTION -> Web Panel
+VERTICAL_DESCRIPTION -> Web Panel
+ContextualTitle -> Web Panel
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

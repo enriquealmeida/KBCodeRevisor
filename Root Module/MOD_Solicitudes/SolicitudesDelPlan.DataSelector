@@ -1,0 +1,103 @@
+======OBJECT = SolicitudesDelPlan.DataSelector === Solicitudes Del Plan =====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-27T17:15:40.0000000Z" lastUpdate="2016-05-26T18:36:19.0000000Z" checksum="ada7aeb171ac205b8771c6506f83e5f4" fullyQualifiedName="MOD_Solicitudes.SolicitudesDelPlan" guid="4acdd16b-0851-45ed-8268-07c8b6c0a7c9" name="SolicitudesDelPlan" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="Solicitudes Del Plan ">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[CliId = &CliId when not &CliId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CrrUsr = &CrrUsr when not &CrrUsr.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[&FchIni <= PrbPlaFch and PrbPlaFch <= &FchFin
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrbSts = &PrbSts when not &PrbSts.isEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrbSts <> DMPrbSts.SUS
+]]></Source>
+      </Condition>
+      <OrderItem>
+        <Order>
+          <Condition />
+          <Items>
+            <OrderedItem Type="Ascending" Name="CrrUsr" />
+            <OrderedItem Type="Ascending" Name="PrbId" />
+          </Items>
+        </Order>
+      </OrderItem>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="FchIni">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>FchIni</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Date</Value></Property></Properties>
+      </Variable>
+      <Variable Name="FchFin">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>FchFin</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Date</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliId</Value></Property><Property><Name>Description</Name><Value>Identificador de Cliente</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CrrUsr">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CrrUsr</Value></Property><Property><Name>Description</Name><Value>Hace</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CrrUsr</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PrbSts">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrbSts</Value></Property><Property><Name>Description</Name><Value>Estado de la Solicitud</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrbSts</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>FchIni</Name>
+        <Description>Fch Ini</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>FchFin</Name>
+        <Description>Fch Fin</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliId</Name>
+        <Description>Identificador de Cliente</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CrrUsr</Name>
+        <Description>Hace</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrbSts</Name>
+        <Description>Estado de la Solicitud</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SolicitudesDelPlan</Value></Property><Property><Name>Description</Name><Value>Solicitudes Del Plan </Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> SolicitudesDelPlan
+Description -> Solicitudes Del Plan 
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

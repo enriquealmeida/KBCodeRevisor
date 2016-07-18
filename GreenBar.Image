@@ -1,0 +1,23 @@
+======OBJECT = GreenBar.Image === Green Bar=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-26T23:49:52.0000000Z" checksum="e75f864af7507882eda365c872df21ae" fullyQualifiedName="GreenBar" guid="20cd3ff5-2961-410d-850a-b8dfc66af255" name="GreenBar" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Green Bar">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="barraSuperior.png" description="barra Superior.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAABRIAAAAECAIAAAB9dFTEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN1QAADdUBPdZY8QAAABp0RVh0U29mdHdhcmUAUGFp
+bnQuTkVUIHYzLjUuMTAw9HKhAAAAa0lEQVRoQ+3ZQQ0AAAgCQIMS1HgWkAa3keDGhzHZCAECBAgQIECAAAECBAgQIPAKDBcCBAgQIECAAAECBAgQIECgCZjN
+znYCBAgQIECAAAECBAgQIFAFzGblIECAAAECBAgQIECAAAECVeAANEApNLW+eaoAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>barraSuperior.png</Value></Property><Property><Name>Description</Name><Value>barra Superior.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\MasterPage\Green\barraSuperior.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>GreenBar</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> GreenBar
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

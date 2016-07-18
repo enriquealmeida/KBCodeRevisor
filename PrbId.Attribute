@@ -1,0 +1,16 @@
+======OBJECT = PrbId.Attribute === Identificador de la Solicitud=====
+NUMERIC(6)
+
+
+====== PROPERTIES =======
+Name -> PrbId
+Description -> Identificador de la Solicitud
+HORIZONTAL_DESCRIPTION -> Solicitud
+VERTICAL_DESCRIPTION -> Solicitud
+ContextualTitle -> Solicitud
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlTypeCompatibility -> True
+ATT_PICTURE -> ZZZZZZ
+IsDefault -> False

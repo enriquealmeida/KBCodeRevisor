@@ -1,0 +1,88 @@
+======OBJECT = WorkWithPlusProyectosCierre.WorkWithPlus === Work With Plus Proyectos Cierre=====
+<Object parent="MOD_Proyectos.ProyectosCierre" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="6c83630d-d807-46a9-92df-766aec4d0338" user="AW\awolff" versionDate="2016-07-02T22:29:54.0000000Z" lastUpdate="2016-07-02T22:15:08.0000000Z" checksum="f534dabb1c89f2ca8bdc3240e1cebbf1" fullyQualifiedName="MOD_Proyectos.WorkWithPlusProyectosCierre" guid="6b903b9d-8efb-0e32-26d7-705dceb79c45" name="WorkWithPlusProyectosCierre" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Proyectos Cierre">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWProyectosCierre" defaultSecFuntionKey="WWProyectosCierre">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.ProyectosCierre" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.ProyectosCierre" SecFuntionKeyINS="WWProyectosCierre_Insert" defaultSecFuntionKeyINS="WWProyectosCierre_Insert" SecFuntionKeyUPD="WWProyectosCierre_Update" defaultSecFuntionKeyUPD="WWProyectosCierre_Update" SecFuntionKeyDLT="WWProyectosCierre_Delete" defaultSecFuntionKeyDLT="WWProyectosCierre_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;ProyectosCierreTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="ProyectosCierreTitle" defaultControlName="ProyectosCierreTitle" caption="Cierre de Proyectos" defaultCaption="Cierre de Proyectos" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellThemeClass="" colSpan="1" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" cellThemeClass="" childrenOrderedList="2;22;PryId-2;22;PryNom-2;22;CliId-2;22;PryCls-2;22;PryTpo-2;22;PryFchFin-2;22;PryObsIng-2;22;PryObsCie-2;22;PryEvaluacionCierre-2;22;PrySts">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" NoAccept="True" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" NoAccept="True" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryFchFin" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryFchFin" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryEvaluacionCierre" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryEvaluacionCierre" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryObsCie" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryObsCie" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" visible="True" defaultVisible="False" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" isRequired="True" />
+        </table>
+      </table>
+      <actionGroup caption="&lt;default&gt;" themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete" showDescription="True">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;PryNom-4;39;-;76;-5;41;" id="6c83630d-d807-46a9-92df-766aec4d0338:1" defaultId="6c83630d-d807-46a9-92df-766aec4d0338:1" name="ProyectosCierre" defaultName="ProyectosCierre">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Cierre de Proyectos" defaultDescription=" Cierre de Proyectos" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.WWProyectosCierre" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportWWProyectosCierre" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportReportWWProyectosCierre" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Proyectos.WWProyectosCierreDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;ProyectosCierreTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="ProyectosCierreTitle" defaultControlName="ProyectosCierreTitle" caption="Cierre de Proyectos" defaultCaption="Cierre de Proyectos" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" cellThemeClass="" colSpan="1" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="3" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" cellWidth_S="8%" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup caption="&lt;default&gt;" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%" showDescription="True">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;30;-4;12;PryNom">
+              <orders childrenOrderedList="4;13;=PryNom.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order childrenOrderedList="4;26;PryNom;=PryNom.ContextualTitle" name="=PryNom.ContextualTitle" defaultName="=PryNom.ContextualTitle">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" />
+                </order>
+              </orders>
+              <filterAttribute name="PryId" defaultName="PryId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="PryId = &amp;PryId when not &amp;PryId.IsEmpty()" defaultCondition="PryId = &amp;PryId when not &amp;PryId.IsEmpty()" controlInfo="00972a17-9975-449e-aab1-d26165d51393-PROYECTO" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+              <filterAttribute name="PryEvaluacionCierre" defaultName="PryEvaluacionCierre" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" allValue="True" defaultAllValue="True" condition="PryEvaluacionCierre = &amp;PryEvaluacionCierre when not &amp;PryEvaluacionCierre.IsEmpty()" defaultCondition="PryEvaluacionCierre = &amp;PryEvaluacionCierre when not &amp;PryEvaluacionCierre.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+              <table name="TableFechas" type="Responsive">
+                <textBlock controlName="FechasDescription" caption="Fecha de Finalización" themeClass="Label" />
+                <filterAttributeRange name="PryFchFin" defaultName="PryFchFin" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="PryFchFin &gt;= &amp;PryFchFin when not &amp;PryFchFin.IsEmpty();&#xD;&#xA;PryFchFin &lt;= &amp;PryFchFin_To when not &amp;PryFchFin_To.IsEmpty()" defaultCondition="PryFchFin &gt;= &amp;PryFchFin when not &amp;PryFchFin.IsEmpty();&#xD;&#xA;PryFchFin &lt;= &amp;PryFchFin_To when not &amp;PryFchFin_To.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" showDescription="False" descriptionPosition="Top" defaultDescriptionPosition="Top" middleText="hasta" defaultMiddleText="hasta" />
+              </table>
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" allowSelection="False" allowHovering="True" childrenOrderedList="4;17;Delete-4;17;Update-4;23;PryId-4;23;PryNom-4;23;CliId-4;23;PryCls-4;23;PryTpo-4;23;PryFchFin-4;23;PryObsIng-4;23;PryObsCie-4;23;PryEvaluacionCierre-4;23;PrySts">
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" description="Proyecto" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PryId = &amp;TFPryId when not &amp;TFPryId.IsEmpty()" defaultFilterCondition="PryId = &amp;TFPryId when not &amp;TFPryId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryNom" description="Nombre" defaultDescription="=Attribute.ContextualTitle" filterCondition="PryNom like &amp;TFPryNom when not &amp;TFPryNom.IsEmpty()" defaultFilterCondition="PryNom like &amp;TFPryNom when not &amp;TFPryNom.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CliId = &amp;TFCliId when not &amp;TFCliId.IsEmpty()" defaultFilterCondition="CliId = &amp;TFCliId when not &amp;TFCliId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryFchFin" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryFchFin" description="Fecha de Fin" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PryFchFin &gt;= &amp;TFPryFchFin when not &amp;TFPryFchFin.IsEmpty()" defaultFilterCondition="PryFchFin &gt;= &amp;TFPryFchFin when not &amp;TFPryFchFin.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryEvaluacionCierre" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryEvaluacionCierre" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PryEvaluacionCierre = &amp;TFPryEvaluacionCierre when not &amp;TFPryEvaluacionCierre.IsEmpty()" defaultFilterCondition="PryEvaluacionCierre = &amp;TFPryEvaluacionCierre when not &amp;TFPryEvaluacionCierre.IsEmpty()" />
+        </grid>
+      </table>
+    </selection>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusProyectosCierre</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.ProyectosCierre</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 112
+Name -> WorkWithPlusProyectosCierre
+ObjectVisibility -> Private
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-112
+IsDefault -> False

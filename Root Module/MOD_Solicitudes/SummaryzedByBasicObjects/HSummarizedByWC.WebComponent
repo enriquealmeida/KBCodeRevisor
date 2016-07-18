@@ -1,0 +1,126 @@
+======OBJECT = HSummarizedByWC.WebComponent === Pattern WCSummarized By=====
+
+=== RULES ===
+Parm(in:&sdt, in:&Type, in:&ChartType);
+
+
+=== EVENTS SOURCE ===
+
+
+Event Refresh
+ Do 'HideControls'  
+  do case 
+    Case &Type = SummaryVisualizationType.Ranking
+        Ranking.Visible = True
+        RankingTable.Visible = True
+    Case &Type=SummaryVisualizationType.Chart 
+        DO 'Graph'
+    Case &Type=SummaryVisualizationType.Cloud
+        DO 'TagCloud'
+ endcase
+EndEvent  // Refresh
+
+
+
+Event Ranking.load
+    PSummarizedByGetConfiguration.call(&ListEnabledImage,&listDisabledImage,&ListToolTip,&DrillDownEnabledImage,&DrillDownDisabledImage,&DrillDownToolTip,&TotalCaption)
+    if &Type = SummaryVisualizationType.Ranking
+        &List.FromImage(Observaciones)
+    	&List.Tooltiptext = "Listar"
+    	&Drill.FromImage(ActionDisplay)
+    	&Drill.Tooltiptext = &DrillDownToolTip
+        Ranking.Visible=1
+       &Sdt.Items.Sort('[Indicator]')
+       For &sdtitem in &sdt.Items
+            &Dimension = &sdtitem.DimensionDesc
+            &Indicador = &SdtItem.Indicator
+            &List.Link=&sdtitem.ListUrl 
+            if (&SdtItem.DrillUrl.IsEmpty())
+                &Drill.Link='' 
+                &Drill=loadbitmap(&DrillDownDisabledImage)  
+            else
+                 &Drill.Link=&sdtitem.DrillUrl 
+            endif
+            Ranking.load()            
+       endfor
+       //Cargo Totales
+       &Dimension=&TotalCaption
+       &Dimension.FontBold=1
+       &Indicador=&Sdt.total 
+       &Indicador.FontBold=1
+       &List.Link=&sdt.ListTotalUrl    
+       &Drill.Link='' 
+       &Drill.FromImage(menuarrow)  
+       Ranking.load()
+    endif
+EndEvent
+
+
+Sub 'Graph'
+    GraphTable.Visible=1
+    &Graph.Visible=1
+    &coma='' 
+    &Categories='&Categories=Values:'
+    &Points='&Series1=Values:$:'
+    For &SdtItem in &Sdt.Items
+        &Text=Trim(strreplace(&SdtItem.DimensionDesc,',','_'))
+        &Text=strreplace(&Text,'&','_')
+        &Categories = &Categories + &coma + &Text   
+        &points     = &points + &coma + trim(str(&SdtItem.Indicator))
+        &coma=','
+    endfor
+    &url = &Sdt.GraphUrl + '&type='+trim(&ChartType)+trim(&categories)+trim(&points)
+    &graph= loadbitmap(&Url)
+    &Graph.Link=&Sdt.ListTotalUrl
+EndSub
+
+Sub 'TagCloud'
+ CloudTable.Visible=1
+ tbkCloud.Visible=1   
+ tbkCloud.Format=1 
+ &Sdt.Items.Sort('DimensionDesc')
+
+   &DifferentsFontSize = 6  
+   
+    for &SdtItem in &Sdt.Items
+            if &Sdt.Max <> 0
+                &size = int(((&SdtItem.Indicator - &sdt.Min) /  (&sdt.Max- &Sdt.Min) ) * &DifferentsFontSize )
+            else
+                &size=1
+            endif
+            &data += '<a href="' + &sdtitem.ListUrl + '">'
+            &data += '<font size="' + trim(str(&size,2,0)) + '">'
+            &data += &sdtItem.DimensionDesc.Trim() + '</font></a> | '
+    endfor
+
+    tbkCloud.Caption = &data
+EndSub
+
+Sub 'HideControls'
+  RankingTable.Visible=0
+  Ranking.Visible=0
+
+  CloudTable.Visible=0
+  tbkCloud.Visible=0
+  tbkCloud.Caption=''
+
+  GraphTable.Visible=0
+  &Graph.Visible=0
+  
+EndSub
+
+Event Start
+	&List.FromImage(ActionUpdate)
+	&Drill.FromImage(Select) //Select)
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HSummarizedByWC
+Description -> Pattern WCSummarized By
+WEB_COMP -> Yes
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 41
+ObjectVisibility -> Private
+IsDefault -> False

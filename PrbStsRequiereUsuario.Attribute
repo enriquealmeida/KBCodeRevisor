@@ -1,0 +1,13 @@
+======OBJECT = PrbStsRequiereUsuario.Attribute === Requiere usuario que realiza=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> PrbStsRequiereUsuario
+Description -> Requiere usuario que realiza
+VERTICAL_DESCRIPTION -> Requiere usuario?
+ContextualTitle -> Requiere usuario?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,19 @@
+======OBJECT = GetTotalHorasRealizadas.Procedure === Horas totales realizadas por un responsable en una fecha (HrsTot)=====
+
+=== RULES ===
+parm(in: &RspId, in: &Fecha, out: &HrsTot);
+
+
+=== PROCEDURE SOURCE ===
+ for each
+    where            RspId=&RspId and HrsFch = &Fecha
+    &HrsTot = HrsTot
+endfor
+
+
+====== PROPERTIES =======
+Name -> GetTotalHorasRealizadas
+Description -> Horas totales realizadas por un responsable en una fecha (HrsTot)
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

@@ -1,0 +1,74 @@
+======OBJECT = HDstrPrT.WebPanel === Distribución de proyectos x tabla=====
+
+=== RULES ===
+noaccept(&vPryImp ) ;
+noaccept(&vTotADist ) ;
+noaccept(&vTotHorNd ) ;
+noaccept(&vTasaHrs ) ;
+default(&vcpmovtpo ,'R' ) ;
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &vcpmovtpo = 'R'
+
+    &vFchIni = PMTParFch('PARFCHCRR')
+    &vFchIni += 1
+    &vFchFin = eom( &vFchIni )
+EndEvent  // Start
+
+Event load
+    &vPryImp = 0
+    &PryImpPes = 0
+
+    &distPorTabla = Bool.false
+    PFPryDstTab.call(PryId,&distPorTabla)
+
+    if &distPorTabla = Bool.true
+        for each
+        where      &vFchIni <= CpMovFch  and  CpMovFch <= &vFchFin
+            &vPryImp = &vPryImp + CpMovImp
+            &PryImpPes = &PryImpPes + CpMovPesos
+        endfor
+    endif
+
+    //redondeo los importes para que no queden valores del tipo -0.00
+    &vPryImp = Round(&vPryImp, 2)
+    &PryImpPes = Round(&PryImpPes, 2)
+
+    /// MCrispino, 28/10/2004
+    // multiplico los importes por 100, por un problema con los decimales...
+    &ImpDolAux = &vPryImp * 100
+    &ImpPesAux = &PryImpPes * 100
+
+    &Distr = 'Distribuir por tabla'
+    &Distr.Link = HDstPor.link( PryId, &ImpDolAux, &ImpPesAux, &vCpMovTpo, &vFchFin)
+
+    if &vPryImp <> 0 or &PryImpPes <> 0
+        &vTotADist = &vTotADist + &vPryImp
+        &TotADistPes = &TotADistPes + &PryImpPes
+        load
+    endif
+    
+EndEvent
+
+Event Refresh
+   &vTotADist=0
+   &TotADistPes = 0
+   &vTotHorND=0
+EndEvent
+
+Event 'Agregar'
+    TMTDstPor.call('','',TrnMode.Insert)
+EndEvent  // 'Agregar'
+
+
+====== PROPERTIES =======
+Name -> HDstrPrT
+Description -> Distribución de proyectos x tabla
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

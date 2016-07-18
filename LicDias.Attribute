@@ -1,0 +1,15 @@
+======OBJECT = LicDias.Attribute === Cantidad de Días=====
+NUMERIC(5)-
+
+
+====== PROPERTIES =======
+Name -> LicDias
+Description -> Cantidad de Días
+HORIZONTAL_DESCRIPTION -> #Días
+VERTICAL_DESCRIPTION -> #Días
+ContextualTitle -> #Días
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZZZ9
+IsDefault -> False

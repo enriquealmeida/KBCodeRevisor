@@ -1,0 +1,109 @@
+======OBJECT = CronometroImputarHoras.Procedure === Cronometro Imputar Horas=====
+
+=== RULES ===
+Parm(in:&RspId, in:&HrsFch,in:&CronometroPrbId, in:&CronometroTarId, in:&CronometroHorasAImputar, out:&ErrorDescription);
+
+
+=== PROCEDURE SOURCE ===
+&ErrorDescription.SetEmpty()
+if &HrsFch.IsEmpty()
+	&ErrorDescription = 'Debe ingresar fecha de pasaje de horas'
+else
+	if &CronometroHorasAImputar <= 0
+		&ErrorDescription = 'Debe ingresar una cantidad positiva de horas:'+&CronometroHorasAImputar.ToString()
+	else
+		if &CronometroTarId.IsEmpty()
+			&ErrorDescription = 'Debe ingresar tarea'
+		else
+			if &CronometroPrbId = 0
+				do case
+					case &CronometroTarId = 'AYUDA'
+						&PrbId = 0
+						&PryId = 'DNMANT'
+						&TarId = 'AYUDA'
+						&HorasAImputar = &CronometroHorasAImputar
+						&HrsObs.SetEmpty()	
+					case &CronometroTarId = 'ALMUERZO'
+						&PrbId = 0
+						&PryId = 'COALMUERZO'
+						&TarId = 'ALMUERZO'
+						&HorasAImputar = 0.5	
+						&HrsObs.SetEmpty()	
+					otherwise
+						&ErrorDescription = 'No Existe Prb:'+&CronometroPrbId.ToString()+' Tarea:'+&CronometroTarId
+				endcase
+			else	
+				&PrbId = &CronometroPrbId
+				&TarId = &CronometroTarId
+				//msg(format('DENTRO: Solicitud=%1',&PrbId),STATUS)
+				for each
+					where          PrbId = &PrbId
+					&PryId = PryId
+					&HrsObs = PrbDsc
+					&HorasAImputar = &CronometroHorasAImputar
+				when none
+					&PryId.SetEmpty()
+					&HrsObs.SetEmpty()
+				endfor
+			    //msg(format('DENTRO: Solicitud=%1',&PrbId),STATUS)
+			endif
+			&HorasBC.load(&HrsFch,&RspId)
+			if &HorasBC.Fail()	//Dar de alta cabezal de horas y renglón
+				&HorasBCRenglon.PryId 	= &PryId
+				&HorasBCRenglon.TarId 	= &TarId
+				&HorasBCRenglon.PrbId= &PrbId
+				&HorasBCRenglon.HrsCnt	= &HorasAImputar	
+				&HorasBCRenglon.HrsObs	= &HrsObs
+				&HorasBC.Renglones.Add(&HorasBCRenglon)
+				&HorasBC.Save()
+				if &HorasBC.Fail()
+					for &Message in &HorasBC.GetMessages()
+						&ErrorDescription += "Horas Save:"+ &Message.Id + ' '+ &Message.Description
+					endfor
+				endif
+			else	// Dar de alta solo renglon o actualizar renglon
+				&ElRenglonYaExistia = false
+				&i = 1
+				for &renglonAux in &HorasBC.Renglones
+					if &renglonAux.PryId = &PryId and &renglonAux.TarId = &TarId and &renglonAux.PrbId = &PrbId
+						&HorasBC.Renglones.Item(&i).HrsCnt += &HorasAImputar
+						//&HorasBC..Item(&i).HrsObs = &HrsObs
+						&ElRenglonYaExistia = true
+						&HorasBC.Save()
+						if &HorasBC.Fail()
+							for &Message in &HorasBC.GetMessages()
+								&ErrorDescription += "Horas Nueva Linea Save:" + &Message.Id + ' '+ &Message.Description
+							endfor
+						endif
+					endif
+					&i = &i + 1
+				endfor
+				if not &ElRenglonYaExistia
+					&HorasBCRenglon = new()
+					&HorasBCRenglon.PryId 	= &PryId
+					&HorasBCRenglon.TarId 	= &TarId
+					&HorasBCRenglon.PrbId= &PrbId
+					&HorasBCRenglon.HrsCnt	= &HorasAImputar	
+					&HorasBCRenglon.HrsObs	= &HrsObs
+					&HorasBC.Renglones.Add(&HorasBCRenglon)
+					&HorasBC.Save()
+				endif
+				if &HorasBC.Fail()
+					for &Message in &HorasBC.GetMessages()
+						&ErrorDescription += "Horas Nueva Linea Save:" + &Message.Id + ' '+ &Message.Description+'Proyecto:'+&PryId
+					endfor
+				endif
+			endif
+			if &ErrorDescription.IsEmpty()
+				commit
+			endif
+		endif
+	endif
+endif	
+
+
+====== PROPERTIES =======
+Name -> CronometroImputarHoras
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+IsDefault -> False

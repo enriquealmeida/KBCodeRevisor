@@ -1,0 +1,47 @@
+======OBJECT = PMDOpVal.Procedure === put de valor de Metadata=====
+
+=== RULES ===
+Parm(IN:MDObjTpo ,IN:MDObjSec ,IN:MDCdId , IN:&MDCdValPar , OUT:&error );
+
+
+=== PROCEDURE SOURCE ===
+&MDCdVal = &MDCdValPar
+
+&error =9
+for each
+    &MDCdVal = trim(&MDCdVal)
+    PMDFTpo.call(MDCdFrm,&MDCdVal,&error)
+endfor
+
+if &error =0 //no hay  error de tipo        
+    for each
+        &MDLgValAnt =  MDCdVal 
+        &MDLgAcc = DMAccion.Actualizacion
+        MDCdVal = trim(&MDCdVal )
+    when None
+        new
+            MDCdVal = &MDCdVal 
+            &MDLgValAnt = &MDCdVal 
+            &MDLgAcc = DMAccion.Creacion
+        endnew
+        &error =0
+    endfor
+endif
+
+if &error =0
+    for each
+        if MDCdLog <>'N'
+            PMDLgIns.call(MDObjTpo,MDObjSec,MDCdId,&MDLgValAnt,&MDLgAcc)
+        endif
+    endfor
+endif
+
+
+====== PROPERTIES =======
+Name -> PMDOpVal
+Description -> put de valor de Metadata
+CommitOnExit -> No
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 36
+ObjectVisibility -> Private
+IsDefault -> False

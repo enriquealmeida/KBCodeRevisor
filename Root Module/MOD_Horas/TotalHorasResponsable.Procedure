@@ -1,0 +1,20 @@
+======OBJECT = TotalHorasResponsable.Procedure === Total Horas Responsable=====
+
+=== RULES ===
+parm(in: &Dia, in: &RspId, out: &HrsTot);
+
+
+=== PROCEDURE SOURCE ===
+for each
+	where            HrsFch = &Dia
+	where            RspId = &RspId
+		&HrsTot = HrsTot
+endfor
+
+
+====== PROPERTIES =======
+Name -> TotalHorasResponsable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Private
+IsDefault -> False

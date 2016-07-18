@@ -1,0 +1,28 @@
+======OBJECT = Actividades-UnificacióndeObjetivos,Solicitudes,Validaciones,Objetivos.Document === Actividades - Unificación de Objetivos, Solicitudes, Validaciones, Objetivos=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T16:27:33.0000000Z" checksum="b91692b791bcb0b99c748bab770cdd35" fullyQualifiedName="Actividades - Unificación de Objetivos, Solicitudes, Validaciones, Objetivos" guid="a50c2acb-7ccc-4bcf-957b-29b049d3812a" name="Actividades - Unificación de Objetivos, Solicitudes, Validaciones, Objetivos" type="faeb588c-dcce-4dad-9af3-cdd11b961a32" description="Actividades - Unificación de Objetivos, Solicitudes, Validaciones, Objetivos">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <InnerHtml><![CDATA[<P>En una sola tabla se aplica unifican los Objetivos, Solicitudes, Validaciones, Proyectos</P>
+<P>Las actividades pueden estar relacionadas entre ellas (en realidad, son dependencias). </P>
+<P>Las actividades van a tener solo un responsable asignado (se quita quien sigue). </P>
+<P>Asociado a las actividades van a estar:</P>
+<UL>
+<LI>Attach</LI>
+<LI>Log de cambio</LI>
+<LI>Indicadores</LI>
+<LI>Mediciones de dicho indicador </LI>
+<LI>Metas de las mediciones de dicho indicador.</LI>
+<LI>Observaciones</LI>
+<LI>Campos obligatorios por tipo de Actividad.&nbsp;</LI>
+<LI>Tags</LI></UL>
+<P>Vencimiento</P>
+<P>Mail de atraso de actividades. </P>
+<P>&nbsp;</P>]]></InnerHtml>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Actividades - Unificación de Objetivos, Solicitudes, Validaciones, Objetivos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> Actividades - Unificación de Objetivos, Solicitudes, Validaciones, Objetivos
+IsDefault -> False

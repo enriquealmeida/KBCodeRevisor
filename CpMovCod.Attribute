@@ -1,0 +1,16 @@
+======OBJECT = CpMovCod.Attribute === Situación del movimiento=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> CpMovCod
+Description -> Situación del movimiento
+HORIZONTAL_DESCRIPTION -> Situación del movimiento
+VERTICAL_DESCRIPTION -> Situación del movimiento
+ContextualTitle -> Situación del movimiento
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttValueRange -> 'R' 'A' 'N'
+ATT_PICTURE -> @!
+IsDefault -> False

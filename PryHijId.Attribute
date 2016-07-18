@@ -1,0 +1,15 @@
+======OBJECT = PryHijId.Attribute === Proyecto al que se distribuye=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> PryHijId
+Description -> Proyecto al que se distribuye
+HORIZONTAL_DESCRIPTION -> Proyecto al que se distribuye
+VERTICAL_DESCRIPTION -> Proyecto al que se distribuye
+ContextualTitle -> Proyecto al que se distribuye
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-15
+ATT_PICTURE -> @!
+IsDefault -> False

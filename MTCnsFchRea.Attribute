@@ -1,0 +1,15 @@
+======OBJECT = MTCnsFchRea.Attribute === Fecha Real del Consolidado=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> MTCnsFchRea
+Description -> Fecha Real del Consolidado
+HORIZONTAL_DESCRIPTION -> Fecha Real del Consolidado
+VERTICAL_DESCRIPTION -> Fecha Real
+ContextualTitle -> Fecha Real del Consolidado
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

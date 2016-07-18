@@ -1,0 +1,30 @@
+======OBJECT = CalculoDiasLicencia.Procedure === Calculo Dias Licencia=====
+
+=== RULES ===
+parm(in:&RspId,in:&FchIni,in:&FchFin,out:&CantidadDiasLicencia);
+
+
+=== PROCEDURE SOURCE ===
+&CantidadDiasLicencia=0
+&Day = &FchIni
+do while (&Day <= &FchFin)
+   if EsDiaHabil(&Day)	
+			for each
+				where             RspId = &RspId
+				where             LicFecIni <= &day and &day <= LicFecFin 
+				where             LicTpo = DMLicTpo.Tomada
+					&CantidadDiasLicencia += 1
+			endfor
+   endif
+
+   &Day = &Day + 1
+enddo
+
+
+
+====== PROPERTIES =======
+Name -> CalculoDiasLicencia
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Public
+IsDefault -> False

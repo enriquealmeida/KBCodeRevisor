@@ -1,0 +1,28 @@
+======OBJECT = DMSolicitudActivaRadioButton.Domain === Solicitud Activa?=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="EALMEIDANBK\Enrique" versionDate="2016-06-14T19:59:25.0000000Z" lastUpdate="2016-06-09T20:44:25.0000000Z" checksum="50f1ca8b2661a4d7db430e268a5648da" fullyQualifiedName="DMSolicitudActivaRadioButton" guid="c4055239-5449-484b-8936-b2c94c85b9d7" name="DMSolicitudActivaRadioButton" type="00972a17-9975-449e-aab1-d26165d51393" description="Solicitud Activa?">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMSolicitudActivaRadioButton</Value></Property><Property><Name>Description</Name><Value>Solicitud Activa?</Value></Property><Property><Name>ATTThemeClass</Name><Value>AttributeCheckBox</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Bool</Value></Property><Property><Name>ControlType</Name><Value>Radio Button</Value></Property><Property><Name>ControlValues</Name><Value>True:S,False:N</Value></Property><Property><Name>ControlDirection</Name><Value>Horizontal</Value></Property><Property><Name>AddEmptyItem</Name><Value>True</Value></Property><Property><Name>EmptyItemText</Name><Value>(Todas)</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMSolicitudActivaRadioButton
+Description -> Solicitud Activa?
+OBJ_TYPE -> id_OTYPE_DOM
+ATTThemeClass -> d4876646-98dd-419b-8c1c-896f83c48368-267
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 1
+ControlValues -> True:S,False:N
+ControlDirection -> 0
+AddEmptyItem -> True
+EmptyItemText -> (Todas)
+IsDefault -> False

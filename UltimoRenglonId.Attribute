@@ -1,0 +1,11 @@
+======OBJECT = UltimoRenglonId.Attribute === Ultimo Renglon =====
+NUMERIC(4)
+
+
+====== PROPERTIES =======
+Name -> UltimoRenglonId
+Description -> Ultimo Renglon 
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

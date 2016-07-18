@@ -1,0 +1,37 @@
+======OBJECT = TabBeginUnselected.Image === Tab Begin Unselected=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:54.0000000Z" checksum="a102465c5229039a5cac7bafae513a4d" fullyQualifiedName="TabBeginUnselected" guid="014ad39b-4d50-4343-92ef-0117c86e1b16" name="TabBeginUnselected" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Tab Begin Unselected">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="fondo_tab_no_seleccionado.jpg" description="Tab Begin Unselected.jpg"><Data>
+<base64Binary>
+/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMD/8AAEQgAGQABAwERAAIRAQMRAf/EAGUAAAMAAAAAAAAAAAAAAAAAAAEDCAEAAgMBAAAAAAAAAAAAAAAAAQcFBggJEAABAgcAAAAAAAAAAAAA
+AAAAAQYRUZHUBVUYEQABAgYDAAAAAAAAAAAAAAAAkdIBEQIEBRcDU1T/2gAMAwEAAhEDEQA/AHxWZseUDnQAISNOk3VoW/TJXw+NT4f03S8bBL7KyvRbpW4s
+4iCzn//Z
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>fondo_tab_no_seleccionado.jpg</Value></Property><Property><Name>Description</Name><Value>Tab Begin Unselected.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\fondo_tab_no_seleccionado.jpg</Value></Property></Properties></ImageItem>
+      <ImageItem><Image name="TabBeginUnselected.png" description="Tab Begin Unselected.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAIAAAD9HKYrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAA9JREFUGFdj+P//P8MQwAAx
+t32D6DYCJAAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>TabBeginUnselected.png</Value></Property><Property><Name>Description</Name><Value>Tab Begin Unselected.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\Tabs\BootstrapTabs_images\TabBeginUnselected.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="TabBeginUnselected.png" description="Tab Begin Unselected.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAIAAAD9HKYrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAA9JREFUGFdj+P//P8MQwAAx
+t32D6DYCJAAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>TabBeginUnselected.png</Value></Property><Property><Name>Description</Name><Value>Tab Begin Unselected.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\Tabs\BootstrapTabs_images\TabBeginUnselected.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>TabBeginUnselected</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> TabBeginUnselected
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,9 @@
+======OBJECT = MTCPCO.Folder === MTCPCO=====
+<Object parent="MOD_Costos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="369d3627-bc9f-467c-8d20-e200def4955e" user="" versionDate="2016-03-15T17:55:23.0000000Z" lastUpdate="2016-03-15T16:26:46.0000000Z" checksum="63810bf8cc3a969a9f50383a61133481" fullyQualifiedName="MOD_Costos.MTCPCO" guid="42265f6b-0911-4206-a215-e8aba79eacad" name="MTCPCO" type="00000000-0000-0000-0000-000000000008" description="MTCPCO">
+  <Properties><Property><Name>Name</Name><Value>MTCPCO</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+Name -> MTCPCO
+IsDefault -> False

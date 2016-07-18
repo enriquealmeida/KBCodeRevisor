@@ -1,0 +1,94 @@
+======OBJECT = CostosDS.DataSelector === Costos DS=====
+<Object parent="MOD_Costos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="369d3627-bc9f-467c-8d20-e200def4955e" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:28.0000000Z" checksum="f894770104ba4d0b1d277e8eca99d255" fullyQualifiedName="MOD_Costos.CostosDS" guid="5d36f87a-a0ee-48c4-9a39-83d563562f53" name="CostosDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="Costos DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[CpRecId like &CpRecId when not &CpRecId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryId like &PryId when not &PryId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CliId like &CliId when not &CliId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CpMovFch >= &Actual when not &Actual.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CpMovFch <= &Actual_To when not &Actual_To.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="CpRecId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CpRecId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CpRecId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="Actual">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>Actual</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Date</Value></Property></Properties>
+      </Variable>
+      <Variable Name="Actual_To">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>Actual_To</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Date</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CpRecId</Name>
+        <Description>Cp Rec Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryId</Name>
+        <Description>Pry Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliId</Name>
+        <Description>Cli Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>Actual</Name>
+        <Description>Actual</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>Actual_To</Name>
+        <Description>Actual_To</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>CostosDS</Value></Property><Property><Name>Description</Name><Value>Costos DS</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> CostosDS
+Description -> Costos DS
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

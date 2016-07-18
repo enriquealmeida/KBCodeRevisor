@@ -1,0 +1,14 @@
+======OBJECT = PryClsDsc.Attribute === Producto=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> PryClsDsc
+Description -> Producto
+HORIZONTAL_DESCRIPTION -> Producto
+VERTICAL_DESCRIPTION -> Producto
+ContextualTitle -> Producto
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

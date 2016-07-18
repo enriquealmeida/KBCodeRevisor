@@ -1,0 +1,39 @@
+======OBJECT = CopiarTagsDisabled.Image === Copiar Tags Disabled=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-10-31T19:11:01.0000000Z" checksum="715b0dd1eed7be6c80243ef1fc27fb5b" fullyQualifiedName="CopiarTagsDisabled" guid="02ff62c1-3458-49e0-86b8-b0bcaebb5ddb" name="CopiarTagsDisabled" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Copiar Tags Disabled">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="CopiarTagsDisabled.png" description="Copiar Tags Disabled.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAQAAADblf5MAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADGWlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjaY2Bg
+nuDo4uTKJMDAUFBUUuQe5BgZERmlwH6egY2BmYGBgYGBITG5uMAxIMCHgYGBIS8/L5UBA3y7xsDIwMDAcFnX0cXJlYE0wJpcUFTCwMBwgIGBwSgltTiZgYHh
+CwMDQ3p5SUEJAwNjDAMDg0hSdkEJAwNjAQMDg0h2SJAzAwNjCwMDE09JakUJAwMDg3N+QWVRZnpGiYKhpaWlgmNKflKqQnBlcUlqbrGCZ15yflFBflFiSWoK
+AwMD1A4GBgYGXpf8EgX3xMw8BUNTVQYqg4jIKAX08EGIIUByaVEZhMXIwMDAIMCgxeDHUMmwiuEBozRjFOM8xqdMhkwNTJeYNZgbme+y2LDMY2VmzWa9yubE
+toldhX0mhwBHJycrZzMXM1cbNzf3RB4pnqW8xryH+IL5nvFXCwgJrBZ0E3wk1CisKHxYJF2UV3SrWJw4p/hWiRRJYcmjUhXSutJPZObIhsoJyp2V71HwUeRV
+vKA0RTlKRUnltepWtUZ1Pw1Zjbea+7QmaqfqWOsK6b7SO6I/36DGMMrI0ljS+LfJPdPDZivM+y0qLBOtfKwtbFRtRexY7L7aP3e47XjB6ZjzXpetruvdVrov
+9VjkudBrgfdCn8W+y/xW+a8P2Bq4N+hY8PmQW6HPwr5EMEUKRilFG8e4xUbF5cW3JMxO3Jx0Nvl5KlOaXLpNRlRmVdas7D059/KY8tULfAqLi2YXHy55WyZR
+7lJRWDmv6mz131q9uvj6SQ3HGn83G7Skt85ru94h2Ond1d59uJehz76/bsK+if8nO05pnXpiOu+M4JmzZj2aozW3ZN6+BVwLwxYtXvxxqcOyCcsfrjRe1br6
+5lrddU3rb2402NSx+cFWq21Tt3/Y6btr1R6Oven7jh9QP9h56PURv6Obj4ufqD355LT3mS3nZM+3X/h0Ke7yqasW15bdEL3ZeuvrnfS7N+/7PDjwyPTx6qeK
+z2a+EHzZ9Zr5Td3bn+9LP3z6VPD53de8b+9+5P/88Lv4z7d/Vf//AwAqvx2K829RWwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/X
+Wh+QAAAC1ElEQVR42nSUWYjNcRTHP+f//99l7hh3LDOyxmSbyBBKdK+pey2FQllSlpImPIwoirwpYiwPnuxkF3mghJHutY4mNbLv7gxixhWGe//z//+Phzt2
+c55O59enc37nfM8RpW2Lz9FDwAbZeDGdi0R6yDkGahU75Jm0jcYiMh9RGMSJ6s0A0b4s1VrJ6AgZTXmbaExYIVsvurDavLncPHf+DkQreJi4DBBdrOF/0NgA
+KskKqnJbj2rxpQaYcOzT0NAFuxA1K9xi3iSzkWky1/oL7MUxKVOALfpKIsa4WWvf7rFmKm5/85OxP9vH3EQlj/HT/Aca68lpyhRB4RpWybWXxQ27jbkCiBrL
+vCZJ6xHpAKIEjd/AIo7LMAEUH2HXru/9zR3lzfPjoOC1r8nUX3kttSwEMjz4ica7ylkZlfP9NHBjyEDjzEatVL7gEkLNj+t6fSkfwyLNj3ZmuG5rLTjeWU8w
+UgABfLxH1qSWh8IWHgYWedyiaGqmPOAnJPu0u5SIGgDxjpyUMaB4uPi4B7T4m8OCIkCa55SSIl1ohgCRz2xIfLAg1pFTEs01J8gLWkgRYjDtsLEwKcDhK0FG
+Y2MDFCSfAVjxQg7IWBA88nhHIw596UQ+NhY2GYQmlCbyMBD0NitznzS4yiRQlCDveIpBCb0JYGPh0EgzdWTpx1s8QO/J9OTTVlTrATxsGnlCgGZeYuLhwyHF
+XbqhdCFLKRbUycTEix8zMUsO09U3/AN3ySOEwwC60YJJBpcQBbyiDAPBRR8yLfn8lw5EifnZK3PakeY1pXxDATdpj7SCimDi5Pr8iMmJx79rz4BqW+bnH66j
+hjBZPEC2F03wr/IAzSkJfcSUP0Fo3ZzZ/jcHZUYAB2Dn14rrCtEVVOXmSkonJe/8vZatQjxqBxaYxx2AXSy5rgCJzawUR9H7jP8X/JkVIN6BddrCqursr+fI
+esqkKnHpf8fg+wBrmR4pEvstBAAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>CopiarTagsDisabled.png</Value></Property><Property><Name>Description</Name><Value>Copiar Tags Disabled.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\awolff\Desktop\CopiarTagsDisabled.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>CopiarTagsDisabled</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> CopiarTagsDisabled
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

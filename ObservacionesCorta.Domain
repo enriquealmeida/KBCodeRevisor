@@ -1,0 +1,24 @@
+======OBJECT = ObservacionesCorta.Domain === Observaciones Corta=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-05-05T12:56:04.0000000Z" lastUpdate="2016-05-05T12:35:32.0000000Z" checksum="1d3bf5bdb92e91a16a01ec97bb04c4de" fullyQualifiedName="ObservacionesCorta" guid="c8cb5849-7d14-4ed5-917e-e47aa598dd2b" name="ObservacionesCorta" type="00972a17-9975-449e-aab1-d26165d51393" description="Observaciones Corta">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ObservacionesCorta</Value></Property><Property><Name>Description</Name><Value>Observaciones Corta</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:LongVarChar</Value></Property><Property><Name>Length</Name><Value>1024</Value></Property><Property><Name>AttMaxLen</Name><Value>1024</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ObservacionesCorta
+Description -> Observaciones Corta
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 8
+Length -> 1024
+AttMaxLen -> 1024
+IsDefault -> False

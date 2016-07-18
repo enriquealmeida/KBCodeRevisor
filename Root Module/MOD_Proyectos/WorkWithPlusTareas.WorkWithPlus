@@ -1,0 +1,105 @@
+======OBJECT = WorkWithPlusTareas.WorkWithPlus === Work With Plus Tareas=====
+<Object parent="MOD_Proyectos.Tareas" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="c78e6f88-f72f-42f5-87cd-b89519b40844" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-27T17:15:40.0000000Z" lastUpdate="2016-05-27T15:35:58.0000000Z" checksum="b0205e9c19634ca2a405d3a15d6881f7" fullyQualifiedName="MOD_Proyectos.WorkWithPlusTareas" guid="c09d3718-a1d3-0a6e-33c5-bea23b4e9739" name="WorkWithPlusTareas" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Tareas">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWTareas" defaultSecFuntionKey="WWTareas">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Tareas" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Tareas" SecFuntionKeyINS="WWTareas_Insert" defaultSecFuntionKeyINS="WWTareas_Insert" SecFuntionKeyUPD="WWTareas_Update" defaultSecFuntionKeyUPD="WWTareas_Update" SecFuntionKeyDLT="WWTareas_Delete" defaultSecFuntionKeyDLT="WWTareas_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;TareasTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="TareasTitle" defaultControlName="TareasTitle" caption="Tareas." defaultCaption="Tareas" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" colSpan="1" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" childrenOrderedList="2;22;TarId-2;22;TarDsc-2;22;TarNoIng-2;22;TarNoIngresable">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarNoIngresable" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarNoIngresable" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup caption="&lt;default&gt;" themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete" showDescription="True">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;TarDsc-4;39;-;76;-5;41;" id="c78e6f88-f72f-42f5-87cd-b89519b40844:1" defaultId="c78e6f88-f72f-42f5-87cd-b89519b40844:1" name="Tareas" defaultName="Tareas">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Tareas" defaultDescription=" Tareas" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="False" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.WWTareas" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportWWTareas" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportReportWWTareas" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <textBlock controlName="TareasTitle" defaultControlName="TareasTitle" caption="Tareas." defaultCaption="Tareas" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;TareasTitle-4;02;TableActions-4;02;TableRightHeader">
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="3" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" cellWidth_S="8%" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup caption="&lt;default&gt;" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%" showDescription="True">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;30;-4;12;TarDsc">
+              <orders childrenOrderedList="4;13;=TarDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order childrenOrderedList="4;26;TarDsc;=TarDsc.ContextualTitle" name="=TarDsc.ContextualTitle" defaultName="=TarDsc.ContextualTitle">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" />
+                </order>
+              </orders>
+              <filterAttribute name="TarDsc" defaultName="TarDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="TarDsc like &amp;TarDsc when not &amp;TarDsc.IsEmpty()" defaultCondition="TarDsc like &amp;TarDsc when not &amp;TarDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="4;17;Delete-4;17;Update-4;23;TarId-4;23;TarDsc-4;23;TarNoIng-4;23;TarNoIngresable">
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="TarId = &amp;TFTarId when not &amp;TFTarId.IsEmpty()" defaultFilterCondition="TarId = &amp;TFTarId when not &amp;TFTarId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="TarDsc like &amp;TFTarDsc when not &amp;TFTarDsc.IsEmpty()" defaultFilterCondition="TarDsc like &amp;TFTarDsc when not &amp;TFTarDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarNoIngresable" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarNoIngresable" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="TarNoIngresable = &amp;TFTarNoIngresable when not &amp;TFTarNoIngresable.IsEmpty()" defaultFilterCondition="TarNoIngresable = &amp;TFTarNoIngresable when not &amp;TFTarNoIngresable.IsEmpty()" />
+          <standardAction name="Delete" defaultName="Delete" />
+        </grid>
+      </table>
+    </selection>
+    <prompt description="Select Tareas" defaultDescription="Select Tareas" childrenOrderedList=";77;TarDsc;;76;-;02;TableMain" level="Tareas" defaultLevel="Tareas" ShowMasterPageWhenPopUp="False" defaultShowMasterPageWhenPopUp="False">
+      <GenexusPatterns_Objects>
+        <Object Id="Prompt" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.PromptTareas" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" height="493" defaultHeight="493" type="Responsive" defaultType="Responsive" childrenOrderedList=";02;TableHeader-;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList=";02;TableFilters">
+          <table name="TableFilters" defaultName="TableFilters" numberOfColumns="4" defaultNumberOfColumns="4" defaultNumberOfColumns_S="4" defaultNumberOfColumns_M="4" defaultNumberOfColumns_L="4" type="Responsive" defaultType="Responsive" childrenOrderedList=";30;-;12;TarDsc">
+            <orders childrenOrderedList=";13;=TarDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+              <order childrenOrderedList=";26;TarDsc;=TarDsc.ContextualTitle" name="=TarDsc.ContextualTitle" defaultName="=TarDsc.ContextualTitle">
+                <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" />
+              </order>
+            </orders>
+            <filterAttribute name="TarDsc" defaultName="TarDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="TarDsc like &amp;TarDsc when not &amp;TarDsc.IsEmpty()" defaultCondition="TarDsc like &amp;TarDsc when not &amp;TarDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" cellThemeClass="" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            <filterAttribute name="TarNoIngresable" defaultName="TarNoIngresable" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="TarNoIngresable = &amp;TarNoIngresable when not &amp;TarNoIngresable.IsEmpty()" defaultCondition="TarNoIngresable = &amp;TarNoIngresable when not &amp;TarNoIngresable.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          </table>
+        </table>
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList=";17;Select-;23;TarId-;23;TarDsc-;23;TarNoIng-;23;TarNoIngresable" columnSelector="False" defaultColumnSelector="False">
+          <standardAction name="Select" defaultName="Select" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="TarId = &amp;TFTarId when not &amp;TFTarId.IsEmpty()" defaultFilterCondition="TarId = &amp;TFTarId when not &amp;TFTarId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="TarDsc like &amp;TFTarDsc when not &amp;TFTarDsc.IsEmpty()" defaultFilterCondition="TarDsc like &amp;TFTarDsc when not &amp;TFTarDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TarNoIngresable" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TarNoIngresable" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="TarNoIngresable = &amp;TFTarNoIngresable when not &amp;TFTarNoIngresable.IsEmpty()" defaultFilterCondition="TarNoIngresable = &amp;TFTarNoIngresable when not &amp;TFTarNoIngresable.IsEmpty()" />
+        </grid>
+      </table>
+      <parameters>
+        <parameter name="TarDsc" defaultName="TarDsc" />
+      </parameters>
+    </prompt>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusTareas</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Tareas</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 98
+Name -> WorkWithPlusTareas
+ObjectVisibility -> Private
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-98
+IsDefault -> False

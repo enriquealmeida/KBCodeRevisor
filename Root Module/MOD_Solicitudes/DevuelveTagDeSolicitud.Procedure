@@ -1,0 +1,24 @@
+======OBJECT = DevuelveTagDeSolicitud.Procedure === Devuelve Tag De Solicitud=====
+
+=== RULES ===
+parm(in:&PryId, in:&PrbId, in:&FiltroTagid, out:&Tagid);
+
+
+=== PROCEDURE SOURCE ===
+for each order PryId, PrbId, (TagId)
+	    where            PrbId = &PrbId
+		where            PryId = &PryId
+		where            TagId like &FiltroTagId 
+			&TagId=TagId
+			exit
+		when none
+			&TagId='*Null'
+endfor
+
+
+====== PROPERTIES =======
+Name -> DevuelveTagDeSolicitud
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

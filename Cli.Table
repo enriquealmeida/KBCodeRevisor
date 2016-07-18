@@ -1,0 +1,17 @@
+======OBJECT = Cli.Table === Clientes=====
+*CliId  Cliente- Null=False
+ CliNom  Nombre- Null=False
+ CliMailSol  Email- Null=True
+ CliPagPla  Dias- Null=True
+ MTCliPais  Pais- Null=True
+ MTCliPaisDesc  DESC- Null=False
+ CliAjuAnio  ANIO- Null=True
+ CliTpoId  TpoId- Null=True
+ CliInterno  OBLIGATORIO- Null=False
+ KBWikiId  Codigo10- Null=True
+ CliActivo  OBLIGATORIO- Null=True
+
+====== PROPERTIES =======
+Name -> Cli
+Description -> Clientes
+CACHE_LEVEL -> 1

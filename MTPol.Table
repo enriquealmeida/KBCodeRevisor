@@ -1,0 +1,11 @@
+======OBJECT = MTPol.Table === Políticas=====
+*PolId  Codigo10- Null=False
+ PolDsc  DMDescLarga- Null=False
+ PolFchIni  Fecha- Null=False
+ PolFchFin  Fecha- Null=False
+ PolTpoId  Codigo3- Null=False
+
+====== PROPERTIES =======
+Name -> MTPol
+Description -> Políticas
+CACHE_LEVEL -> 2

@@ -1,0 +1,90 @@
+======OBJECT = TMTSUMesDet.Transaction === Detalle de liquidacion. =====
+
+=== RULES ===
+parm(in:&RspId, in:&RspSuA,in: &RspSuM, in:&PryId, in:&RspSuFch, in:&TpoHonId, in:&MonId, in:&Mode);
+
+RspId = &RspId 
+	if not insert;
+RspSuA = &RspSuA 
+	if not insert;
+RspSuM = &RspSuM 
+	if not insert;
+PryId = &PryId 
+	if not insert;
+RspSuFch = &RspSuFch 
+	if not insert;
+TpoHonId = &TpoHonId 
+	if not insert;
+MonId = &MonId 
+	if not insert;
+
+default(RspId, &RspId);
+default(RspSuFch, &Today);
+default(MonId, '0');
+default(RspSuAuxId, &RspId);
+default(RspSuA, &RspSuA);
+default(RspSuM, &RspSuM);
+
+noaccept(RspSuPlaExt);
+
+//prompt(HsRubros, RubId);
+prompt(HsPry, PryId);
+
+/* Este control no tiene sentido pues no hay tabla rubro-moneda en MT, a lo sumo podría ir contra un ws de contabilidad
+&RubMonId = udp(PFMonRub, RubId) 
+	if not null(RubId) and after(confirm);
+error('La moneda del rubro es distinta a la moneda especificada.') 
+	if MonId <> &RubMonId and not null(RubId) and after(confirm);
+*/
+
+error(&ErrDsc) 
+	if &ErrCod <> 0;
+error('No se puede modificar si el tipo de honorario es automático.') 
+	if TpoHonAM = 'A';
+
+error('No se puede modificar si ya existe la liquidación.')
+    if ( (&RspSuA < year(&ParFchLiq)) or (&RspSuA = year(&ParFchLiq) and &RspSuM <= month(&ParFchLiq)) ) and after(confirm);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &ErrCod = 0
+    PFUsuHab.call('SUELDOS',9,&Ok)//Seguridad
+    if &Ok <> 'S'
+        &ErrCod = 1
+        &ErrDsc = 'Debe tener nivel 9 en el ambiente SUELDOS para poder modificar'
+    endif
+
+    &ParFchLiq = PMTParFch('PARULTLIQ')
+EndEvent  // Start
+
+Event After Trn
+    PActPlaExt.call(RspId,RspSuA,RspSuM,PryId,RspSuFch,TpoHonId,MonId)
+EndEvent  // After Trn
+
+
+=== STRUCTURE ===
+RspId*
+RspSuA*
+RspSuM*
+PryId*
+RspSuFch*
+TpoHonId*
+TpoHonDsc
+TpoHonAM
+MonId*
+RspSuImp
+RspSuObs
+RubId
+RspSuPlaExt
+RspSuAuxId
+RspSuBol
+
+
+====== PROPERTIES =======
+Name -> TMTSUMesDet
+Description -> Detalle de liquidacion. 
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Public
+IsDefault -> False

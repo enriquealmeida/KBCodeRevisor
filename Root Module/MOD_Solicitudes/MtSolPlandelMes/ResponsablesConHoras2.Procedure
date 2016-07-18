@@ -1,0 +1,47 @@
+======OBJECT = ResponsablesConHoras2.Procedure === Responsables Con Horas=====
+
+=== RULES ===
+parm(in:&CliId, in:&CliTpoId, in:&RspId, in:&PryId, in:&PrbSts, in:&TagId,  out:&SDTResponsables);
+
+
+=== PROCEDURE SOURCE ===
+//Calculo fechas del &TAG
+&Year=&TagId.Substring(1,4).ToNumeric()
+&Month = &TagId.Substring(5,2).ToNumeric()
+&FchIni = ymdtod(&Year,&Month,01)
+&FchFin = &FchIni.EndOfMonth()
+for each order RspId
+	 where            RspId=&RspId when not &RspId.IsEmpty()
+	 where            RspIngresaHoras=true
+	 &TieneHoras=false
+	 for each 
+ 	 	where            CliTpoId = &CliTpoId when  not &CliTpoId.IsEmpty() 
+		where            CliId=&CliId when  not &CliId.IsEmpty() 
+		where            PryId = &PryId when not &PryId.IsEmpty()
+		where            &FchIni <= HrsFch and HrsFch <= &FchFin
+		&TieneHoras=true
+	endfor
+    if &TieneHoras
+ 		for each 
+			   
+			   where            PrbEstadoActivo=true
+			   where            PrbSts = &PrbSts when not &PrbSts.IsEmpty()
+			   where            CrrUsr=RspId
+			   where            PryId= &PryId when not &PryId.IsEmpty()
+		   when none
+		    &SDTResponsable.RspId=RspId
+			&SDTResponsables.Add(&SDTResponsable.Clone())
+		  endfor
+	  endif
+endfor
+
+	 
+
+
+====== PROPERTIES =======
+Name -> ResponsablesConHoras2
+Description -> Responsables Con Horas
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

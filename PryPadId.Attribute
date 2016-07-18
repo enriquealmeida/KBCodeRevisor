@@ -1,0 +1,15 @@
+======OBJECT = PryPadId.Attribute === Proyecto a distribuir=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> PryPadId
+Description -> Proyecto a distribuir
+HORIZONTAL_DESCRIPTION -> Proyecto a distribuir
+VERTICAL_DESCRIPTION -> Proyecto a distribuir
+ContextualTitle -> Proyecto a distribuir
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-15
+ATT_PICTURE -> @!
+IsDefault -> False

@@ -1,0 +1,12 @@
+======OBJECT = ISts.Index === ISts=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:35.0000000Z" checksum="ba3cff1acf366e69ce4b705bcf82c2c9" fullyQualifiedName="ISts" guid="43c2bc16-d9f0-4273-9338-6a9d29c26daa" name="ISts" type="9e750647-3679-0000-0100-2529de263960" description="ISts">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PrbSts</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ISts</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ISts

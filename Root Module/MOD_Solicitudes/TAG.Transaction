@@ -1,0 +1,19 @@
+======OBJECT = TAG.Transaction === Maestro de TAG=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+TagId*
+
+
+====== PROPERTIES =======
+Name -> TAG
+Description -> Maestro de TAG
+GenerateObject -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+IsDefault -> False

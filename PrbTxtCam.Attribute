@@ -1,0 +1,17 @@
+======OBJECT = PrbTxtCam.Attribute === Descripción del cambio=====
+LONGVARCHAR(2097152)
+
+
+====== PROPERTIES =======
+Name -> PrbTxtCam
+Description -> Descripción del cambio
+HORIZONTAL_DESCRIPTION -> Descripción del cambio
+VERTICAL_DESCRIPTION -> Descripción del cambio
+ContextualTitle -> Descripción del cambio
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 1317600801
+FCKEditor_Skin -> default
+FCKEditor_Toolbar -> Basic
+IsDefault -> False

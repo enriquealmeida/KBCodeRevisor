@@ -1,0 +1,22 @@
+======OBJECT = OpenWindowHoras.Procedure === Open Window Horas=====
+
+=== RULES ===
+parm(in:&RspId , IN:&FchAux);
+
+
+=== PROCEDURE SOURCE ===
+//test a
+//window.Height = 350
+//&window.Width = 900
+
+&window.Object=Horas.Create(TrnMode.Update,&FchAux,&RspId.ToUpper())
+&window.Open()
+
+
+====== PROPERTIES =======
+Name -> OpenWindowHoras
+IsMain -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Public
+IsDefault -> False

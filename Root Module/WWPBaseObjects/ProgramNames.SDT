@@ -1,0 +1,14 @@
+======OBJECT = ProgramNames.SDT === Program Names=====
+
+=== STRUCTURE ===
+ProgramNames, collection: ProgramName
+	Name, V(256), Name 
+	Description, V(255), Description 
+	Link, V(1000), Link 
+
+====== PROPERTIES =======
+Name -> ProgramNames
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

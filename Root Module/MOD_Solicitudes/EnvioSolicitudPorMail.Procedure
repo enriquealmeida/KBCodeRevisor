@@ -1,0 +1,49 @@
+======OBJECT = EnvioSolicitudPorMail.Procedure === Envio Solicitud Por Mail=====
+
+=== RULES ===
+parm(in:&PryId, in: &PrbId, inout: &CrrUsrMail, inout: &OtroEmail, inout: &PrbUsrMail, inout: &SegUsrMail);
+
+
+=== PROCEDURE SOURCE ===
+&ParSMTPHots = PMTParChr('PARSMTPHOS')
+&ParMailMT = PMTParChr('PARMAILMT')
+&ParSis = PMTParChr('PARSIS')
+&ParUrlBase = PMTParChr('URLMTPUB')
+
+For  each 
+	where PrbId=&PrbId
+    &Wrap.BaseURL = trim(&ParUrlBase)
+    &Wrap.Object = HIngPrb.Create( &PryId, &PrbId) 
+    
+	&MailMsg.HTMLText = &Wrap.GetResponse()
+    if NOT null(&SegUsrMail) 
+		&SegUsrMail=&SegUsrMail.Trim()
+        &MailMsg.To.New(&SegUsrMail,&SegUsrMail)
+    endif
+    If NOT null(&CrrUsrMail) 
+		&CrrUsrMail=&CrrUsrMail.Trim()
+        &MailMsg.To.New(&crrUsrMail,&CrrUsrMail) 
+    endif 
+
+    If NOT null(&OtroEMail) 
+		&OtroEmail=&OtroEmail.Trim()
+        &MailMsg.To.New(&OtroEmail,&OtroEmail) 
+    EndIf  
+   
+    &MailMsg.Subject = PrbDsc.Trim() + ' Solicitud:#' + &PrbId.ToString() + '# ' + trim(PrbSts) + ' - ' + trim(CliId) + ' Us:' + UserId()  
+	
+	If NOT (null(&OtroEMail) and  null(&CrrUsrMail) and null(&SegUsrMail))
+    	EnvioMail(&MailMsg,&MsgErrorCode,&MsgError)
+		Msg(&MsgError,status)
+	EndIf
+
+EndFor
+
+
+====== PROPERTIES =======
+Name -> EnvioSolicitudPorMail
+Description -> Envio Solicitud Por Mail
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

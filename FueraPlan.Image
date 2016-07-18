@@ -1,0 +1,40 @@
+======OBJECT = FueraPlan.Image === Fuera Plan=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-19T23:49:19.0000000Z" checksum="fd9a84feaa971ead11e671f3b3c3e560" fullyQualifiedName="FueraPlan" guid="002e4be0-3c8f-435b-acc7-4f0a806873ec" name="FueraPlan" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Fuera Plan">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="FueraPlan.png" description="Fuera Plan.png"><Data>
+<base64Binary>
+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
+W2VzZUqj9wAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>FueraPlan.png</Value></Property><Property><Name>Description</Name><Value>Fuera Plan.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\awolff\Desktop\FueraPlan.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>FueraPlan</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> FueraPlan
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

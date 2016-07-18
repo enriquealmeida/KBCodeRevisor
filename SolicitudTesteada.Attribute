@@ -1,0 +1,11 @@
+======OBJECT = SolicitudTesteada.Attribute === Testeada?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> SolicitudTesteada
+Description -> Testeada?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

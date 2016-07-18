@@ -1,0 +1,21 @@
+======OBJECT = NombreFeriado.Procedure === Nombre Feriado=====
+
+=== RULES ===
+parm(in:&FerFecha,out:&FerDsc);
+
+
+=== PROCEDURE SOURCE ===
+for each
+	where            FerFecha=&FerFecha
+	&FerDsc=FerDsc
+when none
+	&FerDsc.SetEmpty()
+endfor
+
+
+
+====== PROPERTIES =======
+Name -> NombreFeriado
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+IsDefault -> False

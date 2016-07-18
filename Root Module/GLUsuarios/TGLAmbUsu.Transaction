@@ -1,0 +1,42 @@
+======OBJECT = TGLAmbUsu.Transaction === Nivel habilitado de usuario=====
+
+=== RULES ===
+parm(in:GLUsAmbId ,in:&GLUsId ,in:&Mode ) ;
+
+GLUsId =&GLUsId if not insert;
+
+prompt(HSNIVHAB ,&ambId ,GLUsAmbNvl ) ;
+
+//// Borrar los privilegios de un perfil a todos los usuarios
+//call(PSPvPrfB ,UsPrfId ) IF delete AND after(trn ) AND UsPrfFlg = 'S' ;
+//
+//// Asignar los privilegios de un perfil a todos los usuarios
+//call(PSPvPfAT ,UsPrfId ) IF insert AND after(trn ) AND UsPrfFlg = 'S' ;
+//
+//// Resetear/Asignar los privilegios de los perfiles viejo/nuevo a todos los usuarios de esos perfiles
+//call(PSPvPrfB ,&prfOld ) IF update AND after(trn ) AND &prfOld <> UsPrfId AND UsPrfFlg = 'S' ;
+//call(PSPvPfAT ,&prfOld ) IF update AND after(trn ) AND &prfOld <> UsPrfId AND UsPrfFlg = 'S' ;
+//
+
+
+=== EVENTS SOURCE ===
+Event Start
+
+EndEvent
+
+
+=== STRUCTURE ===
+GLUsAmbId*
+GLUsId*
+GLUsAmbNvl
+
+
+====== PROPERTIES =======
+Name -> TGLAmbUsu
+Description -> Nivel habilitado de usuario
+BORSTY -> 0
+MAXBUT -> NO
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 20
+ObjectVisibility -> Private
+IsDefault -> False

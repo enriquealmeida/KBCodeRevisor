@@ -1,0 +1,30 @@
+======OBJECT = HDSolEfiRsp.WebComponent === Solicitudes de consulta de eficiencia en las respuestas =====
+
+=== RULES ===
+parm(in:&FchIni, in:&FchFin, in:&PrbPrio, in:&CliId, in:&Tipo);
+/**
+ * &Tipo puede ser:
+ *  - CER = Cerradas en el período
+ *  - ABI = Abiertas al &FchFin
+ *  - ING = Ingresadas al &FchFin
+ */
+
+
+=== EVENTS SOURCE ===
+Event Start
+EndEvent  // Start
+
+Event load
+    PrbId.Link = Solicitudes.Link(TrnMode.Update, PryId, PrbId)
+EndEvent  // load
+
+
+====== PROPERTIES =======
+Name -> HDSolEfiRsp
+Description -> Solicitudes de consulta de eficiencia en las respuestas 
+WEB_COMP -> Yes
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

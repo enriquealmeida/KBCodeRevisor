@@ -1,0 +1,15 @@
+======OBJECT = RspId.Attribute === Responsable=====
+CHARACTER(16)
+
+
+====== PROPERTIES =======
+Name -> RspId
+Description -> Responsable
+HORIZONTAL_DESCRIPTION -> Responsable
+VERTICAL_DESCRIPTION -> Responsable
+ContextualTitle -> Responsable
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

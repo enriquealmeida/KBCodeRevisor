@@ -1,0 +1,10 @@
+======OBJECT = PryCls.Table === Clase Contables de Proyectos=====
+*PryCls  Producto- Null=False
+ PryClsDsc  DESC- Null=False
+ PryClsEvaluacion  OBLIGATORIO- Null=False
+ PryWikiUrl  Url- Null=False
+ PryWikiHost  Url- Null=False
+
+====== PROPERTIES =======
+Name -> PryCls
+Description -> Clase Contables de Proyectos

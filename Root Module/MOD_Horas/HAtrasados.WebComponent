@@ -1,0 +1,48 @@
+======OBJECT = HAtrasados.WebComponent === Responsables Atrasados=====
+
+=== RULES ===
+parm(in:&RspId2,in:&FchIni,in:&FchFin);
+
+
+=== EVENTS SOURCE ===
+
+Event load
+    for each 
+        where      RspActivo=true and RspId <> '*NADIE'
+        &RspId.Link = PanelControl.link(RspId)
+        &RspId=RspId
+        &Cantidad=0
+
+        for each 
+           where      &FchCrr <= HrsFch and  HrsFch <= &Today
+           where      HrsTot > 1 
+              &Cantidad += 1
+        endfor
+	    &DiasLic = CalculoDiasLicencia(&RspId,&FchCrr,&Today)
+		
+        &DiasAtraso =&DiasHab - &Cantidad  - &DiasLic 
+        if &DiasAtraso >  2 
+               load
+        endif
+        
+    endfor
+
+EndEvent  // load
+
+Event Start
+     &FchCrr = PMTParFch('PARFCHCRR')
+     &DiasHab = CalculoDiasHabilesEntreFechasSinConsiderarFeriadosEspeciales(&FchCrr,&Today)
+EndEvent  // Start
+
+
+====== PROPERTIES =======
+Name -> HAtrasados
+Description -> Responsables Atrasados
+WEB_COMP -> Yes
+URLAccess -> No
+AUTO_REFRESH -> VARS_CHANGE
+WebUX -> SMOOTH
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Private
+IsDefault -> False

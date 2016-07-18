@@ -1,0 +1,77 @@
+======OBJECT = WorkWithPlusMonedas.WorkWithPlus === Work With Plus Monedas=====
+<Object parent="GLMoneda.Monedas" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="68dc96e0-9f12-45f1-bb92-29b087d06a43" user="" versionDate="2016-04-22T20:18:11.0000000Z" lastUpdate="2016-04-22T19:55:28.0000000Z" checksum="bb559704cd7dc8557700e32728a1490d" fullyQualifiedName="GLMoneda.WorkWithPlusMonedas" guid="6fcfce70-c9ee-0d6a-0f9a-2f87a52af53e" name="WorkWithPlusMonedas" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Monedas">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWMonedas" defaultSecFuntionKey="WWMonedas">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-GLMoneda.Monedas" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-GLMoneda.Monedas" SecFuntionKeyINS="WWMonedas_Insert" defaultSecFuntionKeyINS="WWMonedas_Insert" SecFuntionKeyUPD="WWMonedas_Update" defaultSecFuntionKeyUPD="WWMonedas_Update" SecFuntionKeyDLT="WWMonedas_Delete" defaultSecFuntionKeyDLT="WWMonedas_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;MonedasTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="MonedasTitle" defaultControlName="MonedasTitle" caption="Monedas" defaultCaption="Monedas" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" cellWidth_S="" cellWidth_L="" childrenOrderedList="2;22;MonId-2;22;MonDsc-2;22;MonSmb">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MonId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MonId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MonDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MonDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MonSmb" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MonSmb" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;MonDsc-4;39;-;76;-5;41;" id="68dc96e0-9f12-45f1-bb92-29b087d06a43:1" defaultId="68dc96e0-9f12-45f1-bb92-29b087d06a43:1" name="Monedas" defaultName="Monedas">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MonDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MonDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Monedas" defaultDescription=" Monedas" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-GLMoneda.WWMonedas" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-GLMoneda.ExportWWMonedas" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-GLMoneda.ExportReportWWMonedas" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;MonedasTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="MonedasTitle" defaultControlName="MonedasTitle" caption="Monedas" defaultCaption="Monedas" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellVisible_E="True" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellVisible_E="True" childrenOrderedList="4;30;-4;12;MonDsc">
+              <orders childrenOrderedList="4;13;=MonDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order childrenOrderedList="4;26;MonDsc;=MonDsc.ContextualTitle" name="=MonDsc.ContextualTitle" defaultName="=MonDsc.ContextualTitle">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MonDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MonDsc" />
+                </order>
+              </orders>
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="4;17;Delete-4;17;Update-4;23;MonId-4;23;MonDsc-4;23;MonSmb">
+          <standardAction name="Delete" defaultName="Delete" />
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MonId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MonId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" visible="False" defaultVisible="False" cellVisible_E="False" defaultCellVisible_E="False" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MonDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MonDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="MonDsc like &amp;TFMonDsc when not &amp;TFMonDsc.IsEmpty()" defaultFilterCondition="MonDsc like &amp;TFMonDsc when not &amp;TFMonDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-MonSmb" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-MonSmb" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="MonSmb = &amp;TFMonSmb when not &amp;TFMonSmb.IsEmpty()" defaultFilterCondition="MonSmb = &amp;TFMonSmb when not &amp;TFMonSmb.IsEmpty()" />
+        </grid>
+      </table>
+    </selection>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusMonedas</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-GLMoneda.Monedas</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 63
+Name -> WorkWithPlusMonedas
+ObjectVisibility -> Private
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-63
+IsDefault -> False

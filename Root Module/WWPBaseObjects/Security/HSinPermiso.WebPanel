@@ -1,0 +1,19 @@
+======OBJECT = HSinPermiso.WebPanel === SinPermiso=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Start
+    msg('Usted no tiene permisos para acceder a esta información.')
+EndEvent  // Start
+
+
+====== PROPERTIES =======
+Name -> HSinPermiso
+Description -> SinPermiso
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 5
+IsDefault -> False

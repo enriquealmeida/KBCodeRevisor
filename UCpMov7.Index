@@ -1,0 +1,13 @@
+======OBJECT = UCpMov7.Index === =====
+<Object Type="Duplicate" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-05-03T17:10:52.0000000Z" lastUpdate="2016-05-03T17:10:10.0000000Z" checksum="075ed72fb49d400e28937cd3da3f35db" fullyQualifiedName="UCpMov7" guid="269ca6f0-7239-422a-80b4-b540571fbc73" name="UCpMov7" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CpMovFch</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>UCpMov7</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> UCpMov7
+Description -> 

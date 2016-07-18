@@ -1,0 +1,12 @@
+======OBJECT = IMTPaises.Index === IMTPaises=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:29.0000000Z" checksum="fcc0277df3d787cfef20d1ad6d292a78" fullyQualifiedName="IMTPaises" guid="a0c164ab-ed57-48d0-a2a9-00763c9b5ece" name="IMTPaises" type="9e750647-3679-0000-0100-2529de263960" description="IMTPaises">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">MTPaisId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IMTPaises</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IMTPaises

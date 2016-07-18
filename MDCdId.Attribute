@@ -1,0 +1,15 @@
+======OBJECT = MDCdId.Attribute === Codigo de metadata=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> MDCdId
+Description -> Codigo de metadata
+HORIZONTAL_DESCRIPTION -> Codigo de metadata
+VERTICAL_DESCRIPTION -> Codigo de metadata
+ContextualTitle -> Codigo de metadata
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

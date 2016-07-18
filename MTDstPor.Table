@@ -1,0 +1,10 @@
+======OBJECT = MTDstPor.Table === Porcentajes distribuidos=====
+*PryPadId  PROYECTO- Null=False
+*PryHijId  PROYECTO- Null=False
+ PryPadNom  DESC- Null=False
+ PryHijNom  DESC- Null=False
+ PryDisPor  PORCENTAJE- Null=False
+
+====== PROPERTIES =======
+Name -> MTDstPor
+Description -> Porcentajes distribuidos

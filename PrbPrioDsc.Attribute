@@ -1,0 +1,14 @@
+======OBJECT = PrbPrioDsc.Attribute === Prioridad=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> PrbPrioDsc
+Description -> Prioridad
+HORIZONTAL_DESCRIPTION -> Prioridad
+VERTICAL_DESCRIPTION -> Prioridad
+ContextualTitle -> Prioridad
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

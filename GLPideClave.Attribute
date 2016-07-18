@@ -1,0 +1,13 @@
+======OBJECT = GLPideClave.Attribute === Ambiente Nivel Pide clave?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> GLPideClave
+Description -> Ambiente Nivel Pide clave?
+VERTICAL_DESCRIPTION -> Pide clave?
+ContextualTitle -> Pide clave?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = PrbDocId.Attribute === Documento=====
+NUMERIC(6)
+
+
+====== PROPERTIES =======
+Name -> PrbDocId
+Description -> Documento
+HORIZONTAL_DESCRIPTION -> Documento
+VERTICAL_DESCRIPTION -> Documento
+ContextualTitle -> Documento
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

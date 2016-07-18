@@ -1,0 +1,19 @@
+======OBJECT = WWPTransactionContext.SDT === WWP Transaction Context=====
+
+=== STRUCTURE ===
+WWPTransactionContext
+	CallerObject, V(256), Caller Object 
+	CallerOnDelete, B(4), Caller On Delete 
+	CallerURL, V(1000), Caller URL 
+	TransactionName, V(256), Transaction Name 
+	Attributes, collection: Attribute
+		AttributeName, V(128), Attribute Name 
+		AttributeValue, V(1000), Attribute Value 
+
+====== PROPERTIES =======
+Name -> WWPTransactionContext
+Description -> WWP Transaction Context
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

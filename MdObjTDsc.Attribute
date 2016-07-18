@@ -1,0 +1,14 @@
+======OBJECT = MdObjTDsc.Attribute === Descripción de tipo=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> MdObjTDsc
+Description -> Descripción de tipo
+HORIZONTAL_DESCRIPTION -> Descripción de tipo
+VERTICAL_DESCRIPTION -> Descripción de tipo
+ContextualTitle -> Descripción de tipo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

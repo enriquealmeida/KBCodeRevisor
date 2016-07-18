@@ -1,0 +1,16 @@
+======OBJECT = ObjFchRev.Attribute === Fecha Proxima Revisión=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> ObjFchRev
+Description -> Fecha Proxima Revisión
+HORIZONTAL_DESCRIPTION -> Fecha Proxima Revisión
+VERTICAL_DESCRIPTION -> Proxima Revision
+ContextualTitle -> Fecha Proxima Revisión
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttCollection -> False
+ControlType -> 2
+IsDefault -> False

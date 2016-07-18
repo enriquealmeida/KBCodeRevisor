@@ -1,0 +1,175 @@
+======OBJECT = PanelControl.WebPanel === Panel de Control=====
+
+=== RULES ===
+parm(in:&RspIdPar);
+
+
+=== EVENTS SOURCE ===
+Event Start
+	tbk1.Caption = ''
+	tbk2.Caption = ''
+	tbk3.Caption = ''
+	tbk4.Caption = ''
+	tbk5.Caption = ''
+	tbk6.Caption = ''
+    &FchCrr = PMTParFch('PARFCHCRR')
+    &FchIni = &FchCrr + 1
+    &FchFnl = Today()
+	
+    if null(&RspIdPar)
+        &RspId = trim(upper( userid() ))
+    else
+        &RspId = trim(UPPER(&RspIdPar))
+    endif
+    
+	for each
+		where      RspId=&RspId
+	when none
+		&RspId = '*NADIE'
+	endfor
+	
+    &MTPCWbp = 'HMTPC' 
+	
+EndEvent 
+  // Start
+
+Sub 'InicializoLugares'
+	&Lugar1 = false
+	&Lugar2 = false
+	&Lugar3 = false
+	&Lugar4 = false
+	&Lugar5 = false
+	&Lugar6 = false
+EndSub
+
+Event Refresh
+  // cargo los componentes de acuerdo a las preferencias del usuario
+  	Do 'InicializoLugares'
+    for each
+        where      RspId = &RspId
+        where      MTPCWbp = Upper(&MTPCWbp.Trim())
+		if not(MTWCMod.IsEmpty())
+			&MTWCModName = trim(MTWCMod) + '.' + trim(MTWCWbp)
+			do case
+				case MTPCLugId = 1
+					tbk1.Visible = 1
+					tbk1.Caption = MTWCDsc.ToUpper()
+					&Lugar1 = true
+					&MTWCModName1 = &MTWCModName
+				case MTPCLugId = 2
+					tbk2.Visible = 1
+					tbk2.Caption = MTWCDsc.ToUpper()
+					&Lugar2 = true
+					&MTWCModName2 = &MTWCModName
+				case MTPCLugId = 3
+					tbk3.Visible = 1
+					tbk3.Caption = MTWCDsc.ToUpper()
+					&Lugar3 = true
+					&MTWCModName3 = &MTWCModName
+				case MTPCLugId = 4
+					tbk4.Visible = 1
+					tbk4.Caption = MTWCDsc.ToUpper()
+					&Lugar4 = true
+					&MTWCModName4 = &MTWCModName
+				case MTPCLugId = 5
+					tbk5.Visible = 1
+					tbk5.Caption = MTWCDsc.ToUpper()
+					&Lugar5 = true
+					&MTWCModName5 = &MTWCModName
+				case MTPCLugId = 6
+					tbk6.Visible = 1
+					tbk6.Caption = MTWCDsc.ToUpper()
+					&Lugar6 = true
+					&MTWCModName6 = &MTWCModName
+			endcase
+		else
+			do case
+	            case MTPCLugId = 1
+					TableComponent1.Visible = false
+	            case MTPCLugId = 2
+					TableComponent2.Visible = false
+	            case MTPCLugId = 3
+					TableComponent3.Visible = false
+	            case MTPCLugId = 4
+					TableComponent4.Visible = false
+	            case MTPCLugId = 5
+					TableComponent5.Visible = false
+	            case MTPCLugId = 6
+					TableComponent6.Visible = false
+	        endcase
+		endif
+    when none 
+        tbk1.Caption = 'Calendario'
+        wbc1.Object = HMTPCRsp.Create(&RspId, &FchIni, &FchFnl) 
+        tbk3.Caption = 'Horas por Tarea'
+        wbc3.Object = HMTPCTar.Create( &RspId, &FchIni, &FchFnl)
+        tbk4.Caption = 'Solicitudes'
+        //wbc4.Object = SolRspPlan.Create(&RspId, &FchIni, &FchFnl) 
+        tbk5.Caption = 'Objetivos'
+        //wbc5.Object = HWCObjRs.Create(&RspId, &FchIni, &FchFnl)
+    endfor
+
+	//Si los 2 componentes adyacentes no existen, no muestro la tabla que los contiene
+	//
+	//		!--------!
+	//		! 1 ! 4	 ! <- TableHorizontal1
+	//		! 2	! 5	 ! <- TableHorizontal2
+	//		! 3	! 6	 ! <- TableHorizontal3
+	//		!________!
+	if tbk1.Caption = '' and tbk4.Caption = ''
+		TableHorizontal1.Visible = false
+	endif
+	if tbk2.Caption = '' and tbk5.Caption = ''
+		TableHorizontal2.Visible = false
+	endif
+	if tbk3.Caption = '' and tbk6.Caption = ''
+		TableHorizontal3.Visible = false
+	endif
+
+	//Muestro los componentes después de haber hecho la recorrida por los web components
+	//para evitar conflictos con los DataReaders.
+
+	if &Lugar1 
+		wbc1.Object = Create(&MTWCModName1,&RspId, &FchIni, &FchFnl) 
+	endif
+	if &Lugar2 
+		wbc2.Object = Create(&MTWCModName2,&RspId, &FchIni, &FchFnl) 
+	endif
+	if &Lugar3 
+		wbc3.Object = Create(&MTWCModName3,&RspId, &FchIni, &FchFnl) 
+	endif
+	if &Lugar4 
+		wbc4.Object = Create(&MTWCModName4,&RspId, &FchIni, &FchFnl) 
+	endif
+	if &Lugar5 
+		wbc5.Object = Create(&MTWCModName5,&RspId, &FchIni, &FchFnl) 
+	endif
+	if &Lugar6 
+		wbc6.Object = Create(&MTWCModName6,&RspId, &FchIni, &FchFnl) 
+	endif
+
+EndEvent 
+  // Refresh
+
+Event 'Configurar'
+    HOCnfPCRsp.call( &RspId, &MTPCWbp)
+EndEvent 
+  // 'Configurar'
+
+Event 'Ausencias'
+	&Session.Set('MODOLICENCIA',ModoLicencias.MILICENCIA )
+	WWLicencia()
+EndEvent 
+  // 'Ausencias'
+
+
+====== PROPERTIES =======
+Name -> PanelControl
+Description -> Panel de Control
+MasterPage -> Artech.Genexus.Common.CustomTypes.WebPanelReference
+IsMain -> True
+IsPrompt -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Public
+IsDefault -> False

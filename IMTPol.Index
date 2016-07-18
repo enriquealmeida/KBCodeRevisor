@@ -1,0 +1,12 @@
+======OBJECT = IMTPol.Index === IMTPol=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:20.0000000Z" checksum="4e428371b181f1cbbb3dfa6f24727935" fullyQualifiedName="IMTPol" guid="6f8a7f5e-89fe-4de4-9371-a6e9abff143b" name="IMTPol" type="9e750647-3679-0000-0100-2529de263960" description="IMTPol">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PolId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IMTPol</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IMTPol

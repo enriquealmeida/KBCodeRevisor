@@ -1,0 +1,47 @@
+======OBJECT = Close.Image === Close=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:53.0000000Z" checksum="14811af10b5d900dae044ae8371e63ec" fullyQualifiedName="Close" guid="eab2319b-ffbb-4977-8d4d-28b384c7b411" name="Close" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Close">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="Close.gif" description="Close.gif"><Data>
+<base64Binary>
+R0lGODlhEAAUAPcAAMJcXOXl5eHh4fv7+/b29uzs7Nvb27BMTPDw8L29vcNVVe/v771VVcLCwt3d3aODg7BNTebm5qWLi6+vr9Z8fOerq97Y2LxcXMNfX6FI
+SJ93d6aFhbW1tb+/v9fX175YWKmpqalra7JAQK45ObKyssNdXb1SUrCwsL9bW6aJibe3t9XExI84OLR0dOfg4I8XF9DQ0Kafn+vr66kgIJ40NMWkpOjo6O3o
+6JkmJoIuLsqpqbNiYsRXV6whIaaMjKccHNTU1N7d3ePc3OHd3bF7e4xDQ7BDQ6CCgoYICK9LS6EeHrQiIrmCgrQnJ5ceHt3R0Z5padjW1vX19eno6K4cHLKh
+obqrq7q6uqJRUZ4bG9zc3K0fH6WKitjR0Z0dHfPx8aaQkH4PD59ISKgbG40bG7BLS87OztLCwqiIiNfIyOfm5rxbW7Bra8BXV8JSUp8/P9/f37FOTronJ/Py
+8u/t7cHBwbZwcLaEhNjY2KegoLSiorVRUdra2pYfH9LS0pQcHK4iIn8WFquLi4YTE697e8SgoK1VVc6ysowPD6Y3N6ampuPV1cNgYLl8fLKsrKVSUvT09LWL
+i4ghIfHu7qFYWOPj4+ff3+7u7qenp/Ly8qaKiqIpKaNZWbEfH8Vxca9oaPn5+enp6e3t7efn5+eqqtV6ep9FRcJaWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAKcALAAAAAAQABQAQAj2AE8JHEiw4ClF
+AhJaYPFjE41Oks4IiFApxsAUHRYM2DhgQYcUjAhagSGqgKiTJUOZqSJQQwQECGoM6mGo0ZgXhOhksqGhoCAVCRI4QmOQhAcDdxAVGjVqBRlOURyoOHUilFWr
+RLLIeTTFagEZJ04d4UNgUREXBAhMghJJChxNBuPKnWtQwhUBTJk6ICGBIJcGeEZZyDtqiBo/DXyc2gBES5AcM7wceoJjS6AuAjxsmBCgcwAhYv4ASpSmc6hR
+EzChFKXDSRMlfZicRHApz6kEkL6EWfLmxpxPVJBYIlBnIBgDoJIrT25Aj8EQD0Bw4ADiQQi6dAMCADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Close.gif</Value></Property><Property><Name>Description</Name><Value>Close.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="Close.gif" description="Close.gif"><Data>
+<base64Binary>
+R0lGODlhEAAUAPcAAMJcXOXl5eHh4fv7+/b29uzs7Nvb27BMTPDw8L29vcNVVe/v771VVcLCwt3d3aODg7BNTebm5qWLi6+vr9Z8fOerq97Y2LxcXMNfX6FI
+SJ93d6aFhbW1tb+/v9fX175YWKmpqalra7JAQK45ObKyssNdXb1SUrCwsL9bW6aJibe3t9XExI84OLR0dOfg4I8XF9DQ0Kafn+vr66kgIJ40NMWkpOjo6O3o
+6JkmJoIuLsqpqbNiYsRXV6whIaaMjKccHNTU1N7d3ePc3OHd3bF7e4xDQ7BDQ6CCgoYICK9LS6EeHrQiIrmCgrQnJ5ceHt3R0Z5padjW1vX19eno6K4cHLKh
+obqrq7q6uqJRUZ4bG9zc3K0fH6WKitjR0Z0dHfPx8aaQkH4PD59ISKgbG40bG7BLS87OztLCwqiIiNfIyOfm5rxbW7Bra8BXV8JSUp8/P9/f37FOTronJ/Py
+8u/t7cHBwbZwcLaEhNjY2KegoLSiorVRUdra2pYfH9LS0pQcHK4iIn8WFquLi4YTE697e8SgoK1VVc6ysowPD6Y3N6ampuPV1cNgYLl8fLKsrKVSUvT09LWL
+i4ghIfHu7qFYWOPj4+ff3+7u7qenp/Ly8qaKiqIpKaNZWbEfH8Vxca9oaPn5+enp6e3t7efn5+eqqtV6ep9FRcJaWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAKcALAAAAAAQABQAQAj2AE8JHEiw4ClF
+AhJaYPFjE41Oks4IiFApxsAUHRYM2DhgQYcUjAhagSGqgKiTJUOZqSJQQwQECGoM6mGo0ZgXhOhksqGhoCAVCRI4QmOQhAcDdxAVGjVqBRlOURyoOHUilFWr
+RLLIeTTFagEZJ04d4UNgUREXBAhMghJJChxNBuPKnWtQwhUBTJk6ICGBIJcGeEZZyDtqiBo/DXyc2gBES5AcM7wceoJjS6AuAjxsmBCgcwAhYv4ASpSmc6hR
+EzChFKXDSRMlfZicRHApz6kEkL6EWfLmxpxPVJBYIlBnIBgDoJIrT25Aj8EQD0Bw4ADiQQi6dAMCADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Close.gif</Value></Property><Property><Name>Description</Name><Value>Close.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Close</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Close
+IsDefault -> False

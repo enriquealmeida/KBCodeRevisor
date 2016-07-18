@@ -1,0 +1,13 @@
+======OBJECT = IMTObj11.Index === IMTObj11=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:19.0000000Z" checksum="c71c066037de612951de3a385b979354" fullyQualifiedName="IMTObj11" guid="e53c3d3f-f368-4885-a74f-2748ebca7a56" name="IMTObj11" type="9e750647-3679-0000-0100-2529de263960" description="IMTObj11">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">ObjId</Member>
+      <Member Order="Ascending">RspId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IMTObj11</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IMTObj11

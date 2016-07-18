@@ -1,0 +1,19 @@
+======OBJECT = AgregoSolicitudesActivaWBP.WebPanel === Agrego Solicitudes Activa WBP=====
+
+=== RULES ===
+parm(in:&HrsFch, in:&RspId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+	AgregoSolicitudesActivas(&HrsFch,&RspId)
+	return
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> AgregoSolicitudesActivaWBP
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

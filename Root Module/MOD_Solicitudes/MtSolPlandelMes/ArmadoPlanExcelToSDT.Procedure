@@ -1,0 +1,73 @@
+======OBJECT = ArmadoPlanExcelToSDT.Procedure === Armado Plan de Solicitudes Cargar Excel en SDT=====
+
+=== RULES ===
+Parm(in:&PathExcel, in:&TagId, out:&SolicitudesArmadoPlan, out:&ErrorDescription);
+
+
+=== PROCEDURE SOURCE ===
+&hoy = ServerDate()
+&ErrorDescription.SetEmpty()
+&ExcelDocument.Open(&PathExcel)
+do 'CheckStatus'
+if &ErrorDescription.IsEmpty()
+	&seguirProcesando = true
+	&fila = 2
+	do while &seguirProcesando and &fila <= 9999
+		if val(&ExcelDocument.Cells(&fila,1).Value) = 0
+			&seguirProcesando = false
+		else
+			&SolicitudesArmadoPlanItem = new()
+			&SolicitudesArmadoPlanItem.PrbId = ordenCambioDNAtoPrbId(val(&ExcelDocument.Cells(&fila,1).Value.Replace('*','')))
+			
+			&SolicitudesArmadoPlanItem.PrbTpo = TipoordenCambioDNAtoTipoSolicitudMT(&ExcelDocument.Cells(&fila,4).Value.Trim())
+			
+			
+			if &ExcelDocument.Cells(&fila,5).Date >= (&hoy-90) and &ExcelDocument.Cells(&fila,5).Date<=(&hoy+90)	// una fecha esperable
+				&SolicitudesArmadoPlanItem.PrbPlaFch = &ExcelDocument.Cells(&fila,5).Date
+			else // se intenta leer la fecha como string en formato dd/mm/aa
+				&sFecha = &ExcelDocument.Cells(&fila,5).Value.Substring(1,8)	// Por ej '31/08/15
+				&Fecha = YMDtoD( val(Substr(&sFecha,7,2)), val(Substr(&sFecha,4,2)), val(Substr(&sFecha,1,2)) )
+				if &Fecha>= &hoy-90 and &Fecha<=&hoy+90
+					&SolicitudesArmadoPlanItem.PrbPlaFch = &Fecha
+				else
+					&SolicitudesArmadoPlanItem.ComentarioAdicional = format('No se puede leer fecha planificada %1 %2, carguela manual',&Fecha,&sFecha)
+				endif
+			endif
+			&sFecha = &ExcelDocument.Cells(&fila,5).Date.ToString()
+			&Fecha = &ExcelDocument.Cells(&fila,5).Date
+			// dd/m/yy hh:mm o dd/mm/yy hh:mm
+
+			&SolicitudesArmadoPlanItem.CrrUsr = &ExcelDocument.Cells(&fila,6).Value.ToUpper()
+			&SolicitudesArmadoPlanItem.TagId = &TagId
+			&SolicitudesArmadoPlanItem.PrbHrsPln = val(&ExcelDocument.Cells(&fila,7).Value)
+			&SolicitudesArmadoPlanItem.TagSolHor = val(&ExcelDocument.Cells(&fila,8).Value)
+			for each
+			where           PrbId = &SolicitudesArmadoPlanItem.PrbId
+				defined by PrbFchIng
+				&SolicitudesArmadoPlanItem.PryId = PryId
+			endfor
+			&SolicitudesArmadoPlan.Add(&SolicitudesArmadoPlanItem)
+		endif
+		&fila = &fila + 1
+	enddo
+	&ExcelDocument.Close()
+	//Do 'CheckStatus'
+endif
+
+
+
+Sub 'CheckStatus'
+	if (&ExcelDocument.ErrCode <> 0)
+		&ErrorDescription = &ErrorDescription + ' ErrCode:' + &ExcelDocument.ErrCode.ToString().Trim()
+		&seguirProcesando = false
+	endif
+EndSub
+
+
+====== PROPERTIES =======
+Name -> ArmadoPlanExcelToSDT
+Description -> Armado Plan de Solicitudes Cargar Excel en SDT
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,11 @@
+======OBJECT = LiqMes.Attribute === Mes=====
+NUMERIC(2)
+
+
+====== PROPERTIES =======
+Name -> LiqMes
+Description -> Mes
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

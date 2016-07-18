@@ -1,0 +1,18 @@
+======OBJECT = KB.Table === Base de conocimiento=====
+*KBId  Codigo10- Null=False
+ KBDsc  Descripcion- Null=False
+ KBCliId  Cliente- Null=False
+ KBGXServerUrl  Url- Null=False
+ KBGXServerUser  Nombre- Null=False
+ KBGXServerPass  Password- Null=False
+ KBGXserverFechaUltimaActualiza  FechaHora- Null=False
+ KBGXServerNombreId  Nombre- Null=False
+ KBAgregoTAGaSolicitudes  OBLIGATORIO- Null=False
+ KBEstadoSolicitudes  DMPrbSts- Null=False
+ KBActiva  OBLIGATORIO- Null=False
+ KBGXServerNombreVersion  Nombre- Null=False
+
+====== PROPERTIES =======
+Name -> KB
+Description -> Base de conocimiento
+CACHE_LEVEL -> 1

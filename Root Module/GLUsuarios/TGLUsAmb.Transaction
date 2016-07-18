@@ -1,0 +1,24 @@
+======OBJECT = TGLUsAmb.Transaction === Ambientes=====
+
+=== RULES ===
+parm(in:&GLUsAmbId ,in:&Mode ) ;
+GLUsAmbId = &GLUsAmbId if not insert;
+&vDescrip = 'Modificacion de ambiente ' + GLUsAmbId + ' ' + &Mode IF after(Trn ) ;
+&vOldDesc = old(GLUsAmbDsc ) IF after(Trn ) ;
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+GLUsAmbId*
+GLUsAmbDsc
+
+
+====== PROPERTIES =======
+Name -> TGLUsAmb
+Description -> Ambientes
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 20
+ObjectVisibility -> Private
+IsDefault -> False

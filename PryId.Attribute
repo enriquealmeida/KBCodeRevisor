@@ -1,0 +1,17 @@
+======OBJECT = PryId.Attribute === Identificador de Proyecto=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> PryId
+Description -> Identificador de Proyecto
+HORIZONTAL_DESCRIPTION -> Proyecto
+VERTICAL_DESCRIPTION -> Proyecto
+ContextualTitle -> Identificador de Proyecto
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+DomainKey -> 00972a17-9975-449e-aab1-d26165d51393-30
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+EditAutocomplete -> 0
+IsDefault -> False

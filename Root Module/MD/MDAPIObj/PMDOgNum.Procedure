@@ -1,0 +1,37 @@
+======OBJECT = PMDOgNum.Procedure === get de Num=====
+
+=== RULES ===
+Parm(IN:MDObjTpo ,IN:MDObjSec ,IN:MDCdId , OUT:&MDCdNum , OUT:&error );
+
+
+=== PROCEDURE SOURCE ===
+&MDCdVal = nullvalue(&MDCdVal)
+&MDCdNum = nullvalue(&MDCdNum )
+
+for each
+    PMDOgVal.call(MDObjTpo,MDObjSec,MDCdId,&MDCdVal,&error)
+    if &error =0
+        if MDCdFrm ='N'
+            PMDFTpo.call(MDCdFrm,&MDCdVal,&error)
+            if &error=0
+                &MDCdNum = val(&MDCdVal )
+            else
+                &error=3
+            endif
+        else
+            &error =2
+        endif
+    endif
+when none
+    &error =1
+endfor
+
+
+====== PROPERTIES =======
+Name -> PMDOgNum
+Description -> get de Num
+CommitOnExit -> No
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 36
+ObjectVisibility -> Private
+IsDefault -> False

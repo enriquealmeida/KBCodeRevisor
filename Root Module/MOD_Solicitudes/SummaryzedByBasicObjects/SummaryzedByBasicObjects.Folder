@@ -1,0 +1,10 @@
+======OBJECT = SummaryzedByBasicObjects.Folder === Summaryzed By Basic Objects=====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="" versionDate="2016-03-10T18:31:16.0000000Z" lastUpdate="2016-03-10T16:37:06.0000000Z" checksum="37335ff63e7a8b8b35cfc673123b6c66" fullyQualifiedName="MOD_Solicitudes.SummaryzedByBasicObjects" guid="e250615f-c1d1-4cab-9ce2-598f6e1c3b02" name="SummaryzedByBasicObjects" type="00000000-0000-0000-0000-000000000008" description="Summaryzed By Basic Objects">
+  <Properties><Property><Name>Name</Name><Value>SummaryzedByBasicObjects</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+Name -> SummaryzedByBasicObjects
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,22 @@
+======OBJECT = AvisoHorasAtrasadasBatch.Procedure === Main Aviso de Atrasos en el Ingreso de Horas=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+// Llama al envío de atrasos. Este procedimiento es main y tiene 
+// "Call protocol = Command line", por lo que puede ser utilizado
+// para agendar el envío de atrasos.
+
+AvisoHorasAtrasadas.call()
+
+
+====== PROPERTIES =======
+Name -> AvisoHorasAtrasadasBatch
+Description -> Main Aviso de Atrasos en el Ingreso de Horas
+IsMain -> True
+CALL_PROTOCOL -> CLINE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Private
+IsDefault -> False

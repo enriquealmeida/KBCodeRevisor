@@ -1,0 +1,15 @@
+======OBJECT = PryRspId.Attribute === Responsable del Proyecto=====
+CHARACTER(16)
+
+
+====== PROPERTIES =======
+Name -> PryRspId
+Description -> Responsable del Proyecto
+HORIZONTAL_DESCRIPTION -> Responsable
+VERTICAL_DESCRIPTION -> Responsable
+ContextualTitle -> Responsable del Proyecto
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

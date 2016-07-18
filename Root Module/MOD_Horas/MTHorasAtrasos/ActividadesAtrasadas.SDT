@@ -1,0 +1,26 @@
+======OBJECT = ActividadesAtrasadas.SDT === Actividades Atrasadas=====
+
+=== STRUCTURE ===
+ActividadesAtrasadas, collection: ActividadesAtrasadasItem
+	Tipo, C(15), Tipo 
+	Id, C(30), Id 
+	Descripcion, V(30), Descripcion 
+	Vencimiento, D(8), Vencimiento 
+	RelativeHyperLink, C(100), Relative Hyper Link 
+	SolPrbPlaFch, D(8), Fecha Planificada 
+	SolCliId, C(10), Identificador de Cliente 
+	SolSisDsc, V(30), Descripcion 
+	SolPrbSts, C(3), Estado de la Solicitud 
+	SolPrbStsDsc, V(30), Descripción 
+	SolPryId, C(10), Identificador de Proyecto 
+	ObjFch, D(8), Fecha del Objetivo 
+	ObjFchRev, D(8), Fecha Proxima Revisión 
+	ObjStsDsc, V(30), Descripción 
+	ObjTpoDsc, V(30), Descripción 
+
+====== PROPERTIES =======
+Name -> ActividadesAtrasadas
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Public
+IsDefault -> False

@@ -1,0 +1,26 @@
+======OBJECT = DevuelveDolaresCliente.Procedure === Devuelve Dolares Cliente=====
+
+=== RULES ===
+parm(in:&CliId,in:&FchIni, in:&FchFin, in:&Tipo,out:&Importe);
+
+
+=== PROCEDURE SOURCE ===
+&Importe=0
+for each
+	where            CliId=&CliId
+	where            &FchIni < CpMovFch and CpMovFch <= &FchFin
+	where            CpMovEST = &Tipo when &Tipo='E'
+	//where            CpMovEST = &Tipo when &Tipo='E'
+	
+	&Importe += CpMovImp
+
+endfor
+
+
+
+====== PROPERTIES =======
+Name -> DevuelveDolaresCliente
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,26 @@
+======OBJECT = Cronometradas.Transaction === Mediciones de tiempo trabajando en una solicitud=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+RspId*
+CronIni*
+CronFin
+PrbId
+TarId
+CronHorasSugeridas
+CronHorasImputadas
+
+
+====== PROPERTIES =======
+Name -> Cronometradas
+Description -> Mediciones de tiempo trabajando en una solicitud
+idISBUSINESSCOMPONENT -> True
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

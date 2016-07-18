@@ -1,0 +1,24 @@
+======OBJECT = RegistraGoogleAnalyticsParaWS2.Procedure === Registra Google Analytics Para WS2=====
+
+=== RULES ===
+parm(in:&NombrePrograma,in:&Titulo,out:&error);
+
+
+=== PROCEDURE SOURCE ===
+&inicio = ServerNow()   
+&httpClient.Host = 'www.google-analytics.com'
+
+&body ='v=1&tid=UA-55752917-1&cid=555&t=timing&dp='+&NombrePrograma+'&dt='+&Titulo        
+
+&httpClient.AddString(&body)
+&httpClient.Execute('POST','/collect')
+if &httpClient.ErrCode<>0
+	&Error=format('ErrorCode: %1 ErrorDescription: %2',&httpClient.ErrCode,&httpClient.ErrDescription)
+endif
+
+
+====== PROPERTIES =======
+Name -> RegistraGoogleAnalyticsParaWS2
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

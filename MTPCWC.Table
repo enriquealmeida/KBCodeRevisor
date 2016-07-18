@@ -1,0 +1,9 @@
+======OBJECT = MTPCWC.Table === Web Components del Panel=====
+*MTPCWbp  DESC- Null=False
+*MTWCWbp  DESC- Null=False
+ MTPCWCObligatorio  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> MTPCWC
+Description -> Web Components del Panel
+CACHE_LEVEL -> 3

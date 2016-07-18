@@ -1,0 +1,21 @@
+======OBJECT = ExisteProyecto.Procedure === Existe el proyecto?=====
+
+=== RULES ===
+parm(in:&PryId,out:&existe);
+
+
+=== PROCEDURE SOURCE ===
+for each    //PRY
+where            PryId = &PryId
+    &existe = Bool.True //'S'
+when none
+    &existe = Bool.False //'N'
+endfor
+
+
+====== PROPERTIES =======
+Name -> ExisteProyecto
+Description -> Existe el proyecto?
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

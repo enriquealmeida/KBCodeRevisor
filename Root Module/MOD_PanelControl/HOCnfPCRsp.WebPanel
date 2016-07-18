@@ -1,0 +1,54 @@
+======OBJECT = HOCnfPCRsp.WebPanel === Configurar panel de control del responsable=====
+
+=== RULES ===
+parm(in:RspId, in:MTPCWbp);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    EmbPage1.Source = PanelControl.Link(RspId)
+    EmbPage1.Height = 400
+    EmbPage1.Width = 750
+
+    txtInst.Caption = 'Instrucciones:'
+        + '<ul>'
+        + '<li>Espere a que termine de cargar la página para hacer los cambios.</li>'
+        + '<li>Realice de a un cambio por vez. De lo contrario pueden producirse efectos no deseados.</li>'
+        + '<li>Si quiere sacar alguna de los componentes, puede ponerse un numero mayor a 8 </li>'
+        + '</ul>'
+EndEvent  // Start
+
+Event Refresh
+
+EndEvent  // Refresh
+
+Event load
+    &Mover = MTPCLugId
+    txtComp.Caption = MTWCWbp
+    txtDesc.Caption = MTWCDsc
+
+    MTWCWbp.Visible = 0
+EndEvent  // load
+
+Event Enter
+    for each line
+        if MTPCLugId <> &Mover
+        msg('Moviendo ' + trim(MTWCWbp) + ' a ' + str(&Mover))
+            PSMovWCRsp.call(RspId,MTPCWbp,MTWCWbp,&Mover)
+        endif
+    endfor
+EndEvent  // Enter
+
+Event 'Cambio Manual'
+  TMTPCRsp.call(TrnMode.Update,RspId,MTPCWbp)
+EndEvent  // 'Cambio Manual'
+
+
+====== PROPERTIES =======
+Name -> HOCnfPCRsp
+Description -> Configurar panel de control del responsable
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

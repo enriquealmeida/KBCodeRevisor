@@ -1,0 +1,22 @@
+======OBJECT = Cierra.Group === Usuario que corrige el problema=====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="" versionDate="2016-03-10T18:31:16.0000000Z" lastUpdate="2016-03-10T16:37:13.0000000Z" checksum="27f10cb365aff403c225fc1cc57109a1" fullyQualifiedName="MOD_Solicitudes.Cierra" guid="368cc443-f7f5-46de-9b9b-2a294741e9a1" name="Cierra" type="87313f43-5eb2-41d7-9b8c-e8d9f5bf9588" description="Usuario que corrige el problema">
+  <Part type="74203da2-41b1-402c-0001-d8d564a2c2fa">
+    <Subtype guid="563f32f4-fed7-4c08-a5ba-b534d0c2eaf4">
+      <Name>CrrUsr</Name>
+      <Supertype guid="947a8983-7214-41b9-be70-4cc2072fe122">RspId</Supertype>
+    </Subtype>
+    <Subtype guid="3bd79625-e13c-4fdc-b8b4-b9e4ac04397a">
+      <Name>CrrUsrMail</Name>
+      <Supertype guid="d4218e49-a1a6-4683-add6-aea188cdc37e">RspUsrMl</Supertype>
+    </Subtype>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Cierra</Value></Property><Property><Name>Description</Name><Value>Usuario que corrige el problema</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Cierra
+Description -> Usuario que corrige el problema
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

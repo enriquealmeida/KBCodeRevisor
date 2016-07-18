@@ -1,0 +1,43 @@
+======OBJECT = icono_registrar.Image === icono_registrar=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-08-28T14:01:18.0000000Z" checksum="5b77b458304a632e3f37a59bd025ee96" fullyQualifiedName="icono_registrar" guid="230c987c-96a6-4459-9a8b-3c73873cc2dd" name="icono_registrar" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="icono_registrar">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="icono-registrar.png" description="icono-registrar.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVY
+dFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADcWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
+TXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMw
+MTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIv
+MjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4w
+L21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFk
+b2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjE1NzYxMjY5LWMxZGItODU0NC1iMjMyLWEyZjg1NTI0ZjM0ZCIg
+eG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGNDNENzMyNEIzRjMxMUUzOUY4RkFGOTA0MkVCNEY1OCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGNDNE
+NzMyM0IzRjMxMUUzOUY4RkFGOTA0MkVCNEY1OCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2
+ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NmNjZWRhNzgtNzhjOS0wYjRkLWIwOTItMDBmOWVjOGIxODgwIiBzdFJlZjpkb2N1bWVudElEPSJ4
+bXAuZGlkOjE1NzYxMjY5LWMxZGItODU0NC1iMjMyLWEyZjg1NTI0ZjM0ZCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4g
+PD94cGFja2V0IGVuZD0iciI/Pq0g6iwAAAPsSURBVFhHtZdbSFRBGMe/dW3VdDNxjXJNLRIjK8wVH8xblF1orTBLfDArNbutbGRBpEGlD0kXs4tI915StMCI
+rhpBD2UJUSppD2ElSpSa0JqVOs3Mmd09s3vO3qof/M85830z3/w591EgDLjNOAx9fgfeE4PQ0/cDIsOCwEcdDqrJISzvBsSAK4wMdKLKQ3lIE6gghmWVnaFD
+z5qvsFHOcW7A1I7iYkIlJ3MkBVbj1cOsiDwODVQeXC9Z3B2FTwM0MdLDKtojayA2Wi1Z0FN97LjJKvNIGlgUpZQs8rf68KaOzWDFzoAuRiM5+F9pqO81m0mA
+ewwvVe2Ggj3nWAtA7QOQnJYCY8gPtyzdpFF4gQoNwp2HL1gAIEkXBu1ve2F4hAUwgbjmt1FRLWqDMmBxSZSblcji7rFm+UI6fp8hm0UQmhfJX9Lqis0sI7oE
+m7NTLB38VUK4//1TNCMIUJAfoGB/x9JgTZ1sneTr+we0hhkvFjcLod80zgz85JIlhhwaFcdc1QFjDnrVep8ed7U10jqEl61PuH61p/bSODXQVHeCSxoN24Sk
+KOaKDAWr6TjCo3s3aKyrTXj8MvXWM0wUNVNF49SAPl3HJY2GAiEpijnTrq2r6BiBCbp9dFcwkZK4wK4/EULfBQNqXz7hroHirctofwEyuWCAsHNTquQYorZn
++FKRTrYJdwwYtiyhfQXMkwsGzhzdIDnGrKb6s+Tm/IWPPWNHbhJUX37MWqQmAX+GsGoqNoKhrEEIyaAYHwZswDOK85fC+etPWUs8OcC58g2ws9Tx5GawARU7
+dB1j4Qo4fbEZEnWzof9TF44IExPOlufA7rJG1nIMUgbiDcbdm/C7aRQtWTzX0u7v7aL9a44V0HbGigQUrg225OVkuQn16fFcwpmB7nfdODuGFsZEISVuE2qP
+F9Fc5HQlbUdERNiNsxV5DOk9UJifQ3YirKdUCnVAAN4qoa21BX+oEFw4aYCiklqai9AG0/34+Bjdy4FfRHjrT21g+FfxfmMejYpjYqWmpiC9Xo/WrstEq9IT
+uVxagpaODQ+bxsVtVVslehUTxB+jUI1wGm831HCDnMkba/gLuTzy5s2y+RgRBrkOxUVZLO4+K5NncbVsVV2xhfV08kMSqQ2A7dvyQKGYRIyyqDQKLy/4PToM
+J6ouw5CJBSUI9MU/JD9EtYgBMbr5IRan/0ND/fwvmZ0BwqIob8nBf6sPb+rZDFYkDRBio6dIFvFUHztusco8sgYIlaWOv2auyOOFiQVTJ4qbr5Us7kh0aXbt
+CCsij3MDDLI4PYYXp3O0ju+P7Ix49LzlKhvlHA+X5xMyy3MNy7sKwB+uqus8H83PdQAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>icono-registrar.png</Value></Property><Property><Name>Description</Name><Value>icono-registrar.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Basura2\icono-registrar.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>icono_registrar</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> icono_registrar
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

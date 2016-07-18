@@ -1,0 +1,28 @@
+======OBJECT = user.Image === user=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T17:44:29.0000000Z" checksum="3596388b61edde45eb8ed66caf0927ef" fullyQualifiedName="user" guid="60cb15e8-fd58-4e05-8bf8-92914b6c3ba6" name="user" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="user">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="user_icon_20x20px.gif" description="user_icon_20x20px.jpg"><Data>
+<base64Binary>
+R0lGODlhFAAUAOZyAPb2+fj5+/Dx9ff4+vjq3PP09+3v9PLz9/j5+vr6/PDy9v7+/+nr8fb3+fX2+fz8/fj4+ufp79/i6uXo7+zu9PDXu+7v9PPz9/v7/NzP
+wdK6o9XEsdrKu/bm1NjGtP77+Ojp8Orczb2iiuzu8+Tm7vfkz/biy/nr2/Ds6Pjp2NzLt7ufh+/VuvXdwuvk3dnAp+/cx9zItcSpj/n07/7+/e7w9a2QeOLl
+7PT1+Pbl0fbl0/jr3N/Fp/Pm2PHy9v7+/tbArevt8tC+qvLz9uvTt+fq8PHy9b6ji/z9/fz6+dK/rO3i1vTcwNnLve3p5uLk7OnTvPby7/fx6r6lj8uzn/n6
++9vJuuvs8ujr8ezt8+3u8+fp8Pjl0fv7/fz7+vPv6vjq2fXew/ry6Lqhi/nt4O7w9N/FqO7TtfHdyNG7p/nt4fbz8O/w9fj4++7n4d/Ltvf3+v///////wAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAHIALAAAAAAUABQAAAfagHKCg4SFhnJxiYpxX2uLioOPcVFTK1RWSZKCkmM2ImlA
+HJqIi24yMEoeMUc/j5uLLi86BGoEGl6upIpLLB0EZARQUrmPMxU5YCcpaKOSO2ElXCZizY8fZ0wtRDTVj29mPCqSca+PPRtCIePlcQ8FBigZTU4BGAuL5UFZ
+F3ADcA0IqiBokAASKQURDkAYEKBhwzYODhQkR2oCAxxwMmrM6ICNj0SbINzYcqAAgJMoARTQYuEBxThdSEi4omCIEQE4cTJ4ggUJRVILBpQxMKIICAoGagww
+eKhpoUAAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>user_icon_20x20px.gif</Value></Property><Property><Name>Description</Name><Value>user_icon_20x20px.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\ImgsTransparecncias\i¦üconos gif - fondo transparente\user_icon_20x20px.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>user</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> user
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,11 @@
+======OBJECT = LiqAnio.Attribute === Año=====
+NUMERIC(4)
+
+
+====== PROPERTIES =======
+Name -> LiqAnio
+Description -> Año
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

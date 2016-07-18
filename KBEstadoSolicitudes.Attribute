@@ -1,0 +1,11 @@
+======OBJECT = KBEstadoSolicitudes.Attribute === Estado solicitudes que abran=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> KBEstadoSolicitudes
+Description -> Estado solicitudes que abran
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

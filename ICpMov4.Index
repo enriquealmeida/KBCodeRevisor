@@ -1,0 +1,12 @@
+======OBJECT = ICpMov4.Index === ICp Mov4=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:24.0000000Z" checksum="1b189322da24452658d41e31fcc31748" fullyQualifiedName="ICpMov4" guid="9d7e2e75-dfb7-4e21-bd7f-468ec05e7502" name="ICpMov4" type="9e750647-3679-0000-0100-2529de263960" description="ICp Mov4">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CpRecId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ICpMov4</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ICpMov4

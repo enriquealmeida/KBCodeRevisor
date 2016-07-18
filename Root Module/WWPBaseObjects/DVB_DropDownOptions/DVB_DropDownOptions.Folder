@@ -1,0 +1,9 @@
+======OBJECT = DVB_DropDownOptions.Folder === DVB_Drop Down Options=====
+<Object parent="WWPBaseObjects" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="f952860a-9553-4095-82c8-dedaadd8cf64" user="" versionDate="2016-03-03T19:43:44.0000000Z" lastUpdate="2016-03-03T19:34:01.0000000Z" checksum="0a0628c1df4ac8f73a716d6397471ed6" fullyQualifiedName="WWPBaseObjects.DVB_DropDownOptions" guid="7639d4cb-4036-4790-9f93-38925249da21" name="DVB_DropDownOptions" type="00000000-0000-0000-0000-000000000008" description="DVB_Drop Down Options">
+  <Properties><Property><Name>Name</Name><Value>DVB_DropDownOptions</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+Name -> DVB_DropDownOptions
+IsDefault -> False

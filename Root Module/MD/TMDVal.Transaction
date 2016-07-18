@@ -1,0 +1,29 @@
+======OBJECT = TMDVal.Transaction === Valor de metadata=====
+
+=== RULES ===
+Parm(in:MDObjTpo, in:MDObjSec, in:MDCdId , in:&Mode );
+
+call(PMDFTpo , MDCdFrm , MDCdVal , &Error ) ;
+&msg= 'Formato incorrecto -  ERROR: ' + str(&Error,1,0) + " " + MDCdFrm if &Error>0 ;
+Error(&msg ) if &Error>0 ;
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+MDObjTpo*
+MDObjSec*
+MDCdId*
+MDObjDsc
+MDCdFrm
+MDCdVal
+
+
+====== PROPERTIES =======
+Name -> TMDVal
+Description -> Valor de metadata
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+ObjectVisibility -> Private
+IsDefault -> False

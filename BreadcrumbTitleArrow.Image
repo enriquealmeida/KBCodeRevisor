@@ -1,0 +1,33 @@
+======OBJECT = BreadcrumbTitleArrow.Image === Breadcrumb Title Arrow=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-20T19:14:50.0000000Z" checksum="3f4cec1b9a746b706393e40d7537c017" fullyQualifiedName="BreadcrumbTitleArrow" guid="b714ed0d-a3f1-4c39-854a-a813d080e29b" name="BreadcrumbTitleArrow" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Breadcrumb Title Arrow">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="BreadcrumbTitleArrow.png" description="Bread Crumb Title.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAgAAAAUCAMAAACHxYxZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/
+AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAADAFBMVEXn7O/v7+/m7PDm7vDm7vHn7/Lo7fDo7fHr7/Dp7vHp7vLr8PPs8PPs8fTv8/Tx8vTx9fbw9fj19vr0
++Pn0+Pv2+vn3+/z7+/v5+vz7/fz///v9/f3//f79/vz+/v39/v7+/v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACJYVDAAAAAyElE
+QVR42mKQk+Vm4WRh5wIIIAZ5BVF2Tk52LoAAYlBQUOBnYWdlBQggEEOSk4uLHSCAQAwFIS5OToAAYpABsXjZOAECiEFBDsiU4GIDCCAGBVkFBTkFQU6AAAKr
+AQIOgAACiwCBMEAAgUXk5BV4AQIIwlAQYQMIIAZ5ORCLixMggIAiQEV8nAwAAQSWEmNj4wQIIAYpBRlpHlZmNoAAYpCXlxdgY2FiAgggIEOcjYmNgQEggBjk
+pRkZmBgYGAACiEGeAQIAAgwAv6kMkVC+OV0AAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>BreadcrumbTitleArrow.png</Value></Property><Property><Name>Description</Name><Value>Bread Crumb Title.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Desktop\BreadcrumbTitleArrow.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>BreadcrumbTitleArrow</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> BreadcrumbTitleArrow
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,29 @@
+======OBJECT = HDHorTaP.WebPanel === Horas por Tarea con Parámetros=====
+
+=== RULES ===
+parm(in:&RspId, in:&FchIni, in:&FchFin);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &CliId = nullvalue(&CliId)
+    &PryId = nullvalue(&PryId)
+    &PryCls = nullvalue(&PryCls)
+    &PryTpo = nullvalue(&PryTpo)
+    &TarId = nullvalue(&TarId)
+EndEvent  // Start
+
+Event Refresh
+    wbcTar.Object = HWCHorTar.create(&RspId,&CliId,&PryId,&PryCls,&PryTpo,&TarId,&FchIni,&FchFin,0)
+EndEvent  // Refresh
+
+
+====== PROPERTIES =======
+Name -> HDHorTaP
+Description -> Horas por Tarea con Parámetros
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Public
+IsDefault -> False

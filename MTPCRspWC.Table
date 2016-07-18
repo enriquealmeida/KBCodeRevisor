@@ -1,0 +1,10 @@
+======OBJECT = MTPCRspWC.Table === Web Components del Panel del Responsable=====
+*RspId  DMUsuarios- Null=False
+*MTPCWbp  DESC- Null=False
+*MTPCLugId  DMLugar- Null=False
+ MTWCWbp  DESC- Null=True
+
+====== PROPERTIES =======
+Name -> MTPCRspWC
+Description -> Web Components del Panel del Responsable
+CACHE_LEVEL -> 3

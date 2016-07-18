@@ -1,0 +1,17 @@
+======OBJECT = ObjTpoId.Attribute === Tipo de Objeto=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> ObjTpoId
+Description -> Tipo de Objeto
+HORIZONTAL_DESCRIPTION -> Tipo
+VERTICAL_DESCRIPTION -> Tipo
+ContextualTitle -> Tipo
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+ControlType -> 4
+ControlItemDescription -> ObjTpoDsc
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = MTCnsEstId.Attribute === Estado=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> MTCnsEstId
+Description -> Estado
+HORIZONTAL_DESCRIPTION -> Estado
+VERTICAL_DESCRIPTION -> Estado
+ContextualTitle -> Estado
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

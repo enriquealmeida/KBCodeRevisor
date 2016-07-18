@@ -1,0 +1,12 @@
+======OBJECT = IMTInd.Index === IMTInd=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:18.0000000Z" checksum="b668a592badfb7a2712d4a0248433bcb" fullyQualifiedName="IMTInd" guid="b0dd2b24-dc16-4330-8c57-1ae6a9ebedab" name="IMTInd" type="9e750647-3679-0000-0100-2529de263960" description="IMTInd">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">IndId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IMTInd</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IMTInd

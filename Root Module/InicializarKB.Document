@@ -1,0 +1,100 @@
+======OBJECT = InicializarKB.Document === Inicializar KB=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T16:27:33.0000000Z" checksum="532f5e20e554ece3c2fb717bf90de3e2" fullyQualifiedName="InicializarKB" guid="0729719a-184c-49e1-a57a-6c5d13836005" name="InicializarKB" type="faeb588c-dcce-4dad-9af3-cdd11b961a32" description="Inicializar KB">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <InnerHtml><![CDATA[<H1>Inicialización del ambiente de ejecución</H1>
+<H2>&nbsp;</H2>
+<H2>Particularidades configurables en archivo web.config</H2>
+<H3>&nbsp;</H3>
+<H3>DataSource de Contabilidad, dejarlo vacío </H3>
+<P>Eso es para asegurarse que no se use ( pues ahora la integración con contabilidad es a través de webservices )</P>
+<P>&nbsp;&nbsp;&nbsp; &lt;add key="Connection-Contabilidad-Datasource" value="" /&gt;</P>
+<P><STRONG></STRONG>&nbsp;</P>
+<H3>MaxHttpCollectionKeys ( problema que trajo aplicar el update MS11-100 )</H3>
+<P>Ahora se volvió al default que es 1000 elementos, si se presentan problemas&nbsp;( no es facil detectarlos, no da error sino que por ejemplo las grillas no se comportan bien)&nbsp;pasarlo a 5000</P>
+<P>&nbsp;&nbsp;&nbsp; &lt;add key="aspnet:MaxHttpCollectionKeys" value="5000" /&gt;<BR></P>
+<H3>Errores del webserver detallados o genéricos</H3>
+<P>En desarrollo: &lt;customErrors mode="Off" /&gt;</P>
+<P>En producción: &lt;customErrors mode="RemoteOnly" /&gt;</P>
+<H3>&nbsp;</H3>
+<H3>Trace del log4Net</H3>
+<P>En desarrollo: nivel = ALL y &lt;trace enabled="true" localOnly="false" /&gt;</P>
+<P>En producción: nivel = ERROR y &lt;trace enabled="true" localOnly="true" /&gt;</P>
+<H3>&nbsp;</H3>
+<H3>Impersonate</H3>
+<P>&lt;identity impersonate="true" /&gt;</P>
+<H3>&nbsp;</H3>
+<H3>optimizeCompilations</H3>
+<P>Funciona a partir del .net framework 4, es para compilar solo las DLLs que cambian en lugar de compilar todas las de la aplicación. Con esta optimización, la aplicacíon "levanta" mas rápido ante un cambio de DLLs</P>
+<P>&nbsp;&nbsp;&nbsp; &lt;compilation optimizeCompilations="true"&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;/compilation&gt;<BR></P>
+<H3>&nbsp;</H3>
+<H3>maxRequestLength y executionTimeout</H3>
+<P>El maximo tamaño de upload por defecto es 4 MB, ahora no hay uploads grandes con lo cual se mantiene ese default</P>
+<P>El tiempo máximo de ejecución de un request ASP.Net es 110 segundos, si se espera requests mas largos ( o hacer debugging en ambiente de desarrollo ), hay que ajustar el executionTimeout ( en MT no se da )</P>
+<P>&lt;httpRuntime maxRequestLength="10240" executionTimeout="300" /&gt;</P>
+<H3>&nbsp;</H3>
+<H3>sessionState</H3>
+<P>En desarrollo: como se genera el web.config por default, en el que no se agrega un tag sessionState ( lo cual hace que funcione en modo "InProc" ) está bien.</P>
+<P>En producción, como el app. pool tiene 2 worker process en este momento, hay que usar: &lt;sessionState mode="StateServer" stateConnectionString="tcpip=127.0.0.1:42424" cookieless="false" timeout="240" /&gt;</P>
+<P>&nbsp;</P>
+<H3>requestValidationMode</H3>
+<P>Dado que el framework que se usa para ejecutar es el framework 4, para que no de el error al ejecutar: "A potentially dangerous Request.Form value was detected from the client (GXState..", hay que indicar que se use el modo de validación asp.net 2.0 en el elemento httpRuntime:</P>
+<P>&nbsp;&nbsp;&nbsp; &lt;httpRuntime requestValidationMode="2.0" /&gt;<BR></P>
+<H3>&nbsp;</H3>
+<H3>Mime Types</H3>
+<P>En este momento MT no se necesita ningún mime type adicional. Lo mejor es hacer estas configuraciones a nivel del Site o Servidor WEB. Si realmente es algo particular de la aplicación, configurarlo en el web.config de la aplicación, como por ejemplo SIGEWiki tiene la particularidad de permitir bajar certificados pero no es algo que se quiere habilitar para todo el servidor web:</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;staticContent&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;mimeMap fileExtension=".cer" mimeType="application/x-x509-ca-cert" /&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/staticContent&gt;<BR></P>
+<H3>&nbsp;</H3>
+<H3>Deshabilitar el httpRedirect</H3>
+<P>Eso aplica solo a producción, ya que el sitio de Concepto tiene un redirect ( redirecciona www.concepto.com.uy a www.concepto.uy) y esto tiene sentido solo a nivel del home del site, pero no para los requests que llegan al directorio virtual MTX</P>
+<P>&nbsp;&nbsp;&nbsp; &lt;httpRedirect enabled="false" /&gt;</P>
+<P>&nbsp;</P>
+<H3>Habilitar IIS Application Initialization</H3>
+<P>En producción y también desarrollo</P>
+<P>&nbsp;&nbsp;&nbsp; &lt;applicationInitialization remapManagedRequestsTo="Startup.htm" skipManagedModules="true"&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;add initializationPage="/PanelControl.aspx" /&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;/applicationInitialization&gt;<BR></P>
+<H3>&nbsp;</H3>
+<H3>SQL injection, y no servir archivo location.xml ni el directorio PrivateTempStorage</H3>
+<P>En producción, dentro del tag &lt;security&gt; agregar filtros para proteger de un posible ataque de SQL injection. Y también un filtro para no servir el archivo location.xml que puede tener info sensible ( debe estar instalado el role service "request filtering" en IIS)</P>
+<P>&lt;security&gt;<BR>&nbsp;&lt;requestFiltering&gt;<BR>&nbsp;&nbsp;&lt;filteringRules&gt;<BR>&nbsp;&nbsp;&nbsp;&lt;filteringRule name="SQLInjection" scanUrl="false" scanQueryString="true"&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;denyStrings&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;clear /&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="--" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="/*" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="begin" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="cursor" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="declare" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="delete" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="drop" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="exec" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="fetch" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="insert" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="kill" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="select" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="sys" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add string="update" /&gt; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/denyStrings&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;scanHeaders&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;clear /&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/scanHeaders&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;appliesTo&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;clear /&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;add fileExtension=".aspx" /&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/appliesTo&gt;<BR>&nbsp;&nbsp;&nbsp;&lt;/filteringRule&gt;<BR>&nbsp;&nbsp;&lt;/filteringRules&gt;<BR>&nbsp;&nbsp;&lt;denyUrlSequences&gt;<BR>&nbsp;&nbsp;&nbsp; &lt;add sequence="location.xml" /&gt;<BR>&nbsp;&nbsp; &nbsp;&lt;add sequence="PrivateTempStorage" /&gt;<BR>&nbsp;&nbsp;&nbsp;&lt;/denyUrlSequences&gt;<BR>&nbsp;&lt;/requestFiltering&gt;<BR>&lt;/security&gt;</P>
+<P>&nbsp;&nbsp;&nbsp;</P>
+<H3>Output caching</H3>
+<P>En producción.</P>
+<P>El default site de Concepto tiene configurado output caching para los tipos de archivo: .js, .css, .jpg, .gif&nbsp; con lo cual MT lo hereda.</P>
+<P>Si se quiere cachear cierto tipo de archivo ( hasta que cambia el archivo en file system ), se puede agregar algo así en el web.config:<BR></P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;caching&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;profiles&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;add extension=".png" policy="CacheUntilChange" kernelCachePolicy="DontCache" /&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/profiles&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/caching&gt;<BR></P>
+<H2>
+<H3>&nbsp;</H3>
+<H3>Http Compression</H3></H2>
+<P>En producción.</P>
+<P>Asegurarse que esté habilitada compresión dinámica y compresión estática en el directorio virtual. </P>
+<P>&lt;urlCompression doStaticCompression="true" doDynamicCompression="true" /&gt;</P>
+<H2>
+<P>&nbsp;</P></H2>
+<H2>Particularidades configurables a través de la UI del administrador IIS</H2>
+<H3>
+<H3>&nbsp;</H3>
+<H3>IIS Logging</H3></H3>
+<P>Por default el log del webserver no registra estos 3 campos importantes para el troubleshooting: Bytes Sent, Bytes Received, Time Taken</P>
+<P>Habilitarlos ( a nivel del sitio web )</P>
+<H3>&nbsp;</H3>
+<H3>Default document</H3>
+<P>MT tiene un archivo default.htm con el siguiente contenido:</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;HEAD&gt; &lt;meta HTTP-EQUIV="REFRESH" content="0; url=panelcontrol.aspx"&gt; &lt;/HEAD&gt; </P>
+<P>Generalmente el archivo&nbsp;default.htm ya está configurado como default document con lo cual no son necesarias configuraciones adicionales.</P>
+
+<P>Si se quiere hacer esta configuración en el archivo web.config, también es posible, agregando&nbsp;dentro de &lt;system.webServer&gt; algo así:</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;defaultDocument&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;files&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;add value="MiPaginaDefault.htm" /&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/files&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/defaultDocument&gt;</P>
+<P>Notar que no se agregó default.htm sino MiPaginaDefault.htm que tiene baja probabilidad de ya estar configurada como default a un nivel superior ( site, server ) pues si se agrega una página que ya está configurada..da un error de entrada duplicada al acceder desde el administrador al directorio virtual</P>
+<P>&nbsp;</P>
+<H3>URLRewrite</H3>
+<P>Debe estar instalado este módulo en el servidor IIS ( lo usan ciertos servicios REST de MT)</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>]]></InnerHtml>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>InicializarKB</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> InicializarKB
+IsDefault -> False

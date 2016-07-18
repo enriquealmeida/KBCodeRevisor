@@ -1,0 +1,192 @@
+======OBJECT = WorkWithPlusProcesos.WorkWithPlus === Work With Plus Procesos=====
+<Object parent="MOD_Objetivos.Procesos" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="9c04cf5b-f86e-46e4-b2f9-b90ef5913962" user="" versionDate="2016-05-05T16:44:40.0000000Z" lastUpdate="2016-05-04T18:16:43.0000000Z" checksum="57226bf1c6d2f683d90e33f6e1ef54b6" fullyQualifiedName="MOD_Objetivos.WorkWithPlusProcesos" guid="38cde5b5-fc6d-4cbd-828d-12a023c6deea" name="WorkWithPlusProcesos" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Procesos">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWProcesos" defaultSecFuntionKey="WWProcesos">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Objetivos.Procesos" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Objetivos.Procesos" SecFuntionKeyINS="WWProcesos_Insert" defaultSecFuntionKeyINS="WWProcesos_Insert" SecFuntionKeyUPD="WWProcesos_Update" defaultSecFuntionKeyUPD="WWProcesos_Update" SecFuntionKeyDLT="WWProcesos_Delete" defaultSecFuntionKeyDLT="WWProcesos_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;ProcesosTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="ProcesosTitle" defaultControlName="ProcesosTitle" caption="Procesos y Actividades de apoyo" defaultCaption="Procesos y Actividades de apoyo" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" cellWidth_S="" cellWidth_L="" childrenOrderedList="2;22;PrcActId-2;22;PrcActDsc-2;22;PrcActPA-2;22;PrcActDue">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActPA" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActPA" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDue" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDue" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;PrcActDsc-4;39;-;76;-5;41;" id="9c04cf5b-f86e-46e4-b2f9-b90ef5913962:1" defaultId="9c04cf5b-f86e-46e4-b2f9-b90ef5913962:1" name="Procesos" defaultName="Procesos">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Procesos y Actividades de apoyo" defaultDescription=" Procesos y Actividades de apoyo" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Objetivos.WWProcesos" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Objetivos.ExportWWProcesos" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Objetivos.ExportReportWWProcesos" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Objetivos.WWProcesosDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;ProcesosTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="ProcesosTitle" defaultControlName="ProcesosTitle" caption="Procesos y Actividades de apoyo" defaultCaption="Procesos y Actividades de apoyo" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellVisible_E="True" cellThemeClass="" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup caption="&lt;default&gt;" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%" showDescription="True">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellVisible_E="True" childrenOrderedList="4;30;-4;12;PrcActDsc">
+              <orders childrenOrderedList="4;13;=PrcActDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order childrenOrderedList="4;26;PrcActDsc;=PrcActDsc.ContextualTitle" name="=PrcActDsc.ContextualTitle" defaultName="=PrcActDsc.ContextualTitle">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" />
+                </order>
+              </orders>
+              <filterAttribute name="PrcActDsc" defaultName="PrcActDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="PrcActDsc like &amp;PrcActDsc when not &amp;PrcActDsc.IsEmpty()" defaultCondition="PrcActDsc like &amp;PrcActDsc when not &amp;PrcActDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" cellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="4;17;Delete-4;17;Update-4;23;PrcActId-4;23;PrcActDsc-4;23;PrcActPA-4;23;PrcActDue">
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrcActId = &amp;TFPrcActId when not &amp;TFPrcActId.IsEmpty()" defaultFilterCondition="PrcActId = &amp;TFPrcActId when not &amp;TFPrcActId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="PrcActDsc like &amp;TFPrcActDsc when not &amp;TFPrcActDsc.IsEmpty()" defaultFilterCondition="PrcActDsc like &amp;TFPrcActDsc when not &amp;TFPrcActDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActPA" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActPA" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrcActPA = &amp;TFPrcActPA when not &amp;TFPrcActPA.IsEmpty()" defaultFilterCondition="PrcActPA = &amp;TFPrcActPA when not &amp;TFPrcActPA.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDue" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDue" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrcActDue = &amp;TFPrcActDue when not &amp;TFPrcActDue.IsEmpty()" defaultFilterCondition="PrcActDue = &amp;TFPrcActDue when not &amp;TFPrcActDue.IsEmpty()" />
+          <standardAction name="Delete" defaultName="Delete" />
+        </grid>
+      </table>
+    </selection>
+    <prompt description="Select Procesos y Actividades de apoyo" defaultDescription="Select Procesos y Actividades de apoyo" childrenOrderedList=";77;PrcActDsc;;76;-;02;TableMain" ShowMasterPageWhenPopUp="False" defaultShowMasterPageWhenPopUp="False">
+      <GenexusPatterns_Objects>
+        <Object Id="Prompt" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Objetivos.PromptProcesos" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" height="493" defaultHeight="493" type="Responsive" defaultType="Responsive" childrenOrderedList=";02;TableHeader-;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList=";02;TableFilters">
+          <table name="TableFilters" defaultName="TableFilters" numberOfColumns="4" defaultNumberOfColumns="4" defaultNumberOfColumns_S="4" defaultNumberOfColumns_M="4" defaultNumberOfColumns_L="4" type="Responsive" defaultType="Responsive" cellVisible_E="True" childrenOrderedList=";30;-;12;PrcActDsc">
+            <orders childrenOrderedList=";13;=PrcActDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+              <order childrenOrderedList=";26;PrcActDsc;=PrcActDsc.ContextualTitle" name="=PrcActDsc.ContextualTitle" defaultName="=PrcActDsc.ContextualTitle">
+                <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" />
+              </order>
+            </orders>
+            <filterAttribute name="PrcActDsc" defaultName="PrcActDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="PrcActDsc like &amp;PrcActDsc when not &amp;PrcActDsc.IsEmpty()" defaultCondition="PrcActDsc like &amp;PrcActDsc when not &amp;PrcActDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          </table>
+        </table>
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList=";17;Select-;23;PrcActId-;23;PrcActDsc-;23;PrcActPA-;23;PrcActDue" columnSelector="False" defaultColumnSelector="False">
+          <standardAction name="Select" defaultName="Select" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrcActId = &amp;TFPrcActId when not &amp;TFPrcActId.IsEmpty()" defaultFilterCondition="PrcActId = &amp;TFPrcActId when not &amp;TFPrcActId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="PrcActDsc like &amp;TFPrcActDsc when not &amp;TFPrcActDsc.IsEmpty()" defaultFilterCondition="PrcActDsc like &amp;TFPrcActDsc when not &amp;TFPrcActDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActPA" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActPA" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrcActPA = &amp;TFPrcActPA when not &amp;TFPrcActPA.IsEmpty()" defaultFilterCondition="PrcActPA = &amp;TFPrcActPA when not &amp;TFPrcActPA.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDue" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDue" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrcActDue = &amp;TFPrcActDue when not &amp;TFPrcActDue.IsEmpty()" defaultFilterCondition="PrcActDue = &amp;TFPrcActDue when not &amp;TFPrcActDue.IsEmpty()" />
+        </grid>
+      </table>
+      <parameters>
+        <parameter name="PrcActDsc" defaultName="PrcActDsc" />
+      </parameters>
+    </prompt>
+    <view childrenOrderedList="5;14;PrcActId;5;41;-5;06;Main Table-5;38;" caption="PrcActDsc.ToString()" defaultCaption="PrcActDsc.ToString()">
+      <GenexusPatterns_Objects>
+        <Object Id="View" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Objetivos.ViewProcesos" />
+      </GenexusPatterns_Objects>
+      <parameters>
+        <parameter name="PrcActId" defaultName="PrcActId" />
+      </parameters>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableContentNoMargin" defaultThemeClass="TableContentNoMargin" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="5;06;TableTitle-5;29;WorkWithLink-5;34;">
+        <table name="TableTitle" defaultName="TableTitle" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellWidth_E="58%" defaultCellWidth_E="58%" cellThemeClass="CellViewTableTitle CellWidthAuto" defaultCellThemeClass="CellViewTableTitle CellWidthAuto" childrenOrderedList="5;27;ViewTitle-5;21;PrcActDsc">
+          <textBlock controlName="ViewTitle" defaultControlName="ViewTitle" caption="Procesos y Actividades de apoyo :: " defaultCaption="Procesos y Actividades de apoyo :: " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewTextBlockTitle" defaultCellThemeClass="CellViewTextBlockTitle" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeTitleWWP" defaultThemeClass="AttributeTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewAttributeTitle" defaultCellThemeClass="CellViewAttributeTitle" showDescription="False" defaultShowDescription="False" />
+        </table>
+        <workWithLink themeClass="TextBlockLink" defaultThemeClass="TextBlockLink" cellWidth_E="42%" defaultCellWidth_E="42%" cellThemeClass="CellAlignRightWithMargin CellWidthAuto" defaultCellThemeClass="CellAlignRightWithMargin CellWidthAuto" align="Right" defaultAlign="Right" />
+        <tabsPosition cellThemeClass="CellViewTabsPosition" defaultCellThemeClass="CellViewTabsPosition" colSpan="999" defaultColSpan="999" startCol="1" defaultStartCol="1" />
+      </table>
+      <tabs childrenOrderedList="ProcesosGeneral;42;General-ProcesosObjetivoWC;43;Objetivo">
+        <tabularTab childrenOrderedList="ProcesosGeneral;04;Main Table" name="General" defaultName="General" code="General" defaultCode="General" wcname="ProcesosGeneral" defaultWcname="ProcesosGeneral">
+          <GenexusPatterns_Objects>
+            <Object Id="TabTabular" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Objetivos.ProcesosGeneral" />
+          </GenexusPatterns_Objects>
+          <table name="Table" defaultName="Table" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="ProcesosGeneral;28;ErrorViewer-ProcesosGeneral;04;TableAttributes-ProcesosGeneral;04;TableActions">
+            <errorViewer />
+            <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="ProcesosGeneral;21;PrcActId-ProcesosGeneral;21;PrcActDsc-ProcesosGeneral;21;PrcActPA-ProcesosGeneral;21;PrcActDue">
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActPA" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActPA" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDue" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrcActDue" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+            </table>
+            <table name="TableActions" defaultName="TableActions" themeClass="TableActions" defaultThemeClass="TableActions" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="ProcesosGeneral;88;Actions">
+              <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="ProcesosGeneral;91;Update-ProcesosGeneral;91;Delete">
+                <standardAction caption="GXM_update" defaultCaption="GXM_update" buttonClass="Button" defaultButtonClass="Button" name="Update" defaultName="Update" />
+                <standardAction caption="GX_BtnDelete" defaultCaption="GX_BtnDelete" buttonClass="Button" defaultButtonClass="Button" name="Delete" defaultName="Delete" />
+              </actionGroup>
+            </table>
+          </table>
+        </tabularTab>
+        <gridTab childrenOrderedList="ProcesosObjetivoWC;35;-ProcesosObjetivoWC;02;Main Table" name="Objetivo" defaultName="Objetivo" code="Objetivo" defaultCode="Objetivo" wcname="ProcesosObjetivoWC" defaultWcname="ProcesosObjetivoWC" collapsedByDefault="True" defaultCollapsedByDefault="True">
+          <GenexusPatterns_Objects>
+            <Object Id="TabGrid" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Objetivos.ProcesosObjetivoWC" />
+          </GenexusPatterns_Objects>
+          <transaction transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Objetivos.Objetivo" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Objetivos.Objetivo" />
+          <table name="TableGridHeader" defaultName="TableGridHeader" themeClass="Table100x100" defaultThemeClass="Table100x100" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" colSpan="999" defaultColSpan="999" childrenOrderedList="ProcesosObjetivoWC;28;ErrorViewer-ProcesosObjetivoWC;02;TableHeader-ProcesosObjetivoWC;31;">
+            <errorViewer />
+            <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="ProcesosObjetivoWC;27;ObjetivoTitle-ProcesosObjetivoWC;02;TableActions-ProcesosObjetivoWC;02;TableRightHeader">
+              <textBlock controlName="ObjetivoTitle" defaultControlName="ObjetivoTitle" caption="Objetivo" defaultCaption="Objetivo" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" cellVisible_E="False" defaultCellVisible_E="False" />
+              <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="CellWidthAuto" defaultCellThemeClass="CellWidthAuto" />
+              <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellVisible_E="True" cellThemeClass="" childrenOrderedList="ProcesosObjetivoWC;88;Actions-ProcesosObjetivoWC;02;TableFilters">
+                <actionGroup caption="&lt;default&gt;" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="ProcesosObjetivoWC;91;Insert" cellWidth_S="8%" defaultCellWidth_S="8%" showDescription="True">
+                  <standardAction name="Insert" defaultName="Insert" />
+                </actionGroup>
+                <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellVisible_E="True" childrenOrderedList="ProcesosObjetivoWC;30;-ProcesosObjetivoWC;12;ObjDsc-ProcesosObjetivoWC;12;PolDsc">
+                  <orders childrenOrderedList="ProcesosObjetivoWC;13;=ObjDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                    <order childrenOrderedList="ProcesosObjetivoWC;26;ObjDsc;=ObjDsc.ContextualTitle" name="=ObjDsc.ContextualTitle" defaultName="=ObjDsc.ContextualTitle">
+                      <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjDsc" />
+                    </order>
+                  </orders>
+                  <dynamicFilter cellThemeClass="TableDynamicFilters" defaultCellThemeClass="TableDynamicFilters">
+                    <filterAttribute name="ObjDsc" defaultName="ObjDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="ObjDsc like &amp;ObjDsc when not &amp;ObjDsc.IsEmpty()" defaultCondition="ObjDsc like &amp;ObjDsc when not &amp;ObjDsc.IsEmpty()" />
+                    <filterAttribute name="PolDsc" defaultName="PolDsc" description="=Attribute.Title" defaultDescription="=Attribute.Title" condition="PolDsc like &amp;PolDsc when not &amp;PolDsc.IsEmpty()" defaultCondition="PolDsc like &amp;PolDsc when not &amp;PolDsc.IsEmpty()" />
+                  </dynamicFilter>
+                </table>
+              </table>
+            </table>
+            <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="ProcesosObjetivoWC;17;Delete-ProcesosObjetivoWC;17;Update-ProcesosObjetivoWC;23;ObjId-ProcesosObjetivoWC;23;ObjDsc-ProcesosObjetivoWC;23;ObjFch-ProcesosObjetivoWC;23;ObjTpoId-ProcesosObjetivoWC;23;ObjStsId-ProcesosObjetivoWC;23;ObjFchRev-ProcesosObjetivoWC;23;PolId-ProcesosObjetivoWC;23;PolDsc-ProcesosObjetivoWC;23;PolFchIni-ProcesosObjetivoWC;23;PolFchFin-ProcesosObjetivoWC;23;ObjIndMeta-ProcesosObjetivoWC;23;IndId-ProcesosObjetivoWC;23;ObjTxtInicial-ProcesosObjetivoWC;23;UltimoPcjAvance" columnSelector="False" defaultColumnSelector="False">
+              <standardAction name="Update" defaultName="Update" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="ObjId = &amp;TFObjId when not &amp;TFObjId.IsEmpty()" defaultFilterCondition="ObjId = &amp;TFObjId when not &amp;TFObjId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="ObjDsc like &amp;TFObjDsc when not &amp;TFObjDsc.IsEmpty()" defaultFilterCondition="ObjDsc like &amp;TFObjDsc when not &amp;TFObjDsc.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="ObjFch &gt;= &amp;TFObjFch when not &amp;TFObjFch.IsEmpty()" defaultFilterCondition="ObjFch &gt;= &amp;TFObjFch when not &amp;TFObjFch.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTpoId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="ObjTpoId = &amp;TFObjTpoId when not &amp;TFObjTpoId.IsEmpty()" defaultFilterCondition="ObjTpoId = &amp;TFObjTpoId when not &amp;TFObjTpoId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjStsId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjStsId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="ObjStsId = &amp;TFObjStsId when not &amp;TFObjStsId.IsEmpty()" defaultFilterCondition="ObjStsId = &amp;TFObjStsId when not &amp;TFObjStsId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjFchRev" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjFchRev" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="ObjFchRev &gt;= &amp;TFObjFchRev when not &amp;TFObjFchRev.IsEmpty()" defaultFilterCondition="ObjFchRev &gt;= &amp;TFObjFchRev when not &amp;TFObjFchRev.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PolId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PolId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PolId = &amp;TFPolId when not &amp;TFPolId.IsEmpty()" defaultFilterCondition="PolId = &amp;TFPolId when not &amp;TFPolId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PolDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PolDsc" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PolDsc like &amp;TFPolDsc when not &amp;TFPolDsc.IsEmpty()" defaultFilterCondition="PolDsc like &amp;TFPolDsc when not &amp;TFPolDsc.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PolFchIni" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PolFchIni" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PolFchIni &gt;= &amp;TFPolFchIni when not &amp;TFPolFchIni.IsEmpty()" defaultFilterCondition="PolFchIni &gt;= &amp;TFPolFchIni when not &amp;TFPolFchIni.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PolFchFin" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PolFchFin" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PolFchFin &gt;= &amp;TFPolFchFin when not &amp;TFPolFchFin.IsEmpty()" defaultFilterCondition="PolFchFin &gt;= &amp;TFPolFchFin when not &amp;TFPolFchFin.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjIndMeta" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjIndMeta" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="ObjIndMeta like &amp;TFObjIndMeta when not &amp;TFObjIndMeta.IsEmpty()" defaultFilterCondition="ObjIndMeta like &amp;TFObjIndMeta when not &amp;TFObjIndMeta.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-IndId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-IndId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="IndId = &amp;TFIndId when not &amp;TFIndId.IsEmpty()" defaultFilterCondition="IndId = &amp;TFIndId when not &amp;TFIndId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTxtInicial" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-ObjTxtInicial" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="ObjTxtInicial like &amp;TFObjTxtInicial when not &amp;TFObjTxtInicial.IsEmpty()" defaultFilterCondition="ObjTxtInicial like &amp;TFObjTxtInicial when not &amp;TFObjTxtInicial.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-UltimoPcjAvance" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-UltimoPcjAvance" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="UltimoPcjAvance = &amp;TFUltimoPcjAvance when not &amp;TFUltimoPcjAvance.IsEmpty()" defaultFilterCondition="UltimoPcjAvance = &amp;TFUltimoPcjAvance when not &amp;TFUltimoPcjAvance.IsEmpty()" />
+              <standardAction name="Delete" defaultName="Delete" />
+            </grid>
+          </table>
+        </gridTab>
+      </tabs>
+    </view>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusProcesos</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Objetivos.Procesos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 23
+Name -> WorkWithPlusProcesos
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-23
+IsDefault -> False

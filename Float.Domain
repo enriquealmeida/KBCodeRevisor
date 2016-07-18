@@ -1,0 +1,22 @@
+======OBJECT = Float.Domain === Float=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:22:45.0000000Z" checksum="08e65b0e4dab478e36605a12854e9dbe" fullyQualifiedName="Float" guid="2d274f18-7776-4727-b529-f0cd481c6d98" name="Float" type="00972a17-9975-449e-aab1-d26165d51393" description="Float">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Float</Value></Property><Property><Name>Length</Name><Value>14</Value></Property><Property><Name>Decimals</Name><Value>2</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Float
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 14
+Decimals -> 2
+IsDefault -> False

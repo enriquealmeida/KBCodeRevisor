@@ -1,0 +1,24 @@
+======OBJECT = Prioridad.Domain === Prioridad=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-05-06T19:25:08.0000000Z" lastUpdate="2016-05-06T17:44:16.0000000Z" checksum="8c4cfeb992614551a245944e9f78e898" fullyQualifiedName="Prioridad" guid="ee21f22d-41ab-413d-8b38-4316de568d7b" name="Prioridad" type="00972a17-9975-449e-aab1-d26165d51393" description="Prioridad">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Prioridad</Value></Property><Property><Name>Description</Name><Value>Prioridad</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>AttMaxLen</Name><Value>1</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>1, Baja, Baja; 5, Normal, Normal; 9, Alta, Alta</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Prioridad
+Description -> Prioridad
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 1
+AttMaxLen -> 1
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

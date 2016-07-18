@@ -1,0 +1,34 @@
+======OBJECT = HsPry.WebPanel === Seleccion de proyectos=====
+
+=== RULES ===
+parm(out:&V14);
+order(CliId, PryId);
+
+
+=== EVENTS SOURCE ===
+Event Enter
+    &V14=PryId
+    return
+EndEvent
+
+Event Start
+   &PryAct=DMPryAct.Activo
+EndEvent  // Start
+
+Event &C7.Click
+
+EndEvent  // &C7.Click
+
+Event &PryAct.Click
+  
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HsPry
+Description -> Seleccion de proyectos
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

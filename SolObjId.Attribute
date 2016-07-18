@@ -1,0 +1,15 @@
+======OBJECT = SolObjId.Attribute === Objetivo=====
+NUMERIC(6)
+
+
+====== PROPERTIES =======
+Name -> SolObjId
+Description -> Objetivo
+HORIZONTAL_DESCRIPTION -> Objetivo
+VERTICAL_DESCRIPTION -> Objetivo
+ContextualTitle -> Objetivo
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+EmptyAsNull -> Yes
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-43
+IsDefault -> False

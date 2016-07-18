@@ -1,0 +1,24 @@
+======OBJECT = DiasHabilesEntreFechas.Procedure === Dias Habiles Entre Fechas=====
+
+=== RULES ===
+parm(in: &FecIni, in: &FecFin, in: &Feriados, out: &Fechas);
+
+
+=== PROCEDURE SOURCE ===
+&FechaActual.Dias = &FecIni
+Do while &FechaActual.Dias <= &FecFin
+	if dow(&FechaActual.Dias) <> 1 and dow(&FechaActual.Dias) <> 7
+		if not PerteneceDia(&FechaActual, &Feriados)
+			&Fechas.Add(&FechaActual.Clone())		
+		endif	
+	endif
+	&FechaActual.Dias = &FechaActual.Dias + 1
+Enddo
+
+
+====== PROPERTIES =======
+Name -> DiasHabilesEntreFechas
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Private
+IsDefault -> False

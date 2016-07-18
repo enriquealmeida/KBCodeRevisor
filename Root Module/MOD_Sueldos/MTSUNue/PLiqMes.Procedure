@@ -1,0 +1,49 @@
+======OBJECT = PLiqMes.Procedure === Liquidación Mensual=====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM, in:&RspId);
+
+
+=== PROCEDURE SOURCE ===
+// anula la liquidación, por si ya existe
+msg("anula la liquidación, por si ya existe",status)
+PAnuLiqMes.call( &RspSuA, &RspSuM, &RspId)
+
+// graba los adelantos
+msg("graba los adelantos",status)
+PGraAdeMes.call( &RspSuA, &RspSuM, &RspId)
+
+// graba los honorarios
+msg("graba los honorarios",status)
+PGraHonMes.call( &RspSuA, &RspSuM, &RspId)
+
+// graba el IVA
+msg("graba el IVA",status)
+PGraIVAMes.call( &RspSuA, &RspSuM, &RspId)
+
+
+// graba en la tabla para generar el diskette de Kofac
+//PGraSuPag.call( &RspSUA, &RspSUM, &RspId)
+
+// graba la fecha de la liquidación
+&ParFchLiq = ymdtod(&RspSuA, &RspSuM, 1)
+&ParFchLiq = eom(&ParFchLiq)
+//msg(&ParFchLiq.ToString())
+
+PMDOpDate.call( 1, 1, 'PARULTLIQ', &ParFchLiq, &error)
+//msg(&error.ToString())
+
+// si el responsable está instanciado le manda un mail
+//if not null(&RspId)
+   // PMailLiqMes.call( &RspId, &RspSuA, &RspSuM)
+//endif
+commit
+
+
+====== PROPERTIES =======
+Name -> PLiqMes
+Description -> Liquidación Mensual
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

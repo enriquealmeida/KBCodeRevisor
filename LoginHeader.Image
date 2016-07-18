@@ -1,0 +1,30 @@
+======OBJECT = LoginHeader.Image === Login Header=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:52.0000000Z" checksum="7f2ab1b978e7aef879721889bf0da531" fullyQualifiedName="LoginHeader" guid="6fec8d0a-46e0-4626-a7c3-ba1820270f4c" name="LoginHeader" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Login Header">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="gam_header_login.png" description="gam_header_login.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAUAAAAgCAIAAABVbCU3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccll
+PAAAAE5JREFUeNpivHr1GgMSYIyIjEbms/z79w+V//cvfnmK+SSa/xeV/x9N/u8/dHkqu/8vlf1DGp/xxPHjKPI8DatR+J+OXELmMzGgAoAAAwCWCVd1Y+oz
+XQAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>gam_header_login.png</Value></Property><Property><Name>Description</Name><Value>gam_header_login.png</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="gam_header_login.png" description="gam_header_login.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAUAAAAgCAIAAABVbCU3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccll
+PAAAAE5JREFUeNpivHr1GgMSYIyIjEbms/z79w+V//cvfnmK+SSa/xeV/x9N/u8/dHkqu/8vlf1DGp/xxPHjKPI8DatR+J+OXELmMzGgAoAAAwCWCVd1Y+oz
+XQAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>gam_header_login.png</Value></Property><Property><Name>Description</Name><Value>gam_header_login.png</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>LoginHeader</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> LoginHeader
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

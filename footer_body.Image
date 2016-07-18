@@ -1,0 +1,21 @@
+======OBJECT = footer_body.Image === footer_body=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-09-23T17:07:54.0000000Z" lastUpdate="2011-06-30T18:34:52.0000000Z" checksum="1ab6b179772c997a5f5a6228d9381fe3" fullyQualifiedName="footer_body" guid="32843926-0ada-4a54-85fa-f84f5148b3ce" name="footer_body" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="footer_body">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="footer-body.png" description="footer-body.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAUAAAAgCAYAAADaDrJgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccll
+PAAAAChJREFUeNpiPHPmzAEGNMACxPbogkwMWMCo4KggtQRBqe4guiBAgAEAPykEaMkObXIAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>footer-body.png</Value></Property><Property><Name>Description</Name><Value>footer-body.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\acimas\Downloads\footer-body.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>footer_body</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> footer_body
+IsDefault -> False

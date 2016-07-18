@@ -1,0 +1,20 @@
+======OBJECT = EsLicencia.Procedure === Es Licencia=====
+
+=== RULES ===
+parm(in:&Dia,in: &Responsable, in: &LicenciasPorResponsable, out: &EsLicencia);
+
+
+=== PROCEDURE SOURCE ===
+&EsLicencia = false
+for &LicenciaItem in &LicenciasPorResponsable
+	if &Dia.Dias >= &LicenciaItem.DLicFecIni and &Dia.Dias <= &LicenciaItem.DLicFecFin
+		&EsLicencia = true
+	endif	
+endfor
+
+
+====== PROPERTIES =======
+Name -> EsLicencia
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+IsDefault -> False

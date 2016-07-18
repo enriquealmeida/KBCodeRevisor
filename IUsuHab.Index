@@ -1,0 +1,13 @@
+======OBJECT = IUsuHab.Index === IUsu Hab=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:26.0000000Z" checksum="79058b2da0c079f3ed2bb14ca76714f4" fullyQualifiedName="IUsuHab" guid="d43684da-140e-4883-82c1-dc36efb50038" name="IUsuHab" type="9e750647-3679-0000-0100-2529de263960" description="IUsu Hab">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">GLUsAmbId</Member>
+      <Member Order="Ascending">GLUsAmbNvl</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IUsuHab</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IUsuHab

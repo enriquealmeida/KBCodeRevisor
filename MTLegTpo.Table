@@ -1,0 +1,8 @@
+======OBJECT = MTLegTpo.Table === Tipos de legajo=====
+*LegTpoId  Codigo3- Null=False
+ LegTpoDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MTLegTpo
+Description -> Tipos de legajo
+CACHE_LEVEL -> 2

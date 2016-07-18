@@ -1,0 +1,11 @@
+======OBJECT = MTTpoHon.Table === Tipos de honorarios=====
+*TpoHonId  Codigo3- Null=False
+ TpoHonDsc  DESC- Null=False
+ TpoHonAM  DMTpoHonorario- Null=False
+ TpoHonDSoc  ObservacionesCorta- Null=False
+ TpoHonDUni  ObservacionesCorta- Null=False
+ TpoHonCateg  TpoHonCategoriaEnum- Null=False
+
+====== PROPERTIES =======
+Name -> MTTpoHon
+Description -> Tipos de honorarios

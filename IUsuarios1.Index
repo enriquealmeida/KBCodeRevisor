@@ -1,0 +1,12 @@
+======OBJECT = IUsuarios1.Index === IUsuarios1=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-10-16T17:03:08.0000000Z" checksum="c7824b8cac73594d0a61329444d7530a" fullyQualifiedName="IUsuarios1" guid="bedbee8b-e7e0-40c9-be52-bb7a7897bedc" name="IUsuarios1" type="9e750647-3679-0000-0100-2529de263960" description="IUsuarios1">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CliId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IUsuarios1</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IUsuarios1

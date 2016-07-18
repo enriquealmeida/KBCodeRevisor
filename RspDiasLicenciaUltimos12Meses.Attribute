@@ -1,0 +1,14 @@
+======OBJECT = RspDiasLicenciaUltimos12Meses.Attribute === Días Licencia Ultimos12 Meses=====
+NUMERIC(5)-
+sum(LicDias, LicTpo=DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Licencia and LicEst = EstadoLicencia.Autorizada and LicFecIni.addyears(1)>= serverdate() )
+
+====== PROPERTIES =======
+Name -> RspDiasLicenciaUltimos12Meses
+Description -> Días Licencia Ultimos12 Meses
+VERTICAL_DESCRIPTION -> L 12 Meses
+ContextualTitle -> Licencia 12 Meses
+Formula -> sum(LicDias, LicTpo=DMLicTpo.Tomada and AusTpoId = DMAusTpoId.Licencia and LicEst = EstadoLicencia.Autorizada and LicFecIni.addyears(1)>= serverdate() )
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,11 @@
+======OBJECT = CronFin.Attribute === Fin Cronómetro=====
+DATETIME(10.5)
+
+
+====== PROPERTIES =======
+Name -> CronFin
+Description -> Fin Cronómetro
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

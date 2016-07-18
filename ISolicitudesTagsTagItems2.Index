@@ -1,0 +1,14 @@
+======OBJECT = ISolicitudesTagsTagItems2.Index === ISolicitudes Tags Tag Items2=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2014-11-27T16:23:41.0000000Z" checksum="e68705dc2437eef379c8cb130dceb987" fullyQualifiedName="ISolicitudesTagsTagItems2" guid="9e10e1e0-489e-459f-89bc-6aaada8fba32" name="ISolicitudesTagsTagItems2" type="9e750647-3679-0000-0100-2529de263960" description="ISolicitudes Tags Tag Items2">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PryId</Member>
+      <Member Order="Ascending">PrbId</Member>
+      <Member Order="Ascending">TagId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ISolicitudesTagsTagItems2</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ISolicitudesTagsTagItems2

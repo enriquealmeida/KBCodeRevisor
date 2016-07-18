@@ -1,0 +1,15 @@
+======OBJECT = MTPaisId.Attribute === Id de Pais=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> MTPaisId
+Description -> Id de Pais
+HORIZONTAL_DESCRIPTION -> Id de Pais
+VERTICAL_DESCRIPTION -> Id de Pais
+ContextualTitle -> Id de Pais
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

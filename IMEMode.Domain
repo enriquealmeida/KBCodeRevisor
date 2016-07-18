@@ -1,0 +1,26 @@
+======OBJECT = IMEMode.Domain === IMEMode property values=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="ARTECH\GeneXus" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2007-08-15T18:02:06.0000000Z" checksum="beee6de3b84dcc030ea8cf1d5a246049" fullyQualifiedName="IMEMode" guid="f3df789c-6584-4ceb-9c6f-9e12fefb04ca" name="IMEMode" type="00972a17-9975-449e-aab1-d26165d51393" description="IMEMode property values">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IMEMode</Value></Property><Property><Name>Description</Name><Value>IMEMode property values</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>40</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>hiragana, Hiragana, Hiragana; full width katakana, FullWidthKatakana, FullWidthKatakana; full width alphanumeric, FullWidthAlphanumeric, FullWidthAlphanumeric; half width katakana, HalfWidthKatakana, HalfWidthKatakana; half width alphanumeric, HalfWidthAlphanumeric, HalfWidthAlphanumeric; disabled, Disabled, Disabled; inactive, Inactive, Inactive</Value></Property><Property><Name>ControlType</Name><Value>Combo Box</Value></Property><Property><Name>ControlValues</Name><Value>Hiragana:hiragana,FullWidthKatakana:full width katakana,FullWidthAlphanumeric:full width alphanumeric,HalfWidthKatakana:half width katakana,HalfWidthAlphanumeric:half width alphanumeric,Disabled:disabled,Inactive:inactive</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IMEMode
+Description -> IMEMode property values
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 40
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+ControlType -> 0
+ControlValues -> Hiragana:hiragana,FullWidthKatakana:full width katakana,FullWidthAlphanumeric:full width alphanumeric,HalfWidthKatakana:half width katakana,HalfWidthAlphanumeric:half width alphanumeric,Disabled:disabled,Inactive:inactive
+IsDefault -> False

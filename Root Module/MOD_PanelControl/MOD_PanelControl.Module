@@ -1,0 +1,29 @@
+======OBJECT = MOD_PanelControl.Module === MOD_Panel Control=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-03-15T19:42:43.0000000Z" lastUpdate="2016-03-15T19:00:15.0000000Z" checksum="a97dc5afd3cb5a151e5c11a97adeeb4b" fullyQualifiedName="MOD_PanelControl" guid="8a81eb2d-2c2f-433e-8a13-8f45ca2855ec" name="MOD_PanelControl" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="MOD_Panel Control">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="6dad8772-47aa-4588-bdc1-d44af82551f6">
+      <Layers>
+        <Layer Id="6dad8772-47aa-4588-bdc1-d44af82551f6">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_PanelControl" Bounds="297.7698 372.6299 150.0002 32.00006" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="418.6161 26.5202 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Solicitudes" Bounds="18 166.3345 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Licencia" Bounds="129.0079 1.056701E-07 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Horas" Bounds="897.1233 189.6158 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Proyectos" Bounds="708.3792 416.6335 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MOD_PanelControl</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> MOD_PanelControl
+IsDefault -> False

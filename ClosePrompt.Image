@@ -1,0 +1,41 @@
+======OBJECT = ClosePrompt.Image === Close Prompt=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:50.0000000Z" checksum="02c8ee1a4621ad187f8ddf257b2fbdeb" fullyQualifiedName="ClosePrompt" guid="10b4b52b-f115-45cb-bb07-61218258d20b" name="ClosePrompt" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Close Prompt">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="X_popup_cerrar.gif" description="X_popup_cerrar.jpg"><Data>
+<base64Binary>
+R0lGODlhEQARANUzAMzMyszMzmhpa8TFx3V2eLe4uqOkprGytGFiZF9jZMzKy76/wWlqboKDhcvLzc3Nz3V2es3LzKusrmJjZbCxs2FlaGBkZcbGyGNkZqmq
+rImKjLi5u3x9f29wcs7MzV9iZ2NkaGBhZW1xcszLyba4t8vLyc3MysTGxaqrrYqLjaSlp8vNzGFiZmJjZ19jZmBkZ8vLy83NzczMzP///wAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADMALAAAAAARABEAAAaxwJlwSCwKZbIRMgYrIZGw5+wZeDhiCqaMGQsEpsiBRgKLRE8N1Comm8FiDgKI
+pQrILpBWi4KcvgUuLy0GAwSBLgcwAGAxJAIvgSIJFgkqK4puMlkFDBUvHywIlkgRM2wmSAeBkCkyAAB9W2EQgpAhKk9tS4UvoQItLC24sVsEkBMGGwIsLggH
+bGAwHS8vBjIrnCwYC8QyCw2jUQUcGbKmbFsruXa5YB5RSLC5SA9G9kVBADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>X_popup_cerrar.gif</Value></Property><Property><Name>Description</Name><Value>X_popup_cerrar.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\ImgsTransparecncias\botones gif - fondo transparente\X_popup_cerrar.gif</Value></Property></Properties></ImageItem>
+      <ImageItem><Image name="closePopup.png" description="X_popup_cerrar.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABp0RVh0U29mdHdhcmUAUGFp
+bnQuTkVUIHYzLjUuMTAw9HKhAAAAuElEQVRIS+2TsQ4DIQhA7/+/zUFdnBwcTFzd3GhpYsNdvQKtueUcXDTw5AEbAGxXnctAWNCCTTEwJYl0wG4OSymB9/5p
+a7+TpRSw1kJr7eNtpJbViCBjzOs4595JEdTvRx/5CYZBR2DOWQ1SLTUFaivqVbIaqQ4KlKqj8WIY7dGoh5JdE8EoCKcvxjgcGg7Iws6m7mxKvwFZGAaHEIZ7
+1oG11jl7xqnRvIsq0yT8W+OCcQZWz6YYeAA5jv5tIXEBiAAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>closePopup.png</Value></Property><Property><Name>Description</Name><Value>X_popup_cerrar.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\Popup\closePopup.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="closePopup.png" description="X_popup_cerrar.jpg"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABp0RVh0U29mdHdhcmUAUGFp
+bnQuTkVUIHYzLjUuMTAw9HKhAAAAuElEQVRIS+2TsQ4DIQhA7/+/zUFdnBwcTFzd3GhpYsNdvQKtueUcXDTw5AEbAGxXnctAWNCCTTEwJYl0wG4OSymB9/5p
+a7+TpRSw1kJr7eNtpJbViCBjzOs4595JEdTvRx/5CYZBR2DOWQ1SLTUFaivqVbIaqQ4KlKqj8WIY7dGoh5JdE8EoCKcvxjgcGg7Iws6m7mxKvwFZGAaHEIZ7
+1oG11jl7xqnRvIsq0yT8W+OCcQZWz6YYeAA5jv5tIXEBiAAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>closePopup.png</Value></Property><Property><Name>Description</Name><Value>X_popup_cerrar.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\Popup\closePopup.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ClosePrompt</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ClosePrompt
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

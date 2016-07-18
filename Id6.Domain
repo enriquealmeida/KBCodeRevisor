@@ -1,0 +1,24 @@
+======OBJECT = Id6.Domain === Id de longitud 6=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-23T19:13:21.0000000Z" lastUpdate="2016-05-23T17:29:30.0000000Z" checksum="903da2ee68f01debf60c03291d0a2279" fullyQualifiedName="Id6" guid="4464e122-be8e-4301-a9f4-1c2e43d9a1af" name="Id6" type="00972a17-9975-449e-aab1-d26165d51393" description="Id de longitud 6">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Id6</Value></Property><Property><Name>Description</Name><Value>Id de longitud 6</Value></Property><Property><Name>Length</Name><Value>6</Value></Property><Property><Name>AttMaxLen</Name><Value>6</Value></Property><Property><Name>AUTONUMBER</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Id6
+Description -> Id de longitud 6
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 6
+AttMaxLen -> 6
+AUTONUMBER -> False
+IsDefault -> False

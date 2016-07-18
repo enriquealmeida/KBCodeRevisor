@@ -1,0 +1,25 @@
+======OBJECT = PORCENTAJE_ENTERO.Domain === PORCENTAJE_ENTERO=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-10-22T19:49:30.0000000Z" checksum="6f4e5e20755b3e71769f5200e3c1ef8e" fullyQualifiedName="PORCENTAJE_ENTERO" guid="0ab77e45-94ea-4409-9d14-dd159a63e5de" name="PORCENTAJE_ENTERO" type="00972a17-9975-449e-aab1-d26165d51393" description="PORCENTAJE_ENTERO">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>PORCENTAJE_ENTERO</Value></Property><Property><Name>Length</Name><Value>5</Value></Property><Property><Name>AttMaxLen</Name><Value>5</Value></Property><Property><Name>Signed</Name><Value>True</Value></Property><Property><Name>idTHOUSANDSEP</Name><Value>True</Value></Property><Property><Name>idNUMPREFIX</Name><Value>%</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> PORCENTAJE_ENTERO
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 5
+AttMaxLen -> 5
+Signed -> True
+idTHOUSANDSEP -> True
+idNUMPREFIX -> %
+IsDefault -> False

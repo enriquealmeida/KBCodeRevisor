@@ -1,0 +1,15 @@
+======OBJECT = PrbCnsEst.Attribute === Estado del consolidado=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> PrbCnsEst
+Description -> Estado del consolidado
+HORIZONTAL_DESCRIPTION -> Estado del consolidado
+VERTICAL_DESCRIPTION -> Estado del consolidado
+ContextualTitle -> Estado del consolidado
+Class -> INFERRED
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-123
+ATT_PICTURE -> @!
+IsDefault -> False

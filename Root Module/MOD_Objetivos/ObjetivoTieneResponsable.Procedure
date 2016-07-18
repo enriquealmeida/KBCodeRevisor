@@ -1,0 +1,27 @@
+======OBJECT = ObjetivoTieneResponsable.Procedure === Objetivo Tiene Responsable=====
+
+=== RULES ===
+parm(in:&RspId,in:&ObjId,out:&Tiene);
+
+
+=== PROCEDURE SOURCE ===
+&Tiene=false
+if &RspId.IsEmpty()
+	&Tiene=true
+else
+	for each 
+		where            RspId=&RspId and ObjId=&ObjId
+		&Tiene=true
+		exit
+	endfor
+endif
+
+	
+
+
+====== PROPERTIES =======
+Name -> ObjetivoTieneResponsable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 9
+ObjectVisibility -> Private
+IsDefault -> False

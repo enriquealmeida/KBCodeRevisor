@@ -1,0 +1,27 @@
+======OBJECT = PromptCambiarEstadoSolicitud.WebPanel === Cambiar Estado Solicitud=====
+
+=== RULES ===
+parm(in: &PrbId, in:&PryId);
+
+
+=== EVENTS SOURCE ===
+Event load
+	&newPrbSts = PrbSts
+EndEvent
+
+Event Enter
+	if PActualizarEstadoSolicitud(&PrbId,&PryId,&newPrbSts) //Si se actualiza correctamente retorna
+		Return
+	else
+		// Muestra el error. 
+	endif
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> PromptCambiarEstadoSolicitud
+Description -> Cambiar Estado Solicitud
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,43 @@
+======OBJECT = PCrrPrb.Procedure === Cerrar problema=====
+
+=== RULES ===
+parm(IN:&PryId, IN:&PrbId);
+
+
+=== PROCEDURE SOURCE ===
+for each
+	where          PrbId = &PrbId
+	where          PryId = &PryId
+	
+    PrbSts = DMPrbSts.CER 
+    CrrFch = today()
+	if CrrUsr.IsEmpty()
+	      CrrUsr = userid()
+   endif
+   &CrrUsrMail = CrrUsrMail
+   &SegUsrMail = SegUsrMail
+endfor
+	
+	
+&Detalle='Solicitud Cerrada por:' + UserId()
+
+PGSolObs.Call(&PrbId,DMTpoObservaciones.Cerrada,&Detalle,'CER')
+
+if not (&CrrUsrMail.IsEmpty() or &SegUsrMail.IsEmpty())
+	EnvioSolicitudPorMail.Call(&PryId, &PrbId,&CrrUsrMail,&SegUsrMail,'','')
+endif
+
+
+
+commit
+
+
+
+====== PROPERTIES =======
+Name -> PCrrPrb
+Description -> Cerrar problema
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

@@ -1,0 +1,68 @@
+======OBJECT = DiasTrabajadosPorResponsable.DataProvider === Dias Trabajados Por Responsable=====
+
+=== RULES ===
+parm(in: &RspId, in: &FecIni, in: &FecFin);
+
+<Object parent="MOD_Horas" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="ef519605-8f4a-4442-969e-2c07364ba5e0" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:25.0000000Z" checksum="85c2a19cac27f9ae6c639a511be14e5a" fullyQualifiedName="MOD_Horas.DiasTrabajadosPorResponsable" guid="db3043e3-ef27-476e-a318-4425ab742ab7" name="DiasTrabajadosPorResponsable" type="2a9e9aba-d2de-4801-ae7f-5e3819222daf" description="Dias Trabajados Por Responsable">
+  <Part type="1d8aeb5a-6e98-45a7-92d2-d8de7384e432">
+    <Source><![CDATA[DiasList
+{
+	DiasListItem
+	where &FecIni <= HrsFch and  HrsFch <= &FecFin
+    where HrsTot > 2 and RspId = &RspId
+	{
+		Dias = HrsFch
+	}
+}
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+    <Source><![CDATA[parm(in: &RspId, in: &FecIni, in: &FecFin);
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+    <Variable Name="FecIni">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FecIni</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Variable Name="FecFin">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FecFin</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Variable Name="DiasTrabajados">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>DiasTrabajados</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>sdt:DiasList, GLFeriados</Value></Property></Properties>
+    </Variable>
+    <Variable Name="RspId">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>RspId</Value></Property><Property><Name>Description</Name><Value>Responsable</Value></Property><Property><Name>idIsAutoDefinedVariable</Name><Value>True</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspId</Value></Property></Properties>
+    </Variable>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DiasTrabajadosPorResponsable</Value></Property><Property><Name>OutputSDT</Name><Value>447527b5-9210-4523-898b-5dccb17be60a-GLFeriados.DiasList</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DiasTrabajadosPorResponsable
+OutputSDT -> 447527b5-9210-4523-898b-5dccb17be60a-78
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Private
+IsDefault -> False

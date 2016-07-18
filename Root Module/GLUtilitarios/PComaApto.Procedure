@@ -1,0 +1,23 @@
+======OBJECT = PComaApto.Procedure === Pasa de Coma a Punto=====
+
+=== RULES ===
+///Recibe un Numero y devuelve un txt con . en vez de comas. 
+
+parm(IN:&NumOrg,IN:&Decimales,OUT:&TxtDes);
+
+
+=== PROCEDURE SOURCE ===
+&Txtorg=trim(str(&Numorg,10,&Decimales))
+
+&Desde1=Len(&Txtorg)-&Decimales-1
+&Desde2=Len(&Txtorg)-&Decimales+1
+&TxtDes=Substr(&Txtorg,1,&Desde1)+'.'+Substr(&Txtorg,&Desde2,&Decimales)
+//&TxtDes=Substr(&Txtorg,1,&Desde-1)+'.'+Substr(&Txtorg,&Desde+1,&Decimales)
+
+
+====== PROPERTIES =======
+Name -> PComaApto
+Description -> Pasa de Coma a Punto
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

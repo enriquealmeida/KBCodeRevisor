@@ -1,0 +1,27 @@
+======OBJECT = HWMD.WebPanel === Trabajar con Metadatos=====
+
+=== RULES ===
+Parm(in:MDObjTpo, in:MDObjSec );
+
+
+=== EVENTS SOURCE ===
+Event Valores.load
+    &Modificar ='Modificar'
+    &Modificar.Link = TMDVal.link( MDObjTpo , MDObjSec ,MDCdId ,TrnMode.Update)
+EndEvent  // Valores.load
+
+
+Event Start
+ 	//Agregar.Link = TMDVal.link( MDObjTpo, MDObjSec, '', TrnMode.Insert)
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HWMD
+Description -> Trabajar con Metadatos
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+ObjectVisibility -> Public
+IsDefault -> False

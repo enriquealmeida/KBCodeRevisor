@@ -1,0 +1,38 @@
+======OBJECT = HSDocCam.WebPanel === Selección de formato de documento de cambio=====
+
+=== RULES ===
+parm(in:&PrbId, in:&CnsId);
+
+
+=== EVENTS SOURCE ===
+Event Refresh
+    &formato = 'SIGE'
+EndEvent  // Refresh
+
+Event Enter
+    if not null(&PrbId)
+        // muestra la documentación de la solicitud
+        if &formato = 'SIGE'
+            HODocCam.call(&PrbId)
+        else
+            HODocCamDNA.call(&PrbId)
+        endif
+    else
+        // muestra la documentación del consoliado
+        if &formato = 'SIGE'
+            HOConsDoc.call(&CnsId)
+        else
+            HOConsDocDNA.call(&CnsId)
+        endif
+    endif
+EndEvent  // Enter
+
+
+====== PROPERTIES =======
+Name -> HSDocCam
+Description -> Selección de formato de documento de cambio
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

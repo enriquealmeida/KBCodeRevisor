@@ -1,0 +1,184 @@
+======OBJECT = LicenciasXFechaCalendario.WebPanel === Ausencias en rango de fechas=====
+
+=== RULES ===
+parm(in:&FchIniPar, in:&FchFinPar);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    if null(&FchIniPar)
+        &FchIni = &Today
+    else
+        &FchIni = &FchIniPar
+    endif
+    if null(&FchFinPar)
+        &FchFin = &Today + 14
+    else
+        &FchFin = &FchFinPar
+    endif
+EndEvent  // Start
+
+Event sbfLic.load
+    RspLicId.Link = Licencia.link(TrnMode.Display,RspLicId)
+	if &Tiporesp.IsEmpty() or (&Tiporesp = 'E' and RspVinculoLaboral = DMRspVinculoLaboral.EMPLEADO)
+        load
+    endif
+EndEvent  // load
+
+Event Refresh
+
+EndEvent  // Refresh
+
+Event sbfCalendario.load
+    // cargo los días de la semana
+    sbfCalendario.BackColorEven = color('RED') //rgb(0, 128, 128)
+    sbfCalendario.BackColorOdd = color('RED') //rgb(0, 128, 128)
+    &Fch = ''
+    &RspLicAut = ''
+    &RspLicDia = ''
+    &RspLicGrn = ''
+    &RspLicBrn = ''
+    &DiaSem = 'DOM'
+    load
+    &DiaSem = 'LUN'
+    load
+    &DiaSem = 'MAR'
+    load
+    &DiaSem = 'MIE'
+    load
+    &DiaSem = 'JUE'
+    load
+    &DiaSem = 'VIE'
+    load
+    &DiaSem = 'SAB'
+    load
+
+    // cargo las personas que no están en esos días
+    sbfCalendario.BackColorEven = rgb(245, 245, 245)
+    sbfCalendario.BackColorOdd = rgb(245, 245, 245)
+    &DiaSem = ''
+    &Fch = ''
+    &Fch.FontBold = 1
+    &RspLicAut = ''
+    &RspLicDia = ''
+    &RspLicGrn = ''
+    &RspLicBrn = ''
+    &FchAux = &FchIni
+    for &i = 1 to (dow(&FchAux) - 1) step 1
+        load
+    endfor
+    do while &FchAux <= &FchFin
+		if EsFeriado(&FchAux)="S"
+            // si es feriado pongo la descripción
+            &FerDsc=NombreFeriado(&FchAux)
+			&Fch = &FerDsc.Substring(1,8) 
+            &EsFer = Bool.True //'S'
+        else
+            if dow(&FchAux) = 1 or dow(&FchAux) = 7
+                &EsFer = Bool.True //'S'
+            else
+                &EsFer = Bool.True //'N'
+            endif
+            &Fch = dtoc(&FchAux) + newline() 
+        endif
+
+        if &EsFer = 'N'
+            &Fch.ForeColor = rgb(0, 0, 0)
+        else
+            &Fch.ForeColor = rgb(160, 160, 160)
+        endif
+
+        for each
+            where      LicFecIni <= &FchAux and &FchAux <= LicFecFin
+            where      LicTpo = 'T'
+            where      LicEst <> 'Bor'
+
+            &AusTpoColor = AusTpoColor
+            &RspId = RspId
+            do 'Color'
+			if &Tiporesp.IsEmpty() or (&Tiporesp = 'E' and RspVinculoLaboral = DMRspVinculoLaboral.EMPLEADO)
+                do case
+                case AusTpoColor = 'BLU'
+                    if LicEst = 'AUT'
+                        &RspLicAut += RspId + ' '  + newline()
+                    else
+                        &RspLicDia += RspId + ' ' + newline()
+                    endif
+                case AusTpoColor = 'BRW'
+                    if LicEst = 'AUT'
+                        &RspLicBrn += RspId + ' ' + newline()
+                    else
+                        &RspLicDia += RspId + ' ' + newline()
+                    endif
+                case AusTpoColor = 'GRN'
+                    if LicEst = 'AUT'
+                        &RspLicGrn += RspId + ' ' + newline()
+                    else
+                        &RspLicDia += RspId + ' ' + newline()
+                    endif
+                endcase
+            endif
+        endfor
+        load
+        &RspLicAut = ''
+        &RspLicDia = ''
+        &RspLicBrn = ''
+        &RspLicGrn = ''
+        &FchAux = &FchAux + 1
+    enddo
+    &Fch = ''
+    &RspLicAut = ''
+    &RspLicDia = ''
+    &RspLicBrn = ''
+    &RspLicGrn = ''
+    for &i = (dow(&FchAux) + 1) to 8 step 1
+        load
+    endfor
+EndEvent  // sbfCalendario.load
+
+Sub 'Color'
+    do case
+    case &AusTpoColor = 'BLU'
+        if &EsFer = 'N'
+            &Fch.ForeColor = rgb(0, 0, 0)
+            &RspLicAut.ForeColor = rgb(0, 0, 255)
+            &RspLicDia.ForeColor = rgb(255, 0, 0)
+        else
+            &Fch.ForeColor = rgb(160, 160, 160)
+            &RspLicAut.ForeColor = rgb(160, 160, 255)
+            &RspLicDia.ForeColor = rgb(255, 160, 160)
+        endif
+    case &AusTpoColor = 'BRW'
+        if &EsFer = 'N'
+            &Fch.ForeColor = rgb(0, 0, 0)
+            &RspLicBrn.ForeColor = rgb(128, 64, 0)
+            &RspLicDia.ForeColor = rgb(255, 0, 0)
+        else
+            &Fch.ForeColor = rgb(160, 160, 160)
+            &RspLicBrn.ForeColor = rgb(255, 192, 68)
+            &RspLicDia.ForeColor = rgb(255, 160, 160)
+        endif
+    case &AusTpoColor = 'GRN'
+        if &EsFer = 'N'
+            &Fch.ForeColor = rgb(0, 0, 0)
+            &RspLicGrn.ForeColor = rgb(0, 128, 64)
+            &RspLicDia.ForeColor = rgb(255, 0, 0)
+        else
+            &Fch.ForeColor = rgb(160, 160, 160)
+            &RspLicGrn.ForeColor = rgb(0, 192, 128)
+            &RspLicDia.ForeColor = rgb(255, 160, 160)
+        endif
+    endcase
+EndSub  // 'Color'
+
+
+====== PROPERTIES =======
+Name -> LicenciasXFechaCalendario
+Description -> Ausencias en rango de fechas
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+STD_FUNC_OBJECT -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Public
+IsDefault -> False

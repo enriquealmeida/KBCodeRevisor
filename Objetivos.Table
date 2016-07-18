@@ -1,0 +1,18 @@
+======OBJECT = Objetivos.Table === Objetivos=====
+*ObjId  Id6- Null=False
+ ObjDsc  DMDescLarga- Null=False
+ ObjFch  Fecha- Null=False
+ ObjTpoId  Codigo3- Null=False
+ ObjStsId  Codigo3- Null=False
+ ObjFchRev  Fecha- Null=False
+ PolId  Codigo10- Null=False
+ PrcActId  Codigo10- Null=True
+ ObjIndMeta  DESC50- Null=True
+ IndId  Codigo10- Null=True
+ ObjTxtInicial  ObservacionesCorta- Null=True
+ UltimoPcjAvance  DMPcj-DevuelveUltimoPorcentajeDeAvance(ObjId) Null=False
+
+====== PROPERTIES =======
+Name -> Objetivos
+Description -> Objetivos
+CLUSTERIDX -> Artech.Genexus.Common.CustomTypes.TableIndexReference

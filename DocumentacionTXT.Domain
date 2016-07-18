@@ -1,0 +1,22 @@
+======OBJECT = DocumentacionTXT.Domain === Documentacion TXT=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-04-24T12:35:31.0000000Z" checksum="f5f89081e74d779df4146287f2c86b34" fullyQualifiedName="DocumentacionTXT" guid="291c6dc2-e2f7-4f7c-a133-bb29e3cd902c" name="DocumentacionTXT" type="00972a17-9975-449e-aab1-d26165d51393" description="Documentacion TXT">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DocumentacionTXT</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:LongVarChar</Value></Property><Property><Name>ControlType</Name><Value>Edit</Value></Property><Property><Name>FCKEditor_Toolbar</Name><Value>Basic</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DocumentacionTXT
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 8
+ControlType -> 2
+IsDefault -> False

@@ -1,0 +1,69 @@
+======OBJECT = WWConsolidadoDS.DataSelector === WWConsolidado DS=====
+<Object parent="MOD_Consolidado.WorkWithPlusConsolidado" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="d46e0751-1da2-0116-2576-374aa0fb4875" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-06-27T16:45:53.0000000Z" lastUpdate="2016-06-27T16:36:10.0000000Z" checksum="240dd75dd414b700c84aba8b7c135b5a" fullyQualifiedName="MOD_Consolidado.WWConsolidadoDS" guid="31bb55f7-e2bd-46db-b6a0-57103396786e" name="WWConsolidadoDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWConsolidado DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[CliId = &CliId when not &CliId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[KBId = &KBId when not &KBId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[MTCnsEstId = &MTCnsEstId when not &MTCnsEstId.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="CliId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="KBId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>KBId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:KBId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="MTCnsEstId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>MTCnsEstId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:MTCnsEstId</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliId</Name>
+        <Description>Cli Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>KBId</Name>
+        <Description>KBId</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>MTCnsEstId</Name>
+        <Description>MTCns Est Id</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWConsolidadoDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Consolidado.WorkWithPlusConsolidado</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWConsolidadoDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-130
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 130
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

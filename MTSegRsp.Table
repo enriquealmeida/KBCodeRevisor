@@ -1,0 +1,9 @@
+======OBJECT = MTSegRsp.Table === Seguimiento del responsable=====
+*RspId  DMUsuarios- Null=False
+*SegTpoRef  DMTpoReferencia- Null=False
+*SegRef  Codigo10- Null=False
+ SegVerRango  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> MTSegRsp
+Description -> Seguimiento del responsable

@@ -1,0 +1,84 @@
+======OBJECT = PMDFTpo.Procedure === Chequea Tipo de datos=====
+
+=== RULES ===
+Parm(in:&MDTipo , in:&MDVal , out:&Error );
+
+
+=== PROCEDURE SOURCE ===
+&Error =4
+
+    do case
+        Case &MDTipo ='N'
+            Do 'numerico'
+        Case &MDTipo ='A'
+            Do 'caracter'
+        Case &MDTipo ='D'
+            Do 'date'
+        Case &MDTipo ='T'
+            Do 'Time'
+    endcase
+
+Sub 'Caracter'
+&Error =0
+EndSub
+
+Sub 'Date'
+&dd = val(Substr(trim(&MDVal ),1,2))
+&Barra1 =Substr(trim(&MDVal ),3,1)
+&mm= val(Substr(trim(&MDVal ),4,2))
+&Barra2= Substr(trim(&MDVal ),6,1)
+&yyyy = val(Substr(trim(&MDVal ),7,4))
+
+&date = YMDtoD(&yyyy,  &mm, &dd)  //Ctod(trim(&MDVal ))
+
+if null(&date )
+    &Error =1
+else
+    if &Barra1 <>"/"  or  &Barra2 <>"/"
+        &Error =4
+    else
+        if len(trim(&MDVal )) <> 10 //   31/12/1999
+            &Error =5
+        else
+            &Error =0
+        endif
+    endif
+endif
+EndSub
+
+Sub 'Time'
+&DataC = DToC(&Today ) + " " + trim(&MDVal )
+&dataT =CtoT( &DataC  )
+if null(&dataT )
+    &Error =2
+else
+    &Error =0
+endif
+    
+EndSub
+
+Sub 'Numerico'
+    &Len = len(&MDVal )
+    &i =1
+    &IsDig ='S'
+    Do while &i<=&Len and &IsDig='S'
+        &Carac = Substr(&MDVal ,&i,1)
+        PFisDig.call(&Carac,&IsDig)
+        if &IsDig ='N'
+            &Error =3
+        endif
+        &i += 1
+    EndDo
+    if &IsDig = 'S'
+        &Error = 0
+    endif
+EndSub
+
+
+====== PROPERTIES =======
+Name -> PMDFTpo
+Description -> Chequea Tipo de datos
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+ObjectVisibility -> Private
+IsDefault -> False

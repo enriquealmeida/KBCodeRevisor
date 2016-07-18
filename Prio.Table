@@ -1,0 +1,8 @@
+======OBJECT = Prio.Table === Prioridad de las solicitudes=====
+*PrbPrio  Prioridad- Null=False
+ PrbPrioDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> Prio
+Description -> Prioridad de las solicitudes
+CACHE_LEVEL -> 3

@@ -1,0 +1,9 @@
+======OBJECT = MTMon.Table === Monedas=====
+*MonId  DMMoneda- Null=False
+ MonDsc  DESC- Null=False
+ MonSmb  Codigo10- Null=False
+
+====== PROPERTIES =======
+Name -> MTMon
+Description -> Monedas
+CACHE_LEVEL -> 3

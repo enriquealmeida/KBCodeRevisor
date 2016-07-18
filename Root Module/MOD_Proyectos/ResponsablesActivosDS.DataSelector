@@ -1,0 +1,26 @@
+======OBJECT = ResponsablesActivosDS.DataSelector === Responsables Activos DS=====
+<Object parent="MOD_Proyectos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="63d3e12e-5311-4674-aab2-7be88ec310ed" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-27T17:15:40.0000000Z" lastUpdate="2016-05-26T18:35:49.0000000Z" checksum="ef04d57b0b9ad4c185d62454ab66d9ad" fullyQualifiedName="MOD_Proyectos.ResponsablesActivosDS" guid="4423a631-f4b6-4959-b45f-b239c5be6b28" name="ResponsablesActivosDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="Responsables Activos DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[RspActivo=true and RspId <> '*NADIE' and RspChequeoAtrasos
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Properties />
+    </Variables>
+    <Parameters />
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ResponsablesActivosDS</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ResponsablesActivosDS
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+ObjectVisibility -> Private
+IsDefault -> False

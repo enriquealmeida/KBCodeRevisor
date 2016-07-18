@@ -1,0 +1,14 @@
+======OBJECT = PrbTpoDsc.Attribute === Descripcion Tipo de Problema=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> PrbTpoDsc
+Description -> Descripcion Tipo de Problema
+HORIZONTAL_DESCRIPTION -> Descripcion Tipo de Problema
+VERTICAL_DESCRIPTION -> Descripcion Tipo de Problema
+ContextualTitle -> Descripcion Tipo de Problema
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

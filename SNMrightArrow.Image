@@ -1,0 +1,24 @@
+======OBJECT = SNMrightArrow.Image === SNMright Arrow=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-04T15:51:45.0000000Z" lastUpdate="2012-05-30T16:08:25.0000000Z" checksum="3a8212bbd2219edbd41c1308ac61d072" fullyQualifiedName="SNMrightArrow" guid="bc718790-a306-42ff-a32c-071891021287" name="SNMrightArrow" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="SNMright Arrow">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="SNMrightArrow.png" description="SNMright Arrow.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVY
+dFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAA1klEQVQoU2M8efmeCgMDwwsg/gLEBAETUAUPEN8A4kCCqoEKQBouQBWuA9JbgBhkI04A0gAC66G0
+N5C+CsTtUJsxNMI07ECSYQOyK6DOjELXAdOwGyiB7mlpoNhSID4MxAYwjTANv4ACIE3YgA1Q8AwQTwNiIZgGkEJm3F5FyMA0gNzthEPDEaC4CRBnAfE7mAZX
+LKHyFCgWDcS2QHwB3Q8eSKaD/NMBxBpAvAzdVpgNsFjeClSgDcSVQIw1qYA0GADxXyD2geI7+DwP0gAyCWQqyHSCAADyCSKWYS2+LQAAAABJRU5ErkJggg==
+
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>SNMrightArrow.png</Value></Property><Property><Name>Description</Name><Value>SNMright Arrow.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\afernandez\Desktop\SNMrightArrow.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SNMrightArrow</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> SNMrightArrow
+IsDefault -> False

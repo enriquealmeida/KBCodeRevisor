@@ -1,0 +1,170 @@
+======OBJECT = WorkWithPlusSis.WorkWithPlus === Work With Plus Sis=====
+<Object parent="MOD_Proyectos.Sis" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="e00e686d-954f-48eb-a6a8-dfa9509ef30a" user="" versionDate="2016-05-05T16:44:40.0000000Z" lastUpdate="2016-05-05T15:01:37.0000000Z" checksum="ad75f1b321a0da08c9ebda6ab5c020c7" fullyQualifiedName="MOD_Proyectos.WorkWithPlusSis" guid="e71d30fd-c3b3-0070-12a0-d99e72646c77" name="WorkWithPlusSis" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Sis">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWSis" defaultSecFuntionKey="WWSis">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Sis" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Sis" SecFuntionKeyINS="WWSis_Insert" defaultSecFuntionKeyINS="WWSis_Insert" SecFuntionKeyUPD="WWSis_Update" defaultSecFuntionKeyUPD="WWSis_Update" SecFuntionKeyDLT="WWSis_Delete" defaultSecFuntionKeyDLT="WWSis_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;SisTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="SisTitle" defaultControlName="SisTitle" caption="Sistemas" defaultCaption="Sistemas" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellThemeClass="" colSpan="1" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" cellThemeClass="" childrenOrderedList="2;22;SisId-2;22;SisDsc">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup caption="&lt;default&gt;" themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete" showDescription="True">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;SisDsc-4;39;-;76;-5;41;" id="e00e686d-954f-48eb-a6a8-dfa9509ef30a:1" defaultId="e00e686d-954f-48eb-a6a8-dfa9509ef30a:1" name="Sis" defaultName="Sis">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Sistemas" defaultDescription=" Sistemas" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.WWSis" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportWWSis" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportReportWWSis" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Proyectos.WWSisDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;SisTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="SisTitle" defaultControlName="SisTitle" caption="Sistemas" defaultCaption="Sistemas" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" cellThemeClass="" colSpan="1" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" cellWidth_S="8%" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup caption="&lt;default&gt;" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%" showDescription="True">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;30;-4;12;SisDsc">
+              <orders childrenOrderedList="4;13;=SisDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order name="Sistema" defaultName="Sistema">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" />
+                </order>
+              </orders>
+              <filterAttribute name="SisDsc" defaultName="SisDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="Attribute" condition="SisDsc like &amp;SisDsc when not &amp;SisDsc.IsEmpty()" defaultCondition="SisDsc like &amp;SisDsc when not &amp;SisDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" allowSelection="False" allowHovering="True" childrenOrderedList="4;17;Delete-4;17;Update-4;23;SisId-4;23;SisDsc">
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" visible="False" defaultVisible="False" cellVisible_E="False" defaultCellVisible_E="False" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="SisDsc like &amp;TFSisDsc when not &amp;TFSisDsc.IsEmpty()" defaultFilterCondition="SisDsc like &amp;TFSisDsc when not &amp;TFSisDsc.IsEmpty()" />
+          <standardAction name="Delete" defaultName="Delete" />
+        </grid>
+      </table>
+    </selection>
+    <prompt description="Select Sistemas" defaultDescription="Select Sistemas" childrenOrderedList=";77;SisDsc;;76;-;02;TableMain" level="Sis" defaultLevel="Sis" ShowMasterPageWhenPopUp="False" defaultShowMasterPageWhenPopUp="False">
+      <GenexusPatterns_Objects>
+        <Object Id="Prompt" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.PromptSis" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" height="493" defaultHeight="493" type="Responsive" defaultType="Responsive" childrenOrderedList=";02;TableHeader-;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList=";02;TableFilters">
+          <table name="TableFilters" defaultName="TableFilters" numberOfColumns="4" defaultNumberOfColumns="4" defaultNumberOfColumns_S="4" defaultNumberOfColumns_M="4" defaultNumberOfColumns_L="4" type="Responsive" defaultType="Responsive" childrenOrderedList=";30;-;12;SisDsc">
+            <orders childrenOrderedList=";13;=SisDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+              <order childrenOrderedList=";26;SisDsc;=SisDsc.ContextualTitle" name="=SisDsc.ContextualTitle" defaultName="=SisDsc.ContextualTitle">
+                <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" />
+              </order>
+            </orders>
+            <filterAttribute name="SisDsc" defaultName="SisDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="SisDsc like &amp;SisDsc when not &amp;SisDsc.IsEmpty()" defaultCondition="SisDsc like &amp;SisDsc when not &amp;SisDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          </table>
+        </table>
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList=";17;Select-;23;SisId-;23;SisDsc" columnSelector="False" defaultColumnSelector="False">
+          <standardAction name="Select" defaultName="Select" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" visible="False" defaultVisible="False" cellVisible_E="False" defaultCellVisible_E="False" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="SisDsc like &amp;TFSisDsc when not &amp;TFSisDsc.IsEmpty()" defaultFilterCondition="SisDsc like &amp;TFSisDsc when not &amp;TFSisDsc.IsEmpty()" />
+        </grid>
+      </table>
+      <parameters>
+        <parameter name="SisDsc" defaultName="SisDsc" />
+      </parameters>
+    </prompt>
+    <view childrenOrderedList="5;14;SisId;5;41;-5;06;Main Table-5;38;" caption="SisDsc.ToString()" defaultCaption="SisDsc.ToString()">
+      <GenexusPatterns_Objects>
+        <Object Id="View" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.ViewSis" />
+      </GenexusPatterns_Objects>
+      <parameters>
+        <parameter name="SisId" defaultName="SisId" />
+      </parameters>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableContentNoMargin" defaultThemeClass="TableContentNoMargin" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="5;06;TableTitle-5;29;WorkWithLink-5;34;">
+        <table name="TableTitle" defaultName="TableTitle" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" cellWidth_E="58%" defaultCellWidth_E="58%" cellThemeClass="CellViewTableTitle CellWidthAuto" defaultCellThemeClass="CellViewTableTitle CellWidthAuto" childrenOrderedList="5;27;ViewTitle-5;21;SisDsc">
+          <textBlock controlName="ViewTitle" defaultControlName="ViewTitle" caption="Sistemas :: " defaultCaption="Sistemas :: " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewTextBlockTitle" defaultCellThemeClass="CellViewTextBlockTitle" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeTitleWWP" defaultThemeClass="AttributeTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewAttributeTitle" defaultCellThemeClass="CellViewAttributeTitle" showDescription="False" defaultShowDescription="False" mergeWithPrevious="False" />
+        </table>
+        <workWithLink themeClass="TextBlockLink" defaultThemeClass="TextBlockLink" cellWidth_E="42%" defaultCellWidth_E="42%" cellThemeClass="CellAlignRightWithMargin CellWidthAuto" defaultCellThemeClass="CellAlignRightWithMargin CellWidthAuto" align="Right" defaultAlign="Right" />
+        <tabsPosition cellThemeClass="CellViewTabsPosition" defaultCellThemeClass="CellViewTabsPosition" colSpan="999" defaultColSpan="999" startCol="1" defaultStartCol="1" />
+      </table>
+      <tabs childrenOrderedList="SisGeneral;42;General-SisSistemasClienteWC;43;SistemasCliente-SisSolicitudesWC;43;Solicitudes-SisSolicitudesTagsWC;43;SolicitudesTags">
+        <tabularTab childrenOrderedList="SisGeneral;04;Main Table" name="General" defaultName="General" code="General" defaultCode="General" wcname="SisGeneral" defaultWcname="SisGeneral">
+          <GenexusPatterns_Objects>
+            <Object Id="TabTabular" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.SisGeneral" />
+          </GenexusPatterns_Objects>
+          <table name="Table" defaultName="Table" themeClass="" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="SisGeneral;28;ErrorViewer-SisGeneral;04;TableAttributes-SisGeneral;04;TableActions">
+            <errorViewer />
+            <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="SisGeneral;21;SisId-SisGeneral;21;SisDsc">
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" visible="False" defaultVisible="False" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionCellThemeClass="" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-SisDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionCellThemeClass="" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+            </table>
+            <table name="TableActions" defaultName="TableActions" themeClass="TableActions" defaultThemeClass="TableActions" numberOfColumns="0" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="SisGeneral;88;Actions">
+              <actionGroup caption="&lt;default&gt;" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="SisGeneral;91;Update-SisGeneral;91;Delete" showDescription="True">
+                <standardAction caption="GXM_update" defaultCaption="GXM_update" buttonClass="Button" defaultButtonClass="Button" name="Update" defaultName="Update" />
+                <standardAction caption="GX_BtnDelete" defaultCaption="GX_BtnDelete" buttonClass="Button" defaultButtonClass="Button" name="Delete" defaultName="Delete" />
+              </actionGroup>
+            </table>
+          </table>
+        </tabularTab>
+        <gridTab childrenOrderedList="SisSistemasClienteWC;35;-SisSistemasClienteWC;02;Main Table" name="Sistemas del Cliente" defaultName="Sistemas del Cliente" code="SistemasCliente" defaultCode="SistemasCliente" wcname="SisSistemasClienteWC" defaultWcname="SisSistemasClienteWC" panelTheme="" collapsedByDefault="True" defaultCollapsedByDefault="True">
+          <GenexusPatterns_Objects>
+            <Object Id="TabGrid" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Proyectos.SisSistemasClienteWC" />
+            <Object Id="ExportTabGrid" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportSisSistemasClienteWC" />
+            <Object Id="ExportReportTabGrid" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Proyectos.ExportReportSisSistemasClienteWC" />
+          </GenexusPatterns_Objects>
+          <transaction transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.SistemasCliente" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.SistemasCliente" />
+          <table name="TableGridHeader" defaultName="TableGridHeader" defaultThemeClass="Table100x100" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" colSpan="999" defaultColSpan="999" childrenOrderedList="SisSistemasClienteWC;28;ErrorViewer-SisSistemasClienteWC;02;TableHeader-SisSistemasClienteWC;31;">
+            <errorViewer />
+            <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="SisSistemasClienteWC;27;SistemasClienteTitle-SisSistemasClienteWC;02;TableActions-SisSistemasClienteWC;02;TableRightHeader">
+              <textBlock controlName="SistemasClienteTitle" defaultControlName="SistemasClienteTitle" caption="Sistemas del Cliente" defaultCaption="Sistemas del Cliente" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" cellVisible_E="False" defaultCellVisible_E="False" />
+              <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" cellWidth_S="8%" cellThemeClass="CellWidthAuto" defaultCellThemeClass="CellWidthAuto" />
+              <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="SisSistemasClienteWC;88;Actions-SisSistemasClienteWC;02;TableFilters">
+                <actionGroup caption="" defaultCaption="" type="GX Action Group" defaultType="GX Action Group" name="Actions" defaultName="Actions" childrenOrderedList="SisSistemasClienteWC;91;Insert" cellWidth_S="8%" defaultCellWidth_S="8%" showDescription="False" defaultShowDescription="False">
+                  <standardAction name="Insert" defaultName="Insert" />
+                  <standardAction name="Export" defaultName="Export" />
+                  <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+                </actionGroup>
+                <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="SisSistemasClienteWC;30;-SisSistemasClienteWC;12;CliNom">
+                  <orders descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top" />
+                  <filterAttribute name="CliNom" defaultName="CliNom" description="=Attribute.Title" defaultDescription="=Attribute.Title" condition="CliNom like &amp;CliNom when not &amp;CliNom.IsEmpty()" defaultCondition="CliNom like &amp;CliNom when not &amp;CliNom.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+                </table>
+              </table>
+            </table>
+            <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" allowSelection="False" allowHovering="True" childrenOrderedList="SisSistemasClienteWC;17;Delete-SisSistemasClienteWC;17;Update-SisSistemasClienteWC;23;CliId-SisSistemasClienteWC;23;CliNom" columnSelector="False" defaultColumnSelector="False">
+              <standardAction name="Update" defaultName="Update" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" filterCondition="CliId = &amp;TFCliId when not &amp;TFCliId.IsEmpty()" defaultFilterCondition="CliId = &amp;TFCliId when not &amp;TFCliId.IsEmpty()" />
+              <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CliNom" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CliNom" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CliNom like &amp;TFCliNom when not &amp;TFCliNom.IsEmpty()" defaultFilterCondition="CliNom like &amp;TFCliNom when not &amp;TFCliNom.IsEmpty()" />
+              <standardAction name="Delete" defaultName="Delete" />
+            </grid>
+          </table>
+        </gridTab>
+      </tabs>
+    </view>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusSis</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Proyectos.Sis</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 90
+Name -> WorkWithPlusSis
+ObjectVisibility -> Private
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-90
+IsDefault -> False

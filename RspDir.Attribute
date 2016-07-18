@@ -1,0 +1,14 @@
+======OBJECT = RspDir.Attribute === Dirección del Responsable=====
+VARCHAR(1024)
+
+
+====== PROPERTIES =======
+Name -> RspDir
+Description -> Dirección del Responsable
+HORIZONTAL_DESCRIPTION -> Dirección
+VERTICAL_DESCRIPTION -> Dirección
+ContextualTitle -> Dirección
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

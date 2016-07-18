@@ -1,0 +1,37 @@
+======OBJECT = BlueBar.Image === Blue Bar=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-26T23:50:15.0000000Z" checksum="a3d7351b2db98caaabd181d1d2808ecc" fullyQualifiedName="BlueBar" guid="9f1df5c7-b3ef-4b3b-a3d6-cc6112bb4138" name="BlueBar" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Blue Bar">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="BlueBar.png" description="Blue Bar.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAABRIAAAAECAIAAAB9dFTEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADdYAAA3WAZBveZwAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAABRBJREFUaEPt19eSHEUQhWEudwU8G8KD8N4LCe+NngEjvLdCeO+t0GNRmV1VnflnTndHsBK7qCO+
+S21opqerzjlnbR05Gfy99fQCT51Y4K+tJ5f4c+uJWX+IxxPbzu/bj836TTw661fxyLRfxMOzfhYPTfupenDaj+KBaT9U90/7vrpvwnejezf5ttg3uGfCN6PD
+E74eHdrkK+fuTb50Dqa+cO5KfU53pj6jO1Kf0u3RJ3Rb6mM4+9boeOKW6CO6OTqWuCn6MHFj9EHiBng/cT28l7sO3s1da72z0TXW2xtdLc6p3spdZb250ZXd
+G1Ou6F6fcmDw2pTLu1enXNa9MuXSwctTLhm8NOPiwYszLipe6M7d5MLi6IwLiufnnV88N2//s/POK55ZIPxhCh8gF75OLjychD5VPGdlfxH5gfCTJfS3xguQ
+0DcHrxPpG4jXMqEvM15yakcDR4b0lOHoUTuwOMjUjj+uBcfcJLhkRnIXDfcSLyvH3G+4+hxzW+IiHfmLF9fyyF/juOQrHwcIiwqxEqKnQkiFIKsQeSEWBaIz
+xGuFIGZYKwS6QvQL1INQIQRqhkIhESgtCvVGoAIplCVWKYXSxUrWoMKx4DW2DbIoGrZbsnYa2lGHvrrNEtvYxssybPTyzFLt9SrOiu4NrZ5V3+sDgcPBG7aG
+wAbxhuXCOeMNC4izKBj2FEdWUKaZWWoYcSMZeph+QRmMnJCZMj85SDMYtqkyis1GXmfzhHU2F+YSwf3irLO5QD6FDKuQdiERBVIzJGuFDGZOK2S5QuoLNIPQ
+HgQahkIXEegrCs1GoP0o9CS2KIW+xTbWoL2x2zW2CLIjGrZWsnEa62zu9vxsXrCcl87mnVrO4U82wQfIha+T0OeAh5MID7mxv8iunM3tZcZLTu1o4MjQOpsL
+f/HiWh75axyXfOXjAGFRIVZC9FQIqRBkFSIvxKJAdIZ4rRDEDGuFQFeIfoF6ECqEQM1QKCQCpUWh3ghUIIWyxCqlULpYyRpUOBa8xrZBFkXDdkvWTmOdzd06
+mzsM29Tpnc0n+E1y4bkk1tk8aGcMB89pZxVnmNrJx43gmEsE94vzf5nNBaKi8qGC1KmQTyHDKqRdSESB1AzJWiGDmdMKWa6Q+gLNQKFAsGEodBGBvqLQbATa
+j0JPYotS6FtsYw3aG7tdY4sgO6JhayUbp7FkNhdj30UPNnpvZp/2egtnO/d252wududsLk7/bB7k4zn8synhA+TC10mss3nQjgaODK2zufAXL67lkb/GcclX
+Pg4QFhViJURPhZAKQVYh8kImCkRniNcKQcywVgh0hegXqAehQgjUDIVCIlBaFOqNQP9RaEqsUgqli5WsQYVjwWtsG2RRNGy3ZO001tncrbO5w7BNrbN5R2dz
+Ed7IxN6dzUW7RHC/OHt3Nhc+DBAVlQ8VpE6FfAoZViHtQiIKpGZI1goZzJxuEOch9QWagUKBYMNQ6CICfUWh2Qi0H4WexBal0LcECplCe2O3a2wRZEc0bK1k
+4zROyWwuUKmN3sLZzr0ls7n4b2bzwuWMfRXIbB6XM/bbaAdnc3EqlvO/Ev7rXPgiufBYcuEhN/3nUOEnSyyZzUs2c3HGzGZcL846mwcIqRBkFSIvZKJAdIZ4
+rZDCDGuFQFeIfoF6ECqEQM1QKCQCpUWh3gj0H4WmxB6lULpYyRpUOBa8xrZBFkXDdkvWTuMMms0YIME6mzsM25SdzUdO/gOBHuVwxrlInQAAAABJRU5ErkJg
+gg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>BlueBar.png</Value></Property><Property><Name>Description</Name><Value>Blue Bar.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\jgomez\Downloads\BlueBar.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>BlueBar</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> BlueBar
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

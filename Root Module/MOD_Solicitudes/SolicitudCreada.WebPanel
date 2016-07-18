@@ -1,0 +1,22 @@
+======OBJECT = SolicitudCreada.WebPanel === Solicitud Creada=====
+
+=== RULES ===
+parm(in:PryId, in:PrbId);
+
+
+=== EVENTS SOURCE ===
+Event 'Abrir Solicitud'
+	Solicitudes.Call(TrnMode.Update, PryId, PrbId)
+EndEvent
+
+Event 'Cancel'
+   PanelControl.Call(UserId())
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> SolicitudCreada
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

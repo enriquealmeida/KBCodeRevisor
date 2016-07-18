@@ -1,0 +1,58 @@
+======OBJECT = WorkWithPlusHOEfiRspUrg.WorkWithPlus === Work With Plus HOEfi Rsp Urg=====
+<Object parent="MOD_Solicitudes.HOEfiRspUrg" parentType="c9584656-94b6-4ccd-890f-332d11fc2c25" parentGuid="d856f4c9-fbb0-40f6-8fa1-6a4212300bc5" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:49:55.0000000Z" checksum="5cd7e64ca3d0a70c17105b81f438d8f9" fullyQualifiedName="MOD_Solicitudes.WorkWithPlusHOEfiRspUrg" guid="df45ac59-ad4c-086d-3ba9-6c7530ca94b8" name="WorkWithPlusHOEfiRspUrg" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus HOEfi Rsp Urg">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="7;57;" SecFuntionKey="HOEfiRspUrg" defaultSecFuntionKey="HOEfiRspUrg">
+  <WPRoot childrenOrderedList="7;66;Main Table-7;75;LoadWWPContext" Template="WorkWithWithoutBaseTable" defaultTemplate="WorkWithWithoutBaseTable">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" type="Responsive" defaultType="Responsive" childrenOrderedList="7;28;ErrorViewer-7;66;TableHeader-7;69;Grid">
+      <errorViewer />
+      <textBlock controlName="TextBlockTitle" defaultControlName="TextBlockTitle" caption="Eficiencia de respuesta a las solicitudes urgentes" defaultCaption="Work With Title" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+      <table name="TableHeader" defaultName="TableHeader" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="7;27;TextBlockTitle-7;66;TableActions-7;66;TableFilters">
+        <table name="TableActions" defaultName="TableActions" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" cellWidth_S="8%" childrenOrderedList="7;88;Actions" />
+        <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="4" type="Responsive" defaultCellVisible_E="False" defaultCellThemeClass="CellFloatRight">
+          <variable name="PrbPrio" defaultName="PrbPrio" description="Prioridad" defaultDescription="Prioridad" themeClass="Attribute" descriptionThemeClass="Label" defaultDescriptionThemeClass="DataFilterDescription" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlInputValue="adbb33c9-0906-4971-833c-998de27e0676-PrbPrio" controlInputDescription="adbb33c9-0906-4971-833c-998de27e0676-PrbPrioDsc" domain="adbb33c9-0906-4971-833c-998de27e0676-PrbPrio" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-PrbPrio" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <table name="TableFiltroFecha" numberOfColumns="0" type="Responsive">
+            <textBlock controlName="Fechas" caption="Fechas" themeClass="Label" />
+            <table name="TableVariablesFechas" numberOfColumns="2" type="Regular">
+              <variable name="FchIni" defaultName="Fecha" description="FchIni" defaultDescription="Fecha" themeClass="Attribute" descriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" domain="00972a17-9975-449e-aab1-d26165d51393-Fecha" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-Fecha" showDescription="False" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+              <variable name="FchFin" defaultName="Fecha" description="Fecha Final" defaultDescription="Fecha" themeClass="Attribute" descriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" domain="00972a17-9975-449e-aab1-d26165d51393-Fecha" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-Fecha" showDescription="False" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+          <variable name="CliId" defaultName="CliId" description="Cliente" defaultDescription="Cliente" themeClass="Attribute" descriptionThemeClass="Label" defaultDescriptionThemeClass="DataFilterDescription" controlInfoDef="Custom" controlType="Dynamic Combo Box" controlInputValue="adbb33c9-0906-4971-833c-998de27e0676-CliId" controlInputDescription="adbb33c9-0906-4971-833c-998de27e0676-CliId" domain="adbb33c9-0906-4971-833c-998de27e0676-CliId" defaultDomain="adbb33c9-0906-4971-833c-998de27e0676-CliId" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+        <actionGroup name="Actions" defaultName="Actions" descriptionThemeClass="Label" defaultDescriptionThemeClass="Label" align="Center">
+          <standardAction name="Refresh" />
+          <standardAction name="Cancel" />
+        </actionGroup>
+      </table>
+      <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell">
+        <gridVariable name="Dsc" defaultName="Descripcion" description="Desc" defaultDescription="Descripcion" domain="00972a17-9975-449e-aab1-d26165d51393-Descripcion" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-Descripcion" />
+        <gridVariable name="CntSol" description="Cantidad de solicitudes" dataType="Basic" />
+        <gridVariable name="CntDias" defaultName="Dias" description="Cantidad de días" defaultDescription="Dias" domain="00972a17-9975-449e-aab1-d26165d51393-Dias" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-Dias" />
+        <gridVariable name="Promedio" description="Promedio" dataType="Basic" basicLength="7" basicDecimals="2" />
+        <gridVariable name="Tipo" defaultName="Codigo3" description="Tipo" defaultDescription="Codigo3" domain="00972a17-9975-449e-aab1-d26165d51393-Codigo3" defaultDomain="00972a17-9975-449e-aab1-d26165d51393-Codigo3" />
+      </grid>
+      <webComponent name="WCDetalle">
+        <parameters />
+      </webComponent>
+    </table>
+    <steps />
+    <events>
+      <eventBlock BlockName="LoadWWPContext" defaultBlockName="" />
+    </events>
+  </WPRoot>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusHOEfiRspUrg</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.HOEfiRspUrg</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c9584656-94b6-4ccd-890f-332d11fc2c25
+FolderId -> 268
+Name -> WorkWithPlusHOEfiRspUrg
+ObjectVisibility -> Private
+KBObject -> c9584656-94b6-4ccd-890f-332d11fc2c25-268
+IsDefault -> False

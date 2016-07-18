@@ -1,0 +1,14 @@
+======OBJECT = AusTpoDsc.Attribute === Descripción Tipo Ausencia=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> AusTpoDsc
+Description -> Descripción Tipo Ausencia
+HORIZONTAL_DESCRIPTION -> Descripción Tipo Ausencia
+VERTICAL_DESCRIPTION -> Tipo Ausencia
+ContextualTitle -> Tipo Ausencia
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,10 @@
+======OBJECT = MTLeg.Table === Legajos=====
+*RspId  DMUsuarios- Null=False
+*LegFchId  Fecha- Null=False
+*LegTpoId  Codigo3- Null=False
+ LegObs  ObservacionesCorta- Null=False
+ LegQuien  Codigo10- Null=False
+
+====== PROPERTIES =======
+Name -> MTLeg
+Description -> Legajos

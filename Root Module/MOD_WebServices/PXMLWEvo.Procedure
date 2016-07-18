@@ -1,0 +1,116 @@
+======OBJECT = PXMLWEvo.Procedure === Escribe XML grafico evolución=====
+
+=== RULES ===
+parm(in:&CliId, in:&FchIniPar , in:&FchFnlPar, in:&EvolTpo, in:&Acum, in:&MonId, in:&UsarFecha);
+
+
+=== PROCEDURE SOURCE ===
+&FchIni = Ymdtod(Year(&FchIniPar), month(&FchIniPar), 01)
+&FchFnl = eom(&FchFnlPar)
+
+&FchIniA = Ymdtod(Year(&FchIni), month(&FchIni), 01)
+&FchFnlA = eom(&FchFnlA)
+
+if &FchFnlA > &FchFnl
+    &FchFnlA = &FchFnl
+endif
+do while &FchFnlA <= &FchFnl
+    if &Acum = 'N'
+        &vCob = 0
+        &vPag = 0
+        &vHrs = 0
+        &vTranf = 0
+    endif
+    for each order CliId 
+    where          CliId = &CliId
+    defined by PryNom 
+        for each order PryId CpMovFch   
+//        where          CpMovFch >= &FchIniA  and  CpMovFch <= &FchFnlA
+        where          &FchIniA <= CpMovFch and CpMovFch <= &FchFnlA when &UsarFecha = 'M'
+        where          &FchIniA <= CpMovFchFac and CpMovFchFac <= &FchFnlA when &UsarFecha = 'F'
+        where          &FchIniA <= CpMovFchCob and CpMovFchCob <= &FchFnlA when &UsarFecha = 'C'
+       
+            &vHrs = &vHrs + CpMovHrs
+            if &MonId = '2222'
+                if CpMovEST = 'E'                 //Entradas
+                    &vCob = &vCob + CpMovImp
+                else
+                    if CpMovEST = 'S'             //Salidas
+                        &vPag = &vPag - CpMovImp
+                    else
+                        &vTranf = &vTranf - CpMovImp //Transferencias
+                    endif           
+                endif
+            else
+                if CpMovEST = 'E'                 //Entradas
+                    &vCob = &vCob + CpMovPesos
+                else
+                    if CpMovEST = 'S'             //Salidas
+                        &vPag = &vPag - CpMovPesos
+                    else
+                        &vTranf = &vTranf - CpMovPesos //Transferencias
+                    endif           
+                endif
+            endif
+            &vGanado = &vCob - &vPag - &vTranf
+        endfor 
+    endfor
+    &xmlcat = &xmlcat + "<category>"+ Cmonth(&FchIniA) +  "</category>"        
+    if &EvolTpo = 'H'
+        &xmlserH=&xmlserH+"<point>"+TRIM(str(&vHrs,8,0))+"</point>"
+    endif
+
+    if &EvolTpo = 'Y' //Tasa horaria
+        &vCobAux = &vCob / &vHrs
+        &vPagAux = &vPag / &vHrs
+        &vTranfAux = &vTranf / &vHrs
+        &vGanadoAux = &vGanado / &vHrs
+        &xmlserC=&xmlserC+"<point>"+TRIM(str(&vCobAux,17,2))+"</point>"
+        &xmlserP=&xmlserP+"<point>"+TRIM(str(&vPagAux,17,2))+"</point>"
+        &xmlserT=&xmlserT+"<point>"+TRIM(str(&vTranfAux,17,2))+"</point>"
+        &xmlserG=&xmlserG+"<point>"+TRIM(str(&vGanadoAux,17,2))+"</point>"
+    endif
+    if &EvolTpo = 'I' //Importes
+        &xmlserC=&xmlserC+"<point>"+TRIM(str(&vCob,17,2))+"</point>"
+        &xmlserP=&xmlserP+"<point>"+TRIM(str(&vPag,17,2))+"</point>"
+        &xmlserT=&xmlserT+"<point>"+TRIM(str(&vTranf,17,2))+"</point>"
+        &xmlserG=&xmlserG+"<point>"+TRIM(str(&vGanado,17,2))+"</point>"
+    endif
+    &FchIniA = &FchFnlA + 1
+    &FchFnlA = eom(&FchIniA)
+enddo
+
+&xmlcat="<categories>"+&xmlcat+"</categories>"
+if &EvolTpo = 'H'
+    &xmlserH="<series><name>Horas</name><points>"+&xmlserH+"</points></series>"
+else
+    &xmlserH = ""
+endif
+
+if &EvolTpo = 'I' or &EvolTpo= 'Y'
+    &xmlserG="<series><name>Ganado</name><points>"+&xmlserG+"</points></series>"
+    &xmlserC=&xmlserG+"<series><name>Entradas</name><points>"+&xmlserC+"</points></series>"
+    &xmlserP=&xmlserC + "<series><name>Salidas</name><points>"+&xmlserP+"</points></series>"
+    &xmlserT=&xmlserP+ "<series><name>Trasferencias</name><points>"+&xmlserT+"</points></series>"
+else
+    &xmlSerG = ""
+endif
+
+&XML="<gxchart>"+&xmlCat+&xmlSerH+&xmlserT+"</gxchart>"
+
+&xmlwriter.OpenResponse(&HttpResponde)
+&xmlwriter.WriteStartDocument()
+&xmlwriter.WriteRawText(&XML)
+&xmlwriter.Close()
+
+
+====== PROPERTIES =======
+Name -> PXMLWEvo
+Description -> Escribe XML grafico evolución
+IsMain -> True
+CALL_PROTOCOL -> HTTP
+STD_FUNC_OBJECT -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

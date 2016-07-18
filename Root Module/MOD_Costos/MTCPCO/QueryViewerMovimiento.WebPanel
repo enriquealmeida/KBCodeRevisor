@@ -1,0 +1,44 @@
+======OBJECT = QueryViewerMovimiento.WebPanel === Query Viewer Movimiento=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Start
+	&FchIni = &Today.AddMonths(-12)
+	&FchFin = &Today
+	do 'SeteoParametros'
+EndEvent
+
+
+
+Sub 'SeteoParametros'
+	&Parameters = new()
+	
+	&Parameter = new()
+	&Parameter.Name = "FchIni"
+	&Parameter.Value = &FchIni.ToString() //&Today.AddMonths(-6).ToString() 
+	&Parameters.Add(&Parameter)
+	
+	&Parameter = new()
+	&Parameter.Name = "FchFin"
+	&Parameter.Value = &FchFin.ToString() // &Today.ToString() 
+	&Parameters.Add(&Parameter)
+EndSub
+
+	
+
+Event 'Actualizo'
+	do 'SeteoParametros'
+  Refresh
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> QueryViewerMovimiento
+MasterPage -> Artech.Genexus.Common.CustomTypes.WebPanelReference
+IsMain -> True
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 19
+ObjectVisibility -> Public
+IsDefault -> False

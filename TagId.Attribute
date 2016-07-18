@@ -1,0 +1,20 @@
+======OBJECT = TagId.Attribute === Tag Id=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> TagId
+HORIZONTAL_DESCRIPTION -> Tag
+VERTICAL_DESCRIPTION -> Tag
+ContextualTitle -> Tag
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttCollection -> False
+AUTONUMBER_START -> 1
+AUTONUMBER_STEP -> 1
+AUTONUMBER_FORREPLICATION -> True
+idCHARCASE -> idCHARCASE_UPPER
+ControlType -> 2
+EditAutocomplete -> 0
+IsDefault -> False

@@ -1,0 +1,9 @@
+======OBJECT = MDAPIObj.Folder === MDAPIObj=====
+<Object parent="MD" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="c591cc23-7d1c-4a8c-8e85-596c2f4e6e60" user="" versionDate="2016-03-09T20:44:33.0000000Z" lastUpdate="2016-03-09T20:13:09.0000000Z" checksum="5977abe36701cbb445ea99c7dd00b54a" fullyQualifiedName="MD.MDAPIObj" guid="81878d42-26a1-43fe-b56a-6113960bc1d0" name="MDAPIObj" type="00000000-0000-0000-0000-000000000008" description="MDAPIObj">
+  <Properties><Property><Name>Name</Name><Value>MDAPIObj</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+Name -> MDAPIObj
+IsDefault -> False

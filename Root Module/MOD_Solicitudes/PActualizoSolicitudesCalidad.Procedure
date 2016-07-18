@@ -1,0 +1,46 @@
+======OBJECT = PActualizoSolicitudesCalidad.Procedure === Actualizo Solicitudes Calidad=====
+
+=== RULES ===
+parm(IN: PrbId);
+
+
+=== PROCEDURE SOURCE ===
+for each 
+        if PrbTpoCal <> 'NOC' and PrbTpoCal <> 'ACO' and PrbTpoCal <> 'APR' and PrbTpoCal <> 'NCP'
+            return //NO tengo que cambiar nada
+        else
+         do case 
+            Case PrbTpoCal = 'NOC' 
+              &txtFooter =  'ACCIONES INMEDIATAS' + newline()
+              &txtFooter +='ANALISIS DE CAUSAS' + newline()
+              &txtFooter += 'ACCIONES CorRECTIVAS ' + newline()
+              &txtFooter += 'VERifICACION' + newline()
+              &txtFooter += 'VERifICACION DE LA EFECTIVIDAD DE LA ACCION'
+           case PrbTpoCal = 'ACO' or PrbTpoCal = 'APR'
+               &txtFooter =  'DESCRIPCION ACCION CorRECTIVA O PREventIVA SI CorRESPONDE' + newline()
+               &txtFooter += 'VERifICACION' + newline()
+               &txtFooter += 'VERifICACION DE LA EFECTIVIDAD DE LA ACCION'
+           Case PrbTpoCal = 'NCP'
+              &txtFooter  ='ANALISIS DE CAUSAS' + newline()
+              &txtFooter += 'ACCIONES PREventIVAS ' + newline()
+              &txtFooter += 'VERifICACION' + newline()
+              &txtFooter += 'VERifICACION DE LA EFECTIVIDAD DE LA ACCION'
+          endcase
+               
+           if StrSearch(PrbTxt,'VERifICACION',1) = 0  //SOLO AGREGO SI NO TIENE EL TEXTO DE LA MODifICACION 
+                   PrbTxt = PrbTxt + &txtFooter
+           endif
+        
+        endif 
+endfor
+commit
+
+
+====== PROPERTIES =======
+Name -> PActualizoSolicitudesCalidad
+Description -> Actualizo Solicitudes Calidad
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

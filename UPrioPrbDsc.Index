@@ -1,0 +1,13 @@
+======OBJECT = UPrioPrbDsc.Index === =====
+<Object Type="Unique" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T17:07:42.0000000Z" checksum="ef0fb833fdbed7d1bbe871d8bf4c17e6" fullyQualifiedName="UPrioPrbDsc" guid="6cfd0f0c-2785-4734-94b1-2686b164eac7" name="UPrioPrbDsc" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PrbPrioDsc</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>UPrioPrbDsc</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> UPrioPrbDsc
+Description -> 

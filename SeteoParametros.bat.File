@@ -1,0 +1,16 @@
+======OBJECT = SeteoParametros.bat.File === Seteo Parametros.bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-07-01T16:42:46.0000000Z" lastUpdate="2016-07-01T16:28:40.0000000Z" checksum="c6668eb19c97af0e5b92cd22e2a8ddb5" fullyQualifiedName="SeteoParametros.bat" guid="e166c1ad-b5c0-43e1-bc27-5eb51263e059" name="SeteoParametros.bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Seteo Parametros.bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>QGVjaG8gb2ZmDQpzZXQgZGlyS0I9Ii4uXC4uIg0Kc2V0IFRhcmdldFBhdGg9IlBybyINCnNldCBkaXJGcmFtZXdvcms9IkM6XFdpbmRvd3NcTWljcm9zb2Z0Lk5FVFxGcmFtZXdvcmtcdjMuNSINCnNldCBkaXJHWD0iQzpcUHJvZ3JhbSBGaWxlcyAoeDg2KVxBcnRlY2hcR2VuZVh1c1xHZW5lWHVzWEV2MyINCnNldCBLQk5vbWJyZT0iTWV0cmljYXMiDQpzZXQgS0JWZXJzaW9uPSJNVEV2MyINCnNldCBkaXJLQlBhdGg9JWRpcktCJVwlVGFyZ2V0UGF0aCUNCg0KcmVtIC0tIHBhcmFtZXRyb3MgZGUgZGVwbG95IGRlZmluaXRpdm8uIA0Kc2V0IERlc3RpbmF0aW9uRGVwbG95UGF0aD0iXFxzcnYtd3d3XGluZXRwdWJcUHJvZHVjY2lvblxQcml2YXRlRXh0ZXJub1xNVGJldGEiDQpzZXQgRGVzdGluYXRpb25EZXBsb3lCYXRjaFBhdGg9Ilxcc3J2LXd3d1xTaXN0ZW1hc1xNVEJldGFCYXRjaCINCg0KcmVtIC0tIHBhcmFtZXRyb3MgZGUgZW52aW8gZGUgbWFpbA0Kc2V0IE1haWxUb0J1aWxkPW1ldHJpY2FzQGNvbmNlcHRvLmNvbS51eQ0Kc2V0IE1haWxGcm9tQnVpbGQ9YXBsaWNhY2lvbmVzQGNvbmNlcHRvLmNvbS51eQ0Kc2V0IE1haWxGcm9tUGFzcz1IZXJOQU5EPzMzNjE5MTI/QVJJQXMNCnNldCBNYWlsRnJvbVBvcnQ9NDY1</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>SeteoParametros.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SeteoParametros.bat</Value></Property><Property><Name>Extract</Name><Value>No</Value></Property><Property><Name>ExtractToPath</Name><Value>..\Deploy</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  <Categories>Deploy</Categories>
+</Object>
+====== PROPERTIES =======
+Name -> SeteoParametros.bat
+Extract -> No
+IsDefault -> False

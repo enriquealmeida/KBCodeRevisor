@@ -1,0 +1,16 @@
+======OBJECT = CnsId.Attribute === Identificador de Consolidado=====
+NUMERIC(3)
+
+
+====== PROPERTIES =======
+Name -> CnsId
+Description -> Identificador de Consolidado
+HORIZONTAL_DESCRIPTION -> Identificador de Consolidado
+VERTICAL_DESCRIPTION -> Consolidado
+ContextualTitle -> Identificador de Consolidado
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AUTONUMBER -> True
+ATT_PICTURE -> ZZ9
+IsDefault -> False

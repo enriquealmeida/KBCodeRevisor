@@ -1,0 +1,43 @@
+======OBJECT = Automatizacion.WebPanel === Automatizacion=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Enter
+	&File.Source = 'RunFullCycleWindowsTask.bat'
+	if &File.Exists()
+		&res = shell("RunFullCycleWindowsTask.bat")
+	else
+		msg('No existe el archivo RunFullCycleWindowsTask.bat')
+	endif
+	/* 
+		El .bat anterior corre la windows scheduled task FullCycleMT, a través de un comando similar a:
+			schtasks.exe /run /S srv-prod /TN FullCycleMT >> FullCycleMT.log
+		El userid() conectado a métricas, debe tener privilegios para correr una tarea schedulada remota ( solo ha funcionado con domain admin )
+	*/
+EndEvent
+
+Event 'LogsBuild'
+	InnewWindow1.Target = "http://www.concepto.com.uy/mtbuildLogs/"
+    InnewWindow1.Scrollbars = true
+    InnewWindow1.Width = '900'
+    InnewWindow1.Height = '600'
+    InnewWindow1.OpenWindow()
+EndEvent
+
+Event 'LogsMTBatch'
+	InnewWindow1.Target = "http://www.concepto.com.uy/mtapplicationLogs/"
+    InnewWindow1.Scrollbars = true
+    InnewWindow1.Width = '900'
+    InnewWindow1.Height = '600'
+    InnewWindow1.OpenWindow()
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> Automatizacion
+IsMain -> True
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

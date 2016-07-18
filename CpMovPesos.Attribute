@@ -1,0 +1,14 @@
+======OBJECT = CpMovPesos.Attribute === Importe en Pesos=====
+NUMERIC(15.2)-
+
+
+====== PROPERTIES =======
+Name -> CpMovPesos
+Description -> Importe en Pesos
+HORIZONTAL_DESCRIPTION -> Importe en Pesos
+VERTICAL_DESCRIPTION -> Importe en Pesos
+ContextualTitle -> Importe en Pesos
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

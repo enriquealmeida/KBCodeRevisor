@@ -1,0 +1,29 @@
+======OBJECT = DDOOptionApplyFilter.Image === DDOOption Apply Filter=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-09-23T17:07:54.0000000Z" lastUpdate="2015-06-30T20:16:33.0000000Z" checksum="19e03d7394048e1536b1b6e088c89ad2" fullyQualifiedName="DDOOptionApplyFilter" guid="2a5ebedb-95a8-4fbf-87e7-fc52aa72bcc3" name="DDOOptionApplyFilter" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="DDOOption Apply Filter">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="DDOOptionApplyFilter.png" description="DDOOption Apply Filter.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAYAAAD+vg1LAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFp
+bnQubmV0IDQuMC4zjOaXUAAAAtNJREFUSEvNlD9oU1EUxhO1WrSg4kOkFsVFiZOSikNUdHBQ6piKRXDqUqmOtlMGF0Uc1EItotJql3SUUqJgKDQh//+Zgo1i
+nOzQqYMZBI2/LxzFkJdKFcQDH+fed7773XPvued5/oV5K5XKlkQi0ZNOpwfA00wmkwM1xiupVCqay+VuZbPZ3lKptDMcDm+0dWuaFwGHxZfxs2AJRMEkeAgm
+QBgUEH6Lf8BmgWg02mnr3U2ZShRynIURMMz8WDwe35tMJnch5BQKhQPEzxK7BxbBLDhFrMNkWk3HhyBiBMELZLKjXq97LfzTdHx4++DdAO8ZjxeLxR4LtxqZ
+DEBagjwsUfvsatowFovth/8YFEFfuVzebOFmQ1iFiuLP4J3fFUZxkrgIPwt/pG0yBFX9Sd0hV3FOVbdQW4N3FL7qMcb977bPzYZoDaj6/eAuBTvCkTdY2NXg
+HIQ7xwYzqpF9bjZ2XoE0oePhXzK/gt9qYVdD8JCEWTOt12Ofmw2S3qzeaT/E1/hXZOFfK2s2D8BTXe7gHfvcbOooggUJs8lNyJ9AHJynMF1g06+bwOtgzTW8
+mmWIV9FloWYjy17Q6ChwAvH7+I98+4D4C8ZX8ccp0jZtwDhAbIHv83h/KBRyP5legUQhLeJHRcYHwW1EnuN1itP47RLFz+A/47XGV61W1dotDdV4l5aFuk8d
+9YT5JSqvk/g49mHu/CTfrzNfkCj4wjwPpkAwn8+7dquHe+xkkXp/HBRZmAURxnMGFVjXNQ90ZRKtw/kK3jAeBI6rOIEO9T6+D4yw0ZjeKX6axar+EGM/8DGe
+kii+DiT+Dj/KKfeYXKup99Wm6ig9fr1TFjmqvgqlO2UetEwb4oy/seEy0N+v26TWbV7dKYKDylSiEgcSX2X+zHjrN90lQg7QK1qWqInXmdeM9mcmcd2pHX/1
+hzB1eWSUvzNEu3V8ZSrRtv/n/9g8nu9a2fIbuakoCgAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>DDOOptionApplyFilter.png</Value></Property><Property><Name>Description</Name><Value>DDOOption Apply Filter.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\KBTestFiltrosEnColumna\CSharpModel\web\Resources\DDOOptionApplyFilter.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DDOOptionApplyFilter</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DDOOptionApplyFilter
+IsDefault -> False

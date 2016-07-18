@@ -1,0 +1,14 @@
+======OBJECT = RspNom.Attribute === Nombre del Responsable=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> RspNom
+Description -> Nombre del Responsable
+HORIZONTAL_DESCRIPTION -> Nombre del Responsable
+VERTICAL_DESCRIPTION -> Nombre del Responsable
+ContextualTitle -> Nombre del Responsable
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

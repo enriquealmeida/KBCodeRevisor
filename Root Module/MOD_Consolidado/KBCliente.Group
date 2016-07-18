@@ -1,0 +1,18 @@
+======OBJECT = KBCliente.Group === Cliente de la KB=====
+<Object parent="MOD_Consolidado" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="9645d67a-4026-42d5-b7af-fe6e4c3f5cd3" user="" versionDate="2016-03-14T12:23:37.0000000Z" lastUpdate="2016-03-14T11:36:06.0000000Z" checksum="0d76b5fe3017576a351824277751ca1f" fullyQualifiedName="MOD_Consolidado.KBCliente" guid="ee682ec2-dfa8-404c-9ef3-1530941cd6e8" name="KBCliente" type="87313f43-5eb2-41d7-9b8c-e8d9f5bf9588" description="Cliente de la KB">
+  <Part type="74203da2-41b1-402c-0001-d8d564a2c2fa">
+    <Subtype guid="a6bc2f4f-96fe-4cd6-ae6f-d05294dc2341">
+      <Name>KBCliId</Name>
+      <Supertype guid="1e5c05d4-9d92-4d2d-b4f8-ba2ab2184b38">CliId</Supertype>
+    </Subtype>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>KBCliente</Value></Property><Property><Name>Description</Name><Value>Cliente de la KB</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> KBCliente
+Description -> Cliente de la KB
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

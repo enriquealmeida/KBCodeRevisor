@@ -1,0 +1,22 @@
+======OBJECT = PCntHrs.Procedure === Cantidad de horas=====
+
+=== RULES ===
+parm(in:CpRecId ,  in:PryId , in:&FchIni ,in:&FchFnl, out:&HrsR  );
+
+
+=== PROCEDURE SOURCE ===
+&HrsR = 0
+for each order CpRecId 
+where            CpMovFch >= &FchIni 
+where            CpMovFch <= &FchFnl 
+    &HrsR = &HrsR + CpMovHrs 
+endfor
+
+
+====== PROPERTIES =======
+Name -> PCntHrs
+Description -> Cantidad de horas
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Public
+IsDefault -> False

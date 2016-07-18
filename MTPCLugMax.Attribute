@@ -1,0 +1,14 @@
+======OBJECT = MTPCLugMax.Attribute === Numero de Lugares disponibles=====
+NUMERIC(2)
+
+
+====== PROPERTIES =======
+Name -> MTPCLugMax
+Description -> Numero de Lugares disponibles
+HORIZONTAL_DESCRIPTION -> Numero de Lugares disponibles
+VERTICAL_DESCRIPTION -> Numero de Lugares disponibles
+ContextualTitle -> Numero de Lugares disponibles
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,10 @@
+======OBJECT = SummarizedBy.Folder === Summarized By=====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="" versionDate="2016-03-10T18:31:16.0000000Z" lastUpdate="2016-03-10T16:36:59.0000000Z" checksum="707355148fe456552150f0fae07cf98a" fullyQualifiedName="MOD_Solicitudes.SummarizedBy" guid="6f130ac7-bab4-4d66-94a1-bf1df3636e18" name="SummarizedBy" type="00000000-0000-0000-0000-000000000008" description="Summarized By">
+  <Properties><Property><Name>Name</Name><Value>SummarizedBy</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+Name -> SummarizedBy
+ObjectVisibility -> Private
+IsDefault -> False

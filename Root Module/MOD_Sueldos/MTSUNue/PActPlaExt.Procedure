@@ -1,0 +1,39 @@
+======OBJECT = PActPlaExt.Procedure === Actualiza si es Plaza o Exteri=====
+
+=== RULES ===
+parm(in:&RspIdCofac, in:&RspSuA, in:&RspSuM, in:&PryId, in:&RspSuFch, in:&TpoHonId, in:&MonId);
+
+
+=== PROCEDURE SOURCE ===
+for each
+    where            RspId = &RspId
+    where            RspSuA = &RspSuA
+    where            RspSuM = &RspSuM
+    where            PryId = &PryId
+    where            RspSuFch = &RspSuFch
+    where            TpoHonId = &TpoHonId
+    where            MonId = &MonId
+
+    if PryExterior = true
+        RspSuPlaExt = DMTpoSueldo.Exterior
+    else
+        RspSuPlaExt = DMTpoSueldo.Plaza
+    endif
+
+    PFRubLiq.call(&RspId,&PryId,&TpoHonId,&MonId,&RspSuA,&RspSuM,&RubId,&RspSuAuxId)
+    if null(RubId)
+        RubId = &RubId
+    endif
+    if null(RspSuAuxId)
+        RspSuAuxId = &RspSuAuxId
+    endif
+endfor
+
+
+====== PROPERTIES =======
+Name -> PActPlaExt
+Description -> Actualiza si es Plaza o Exteri
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

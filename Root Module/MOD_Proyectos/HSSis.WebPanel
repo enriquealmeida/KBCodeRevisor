@@ -1,0 +1,25 @@
+======OBJECT = HSSis.WebPanel === Selección de sistemas=====
+
+=== RULES ===
+parm(out:&SisId);
+
+
+=== EVENTS SOURCE ===
+Event Refresh
+
+EndEvent  // Refresh
+
+Event Enter
+    &SisId = SisId
+    return
+EndEvent  // Enter
+
+
+====== PROPERTIES =======
+Name -> HSSis
+Description -> Selección de sistemas
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+ObjectVisibility -> Private
+IsDefault -> False

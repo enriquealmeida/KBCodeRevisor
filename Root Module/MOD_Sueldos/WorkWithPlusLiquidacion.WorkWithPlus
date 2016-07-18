@@ -1,0 +1,120 @@
+======OBJECT = WorkWithPlusLiquidacion.WorkWithPlus === Work With Plus Liquidacion=====
+<Object parent="MOD_Sueldos.Liquidacion" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="66dac1d7-720f-4937-8ea6-605cb1269448" user="" versionDate="2016-05-05T16:44:40.0000000Z" lastUpdate="2016-05-05T16:44:04.0000000Z" checksum="5dd722a2c746995cf64cf8cb0ea0b6c5" fullyQualifiedName="MOD_Sueldos.WorkWithPlusLiquidacion" guid="61c99947-24f3-01ac-3aae-666b93dc0b35" name="WorkWithPlusLiquidacion" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Liquidacion">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWLiquidacion" defaultSecFuntionKey="WWLiquidacion">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Sueldos.Liquidacion" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Sueldos.Liquidacion" SecFuntionKeyINS="WWLiquidacion_Insert" defaultSecFuntionKeyINS="WWLiquidacion_Insert" SecFuntionKeyUPD="WWLiquidacion_Update" defaultSecFuntionKeyUPD="WWLiquidacion_Update" SecFuntionKeyDLT="WWLiquidacion_Delete" defaultSecFuntionKeyDLT="WWLiquidacion_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;LiquidacionTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="LiquidacionTitle" defaultControlName="LiquidacionTitle" caption="Cabezal de Liquidacion de Honorarios Mensuales" defaultCaption="Cabezal de Liquidacion de Honorarios Mensuales" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" childrenOrderedList="2;22;LiqAnio-2;22;LiqMes-2;22;LiqResguardoMinimoImponiblePes-2;22;LiqCotizacionDolarenPesos-2;22;LiqFacturasFch">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqAnio" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqAnio" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqResguardoMinimoImponiblePes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqResguardoMinimoImponiblePes" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqCotizacionDolarenPesos" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqCotizacionDolarenPesos" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqFacturasFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqFacturasFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;LiqMes-4;39;-;76;-5;41;" id="66dac1d7-720f-4937-8ea6-605cb1269448:1" defaultId="66dac1d7-720f-4937-8ea6-605cb1269448:1" name="Liquidacion" defaultName="Liquidacion">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Cabezal de Liquidacion de Honorarios Mensuales" defaultDescription=" Cabezal de Liquidacion de Honorarios Mensuales" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Sueldos.WWLiquidacion" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Sueldos.ExportWWLiquidacion" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Sueldos.ExportReportWWLiquidacion" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Sueldos.WWLiquidacionDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;LiquidacionTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="LiquidacionTitle" defaultControlName="LiquidacionTitle" caption="Cabezal de Liquidacion de Honorarios Mensuales" defaultCaption="Cabezal de Liquidacion de Honorarios Mensuales" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;30;-4;12;LiqMes">
+              <orders childrenOrderedList="4;13;=LiqMes.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top" />
+              <filterAttribute name="LiqMes" defaultName="LiqMes" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="LiqMes = &amp;LiqMes when not &amp;LiqMes.IsEmpty()" defaultCondition="LiqMes = &amp;LiqMes when not &amp;LiqMes.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+              <filterAttribute name="LiqAnio" defaultName="LiqAnio" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="LiqAnio = &amp;LiqAnio when not &amp;LiqAnio.IsEmpty()" defaultCondition="LiqAnio = &amp;LiqAnio when not &amp;LiqAnio.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="4;17;Delete-4;17;Update-4;23;LiqAnio-4;23;LiqMes-4;23;LiqResguardoMinimoImponiblePes-4;23;LiqCotizacionDolarenPesos-4;23;LiqFacturasFch">
+          <standardAction name="Delete" defaultName="Delete" />
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqAnio" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqAnio" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="LiqAnio = &amp;TFLiqAnio when not &amp;TFLiqAnio.IsEmpty()" defaultFilterCondition="LiqAnio = &amp;TFLiqAnio when not &amp;TFLiqAnio.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="LiqMes = &amp;TFLiqMes when not &amp;TFLiqMes.IsEmpty()" defaultFilterCondition="LiqMes = &amp;TFLiqMes when not &amp;TFLiqMes.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqResguardoMinimoImponiblePes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqResguardoMinimoImponiblePes" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="LiqResguardoMinimoImponiblePes = &amp;TFLiqResguardoMinimoImponiblePes when not &amp;TFLiqResguardoMinimoImponiblePes.IsEmpty()" defaultFilterCondition="LiqResguardoMinimoImponiblePes = &amp;TFLiqResguardoMinimoImponiblePes when not &amp;TFLiqResguardoMinimoImponiblePes.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqCotizacionDolarenPesos" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqCotizacionDolarenPesos" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="LiqCotizacionDolarenPesos = &amp;TFLiqCotizacionDolarenPesos when not &amp;TFLiqCotizacionDolarenPesos.IsEmpty()" defaultFilterCondition="LiqCotizacionDolarenPesos = &amp;TFLiqCotizacionDolarenPesos when not &amp;TFLiqCotizacionDolarenPesos.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqFacturasFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqFacturasFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="LiqFacturasFch &gt;= &amp;TFLiqFacturasFch when not &amp;TFLiqFacturasFch.IsEmpty()" defaultFilterCondition="LiqFacturasFch &gt;= &amp;TFLiqFacturasFch when not &amp;TFLiqFacturasFch.IsEmpty()" />
+        </grid>
+      </table>
+    </selection>
+    <view childrenOrderedList="5;14;LiqAnio;5;41;-5;14;LiqMes;5;41;-5;06;Main Table-5;38;" caption="LiqMes.ToString()" defaultCaption="LiqMes.ToString()">
+      <GenexusPatterns_Objects>
+        <Object Id="View" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Sueldos.ViewLiquidacion" />
+      </GenexusPatterns_Objects>
+      <parameters>
+        <parameter name="LiqAnio" defaultName="LiqAnio" />
+        <parameter name="LiqMes" defaultName="LiqMes" />
+      </parameters>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableContentNoMargin" defaultThemeClass="TableContentNoMargin" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="5;06;TableTitle-5;29;WorkWithLink-5;34;">
+        <table name="TableTitle" defaultName="TableTitle" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellWidth_E="58%" defaultCellWidth_E="58%" cellThemeClass="CellViewTableTitle CellWidthAuto" defaultCellThemeClass="CellViewTableTitle CellWidthAuto" childrenOrderedList="5;27;ViewTitle-5;21;LiqMes">
+          <textBlock controlName="ViewTitle" defaultControlName="ViewTitle" caption="Cabezal de Liquidacion de Honorarios Mensuales :: " defaultCaption="Cabezal de Liquidacion de Honorarios Mensuales :: " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewTextBlockTitle" defaultCellThemeClass="CellViewTextBlockTitle" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeTitleWWP" defaultThemeClass="AttributeTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewAttributeTitle" defaultCellThemeClass="CellViewAttributeTitle" showDescription="False" defaultShowDescription="False" />
+        </table>
+        <workWithLink themeClass="TextBlockLink" defaultThemeClass="TextBlockLink" cellWidth_E="42%" defaultCellWidth_E="42%" cellThemeClass="CellAlignRightWithMargin CellWidthAuto" defaultCellThemeClass="CellAlignRightWithMargin CellWidthAuto" align="Right" defaultAlign="Right" />
+        <tabsPosition cellThemeClass="CellViewTabsPosition" defaultCellThemeClass="CellViewTabsPosition" colSpan="999" defaultColSpan="999" startCol="1" defaultStartCol="1" />
+      </table>
+      <tabs childrenOrderedList="LiquidacionGeneral;42;General">
+        <tabularTab childrenOrderedList="LiquidacionGeneral;04;Main Table" name="General" defaultName="General" code="General" defaultCode="General" wcname="LiquidacionGeneral" defaultWcname="LiquidacionGeneral">
+          <GenexusPatterns_Objects>
+            <Object Id="TabTabular" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Sueldos.LiquidacionGeneral" />
+          </GenexusPatterns_Objects>
+          <table name="Table" defaultName="Table" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="LiquidacionGeneral;28;ErrorViewer-LiquidacionGeneral;04;TableAttributes-LiquidacionGeneral;04;TableActions">
+            <errorViewer />
+            <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="LiquidacionGeneral;21;LiqAnio-LiquidacionGeneral;21;LiqMes-LiquidacionGeneral;21;LiqResguardoMinimoImponiblePes-LiquidacionGeneral;21;LiqCotizacionDolarenPesos-LiquidacionGeneral;21;LiqFacturasFch">
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqAnio" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqAnio" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqMes" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqResguardoMinimoImponiblePes" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqResguardoMinimoImponiblePes" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqCotizacionDolarenPesos" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqCotizacionDolarenPesos" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LiqFacturasFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LiqFacturasFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+            </table>
+            <table name="TableActions" defaultName="TableActions" themeClass="TableActions" defaultThemeClass="TableActions" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="LiquidacionGeneral;88;Actions">
+              <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="LiquidacionGeneral;91;Update-LiquidacionGeneral;91;Delete">
+                <standardAction caption="GXM_update" defaultCaption="GXM_update" buttonClass="Button" defaultButtonClass="Button" name="Update" defaultName="Update" />
+                <standardAction caption="GX_BtnDelete" defaultCaption="GX_BtnDelete" buttonClass="Button" defaultButtonClass="Button" name="Delete" defaultName="Delete" />
+              </actionGroup>
+            </table>
+          </table>
+        </tabularTab>
+      </tabs>
+    </view>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusLiquidacion</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Sueldos.Liquidacion</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 123
+Name -> WorkWithPlusLiquidacion
+ObjectVisibility -> Private
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-123
+IsDefault -> False

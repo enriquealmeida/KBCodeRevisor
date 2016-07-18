@@ -1,0 +1,15 @@
+======OBJECT = CliAjuAnio.Attribute === Año base=====
+NUMERIC(4)
+
+
+====== PROPERTIES =======
+Name -> CliAjuAnio
+Description -> Año base
+HORIZONTAL_DESCRIPTION -> Año base
+VERTICAL_DESCRIPTION -> Año base
+ContextualTitle -> Año base
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> ZZZ9
+IsDefault -> False

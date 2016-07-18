@@ -1,0 +1,23 @@
+======OBJECT = DDOFilteredSortedDSC.Image === DDOFiltered Sorted DSC=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-09-23T17:07:54.0000000Z" lastUpdate="2015-06-30T20:13:03.0000000Z" checksum="8e0dad9abdd04a47273c57ff2ad77691" fullyQualifiedName="DDOFilteredSortedDSC" guid="19f029d8-5fce-4990-9535-7c32f49223c6" name="DDOFilteredSortedDSC" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="DDOFiltered Sorted DSC">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="DDOFilteredSortedDSC.png" description="DDOFiltered Sorted DSC.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAoAAAARCAYAAADkIz3lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVY
+dFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAACJSURBVChTY/j//z9RGMGAAhRJZIAu+NXZLOCLk2kClIsA6Ao/O5ke+OJshmYcEJCkEBlgUwhWQxuF
+QF9O+OJsev6/g4EAskKg2AKwOJLCBJAkSPCLk9kFKBuoCELDFYJ1wxUjY9MFIDkUhSCAqhiiCAQwFIIAWDHQzVAuGKAoBNH4MIQYAIX/GQDCzy7Y9b+UIgAA
+AABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>DDOFilteredSortedDSC.png</Value></Property><Property><Name>Description</Name><Value>DDOFiltered Sorted DSC.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\KBTestFiltrosEnColumna\CSharpModel\web\Resources\Iconos\DDOFilteredSortedDSC.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DDOFilteredSortedDSC</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DDOFilteredSortedDSC
+IsDefault -> False

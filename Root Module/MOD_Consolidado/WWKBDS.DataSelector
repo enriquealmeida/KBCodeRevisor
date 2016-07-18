@@ -1,0 +1,55 @@
+======OBJECT = WWKBDS.DataSelector === WWKBDS=====
+<Object parent="MOD_Consolidado.WorkWithPlusKB" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="8ba64f05-2521-4089-bfe4-2a8ea18568ae" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:28.0000000Z" checksum="9769d0241729b0a9c515e14b73cc9473" fullyQualifiedName="MOD_Consolidado.WWKBDS" guid="d32cb90a-8b5f-4754-8b40-0664b51073dd" name="WWKBDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWKBDS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[KBDsc like &KBDsc when not &KBDsc.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[KBActiva = &KBActiva when not &KBActiva.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="KBDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>KBDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:KBDsc</Value></Property></Properties>
+      </Variable>
+      <Variable Name="KBActiva">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>KBActiva</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:KBActiva</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>KBDsc</Name>
+        <Description>KBDsc</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>KBActiva</Name>
+        <Description>KBActiva</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWKBDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Consolidado.WorkWithPlusKB</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWKBDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-87
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 87
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

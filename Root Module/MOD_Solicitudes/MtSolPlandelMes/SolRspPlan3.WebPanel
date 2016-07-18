@@ -1,0 +1,607 @@
+======OBJECT = SolRspPlan3.WebPanel === Solicitudes del Plan=====
+
+=== RULES ===
+parm(IN:&RspId, in:&FchIniPar, in:&FchFinPar );
+
+
+=== EVENTS SOURCE ===
+Event Start
+	Form.JScriptSrc.Add('Cronometro.js')
+	//txtjs.Caption = "<script Languaje=javascript type=text/javascript>window.onload = function(){	gx.fx.obs.addObserver('gx.onload',window, function(){ alert('gx.onload');});};</script>"
+	
+	&PrbId.Visible = false
+	&PryId.visible = false
+	tblSolicitudesAcciones.Visible = false
+	&HrsFch = &Today
+	&CronometroPrendido.Visible = false
+	&CronometroTiempoInicio.Visible = false
+	&CornometroPrbId.Visible = false
+	&CronometroTarId.Visible = false
+	tblInicioDiferidoSolicitud.Visible = false
+	tblInicioDiferidoGlobal.Visible = false
+	//Si hay un cronometro prendido lo utiliza
+	For each
+		where RspId = &RspId
+		where CronFin.IsEmpty()
+		
+		&CronometroPrendido = 'S'
+		&CronometroTiempoInicio = CronIni
+		&CornometroPrbId = PrbId
+		&CronometroTarId = TarId
+		Do 'InicializaCronometro'
+		Exit
+	When none
+		&CronometroPrendido = 'N'
+		&CronometroHoras = 0
+		&CronometroMinutos = 0
+		&CronometroSegundos = 0	
+	Endfor
+
+EndEvent  // Start
+
+Event Cliente.Load
+	&RspSolicitudes = PDevuelveRspSolicitudes(&RspId)
+	//&aux = &RspSolicitudes.ToXml()
+	For &Cliente in &RspSolicitudes.Clientes
+		&CliId = &Cliente.CliId
+		Load
+	Endfor	
+Endevent
+
+Event Categoria.Load
+	For &Categoria in &Cliente.Categorias
+		&CategoriaId = &Categoria.CategoriaId
+		If &CategoriaId = 'PlanDelMes' OR &CategoriaId = 'PlanDelMesProximo'
+			tblHorasTotal.Visible = true
+			&PrbHrsPln = 0
+			&PrbHrsReal = 0
+			For &Solicitud in &Categoria.Solicitudes				
+				&PrbHrsPln += &Solicitud.PrbHrsPln
+				&PrbHrsReal += &Solicitud.PrbHrsReal
+			Endfor
+			&Mes = month(&Today)
+			&Anio = year(&Today)
+			If &CategoriaId = 'PlanDelMesProximo'
+				If &Mes = 12
+					&Ano += 1
+					&Mes = 1
+				Else
+					&Mes += 1
+				Endif
+			Endif
+			&TagId = &Anio.ToFormattedString() + &Mes.ToFormattedString()  
+			&HorasSinPlan = HorasDelMesSinPlanificar(&RspId,&CliId,&TagId)
+			&HorasTotales =  HorasXRspEnMesXCliente(&RspId,&CliId,&TagId)
+			&HorasHolgura = &HorasTotales - &PrbHrsPln
+			Do 'GraficarHorasPlan'
+			
+		Else
+			tblHorasTotal.Visible = false
+		Endif	
+		Load
+	Endfor
+Endevent
+
+Event gridSolicitudes.Load
+	For &Solicitud in &Categoria.Solicitudes
+		
+		&PrbId = &Solicitud.PrbId
+		&PryId = &Solicitud.PrbPryId
+		&prbidTXT = &PrbId.ToString()
+		&PrbDsc = &Solicitud.PrbDsc.Substring(1,60)
+		&PrbSts = &Solicitud.PrbSts
+		&Ahora = Now()
+		&HoraInicio = &Ahora.Hour()
+		&MinutoInicio = &Ahora.Minute()
+		&SolicitudTarId = 'PROG'
+		Do 'SolicitudBackColor'
+		tblSoli.Backcolor = &Color
+		&PrbHrsPln = &Solicitud.PrbHrsPln
+		&PrbHrsReal = &Solicitud.PrbHrsReal
+		Do 'GraficarHoras'
+		Load
+	Endfor	
+Endevent
+
+Event Refresh
+	Do 'VeoHorasIng'
+	&HorasIngesadas = Format("Se ingresaron %1 hs", &HrsCnt)
+	If &CronometroPrendido = 'S'
+		btnFinalizar.Visible = true
+		btnCronoCancelar.Visible = true
+		If &CornometroPrbId = 0
+			&CronometroText.SetEmpty()
+		Else	
+			For Each
+				Where PrbId = &CornometroPrbId
+				&CronometroText = &CornometroPrbId.ToString()+" "+PrbDsc+" "
+			Endfor
+		Endif
+		If &CronometroTarId.IsEmpty()
+			&CronometroTarDsc.SetEmpty()
+		Else	
+			For Each
+				Where TarId = &CronometroTarId
+				&CronometroTarDsc = TarDsc
+			Endfor
+		Endif
+	Else
+		btnFinalizar.Visible = false
+		btnCronoCancelar.Visible = false
+	Endif	
+	//&AccionesInicio = '*'	
+	&Ahora = Now()
+	&MinutoInicioGlobal = &Ahora.Minute()
+	&HoraInicioGlobal = &Ahora.Hour()
+Endevent
+
+Event &HorasIngesadas.Click
+	&Window.Object = Horas.Create(TrnMode.Update, &HrsFch, &RspId)
+	&Window.Open()
+Endevent
+
+Event &AccionesInicio.Click
+	Do case
+		case &AccionesInicio = 'AYUDA'
+			&CronometroTiempoInicioAux = Now()
+			Do 'Inicio Cronometro Ayuda'
+		case &AccionesInicio = 'AYUDADIF'
+			tblInicioDiferidoGlobal.Visible = true
+		case &AccionesInicio = 'ALMUERZO'
+			&CronometroTiempoInicioAux = Now()
+			Do 'Inicio Cronometro Almuerzo'
+		case &AccionesInicio = 'ALMUERZODIF'
+			tblInicioDiferidoGlobal.Visible = true
+		case &AccionesInicio = 'FINDIF'
+			tblInicioDiferidoGlobal.Visible = true	
+		case &AccionesInicio = 'INGALMUERZO'
+			Do 'Ingreso Almuerzo'
+		case &AccionesInicio = '*'
+			//Valor por defecto para seleccionar
+		otherwise
+			msg("Accion no definida:"+&AccionesInicio)
+	Endcase
+
+Endevent
+
+Event 'MostrarCategorias'
+	tblCategorias.Visible = iif(TblCategorias.Visible = true, false, true)
+Endevent
+
+//Event 'MostrarSolicitudes'
+//	gridSolicitudes.Visible = false //iif(Solicitudes.Visible, false, true)
+//Endevent
+
+Event &PrbIdtxt.Click
+	For Each 
+		Where PrbId = &PrbId
+		  &PryId = PryId
+	When none
+		  &PryId.SetEmpty()
+	Endfor
+
+	&Window.Object = Solicitudes.Create(TrnMode.Update,&PryId,&PrbId)
+	&window.Open()
+	refresh
+EndEvent
+
+Event 'Avanzar'
+	For Each 
+		Where PrbId = &PrbId
+		  &PryId = PryId
+	When none
+		  &PryId.SetEmpty()
+	Endfor
+	&errorDescription = AvanzarEstadoSolicitud(&PryId, &PrbId)
+	if not &errorDescription.IsEmpty()
+		msg('Error al intentar avanzar estado:' + &errorDescription)
+	endif
+Endevent
+
+
+Event 'SolicitudAcciones'
+	tblSolicitudesAcciones.Visible = iif(tblSolicitudesAcciones.Visible = true, false, true)
+Endevent
+
+//********************Rutinas para Cronometro *************************************
+
+Event 'Inicio Cronometro'
+	&CronometroTiempoInicioAux = Now()
+	&PrbIdAux = &PrbId
+	&TarIdAux = &SolicitudTarId
+	Do 'Inicio Cronometro'
+Endevent
+
+Event 'Inicio Cronometro Diferido Confirmar'
+	&Ahora = Now()
+	&CronometroTiempoInicioAux = YMDHMStoT(&Ahora.Year(), &Ahora.Month(), &Ahora.Day(), &HoraInicio, &MinutoInicio, 0)
+	&PrbIdAux = &PrbId
+	&TarIdAux = &SolicitudTarId
+	Do 'Inicio Cronometro'	
+Endevent
+
+Event 'Inicio Cronometro Diferido Global Confirmar'
+	Do case
+		case &AccionesInicio = 'AYUDADIF'
+			&Ahora = Now()
+			&CronometroTiempoInicioAux = YMDHMStoT(&Ahora.Year(), &Ahora.Month(), &Ahora.Day(), &HoraInicioGlobal, &MinutoInicioGlobal, 0)
+			Do 'Inicio Cronometro Ayuda'
+		case &AccionesInicio = 'ALMUERZODIF'
+			&Ahora = Now()
+			&CronometroTiempoInicioAux = YMDHMStoT(&Ahora.Year(), &Ahora.Month(), &Ahora.Day(), &HoraInicioGlobal, &MinutoInicioGlobal, 0)
+			Do 'Inicio Cronometro Almuerzo'
+		case &AccionesInicio = 'FINDIF'
+			&CronometroTiempoInicioAux = YMDHMStoT(&CronometroTiempoInicio.Year(), &CronometroTiempoInicio.Month(), &CronometroTiempoInicio.Day(), &HoraInicioGlobal, &MinutoInicioGlobal, 0)
+			Do 'Finaliza Cronometro'
+	Endcase
+	&AccionesInicio = '*'
+Endevent
+
+Event 'Inicio Cronometro Diferido'
+	tblInicioDiferidoSolicitud.Visible = iif(tblInicioDiferidoSolicitud.Visible = true, false, true)
+Endevent
+
+Sub 'Inicio Cronometro Ayuda'
+	&PrbIdAux = 0
+	&TarIdAux = 'AYUDA'
+	Do 'Inicio Cronometro'
+Endsub
+
+Sub 'Inicio Cronometro Almuerzo'
+	&PrbIdAux = 0
+	&TarIdAux = 'ALMUERZO'
+	Do 'Inicio Cronometro'
+Endsub
+
+Sub 'Inicio Cronometro'
+	&errorDescription.SetEmpty()
+	If NOT (&CornometroPrbId = &PrbIdAux AND &CronometroTarId = &TarIdAux)//Si ya esta iniciada la misma solicitud y tarea no hace nada
+		if &CronometroPrendido = 'S'
+			//Si el coronometro ya esta prendido y cambio de solicitud finalizo en cronometro y paso las horas
+			Do 'CronometroImputarHoras'
+		Endif
+		If NOT &errorDescription.IsEmpty()
+			msg(&errorDescription)
+		Else
+			&CronometroPrendido = 'S'
+			&CornometroPrbId = &PrbIdAux
+			&Ahora = Now()
+			&CronometroTiempoInicio = YMDHMStoT(&CronometroTiempoInicioAux.Year(), &CronometroTiempoInicioAux.Month(), &CronometroTiempoInicioAux.Day(), &CronometroTiempoInicioAux.Hour(), &CronometroTiempoInicioAux.Minute(), &CronometroTiempoInicioAux.Second())
+			&CronometroTarId = &TarIdAux
+			Do 'InicializaCronometro'
+			&Cronometradas = new()
+			&Cronometradas.RspId	= &RspId
+			&Cronometradas.CronIni 	= &CronometroTiempoInicio
+			&Cronometradas.PrbId	= &CornometroPrbId
+			&Cronometradas.TarId = &CronometroTarId
+			&Cronometradas.Save()
+			if &Cronometradas.Success()
+				commit
+			else
+				rollback
+				for &Message in &Cronometradas.GetMessages()
+					&errorDescription += &Message.Description
+				endfor	
+			endif
+		Endif
+	Endif
+EndSub
+
+Event 'Cronometro Cancelar'
+	&Cronometradas.Load(&RspId, &CronometroTiempoInicio)
+	&Cronometradas.Delete()
+	If &Cronometradas.Success()
+		commit
+		Do 'Resetea Variables Cronometro'
+	Else
+		for &Message in &Cronometradas.GetMessages()
+			&errorDescription += 'Cronometrada Cancelar:'+&Message.Description
+		endfor	
+		msg(&errorDescription)
+	Endif
+Endevent
+
+Event 'Fin'
+	&CronometroTiempoInicioAux = Now()
+	Do 'Finaliza Cronometro'	
+Endevent
+
+Sub 'Finaliza Cronometro'
+	&errorDescription.SetEmpty()
+	if &CronometroPrendido = 'S'
+		Do 'CronometroImputarHoras'
+	Endif
+	If NOT &errorDescription.IsEmpty()
+		msg('Error al imputar horas:'+&errorDescription+"-"+&HorasAImputar.ToString())
+	Else	
+		Do 'Resetea Variables Cronometro'
+	Endif
+Endsub
+
+Sub 'Resetea Variables Cronometro'
+	&CronometroPrendido = 'N'
+	&CornometroPrbId = 0
+	&CronometroTarId.SetEmpty()
+	&CronometroText.SetEmpty()
+	&CronometroTarDsc.SetEmpty()
+	&CronometroHoras = 0
+	&CronometroMinutos = 0
+	&CronometroSegundos = 0
+	&CronometroTiempoInicio = CtoT('0001/01/01')
+Endsub
+
+Sub 'InicializaCronometro'
+	&TiempoActual = Now()
+	&Diferencia = &TiempoActual.Difference(&CronometroTiempoInicio)
+	&CronometroHoras = Int(&Diferencia/3600)
+	&CronometroMinutos = mod(Int(&Diferencia/60),60)
+	&CronometroSegundos = mod(&Diferencia, 60)	
+Endsub
+
+Sub 'CronometroImputarHoras'
+	&errorDescription.SetEmpty()
+	//Parar cronometro
+	&Cronometradas.Load(&RspId, &CronometroTiempoInicio)
+	if &Cronometradas.Success()
+		&TiempoActual = Now()
+		&Cronometradas.CronFin	= &TiempoActual
+		&Cronometradas.Save()
+		If &Cronometradas.Fail()
+			for &Message in &Cronometradas.GetMessages()
+				&errorDescription += 'Cronometrada Save:'+&Message.Description
+			endfor	
+		Else	
+			
+			&HrsFch = YMDtoD(&CronometroTiempoInicio.Year(), &CronometroTiempoInicio.Month(), &CronometroTiempoInicio.Day())
+			&HorasAImputar = TDiff(&CronometroTiempoInicioAux, &CronometroTiempoInicio) / 3600 //FormulaCronometroHorasSugeridas(&CronometroTiempoInicio)
+			//&TarId = 'PROG'
+			&errorDescription = CronometroImputarHoras(&RspId, &HrsFch, &CornometroPrbId, &CronometroTarId, &HorasAImputar)
+			if NOT &errorDescription.IsEmpty()
+				&errorDescription += &Message.Description
+			Endif	
+		Endif
+	else	
+		for &Message in &Cronometradas.GetMessages()
+			&errorDescription += 'Cronometrada Load:'+&Message.Description
+		endfor	
+	endif
+Endsub
+
+Sub 'Ingreso Almuerzo'
+
+//Ingreso las horas de almuerzo
+if &CronometroPrendido = 'S'
+	&HrsFch = YMDtoD(&CronometroTiempoInicio.Year(), &CronometroTiempoInicio.Month(), &CronometroTiempoInicio.Day())
+Else
+	&HrsFch = Today()
+Endif
+&HorasAImputar = 0.5		
+&errorDescription = CronometroImputarHoras(&RspId, &HrsFch, 0, 'ALMUERZO', &HorasAImputar)
+If NOT &errorDescription.IsEmpty()
+	msg(&errorDescription)
+Else
+	//Si hay un cronometro prendido lo cancelo y lo reinicio diferido segun las horas del almuerzo
+	if &CronometroPrendido = 'S'
+		&Cronometradas.Load(&RspId, &CronometroTiempoInicio)
+		&Cronometradas.Delete()
+		If &Cronometradas.Success()
+			
+			//Inicio nuevo cronometro diferico 30 minutos
+			&CronometroTiempoInicioAux = &CronometroTiempoInicio.AddMinutes(30)
+			&PrbIdAux = &CornometroPrbId
+			&TarIdAux = &CronometroTarId
+			Do 'Resetea Variables Cronometro'
+			Do 'Inicio Cronometro'	
+			commit
+		Else
+			for &Message in &Cronometradas.GetMessages()
+				&errorDescription += 'Cronometrada Cancelar:'+&Message.Description
+			endfor	
+			msg(&errorDescription)
+		Endif
+	Endif
+Endif
+
+Endsub
+
+Sub 'VeoHorasIng'
+    &HrsCnt=0  
+    For Each
+        Where RspId=&RspId
+		Where HrsFch = &Today
+        &HrsCnt += HrsCnt
+    Endfor
+EndSub
+
+//**********Subrutinas para graficas de horas ************************
+
+Sub 'SolicitudBackColor'
+	Do case
+		case &PrbSts = 'DES'
+			&Color = RGB(255, 150, 150)
+		case &PrbSts = TrnMode.Insert
+			&Color = RGB(176, 255, 176)
+		case &PrbSts = 'CER'
+			&Color = RGB(155, 155, 155)	
+		otherwise
+			&Color = RGB(255, 255, 255)
+	Endcase	
+Endsub
+
+Sub 'CalcularWidth'
+	If &Horas < 100
+		&width = &Horas*5
+	Else
+		&width = 500
+	Endif
+Endsub
+
+
+Sub 'GraficarHoras'
+	If &PrbHrsPln > 0
+		tblHorasPlanificadas.Visible = true
+		tblHorasPlanificadas.Tooltiptext = Format("%1 horas planificadas", &PrbHrsPln)
+		&Horas = &PrbHrsPln
+		Do 'CalcularWidth'
+		
+	Else
+		tblHorasPlanificadas.Visible = false
+		&width = 0
+	Endif
+	if &width > 0
+		tblHorasPlanificadas.Width = &width
+	Endif	
+	if &PrbHrsReal > 0
+		If &PrbHrsPln = 0
+			//son todas horas sin planificar
+			&HorasPlanificadasRealizadas = 0
+			&HorasNoPlanificadasRealizadas = &PrbHrsReal
+			&Porcentaje = ""
+		Else
+			If &PrbHrsReal < &PrbHrsPln
+				//Todas las horas son planificadas
+				&HorasPlanificadasRealizadas = &PrbHrsReal
+				&HorasNoPlanificadasRealizadas = 0
+				&Porcentaje = trim(str(&PrbHrsReal*100/&PrbHrsPln, 5,0))+"%"
+			Else
+				//Las horas planificadas realizadas estan complentas y hay mas no planificadas
+				&HorasPlanificadasRealizadas = &PrbHrsPln
+				&HorasNoPlanificadasRealizadas = &PrbHrsReal - &PrbHrsPln
+				&Porcentaje = trim(str(&PrbHrsReal*100/&PrbHrsPln, 5,0))+"%"
+			Endif
+		Endif
+		If &HorasPlanificadasRealizadas = 0
+			tblHorasPlanRealizadas.Visible = false
+		Else
+			tblHorasPlanRealizadas.Visible = true
+			&Horas = &HorasPlanificadasRealizadas
+			Do 'CalcularWidth'
+			tblHorasPlanRealizadas.Width = &width
+			tblHorasPlanRealizadas.Tooltiptext = Format("%1 horas realizadas", &PrbHrsReal)
+		Endif
+		If &HorasNoPlanificadasRealizadas = 0
+			tblHorasNoPlanificadas.Visible = false
+		Else
+			tblHorasNoPlanificadas.Visible = true
+			&Horas = &HorasNoPlanificadasRealizadas
+			Do 'CalcularWidth'
+			tblHorasNoPlanificadas.Width = &width
+			tblHorasNoPlanificadas.Tooltiptext = Format("%1 horas realizadas", &PrbHrsReal)
+		Endif
+	Else
+		tblHorasPlanRealizadas.Visible = false
+		tblHorasNoPlanificadas.Visible = false
+	Endif
+Endsub
+
+Sub 'GraficarHorasPlan'
+	If &PrbHrsPln > 0
+		tblHorasPlanificadasPlan.Visible = true
+		tblHorasPlanificadasPlan.Tooltiptext = Format("%1 horas planificadas", &PrbHrsPln)
+		&Horas = &PrbHrsPln
+		Do 'CalcularWidth'
+		
+	Else
+		tblHorasPlanificadasPlan.Visible = false
+		&width = 0
+	Endif
+	if &width > 0
+		tblHorasPlanificadasPlan.Width = &width
+	Endif	
+	if &PrbHrsReal > 0
+		If &PrbHrsPln = 0
+			//son todas horas sin planificar
+			&HorasPlanificadasRealizadas = 0
+			&HorasNoPlanificadasRealizadas = &PrbHrsReal
+			&Porcentaje = ""
+		Else
+			If &PrbHrsReal < &PrbHrsPln
+				//Todas las horas son planificadas
+				&HorasPlanificadasRealizadas = &PrbHrsReal
+				&HorasNoPlanificadasRealizadas = 0
+				&Porcentaje = trim(str(&PrbHrsReal*100/&PrbHrsPln, 5,0))+"%"
+			Else
+				//Las horas planificadas realizadas estan complentas y hay mas no planificadas
+				&HorasPlanificadasRealizadas = &PrbHrsPln
+				&HorasNoPlanificadasRealizadas = &PrbHrsReal - &PrbHrsPln
+				&Porcentaje = trim(str(&PrbHrsReal*100/&PrbHrsPln, 5,0))+"%"
+			Endif
+		Endif
+		If &HorasPlanificadasRealizadas = 0
+			tblHorasPlanRealizadasPlan.Visible = false
+		Else
+			tblHorasPlanRealizadasPlan.Visible = true
+			&Horas = &HorasPlanificadasRealizadas
+			Do 'CalcularWidth'
+			tblHorasPlanRealizadasPlan.Width = &width
+			tblHorasPlanRealizadasPlan.Tooltiptext = Format("%1 horas realizadas", &PrbHrsReal)
+		Endif
+		If &HorasNoPlanificadasRealizadas = 0
+			tblHorasNoPlanificadasPlan.Visible = false
+		Else
+			tblHorasNoPlanificadasPlan.Visible = true
+			&Horas = &HorasNoPlanificadasRealizadas
+			Do 'CalcularWidth'
+			tblHorasNoPlanificadasPlan.Width = &width
+			tblHorasNoPlanificadasPlan.Tooltiptext = Format("%1 horas realizadas", &PrbHrsReal)
+		Endif
+	Else
+		tblHorasPlanRealizadasPlan.Visible = false
+		tblHorasNoPlanificadasPlan.Visible = false
+	Endif
+	
+	//Calcula horas de holgura
+	If &HorasTotales = 0
+		tblHorasHolgura.Visible = false
+	Else
+		tblHorasHolgura.Visible = true
+		If &HorasHolgura >= 0
+			&Horas = &HorasHolgura
+		Else
+			&Horas = &HorasHolgura*-1
+		Endif
+		Do 'CalcularWidth'
+		tblHorasHolgura.Width = &width
+		tblHorasHolgura.Tooltiptext = Format("%1 horas de Holgura", &HorasHolgura)
+		
+		
+		If &HorasSinPlan > 0
+			tblHorasSinPlan.Visible = true
+			&Horas = &HorasSinPlan
+			Do 'CalcularWidth'
+			If &HorasHolgura = 0
+				&PorcentajeSinPlan = ''
+			Else
+				&PorcentajeSinPlan = trim(str(&HorasSinPlan*100/&HorasHolgura, 5,0))+"%"
+			Endif
+			tblHorasSinPlan.Width = &width
+			tblHorasSinPlan.Tooltiptext = Format("%1 horas sin planificar, Ayuda etc.", &HorasSinPlan)
+			
+		Else
+			tblHorasSinPlan.Visible = false
+		Endif
+		
+	Endif
+
+Endsub
+
+//*******************************************
+
+
+
+
+
+
+====== PROPERTIES =======
+Name -> SolRspPlan3
+Description -> Solicitudes del Plan
+URLAccess -> Yes
+MasterPage -> Artech.Genexus.Common.CustomTypes.WebPanelReference
+IsMain -> True
+AUTO_REFRESH -> VARS_CHANGE
+WebUX -> COMPATIBLE
+JOIN_TYPE -> Outer
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Public
+IsDefault -> False

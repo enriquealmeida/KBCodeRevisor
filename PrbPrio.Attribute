@@ -1,0 +1,15 @@
+======OBJECT = PrbPrio.Attribute === Prioridad=====
+NUMERIC(1)
+
+
+====== PROPERTIES =======
+Name -> PrbPrio
+Description -> Prioridad
+HORIZONTAL_DESCRIPTION -> Prioridad
+VERTICAL_DESCRIPTION -> Prioridad
+ContextualTitle -> Prioridad
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 0
+IsDefault -> False

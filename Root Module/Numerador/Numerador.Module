@@ -1,0 +1,26 @@
+======OBJECT = Numerador.Module === Numerador=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T17:16:59.0000000Z" checksum="bc23e021e866e026c5c67f44689e2f02" fullyQualifiedName="Numerador" guid="94f20157-f67f-41c0-b624-05da8cf53506" name="Numerador" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="Numerador">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="37be1d9d-b3e5-4e80-8468-f28e480c813e">
+      <Layers>
+        <Layer Id="37be1d9d-b3e5-4e80-8468-f28e480c813e">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-Numerador" Bounds="342 92.99999 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-WWPBaseObjects" Bounds="644 75.99999 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MasterPage" Bounds="271 284 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Numerador</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> Numerador
+IsDefault -> False

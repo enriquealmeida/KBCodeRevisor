@@ -1,0 +1,10 @@
+======OBJECT = Deploy.Category === Deploy=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-05-08T21:26:00.0000000Z" checksum="60500d07df3094fc7a03ab8920eb307a" fullyQualifiedName="Deploy" guid="934169d5-8f23-46f5-b1a0-564092c8adbd" name="Deploy" type="00000000-0000-0000-0000-000000000006" description="Deploy">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Deploy</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Deploy
+IsDefault -> False

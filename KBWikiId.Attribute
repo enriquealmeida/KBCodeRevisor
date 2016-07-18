@@ -1,0 +1,11 @@
+======OBJECT = KBWikiId.Attribute === Wiki=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> KBWikiId
+Description -> Wiki
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

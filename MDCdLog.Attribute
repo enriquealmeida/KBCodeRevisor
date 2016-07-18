@@ -1,0 +1,16 @@
+======OBJECT = MDCdLog.Attribute === Nivel de log=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> MDCdLog
+Description -> Nivel de log
+HORIZONTAL_DESCRIPTION -> Nivel de log
+VERTICAL_DESCRIPTION -> Nivel de log
+ContextualTitle -> Nivel de log
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 0
+ControlValues -> No genera:N,Al actualizar:A,Al acceder:L
+IsDefault -> False

@@ -1,0 +1,27 @@
+======OBJECT = menu_icon5.Image === menu_icon5=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2015-05-04T13:41:40.0000000Z" checksum="5ac5e85307c861ea8c4da77f04771468" fullyQualifiedName="menu_icon5" guid="6235c4eb-f913-43b6-a04a-91a52d975b13" name="menu_icon5" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="menu_icon5">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="menu_icon5.png" description="menu_icon5.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVY
+dFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAGtSURBVDhPldRLKKZRHMfxY8K4ppGFwkZW1JRS7KxkNiLFkgUpG7GgNE1JZMlKStm4jIUUS9nYkoVE
+KErKNeSecf3+Hu+j43HeZ2b+9Vk85/J/z/s/F+OIeOSiHjPYwhlOsIJBlCMHcQgNJerGJp7xEoX6VtGODDijBHP4A1cSlysMIBMfIg/zeIRrYphb/EQSvFAd
+fuF/VhZ0iSLEwKvbOlwDw2gBN9a3ypUM04iwDXC5QB86cBhpU44fMLORhn91imZoNemYht83CrNtNfyNkjXA34Aa6Iz6/Wsw11aDbxwTsHf9Hj3wkxXjHPY8
+lcLbIbtxAV+RjSkokYwgBeqrRDCZaLXeibcb9StN0BVUUh3cLihZKlpwDHuObxFmyGrwHaAOOqNpSIhowxGinQqVxFQgOEDfus+l+AJFFfRA2ONsT/gOk4Ul
+BAco6QYKoMQqRXCM7TdUJhOLVgQ3x7cP+0a47EKr866e4hv6oYvumhBmB9X49DbqCeqE61xGs4davL80wVBHISbxAFcS0bkchurr1S0sVIdElGEM2u07aOXL
+6EU+9Bffa/YWxrwCqBIUQeKeDRkAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>menu_icon5.png</Value></Property><Property><Name>Description</Name><Value>menu_icon5.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Desktop\menu_icon5.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>menu_icon5</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> menu_icon5
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

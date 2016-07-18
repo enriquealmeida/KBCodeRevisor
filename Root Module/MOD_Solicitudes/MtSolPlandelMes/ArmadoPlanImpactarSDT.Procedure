@@ -1,0 +1,48 @@
+======OBJECT = ArmadoPlanImpactarSDT.Procedure === Impactar SDT solicitudes en el Plan=====
+
+=== RULES ===
+Parm(in:&SolicitudesArmadoPlan, out:&ErrorDescription);
+
+
+=== PROCEDURE SOURCE ===
+For &SolicitudesArmadoPlanItem in &SolicitudesArmadoPlan
+	&SolicitudesTags.load(&SolicitudesArmadoPlanItem.PryId, &SolicitudesArmadoPlanItem.PrbId)
+	&SolicitudesTags.PrbTpo = &SolicitudesArmadoPlanItem.PrbTpo
+	&SolicitudesTags.PrbPlaFch = &SolicitudesArmadoPlanItem.PrbPlaFch
+	&SolicitudesTags.CrrUsr = &SolicitudesArmadoPlanItem.CrrUsr
+	&SolicitudesTags.PrbHrsPln = &SolicitudesArmadoPlanItem.PrbHrsPln
+	
+	&SolicitudYaPlanificadada = false
+	for &SolicitudesTagsItem in &SolicitudesTags.TagItems
+		if &SolicitudesTagsItem.TagId = &SolicitudesArmadoPlanItem.TagId
+			//&SolicitudesTags.TagItems.CurrentItem.TagSolHor = &SolicitudesArmadoPlanItem.TagSolHor
+			&SolicitudesTagsItem.TagSolHor = &SolicitudesArmadoPlanItem.TagSolHor
+			&SolicitudYaPlanificadada = true
+		endif
+	endfor
+	if not &SolicitudYaPlanificadada
+		&SolicitudesTagsItem = new()
+		&SolicitudesTagsItem.TagId = &SolicitudesArmadoPlanItem.TagId
+		&SolicitudesTagsItem.TagSolHor = &SolicitudesArmadoPlanItem.TagSolHor
+		&SolicitudesTags.TagItems.Add(&SolicitudesTagsItem,&SolicitudesTags.TagItems.Count + 1)
+	endif
+
+	&SolicitudesTags.Save()
+	if &SolicitudesTags.success()
+   		commit
+	else
+		for &Message in &SolicitudesTags.GetMessages()
+			&Errores = &Errores + ' ' + &message.Description + ' // '
+   		endfor 
+	endif
+endfor
+
+
+====== PROPERTIES =======
+Name -> ArmadoPlanImpactarSDT
+Description -> Impactar SDT solicitudes en el Plan
+CommitOnExit -> No
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

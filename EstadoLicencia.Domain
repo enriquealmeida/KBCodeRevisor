@@ -1,0 +1,29 @@
+======OBJECT = EstadoLicencia.Domain === Estado Licencia=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-08-26T15:42:00.0000000Z" checksum="703625cc09480031434516989282e568" fullyQualifiedName="EstadoLicencia" guid="b00068ef-0207-41de-b956-06760a5615f0" name="EstadoLicencia" type="00972a17-9975-449e-aab1-d26165d51393" description="Estado Licencia">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>EstadoLicencia</Value></Property><Property><Name>EmptyAsNull</Name><Value>Yes</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>3</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>AttMaxLen</Name><Value>3</Value></Property><Property><Name>AttAvgLen</Name><Value>0</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>BOR, Eliminada, Eliminada; ING, Ingresada, Ingresada; AUT, Autorizada, Autorizada</Value></Property><Property><Name>AttCollection</Name><Value>False</Value></Property><Property><Name>ControlType</Name><Value>Combo Box</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> EstadoLicencia
+OBJ_TYPE -> id_OTYPE_DOM
+EmptyAsNull -> Yes
+ATTCUSTOMTYPE -> 5
+Length -> 3
+Decimals -> 0
+AttMaxLen -> 3
+AttAvgLen -> 0
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+AttCollection -> False
+ControlType -> 0
+IsDefault -> False

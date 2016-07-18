@@ -1,0 +1,15 @@
+======OBJECT = RspSuBol.Attribute === Número de Boleta=====
+CHARACTER(8)
+
+
+====== PROPERTIES =======
+Name -> RspSuBol
+Description -> Número de Boleta
+HORIZONTAL_DESCRIPTION -> Número de Boleta
+VERTICAL_DESCRIPTION -> Boleta
+ContextualTitle -> Número de Boleta
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+idCHARCASE -> idCHARCASE_UPPER
+IsDefault -> False

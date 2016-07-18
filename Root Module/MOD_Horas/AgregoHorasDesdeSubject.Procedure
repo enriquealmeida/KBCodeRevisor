@@ -1,0 +1,60 @@
+======OBJECT = AgregoHorasDesdeSubject.Procedure === Agrego Horas Desde Subject=====
+
+=== RULES ===
+parm(in:&Subject,in:&RspId, in:&PryId, in:&PrbId, out:&Mensaje);
+
+
+=== PROCEDURE SOURCE ===
+	//Actualizo estado
+	for each
+		where          PrbId=&PrbId
+		where          PrbSts=DMPrbSts.ING
+		PrbSts=DMPrbSts.DES
+		PrbDsc=PrbDsc.ToUpper().Replace("HorAS=","#")
+		CrrUsr=SegUsr
+	endfor
+
+	msg("************************",status)
+	&Subject2 = &Subject
+	//msg(&Subject2+"#",status)
+	
+	//ACOMODO UN POCO PARA TOMAR TANTO "HorAS=", COMO "HorAS =", "HorAS= " y "HorAS = " 
+	&Subject2=&Subject2.Replace(" =","=")
+	&Subject2=&Subject2.Replace("= ","=")
+	&Subject2=&Subject2.Replace(","," ")
+	&Subject2=&Subject2.Replace("."," ")
+	&Subject2=&Subject2.Replace(":"," ")
+	&Subject2=&Subject2.Replace(";"," ")
+	&Subject2=&Subject2.Replace("#"," ")
+	&Subject2=&Subject2.ToUpper()
+	//ME QUEDO CON EL STRING EMPEZandO EN HorAS 
+	&Nro = &Subject2.IndexOf("HorAS=")
+	&Subject2=&Subject2.Substring(&Nro,200) + " " //le agrego un blanco al final, para que al menos tenga uno
+	//msg(&Subject2+"#",status)
+	
+	//RECorTO DESDE EL = 
+	&Ini = &Subject2.IndexOf("=")+1
+	//msg("Ini=" + &Ini.ToString(),status)
+	&Subject2 = &Subject2.Substring(&Ini,200)
+	//msg(&Subject2+"#",status)
+	
+	//TOMO EL BLANCO DESPUES DEL NUMERO
+	&Nro = &Subject2.IndexOf(" ")
+	//msg("Nro=" + &Nro.ToString(),status)
+	&Subject2 = &Subject2.Substring(1,&NRO)
+	//msg(&Subject2+"#",status)
+	&Horas = &Subject2.ToNumeric()
+	//msg("Horas=" + &Horas.toString(), status)
+	
+	msg(format("Agrego %1 horas a la solcitud %2, persona=%3, Fecha=%4 ",&Horas, &PrbId, &RspId, &Today),status)
+	&Mensaje = CronometroImputarHoras(&RspId,&Today,&PrbId,'AYUDA',&horas)
+    commit
+
+
+
+====== PROPERTIES =======
+Name -> AgregoHorasDesdeSubject
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Public
+IsDefault -> False

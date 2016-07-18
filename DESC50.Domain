@@ -1,0 +1,22 @@
+======OBJECT = DESC50.Domain === DESC50=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-07-04T18:31:10.0000000Z" checksum="7f2030594dfdc3750a45a6640fa1a780" fullyQualifiedName="DESC50" guid="6f471746-7cb0-47ea-94b1-158c499bc2f6" name="DESC50" type="00972a17-9975-449e-aab1-d26165d51393" description="DESC50">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DESC50</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>50</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DESC50
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 13
+Length -> 50
+IsDefault -> False

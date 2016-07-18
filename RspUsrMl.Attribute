@@ -1,0 +1,14 @@
+======OBJECT = RspUsrMl.Attribute === Usuario de mail=====
+VARCHAR(100)
+
+
+====== PROPERTIES =======
+Name -> RspUsrMl
+Description -> Usuario de mail
+HORIZONTAL_DESCRIPTION -> email
+VERTICAL_DESCRIPTION -> email
+ContextualTitle -> email
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = ObjFch.Attribute === Fecha del Objetivo=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> ObjFch
+Description -> Fecha del Objetivo
+HORIZONTAL_DESCRIPTION -> Fecha del Objetivo
+VERTICAL_DESCRIPTION -> Fecha
+ContextualTitle -> Fecha del Objetivo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

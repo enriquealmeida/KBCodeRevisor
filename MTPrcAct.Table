@@ -1,0 +1,10 @@
+======OBJECT = MTPrcAct.Table === Procesos y Actividades de apoyo=====
+*PrcActId  Codigo10- Null=False
+ PrcActDsc  DESC- Null=False
+ PrcActPA  DMCodigo1- Null=False
+ PrcActDue  Codigo10- Null=False
+
+====== PROPERTIES =======
+Name -> MTPrcAct
+Description -> Procesos y Actividades de apoyo
+CACHE_LEVEL -> 3

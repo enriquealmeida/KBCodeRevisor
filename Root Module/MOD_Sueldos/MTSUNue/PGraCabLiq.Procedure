@@ -1,0 +1,107 @@
+======OBJECT = PGraCabLiq.Procedure === Graba Cabezal Liquidación de Honorarios=====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM);
+
+
+=== PROCEDURE SOURCE ===
+&RspParHxD = PMTParNum( 'HRSPorDIA')
+&RspParDxM = PMTParNum('DIASPorMES')
+&RspParIVAAux = PMTParNum('PARIVA')
+
+&FchLiq = ymdtod(&RspSuA, &RspSuM, 1)
+&FchLiq = eom(&FchLiq)
+
+for each
+where          RspActivo = true
+	
+    &RspId = RspId
+    &RspHrT = RspSueHr
+	
+	if RspVinculoLaboral = DMRspVinculoLaboral.EMPLEADO
+        &EmpCI = RspCedNro
+		// Para los empleados, estaba quedando el campo mtsumes.RspSueldo y mtsumes.RspSuEx con el sueldo del recurso anterior 
+		// (Por ejemplo ANTOGNAZZA quedab con el sueldo de ADECAUX)
+		// Por ahora al menos se van a grabar en cero, para que al menos no confunda, despues en su momento se analizará mejor
+		&RspSueldo = 0
+		&RspSuEx = 0
+    else        // contratados y socios
+        &RspSueldo = RspSue
+        &RspSuEx = RspSueEx
+    endif
+	
+    &RspMonPla = DMMonedaEnum.Peso
+    &RspMonExt = DMMonedaEnum.Dolar
+
+	&RspVinculoLaboral = RspVinculoLaboral
+    do 'Graba'
+endfor
+commit
+
+Sub 'Graba'
+    //if &RspCnt = 'S' or &RspCnt = 'E'      // contratado o contratado exterior
+	if &RspVinculoLaboral = DMRspVinculoLaboral.PROFESIONAL
+        do 'DiasAusencias'
+    else        // empleado
+        &Ausencias = 0
+    endif
+    
+	if RspVinculoLaboral = DMRspVinculoLaboral.EMPLEADO or RspVinculoLaboral = DMRspVinculoLaboral.SOCIO
+            &RspParIVA = 0
+	else
+			&RspParIVA = &RspParIvaAux
+    endif
+	
+    for each
+        where          RspId = &RspId
+        where          RspSuA = &RspSuA
+        where          RspSuM = &RspSuM
+
+        RspParHxD = &RspParHxD
+        RspParDxM = &RspParDxM
+		RspParIVA = &RspParIVA
+        RspHrT = &RspHrT
+        RspDEx = 0
+        RspDPla = &RspParDxM - &Ausencias
+        RspSueldo = &RspSueldo
+        RspSuEx = &RspSuEx
+        RspSuMonPla = &RspMonPla
+        RspSuMonExt = &RspMonExt
+    when none
+        new
+            RspId = &RspId
+            RspSuA = &RspSuA
+            RspSuM = &RspSuM
+            RspParHxD = &RspParHxD
+            RspParDxM = &RspParDxM
+            RspParIVA = &RspParIVA
+            RspHrT = &RspHrT
+            RspDEx = 0
+            RspDPla = &RspParDxM - &Ausencias
+            RspSueldo = &RspSueldo
+            RspSuEx = &RspSuEx
+            RspSuMonPla = &RspMonPla
+            RspSuMonExt = &RspMonExt
+			SUFacturaAprobada=False
+        endnew
+    endfor
+EndSub  // 'Graba'
+
+Sub 'DiasAusencias'
+	&Ausencias = 0
+    &FchIni = ymdtod(&RspSuA, &RspSuM, 1)
+    &FchFin = eom(&FchIni)
+	&Ausencias = CuentoDiasDeLicenciaTomada(&RspId,&FchIni,&FchFin)
+    if &Ausencias > &RspParDxM
+        &Ausencias = &RspParDxM
+    endif
+EndSub  // 'DiasAusencias'
+
+
+====== PROPERTIES =======
+Name -> PGraCabLiq
+Description -> Graba Cabezal Liquidación de Honorarios
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

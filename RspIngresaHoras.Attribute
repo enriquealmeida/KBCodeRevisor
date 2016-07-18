@@ -1,0 +1,15 @@
+======OBJECT = RspIngresaHoras.Attribute === Ingresa horas?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> RspIngresaHoras
+Description -> Ingresa horas?
+ContextualTitle -> Ingresa horas?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+Type -> Boolean
+AttCollection -> False
+ControlTitle -> Ingresa horas?
+IsDefault -> False

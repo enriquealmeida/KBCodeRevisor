@@ -1,0 +1,15 @@
+======OBJECT = NumId.Attribute === Identificador de Numerador=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> NumId
+Description -> Identificador de Numerador
+HORIZONTAL_DESCRIPTION -> Identificador de Numerador
+VERTICAL_DESCRIPTION -> Identificador de Numerador
+ContextualTitle -> Identificador de Numerador
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

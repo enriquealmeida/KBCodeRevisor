@@ -1,0 +1,11 @@
+======OBJECT = MDCod.Table === Codigos de metadata=====
+*MDObjTpo  DMTipoObjetoMetadatos- Null=False
+*MDCdId  Codigo10- Null=False
+ MDCdDsc  DESC50- Null=False
+ MDCdFrm  TpoFormato- Null=False
+ MDCdLog  DMNivelLog- Null=False
+
+====== PROPERTIES =======
+Name -> MDCod
+Description -> Codigos de metadata
+CACHE_LEVEL -> 3

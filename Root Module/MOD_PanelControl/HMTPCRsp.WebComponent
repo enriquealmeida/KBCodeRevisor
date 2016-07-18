@@ -1,0 +1,154 @@
+======OBJECT = HMTPCRsp.WebComponent === Calendario.=====
+
+=== RULES ===
+parm(in:&RspId , IN:&cFchIni , in:&cFchFin );
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &Nulo=Nullvalue(&Txt1)  
+    &Txt2=&Nulo
+    &Txt3=&Nulo
+	&FchAux.Visible=0
+EndEvent  // Start
+
+Event Refresh
+EndEvent  // Refresh
+
+Event load
+	&Nulo=Nullvalue(&Txt1)  
+    &Txt2=&Nulo
+    &Txt3=&Nulo
+	&FchAux.Visible=0
+	&HrsDia = GetHorasTrabajadasPorDia(&RspId)
+	
+	&Txt1=&Nulo
+    &Txt3=&Nulo
+	
+    &Txt2.FontBold=1
+    &Txt1.Link = !"" 
+	&Txt2='DOM'
+    load
+	&Txt2='LUN'
+    load 
+    &Txt2='MAR'
+    load 
+    &Txt2='MIE'
+    load 
+    &Txt2='JUE'
+    load 
+    &Txt2='VIE'
+    load 
+    &Txt2='SAB'
+    load 
+    &Txt2.Visible=0
+	&Txt1.FontBold = 0
+ 
+    &Txt1=&Nulo
+    &i=1
+    do While &i<dow(&cFchIni)
+        load
+        &I=&I+1
+    Enddo
+  
+    &FchAux=&cFchIni
+    Do While &FchAux <= &cFchFin
+        &FerDsc = nullvalue(&FerDsc)
+        &Pinto=Bool.false //'N'
+		
+        if dow(&FchAux) = 1 or dow(&FchAux) = 7
+            &Pinto = Bool.true //'S'
+        else
+            &Pinto= EsFeriado(&FchAux)
+            if &Pinto = Bool.true 
+				&FerDsc=  NombreFeriado(&FchAux)
+			else
+				&FerDsc = nullvalue(&FerDsc)
+            endif
+        endif
+      
+        Do 'VeoHorasIng'
+		
+        Do 'VeoAusencias'
+		
+        &Txt1 = Substr( dtoc(&FchAux), 1, 5 )
+        if &hayAusencia = Bool.false
+            &Txt3 = '<br>' + str(&HrsCnt, 6, 1) + ' hr'
+        else
+            &Txt3 = '<br>' + trim(&AusTpoId) + ' ' + str(&HrsCnt, 6, 1) + ' hr'
+        endif
+		
+        if not null(&FerDsc)
+            &Txt1 = upper(Substr(&FerDsc, 1, 5))
+        endif
+		
+        if &Pinto=Bool.true //'S'
+            &Txt3.ForeColor=RGB(164, 164, 164)
+            &Txt3.FontBold = 0
+        else
+            &Txt3.ForeColor=RGB(0,0,0)
+            &Txt3.FontBold = 0
+            if ( &HrsCnt < (&HrsDia - 1) ) and ( &hayAusencia = Bool.false )
+                &Txt3.FontBold = 0
+                &Txt3.ForeColor = rgb(255, 0, 0)
+            endif
+        endif
+        load
+        &FchAux=&FchAux+1
+    Enddo
+ 
+    &i=dow(&FchAux) 
+    if &i < 7
+        &Txt1=&Nulo
+        &Txt2=&Nulo
+        &Txt3=&Nulo
+        do While &i<=7
+            load
+            &I = &I+1
+        Enddo
+    endif
+EndEvent  // load
+
+
+Sub 'VeoHorasIng'
+ 	&HrsCnt = GetTotalHorasRealizadas(&RspId,&FchAux)
+EndSub
+
+Sub 'VeoAusencias'
+    &hayAusencia = Bool.false
+    for each
+        where      RspId = &RspId
+        where      LicFecIni <= &FchAux
+        where      LicFecFin >= &FchAux
+        where      LicEst <> 'Bor'
+		where      LicTpo = DMLicTpo.Tomada
+		
+        &AusTpoId = AusTpoId
+        &hayAusencia = Bool.true
+    endfor
+EndSub  // 'VeoAusencias'
+
+Event &Txt1.Click
+  &Existe = ExisteResponsable(&RspId)
+	
+  if &Existe and not &FchAux.IsEmpty() 
+	  OpenWindowHoras.Call(&RspId,&FchAux)
+	  refresh
+  endif
+	
+	
+EndEvent
+
+
+
+====== PROPERTIES =======
+Name -> HMTPCRsp
+Description -> Calendario.
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> NO
+WebUX -> SMOOTH
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

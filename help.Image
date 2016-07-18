@@ -1,0 +1,25 @@
+======OBJECT = help.Image === help=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-19T16:26:24.0000000Z" lastUpdate="2014-09-23T12:28:26.0000000Z" checksum="d0250e70606eaf48b81339b32320b8a1" fullyQualifiedName="help" guid="679b5cdc-c48f-45e3-8cf2-f39ee9c33b71" name="help" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="help">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="help.png" description="help.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABb0lEQVRIicXVPUsdQRQG4MeLhZL+gmlSXEMQ0aQKQexFhJAm
+fvwCsRe1sUqZP5BaC60trSyFpBIkkC8VPwohWF5D4CbFzuhy2dndG7zkhbPD7L7nPWdnzpyhzxioyXuOCTTD/BpHwf4ZQ9jAKf4k7ATrgdsTXlUId9sPvKwr
+Po/bHsSjtfG2Sny6RLwtW5KfJUFuMZUSH8Z5gVMHm3iU445iJxHkTGJP1hIO2znOJJ7l5rsJn9WiAN8S5Dfh++sw/y0rAphN+HyJooNhHEerKGoQa4YA0aeF
+wxCsCE8xhs/xxVIikyLbd7/GH0p4i9AIxMeJTLrxHjP4hXdYLuGOcL9EdVrGR1khNLCHuQp+4+6BqxoBDsL4ooY4XOYn46rX/hKfpKut28byf3CM7xUZ3WAL
+FzWy/ypXQRGpgxYt1v6TGtkXHrRUq4i2EngLFeLJVkF5s+vI9qFTIl7a7CL62q4j+nrhRDzIlflfL/0HwV+Zxe0lcY4yywAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>help.png</Value></Property><Property><Name>Description</Name><Value>help.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\TestThemeControles\CSharpModel\web\Resources\help.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>help</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> help
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

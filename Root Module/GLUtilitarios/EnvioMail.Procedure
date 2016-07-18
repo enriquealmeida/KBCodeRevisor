@@ -1,0 +1,31 @@
+======OBJECT = EnvioMail.Procedure === Envio Mail=====
+
+=== RULES ===
+parm(in:&MailMessage, out:&ErrCode,out:&Error);
+
+
+=== PROCEDURE SOURCE ===
+
+GetConnectedSMTPSession.call( &SMTPSession, &ErrCode, &ErrDescription )
+	// 				Este reemplazo se debe a que al mandar correos mediante Gmail, este ignora las propiedades 
+	//				display:none;. La solición que se encontro fue marcar todos los atributos que debían estar
+	//				ocultos con la propiedad display:none !important; la cual Gmail NO ignora. 
+	&FinalHtml = &MailMessage.HTMLText
+	&FinalHtml = &FinalHtml.Replace('display:none;','display:none !important;')
+	//
+&MailMsgFinal = &MailMessage
+&MailMsgFinal.HTMLText = &FinalHtml
+&SMTPSession.Send(&MailMsgFinal)
+
+if &ErrCode <> 0
+	&Error = &ErrDescription
+endif
+
+
+====== PROPERTIES =======
+Name -> EnvioMail
+Description -> Envio Mail
+IsMain -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 18
+IsDefault -> False

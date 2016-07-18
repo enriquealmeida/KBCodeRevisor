@@ -1,0 +1,11 @@
+======OBJECT = CliInterno.Attribute === Interno?=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> CliInterno
+Description -> Interno?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

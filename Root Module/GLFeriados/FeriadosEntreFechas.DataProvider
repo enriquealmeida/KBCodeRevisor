@@ -1,0 +1,56 @@
+======OBJECT = FeriadosEntreFechas.DataProvider === Feriados Entre Fechas=====
+
+=== RULES ===
+parm(in: &FecIni, in:&FecFin);
+
+<Object parent="GLFeriados" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="98917c34-e915-440a-808d-88f57e7f224c" user="" versionDate="2016-04-08T20:13:18.0000000Z" lastUpdate="2016-04-08T18:32:35.0000000Z" checksum="ac7f36d85925f571aa251b97fef3a187" fullyQualifiedName="GLFeriados.FeriadosEntreFechas" guid="b0098031-6e06-4e33-9b0c-4507412be492" name="FeriadosEntreFechas" type="2a9e9aba-d2de-4801-ae7f-5e3819222daf" description="Feriados Entre Fechas">
+  <Part type="1d8aeb5a-6e98-45a7-92d2-d8de7384e432">
+    <Source><![CDATA[DiasList
+{
+	DiasListItem 
+	where FerFecha >= &FecIni and FerFecha <= &FecFin 
+	{
+		Dias = FerFecha
+	}
+}
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+    <Source><![CDATA[parm(in: &FecIni, in:&FecFin);
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+    <Variable Name="FecIni">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FecIni</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Variable Name="FecFin">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FecFin</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>FeriadosEntreFechas</Value></Property><Property><Name>OutputSDT</Name><Value>447527b5-9210-4523-898b-5dccb17be60a-GLFeriados.DiasList</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> FeriadosEntreFechas
+OutputSDT -> 447527b5-9210-4523-898b-5dccb17be60a-78
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+IsDefault -> False

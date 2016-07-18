@@ -1,0 +1,13 @@
+======OBJECT = CliTpoId.Attribute === Tipo=====
+CHARACTER(10)
+
+
+====== PROPERTIES =======
+Name -> CliTpoId
+Description -> Tipo
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttCollection -> False
+ControlType -> 2
+IsDefault -> False

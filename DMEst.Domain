@@ -1,0 +1,26 @@
+======OBJECT = DMEst.Domain === Entrada / Salida / Transferencia=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="EALMEIDANBK\Enrique" versionDate="2016-06-14T19:59:25.0000000Z" lastUpdate="2016-06-14T18:33:56.0000000Z" checksum="d36fa96eb1b5bd6756e23a02aa86f6fe" fullyQualifiedName="DMEst" guid="93f1d263-4d36-43dc-ab4d-d6b780c1f085" name="DMEst" type="00972a17-9975-449e-aab1-d26165d51393" description="Entrada / Salida / Transferencia">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMEst</Value></Property><Property><Name>Description</Name><Value>Entrada / Salida / Transferencia</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>1</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>E, Entradas, Entradas; T, Transferencia, Transferencia; S, Salidas, Salida</Value></Property><Property><Name>ControlType</Name><Value>Combo Box</Value></Property><Property><Name>ControlValues</Name><Value>Entradas:E,Transferencia:T,Salida:S</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMEst
+Description -> Entrada / Salida / Transferencia
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 1
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+ControlType -> 0
+ControlValues -> Entradas:E,Transferencia:T,Salida:S
+IsDefault -> False

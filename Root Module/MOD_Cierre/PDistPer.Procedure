@@ -1,0 +1,46 @@
+======OBJECT = PDistPer.Procedure === Distribuyo Periodo=====
+
+=== RULES ===
+parm(in:&vFchIni ,in:&vFchFin ,in:&vcpmovtpo ,in:&vTasaHrs, in:&TasaPes ) ;
+
+
+=== PROCEDURE SOURCE ===
+// Recorro todos los Proyectos del mes y Grabo los registro de transferencias
+// Son los no distribuibles
+for each order PryId
+    where          PryDist = 'N'
+//    where          PryRecDst='S'
+
+    &PryPcjDst = PryPcjDst
+
+    for each order PryId
+        where          &vFchIni <= CpMovFch  and  CpMovFch <= &vFchFin
+
+        &vPryHorNd=0
+        for each order PryId
+          //  where          &vFchIni <= CpMovFch  and  CpMovFch <= &vFchFin
+
+            // MCrispino, 14/10/04.
+            // Hay proyectos que reciben solo un porcentaje de las horas. La formula cambió para contemplar esto.
+            // Ver también: wkp DstrPrN
+            //&vPryHorNd = &vPryHorNd + CpMovHrs
+            &vPryHorNd += (CpMovHrs * &PryPcjDst) / 100
+        endfor
+        if &vPryHorND <> 0
+            &vImpAux= &vPryHorND * &vTasaHrs
+            &ImpAuxPes = &vPryHorNd * &TasaPes
+            PGCpMov.Call( DMMovSts.Valorizado , 'TRANSF' , PryId , &vImpAux, &ImpAuxPes , DMEst.Transferencia , &vFchFin ,  0, '','','' )
+        endif    
+    endfor  
+endfor   // Recorro Proyectos
+commit
+
+
+====== PROPERTIES =======
+Name -> PDistPer
+Description -> Distribuyo Periodo
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

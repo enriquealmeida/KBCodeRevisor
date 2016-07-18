@@ -1,0 +1,25 @@
+======OBJECT = HSNIVHAB.WebPanel === Selección nivel habilitación=====
+
+=== RULES ===
+parm(in:GLUsAmbId ,out:&V87 ) ;
+order(GLUsAmbId ,GLUsAmbNvl ) ;
+
+
+=== EVENTS SOURCE ===
+
+Event Enter
+    &V87 = GLUsAmbNvl
+   Return
+EndEvent
+
+
+
+====== PROPERTIES =======
+Name -> HSNIVHAB
+Description -> Selección nivel habilitación
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 20
+ObjectVisibility -> Private
+IsDefault -> False

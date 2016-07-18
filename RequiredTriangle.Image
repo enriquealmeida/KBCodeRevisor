@@ -1,0 +1,21 @@
+======OBJECT = RequiredTriangle.Image === Required Triangle=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-09-01T18:43:06.0000000Z" checksum="32568ef5e4192e8ed90da5a3cdee5114" fullyQualifiedName="RequiredTriangle" guid="fd3a5f9a-446b-463b-8a30-7ca3ac4d36a3" name="RequiredTriangle" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Required Triangle">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="requiredAsterix.gif" description="required Triangle.gif"><Data>
+<base64Binary>
+R0lGODlhDAAMAKIHAP93d/9ERP8iIv/d3f+IiP+Zmf8AAP///yH5BAEAAAcALAAAAAAMAAwAAAMceLrc1oyMB+ARJpthiQnWMXlFSBwFF65s675KAgA7
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>requiredAsterix.gif</Value></Property><Property><Name>Description</Name><Value>required Triangle.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Documents and Settings\Joaquín Alvarez\Escritorio\requiredAsterix.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>RequiredTriangle</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> RequiredTriangle
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

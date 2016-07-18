@@ -1,0 +1,23 @@
+======OBJECT = Indicador.Domain === Indicador=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-06-25T12:31:27.0000000Z" checksum="5db0fb4f7df7e65f2db04a5b6f1a28a6" fullyQualifiedName="Indicador" guid="32c89018-45d2-45a1-8c96-7d1313b7090a" name="Indicador" type="00972a17-9975-449e-aab1-d26165d51393" description="Indicador">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Indicador</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Numeric</Value></Property><Property><Name>Length</Name><Value>8</Value></Property><Property><Name>AttMaxLen</Name><Value>8</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Indicador
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 4
+Length -> 8
+AttMaxLen -> 8
+IsDefault -> False

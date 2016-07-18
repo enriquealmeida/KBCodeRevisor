@@ -1,0 +1,21 @@
+======OBJECT = TMDTipo.Transaction === Tipos de metadata=====
+
+=== RULES ===
+parm(in:MDObjTpo,in:&Mode);
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+MDObjTpo*
+MdObjTDsc
+
+
+====== PROPERTIES =======
+Name -> TMDTipo
+Description -> Tipos de metadata
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,34 @@
+======OBJECT = HOImpRec.WebPanel === Impresión de Recibos =====
+
+=== RULES ===
+parm(in:&RspIdPar, in:&AnioPar, in:&MesPar);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    for each
+        where      RspActivo = true
+        &RspId.Additem(RspId, RspId)
+    endfor
+    &RspId = &RspIdPar
+
+    &Fecha = &Today
+
+    &Anio = &AnioPar
+    &Mes = &MesPar
+EndEvent  // Start
+
+
+Event 'Honorarios'
+    HRecHonS.call(&Fecha,&RspId,&Anio,&Mes)
+EndEvent  // 'Honorarios'
+
+
+====== PROPERTIES =======
+Name -> HOImpRec
+Description -> Impresión de Recibos 
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,89 @@
+======OBJECT = GetActividadesAtrasadasResponsable.Procedure === Actividades Atrasadas del Responsable=====
+
+=== RULES ===
+Parm(in:RspId, out:&ActividadesAtrasadas);
+
+
+=== PROCEDURE SOURCE ===
+&FchFin = SumaDiasHabilesAFecha(&Today,-2)
+
+for each
+where          RspActivo = true and RspIngresaHoras = true 
+defined by RspNom
+    &FechaEvaluadaEnBuscaDeAtrasos = PMTParFch(Parametro.FechaCierreMT)
+	&FechaEvaluadaEnBuscaDeAtrasos = &FechaEvaluadaEnBuscaDeAtrasos.AddDays(-1)
+	&FechaEvaluadaEnBuscaDeAtrasos = SumaDiasHabilesAFecha(&FechaEvaluadaEnBuscaDeAtrasos,1)
+    Do while &FechaEvaluadaEnBuscaDeAtrasos <= &FchFin
+		if not ResponsableEstaDeLicencia(RspId,&FechaEvaluadaEnBuscaDeAtrasos)
+			
+            for each 
+            where          HrsCnt > 0 
+            where          HrsFch = &FechaEvaluadaEnBuscaDeAtrasos
+			where          TarId <> TareaEnum.ALMUERZO
+			
+			when None
+				&Actividad = new ActividadesAtrasadas.ActividadesAtrasadasItem()
+				&Actividad.Tipo 			= DMTipoActividad.HorA
+				&Actividad.Vencimiento		= &FechaEvaluadaEnBuscaDeAtrasos
+				&Actividad.Id				= &FechaEvaluadaEnBuscaDeAtrasos.ToString()
+				&Actividad.Descripcion		= ''
+				&Actividad.RelativeHyperLink= ''
+				&ActividadesAtrasadas.Add(&Actividad)
+			endfor
+			
+			
+		endif
+		
+		&FechaEvaluadaEnBuscaDeAtrasos = SumaDiasHabilesAFecha(&FechaEvaluadaEnBuscaDeAtrasos,1)
+    Enddo
+
+	for each
+	where          CrrUsr = RspId
+	where          PrbPlaFch <= &Today  and  not null(PrbPlaFch )  // Estas condiciones eran las utillizadas en las grillas del AtrasosWC
+	where          PrbEstadoActivo = true
+	
+//	where          PrbPlaFch <= ServerDate() and (not PrbPlaFch.IsEmpty()) 
+
+	
+		&Actividad = new ActividadesAtrasadas.ActividadesAtrasadasItem()
+		&Actividad.Tipo 			= DMTipoActividad.SOLICITUD
+		&Actividad.Vencimiento		= PrbPlaFch
+		&Actividad.Id				= PrbId.ToString()
+		&Actividad.Descripcion		= PrbDsc
+		&Actividad.RelativeHyperLink= GetSolicitudesLink(TrnMode.Update,PryId, PrbId)
+		&ActividadesAtrasadas.Add(&Actividad)
+		&Actividad.SolPrbPlaFch = PrbPlaFch
+		&Actividad.SolCliId = CliId
+		&Actividad.SolSisDsc = SisDsc
+		&Actividad.SolPrbSts = PrbSts
+		&Actividad.SolPrbStsDsc = PrbStsDsc
+		&Actividad.SolPryId = PryId
+	endfor
+	
+	for each
+	where          ObjFchRev < ServerDate()
+	where          ObjStsId =EstadoObjetivo.ABIERTO
+		&Actividad = new ActividadesAtrasadas.ActividadesAtrasadasItem()
+		&Actividad.Tipo 			= DMTipoActividad.OBJETIVO
+		&Actividad.Vencimiento		= ObjFchRev
+		&Actividad.Id				= ObjId.ToString()
+		&Actividad.Descripcion		= ObjDsc
+		&Actividad.RelativeHyperLink= Objetivo.Link( TrnMode.Update, ObjId)
+		&ActividadesAtrasadas.Add(&Actividad)
+		&Actividad.ObjFch = ObjFch
+		&Actividad.ObjFchRev = ObjFchRev
+		&Actividad.ObjStsDsc = ObjStsDsc
+		&Actividad.ObjTpoDsc = ObjTpoDsc
+	endfor
+
+endfor
+
+
+
+====== PROPERTIES =======
+Name -> GetActividadesAtrasadasResponsable
+Description -> Actividades Atrasadas del Responsable
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Private
+IsDefault -> False

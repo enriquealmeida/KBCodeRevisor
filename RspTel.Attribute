@@ -1,0 +1,15 @@
+======OBJECT = RspTel.Attribute === Teléfono=====
+CHARACTER(20)
+
+
+====== PROPERTIES =======
+Name -> RspTel
+Description -> Teléfono
+HORIZONTAL_DESCRIPTION -> Teléfono
+VERTICAL_DESCRIPTION -> Teléfono
+ContextualTitle -> Teléfono
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

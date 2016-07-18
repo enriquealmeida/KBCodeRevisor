@@ -1,0 +1,22 @@
+======OBJECT = MTCliPais.Group === Pais del Cliente=====
+<Object parent="MOD_Proyectos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="63d3e12e-5311-4674-aab2-7be88ec310ed" user="" versionDate="2016-03-10T16:05:18.0000000Z" lastUpdate="2016-03-10T14:13:35.0000000Z" checksum="efa76bddc9cc7f616abb21e7daf30c9b" fullyQualifiedName="MOD_Proyectos.MTCliPais" guid="7e854631-0859-430c-bd06-eafe27b20605" name="MTCliPais" type="87313f43-5eb2-41d7-9b8c-e8d9f5bf9588" description="Pais del Cliente">
+  <Part type="74203da2-41b1-402c-0001-d8d564a2c2fa">
+    <Subtype guid="7a8f8cd9-00ac-4122-9648-de6ed78848da">
+      <Name>MTCliPais</Name>
+      <Supertype guid="7b49f934-9a23-4e2d-98bd-fde61e0dc2d6">MTPaisId</Supertype>
+    </Subtype>
+    <Subtype guid="faead760-fe0f-4a1b-a910-057ceb77f271">
+      <Name>MTCliPaisDesc</Name>
+      <Supertype guid="24cf4b68-5572-4653-a138-fba65870b2f5">MTPaisDesc</Supertype>
+    </Subtype>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MTCliPais</Value></Property><Property><Name>Description</Name><Value>Pais del Cliente</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> MTCliPais
+Description -> Pais del Cliente
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,32 @@
+======OBJECT = GetConnectedSMTPSession.Procedure === Get Connected SMTP Session=====
+
+=== RULES ===
+Parm(out:&SMTPSession, out: &ErrCode, out:&ErrDescription);
+
+
+=== PROCEDURE SOURCE ===
+&ErrCode.SetEmpty()
+&ErrDescription.SetEmpty()
+
+&SMTPSession.Sender.Name = 'Metricas' 
+&SMTPSession.Sender.Address = 'aplicaciones@concepto.com.uy'   
+&SMTPSession.Authentication = 1
+&SMTPSession.Host = 'smtp.gmail.com'
+&SMTPSession.UserName = 'aplicaciones@concepto.com.uy'
+&SMTPSession.Password = 'HerNAND?3361912?ARIAs'
+&SMTPSession.Secure=1
+&SMTPSession.Port=587
+&SMTPSession.Login()
+if &SMTPSession.ErrCode <> 0
+	&ErrDescription = &SMTPSession.ErrDescription
+	&ErrCode = &SMTPSession.ErrCode
+endif
+
+
+====== PROPERTIES =======
+Name -> GetConnectedSMTPSession
+Description -> Get Connected SMTP Session
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Public
+IsDefault -> False

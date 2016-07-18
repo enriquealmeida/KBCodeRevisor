@@ -1,0 +1,17 @@
+======OBJECT = SetInicio.bat.File === Set Inicio.bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-05-08T21:29:28.0000000Z" checksum="cf542eb36b1500deb1018571806816e9" fullyQualifiedName="SetInicio.bat" guid="66bd4e3f-a4dd-4339-939a-f3c943190132" name="SetInicio.bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Set Inicio.bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>QHNldCAvQSBfaW5pY2lvPSV0aW1lOn4wLDIlKjM2MDBeDQogICAgICAgICAgICArJXRpbWU6fjMsMSUqMTAqNjBeDQogICAgICAgICAgICArJXRpbWU6fjQsMSUqNjBeDQogICAgICAgICAgICArJXRpbWU6fjYsMSUqMTBeDQogICAgICAgICAgICArJXRpbWU6fjcsMSUgPm51bA0K</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>SetInicio.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>SetInicio.bat</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>..\Deploy\Tools</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  <Categories>Deploy</Categories>
+</Object>
+====== PROPERTIES =======
+Name -> SetInicio.bat
+Extract -> Newer
+ExtractToPath -> ..\Deploy\Tools
+IsDefault -> False

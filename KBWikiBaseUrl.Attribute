@@ -1,0 +1,11 @@
+======OBJECT = KBWikiBaseUrl.Attribute === URL=====
+VARCHAR(1000)
+
+
+====== PROPERTIES =======
+Name -> KBWikiBaseUrl
+Description -> URL
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

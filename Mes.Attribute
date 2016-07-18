@@ -1,0 +1,15 @@
+======OBJECT = Mes.Attribute === Mes de la Hora=====
+NUMERIC(2)
+
+
+====== PROPERTIES =======
+Name -> Mes
+Description -> Mes de la Hora
+HORIZONTAL_DESCRIPTION -> Mes
+VERTICAL_DESCRIPTION -> Mes
+ContextualTitle -> Mes de la Hora
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99
+IsDefault -> False

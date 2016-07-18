@@ -1,0 +1,25 @@
+======OBJECT = PMTParFch.Procedure === Devuelve Parámetro Fecha=====
+
+=== RULES ===
+parm(in:&ParNom, out:&ParFch);
+
+
+=== PROCEDURE SOURCE ===
+&ParFch = nullvalue(&ParFch)
+
+&MDObjTpo = 1
+&MDObjSec = 1
+
+PMDOgDate.call( &MDObjTpo, &MDObjSec, &ParNom, &MDResult, &MDError)
+
+if &MDError = 0
+    &ParFch = &MDResult
+endif
+
+
+====== PROPERTIES =======
+Name -> PMTParFch
+Description -> Devuelve Parámetro Fecha
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 33
+IsDefault -> False

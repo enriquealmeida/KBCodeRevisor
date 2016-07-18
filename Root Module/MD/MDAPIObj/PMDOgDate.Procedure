@@ -1,0 +1,40 @@
+======OBJECT = PMDOgDate.Procedure === get de Date=====
+
+=== RULES ===
+Parm(in:MDObjTpo ,in:MDObjSec ,in:MDCdId ,out:&MDCdDate  , out:&error );
+
+
+=== PROCEDURE SOURCE ===
+&MDCdVal = nullvalue(&MDCdVal)
+&MDCdDate = nullvalue(&MDCdDate )
+
+for each
+    PMDOgVal.call(MDObjTpo,MDObjSec,MDCdId,&MDCdVal,&error)
+    if &error =0
+        if MDCdFrm = 'D'
+            PMDFTpo.call(MDCdFrm,&MDCdVal,&error)
+            if &error=0
+                &dd = val(Substr(trim(&MDCdVal ),1,2))
+                &mm= val(Substr(trim(&MDCdVal ),4,2))
+                &yyyy = val(Substr(trim(&MDCdVal ),7,4))
+                &MDCdDate = YMDtoD(&yyyy,  &mm, &dd)  //Ctod(trim(&MDVal ))
+//                &MDCdDate = Ctod(trim(&MDCdVal ))
+            else
+                &error=3
+            endif
+        else
+            &error =2
+        endif
+    endif
+when none
+    &error =1
+endfor
+
+
+====== PROPERTIES =======
+Name -> PMDOgDate
+Description -> get de Date
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 36
+ObjectVisibility -> Private
+IsDefault -> False

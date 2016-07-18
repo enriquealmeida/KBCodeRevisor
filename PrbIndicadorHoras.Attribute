@@ -1,0 +1,16 @@
+======OBJECT = PrbIndicadorHoras.Attribute === Indicador Horas=====
+NUMERIC(8)
+iif(PrbHrsPln > 0 , 100 * (PrbHrsReal - PrbHrsPln) / PrbHrsPln, 0) IF (PrbHrsReal >= PrbHrsPln) ;
+iif(PrbHrsPln > 0 , 100 * (PrbHrsPln - PrbHrsReal) / PrbHrsPln, 0)  OTHERWISE ;
+
+====== PROPERTIES =======
+Name -> PrbIndicadorHoras
+Description -> Indicador Horas
+HORIZONTAL_DESCRIPTION -> Indicador Horas
+VERTICAL_DESCRIPTION -> Ind.Horas
+Formula -> iif(PrbHrsPln > 0 , 100 * (PrbHrsReal - PrbHrsPln) / PrbHrsPln, 0) IF (PrbHrsReal >= PrbHrsPln) ;
+iif(PrbHrsPln > 0 , 100 * (PrbHrsPln - PrbHrsReal) / PrbHrsPln, 0)  OTHERWISE ;
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

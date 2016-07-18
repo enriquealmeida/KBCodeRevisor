@@ -1,0 +1,21 @@
+======OBJECT = PGFchCrr.Procedure === Grabo Fecha de Cierre=====
+
+=== RULES ===
+parm(in:&FchCrr ) ;
+
+
+=== PROCEDURE SOURCE ===
+&MDObjTpo = 1
+&MDObjSec = 1
+&MDCdId = 'PARFCHCRR'
+PMDOpDate.call( &MDObjTpo, &MDObjSec, &MDCdId, &FchCrr, &MDError)
+commit
+
+
+====== PROPERTIES =======
+Name -> PGFchCrr
+Description -> Grabo Fecha de Cierre
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

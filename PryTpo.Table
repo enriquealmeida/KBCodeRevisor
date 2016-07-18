@@ -1,0 +1,11 @@
+======OBJECT = PryTpo.Table === Tipo de Proyecto=====
+*PryTpo  Codigo10- Null=False
+ PryTpoDsc  DESC- Null=False
+ PryTpoHorasOblig  OBLIGATORIO- Null=False
+ PryTpoFechaOblig  OBLIGATORIO- Null=False
+ PryTpoAprOblig  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> PryTpo
+Description -> Tipo de Proyecto
+CACHE_LEVEL -> 2

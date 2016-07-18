@@ -1,0 +1,20 @@
+======OBJECT = DevuelvoPryNom.Procedure === Devuelvo Pry Nom=====
+
+=== RULES ===
+parm(in:&PryId,out:&PryNom);
+
+
+=== PROCEDURE SOURCE ===
+        for each
+            where            PryId = &PryId
+               &PryNom = PryNom
+		when none
+			&PryNom = 'TODOS LOS PROYECTOS'
+        endfor
+
+
+====== PROPERTIES =======
+Name -> DevuelvoPryNom
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

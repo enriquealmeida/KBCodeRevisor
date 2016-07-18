@@ -1,0 +1,24 @@
+======OBJECT = Descripcion.Domain === Descripcion=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="EALMEIDANBK\Enrique" versionDate="2016-06-14T19:59:25.0000000Z" lastUpdate="2016-06-14T18:11:49.0000000Z" checksum="253441ae3fce432566f236cb6401616e" fullyQualifiedName="Descripcion" guid="568b26db-7282-4cc9-b885-169078428014" name="Descripcion" type="00972a17-9975-449e-aab1-d26165d51393" description="Descripcion">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Descripcion</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>150</Value></Property><Property><Name>AttMaxLen</Name><Value>150</Value></Property><Property><Name>AutoResize</Name><Value>True</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Descripcion
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 13
+Length -> 150
+AttMaxLen -> 150
+AutoResize -> True
+IsDefault -> False

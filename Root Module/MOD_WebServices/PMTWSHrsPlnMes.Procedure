@@ -1,0 +1,42 @@
+======OBJECT = PMTWSHrsPlnMes.Procedure === Devuelve horas planificadas en el mes por proyecto-recurso=====
+
+=== RULES ===
+parm(in:&Anio, in:&Mes, out:&Result);
+
+
+=== PROCEDURE SOURCE ===
+&FchIni = ymdtod(&Anio, &Mes, 1)
+&FchFin = eom(&FchIni)
+
+&xmlw.OpenToString()
+&xmlw.WriteRawText("<?xml version='1.0' encoding='ISO-8859-1' ?>")
+//&xmlw.WriteRawText(newLine())
+&xmlw.WriteStartElement('HorAS_PLAN')
+
+// recorre las horas planificadas para el mes especificado
+for each order CpMovFch
+    where            CpMovFch >= &FchIni
+    where            CpMovFch <= &FchFin
+
+    &xmlw.WriteStartElement('PLANifICADO')
+        &xmlw.WriteElement('PRYID', trim(PryId))
+        &xmlw.WriteElement('CPRECID', trim(CpRecId))
+        &xmlw.WriteElement('CPMOVHRS', trim(str(CpMovHrs)))
+    &xmlw.WriteEndElement()
+endfor
+
+&xmlw.WriteEndElement()
+&xmlw.Close()
+&Result = &xmlw.ResultingString
+
+
+====== PROPERTIES =======
+Name -> PMTWSHrsPlnMes
+Description -> Devuelve horas planificadas en el mes por proyecto-recurso
+IsMain -> True
+CALL_PROTOCOL -> SOAP
+AppLocation -> MTWebServices
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

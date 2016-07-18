@@ -1,0 +1,21 @@
+======OBJECT = Equals.Image === Equals=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T17:02:15.0000000Z" checksum="2955e057ff15c84830343fdfa52e45ec" fullyQualifiedName="Equals" guid="c56464a9-f0d6-4921-9cdb-066de25b56a0" name="Equals" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Equals">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="esigual_icon_13x13px.gif" description="esigual_icon_20x20px.jpg"><Data>
+<base64Binary>
+R0lGODlhDQANAIABAP///////yH5BAEAAAEALAAAAAANAA0AAAIVjI+pywgP44kUzArbwtnwd3HaSDIFADs=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>esigual_icon_13x13px.gif</Value></Property><Property><Name>Description</Name><Value>esigual_icon_20x20px.jpg</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\ImgsTransparecncias\i¦üconos gif - fondo transparente\esigual_icon_13x13px.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Equals</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Equals
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

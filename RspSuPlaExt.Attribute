@@ -1,0 +1,17 @@
+======OBJECT = RspSuPlaExt.Attribute === Plaza o Exterior=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> RspSuPlaExt
+Description -> Plaza o Exterior
+HORIZONTAL_DESCRIPTION -> Plaza o Exterior
+VERTICAL_DESCRIPTION -> Plaza o Exterior
+ContextualTitle -> Plaza o Exterior
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttValueRange -> 'P' 'E'
+ControlType -> 0
+ControlValues -> Plaza:P,Exterior:E
+IsDefault -> False

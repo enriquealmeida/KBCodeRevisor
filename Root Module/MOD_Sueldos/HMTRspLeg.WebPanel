@@ -1,0 +1,58 @@
+======OBJECT = HMTRspLeg.WebPanel === Legajo de un responsable=====
+
+=== RULES ===
+parm(in:RspId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &Usuario = upper( userid() )
+    if &Usuario = RspId
+        &miLegajo = Bool.true
+    else
+        PFUsuHab.call('METRICAS',9,&vOk)
+        &miLegajo = Bool.false
+    endif
+EndEvent  // Start
+
+Event 'Agregar'
+    if &vOK = 'S' or &miLegajo = Bool.true
+        Legajo.Call(TrnMode.Insert,RspId, &Today,'')
+    else
+        msg('Usted no tiene permisos para agregar en el legajo. Debe tener al menos nivel 9 en METRICAS')
+    endif
+EndEvent  // 'Agregar'
+
+Event load
+    if &vOK = 'S'
+        LegFchId.Link = Legajo.Link(TrnMode.Update, RspId, LegFchId, LegTpoId) 
+        &vEliminar = 'Eliminar'
+        &vEliminar.Link = Legajo.Link(TrnMode.Delete,RspId, LegFchId, LegTpoId) 
+    else
+        if &miLegajo = Bool.true
+            LegFchId.Link = Legajo.Link(TrnMode.Display, RspId, LegFchId, LegTpoId) 
+        else
+            LegFchId.Link = link('') 
+        endif
+        &vEliminar = ''
+        &vEliminar.Link = link('')
+    endif
+EndEvent  // load
+
+//Event 'Volver'
+//    Responsables.call()
+//EndEvent  // 'Volver'
+
+Event 'Volver'
+	
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HMTRspLeg
+Description -> Legajo de un responsable
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 12
+ObjectVisibility -> Public
+IsDefault -> False

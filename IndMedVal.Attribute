@@ -1,0 +1,14 @@
+======OBJECT = IndMedVal.Attribute === Valor de la medición=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> IndMedVal
+Description -> Valor de la medición
+HORIZONTAL_DESCRIPTION -> Valor de la medición
+VERTICAL_DESCRIPTION -> Valor de la medición
+ContextualTitle -> Valor de la medición
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

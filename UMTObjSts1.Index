@@ -1,0 +1,13 @@
+======OBJECT = UMTObjSts1.Index === =====
+<Object Type="Unique" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T17:07:35.0000000Z" checksum="1d728794187c2adb317065f7785d0be2" fullyQualifiedName="UMTObjSts1" guid="818801fc-b0b5-4b36-9441-0af0d1256316" name="UMTObjSts1" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">ObjStsDsc</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>UMTObjSts1</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> UMTObjSts1
+Description -> 

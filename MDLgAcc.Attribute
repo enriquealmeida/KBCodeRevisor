@@ -1,0 +1,16 @@
+======OBJECT = MDLgAcc.Attribute === Acción que se realizo=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> MDLgAcc
+Description -> Acción que se realizo
+HORIZONTAL_DESCRIPTION -> Acción que se realizo
+VERTICAL_DESCRIPTION -> Acción que se realizo
+ContextualTitle -> Acción que se realizo
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 0
+ControlValues -> Actualización:A,Lectura:L,Creación:C,Eliminación:E
+IsDefault -> False

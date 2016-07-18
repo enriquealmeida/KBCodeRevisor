@@ -1,0 +1,15 @@
+======OBJECT = PolTpoId.Attribute === Tipo de política=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> PolTpoId
+Description -> Tipo de política
+HORIZONTAL_DESCRIPTION -> Tipo de política
+VERTICAL_DESCRIPTION -> Tipo de política
+ContextualTitle -> Tipo de política
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

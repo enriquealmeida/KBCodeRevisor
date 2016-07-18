@@ -1,0 +1,14 @@
+======OBJECT = TarDsc.Attribute === Descripción de Tarea=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> TarDsc
+Description -> Descripción de Tarea
+HORIZONTAL_DESCRIPTION -> Descripción de Tarea
+VERTICAL_DESCRIPTION -> Descripción de Tarea
+ContextualTitle -> Descripción de Tarea
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

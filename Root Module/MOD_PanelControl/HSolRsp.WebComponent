@@ -1,0 +1,138 @@
+======OBJECT = HSolRsp.WebComponent === Solicitudes de un responsable=====
+
+=== RULES ===
+parm(IN:&RspId, in:&FchIniPar, in:&FchFinPar );
+// los parámetros &FchIniPar y &FchFinPar son por compatibilidad con el panel de control.
+
+
+=== EVENTS SOURCE ===
+Event Start
+    PParChart.call(&ParDirChart,&ParDirWProc)
+    &vDesarrollo=DMPrbSts.DES
+
+
+EndEvent 
+  // Start
+
+Event load
+    Prioridad.Visible = 0
+    PrioridadBaja.Visible = 0
+    imgAtt.Visible = 0
+    imgObs.Visible = 0
+    imgRel.Visible = 0
+    imgVal.Visible = 0 
+    &PrbId.Visible = 1
+	&PryId.Visible = 0
+    &PrbTxt='Solicitudes Abiertas de: ' + &RspId
+    &PrbTxt.FontBold=1
+    load
+   
+    for each  order CrrUsr  PrbSts  //PrbPrio  //PrbPrio PrbPedFch //Primero recorro todas las solicitudes con fecha de vencimiento
+    where      CrrUsr = &RspId  or  SegUsr = &RspId
+    where      PrbSts = &vDesarrollo
+    where      not Null(PrbPlaFch)
+       &PrbId=PrbId
+	   &PryId = PryId
+       &PrbTxt=PrbDsc //Substr(PrbTxt,1,300)
+       &Dias = trim(str(PrbDiasAbi)) 
+       &fecha = dtoc(PrbPlaFch) 
+       &PrbSts = PrbSts
+       &PrbPrio=PrbPrio
+       &CliId=CliId
+
+       Do 'Cargo'
+       load
+    endfor
+    
+    for each order PrbPrio           //Recorro todas las solicitudes SIN fecha de vencimiento
+    where      CrrUsr = &RspId  or  SegUsr = &RspId
+    where      PrbSts=&vDesarrollo    
+    where      Null(PrbPlaFch)
+       &PrbId=PrbId
+	    &PryId = PryId
+       &PrbTxt=PrbDsc //Substr(PrbTxt,1,300)
+       &Dias = trim(str(PrbDiasAbi)) 
+       &fecha = dtoc(PrbPlaFch) 
+       &PrbSts = PrbSts
+       &PrbPrio=PrbPrio
+       &CliId=CliId
+       
+       Do 'Cargo'
+       load
+    endfor
+
+    for each order PrbSts//order none
+    where      PrbSts=&vDesarrollo
+    where      CrrUsr=&RspId or SegUsr=&RspId 
+       &PrbId=PrbId
+	    &PryId = PryId
+       &PrbTxt=PrbDsc //PrbTxt
+       &Dias = trim(str(PrbDiasAbi)) 
+       &fecha = dtoc(PrbPlaFch) 
+       &PrbSts = PrbSts
+       &CliId=CliId
+       Do 'Cargo'
+     
+    endfor        
+EndEvent 
+  // load
+
+Sub 'Cargo'    
+       &PrbTxt.FontBold=0
+
+       &Aux=Substr(&PrbTxt,1, 1000)
+      // &PrbTxt = PFHtmlToTxt(&Aux) 
+       if Len( &PrbTxt )>100
+                 &PrbTxt = Substr(&PrbTxt, 1,100) + '...'
+       endif
+       if &PrbPrio=1
+               Prioridad.Visible = 1
+       else
+               Prioridad.Visible = 0
+       endif
+       if &PrbPrio=9 
+               PrioridadBaja.Visible = 1
+       else
+               PrioridadBaja.Visible = 0
+       endif
+      &PrbId.Link = GetSolicitudesLink(TrnMode.Update,&PryId,&PrbId)
+      &Datos = '<br> Días:' + trim(&Dias) + '; Estado:' + trim(&PrbSts)
+      if not null(&fecha)
+            &Datos = &Datos + '; Para:' + &fecha + '; Cliente: ' + &CliId
+      endif
+      &Datos = &Datos + '<hr>'
+      //MUESTRO O NO ICONOS DE COSAS ASOCIADAS A LA SOLICITUD.
+
+      //Documentos
+      &HayDoc=PFDocAsoSol(&PrbId)
+      if &HayDoc=Bool.true
+
+           imgAtt.Visible = 1
+      else
+           imgAtt.Visible = 0
+      endif
+
+      //Observaciones
+      &HayObs=PFObsSol(&PrbId)
+      if  &HayObs=Bool.true
+
+            imgObs.Visible = 1
+      else
+             imgObs.Visible = 0
+      endif
+      
+EndSub
+
+
+====== PROPERTIES =======
+Name -> HSolRsp
+Description -> Solicitudes de un responsable
+WEB_COMP -> Yes
+URLAccess -> No
+IsMain -> True
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Private
+IsDefault -> False

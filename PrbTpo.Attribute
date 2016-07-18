@@ -1,0 +1,20 @@
+======OBJECT = PrbTpo.Attribute === Tipo del Problema=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> PrbTpo
+Description -> Tipo del Problema
+HORIZONTAL_DESCRIPTION -> Tipo
+VERTICAL_DESCRIPTION -> Tipo
+ContextualTitle -> Tipo
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttCollection -> False
+AUTONUMBER_START -> 1
+AUTONUMBER_STEP -> 1
+AUTONUMBER_FORREPLICATION -> True
+ATT_PICTURE -> @!
+ControlType -> 2
+IsDefault -> False

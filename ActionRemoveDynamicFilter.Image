@@ -1,0 +1,25 @@
+======OBJECT = ActionRemoveDynamicFilter.Image === Action Remove Dynamic Filter=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-08-23T13:53:57.0000000Z" checksum="35fe509106701caa4db66e16dcc33827" fullyQualifiedName="ActionRemoveDynamicFilter" guid="11a6ef14-1a5a-4077-91a2-f41ed9a3a662" name="ActionRemoveDynamicFilter" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Remove Dynamic Filter">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionRemoveDynamicFilter.png" description="Action Remove Dynamic Filter.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAANpJREFUKFOFj70KwjAUhe/g7mqhW7fSXyqldCiBLn2LvEJfwNlHcnQQR1N3ByfpKNgHiPeEBjuE
+euGDcM4XckPL8TxPMmfmybzns5zr33C4ZYYgCHQcxzrLMp3nuTkjQwdn1ol8378nSaKLonCCDo6R8eSabIEDl8IwvLoEF1EUnShN048NeIQL2/O/XlRV1WgD
+s6NjbM9M1DTNzQa8oxPbCyEUSSkPNvgHXOIdd/zKwyUsgQPX7KiUEmuX0MExMoZvbph93/fHtm2Hsiynuq7HrusuyNDBISL6AhpPzVYo1+d3AAAAAElFTkSu
+QmCC
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionRemoveDynamicFilter.png</Value></Property><Property><Name>Description</Name><Value>Action Remove Dynamic Filter.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\buttons\ActionRemoveDynamicFilter.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionRemoveDynamicFilter</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionRemoveDynamicFilter
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

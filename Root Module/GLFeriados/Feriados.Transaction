@@ -1,0 +1,28 @@
+======OBJECT = Feriados.Transaction === Feriados=====
+
+=== RULES ===
+parm(in:&FerFecha ,out:&Mode ) ;
+
+FerFecha = &FerFecha IF not insert;
+noaccept(FerFecha ) IF not insert;
+
+default(FerDescuentoLicencia, False ); //'N');
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+FerFecha*
+FerTipo
+FerDsc
+FerDescuentoLicencia
+
+
+====== PROPERTIES =======
+Name -> Feriados
+Description -> Feriados
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+ObjectVisibility -> Public
+IsDefault -> False

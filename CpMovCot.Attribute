@@ -1,0 +1,22 @@
+======OBJECT = CpMovCot.Attribute === Cotización=====
+NUMERIC(15.4)-
+0 
+	    IF CpMovImp = 0;
+CpMovPesos / CpMovImp 
+	    OTHERWISE;
+
+====== PROPERTIES =======
+Name -> CpMovCot
+Description -> Cotización
+HORIZONTAL_DESCRIPTION -> Cotización
+VERTICAL_DESCRIPTION -> Cotización
+ContextualTitle -> Cotización
+Formula -> 0 
+	    IF CpMovImp = 0;
+CpMovPesos / CpMovImp 
+	    OTHERWISE;
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+idTHOUSANDSEP -> True
+IsDefault -> False

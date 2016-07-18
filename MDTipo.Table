@@ -1,0 +1,8 @@
+======OBJECT = MDTipo.Table === Tipo de Metadata=====
+*MDObjTpo  DMTipoObjetoMetadatos- Null=False
+ MdObjTDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MDTipo
+Description -> Tipo de Metadata
+CACHE_LEVEL -> 2

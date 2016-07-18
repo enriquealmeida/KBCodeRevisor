@@ -1,0 +1,13 @@
+======OBJECT = LiqFacturasFch.Attribute === Fecha de Facturas de Honorarios=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> LiqFacturasFch
+Description -> Fecha de Facturas de Honorarios
+VERTICAL_DESCRIPTION -> Fecha Facturas
+ContextualTitle -> Fecha Facturas
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

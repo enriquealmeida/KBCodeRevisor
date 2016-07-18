@@ -1,0 +1,17 @@
+======OBJECT = HAvisoHorasAtrasadas.WebPanel === HAviso Horas Atrasadas=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Enter
+	AvisoHorasAtrasadas.Call()
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> HAvisoHorasAtrasadas
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 57
+ObjectVisibility -> Public
+IsDefault -> False

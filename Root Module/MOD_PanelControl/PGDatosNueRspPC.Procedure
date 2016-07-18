@@ -1,0 +1,36 @@
+======OBJECT = PGDatosNueRspPC.Procedure === PGDatos Nue Rsp PC=====
+
+=== RULES ===
+parm(in:&RspId,out:&MTPCLugId);
+
+
+=== PROCEDURE SOURCE ===
+for each
+    defined by MTPCDsc
+
+    new
+        RspId = &RspId
+        MTPCWbp = MTPCWbp
+    endnew
+
+    // doy de alta los web components en los paneles de control
+    &MTPCLugId = nullvalue(&MTPCLugId)
+    for each
+        defined by MTPCWCObligatorio
+
+        &MTPCLugId += 1
+        new
+            RspId = &RspId
+            MTPCWbp = MTPCWbp
+            MTPCLugId = &MTPCLugId
+            MTWCWbp = MTWCWbp
+        endnew
+    endfor
+endfor
+
+
+====== PROPERTIES =======
+Name -> PGDatosNueRspPC
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+IsDefault -> False

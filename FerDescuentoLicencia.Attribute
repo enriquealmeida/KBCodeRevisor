@@ -1,0 +1,13 @@
+======OBJECT = FerDescuentoLicencia.Attribute === Se descuenta de la licencia=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> FerDescuentoLicencia
+Description -> Se descuenta de la licencia
+VERTICAL_DESCRIPTION -> Se descuenta?
+ContextualTitle -> Se Descuenta?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

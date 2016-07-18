@@ -1,0 +1,65 @@
+======OBJECT = PGraHonMes.Procedure === Graba Honorarios del Mes=====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM, in:&RspIdPar);
+
+
+=== PROCEDURE SOURCE ===
+&PryDef = PMTParChr('PRYDEF')
+
+for each order RspSuA, RspSuM
+    where          RspSuA = &RspSuA
+    where          RspSuM = &RspSuM
+    where          RspId = &RspIdPar or null(&RspIdPar)
+    where          RspActivo = true
+    //where          RspCnt <> 'N' or RspSoc = 'S'    // no le liquido a los que son empleados
+	where          RspVinculoLaboral <> DMRspVinculoLaboral.EMPLEADO
+    defined by RspSueldo
+
+    &RspId = RspId
+    msg('RspId=' + &RspId , status)
+    &RubId = ''
+    &RspSuAuxId = ''
+    &MonId = RspSuMonPla
+    &TpoHonId = 'HUY'
+    // veo si hay otra tupla anterior para sacar el rubro de los honorarios en Uruguay
+    PFRubLiq.call(&RspId,&PryDef,&TpoHonId,&MonId,&RspSuA,&RspSuM,&RubId,&RspSuAuxId)
+
+    // Grabo los honorarios de lo trabajado en Uruguay
+    &RspSuImp = RspSueldo * (RspHrT / RspParHxD) * ( RspDPla / RspParDxM )
+    &RspSuObs = trim(str(RspHrT, 6, 2)) + ' horas, '
+    &RspSuObs += trim(str(RspDPla, 2, 0)) + ' dias'
+	&RspSuFch = ymdtod(&RspSuA, &RspSuM, 1)
+	&RspSubol = ''
+    if &RspSuImp <> 0
+
+		InsertoSuMesDet.Call(RspId,&RspSuA,&RspSuM,&PryDef,&RspSuFch,&TpoHonId,RspSuMonPla,DMTpoSueldo.Plaza,&RspSuImp,&RspSuObs,&RubId,&RspSuAuxId,&RspSubol)
+         
+    endif
+
+    &RubId = ''
+    &RspSuAuxId = ''
+    &MonId = RspSuMonExt
+    &TpoHonId = 'HEX'
+    // veo si hay otra tupla anterior para sacar el rubro de los honorarios en el exterior
+    PFRubLiq.call(RspId,&PryDef,&TpoHonId,&MonId,&RspSuA,&RspSuM,&RubId,&RspSuAuxId)
+
+
+    // Grabo los honorarios de lo trabajado en el exterior
+    &RspSuImp = RspSuEx * RspDEx / RspParDxM
+    &RspSuObs = trim(str(RspDEx, 2, 0)) + ' dias'
+    if &RspSuImp <> 0
+		
+		InsertoSuMesDet.Call(&RspId,&RspSuA,&RspSuM,&PryDef,&RspSuFch,&TpoHonId,&MonId,DMTpoSueldo.Exterior,&RspSuImp,&RspSuObs,&RubId,&RspSuAuxId,&RspSubol)
+
+    endif
+endfor
+
+
+====== PROPERTIES =======
+Name -> PGraHonMes
+Description -> Graba Honorarios del Mes
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

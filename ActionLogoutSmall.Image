@@ -1,0 +1,26 @@
+======OBJECT = ActionLogoutSmall.Image === Action Logout Small=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-08-19T16:26:24.0000000Z" lastUpdate="2014-09-25T19:49:15.0000000Z" checksum="9b8135cdc912206f84f03fc3adec1a28" fullyQualifiedName="ActionLogoutSmall" guid="ec099e89-ffdd-4402-9131-bc96e06c7112" name="ActionLogoutSmall" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Logout Small">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionLogoutSmall.png" description="Action Logout Small.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVY
+dFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuM4zml1AAAAGgSURBVDhPrZTNSsNAFIXb+osiiAoqgi4Mgl20pE0pZFN8AcFFdqI+hK8gbl0Igi7ElU/gzwOIQkUE
+dSFuFHSnC0FBq1L9bnNj0tLqSD1wyMy955wkM5PEAjiOY2cymYtsNvv5F+I5gOMaE4JiEcET12W4YMgt+I5vRWNCULyBV4VCoVNLv8J13R48r3BTSyEkkLtd
+6tQYeF6aCmStp9F9rxm+x6YC0ZyhPcrlchMyZzxHba3SjMI0UHSwjPbEtu1J1rxV1lLbIWoDLcvq4PVmqdXu7D3a4MiccvUkVG0hagN5pX7mH4G5EdE8cONF
+xl1q9UGhKpD5QGAyoJzfec/zWtTeVGAZ3uGd+TFQXplaSU0NKR44xbhNrT4oVAWCBLVRdnIsSjS3QRg8lJ1GG/ctEdQJrAvVyfe7m06nR1KpVLfcSNshTAPR
+7MCNfD4/KHN8q3C90ozCNFCeCvbqVHzP8N9+DnE8jX8O8Jr1sNjhIROidfCUCN1OJpPtGuWD4p42z2HRkHJk3vAtEZHwkxQ0hmkcw6pzZsB9nq7PT4nFvgA7
+4h7OSmZtVAAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionLogoutSmall.png</Value></Property><Property><Name>Description</Name><Value>Action Logout Small.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\Usuario\Downloads\ActionLogoutSmall.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionLogoutSmall</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionLogoutSmall
+IsDefault -> False

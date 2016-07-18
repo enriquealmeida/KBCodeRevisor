@@ -1,0 +1,45 @@
+======OBJECT = Indicedecomplejidad.Document === Indice de complejidad=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-05-05T18:32:13.0000000Z" lastUpdate="2016-05-05T18:25:14.0000000Z" checksum="5992e30a72d08d5dd5c1a18dd1dd44e2" fullyQualifiedName="Indice de complejidad" guid="322e97a7-5cbd-4ac2-81e2-b6af322b009f" name="Indice de complejidad" type="faeb588c-dcce-4dad-9af3-cdd11b961a32" description="Indice de complejidad">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <InnerHtml><![CDATA[<H1>Indice de complejidad</H1>
+<TABLE style="WIDTH: 80%">
+<TBODY>
+<TR>
+<TD><STRONG>Fecha</STRONG></TD>
+<TD><STRONG>Objetos</STRONG></TD>
+<TD><STRONG>Complexity Index Total</STRONG></TD>
+<TD><STRONG>Average</STRONG></TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">2016/05/05</TD>
+<TD>679</TD>
+<TD>60605</TD>
+<TD>89</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px"></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD></TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD></TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD></TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD></TR></TBODY></TABLE></TH><TH></TH><TH></TH><TH></TH><TH>]]></InnerHtml>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Indice de complejidad</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> Indice de complejidad
+IsDefault -> False

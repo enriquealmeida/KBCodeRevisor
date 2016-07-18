@@ -1,0 +1,13 @@
+======OBJECT = WizardAuxiliarData.SDT === Wizard Auxiliar Data=====
+
+=== STRUCTURE ===
+WizardAuxiliarData, collection: WizardAuxiliarDataItem
+	Key, V(100), Key 
+	Value, L(2097152), Value 
+
+====== PROPERTIES =======
+Name -> WizardAuxiliarData
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

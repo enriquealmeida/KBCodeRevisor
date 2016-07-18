@@ -1,0 +1,31 @@
+======OBJECT = MOD_Solicitudes.Module === MOD_Solicitudes=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-03-14T02:22:11.0000000Z" lastUpdate="2016-03-13T22:49:00.0000000Z" checksum="761f53cb038edd536d642130dd6f1850" fullyQualifiedName="MOD_Solicitudes" guid="00963078-4237-4f62-b093-e99452c06fb0" name="MOD_Solicitudes" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="MOD_Solicitudes">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="bc79c795-a96c-4b3e-b42d-9c735d033e2d">
+      <Layers>
+        <Layer Id="bc79c795-a96c-4b3e-b42d-9c735d033e2d">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Solicitudes" Bounds="70.31973 92.204 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="223.9761 448.5325 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-WWPBaseObjects" Bounds="-33.32785 431.5395 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-Root Module" Bounds="636.8002 657.9108 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-GLFeriados" Bounds="835.3763 506.754 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Horas" Bounds="743.5493 178.5626 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Proyectos" Bounds="75.30161 644.9814 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MD" Bounds="285.9265 601.5881 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MOD_Solicitudes</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> MOD_Solicitudes
+IsDefault -> False

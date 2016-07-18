@@ -1,0 +1,14 @@
+======OBJECT = RspSuImp.Attribute === Monto=====
+NUMERIC(15.2)-
+
+
+====== PROPERTIES =======
+Name -> RspSuImp
+Description -> Monto
+HORIZONTAL_DESCRIPTION -> Monto
+VERTICAL_DESCRIPTION -> Monto
+ContextualTitle -> Monto
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

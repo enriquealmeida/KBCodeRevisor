@@ -1,0 +1,81 @@
+======OBJECT = HDstrPrN.WebPanel === Distribución de proyectos=====
+
+=== RULES ===
+parm(in:&vFchIni ,in:&vFchFin ) ;
+
+default(&vcpmovtpo ,'R' ) ;
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &vcpmovtpo = 'R'
+EndEvent  // Start
+
+Event Refresh
+    &vTotADist=0
+    &TotADistPes = 0
+    &vTotHorND=0
+    &vTasaHrs=0
+    &TasaHrsPes = 0
+EndEvent
+
+Event load
+    &vPryImp = 0
+    &PryImpPes = 0
+    for each
+        where      &vFchIni <= CpMovFch  and  CpMovFch <= &vFchFin
+
+        if PryDist ='S'  //Proyecto Distribuible.
+             &vPryImp = &vPryImp + CpMovImp
+             &PryImpPes = &PryImpPes + CpMovPesos
+        else
+            if PryDist <> 'T'  //No se toma en cuenta para la distribucion
+
+                &vTotHorND += (CpMovHrs * PryPcjDst) / 100
+            endif
+        endif          
+    endfor
+
+    // redondeo los importes para que no queden valores del tipo -0.00
+    &vPryImp = Round(&vPryImp, 2)
+    &PryImpPes = Round(&PryImpPes, 2)
+
+    if &vPryImp <> 0 or &PryImpPes <> 0
+        &vTotADist = &vTotADist + &vPryImp
+        &TotADistPes = &TotADistPes + &PryImpPes
+        load
+    endif
+    if &vTotHorNd <> 0
+       &vTasaHrs = &vTotADist / &vTotHorND
+       &TasaHrsPes = &TotADistPes / &vTotHorND
+    else
+        &vTasaHrs = 0
+        &TasaHrsPes = 0
+    endif       
+EndEvent
+
+Event Enter
+   PDistPer.call(&vFchIni,&vFchFin,&vcpmovtpo,&vTasaHrs,&TasaHrsPes)
+
+    // Cereo los proyectos distribuibles
+    for each Line
+        &vImpAux = - &vPryImp
+        &ImpAuxPes = (-1) * &PryImpPes
+        PGCpMov.Call( DMMovSts.Valorizado , 'TRANSF' , PryId , &vImpAux, &ImpAuxPes , DMEst.Transferencia , &vFchFin , 0,'','','' )
+    endfor
+    commit
+    Refresh
+EndEvent
+
+
+
+
+====== PROPERTIES =======
+Name -> HDstrPrN
+Description -> Distribución de proyectos
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

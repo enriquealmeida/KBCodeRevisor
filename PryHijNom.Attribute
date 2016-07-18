@@ -1,0 +1,15 @@
+======OBJECT = PryHijNom.Attribute === Nombre=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> PryHijNom
+Description -> Nombre
+HORIZONTAL_DESCRIPTION -> Nombre
+VERTICAL_DESCRIPTION -> Nombre
+ContextualTitle -> Nombre
+Class -> INFERRED
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-21
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,63 @@
+======OBJECT = LicenciaEntreFechas.DataProvider === Licencia Entre Fechas=====
+
+=== RULES ===
+parm(in:&RspId, in:&FecIni, in:&FecFin);
+
+<Object parent="MOD_Licencia" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="eb85f78d-a9cf-45de-813e-39740f7daa9c" user="" versionDate="2016-04-22T14:15:38.0000000Z" lastUpdate="2016-04-21T15:52:08.0000000Z" checksum="2461add4e8f8736cc41a22d6664056da" fullyQualifiedName="MOD_Licencia.LicenciaEntreFechas" guid="000c8112-a2e0-4b10-87e7-2ab85bd54cfd" name="LicenciaEntreFechas" type="2a9e9aba-d2de-4801-ae7f-5e3819222daf" description="Licencia Entre Fechas">
+  <Part type="1d8aeb5a-6e98-45a7-92d2-d8de7384e432">
+    <Source><![CDATA[RangoLicencias
+{
+	RangoLicenciasItem	
+	where RspId = &RspId and LicTpo = DMLicTpo.Tomada and LicEst = EstadoLicencia.Autorizada
+	where not ((LicFecIni < &FecIni and LicFecFin < &FecIni) or (LicFecIni > &FecFin and LicFecFin > &FecFin))
+	{
+		DLicFecIni = LicFecIni
+		DLicFecFin = LicFecFin
+	}
+}
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+    <Source><![CDATA[parm(in:&RspId, in:&FecIni, in:&FecFin);
+]]></Source>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+    <Variable Name="RspId">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>RspId</Value></Property><Property><Name>Description</Name><Value>Responsable</Value></Property><Property><Name>idIsAutoDefinedVariable</Name><Value>True</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspId</Value></Property></Properties>
+    </Variable>
+    <Variable Name="FecIni">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FecIni</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Variable Name="FecFin">
+      <Documentation />
+      <Help />
+      <Properties><Property><Name>Name</Name><Value>FecFin</Value></Property><Property><Name>idBasedOn</Name><Value>Domain:Fecha</Value></Property></Properties>
+    </Variable>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>LicenciaEntreFechas</Value></Property><Property><Name>OutputSDT</Name><Value>447527b5-9210-4523-898b-5dccb17be60a-MOD_Licencia.RangoLicencias</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> LicenciaEntreFechas
+OutputSDT -> 447527b5-9210-4523-898b-5dccb17be60a-79
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+IsDefault -> False

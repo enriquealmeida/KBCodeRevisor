@@ -1,0 +1,58 @@
+======OBJECT = HMTPCCli.WebPanel === Panel de control de clientes=====
+
+=== RULES ===
+parm(IN:&CliId1, IN:&FchIni1 , IN:&FchFnl1 );
+
+
+=== EVENTS SOURCE ===
+Event Start
+    if null(&FchFnl1)
+        &FchFnl = PMTParFch('PARFCHCRR')
+    else
+        &FchFnl = &FchFnl1
+    endif
+    if null(&FchIni1)
+        &Anio = year(&FchFnl )
+        &Fecha = '01/01/'+trim(str(&Anio))
+        &FchIni = ctod(&Fecha)
+    else
+        &FchIni = &FchIni1
+    endif
+    if null(&CliId1)
+        &CliId = 'CONCEPTO'
+    else
+        &CliId = &CliId1
+    endif
+    &EvolTpo = 'H'
+    &Acum = Bool.false //'N'
+    &MonId = '2222'
+    &UsarFecha = 'M'
+EndEvent  // Start
+
+Event Refresh
+   PCCli2.Object = HPCCli2.create(&CliId,&FchIni,&FchFnl,&MonId,&UsarFecha)
+   Evolucion.Object = HGrfEvolCli.create(&CliId,&FchIni,&FchFnl,&EvolTpo,&Acum,&MonId,&UsarFecha)
+EndEvent  // Refresh
+
+Event 'Graficar'
+     Evolucion.Object = HGrfEvolCli.create(&CliId,&FchIni,&FchFnl,&EvolTpo,&Acum,&MonId,&UsarFecha)
+EndEvent  // 'Graficar'
+
+Event &MonId.Click
+
+EndEvent  // &MonId.Click
+
+Event &UsarFecha.Click
+
+EndEvent  // &UsarFecha.Click
+
+
+====== PROPERTIES =======
+Name -> HMTPCCli
+Description -> Panel de control de clientes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 13
+ObjectVisibility -> Public
+IsDefault -> False

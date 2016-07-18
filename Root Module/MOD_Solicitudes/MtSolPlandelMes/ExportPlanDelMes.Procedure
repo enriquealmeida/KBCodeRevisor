@@ -1,0 +1,112 @@
+======OBJECT = ExportPlanDelMes.Procedure === Export Plan Del Mes=====
+
+=== RULES ===
+
+parm(in:&PlanSolicitudes, out:&Filename, out:&ErrorMessage);
+
+
+=== PROCEDURE SOURCE ===
+// Exports the contents of a grid (using the selcted order and filters) to an Excel file.
+//PloadContext.Call(&Context)
+
+&Random = Random() * 10000
+&Filename = !".\PrivateTempStorage\PlandelMes" + &Random.ToString().Trim() + !".xlsx"
+//&Filename = !"ExportWWSolicitudes-" + &Random.ToString().Trim() + !".xlsx"
+
+//&ExcelDocument.UseAutomation = Boolean.False
+&ExcelDocument.Open(&Filename)
+Do 'CheckStatus'
+&ExcelDocument.Clear()
+
+&CellRow = 1
+&FirstColumn = 1
+//Cliente 	Para 	Estado 	Prb 	Id 	Hay que hacer 	Cns 	Tipo 	Prio 	Proyecto 	Tag 	Dias
+// Write titles
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 0).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 0).Text = 'Cliente'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 1).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 1).Text = 'Para'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 2).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 2).Text = 'Estado'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 3).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 3).Text = 'Rsp'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 4).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 4).Text = 'Id'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 5).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 5).Text = 'Texto'
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 6).Bold = Boolean.True
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 6).Text = 'Cns'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 7).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 7).Text = 'Tipo'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 8).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 8).Text = 'Prio'
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 9).Bold = Boolean.True
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 9).Text = 'Proyecto'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 10).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 10).Text = 'TAG'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 11).Text = 'H.Planificadas'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 11).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 12).Text = 'H.Realizadas'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 12).Bold = True
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 13).Text = '% Avance'
+&ExcelDocument.Cells(&CellRow, &FirstColumn + 13).Bold = True
+
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 11).Bold = Boolean.True
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 11).Text = 'Dias'
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 12).Bold = Boolean.True
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 12).Text = 'Testeada'
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 13).Bold = Boolean.True
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 13).Text = 'Horas'
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 14).Bold = Boolean.True
+//&ExcelDocument.Cells(&CellRow, &FirstColumn + 14).Text = 'Req.Doc'
+
+for &Solicitud in &PlanSolicitudes
+	// Write cell values
+	if &Solicitud.PrbSts <> TrnMode.Insert  //No se ponen en la planilla las solicitudes INS. Sol 28657 
+		&CellRow += 1
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 0).Text = &Solicitud.CliId
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 1).Date = &Solicitud.prbplafch
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 2).Text = &Solicitud.prbsts
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 3).Text = &Solicitud.crrusr
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 4).Number = &Solicitud.prbid
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 5).Text = &Solicitud.prbdsc.Trim()
+		//&ExcelDocument.Cells(&CellRow, &FirstColumn + 6).Number = &Solicitud.prbcnsid
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 7).Text = &Solicitud.prbtpo
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 8).Number =&Solicitud.prbprio
+		//&ExcelDocument.Cells(&CellRow, &FirstColumn + 9).Text = &Solicitud.prbpryid
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 10).Text = &Solicitud.TagId
+		//&ExcelDocument.Cells(&CellRow, &FirstColumn + 11).Number = &Solicitud.PrbDiasAbi
+		//&ExcelDocument.Cells(&CellRow, &FirstColumn + 12).Text = &Solicitud.PrbTesteada
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 11).Number = &Solicitud.PrbHrsPln  
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 12).Number = &Solicitud.PrbHrsReal
+		&ExcelDocument.Cells(&CellRow, &FirstColumn + 13).Number = &Solicitud.PrbAvance 
+		//&ExcelDocument.Cells(&CellRow, &FirstColumn + 14).Text = &Solicitud.PrbReqDoc  
+	endif
+endfor 
+
+&ExcelDocument.Save()
+Do 'CheckStatus'
+&ExcelDocument.Close()
+&guidString = SetResponseFileSessionGUID(&Filename)
+&FileNameDescarga = format("PlandelMes.%1",ExtensionArchivoEnum.XLSX)
+ResponseFile(&guidString,MIMETypeEnum.XLSX,ContentDispositionEnum.attachment,&FileNameDescarga)
+
+
+Sub 'CheckStatus'
+    if (&ExcelDocument.ErrCode <> 0)
+        &ErrorMessage = &ExcelDocument.ErrDescription
+        msg('CheckStatus:' + &ErrorMessage + ' ' + &Filename )
+        &Filename = ""
+        &ExcelDocument.Close()
+        Return
+    endif
+EndSub
+
+
+====== PROPERTIES =======
+Name -> ExportPlanDelMes
+Description -> Export Plan Del Mes
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

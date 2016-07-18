@@ -1,0 +1,14 @@
+======OBJECT = URspFec.Index === =====
+<Object Type="Duplicate" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T17:07:38.0000000Z" checksum="8433af8955f760d985d79bce475222b7" fullyQualifiedName="URspFec" guid="6a4d630b-dd72-4f05-91e0-73ce3236aa0a" name="URspFec" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspId</Member>
+      <Member Order="Descending">LicFecIni</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>URspFec</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> URspFec
+Description -> 

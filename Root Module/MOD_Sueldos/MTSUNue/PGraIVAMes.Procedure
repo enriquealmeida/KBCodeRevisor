@@ -1,0 +1,64 @@
+======OBJECT = PGraIVAMes.Procedure === Graba IVA del Mes=====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM, in:&RspIdPar);
+
+
+=== PROCEDURE SOURCE ===
+for each order RspSuA, RspSuM
+    where          RspSuA = &RspSuA
+    where          RspSuM = &RspSuM
+    where          RspId = &RspIdPar or null(&RspIdPar)
+
+    &RspId = RspId
+
+    &MonIdMN = '0'
+    &MonIdME = '2222'
+
+    &ParIVA = RspParIVA
+	&RspSuFch = ymdtod(&RspSuA, &RspSuM, 1)
+
+    if &ParIVA <> 0
+        // calculo el IVA en moneda nacional
+        &Total = 0
+        for each
+			where          TpoHonCateg = TpoHonCategoriaEnum.Honorario or TpoHonCateg = TpoHonCategoriaEnum.Otros
+            where          MonId = &MonIdMN
+
+            &Total += RspSuImp
+        endfor
+
+        // grabo el IVA en moneda nacional
+        &RspSuImp = &Total * &ParIVA / 100
+        if &RspSuImp <> 0
+			InsertoSuMesDet.Call(&RspId,&RspSuA, &RspSuM, 'CONCEPTO',&RspSuFch,'IVA',&MonIdMN,DMTpoSueldo.Plaza,&RspSuImp,'','','','')
+        endif
+
+        // calculo el IVA en moneda extranjera
+        &Total = 0
+        for each
+            where          TpoHonCateg = TpoHonCategoriaEnum.Honorario or TpoHonCateg = TpoHonCategoriaEnum.Otros
+            where          MonId = &MonIdME
+			where          RspSuPlaExt='P'
+
+            &Total += RspSuImp
+        endfor
+
+        // grabo el IVA en moneda extranjera
+        &RspSuImp = &Total * &ParIVA / 100
+        if &RspSuImp <> 0
+			InsertoSuMesDet.Call(&RspId,&RspSuA, &RspSuM, 'CONCEPTO',&RspSuFch,'IVA',&MonIdME,DMTpoSueldo.Plaza,&RspSuImp,'','','','')
+        endif
+    endif
+endfor
+commit
+
+
+====== PROPERTIES =======
+Name -> PGraIVAMes
+Description -> Graba IVA del Mes
+CommitOnExit -> No
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

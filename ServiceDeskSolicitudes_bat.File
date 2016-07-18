@@ -1,0 +1,16 @@
+======OBJECT = ServiceDeskSolicitudes_bat.File === Service Desk Solicitudes_bat=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-07-01T16:42:46.0000000Z" lastUpdate="2016-07-01T16:30:27.0000000Z" checksum="064312bdfe7e889423cb665cbd4bb159" fullyQualifiedName="ServiceDeskSolicitudes_bat" guid="ad6ff831-b889-4621-be48-fd9729ace9e4" name="ServiceDeskSolicitudes_bat" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="Service Desk Solicitudes_bat">
+  <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+    <Data><base64Binary>YzoNCmNkIGM6XHNpc3RlbWFzXG10YmF0Y2hldjNcDQptb2Rfc29saWNpdHVkZXMuYXNvbGljaXR1ZGVzc2VydmljZWRlc2suZXhlID4gc29saWNpdHVkZXNzZXJ2aWNlZGVzay5sb2cNCg0KDQo=</base64Binary></Data>
+    <Properties><Property><Name>FileName</Name><Value>ServiceDeskSolicitudes.bat</Value></Property><Property><Name>FileExtension</Name><Value>.bat</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ServiceDeskSolicitudes_bat</Value></Property><Property><Name>Extract</Name><Value>Newer</Value></Property><Property><Name>ExtractToPath</Name><Value>.\bin</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ServiceDeskSolicitudes_bat
+Extract -> Newer
+ExtractToPath -> .\bin
+IsDefault -> False

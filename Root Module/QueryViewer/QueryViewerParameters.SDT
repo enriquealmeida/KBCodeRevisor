@@ -1,0 +1,12 @@
+======OBJECT = QueryViewerParameters.SDT === Query Viewer Parameters=====
+
+=== STRUCTURE ===
+QueryViewerParameters, collection: Parameter
+	Name, C(20), Name 
+	Value, C(20), Value 
+
+====== PROPERTIES =======
+Name -> QueryViewerParameters
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 67
+IsDefault -> False

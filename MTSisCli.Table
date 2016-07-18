@@ -1,0 +1,7 @@
+======OBJECT = MTSisCli.Table === Sistemas del Cliente=====
+*CliId  Cliente- Null=False
+*SisId  DMSistemaId- Null=False
+
+====== PROPERTIES =======
+Name -> MTSisCli
+Description -> Sistemas del Cliente

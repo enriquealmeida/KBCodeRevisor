@@ -1,0 +1,53 @@
+======OBJECT = CopiarFeriadosBatch.Procedure === Copiar feriados desde año=====
+
+=== RULES ===
+parm(IN:&AnioD ,IN:&AnioH ,IN:&Ovr ) ;
+
+
+=== PROCEDURE SOURCE ===
+if &Ovr = 1
+    &V3 = concat('01', str(&AnioH , 4), '/')
+    &V4 = concat('01', &V3 ,'/')
+    &FecH = ctod(&V4 )
+
+    for each order FerFecha
+        where          FerFecha >= &FecH
+        &Anio = year(FerFecha )
+        if &Anio = &AnioH
+            delete
+        else
+            if &Anio > &AnioH
+                exit        
+            endif
+        endif            
+    endfor     
+endif    
+
+&V1 = concat('01', str(&AnioD , 4), '/')
+&V2 = concat('01', &V1 ,'/')
+&FecD = ctod(&V2 )
+for each order FerFecha
+    where          FerFecha >= &FecD
+    &Anio = year(FerFecha )
+    if &Anio = &AnioD
+        &Dia = day(FerFecha )
+        &Mes = month(FerFecha )
+        &Fecnew = ymdtod( &AnioH, &Mes , &Dia )
+        AgregaFeriados.call(&Fecnew,FerTipo,FerDsc,FerDescuentoLicencia)
+    else
+        if &Anio > &AnioD
+            exit        
+        endif
+    endif
+endfor     
+commit
+
+
+====== PROPERTIES =======
+Name -> CopiarFeriadosBatch
+Description -> Copiar feriados desde año
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+ObjectVisibility -> Private
+IsDefault -> False

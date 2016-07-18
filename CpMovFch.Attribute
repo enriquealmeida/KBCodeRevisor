@@ -1,0 +1,15 @@
+======OBJECT = CpMovFch.Attribute === Fecha del Movimiento=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> CpMovFch
+Description -> Fecha del Movimiento
+HORIZONTAL_DESCRIPTION -> Fecha del Movimiento
+VERTICAL_DESCRIPTION -> Fecha del Movimiento
+ContextualTitle -> Fecha del Movimiento
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> 99/99/9999
+IsDefault -> False

@@ -1,0 +1,1131 @@
+======OBJECT = DocumentaciónResponsive.Document === Documentación Responsive=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-04-13T18:38:37.0000000Z" lastUpdate="2016-04-13T18:32:12.0000000Z" checksum="594d896c48e754ff6b287c25b74cdaee" fullyQualifiedName="DocumentaciónResponsive" guid="954b5bb8-06fb-4f67-89e2-1d8662125997" name="DocumentaciónResponsive" type="faeb588c-dcce-4dad-9af3-cdd11b961a32" description="Documentación Responsive">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <InnerHtml><![CDATA[<P>Tipos de estado:</P>
+<TABLE class=Table style="HEIGHT: 634px; WIDTH: 1182px">
+<TBODY>
+<TR>
+<TD style="HEIGHT: 16px; WIDTH: 1px">Objeto</TD>
+<TD style="WIDTH: 55px">Estado</TD>
+<TD style="WIDTH: 450px">Observación</TD>
+<TD>Generado por Pattern</TD>
+<TD>Clase</TD>
+<TD>Última revisión</TD></TR>
+<TR>
+<TD style="HEIGHT: 15px">[[WebPanel.MOD_PanelControl.PanelControl]]</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>No</TD>
+<TD>Tabla con WC</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 17px">[[WebPanel.Unknown]]</TD>
+<TD>0</TD>
+<TD>Tabla muy grande y filtros se ven mal. </TD>
+<TD>No</TD>
+<TD>Grilla + Filtros</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Horas.WorkWithPlusHoras]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Horas.ResumenHoras]]</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>No</TD>
+<TD>Tabla con WC + Filtros</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Horas.WorkWithPlusHoras]]/Transaction</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusSolicitudes]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>01/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WebPanel.MOD_Solicitudes.HOEfiRspUrg]]</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>No</TD>
+<TD>Grilla + Filtros + WC</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WebPanel.MOD_Solicitudes.SummaryPrbTab]]</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>No</TD>
+<TD>Tabla con WC + Filtros</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WebPanel.MOD_Solicitudes.ListoActividadDelMes]]</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>No</TD>
+<TD>Grilla + Filtros</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.Unknown]]/Selection</TD>
+<TD>25</TD>
+<TD>El ancho no puede ser menor a&nbsp;1500px </TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Solicitudes.KanbanSolicitudes]]</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>No</TD>
+<TD>Tabla con WC + Filtros</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Solicitudes.CalculoIndicadores]]</TD>
+<TD>0</TD>
+<TD>Tabla muy grande. </TD>
+<TD>No</TD>
+<TD>Grilla + Filtros</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusSolicitudes]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusSolicitudes]]/ExtraSelection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusSolicitudes]]/Transaction</TD>
+<TD>75</TD>
+<TD>Todo ok. Salvo editor en pestaña "Seguimiento"</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.Unknown]]/Transaction</TD>
+<TD>0</TD>
+<TD>(No hecho)</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.Unknown]]/Prompt</TD>
+<TD>0</TD>
+<TD>(No hecho)</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.Unknown]]/Prompt (TagItems)</TD>
+<TD>0</TD>
+<TD>(No hecho)</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.Unknown]]/View</TD>
+<TD>0</TD>
+<TD>(No hecho)</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Horas.WorkWithPlusHoras]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok. </TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusSolicitudes]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Costos.HwResTot]]</TD>
+<TD>50</TD>
+<TD>Tablas no son responsive debido a error que generan los WC al pasarlos a responsive</TD>
+<TD>No</TD>
+<TD>Grilla + Tabla con WC</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 18px">[[WebPanel.MOD_Costos.HwResMeA]]</TD>
+<TD>0</TD>
+<TD>Tablas y gráfica no son responsive y son WC </TD>
+<TD>No</TD>
+<TD>Grilla + Filtros + Gráfica</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Proyectos.WorkWithPlusProyectos]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>01/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusProyectos]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusProyectos]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusProyectos]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok. </TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Costos.HWPryNAct]]</TD>
+<TD>75</TD>
+<TD>El ancho no puede ser menor a 743px</TD>
+<TD>No</TD>
+<TD>Grilla + Filtros</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusProyectosCierre]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusProyectosCierre]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_PanelControl.HMTPCCli]]</TD>
+<TD>25</TD>
+<TD>Tabla WC no responsive. El ancho no puede ser menor a 850px.</TD>
+<TD>No</TD>
+<TD>WC + Filtros</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Cierre.HMTValTransferencia]]</TD>
+<TD>25</TD>
+<TD>Tabla muy grande.</TD>
+<TD>No</TD>
+<TD>Grilla</TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 17px">[[WorkWithPlus.MOD_Costos.WorkWithPlusTCpRec]]/ExtraSelection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Costos.WorkWithPlusTCpRec]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>25/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Costos.WorkWithPlusTCpRec]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Costos.WorkWithPlusTCpRec]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>25/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusObjetivo]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok. </TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusObjetivo]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>24/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusObjetivo]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok. </TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>25/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 18px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusProcesos]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>25/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 18px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusProcesos]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok. </TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>25/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 18px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusProcesos]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>25/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusProcesos]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>25/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 18px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusPoliticas]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusPoliticas]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok. </TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 18px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusPoliticas]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>01/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 20px">[[WebPanel.MOD_Objetivos.MedicionObjetivos]]</TD>
+<TD>25</TD>
+<TD>
+<P>Tabla muy grande.</P></TD>
+<TD>No</TD>
+<TD>Grilla + Filtros</TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusObjetivosEstados]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 18px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusObjetivosEstados]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusObjetivosEstados]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusObjetivosTipos]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusObjetivosTipos]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusObjetivosTipos]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Objetivos.WorkWithPlusIndicadores]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Objetivos.WorkWithPlusIndicadores]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Objetivos.WorkWithPlusIndicadores]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>29/02/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusPoliticasTipo]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+
+<TD>01/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusPoliticasTipo]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok. </TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>01/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Objetivos.WorkWithPlusPoliticasTipo]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.GLUsuarios.WorkWithPlusUsuario]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.GLUsuarios.WorkWithPlusUsuario]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.GLUsuarios.WorkWithPlusUsuario]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.GLUsuarios.WorkWithPlusUsuario]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.GLUsuarios.HWamb]]</TD>
+<TD>0</TD>
+<TD>(No hecho)</TD>
+<TD>No</TD>
+<TD>Grilla</TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTTpo]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTTpo]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTTpo]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTTpo]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusSolicitudesEstado]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusSolicitudesEstado]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusSolicitudesEstado]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusSolicitudesEstado]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTTpoCal]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTTpoCal]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTTpoCal]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTTpoCal]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTMTSolOri]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTMTSolOri]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTMTSolOri]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusTMTSolOri]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>02/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.Unknown]]</TD>
+<TD>75</TD>
+<TD>Tablas no son responsive debido a error que generan los WP al pasarlos a responsive</TD>
+<TD>No</TD>
+<TD>Grilla + Filtros</TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Consolidado.WorkWithPlusTMTCnsEst]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Consolidado.WorkWithPlusTMTCnsEst]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Consolidado.WorkWithPlusTMTCnsEst]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Consolidado.WorkWithPlusTMTCnsEst]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusClaseProyecto]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusClaseProyecto]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusClaseProyecto]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTipoProyecto]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTipoProyecto]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTipoProyecto]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MD.HWMD]]</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MD.HMDWAdm]]</TD>
+<TD>75</TD>
+<TD>Consultar</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_PanelControl.WorkWithPlusTMTPC]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_PanelControl.WorkWithPlusTMTPC]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_PanelControl.WorkWithPlusTMTPC]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_PanelControl.WorkWithPlusTMTWC]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_PanelControl.WorkWithPlusTMTWC]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_PanelControl.WorkWithPlusTMTWC]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>03/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTareas]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>04/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTareas]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>04/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTareas]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>04/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Proyectos.ViewResponsables]]</TD>
+<TD>0</TD>
+<TD>Consultar</TD>
+<TD>No</TD>
+<TD></TD>
+<TD>04/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.Unknown|Unknown]]</TD>
+<TD>75</TD>
+<TD>Consultar</TD>
+<TD>No</TD>
+<TD></TD>
+<TD>04/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTCliTpo]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>04/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 17px">[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTCliTpo]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>04/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTCliTpo]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>04/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Consolidado.WorkWithPlusKB]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Consolidado.WorkWithPlusKB]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Consolidado.WorkWithPlusKB]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusWiki]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusWiki]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusWiki]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 17px">[[WorkWithPlus.MOD_Solicitudes.WorkWithPlusWiki]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Proyectos.WorkWithPlusSis]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusSis]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 18px">[[WorkWithPlus.MOD_Proyectos.WorkWithPlusSis]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Proyectos.WorkWithPlusSis]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusSistemasCliente]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusSistemasCliente]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusSistemasCliente]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Sueldos.WorkWithPlusTMTLegTpo]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Sueldos.WorkWithPlusTMTLegTpo]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Sueldos.WorkWithPlusTMTLegTpo]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px"><SPAN style="WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; COLOR: rgb(0,0,0); TEXT-ALIGN: left; FONT: 13px Arial; WIDOWS: 1; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">[[WorkWithPlus.MOD_Sueldos.WorkWithPlusTMTTpoHon]]/View</SPAN></TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 18px"><SPAN style="WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; COLOR: rgb(0,0,0); TEXT-ALIGN: left; FONT: 13px Arial; WIDOWS: 1; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">[[WorkWithPlus.MOD_Sueldos.WorkWithPlusTMTTpoHon]]/Selection</SPAN></TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 20px"><SPAN style="WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; COLOR: rgb(0,0,0); TEXT-ALIGN: left; FONT: 13px Arial; WIDOWS: 1; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">[[WorkWithPlus.MOD_Sueldos.WorkWithPlusTMTTpoHon]]/Transaction</SPAN></TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px"><SPAN style="WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; COLOR: rgb(0,0,0); TEXT-ALIGN: left; FONT: 13px Arial; WIDOWS: 1; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">[[WorkWithPlus.MOD_Sueldos.WorkWithPlusTMTTpoHon]]/Prompt</SPAN></TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Licencia.WorkWithPlusAusenciaTpo]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Licencia.WorkWithPlusAusenciaTpo]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Licencia.WorkWithPlusAusenciaTpo]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.GLFeriados.TrabajarConFeriados]]</TD>
+<TD>50</TD>
+<TD>Tabla no responsive </TD>
+<TD>No</TD>
+<TD>Grilla&nbsp;+ Filtros</TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.GLMoneda.WorkWithPlusMonedas]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.GLMoneda.WorkWithPlusMonedas]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.GLMoneda.WorkWithPlusMonedas]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTMTPaises]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTMTPaises]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTMTPaises]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusTMTPaises]]/Prompt</TD>
+<TD>75</TD>
+<TD>Popup se abre de tamaño fijo</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.Numerador.WorkWithPlusTNumera]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.Numerador.WorkWithPlusTNumera]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.Numerador.WorkWithPlusTNumera]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Licencia.WorkWithPlusLicencia]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Licencia.WorkWithPlusLicencia]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD style="HEIGHT: 16px">[[WorkWithPlus.MOD_Licencia.WorkWithPlusLicencia]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>07/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Licencia.LicenciasXFechaCalendario]]</TD>
+<TD>0</TD>
+<TD>Consultar</TD>
+<TD>No</TD>
+<TD>Grilla + Filtros</TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Sueldos.HwSUMes]]</TD>
+<TD>0</TD>
+<TD>Consultar</TD>
+<TD>No</TD>
+<TD>Grilla + Filtros</TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WebPanel.MOD_Cierre.CierreMensual]]</TD>
+<TD>0</TD>
+<TD>Consultar</TD>
+<TD>No</TD>
+<TD>Grilla + Filtros</TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Costos.WorkWithPlusMovimientos]]/View</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Costos.WorkWithPlusMovimientos]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Costos.WorkWithPlusMovimientos]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Cierre.WorkWithPlusTTradAto]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Cierre.WorkWithPlusTTradAto]]/Selection</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>AvisoHorasAtrasadas</TD>
+<TD>0</TD>
+<TD>WP No existe </TD>
+<TD>No</TD>
+<TD></TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusResponsable]]/Transaction</TD>
+<TD>100</TD>
+<TD>Todo ok.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusResponsable]]/Selection</TD>
+<TD>50</TD>
+<TD>Tabla muy grande.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD>[[WorkWithPlus.MOD_Proyectos.WorkWithPlusResponsable]]/ExtraSelection</TD>
+<TD>50</TD>
+<TD>Tabla muy grande.</TD>
+<TD>Si</TD>
+<TD></TD>
+<TD>08/03/2016</TD></TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD>
+<TD></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>]]></InnerHtml>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DocumentaciónResponsive</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> DocumentaciónResponsive
+IsDefault -> False

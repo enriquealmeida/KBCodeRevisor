@@ -1,0 +1,58 @@
+======OBJECT = HorasXRspEnMesXCliente.Procedure === Horas XRsp En Mes XCliente=====
+
+=== RULES ===
+Parm(in:&RspId, in:&CliId, in:&TagId, out:&Horas);
+
+
+=== PROCEDURE SOURCE ===
+&anio = &TagId.Substring(1,4).ToNumeric()
+&Mes  = &TagId.Substring(5,2).ToNumeric() 
+&DiaInicio = ymdtoD(&anio, &Mes, 1)
+&DiaFin = &DiaInicio.EndOfMonth()
+&DiaAux = &DiaInicio
+
+&CountDias = 0
+Do While &DiaAux <= &DiaFin
+	
+	do 'DiaHabil'
+	if &DiaHabil
+		
+		do case
+			case &RspId = 'ARIVOIR'
+				do case
+					case &CliId = 'DNA'
+						//Lunes, Jueves, Viernes
+						 if dow(&DiaAux) = 2 or dow(&DiaAux) = 5 or dow(&DiaAux) = 6
+							 &CountDias += 1
+						 endif
+					case &CliId = 'ADCR'
+						//Martes, Miercoles
+						if dow(&DiaAux) = 3 or dow(&DiaAux) = 4
+							 &CountDias += 1
+						 endif
+					Otherwise
+						//&CountDias += 1
+				endcase
+			otherwise
+				&CountDias += 1
+		endcase
+	endif
+
+	&DiaAux += 1
+Enddo
+
+&Horas = &CountDias * 7.5
+
+
+
+Sub 'DiaHabil'
+	&DiaHabil = EsdiaHabil(&DiaAux) 
+EndSub
+
+
+====== PROPERTIES =======
+Name -> HorasXRspEnMesXCliente
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

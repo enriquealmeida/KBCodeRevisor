@@ -1,0 +1,24 @@
+======OBJECT = ContainerFooterSeparator.Image === Container Footer Separator=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-10-05T17:47:21.0000000Z" checksum="5adae8314fbe4e8a574c928951b634ed" fullyQualifiedName="ContainerFooterSeparator" guid="daa094d0-1c12-4d25-8d77-d18777a88f8a" name="ContainerFooterSeparator" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Container Footer Separator">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="sombra_contenedor_blanco.jpg" description="sombra_contenedor_blanco.jpg"><Data>
+<base64Binary>
+/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMD/8AAEQgABAABAwERAAIRAQMRAf/EAFMAAQAAAAAAAAAAAAAAAAAAAAgBAQEAAAAAAAAAAAAAAAAAAAQGEAADAQAAAAAAAAAAAAAAAAAAqClp
+EQABBQAAAAAAAAAAAAAAAAAAYaIjYyX/2gAMAwEAAhEDEQA/AHZTbSVmAk6kTuXvP//Z
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>sombra_contenedor_blanco.jpg</Value></Property><Property><Name>Description</Name><Value>sombra_contenedor_blanco.jpg</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>D:\Projects\DVelop\Diseño WWP Evento2011\sombra_contenedor_blanco.jpg</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ContainerFooterSeparator</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ContainerFooterSeparator
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

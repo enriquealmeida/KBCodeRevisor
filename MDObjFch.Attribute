@@ -1,0 +1,14 @@
+======OBJECT = MDObjFch.Attribute === Fecha de creación=====
+DATE(8)
+
+
+====== PROPERTIES =======
+Name -> MDObjFch
+Description -> Fecha de creación
+HORIZONTAL_DESCRIPTION -> Fecha de creación
+VERTICAL_DESCRIPTION -> Fecha de creación
+ContextualTitle -> Fecha de creación
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

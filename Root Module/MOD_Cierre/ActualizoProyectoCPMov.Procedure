@@ -1,0 +1,20 @@
+======OBJECT = ActualizoProyectoCPMov.Procedure === Actualizo Proyecto CPMov=====
+
+=== RULES ===
+parm(in:&CpMovId, in:&PryId);
+
+
+=== PROCEDURE SOURCE ===
+for each
+    where            CpMovId = &CpMovId
+  PryId=&PryId
+endfor
+
+
+====== PROPERTIES =======
+Name -> ActualizoProyectoCPMov
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

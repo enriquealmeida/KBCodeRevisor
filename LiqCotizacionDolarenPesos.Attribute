@@ -1,0 +1,19 @@
+======OBJECT = LiqCotizacionDolarenPesos.Attribute === Cotización del Dólar=====
+NUMERIC(12.3)-
+
+
+====== PROPERTIES =======
+Name -> LiqCotizacionDolarenPesos
+Description -> Cotización del Dólar
+VERTICAL_DESCRIPTION -> Cotización Dólar
+ContextualTitle -> Cotización Dólar
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttCollection -> False
+AUTONUMBER -> False
+AUTONUMBER_START -> 1
+AUTONUMBER_STEP -> 1
+AUTONUMBER_FORREPLICATION -> True
+ControlType -> 2
+IsDefault -> False

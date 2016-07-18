@@ -1,0 +1,145 @@
+======OBJECT = WorkWithPlusSolicitudesTags.WorkWithPlus === Work With Plus Solicitudes Tags=====
+<Object parent="MOD_Solicitudes.SolicitudesTags" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="ea768eae-d538-4a35-99c6-f964370e53b1" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-07-04T15:59:34.0000000Z" lastUpdate="2016-07-04T15:56:01.0000000Z" checksum="bf747b0b42b33992e8ca0b4331d3c215" fullyQualifiedName="MOD_Solicitudes.WorkWithPlusSolicitudesTags" guid="ed65d63e-83c4-02ae-2dce-ff5315f4cccc" name="WorkWithPlusSolicitudesTags" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Solicitudes Tags">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWSolicitudesTags" defaultSecFuntionKey="WWSolicitudesTags">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Solicitudes.SolicitudesTags" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Solicitudes.SolicitudesTags" SecFuntionKeyINS="WWSolicitudesTags_Insert" defaultSecFuntionKeyINS="WWSolicitudesTags_Insert" SecFuntionKeyUPD="WWSolicitudesTags_Update" defaultSecFuntionKeyUPD="WWSolicitudesTags_Update" SecFuntionKeyDLT="WWSolicitudesTags_Delete" defaultSecFuntionKeyDLT="WWSolicitudesTags_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;SolicitudesTagsTitle-2;28;ErrorViewer-2;01;TableContent-2;01;TableLeafLevel_TagItems-2;88;Actions">
+      <textBlock controlName="SolicitudesTagsTitle" defaultControlName="SolicitudesTagsTitle" caption="Tags " defaultCaption="Tags " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" childrenOrderedList="2;22;PryId-2;22;PrbId-2;22;PrbDsc-2;22;PrbTpo-2;22;CrrUsr-2;22;PrbSts-2;22;PrbStsRequiereUsuario-2;22;CrrFch-2;22;PrbHrsPln-2;22;PrbHrsReal-2;22;PrbPlaFch">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" description="Solicitud" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" mergeWithPrevious="True" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbId" description="" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" mergeWithPrevious="True" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" description="" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" mergeWithPrevious="True" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CrrUsr" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CrrUsr" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbSts" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbSts" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CrrFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CrrFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsPln" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsPln" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsReal" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsReal" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbPlaFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbPlaFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <table name="TableLeafLevel_TagItems" defaultName="TableLeafLevel_TagItems" themeClass="Table100x100" defaultThemeClass="Table100x100" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="Tag Items" defaultPanelTitle="Tag Items" collapsable="False" defaultCollapsable="False" defaultCellWidth_S="75%" defaultCellWidth_L="50%" cellThemeClass="CellMarginTop" defaultCellThemeClass="CellMarginTop" childrenOrderedList="2;15;GridLevel_TagItems">
+        <gridLevel childrenOrderedList="2;81;TagId-2;81;TagSolHor-2;81;TagSolHorReal" name="GridLevel_TagItems" defaultName="GridLevel_TagItems">
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TagId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TagId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TagSolHor" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TagSolHor" description="Planificadas" defaultDescription="=Attribute.ContextualTitle" themeClass="Attribute" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-TagSolHorReal" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-TagSolHorReal" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="Attribute" />
+        </gridLevel>
+      </table>
+      <actionGroup themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;PrbDsc-4;39;-;76;-TagItems;76;-5;41;" id="ea768eae-d538-4a35-99c6-f964370e53b1:1" defaultId="ea768eae-d538-4a35-99c6-f964370e53b1:1" name="SolicitudesTags" defaultName="SolicitudesTags">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Tags " defaultDescription=" Tags " childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.WWSolicitudesTags" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Solicitudes.ExportWWSolicitudesTags" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Solicitudes.ExportReportWWSolicitudesTags" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Solicitudes.WWSolicitudesTagsDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;SolicitudesTagsTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="SolicitudesTagsTitle" defaultControlName="SolicitudesTagsTitle" caption="Tags " defaultCaption="Tags " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;30;-4;12;PrbDsc">
+              <orders childrenOrderedList="4;13;=PrbDsc.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order childrenOrderedList="4;26;PrbDsc;=PrbDsc.ContextualTitle" name="=PrbDsc.ContextualTitle" defaultName="=PrbDsc.ContextualTitle">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" />
+                </order>
+              </orders>
+              <filterAttribute name="PrbDsc" defaultName="PrbDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="PrbDsc like &amp;PrbDsc when not &amp;PrbDsc.IsEmpty()" defaultCondition="PrbDsc like &amp;PrbDsc when not &amp;PrbDsc.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="4;17;Delete-4;17;Update-4;23;PryId-4;23;PrbId-4;23;PrbDsc-4;23;PrbTpo-4;23;CrrUsr-4;23;PrbSts-4;23;PrbStsRequiereUsuario-4;23;CrrFch-4;23;PrbHrsPln-4;23;PrbHrsReal-4;23;PrbPlaFch">
+          <standardAction name="Delete" defaultName="Delete" />
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PryId = &amp;TFPryId when not &amp;TFPryId.IsEmpty()" defaultFilterCondition="PryId = &amp;TFPryId when not &amp;TFPryId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrbId = &amp;TFPrbId when not &amp;TFPrbId.IsEmpty()" defaultFilterCondition="PrbId = &amp;TFPrbId when not &amp;TFPrbId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" filterCondition="PrbDsc like &amp;TFPrbDsc when not &amp;TFPrbDsc.IsEmpty()" defaultFilterCondition="PrbDsc like &amp;TFPrbDsc when not &amp;TFPrbDsc.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbTpo" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbTpo" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrbTpo = &amp;TFPrbTpo when not &amp;TFPrbTpo.IsEmpty()" defaultFilterCondition="PrbTpo = &amp;TFPrbTpo when not &amp;TFPrbTpo.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CrrUsr" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CrrUsr" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CrrUsr = &amp;TFCrrUsr when not &amp;TFCrrUsr.IsEmpty()" defaultFilterCondition="CrrUsr = &amp;TFCrrUsr when not &amp;TFCrrUsr.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbSts" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbSts" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrbSts = &amp;TFPrbSts when not &amp;TFPrbSts.IsEmpty()" defaultFilterCondition="PrbSts = &amp;TFPrbSts when not &amp;TFPrbSts.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbStsRequiereUsuario" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbStsRequiereUsuario" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrbStsRequiereUsuario = &amp;TFPrbStsRequiereUsuario when not &amp;TFPrbStsRequiereUsuario.IsEmpty()" defaultFilterCondition="PrbStsRequiereUsuario = &amp;TFPrbStsRequiereUsuario when not &amp;TFPrbStsRequiereUsuario.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CrrFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CrrFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="CrrFch &gt;= &amp;TFCrrFch when not &amp;TFCrrFch.IsEmpty()" defaultFilterCondition="CrrFch &gt;= &amp;TFCrrFch when not &amp;TFCrrFch.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsPln" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsPln" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrbHrsPln = &amp;TFPrbHrsPln when not &amp;TFPrbHrsPln.IsEmpty()" defaultFilterCondition="PrbHrsPln = &amp;TFPrbHrsPln when not &amp;TFPrbHrsPln.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsReal" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsReal" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrbHrsReal = &amp;TFPrbHrsReal when not &amp;TFPrbHrsReal.IsEmpty()" defaultFilterCondition="PrbHrsReal = &amp;TFPrbHrsReal when not &amp;TFPrbHrsReal.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbPlaFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbPlaFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="PrbPlaFch &gt;= &amp;TFPrbPlaFch when not &amp;TFPrbPlaFch.IsEmpty()" defaultFilterCondition="PrbPlaFch &gt;= &amp;TFPrbPlaFch when not &amp;TFPrbPlaFch.IsEmpty()" />
+        </grid>
+      </table>
+    </selection>
+    <view childrenOrderedList="5;14;PryId;5;41;-5;14;PrbId;5;41;-5;06;Main Table-5;38;" caption="PrbDsc.ToString()" defaultCaption="PrbDsc.ToString()">
+      <GenexusPatterns_Objects>
+        <Object Id="View" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.ViewSolicitudesTags" />
+      </GenexusPatterns_Objects>
+      <parameters>
+        <parameter name="PryId" defaultName="PryId" />
+        <parameter name="PrbId" defaultName="PrbId" />
+      </parameters>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableContentNoMargin" defaultThemeClass="TableContentNoMargin" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" childrenOrderedList="5;06;TableTitle-5;29;WorkWithLink-5;34;">
+        <table name="TableTitle" defaultName="TableTitle" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" type="Responsive" defaultType="Responsive" cellWidth_E="58%" defaultCellWidth_E="58%" cellThemeClass="CellViewTableTitle CellWidthAuto" defaultCellThemeClass="CellViewTableTitle CellWidthAuto" childrenOrderedList="5;27;ViewTitle-5;21;PrbDsc">
+          <textBlock controlName="ViewTitle" defaultControlName="ViewTitle" caption="Tags  :: " defaultCaption="Tags  :: " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewTextBlockTitle" defaultCellThemeClass="CellViewTextBlockTitle" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeTitleWWP" defaultThemeClass="AttributeTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewAttributeTitle" defaultCellThemeClass="CellViewAttributeTitle" showDescription="False" defaultShowDescription="False" />
+        </table>
+        <workWithLink themeClass="TextBlockLink" defaultThemeClass="TextBlockLink" cellWidth_E="42%" defaultCellWidth_E="42%" cellThemeClass="CellAlignRightWithMargin CellWidthAuto" defaultCellThemeClass="CellAlignRightWithMargin CellWidthAuto" align="Right" defaultAlign="Right" />
+        <tabsPosition cellThemeClass="CellViewTabsPosition" defaultCellThemeClass="CellViewTabsPosition" colSpan="999" defaultColSpan="999" startCol="1" defaultStartCol="1" />
+      </table>
+      <tabs childrenOrderedList="SolicitudesTagsGeneral;42;General-SolicitudesTagsSolicitudes;42;Solicitudes-SolicitudesTagsTagItemsWC;43;TagItems-SolicitudesTagsSolicitudesDocumentosWC;43;SolicitudesDocumentos-SolicitudesTagsSolicitudesObservacionesWC;43;SolicitudesObservaciones-SolicitudesTagsRenglonesHorasWC;43;RenglonesHoras">
+        <tabularTab childrenOrderedList="SolicitudesTagsGeneral;04;Main Table" name="General" defaultName="General" code="General" defaultCode="General" wcname="SolicitudesTagsGeneral" defaultWcname="SolicitudesTagsGeneral">
+          <GenexusPatterns_Objects>
+            <Object Id="TabTabular" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Solicitudes.SolicitudesTagsGeneral" />
+          </GenexusPatterns_Objects>
+          <table name="Table" defaultName="Table" type="Responsive" defaultType="Responsive" childrenOrderedList="SolicitudesTagsGeneral;28;ErrorViewer-SolicitudesTagsGeneral;04;TableAttributes-SolicitudesTagsGeneral;04;TableActions">
+            <errorViewer />
+            <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" type="Responsive" defaultType="Responsive" childrenOrderedList="SolicitudesTagsGeneral;21;PryId-SolicitudesTagsGeneral;21;PrbId-SolicitudesTagsGeneral;21;PrbDsc-SolicitudesTagsGeneral;21;PrbTpo-SolicitudesTagsGeneral;21;CrrUsr-SolicitudesTagsGeneral;21;PrbSts-SolicitudesTagsGeneral;21;PrbStsRequiereUsuario-SolicitudesTagsGeneral;21;CrrFch-SolicitudesTagsGeneral;21;PrbHrsPln-SolicitudesTagsGeneral;21;PrbHrsReal-SolicitudesTagsGeneral;21;PrbPlaFch">
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PryId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbDsc" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbTpo" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbTpo" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CrrUsr" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CrrUsr" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbSts" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbSts" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbStsRequiereUsuario" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbStsRequiereUsuario" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-CrrFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-CrrFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsPln" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsPln" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsReal" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbHrsReal" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-PrbPlaFch" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-PrbPlaFch" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" />
+            </table>
+            <table name="TableActions" defaultName="TableActions" themeClass="TableActions" defaultThemeClass="TableActions" type="Responsive" defaultType="Responsive" childrenOrderedList="SolicitudesTagsGeneral;88;Actions">
+              <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="SolicitudesTagsGeneral;91;Update-SolicitudesTagsGeneral;91;Delete">
+                <standardAction caption="GXM_update" defaultCaption="GXM_update" buttonClass="Button" defaultButtonClass="Button" name="Update" defaultName="Update" />
+                <standardAction caption="GX_BtnDelete" defaultCaption="GX_BtnDelete" buttonClass="Button" defaultButtonClass="Button" name="Delete" defaultName="Delete" />
+              </actionGroup>
+            </table>
+          </table>
+        </tabularTab>
+      </tabs>
+    </view>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusSolicitudesTags</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Solicitudes.SolicitudesTags</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 13
+Name -> WorkWithPlusSolicitudesTags
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-13
+IsDefault -> False

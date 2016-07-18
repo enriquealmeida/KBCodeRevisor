@@ -1,0 +1,33 @@
+======OBJECT = CalculoDiasHabilesEntreFechasSinConsiderarFeriadosEspeciales.Procedure === Días Habiles entre Fechas=====
+
+=== RULES ===
+parm(in:&FchIni, in:&FchFin, out:&Dias);
+
+
+=== PROCEDURE SOURCE ===
+&FchAux = &FchIni
+&Dias = 0 
+
+do while &FchAux <= &FchFin
+    // veo que no sea ni sábado (7) ni domingo (1)
+    if dow(&FchAux) <> 1 and dow(&FchAux) <> 7
+        // veo que tampoco sea feriado
+        for each
+            where            FerFecha = &FchAux
+            where            FerDescuentoLicencia = false
+        when none
+            // si no hay entonces incremento los días
+            &Dias += 1
+        endfor
+    endif
+
+    &FchAux += 1
+enddo
+
+
+====== PROPERTIES =======
+Name -> CalculoDiasHabilesEntreFechasSinConsiderarFeriadosEspeciales
+Description -> Días Habiles entre Fechas
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+IsDefault -> False

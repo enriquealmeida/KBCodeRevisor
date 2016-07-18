@@ -1,0 +1,10 @@
+======OBJECT = PryWikiHost.Attribute === Pry Wiki Host=====
+VARCHAR(1000)
+
+
+====== PROPERTIES =======
+Name -> PryWikiHost
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

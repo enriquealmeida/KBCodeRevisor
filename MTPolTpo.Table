@@ -1,0 +1,8 @@
+======OBJECT = MTPolTpo.Table === Tipos de políticas=====
+*PolTpoId  Codigo3- Null=False
+ PolTpoDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MTPolTpo
+Description -> Tipos de políticas
+CACHE_LEVEL -> 3

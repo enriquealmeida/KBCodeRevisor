@@ -1,0 +1,43 @@
+======OBJECT = GetWWPTabImage.Procedure === Get Tab Image Name=====
+
+=== RULES ===
+
+parm(in:&IsFirstTab, in:&IsSelected, in:&IsBeforeTabSelected, in:&IsLastTab, out:&Bitmap);
+
+
+=== PROCEDURE SOURCE ===
+ 
+if (&IsLastTab)
+	if (&IsSelected)
+		&Bitmap.FromImage(TabEndSelected)
+	else
+		&Bitmap.FromImage(TabEndUnselected)
+	endif
+else
+	if (&IsSelected)
+		if (&IsFirstTab)
+			&Bitmap.FromImage(TabBeginSelected)
+		else
+			&Bitmap.FromImage(TabUnselectedSelected)
+		endif
+	else
+		if (&IsFirstTab)
+			&Bitmap.FromImage(TabBeginUnselected)
+		else
+			if (&IsBeforeTabSelected)
+				&Bitmap.FromImage(TabSelectedUnselected)
+			else
+				&Bitmap.FromImage(TabUnselectedUnselected)
+			endif
+		endif
+	endif
+endif
+
+
+====== PROPERTIES =======
+Name -> GetWWPTabImage
+Description -> Get Tab Image Name
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

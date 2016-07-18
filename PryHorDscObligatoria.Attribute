@@ -1,0 +1,14 @@
+======OBJECT = PryHorDscObligatoria.Attribute === Ingreso Descripcion Horas Obligatoria=====
+Boolean(4)
+
+
+====== PROPERTIES =======
+Name -> PryHorDscObligatoria
+Description -> Ingreso Descripcion Horas Obligatoria
+HORIZONTAL_DESCRIPTION -> Descripción Obligatoria?
+VERTICAL_DESCRIPTION -> Descripción Obligatoria?
+ContextualTitle -> Descripción Obligatoria?
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

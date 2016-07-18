@@ -1,0 +1,26 @@
+======OBJECT = GLUsuarios.Module === GLUsuarios=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T17:17:13.0000000Z" checksum="b7c77b90517a5320fd2bbe747e8f1262" fullyQualifiedName="GLUsuarios" guid="19c90fde-bb26-426c-aaa2-af847e342ad7" name="GLUsuarios" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="GLUsuarios">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="d662c256-8cad-4ad1-b6c1-a477f36ddf39">
+      <Layers>
+        <Layer Id="d662c256-8cad-4ad1-b6c1-a477f36ddf39">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-GLUsuarios" Bounds="25 24.99999 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MasterPage" Bounds="508 26.99999 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-WWPBaseObjects" Bounds="393 186 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>GLUsuarios</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> GLUsuarios
+IsDefault -> False

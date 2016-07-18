@@ -1,0 +1,15 @@
+======OBJECT = MDCdVal.Attribute === Valor=====
+VARCHAR(256)
+
+
+====== PROPERTIES =======
+Name -> MDCdVal
+Description -> Valor
+HORIZONTAL_DESCRIPTION -> Valor
+VERTICAL_DESCRIPTION -> Valor
+ContextualTitle -> Valor
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlTypeCompatibility -> True
+IsDefault -> False

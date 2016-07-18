@@ -1,0 +1,36 @@
+======OBJECT = ico_warning.Image === ico_warning=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:52.0000000Z" checksum="6bdaaa370e7b46548bffdf76015451b0" fullyQualifiedName="ico_warning" guid="c06665f7-6aa4-46a0-80ae-c5788ff3ba92" name="ico_warning" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="ico_warning">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ico-warning.png" description="ico-warning.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccll
+PAAAAZBJREFUeNpi+P//PwM2/G2Dkd6P424CuORBmIkBC/i+0XgHw7//F/89evb8xzbzEgYcgBFkAjL4tkClgElCpJ+RmwvM//fizff/P35qcsXefIiuGdNm
+NrYiBlY2hv+//oAxo5AAJ9CNS7HZjKL521zFSUz8PLL7Tr1h4HQ5DMYgNiMvt/W32QoFODV/naMoz8DCEvX/HzAw/v6FKwCzWViALmKtwW3znz8TgTYIM/z+
+DWIzIIkzgMQYuTiFv86Q3YCh+es0GXlGVlZXBqAfwfj3P4QKEBsk9vcfAyM7uwtQrQ2qzf/+zQY6i+s/0AYQVhBihOsFsWHiDCzM3EC1C+BR9WWCmA0DO9th
+RjZWFP/UrnnHIMjNzFDkyY/qUWAY/P/+s5Y770ULCzAxdADNAEcLDKw/942hb/tHiM2CjAyBRlyoBvxnqPo6Q24KMBgZrMGBhAQMpJgYFIWZ4Wx0eSDgZPj6
+LYTxc6fAHUYWFmUGUgAoOv/9jWABhqLz/3+/OoFCP4jW/J/hDk/lx5UAAQYAOdHKj7r/uzcAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ico-warning.png</Value></Property><Property><Name>Description</Name><Value>ico-warning.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\cmurialdo\Downloads\rethemepesobook\ico-warning.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="ico-warning.png" description="ico-warning.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccll
+PAAAAZBJREFUeNpi+P//PwM2/G2Dkd6P424CuORBmIkBC/i+0XgHw7//F/89evb8xzbzEgYcgBFkAjL4tkClgElCpJ+RmwvM//fizff/P35qcsXefIiuGdNm
+NrYiBlY2hv+//oAxo5AAJ9CNS7HZjKL521zFSUz8PLL7Tr1h4HQ5DMYgNiMvt/W32QoFODV/naMoz8DCEvX/HzAw/v6FKwCzWViALmKtwW3znz8TgTYIM/z+
+DWIzIIkzgMQYuTiFv86Q3YCh+es0GXlGVlZXBqAfwfj3P4QKEBsk9vcfAyM7uwtQrQ2qzf/+zQY6i+s/0AYQVhBihOsFsWHiDCzM3EC1C+BR9WWCmA0DO9th
+RjZWFP/UrnnHIMjNzFDkyY/qUWAY/P/+s5Y770ULCzAxdADNAEcLDKw/942hb/tHiM2CjAyBRlyoBvxnqPo6Q24KMBgZrMGBhAQMpJgYFIWZ4Wx0eSDgZPj6
+LYTxc6fAHUYWFmUGUgAoOv/9jWABhqLz/3+/OoFCP4jW/J/hDk/lx5UAAQYAOdHKj7r/uzcAAAAASUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ico-warning.png</Value></Property><Property><Name>Description</Name><Value>ico-warning.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\cmurialdo\Downloads\rethemepesobook\ico-warning.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ico_warning</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ico_warning
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

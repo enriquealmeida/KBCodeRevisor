@@ -1,0 +1,32 @@
+======OBJECT = CopiarFeriados.WebPanel === Copiar feriados=====
+
+=== RULES ===
+parm(in:&AnioD ) ;
+
+
+=== EVENTS SOURCE ===
+Event Enter
+    if &AnioD <> &AnioH
+       // msg('Copiando ...', nowait)
+        CopiarFeriadosBatch.call(&AnioD,&AnioH,&Ovr)
+       // msg(' ', nowait)
+
+     //   return
+   // else
+      //  msg('El Año a generar debe ser distinto al Año origen')
+    endif
+EndEvent
+Event Start
+    &Ovr = 1
+
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> CopiarFeriados
+Description -> Copiar feriados
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+ObjectVisibility -> Private
+IsDefault -> False

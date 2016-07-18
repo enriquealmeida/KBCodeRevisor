@@ -1,0 +1,17 @@
+======OBJECT = PMDOpDate.Procedure === put de Date=====
+
+=== RULES ===
+Parm(IN:MDObjTpo ,IN:MDObjSec ,IN:MDCdId , IN:&MDCdDate  , OUT:&error );
+
+
+=== PROCEDURE SOURCE ===
+&MDCdVal = str(day(&MDCdDate ),2,0) + "/" +str(month(&MDCdDate),2,0) + "/" + str(year(&MDCdDate),4,0)
+PMDOpVal.call(MDObjTpo ,MDObjSec ,MDCdId , &MDCdVal , &error )
+
+
+====== PROPERTIES =======
+Name -> PMDOpDate
+Description -> put de Date
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 36
+IsDefault -> False

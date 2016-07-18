@@ -1,0 +1,14 @@
+======OBJECT = ObjPcjAvance.Attribute === Porcentaje de avance=====
+NUMERIC(5)-
+
+
+====== PROPERTIES =======
+Name -> ObjPcjAvance
+Description -> Porcentaje de avance
+HORIZONTAL_DESCRIPTION -> Porcentaje de avance
+VERTICAL_DESCRIPTION -> % Avance
+ContextualTitle -> Porcentaje de avance
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

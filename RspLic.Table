@@ -1,0 +1,16 @@
+======OBJECT = RspLic.Table === Dias de Licencias=====
+*RspLicId  Numerador- Null=False
+ LicFecIni  Fecha- Null=False
+ LicFecFin  Fecha- Null=False
+ AusTpoId  TipoAusenciaComboConEmpty- Null=False
+ LicDias  Dias- Null=True
+ LicTpo  DMLicTpo- Null=False
+ RspId  DMUsuarios- Null=False
+ LicEst  EstadoLicencia- Null=False
+ LicDsc  DESC- Null=True
+ RspAutId  DMUsuarios- Null=True
+ RspAutVinculoLaboral  DMRspVinculoLaboral- Null=False
+
+====== PROPERTIES =======
+Name -> RspLic
+Description -> Dias de Licencias

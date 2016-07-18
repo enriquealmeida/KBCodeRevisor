@@ -1,0 +1,36 @@
+======OBJECT = LogoConcepto.Image === Logo Concepto=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:31:11.0000000Z" checksum="ea1c02ccf822d4f1dfe1154d59704611" fullyQualifiedName="LogoConcepto" guid="3967bb43-0c16-474b-ad42-9cc067a424fa" name="LogoConcepto" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Logo Concepto">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="Logo_final_Concepto_icono64x64_color.png" description="Logo_final_ Concepto_icono64x64_color.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAEAAAAA3CAYAAAC8TkynAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccll
+PAAABNtJREFUeNrcW0tPE1EUvr2dlpZKO22h4SFgZCELEjBxwQ70D8jCxJ3gysSN8wcMJa7cdekSXOlKfoBRiImJG3kENRqBQqISC1IeLULxcc84JaWvOWdm
+WmY8yWTIMI977/nO951zLrhYHa33zt1nufS+jLw9ufz08e1aj8lVr8lffjBx7/dRLrH/aZ3y2LBYhNlajovXafIhcYpzr4c1xMKURydrPTZeJwDExaFC3xsN
+MZdHwj53oefmrXuODgHh/W6I58JrR9u77OeXFPYVaVgIEQo7TkVACYy94SBzB3zY5wE5CUciQHh/SJxmyv3uOHPAsqtfKa8bEChYcBoCKpKYFPAzj9xEeVfC
+USEgvD8OsVvtHlUROHoIw4IQrzsiBDTZS+aZv5odfv8hjm3sq5NaKOzYHQEJzOT/oSBCkkVxKLZGgPB+vzjNU57J7WbYwfoGRRYBBWt2RQCZrDzBAFUW47YM
+AeF9IKlhI8/6Wpspt48JQhyy1QJoxGdYqtz+BjVNJqbXtkKAoid7+oRIlsVRW5Cglu/PY5m/qixuptnhxlbd6gSrEBC3YvIqCppliizKZmXRZYH3K+b7Rs1A
+nXDBqCxyi7yPMgkZ31AnEGTRVJ3ATXp/FCt7MPkr5/Ec6e+IUYYyYlQWuYnJk2SvJxpjQZ9fnFtwA6O3zxL1RoCCJT6f5GHd4aj6c5ccRYeCmhfgZXHASPvM
+bUL2ptEja+9ifo/33wfFhLxuiaUye/oMLe51SW52vJfFfmow0tf/aPvdwmGtEYCGW9jfyCKNgVPXOkJh1tSAIzlon3Gft2Z1AjfgfSCbEez9fa0dZa9famnF
+1wltpDpBEaHQXUsEEIiv5QT6xQaoaAngWmIgi1JTI2WMkzVZANjdgZDGyh4QXjXrjbWiCVFFQQ3aZ5ww+RAlvgDiHnd1jgV05NUBJYvNIcuRSkEAOt8HggOi
+w1inHIEiKomVReKu0rglC6DJnkLxPtaEJCpYZLkEoojJERBiyAoEoEkFiK1Y9qrY9MObN2bn7o9PYQsqq3eVOML76DYXEBoQG6GWV4oySxwh0ttn/WYQgJY9
+ILRKslfuvcL7JyWsQMECFmnQPrNqV4nreF93d6cw39eTvQJLVhiUoiEDIYtRS9pnbh3ZewLfwhKf7EcnK4rw/pviixsvZw7brl31YUIO6gT25w/7lfmJLklE
+nTBZXCdIOrBByR7k+1jZW1lNpt/OLVaUqN2lZSrTo2VRQ9jEqYWs4H3S7s5g10W11tezVGqTzb56zc7QSnaVuFniaw/KqMmDvf/wkZ2xlVSL3GybC5v0JNfW
+WWpzi9nATu0qcTP5PsieXr4PdnSUs4P3yyKcl5EhtOxBnw9jn5dXWDZ7YKcFGMjLoqso30fv7gy0d7LYuaDufZlMlj1/McNyuWNmM1N3lbiRag9kDzN5sIXF
+JTtOPk+ICi9oc42ZbXOVk72v3zaYjS3OqbLXJUfQ+f688L7dTdJiH93mwhIfxH5He5t62NlcBUWPrvyB5mNbWE6xwhBI68ne/zZ5yM+4Vovv6DUksMTnMBvj
+BQ2JqUoFELHN5RRT23HlMsESI7S5nGRKSSosUAD/njJZeK3a7o6DLZ5vx5Urh+N5QsTs7jjQ0tWKIUDBWv4GzO6OE6EvvH/yV2V/BRgAF01JNaYG/c4AAAAA
+SUVORK5CYII=
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>Logo_final_Concepto_icono64x64_color.png</Value></Property><Property><Name>Description</Name><Value>Logo_final_ Concepto_icono64x64_color.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Users\ealmeida\Downloads\Logo_final_Concepto_icono64x64_color.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>LogoConcepto</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> LogoConcepto
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,127 @@
+======OBJECT = QueryViewerHoras.WebPanel === Query Viewer Horas=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+
+
+
+
+//// Sample code for QueryViewer
+//
+//Sub "SetObjectNameExample"
+//	// Change query or dataprovider in runtime
+//	QueryViewer1.ObjectName = "Query1"			// or QueryViewer1.ObjectName = &CharacterVariable
+//EndSub
+//
+//
+//Sub "SetQueryViewerParametersExample"
+//	// Set query or dataprovider parameters in runtime
+//
+//	&Parameters = new()
+//	// Numeric parameter
+//	&Parameter = new()
+//	&Parameter.Name = "param1"
+//	&Parameter.Value = "1" 				// or &Parameter.Value = &NumericVariable.ToString().Trim()
+//	&Parameters.Add(&Parameter)
+//	
+//	// Character parameter
+//	&Parameter = new()
+//	&Parameter.Name = "param2"
+//	&Parameter.Value = "value"			// or &Parameter.Value = &CharacterVariable
+//	&Parameters.Add(&Parameter)
+//	
+//	// Boolean parameter
+//	&Parameter = new()
+//	&Parameter.Name = "param3"
+//	&Parameter.Value = "true"			// or &Parameter.Value = &BooleanVariable.ToString()
+//	&Parameters.Add(&Parameter)
+//	
+//	// Date parameter
+//	&Parameter = new()
+//	&Parameter.Name = "param4"
+//	&Parameter.Value = "2008-08-08"		// or &Parameter.Value = &DateVariable.ToString()
+//	&Parameters.Add(&Parameter)
+//	
+//	// DateTime parameter
+//	&Parameter = new()
+//	&Parameter.Name = "param5"
+//	&Parameter.Value = "2008-08-08 08:00:00 p.m."	// or &Parameter.Value = &DateVariable.ToString()
+//	&Parameters.Add(&Parameter)
+//   
+//	// Collection parameter
+//	&Parameter = new()
+//	&Parameter.Name = "param6"
+//	&Parameter.Value = "[1,2,3]"		// or &Parameter.Value = &CollectionVariable.ToJson()
+//	&Parameters.Add(&Parameter)
+//   
+//EndSub
+//
+//Sub "SetAxesCollectionExample"
+//
+//	//Change settings for attribute Att1
+//	&Axis = new()
+//	&Axis.Name = "Att1"
+//	&Axis.Title = "Write Title for Attribute Att1"
+//	&Axis.Type = QueryViewerAxisType.Data		// Set attribute Att1 axis to Data
+//	&Axis.Axisorder.Type = QueryViewerAxisorderType.Descending  // Set Descending order for Att1
+//	&Axis.Format.Picture = "Z.99"
+//	&Axis.Format.Style = "color:#FF0000"		// Set red color for attribute 'Attr1' in Data axis
+//	&Axes.Add(&Axis)
+//
+//	//Change settings for attribute Att2
+//	&Axis = new()
+//	&Axis.Name = "Att2"
+//	&Axis.Title = "Write Title for Attribute Att2"
+//	&Axis.Type = QueryViewerAxisType.Page		// Set attribute Att2 axis to Page
+//	&Axis.Axisorder.Type = QueryViewerAxisorderType.Ascending  // Set Ascending order for Att2
+//	&Axis.Format.Picture = "99/99/9999"
+//	&Axis.Format.Style = "color:#0000FF"		// Set blue color for attribute 'Attr2' in Page axis
+//	&Axes.Add(&Axis)
+//
+//	//Change settings for attribute Att3
+//	&Axis = new()
+//	&Axis.Name = "Att3"
+//	&Axis.Title = "Write Title for Attribute Att3"
+//	&Axis.Type = QueryViewerAxisType.Column		// Set attribute Att3 axis to Column
+//	&Axis.Axisorder.Type = QueryViewerAxisorderType.Custom  // Set Custom order for Att3
+//	&Axis.Axisorder.Values.Add("Value1")
+//	&Axis.Axisorder.Values.Add("Value2")
+//	&Axis.Axisorder.Values.Add("Value3")
+//	&Axis.Format.Style = "color:#FFFFF"			// Set white color for attribute 'Attr3' in Column axis
+//	&Axes.Add(&Axis)
+//
+//EndSub
+
+     
+
+Event Enter
+		&Parameters = new()
+	&Parameter = new()
+	&Parameter.Name = "HrsFchIni"
+	&Parameter.Value = &HrsFchIni.Tostring()  
+	&Parameters.Add(&Parameter)
+	
+	&Parameter = new()
+	&Parameter.Name = "HrsFchFin"
+	&Parameter.Value = &HrsFchFin.ToString()  
+	&Parameters.Add(&Parameter)
+EndEvent
+
+Event Start
+	&HrsFchFin = &Today
+	&HrsFchIni = &Today.AddYears(-1)
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> QueryViewerHoras
+MasterPage -> Artech.Genexus.Common.CustomTypes.WebPanelReference
+IsMain -> True
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Public
+IsDefault -> False

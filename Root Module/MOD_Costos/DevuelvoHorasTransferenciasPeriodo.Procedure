@@ -1,0 +1,30 @@
+======OBJECT = DevuelvoHorasTransferenciasPeriodo.Procedure === Devuelvo Horas Transferencias Periodo=====
+
+=== RULES ===
+parm(in:&PryId, in:&FchIni, in:&FchFin, out:&HorasTranferencia);
+
+
+=== PROCEDURE SOURCE ===
+
+&HorasTranferencia=0
+for each
+	where            PryHijId = &PryId
+	//msg(format('Proyecto Hijo: %1, Proyecto Padre: %2 >> Porcentaje %3', PryHijId, PryPadId, PryDisPor),status)
+	
+	&HorasPadre = HorasRealizadasEnProyecto(PryPadId,&FchIni,&FchFin)
+	
+	&HorasTranferencia += &HorasPadre * (PryDisPor / 100)
+endfor
+//msg(format('Horas Transferencia %1',&HorasTranferencia),status)
+
+	
+	
+	
+
+
+====== PROPERTIES =======
+Name -> DevuelvoHorasTransferenciasPeriodo
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Private
+IsDefault -> False

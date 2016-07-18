@@ -1,0 +1,139 @@
+======OBJECT = WWProyectosDS.DataSelector === WWProyectos DS=====
+<Object parent="MOD_Proyectos.WorkWithPlusProyectos" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="031156b9-8e5c-48bd-a3ad-e05e9fcb3a2c" user="AW\awolff" versionDate="2016-07-01T20:13:34.0000000Z" lastUpdate="2016-07-01T19:19:03.0000000Z" checksum="d561f6115d46f68fe63a40d2efbff41a" fullyQualifiedName="MOD_Proyectos.WWProyectosDS" guid="3b815982-a47d-47d0-8f0d-96842e6e846c" name="WWProyectosDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWProyectos DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[CliId = &CliId when not &CliId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryNom like &PryNom when not &PryNom.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryId like &PryId when not &PryId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryTpo = &PryTpo when not &PryTpo.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryCls = &PryCls when not &PryCls.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryAct = &PryAct when not &PryAct.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrySts = &PrySts when not &PrySts.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryRspId = &PryRspId when not &PryRspId.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="PryNom">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryNom</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryNom</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryTpo">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryTpo</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryTpo</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryCls">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryCls</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryCls</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryAct">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryAct</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryAct</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PrySts">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PrySts</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrySts</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryRspId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryRspId</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryRspId</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliId</Name>
+        <Description>Cli Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryNom</Name>
+        <Description>Pry Nom</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryId</Name>
+        <Description>Pry Id</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryTpo</Name>
+        <Description>Pry Tpo</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryCls</Name>
+        <Description>Pry Cls</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryAct</Name>
+        <Description>Pry Act</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PrySts</Name>
+        <Description>Pry Sts</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryRspId</Name>
+        <Description>Pry Rsp Id</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWProyectosDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Proyectos.WorkWithPlusProyectos</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWProyectosDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-73
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 73
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,23 @@
+======OBJECT = TPrio.Transaction === Prioridad de las solicitudes=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+PrbPrio*
+PrbPrioDsc
+
+
+====== PROPERTIES =======
+Name -> TPrio
+Description -> Prioridad de las solicitudes
+BORSTY -> 0
+MAXBUT -> NO
+GenerateObject -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

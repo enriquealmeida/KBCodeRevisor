@@ -1,0 +1,13 @@
+======OBJECT = RspVinculoLaboral.Attribute === Vínculo Laboral=====
+CHARACTER(15)
+
+
+====== PROPERTIES =======
+Name -> RspVinculoLaboral
+Description -> Vínculo Laboral
+VERTICAL_DESCRIPTION -> Vínculo
+ContextualTitle -> Vinculo Laboral
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

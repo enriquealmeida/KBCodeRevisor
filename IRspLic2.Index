@@ -1,0 +1,12 @@
+======OBJECT = IRspLic2.Index === IRsp Lic2=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:28.0000000Z" checksum="f6784ba756c1bafd86ec979c248253e3" fullyQualifiedName="IRspLic2" guid="9c7c26f0-6172-47c8-91a7-ccb5ff520873" name="IRspLic2" type="9e750647-3679-0000-0100-2529de263960" description="IRsp Lic2">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RspId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IRspLic2</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IRspLic2

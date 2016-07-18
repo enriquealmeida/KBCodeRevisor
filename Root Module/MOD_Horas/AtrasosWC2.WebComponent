@@ -1,0 +1,72 @@
+======OBJECT = AtrasosWC2.WebComponent === Atrasos WC2=====
+
+=== RULES ===
+parm(IN: &RspId, INOUT:&ActividadesAtrasadas);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    tbkPpal.Link = &ParUrlBase
+
+    tbkVerTodo.Link = &ParUrlBase
+    &hayHoras = Bool.false
+    &haySolicitudes = Bool.false
+    &hayObjetivos = Bool.false
+
+EndEvent  // Start
+
+
+Event Refresh
+	For &ActividadActual in &ActividadesAtrasadas
+		if &ActividadActual.Tipo = DMTipoActividad.HorA
+				&FchAux = &ActividadActual.Vencimiento
+				&FchAux.Link = &ParUrlBase + Horas.Link(TrnMode.Update,&FchAux ,&RspId)
+				Grid1.load()
+		endif
+	endfor
+EndEvent
+
+Event Grid2.load
+	For &ActividadActual in &ActividadesAtrasadas
+			if &ActividadActual.Tipo = DMTipoActividad.SOLICITUD
+				&PrbId = &ActividadActual.Id.ToNumeric()
+				&PrbId.Link = &ParUrlBase + &ActividadActual.RelativeHyperLink
+				&PrbDsc = &ActividadActual.Descripcion
+				&PrbPlaFch = &ActividadActual.SolPrbPlaFch
+				&CliId = &ActividadActual.SolCliId
+				&SisDsc = &ActividadActual.SolSisDsc
+				&PrbStsDsc = &ActividadActual.SolPrbStsDsc
+				&PryId = &ActividadActual.SolPryId
+				Grid2.load()
+			endif
+	endfor
+EndEvent
+
+
+Event Grid3.load
+	For &ActividadActual in &ActividadesAtrasadas
+		if &ActividadActual.Tipo = DMTipoActividad.OBJETIVO
+			&ObjId = &ActividadActual.Id.ToNumeric()
+			&ObjId.Link = &ParUrlBase + &ActividadActual.RelativeHyperLink
+			&ObjDsc = &ActividadActual.Descripcion
+			&ObjFch = &ActividadActual.ObjFch
+			&ObjFchRev = &ActividadActual.ObjFchRev
+			&ObjStsDsc = &ActividadActual.ObjStsDsc
+			&ObjTpoDsc = &ActividadActual.ObjTpoDsc
+			Grid3.load()
+		endif
+	endfor
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> AtrasosWC2
+Description -> Atrasos WC2
+WEB_COMP -> Yes
+URLAccess -> No
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Private
+IsDefault -> False

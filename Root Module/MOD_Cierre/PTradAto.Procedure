@@ -1,0 +1,90 @@
+======OBJECT = PTradAto.Procedure === Traducción de asientos=====
+
+=== RULES ===
+parm(IN:&FchIni,IN:&FchFin);
+
+
+=== PROCEDURE SOURCE ===
+&location = GetLocation('AsientosDP')
+&SI_SDTAsientos = &AsientosDP.Execute(&FchIni, &FchFin, 'M','')
+
+//msg(&SI_SDTAsientos.Count.ToString())
+for &SI_SDTAsientosItem in &SI_SDTAsientos
+  //  msg(&SI_SDTAsientosItem.RubId)
+  
+	     // SE CREO EL PROYECTO YCONCEPTO PorQUE EN CONTABILIDAD NO PUEDEN TENER PROYECTO Y CLIENTES CON EL MISMO NOMBRE.
+		if &SI_SDTAsientosItem.AuxId = 'YCONCEPTO'
+			&SI_SDTAsientosItem.AuxId = 'CONCEPTO'
+		endif
+	   // msg(&SI_SDTAsientosItem.RubId)
+			
+		if &SI_SDTAsientosItem.RubId.Substring(1,1)='4' 
+			&PryId =  &SI_SDTAsientosItem.AuxId
+			&CpRecId = 'FACTURA'
+			&TDCpMovEST = DMEst.Entradas
+		else
+			//msg('**'+&SI_SDTAsientosItem.AuxId+'00')
+			for each 
+				where        RspId = &SI_SDTAsientosItem.AuxId
+				defined by RspNom
+				&PryId =  'CONCEPTO'
+				&CpRecId = &SI_SDTAsientosItem.AuxId
+				&TDCpMovEST = DMEst.Salidas
+			when none
+				&PryId = &SI_SDTAsientosItem.AuxId
+				//ME QUEDO CON LOS 10 PRIMERO CARACTERES DE LAS DESCRIPCION DEL RUBRO
+				&CpRecId = &SI_SDTAsientosItem.RubDsc.Substring(1,10)
+				//SI EN LOS 10 PRIMEROS CARACTERES HAY UN BLANCO, RECorTO HASTA EL BLANCO
+				if &CpRecId.IndexOf(' ',1) > 1
+					&CpRecId = &CpRecId.Substring(1,&CpRecId.IndexOf(' ',1))
+				endif
+				&TDCpMovEST = DMEst.Salidas
+			endfor	
+		endif
+	
+		if not (&SI_SDTAsientosItem.RubId >= '5112' and &SI_SDTAsientosItem.RubId <= '5117') and not (&SI_SDTAsientosItem.RubId like '5121%')
+			&Importa = True
+			&TradAtoEst = 'ING'
+			&Pregunta = 1
+		else
+			&Importa = False
+			&TradAtoEst = 'AUT'
+			&Pregunta = 0 
+		endif
+	
+	// AJUSTES Por VALorES EN BLANCO
+	    if &PryId.IsEmpty()
+			&PryId = 'CONCEPTO'
+		endif
+	    
+		if &CpRecId.IsEmpty()
+			&CpRecId = 'OTROS'
+		endif
+
+		 
+		 //DOY DE ALTA LA NUEVA TRADUCCION PARA QUE SEA REVISADA
+		new                           
+			RubId = &SI_SDTAsientosItem.RubId
+			RubDsc= &SI_SDTAsientosItem.RubDsc
+			AuxId = &SI_SDTAsientosItem.AuxId
+			
+			PreguntarTraduccion = &Pregunta
+			TradAtoEst = &TradAtoEst
+			PryId = &PryId
+			CpRecId = &CpRecId
+			TDCpMovEST = &TDCpMovEST
+			Importa = &Importa
+		endnew
+   
+endfor
+commit
+
+
+====== PROPERTIES =======
+Name -> PTradAto
+Description -> Traducción de asientos
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

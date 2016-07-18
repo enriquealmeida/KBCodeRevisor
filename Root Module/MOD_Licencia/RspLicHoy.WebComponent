@@ -1,0 +1,30 @@
+======OBJECT = RspLicHoy.WebComponent === Quien esta ausente hoy?=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Start
+	&hoy = ServerDate()
+	Ausentes.Caption = ""
+	for each
+	where    LicFecIni <= &hoy and &hoy <= LicFecFin 
+	where    LicEst = EstadoLicencia.Autorizada
+	where    LicTpo = DMLicTpo.Tomada
+	    &Dias = RspDiasLicenciaRestantes(RspId,&hoy)
+	    Ausentes.Caption = iif(Ausentes.Caption="","Ausentes:",Ausentes.Caption)
+		Ausentes.Caption += format(' %1 + %2 ',RspId,&Dias)
+	endfor
+
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> RspLicHoy
+Description -> Quien esta ausente hoy?
+WEB_COMP -> Yes
+WebUX -> SMOOTH
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Public
+IsDefault -> False

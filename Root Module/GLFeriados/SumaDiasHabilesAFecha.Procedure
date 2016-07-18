@@ -1,0 +1,40 @@
+======OBJECT = SumaDiasHabilesAFecha.Procedure === Sum/Res. días háb. a una fecha=====
+
+=== RULES ===
+parm(IN:&FecD ,IN:&Dias ,OUT:&FecRet ) ;
+
+
+=== PROCEDURE SOURCE ===
+//// NO QUITAR ESTE for each. ESTA Por PERForMANCE.
+for each order FerFecha
+    exit
+endfor    
+
+if &Dias >= 0
+    &I = 1
+    &FecRet=AjustaFechaADiaHabil(&FecD,'+')
+    do while &I <= &Dias
+        &FecRet = &FecRet + 1
+        &FecRet = AjustaFechaADiaHabil(&FecRet,'+')
+        &I = &I + 1
+    enddo
+else
+    &I = -1
+    &FecRet=AjustaFechaADiaHabil(&FecD,'-')
+    do while &I >= &Dias
+        &FecRet = &FecRet - 1
+        &FecRet=AjustaFechaADiaHabil(&FecRet,'-')
+        &I = &I - 1
+    enddo
+endif
+
+
+====== PROPERTIES =======
+Name -> SumaDiasHabilesAFecha
+Description -> Sum/Res. días háb. a una fecha
+CANCEL -> NO
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 6
+ObjectVisibility -> Public
+IsDefault -> False

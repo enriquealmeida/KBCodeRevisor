@@ -1,0 +1,14 @@
+======OBJECT = PrbDocURL.Attribute === URL del documento=====
+VARCHAR(1000)
+
+
+====== PROPERTIES =======
+Name -> PrbDocURL
+Description -> URL del documento
+HORIZONTAL_DESCRIPTION -> URL del documento
+VERTICAL_DESCRIPTION -> URL del documento
+ContextualTitle -> URL del documento
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

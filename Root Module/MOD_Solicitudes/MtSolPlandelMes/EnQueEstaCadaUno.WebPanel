@@ -1,0 +1,112 @@
+======OBJECT = EnQueEstaCadaUno.WebPanel === \=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Start
+  if month(&Today) >= 10
+     &Mes=trim(str(month(&Today)))
+  else 
+     &Mes='0'+trim(str(month(&Today)))
+  endif
+  &FiltroTagId=trim(str(year(&Today))) + &Mes 
+  &ordenarPor='R'
+  &FiltroSoloTag=Bool.False
+  &PrbEstadoActivo=true 
+
+  &vPrdId=0
+  
+EndEvent  // Start
+
+Event Refresh
+ do 'ResponsablesConHoras'
+ &PlanSolicitudes=DevuelveSDTPlandelMes(&FiltroCliTpoId, &FiltroCliId,&FiltroCrrUsr,&FiltroSegUsr,&FiltroPrbSts ,&FiltroTagId, &FiltroSoloTag, &ordenarPor, &PrbEstadoActivo,&FiltroPrbPryId , &FiltroConsolidado)
+ &PlanSolicitudes.Sort('CrrUsr,[PrbSts],CliId')
+
+EndEvent
+
+ 
+Event Plan.load
+	
+	      //Agrego usuarios con horas y sin solicitudes.
+	  for &SDTResponsable in &SDTResponsables
+		  
+		   &PrbSts.SetEmpty()  //   =&Solicitud.prbsts
+           &PrbDsc= 'No tiene solicitudes activas y tiene horas pasadas'
+		   &prbdsc.Tooltiptext = '' //&Solicitud.PrbTxt
+           &PrbId.SetEmpty() //&Solicitud.prbid
+		    &CrrUsr=&SDTResponsable.RspId
+			Plan.load()
+	  endfor
+	
+     for &Solicitud in &PlanSolicitudes
+		
+           &CliId=&Solicitud.CliId
+           &PrbPlaFch=&Solicitud.prbplafch
+           &PrbSts=&Solicitud.prbsts
+           &CrrUsr=&Solicitud.crrusr
+           &PrbDsc=&Solicitud.prbdsc
+		   &prbdsc.Tooltiptext = &Solicitud.PrbTxt.Substring(1,200)
+           &PrbId=&Solicitud.prbid
+           &PrbCnsId=&Solicitud.prbcnsid
+           &PrbTpo=&Solicitud.prbtpo
+           &PrbPrio=&Solicitud.prbprio
+           &PryId=&Solicitud.prbpryid
+           &TagId=&Solicitud.TagId
+           &PrbDiasAbi=&Solicitud.PrbDiasAbi
+           &PrbHrsPln=&Solicitud.PrbHrsPln
+           &SegUsr=&Solicitud.SegUsr   
+           &SolicitudTesteada=&Solicitud.SolicitudTesteada
+           &PrbRequiereDocumentacion=&Solicitud.PrbRequiereDocumentacion
+		   &PrbHrsReal = &Solicitud.PrbHrsReal
+		   &PrbAvance = &Solicitud.PrbAvance
+		   
+           &E=&Solicitud.EstadoPlan
+		   
+		   
+           if &PrbSts <> 'ING'
+			   Plan.load()
+		   endif
+	   
+		
+      endfor
+
+  
+ 
+EndEvent  // load
+
+
+Event 'Export'
+	// Generate Excel spreadsheet and download it.
+    DevuelveSDTPlandelMes.Call(&FiltroCliTpoId, &FiltroCliId,&FiltroCrrUsr, &FiltroSegUsr,&FiltroPrbSts ,&FiltroTagId, &FiltroSoloTag, &ordenarPor, &PrbEstadoActivo,&FiltroPrbPryId , &FiltroConsolidado, &PlanSolicitudes)
+    ExportPlandelMes.Call(&PlanSolicitudes, &ExcelFilename, &ErrorMessage)
+	if (&ExcelFilename <> "")
+		Link(&ExcelFilename)
+	else
+		msg(&ExcelFilename + &ErrorMessage)
+	endif
+EndEvent
+
+
+Event &PrbId.Click
+	&Window.Object = Solicitudes.Create(TrnMode.Update,&PryId, &PrbId)
+	&window.Open()
+	Refresh
+EndEvent
+
+
+Sub 'ResponsablesConHoras'
+	  &SDTResponsables = ResponsablesConHoras2(&FiltroCliId,&FiltroCliTpoId,&FiltroCrrUsr,&FiltroPrbPryId,&FiltroPrbSts, &FiltroTagId)
+EndSub
+
+
+====== PROPERTIES =======
+Name -> EnQueEstaCadaUno
+Description -> \
+AUTO_REFRESH -> VARS_CHANGE
+JOIN_TYPE -> Outer
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Public
+IsDefault -> False

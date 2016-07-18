@@ -1,0 +1,13 @@
+======OBJECT = ITradAto.Index === ITrad Ato=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:36.0000000Z" checksum="9ec547b8823de2b96f12ee1f0911b0f2" fullyQualifiedName="ITradAto" guid="e42f0331-2698-47dc-9121-59bb27b8026f" name="ITradAto" type="9e750647-3679-0000-0100-2529de263960" description="ITrad Ato">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">RubId</Member>
+      <Member Order="Ascending">AuxId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ITradAto</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ITradAto

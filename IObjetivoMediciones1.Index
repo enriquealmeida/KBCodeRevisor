@@ -1,0 +1,12 @@
+======OBJECT = IObjetivoMediciones1.Index === IObjetivo Mediciones1=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-06-24T19:30:02.0000000Z" checksum="8e6d55f5cdbe06e67b277943f289ff2b" fullyQualifiedName="IObjetivoMediciones1" guid="ae8dfc06-78de-49b4-856d-c3832ca6b665" name="IObjetivoMediciones1" type="9e750647-3679-0000-0100-2529de263960" description="IObjetivo Mediciones1">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">ObjId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IObjetivoMediciones1</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IObjetivoMediciones1

@@ -1,0 +1,12 @@
+======OBJECT = SDTResponsablesActivos.SDT === SDTResponsables Activos=====
+
+=== STRUCTURE ===
+SDTResponsablesActivos, collection: SDTResponsablesActivosItem
+	DRspId, C(16), Responsable 
+
+====== PROPERTIES =======
+Name -> SDTResponsablesActivos
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,75 @@
+======OBJECT = PMTWSSolXML.Procedure === XML de Solicitudes =====
+
+=== RULES ===
+parm(in:&CliIdPar, in:&PrbStsPar, in:&CrrUsrPar, in:&SisIdPar, out:&xmlResult);
+
+//Output_file('Solicitudes', "xml");
+
+
+=== PROCEDURE SOURCE ===
+
+ &writer.Opentostring()
+    &writer.WriteStartDocument()
+    &writer.WriteStartElement('DATA')
+        &writer.WriteStartElement('PRB_Group')
+        do 'GrabaProblemas'
+        &writer.WriteEndElement()  // PRB_Group
+    &writer.WriteEndElement()   // DATA
+    &writer.Close()
+    &xmlResult = &writer.ResultingString
+
+
+
+Sub 'GrabaProblemas'
+    for each
+        where          CliId = &CliIdPar or null(&CliIdPar)
+        where          PrbSts = &PrbStsPar or null(&PrbStsPar)
+        where          CrrUsr = &CrrUsrPar or null(&CrrUsrPar)
+        where          SisId = &SisIdPar or null(&SisIdPar)
+        defined by PrbSts
+
+        &writer.WriteStartElement('PRB')
+
+            &writer.WriteElement('PrbId', str(PrbId))
+            &writer.WriteElement('PrbSts', PrbSts)
+            &writer.WriteElement('PrbFch', dtoc(PrbFch))
+            &writer.WriteElement('PrbPedFch', dtoc(PrbPlaFch))
+            &writer.WriteElement('CrrUsr', CrrUsr)
+            &writer.WriteElement('CrrFch', dtoc(CrrFch))
+            &writer.WriteStartElement('PrbTxt')
+                &writer.WriteCData(PrbTxt)
+            &writer.WriteEndElement()
+            &writer.WriteElement('SisId', SisId)
+            &writer.WriteElement('PrbTpo', PrbTpo)
+            &writer.WriteElement('PrbUsr', PrbUsr)
+            &writer.WriteElement('PrbPrio', str(PrbPrio))
+            &writer.WriteElement('IngUsr', IngUsr)
+            &PrbTxtInt = nullvalue(&PrbTxtInt)
+            &writer.WriteStartElement('PrbTxtInt')
+                &writer.WriteCData(&PrbTxtInt)
+            &writer.WriteEndElement()
+            &writer.WriteElement('CliId', CliId)
+            &writer.WriteElement('MnuId', PrbDsc)
+            &writer.WriteElement('SegUsr', SegUsr)
+            &writer.WriteElement('PrbHrsPln', str(PrbHrsPln))
+            &writer.WriteElement('PrbHrsReal', str(PrbHrsReal))
+            &writer.WriteElement('PrbPryId', PryId)
+
+        &writer.WriteEndElement()  // PRB
+        exit
+    endfor
+EndSub  // 'GrabaProblemas'
+
+
+====== PROPERTIES =======
+Name -> PMTWSSolXML
+Description -> XML de Solicitudes 
+IsMain -> True
+CALL_PROTOCOL -> SOAP
+AppLocation -> MTWebServices
+SOAP_CANCELERROR -> NO
+INITIALIZE_NEW -> UMPV
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

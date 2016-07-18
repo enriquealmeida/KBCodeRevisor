@@ -1,0 +1,9 @@
+======OBJECT = CpRec.Table === Recursos=====
+*CpRecId  Recurso- Null=False
+ CpRecDsc  DESC- Null=False
+ CpRecTpo  DMRecTpo- Null=False
+
+====== PROPERTIES =======
+Name -> CpRec
+Description -> Recursos
+CACHE_LEVEL -> 1

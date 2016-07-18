@@ -1,0 +1,14 @@
+======OBJECT = TradAto.Table === Traduccion de Asientos=====
+*RubId  RUBRO- Null=False
+*AuxId  Codigo10- Null=False
+ PryId  PROYECTO- Null=False
+ CpRecId  Recurso- Null=False
+ TradAtoEst  Codigo3- Null=False
+ TDCpMovEST  DMEst- Null=False
+ RubDsc  DESC- Null=False
+ Importa  OBLIGATORIO- Null=False
+ PreguntarTraduccion  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> TradAto
+Description -> Traduccion de Asientos

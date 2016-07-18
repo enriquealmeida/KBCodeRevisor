@@ -1,0 +1,14 @@
+======OBJECT = RspSaldoLicenciaLiquidada.Attribute === Saldo Licencia Liquidada (empleados)=====
+NUMERIC(5)-
+EmpleadoSaldoLicenciaLiquidada(RspId)
+
+====== PROPERTIES =======
+Name -> RspSaldoLicenciaLiquidada
+Description -> Saldo Licencia Liquidada (empleados)
+VERTICAL_DESCRIPTION -> Saldo Lic. Liquidada
+ContextualTitle -> Saldo Lic. Liquidada
+Formula -> EmpleadoSaldoLicenciaLiquidada(RspId)
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

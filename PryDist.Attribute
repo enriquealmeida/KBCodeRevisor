@@ -1,0 +1,16 @@
+======OBJECT = PryDist.Attribute === Proyecto Distribuible (S/N)=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> PryDist
+Description -> Proyecto Distribuible (S/N)
+HORIZONTAL_DESCRIPTION -> Distribuible
+VERTICAL_DESCRIPTION -> Distribuible
+ContextualTitle -> Proyecto Distribuible (S/N)
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 0
+ControlValues -> Si:S,No:N,Tabla:T
+IsDefault -> False

@@ -1,0 +1,24 @@
+======OBJECT = Importe.Domain === Importe=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-07-04T18:31:14.0000000Z" checksum="09b5027cfa73169a2eda46c94e19dda8" fullyQualifiedName="Importe" guid="f9e9ede6-4f75-42dd-bae6-0075a81d2489" name="Importe" type="00972a17-9975-449e-aab1-d26165d51393" description="Importe">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Importe</Value></Property><Property><Name>Length</Name><Value>17</Value></Property><Property><Name>Decimals</Name><Value>2</Value></Property><Property><Name>Signed</Name><Value>True</Value></Property><Property><Name>idTHOUSANDSEP</Name><Value>True</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Importe
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 17
+Decimals -> 2
+Signed -> True
+idTHOUSANDSEP -> True
+IsDefault -> False

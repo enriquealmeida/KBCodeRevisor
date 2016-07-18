@@ -1,0 +1,130 @@
+======OBJECT = WorkWithPlusLegajo.WorkWithPlus === Work With Plus Legajo=====
+<Object parent="MOD_Sueldos.Legajo" parentType="1db606f2-af09-4cf9-a3b5-b481519d28f6" parentGuid="18ed09b2-c8fc-4501-bebd-8a38d11e57cc" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-27T17:15:40.0000000Z" lastUpdate="2016-05-26T18:55:21.0000000Z" checksum="3fea38471dbcc1d01f9ffd93dabe07ae" fullyQualifiedName="MOD_Sueldos.WorkWithPlusLegajo" guid="1ffe5122-9e00-0d9a-0ab5-8c0ff3e4c8b1" name="WorkWithPlusLegajo" type="07135890-56fc-489b-b408-063722fa9f7d" description="Work With Plus Legajo">
+  <Part type="a51ced48-7bee-0001-ab12-04e9e32123d1">
+    <Data Pattern="07135890-56fc-489b-b408-063722fa9f7d" Version="1.3"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<instance childrenOrderedList="2;37;-3;40;" SecFuntionKey="WWLegajo" defaultSecFuntionKey="WWLegajo">
+  <transaction childrenOrderedList="2;01;Main Table" transaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Sueldos.Legajo" defaultTransaction="1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Sueldos.Legajo" SecFuntionKeyINS="WWLegajo_Insert" defaultSecFuntionKeyINS="WWLegajo_Insert" SecFuntionKeyUPD="WWLegajo_Update" defaultSecFuntionKeyUPD="WWLegajo_Update" SecFuntionKeyDLT="WWLegajo_Delete" defaultSecFuntionKeyDLT="WWLegajo_Delete">
+    <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;27;LegajoTitle-2;28;ErrorViewer-2;01;TableContent-2;88;Actions">
+      <textBlock controlName="LegajoTitle" defaultControlName="LegajoTitle" caption="Legajo de responsables" defaultCaption="Legajo de responsables" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" />
+      <errorViewer />
+      <table name="TableContent" defaultName="TableContent" themeClass="TableContent" defaultThemeClass="TableContent" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="2;01;TableAttributes">
+        <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" includeInPanel="True" defaultIncludeInPanel="True" panelTitle="General Information" defaultPanelTitle="General Information" collapsable="False" defaultCollapsable="False" childrenOrderedList="2;22;RspId-2;22;LegFchId-2;22;LegTpoId-2;22;LegObs-2;22;LegQuien">
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-RspId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-RspId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegFchId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegFchId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegTpoId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegTpoId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" controlInfo="00972a17-9975-449e-aab1-d26165d51393-DMTipoLegajoDynCombo" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegObs" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegObs" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" descriptionThemeClass="" cellThemeClass="DataContentCell" defaultCellThemeClass="DataContentCell" descriptionCellThemeClass="" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+        </table>
+      </table>
+      <actionGroup caption="&lt;default&gt;" themeClass="TrnActionGroup" defaultThemeClass="TrnActionGroup" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="2;91;Trn_Enter-2;91;Trn_Cancel-2;91;Trn_Delete" showDescription="True">
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Enter" defaultName="Trn_Enter" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Cancel" defaultName="Trn_Cancel" />
+        <standardAction buttonClass="Button" defaultButtonClass="Button" name="Trn_Delete" defaultName="Trn_Delete" />
+      </actionGroup>
+    </table>
+  </transaction>
+  <level childrenOrderedList="3;25;LegQuien-4;39;-;76;-5;41;" id="18ed09b2-c8fc-4501-bebd-8a38d11e57cc:1" defaultId="18ed09b2-c8fc-4501-bebd-8a38d11e57cc:1" name="Legajo" defaultName="Legajo">
+    <descriptionAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" />
+    <selection description=" Legajo de responsables" defaultDescription=" Legajo de responsables" childrenOrderedList="4;02;Main Table" GenerateDataSelectorForConditions="True" defaultGenerateDataSelectorForConditions="True">
+      <GenexusPatterns_Objects>
+        <Object Id="Selection" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Sueldos.WWLegajo" />
+        <Object Id="ExportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Sueldos.ExportWWLegajo" />
+        <Object Id="ExportReportSelection" Key="84a12160-f59b-4ad7-a683-ea4481ac23e9-MOD_Sueldos.ExportReportWWLegajo" />
+        <Object Id="GridDataSelector" Key="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af-MOD_Sueldos.WWLegajoDS" />
+      </GenexusPatterns_Objects>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableMain" defaultThemeClass="TableMain" numberOfColumns="1" defaultNumberOfColumns="1" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="4;02;TableHeader-4;28;ErrorViewer-4;31;">
+        <table name="TableHeader" defaultName="TableHeader" themeClass="" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" cellThemeClass="WWFiltersCell" defaultCellThemeClass="WWFiltersCell" childrenOrderedList="4;27;LegajoTitle-4;02;TableActions-4;02;TableRightHeader">
+          <textBlock controlName="LegajoTitle" defaultControlName="LegajoTitle" caption="Legajo de responsables" defaultCaption="Legajo de responsables" themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_S="25%" defaultCellWidth_S="25%" />
+          <table name="TableActions" defaultName="TableActions" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" cellThemeClass="" />
+          <table name="TableRightHeader" defaultName="TableRightHeader" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" childrenOrderedList="4;88;Actions-4;02;TableFilters">
+            <actionGroup caption="&lt;default&gt;" type="&lt;default&gt;" name="Actions" defaultName="Actions" childrenOrderedList="4;91;Insert-4;91;Export-4;91;ExportReport-4;91;EditColumns" cellWidth_S="8%" defaultCellWidth_S="8%" showDescription="True">
+              <standardAction name="Insert" defaultName="Insert" />
+              <standardAction name="Export" defaultName="Export" />
+              <standardAction popup="True" defaultPopup="True" name="ExportReport" defaultName="ExportReport" />
+              <standardAction name="EditColumns" defaultName="EditColumns" />
+            </actionGroup>
+            <table name="TableFilters" defaultName="TableFilters" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellThemeClass="" childrenOrderedList="4;30;-4;12;LegQuien">
+              <filterAttribute name="RspActivo" defaultName="RspActivo" description="=Attribute.Title" defaultDescription="=Attribute.Title" condition="RspActivo = &amp;RspActivo when not &amp;RspActivo.IsEmpty()" defaultCondition="RspActivo = &amp;RspActivo when not &amp;RspActivo.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+              <filterAttribute name="RspId" defaultName="RspId" description="=Attribute.Title" defaultDescription="=Attribute.Title" condition="RspId = &amp;RspId when not &amp;RspId.IsEmpty()" defaultCondition="RspId = &amp;RspId when not &amp;RspId.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+              <table name="TableFechas" type="Responsive">
+                <textBlock controlName="FechasDescription" caption="Fecha legajo" themeClass="Label" />
+                <filterAttributeRange name="LegFchId" defaultName="LegFchId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="LegFchId &gt;= &amp;LegFchId when not &amp;LegFchId.IsEmpty();&#xD;&#xA;LegFchId &lt;= &amp;LegFchId_To when not &amp;LegFchId_To.IsEmpty()" defaultCondition="LegFchId &gt;= &amp;LegFchId when not &amp;LegFchId.IsEmpty();&#xD;&#xA;LegFchId &lt;= &amp;LegFchId_To when not &amp;LegFchId_To.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" cellWidth_S="100%" showDescription="False" descriptionPosition="Top" defaultDescriptionPosition="Top" middleText="hasta" defaultMiddleText="hasta" />
+              </table>
+              <orders childrenOrderedList="4;13;=LegQuien.ContextualTitle" descriptionThemeClass="OrderedByDescription" defaultDescriptionThemeClass="OrderedByDescription" cellThemeClass="CellNoMarginBottom" defaultCellThemeClass="CellNoMarginBottom" DescriptionCellThemeClass="OrderedByDescriptionCell" defaultDescriptionCellThemeClass="OrderedByDescriptionCell" vAlign="Top" defaultVAlign="Top">
+                <order childrenOrderedList="4;26;LegQuien;=LegQuien.ContextualTitle" name="=LegQuien.ContextualTitle" defaultName="=LegQuien.ContextualTitle">
+                  <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" />
+                </order>
+              </orders>
+              <filterAttribute name="LegQuien" defaultName="LegQuien" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" condition="LegQuien = &amp;LegQuien when not &amp;LegQuien.IsEmpty()" defaultCondition="LegQuien = &amp;LegQuien when not &amp;LegQuien.IsEmpty()" DescriptionThemeClass="DataFilterDescription" defaultDescriptionThemeClass="DataFilterDescription" descriptionPosition="Top" defaultDescriptionPosition="Top" />
+            </table>
+          </table>
+        </table>
+        <errorViewer />
+        <grid cellThemeClass="WorkWithCell" defaultCellThemeClass="WorkWithCell" childrenOrderedList="4;17;Delete-4;17;Update-4;23;RspId-4;23;LegFchId-4;23;LegTpoId-4;23;LegObs-4;23;LegQuien">
+          <standardAction name="Delete" defaultName="Delete" />
+          <standardAction name="Update" defaultName="Update" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-RspId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-RspId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="RspId = &amp;TFRspId when not &amp;TFRspId.IsEmpty()" defaultFilterCondition="RspId = &amp;TFRspId when not &amp;TFRspId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegFchId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegFchId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="LegFchId &gt;= &amp;TFLegFchId when not &amp;TFLegFchId.IsEmpty()" defaultFilterCondition="LegFchId &gt;= &amp;TFLegFchId when not &amp;TFLegFchId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegTpoId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegTpoId" description="=Attribute.ColumnTitle" defaultDescription="=Attribute.ColumnTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="LegTpoId = &amp;TFLegTpoId when not &amp;TFLegTpoId.IsEmpty()" defaultFilterCondition="LegTpoId = &amp;TFLegTpoId when not &amp;TFLegTpoId.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegObs" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegObs" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="False" defaultCellVisible_E="False" filterCondition="LegObs like &amp;TFLegObs when not &amp;TFLegObs.IsEmpty()" defaultFilterCondition="LegObs like &amp;TFLegObs when not &amp;TFLegObs.IsEmpty()" />
+          <gridAttribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" cellVisible_E="True" filterCondition="LegQuien = &amp;TFLegQuien when not &amp;TFLegQuien.IsEmpty()" defaultFilterCondition="LegQuien = &amp;TFLegQuien when not &amp;TFLegQuien.IsEmpty()" />
+        </grid>
+      </table>
+    </selection>
+    <view childrenOrderedList="5;14;RspId;5;41;-5;14;LegFchId;5;41;-5;14;LegTpoId;5;41;-5;06;Main Table-5;38;" caption="LegQuien.ToString()" defaultCaption="LegQuien.ToString()">
+      <GenexusPatterns_Objects>
+        <Object Id="View" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Sueldos.ViewLegajo" />
+      </GenexusPatterns_Objects>
+      <parameters>
+        <parameter name="RspId" defaultName="RspId" />
+        <parameter name="LegFchId" defaultName="LegFchId" />
+        <parameter name="LegTpoId" defaultName="LegTpoId" />
+      </parameters>
+      <table name="TableMain" defaultName="TableMain" themeClass="TableContentNoMargin" defaultThemeClass="TableContentNoMargin" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" cellPadding="-1" cellSpacing="-1" type="Responsive" defaultType="Responsive" childrenOrderedList="5;06;TableTitle-5;29;WorkWithLink-5;34;">
+        <table name="TableTitle" defaultName="TableTitle" themeClass="TableCellsWidthAuto" defaultThemeClass="TableCellsWidthAuto" numberOfColumns="2" defaultNumberOfColumns="2" defaultNumberOfColumns_S="2" defaultNumberOfColumns_M="2" defaultNumberOfColumns_L="2" type="Responsive" defaultType="Responsive" cellWidth_E="58%" defaultCellWidth_E="58%" cellThemeClass="CellViewTableTitle CellWidthAuto" defaultCellThemeClass="CellViewTableTitle CellWidthAuto" childrenOrderedList="5;27;ViewTitle-5;21;LegQuien">
+          <textBlock controlName="ViewTitle" defaultControlName="ViewTitle" caption="Legajo de responsables :: " defaultCaption="Legajo de responsables :: " themeClass="TextBlockTitleWWP" defaultThemeClass="TextBlockTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewTextBlockTitle" defaultCellThemeClass="CellViewTextBlockTitle" />
+          <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeTitleWWP" defaultThemeClass="AttributeTitleWWP" cellWidth_E="50%" defaultCellWidth_E="50%" cellThemeClass="CellViewAttributeTitle" defaultCellThemeClass="CellViewAttributeTitle" showDescription="False" defaultShowDescription="False" />
+        </table>
+        <workWithLink themeClass="TextBlockLink" defaultThemeClass="TextBlockLink" cellWidth_E="42%" defaultCellWidth_E="42%" cellThemeClass="CellAlignRightWithMargin CellWidthAuto" defaultCellThemeClass="CellAlignRightWithMargin CellWidthAuto" align="Right" defaultAlign="Right" />
+        <tabsPosition cellThemeClass="CellViewTabsPosition" defaultCellThemeClass="CellViewTabsPosition" colSpan="999" defaultColSpan="999" startCol="1" defaultStartCol="1" />
+      </table>
+      <tabs childrenOrderedList="LegajoGeneral;42;General">
+        <tabularTab childrenOrderedList="LegajoGeneral;04;Main Table" name="General" defaultName="General" code="General" defaultCode="General" wcname="LegajoGeneral" defaultWcname="LegajoGeneral">
+          <GenexusPatterns_Objects>
+            <Object Id="TabTabular" Key="c9584656-94b6-4ccd-890f-332d11fc2c25-MOD_Sueldos.LegajoGeneral" />
+          </GenexusPatterns_Objects>
+          <table name="Table" defaultName="Table" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="LegajoGeneral;28;ErrorViewer-LegajoGeneral;04;TableAttributes-LegajoGeneral;04;TableActions">
+            <errorViewer />
+            <table name="TableAttributes" defaultName="TableAttributes" themeClass="TableData" defaultThemeClass="TableData" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="LegajoGeneral;21;RspId-LegajoGeneral;21;LegFchId-LegajoGeneral;21;LegTpoId-LegajoGeneral;21;LegObs-LegajoGeneral;21;LegQuien">
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-RspId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-RspId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegFchId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegFchId" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegTpoId" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegTpoId" description="=Attribute.Title" defaultDescription="=Attribute.Title" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegObs" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegObs" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+              <attribute attribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" defaultAttribute="adbb33c9-0906-4971-833c-998de27e0676-LegQuien" description="=Attribute.ContextualTitle" defaultDescription="=Attribute.ContextualTitle" themeClass="AttributeGray" defaultThemeClass="AttributeGray" cellThemeClass="DataContentCellView" defaultCellThemeClass="DataContentCellView" descriptionWidth="50%" defaultDescriptionWidth="50%" descriptionPosition="Left" />
+            </table>
+            <table name="TableActions" defaultName="TableActions" themeClass="TableActions" defaultThemeClass="TableActions" defaultNumberOfColumns_S="1" defaultNumberOfColumns_M="1" defaultNumberOfColumns_L="1" type="Responsive" defaultType="Responsive" childrenOrderedList="LegajoGeneral;88;Actions">
+              <actionGroup name="Actions" defaultName="Actions" childrenOrderedList="LegajoGeneral;91;Update-LegajoGeneral;91;Delete">
+                <standardAction caption="GXM_update" defaultCaption="GXM_update" buttonClass="Button" defaultButtonClass="Button" name="Update" defaultName="Update" />
+                <standardAction caption="GX_BtnDelete" defaultCaption="GX_BtnDelete" buttonClass="Button" defaultButtonClass="Button" name="Delete" defaultName="Delete" />
+              </actionGroup>
+            </table>
+          </table>
+        </tabularTab>
+      </tabs>
+    </view>
+  </level>
+</instance>]]></Data>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WorkWithPlusLegajo</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>KBObject</Name><Value>1db606f2-af09-4cf9-a3b5-b481519d28f6-MOD_Sueldos.Legajo</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> 1db606f2-af09-4cf9-a3b5-b481519d28f6
+FolderId -> 60
+Name -> WorkWithPlusLegajo
+ObjectVisibility -> Private
+KBObject -> 1db606f2-af09-4cf9-a3b5-b481519d28f6-60
+IsDefault -> False

@@ -1,0 +1,10 @@
+======OBJECT = RubDsc.Attribute === Rub Dsc=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> RubDsc
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

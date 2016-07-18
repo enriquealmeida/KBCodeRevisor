@@ -1,0 +1,55 @@
+======OBJECT = HWUsuAmb.WebPanel === Usuarios de un ambiente=====
+
+=== RULES ===
+parm(in:GLUsAmbId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &vusaurio = userid()
+    &vNivle = 9
+    PFUsuInt.call('CLAVES',&vNivle,&vOk)
+
+    &usuPer = Bool.True
+EndEvent
+
+Event 'Agregar'
+    if &vOk =Bool.true 
+       TGLAmbUsu.call(GLUsAmbId,&usuId,TrnMode.Insert)
+    endif
+EndEvent
+
+Event load
+    if &vOk =Bool.true 
+       GLUsId.link = TGLAmbUsu.link(GLUsAmbId ,  GLUsId , TrnMode.Update)
+       &vEliminar = 'ELiminar'
+       &vEliminar.link = TGLAmbUsu.link( GLUsAmbId ,  GLUsId , TrnMode.Delete )
+    else
+       GLUsId.link =link( '')
+       &vEliminar = ''
+       &vEliminar.link = link('' )
+    endif
+EndEvent  // load
+
+Event Refresh
+
+EndEvent  // Refresh
+
+Event &usuPer.Click
+
+EndEvent  // &usuPer.Click
+
+Event 'Cerrar'
+    HWamb.call()
+EndEvent    // 'Cerrar'
+
+
+====== PROPERTIES =======
+Name -> HWUsuAmb
+Description -> Usuarios de un ambiente
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 20
+ObjectVisibility -> Private
+IsDefault -> False

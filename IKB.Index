@@ -1,0 +1,12 @@
+======OBJECT = IKB.Index === IKB=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-06-21T18:57:43.0000000Z" checksum="7c63e393645ac603bff7161b3aa7c108" fullyQualifiedName="IKB" guid="376ec9b5-b329-4c31-9bec-5d4912485924" name="IKB" type="9e750647-3679-0000-0100-2529de263960" description="IKB">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">KBCliId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IKB</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IKB

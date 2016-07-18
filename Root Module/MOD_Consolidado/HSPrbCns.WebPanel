@@ -1,0 +1,59 @@
+======OBJECT = HSPrbCns.WebPanel === Selección de solicitudes para consolidado=====
+
+=== RULES ===
+parm(in:&KBId, in:&CnsId);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    PFUsuInt.call('CONS',9,&Ok)
+    if &Ok <> Bool.true 
+        HSinPermiso.call()
+    endif
+	
+    &CrrUsr = ''
+	
+    &SegUsr = ''
+    &PrbPedFchFin = addmth(&Today, 1)
+    &PrbFchFin = &Today
+    &CliId.SetEmpty()
+	PryId.Visible = 0
+EndEvent  // Start
+
+Event Enter
+    for each line in Problemas
+        if &selec = Bool.true 
+            PGraCnsSol.call(PrbId,&CnsId)
+        endif
+    endfor
+EndEvent  // Enter
+
+Event 'Cerrar'
+    WWConsolidado.call()
+EndEvent  // 'Cerrar'
+
+Event Refresh
+	
+EndEvent  // Refresh
+
+Event 'Seleccionar todo'
+    for each line in Problemas
+        &selec = Bool.true 
+    endfor
+EndEvent  // 'Seleccionar todo'
+
+ Event load
+   PrbId.LinkTarget="_blank"
+   PrbId.link=Solicitudes.Link(TrnMode.Display, PryId, PrbId)
+EndEvent  // load
+
+
+====== PROPERTIES =======
+Name -> HSPrbCns
+Description -> Selección de solicitudes para consolidado
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

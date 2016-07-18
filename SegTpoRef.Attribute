@@ -1,0 +1,16 @@
+======OBJECT = SegTpoRef.Attribute === Tipo de referencia=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> SegTpoRef
+Description -> Tipo de referencia
+HORIZONTAL_DESCRIPTION -> Tipo de referencia
+VERTICAL_DESCRIPTION -> Tipo de referencia
+ContextualTitle -> Tipo de referencia
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 0
+ControlValues -> Cliente:CLI,Proyecto:PRY
+IsDefault -> False

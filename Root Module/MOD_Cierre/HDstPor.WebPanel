@@ -1,0 +1,76 @@
+======OBJECT = HDstPor.WebPanel === Porcentajes de distribución=====
+
+=== RULES ===
+parm(in:PryPadId,in:&ImpPar,in:&ImpPesPar,in:&CpMovTpo, in:&Fecha);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &TotPor = 0
+//    ImgCerrar.Visible = 0
+//    ImgConfirmar.Visible = 1
+EndEvent  // Start
+
+Event Refresh
+    &TotPor = 0
+
+    /// MCrispino, 28/10/2004
+    // los importes vienen multiplicados por 100, por un problema con los decimales
+    // en el pasaje de parámetros
+    // => divido entre 100
+    &Imp =  &ImpPar / 100
+    &ImpPes = &ImpPesPar / 100
+    /// fin
+EndEvent  // Refresh
+
+Event Enter
+    if &TotPor = 100
+        for each line in Subfile1
+            if PryDisPor > 0
+                &ImpAux = &Imp * PryDisPor / 100
+                &ImpPesAux = &ImpPes * PryDisPor / 100
+                PGCpMov.Call(DMMovSts.Valorizado,'TRANSFTAB',PryHijId,&ImpAux,&ImpPesAux,DMEst.Transferencia,&Fecha,0,'','','')
+            endif
+        endfor
+        //Cereo el proyecto distribuido
+        &ImpAux = (-1) * &Imp
+        &ImpPesAux = (-1) * &ImpPes
+        PGCpMov.Call(DMMovSts.Valorizado,'TRANSFTAB',PryPadId,&ImpAux,&ImpPesAux,DMEst.Transferencia,&Fecha,0,'','','')
+//        ImgCerrar.Visible = 1
+//        ImgConfirmar.Visible = 0
+        commit
+        refresh
+    else
+        msg('La suma de los porcentajes debe ser 100')
+    endif
+    
+    return
+EndEvent  // Enter
+
+Event load
+    &TotPor = &TotPor + PryDisPor
+    PryDisPor.Link = TMTDstPor.link(PryPadId,PryHijId,TrnMode.Update)
+EndEvent  // load
+
+Event 'Agregar'
+    TMTDstPor.call(PryPadId,PryHijId,TrnMode.Insert)
+EndEvent  // 'Agregar'
+
+Event 'Eliminar'
+    TMTDstPor.call(PryPadId,PryHijId,TrnMode.Delete)
+EndEvent  // 'Eliminar'
+
+Event 'Cerrar'
+    HDstrPrT.call()
+EndEvent  // 'Cerrar'
+
+
+====== PROPERTIES =======
+Name -> HDstPor
+Description -> Porcentajes de distribución
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,32 @@
+======OBJECT = ResponsablesActivos.Domain === Responsables Activos  ..=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-27T17:15:40.0000000Z" lastUpdate="2016-05-26T17:52:31.0000000Z" checksum="cdc6dd306a1d98228603107443ce9531" fullyQualifiedName="ResponsablesActivos" guid="fda9403b-5271-45ed-9e8d-f7c33333a64b" name="ResponsablesActivos" type="00972a17-9975-449e-aab1-d26165d51393" description="Responsables Activos  ..">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ResponsablesActivos</Value></Property><Property><Name>Description</Name><Value>Responsables Activos  ..</Value></Property><Property><Name>EmptyAsNull</Name><Value>Yes</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>15</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>AttMaxLen</Name><Value>15</Value></Property><Property><Name>AttAvgLen</Name><Value>0</Value></Property><Property><Name>AttCollection</Name><Value>False</Value></Property><Property><Name>ControlType</Name><Value>Dynamic Combo Box</Value></Property><Property><Name>ControlItemValues</Name><Value>RspId</Value></Property><Property><Name>ControlItemDescription</Name><Value>RspId</Value></Property><Property><Name>ControlWhere</Name><Value>RspActivo=true;</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ResponsablesActivos
+Description -> Responsables Activos  ..
+OBJ_TYPE -> id_OTYPE_DOM
+EmptyAsNull -> Yes
+ATTCUSTOMTYPE -> 5
+Length -> 15
+Decimals -> 0
+AttMaxLen -> 15
+AttAvgLen -> 0
+AttCollection -> False
+ControlType -> 4
+ControlItemValues -> RspId
+ControlItemDescription -> RspId
+ControlWhere -> Artech.Genexus.Common.CustomTypes.ConditionType
+IsDefault -> False

@@ -1,0 +1,21 @@
+======OBJECT = AutorizarLicencia.Procedure === Autorizar licencia=====
+
+=== RULES ===
+parm(In:RspLicId );
+
+
+=== PROCEDURE SOURCE ===
+for each
+    LicEst = EstadoLicencia.Autorizada
+    RspAutId = UsuarioConectado()
+endfor
+
+
+====== PROPERTIES =======
+Name -> AutorizarLicencia
+Description -> Autorizar licencia
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

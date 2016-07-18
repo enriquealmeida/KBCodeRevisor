@@ -1,0 +1,9 @@
+======OBJECT = NIVHAB.Table === Niveles habilitados de un Usuario=====
+*GLUsAmbId  DMClave- Null=False
+*GLUsAmbNvl  DMNivel- Null=False
+ AmbNvlDsc  DMDescLarga- Null=False
+ GLPideClave  OBLIGATORIO- Null=False
+
+====== PROPERTIES =======
+Name -> NIVHAB
+Description -> Niveles habilitados de un Usuario

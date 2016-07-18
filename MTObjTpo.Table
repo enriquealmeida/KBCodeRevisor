@@ -1,0 +1,8 @@
+======OBJECT = MTObjTpo.Table === Tipos de objetivos=====
+*ObjTpoId  Codigo3- Null=False
+ ObjTpoDsc  DESC- Null=False
+
+====== PROPERTIES =======
+Name -> MTObjTpo
+Description -> Tipos de objetivos
+CACHE_LEVEL -> 3

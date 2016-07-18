@@ -1,0 +1,21 @@
+======OBJECT = DVB_SDTDropDownOptionsData.SDT === DVB_SDTDrop Down Options Data=====
+
+=== STRUCTURE ===
+DVB_SDTDropDownOptionsData, collection: Item
+	Icon, B(4), Icon 
+	Title, C(30), Title 
+	Tooltip, C(100), Tooltip 
+	Link, V(250), Link 
+	EventKey, V(100), Event Key 
+	IsDivider, B(4), Is Divider 
+	JSonclickEvent, V(250), JSonclick Event 
+
+====== PROPERTIES =======
+Name -> DVB_SDTDropDownOptionsData
+Description -> DVB_SDTDrop Down Options Data
+ExternalName -> Data
+ExternalNamespace -> 
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 69
+ObjectVisibility -> Private
+IsDefault -> False

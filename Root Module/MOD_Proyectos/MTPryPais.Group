@@ -1,0 +1,18 @@
+======OBJECT = MTPryPais.Group === Pais del Proyecto=====
+<Object parent="MOD_Proyectos" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="63d3e12e-5311-4674-aab2-7be88ec310ed" user="" versionDate="2016-03-10T16:05:18.0000000Z" lastUpdate="2016-03-10T14:13:35.0000000Z" checksum="3e8b008f3b745754c98531126669eeed" fullyQualifiedName="MOD_Proyectos.MTPryPais" guid="5c4f7a90-1cd0-4f26-827d-3831e36789e6" name="MTPryPais" type="87313f43-5eb2-41d7-9b8c-e8d9f5bf9588" description="Pais del Proyecto">
+  <Part type="74203da2-41b1-402c-0001-d8d564a2c2fa">
+    <Subtype guid="b5080217-b01c-4543-8b8e-236165593fe6">
+      <Name>MTPryPais</Name>
+      <Supertype guid="7b49f934-9a23-4e2d-98bd-fde61e0dc2d6">MTPaisId</Supertype>
+    </Subtype>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MTPryPais</Value></Property><Property><Name>Description</Name><Value>Pais del Proyecto</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> MTPryPais
+Description -> Pais del Proyecto
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+ObjectVisibility -> Private
+IsDefault -> False

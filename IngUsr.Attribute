@@ -1,0 +1,15 @@
+======OBJECT = IngUsr.Attribute === Quien ingresa el problema=====
+CHARACTER(16)
+
+
+====== PROPERTIES =======
+Name -> IngUsr
+Description -> Quien ingresa el problema
+HORIZONTAL_DESCRIPTION -> Ingreso
+VERTICAL_DESCRIPTION -> Ingreso
+ContextualTitle -> Ingresa
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> @!
+IsDefault -> False

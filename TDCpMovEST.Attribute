@@ -1,0 +1,15 @@
+======OBJECT = TDCpMovEST.Attribute === Entrada/Salida/Transferencia=====
+CHARACTER(1)
+
+
+====== PROPERTIES =======
+Name -> TDCpMovEST
+Description -> Entrada/Salida/Transferencia
+HORIZONTAL_DESCRIPTION -> Entrada/Salida/Transferencia
+VERTICAL_DESCRIPTION -> Entrada/Salida/Transferencia
+ContextualTitle -> Entrada/Salida/Transferencia
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+AttValueRange -> 'E' 'T' 'S'
+IsDefault -> False

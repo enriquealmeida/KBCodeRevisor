@@ -1,0 +1,23 @@
+======OBJECT = MDNum.Domain === MDNum=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:22:45.0000000Z" checksum="9493630b019785c1d61138c04ed819eb" fullyQualifiedName="MDNum" guid="9930afdc-241e-4791-b1bb-420200a03844" name="MDNum" type="00972a17-9975-449e-aab1-d26165d51393" description="MDNum">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MDNum</Value></Property><Property><Name>Length</Name><Value>15</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>ATT_PICTURE</Name><Value>ZZZZZZZZZZZZZZ9</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> MDNum
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 15
+Decimals -> 0
+ATT_PICTURE -> ZZZZZZZZZZZZZZ9
+IsDefault -> False

@@ -1,0 +1,23 @@
+======OBJECT = TMTSegRsp.Transaction === Seguimiento del responsable=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+RspId*
+SegTpoRef*
+SegRef*
+SegVerRango
+
+
+====== PROPERTIES =======
+Name -> TMTSegRsp
+Description -> Seguimiento del responsable
+GenerateObject -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 16
+ObjectVisibility -> Public
+IsDefault -> False

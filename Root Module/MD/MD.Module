@@ -1,0 +1,15 @@
+======OBJECT = MD.Module === MD=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="EALMEIDANBK\Enrique" versionDate="2016-05-17T17:27:35.0000000Z" lastUpdate="2016-05-17T17:17:10.0000000Z" checksum="de6f948ab3e7d6f0eba20f51aa6620fb" fullyQualifiedName="MD" guid="c591cc23-7d1c-4a8c-8e85-596c2f4e6e60" name="MD" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="MD">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Properties />
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MD</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> MD
+IsDefault -> False

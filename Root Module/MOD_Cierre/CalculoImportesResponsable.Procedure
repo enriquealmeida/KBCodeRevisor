@@ -1,0 +1,52 @@
+======OBJECT = CalculoImportesResponsable.Procedure === Calculo Importes Responsable=====
+
+=== RULES ===
+ parm(in:CpRecId, in:&FchIni, in:&FchFin, out:&vRecImpTot, out:&RecImpPes);
+
+
+=== PROCEDURE SOURCE ===
+	&vImpTotal = 0
+    &ImpPesTot = 0
+    &vTotHoras = 0
+	&vRecTotHor = 0
+    &vRecTotHorf=0
+    &vRecImpTot = 0
+    &RecImpPes = 0
+	
+    &RspSuA = year(&FchIni)
+    &RspSuM = Month(&FchIni)
+    
+    PFImpRsp.Call(CpRecId, &RspSuA, &RspSuM, &vRecImpTot, &RecImpPes)
+    &vRecImpTot = (-1) * &vRecImpTot    // los importes van negativos
+    &RecImpPes = (-1) * &RecImpPes
+	
+    for each order CpRecId
+        where            &FchIni <= CpMovFch  and  CpMovFch <= &FchFin
+        where            CpMovSts = DMMovSts.S
+        //where            CpMovTpo = 'R'
+        if PryDist<>'T' //No tomar en cuenta para costos directos ni indirectos. solo cuenta horas.
+            &vRecTotHor  =&vRecTotHor + CpMovHrs
+	    else
+            &vRecTotHorF  =&vRecTotHorF + CpMovHrs
+        endif
+    endfor
+    &vImpTotal = &vImpTotal + &vRecImpTot
+    &ImpPesTot = &ImpPesTot + &RecImpPes
+    &vTotHoras = &vTotHoras + &vRecTotHor
+	
+    if &vRecTotHor <>0  or  &vRecImpTot <> 0  or  &RecImpPes <> 0
+        if &vRecImpTot <> 0
+          &Cotizacion = &RecImpPes /&vRecImpTot
+        else
+          &Cotizacion = 0
+        endif
+         
+    endif
+
+
+====== PROPERTIES =======
+Name -> CalculoImportesResponsable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,21 @@
+======OBJECT = PGraCnsSol.Procedure === Graba consolidado en solicitud=====
+
+=== RULES ===
+parm(in:&PrbId, in:&PrbCnsId);
+
+
+=== PROCEDURE SOURCE ===
+for each
+    where            PrbId = &PrbId
+
+    PrbCnsId = &PrbCnsId
+endfor
+
+
+====== PROPERTIES =======
+Name -> PGraCnsSol
+Description -> Graba consolidado en solicitud
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 10
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,34 @@
+======OBJECT = KBDoctor_Initialize_MDTipo.Procedure === Tipo de Metadata=====
+
+=== RULES ===
+
+
+=== PROCEDURE SOURCE ===
+&ret = DFWOpen('C:\Models\ev3\Metricas_v4\Enrique\MDTipo.kbd','','')
+&ret= DFWPTxt('//Initialize MDTipo ')
+&ret= DFWNext()
+&comilla='"'
+for each 
+&ret = DFWPTxt('    new ')
+   &ret= DFWNext()
+   &ret = DFWPTxt('        MDObjTpo ='  + MDObjTpo.ToFormattedString())  
+   &ret = DFWNext()
+   &ret = DFWPTxt('        MdObjTDsc ='  + &comilla + MdObjTDsc.ToFormattedString() + &comilla )  
+   &ret = DFWNext()
+&Ret = DFWPTxt('    endnew ')
+
+&ret= DFWNext()
+endfor 
+&ret = DFWClose()
+msg('Generated in : C:\Models\ev3\Metricas_v4\Enrique\MDTipo.kbd',status)
+
+
+====== PROPERTIES =======
+Name -> KBDoctor_Initialize_MDTipo
+Description -> Tipo de Metadata
+IsMain -> True
+CALL_PROTOCOL -> CLINE
+GenerateObject -> True
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+IsDefault -> False

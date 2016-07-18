@@ -1,0 +1,12 @@
+======OBJECT = ISLConsolid2.Index === ISLConsolid2=====
+<Object Type="Duplicate" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:35.0000000Z" checksum="aa70d99895124c32cd61088aa0414cf7" fullyQualifiedName="ISLConsolid2" guid="ee5f8f39-d49d-4bff-bcbc-c2a775f61cf9" name="ISLConsolid2" type="9e750647-3679-0000-0100-2529de263960" description="ISLConsolid2">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">KBId</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ISLConsolid2</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ISLConsolid2

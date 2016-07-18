@@ -1,0 +1,23 @@
+======OBJECT = unchecked.Image === unchecked=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-09-23T17:07:54.0000000Z" lastUpdate="2011-08-09T19:24:17.0000000Z" checksum="f01e098f1c214d08471229daaf2b0959" fullyQualifiedName="unchecked" guid="a34f7a30-af00-4771-b352-461828728543" name="unchecked" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="unchecked">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="unchecked.gif" description="unchecked.gif"><Data>
+<base64Binary>
+R0lGODlhDgAOAMQAAOpSAPWpgPvf0O5zMPGIUPe+n////+tdEPjJsP718POecO1oIPrUwPzq4Pa0kPKTYPSof////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAACH5BAUUABEALAAAAAAOAA4AAAVcYCQm0AAAA5SIbHGcMHAULazEJ528AGIsgADDIUsEYAYDopBsAAOmXDLpOkVPB0ETFxsk
+pjeY6fD4GhrJBAF1zCYDBx/jFYi8DoEH9yAqcGM0fTwxMywsUFZ1LCEAOw==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>unchecked.gif</Value></Property><Property><Name>Description</Name><Value>unchecked.gif</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\ClientSideValidation\CSharpModel\web\unchecked.gif</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>unchecked</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> unchecked
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

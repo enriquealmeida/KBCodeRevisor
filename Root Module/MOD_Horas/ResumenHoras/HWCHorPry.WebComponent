@@ -1,0 +1,50 @@
+======OBJECT = HWCHorPry.WebComponent === Resumen de Horas por Proyecto=====
+
+=== RULES ===
+parm(in:&RspId, in:&CliId, in:&PryId, in:&PryCls, in:&PryTpo, in:&TarId, in:&FchIni, in:&FchFin, in:&HrsPrbid);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &HrsCntTot = PCntTHrs(&PryId,&TarId,&RspId,&CliId,&FchIni,&FchFin,&prycls,&prytpo,&HrsPrbId)
+EndEvent  // Start
+
+Event SbfPry.load
+   
+    for each order PryId
+        where      PryId = &PryId when not null(&PryId)
+
+        &PryIdSbf = PryId
+        &PryNomSbf = PryNom
+        &HrsCnt = 0
+        
+        &HrsCnt = PCntTHrs( PryId, &TarId, &RspId, &CliId, &FchIni, &FchFin, &prycls, &prytpo, &HrsPrbId)
+        
+		&HrsPcj = 0
+        if &HrsCnt <> 0
+            if &HrsCntTot<>0
+                &HrsPcj = round(&HrsCnt * 100 / &HrsCntTot, 2)
+            endif
+            load
+        endif
+    endfor
+    //Cargo Totales. 
+    &PryIdSbf=' '    
+    &HrsCnt=&HrsCntTot
+    &HrsCnt.FontBold=1
+    &HrsPcj=100
+    load
+
+EndEvent  // SbfCli.load
+
+
+====== PROPERTIES =======
+Name -> HWCHorPry
+Description -> Resumen de Horas por Proyecto
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 85
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,55 @@
+======OBJECT = HSolLic.WebComponent === Solicitudes de licencias=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+Event Start
+    &ParUrlBase = PMTParChr('PARURLBASE')
+    &vAutorizar = 'OK'
+	&vDet2 = 'Ver detalle'
+	&vOtras = 'Ver Otras'
+    &DiasTot = 0
+
+EndEvent 
+ 
+  // Start
+
+Event Refresh
+    &DiasTot = 0
+EndEvent 
+ 
+  // Refresh
+
+Event Load
+	&EstadoLicencia = EstadoLicencia.EnumerationDescription(LicEst)
+	&TipoLicencia = DMLicTpo.EnumerationDescription(LicTpo)
+    &vAutorizar.Link = &ParUrlBase +HAutLic.link( RspLicId ) 
+    &vDet2.link = &ParUrlBase + Licencia.link( TrnMode.Update, RspLicId)
+    &vOtras.Link = &ParUrlBase + LicenciasXFechaCalendario.link( LicFecIni, LicFecFin)
+
+	&RspId = RspId
+    &LicFecIni = LicFecIni
+	
+	if RspSaldoFuturo >= 0	
+		RspSaldoFuturo.ForeColor = rgb(255, 0, 0)
+	else
+		RspSaldoFuturo.ForeColor = rgb(0, 0, 0)
+	endif
+	
+EndEvent 
+ 
+  // load
+
+
+
+====== PROPERTIES =======
+Name -> HSolLic
+Description -> Solicitudes de licencias
+WEB_COMP -> Yes
+IsPrompt -> False
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 11
+ObjectVisibility -> Private
+IsDefault -> False

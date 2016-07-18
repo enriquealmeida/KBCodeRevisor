@@ -1,0 +1,14 @@
+======OBJECT = RspSue.Attribute === Remuneración 8 hs Uruguay=====
+NUMERIC(17.2)-
+
+
+====== PROPERTIES =======
+Name -> RspSue
+Description -> Remuneración 8 hs Uruguay
+HORIZONTAL_DESCRIPTION -> Remuneración 8 hs Uruguay
+VERTICAL_DESCRIPTION -> Remuneración 8 hs Uruguay
+ContextualTitle -> Remuneración 8 hs Uruguay
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,14 @@
+======OBJECT = CpMovObs.Attribute === Observacion=====
+VARCHAR(256)
+
+
+====== PROPERTIES =======
+Name -> CpMovObs
+Description -> Observacion
+HORIZONTAL_DESCRIPTION -> Observacion
+VERTICAL_DESCRIPTION -> Observacion
+ContextualTitle -> Observacion
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

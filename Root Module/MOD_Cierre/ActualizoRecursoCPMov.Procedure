@@ -1,0 +1,22 @@
+======OBJECT = ActualizoRecursoCPMov.Procedure === Actualizo Recurso CPMov=====
+
+=== RULES ===
+parm(in:&CpMovId, in:&CpRecId);
+
+
+=== PROCEDURE SOURCE ===
+for each
+    where            CpMovId = &CpMovId
+  	CpRecId=&CpRecId
+endfor
+
+
+
+====== PROPERTIES =======
+Name -> ActualizoRecursoCPMov
+Description -> Actualizo Recurso CPMov
+CommitOnExit -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 14
+ObjectVisibility -> Private
+IsDefault -> False

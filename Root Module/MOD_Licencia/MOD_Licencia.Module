@@ -1,0 +1,31 @@
+======OBJECT = MOD_Licencia.Module === MOD_Licencia=====
+<Object parentGuid="afa47377-41d5-4ae8-9755-6f53150aa361" user="" versionDate="2016-03-14T12:23:37.0000000Z" lastUpdate="2016-03-14T11:32:56.0000000Z" checksum="7aaf01516f21c39a47ee235f5350a667" fullyQualifiedName="MOD_Licencia" guid="eb85f78d-a9cf-45de-813e-39740f7daa9c" name="MOD_Licencia" type="c88fffcd-b6f8-0000-8fec-00b5497e2117" description="MOD_Licencia">
+  <Part type="a5e6a251-2df0-44d8-adab-1da237574326">
+    <Graph ActiveLayerId="66d517a6-5ba9-4229-90f9-9bab36697b53">
+      <Layers>
+        <Layer Id="66d517a6-5ba9-4229-90f9-9bab36697b53">
+          <Nodes>
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Licencia" Bounds="175.4329 32.17533 150 50.8252" Expanded="True" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Global" Bounds="828.1838 22.80889 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-GLFeriados" Bounds="20.00001 380.4738 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Solicitudes" Bounds="458.4226 104.151 150 32.00001" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Horas" Bounds="334.6474 395.766 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Proyectos" Bounds="729.86 430.4057 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Consolidado" Bounds="942.8231 130.0668 150 32" Expanded="False" />
+            <ModuleNode KBObjectReference="c88fffcd-b6f8-0000-8fec-00b5497e2117-MOD_Objetivos" Bounds="674.23 245.2882 150 32" Expanded="False" />
+          </Nodes>
+        </Layer>
+      </Layers>
+    </Graph>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MOD_Licencia</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 1
+Name -> MOD_Licencia
+IsDefault -> False

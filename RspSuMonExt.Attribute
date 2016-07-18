@@ -1,0 +1,14 @@
+======OBJECT = RspSuMonExt.Attribute === Moneda Sueldo Exterior=====
+CHARACTER(4)
+
+
+====== PROPERTIES =======
+Name -> RspSuMonExt
+Description -> Moneda Sueldo Exterior
+HORIZONTAL_DESCRIPTION -> Moneda Sueldo Exterior
+VERTICAL_DESCRIPTION -> Moneda Sueldo Exterior
+ContextualTitle -> Moneda Sueldo Exterior
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-202
+IsDefault -> False

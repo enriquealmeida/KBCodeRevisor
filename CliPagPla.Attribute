@@ -1,0 +1,14 @@
+======OBJECT = CliPagPla.Attribute === Plazo de pago del cliente=====
+NUMERIC(5)-
+
+
+====== PROPERTIES =======
+Name -> CliPagPla
+Description -> Plazo de pago del cliente
+HORIZONTAL_DESCRIPTION -> Plazo de pago del cliente
+VERTICAL_DESCRIPTION -> Plazo de pago del cliente
+ContextualTitle -> Plazo de pago del cliente
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

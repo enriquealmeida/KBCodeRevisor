@@ -1,0 +1,19 @@
+======OBJECT = GetHorasTrabajadasPorDia.Procedure === Horas trabajadas por día de un responsable=====
+
+=== RULES ===
+parm(in: &RspId, out: &HrsDia);
+
+
+=== PROCEDURE SOURCE ===
+for each 
+	where            RspId=&RspId
+    &HrsDia=RspSueHr 
+endfor
+
+
+====== PROPERTIES =======
+Name -> GetHorasTrabajadasPorDia
+Description -> Horas trabajadas por día de un responsable
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 7
+IsDefault -> False

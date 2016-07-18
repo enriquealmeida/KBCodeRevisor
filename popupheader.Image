@@ -1,0 +1,27 @@
+======OBJECT = popupheader.Image === popupheader=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:54.0000000Z" checksum="f9679b47fb17935f47b23951ca5fc0d7" fullyQualifiedName="popupheader" guid="7c66e21c-2436-4fbe-8b71-ee163314f25b" name="popupheader" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="popupheader">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="popupheader.gif" description="popupheader.gif"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAB3RJTUUH2QcQDyU2N8luiwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAE5JREFUeNolyr0NgCAU
+AOHnqRAMjQUDORhr2rGBBmNF+IskVt8VJ6f3XCEgQK2VnjPSGn20iMzHL2+MTOPRxqCUYh1u1rJoze4cd0o8pXzY6Rr6hIQj2wAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>popupheader.gif</Value></Property><Property><Name>Description</Name><Value>popupheader.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="popupheader.gif" description="popupheader.gif"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAB3RJTUUH2QcQDyU2N8luiwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAE5JREFUeNolyr0NgCAU
+AOHnqRAMjQUDORhr2rGBBmNF+IskVt8VJ6f3XCEgQK2VnjPSGn20iMzHL2+MTOPRxqCUYh1u1rJoze4cd0o8pXzY6Rr6hIQj2wAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>popupheader.gif</Value></Property><Property><Name>Description</Name><Value>popupheader.gif</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>popupheader</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> popupheader
+IsDefault -> False

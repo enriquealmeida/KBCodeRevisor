@@ -1,0 +1,145 @@
+======OBJECT = HorasSolicitudesDS.DataSelector === Horas Solicitudes DS=====
+<Object parent="MOD_Horas" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="ef519605-8f4a-4442-969e-2c07364ba5e0" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:29.0000000Z" checksum="71272ca65481d038ceb475d0ab52db65" fullyQualifiedName="MOD_Horas.HorasSolicitudesDS" guid="2ce3fa43-842c-438e-a2e2-826531f3acf8" name="HorasSolicitudesDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="Horas Solicitudes DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[&FchIni <= HrsFch .AND. HrsFch <= &FchFin;
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[CliId = &CliId   when not &CliId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[RspId = &RspId when not &RspId.IsEmpty()  
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[TarId = &TarId when not &TarId.IsEmpty() 
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryCls = &PryCls when not &PryCls.IsEmpty()  
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryTpo = &PryTpo when not &PryTpo.IsEmpty() 
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PryId = &PryId when not &PryId.IsEmpty()
+]]></Source>
+      </Condition>
+      <Condition>
+        <Source><![CDATA[PrbId = &HrsPrbId when not &HrsPrbId.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="FchIni">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>FchIni</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Date</Value></Property></Properties>
+      </Variable>
+      <Variable Name="FchFin">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>FchFin</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Date</Value></Property></Properties>
+      </Variable>
+      <Variable Name="CliId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>CliId</Value></Property><Property><Name>Description</Name><Value>Identificador de Cliente</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:CliId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryTpo">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryTpo</Value></Property><Property><Name>Description</Name><Value>Tipo de Proyecto</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryTpo</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryCls">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryCls</Value></Property><Property><Name>Description</Name><Value>Producto</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryCls</Value></Property></Properties>
+      </Variable>
+      <Variable Name="PryId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PryId</Value></Property><Property><Name>Description</Name><Value>Identificador de Proyecto</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PryId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="TarId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>TarId</Value></Property><Property><Name>Description</Name><Value>Identificador de Tarea</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:TarId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="RspId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>RspId</Value></Property><Property><Name>Description</Name><Value>Responsable</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:RspId</Value></Property></Properties>
+      </Variable>
+      <Variable Name="HrsPrbId">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>HrsPrbId</Value></Property><Property><Name>Description</Name><Value>Solicitud</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PrbId</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>FchIni</Name>
+        <Description>Fch Ini</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>FchFin</Name>
+        <Description>Fch Fin</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>CliId</Name>
+        <Description>Identificador de Cliente</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryTpo</Name>
+        <Description>Tipo de Proyecto</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryCls</Name>
+        <Description>Producto</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PryId</Name>
+        <Description>Identificador de Proyecto</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>TarId</Name>
+        <Description>Identificador de Tarea</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>RspId</Name>
+        <Description>Responsable</Description>
+      </Parameter>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>HrsPrbId</Name>
+        <Description>Solicitud</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>HorasSolicitudesDS</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> HorasSolicitudesDS
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 4
+ObjectVisibility -> Private
+IsDefault -> False

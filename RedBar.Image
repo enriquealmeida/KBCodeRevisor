@@ -1,0 +1,23 @@
+======OBJECT = RedBar.Image === Red Bar=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-26T23:47:57.0000000Z" checksum="9a43a80a397305320562742d66d2f5e6" fullyQualifiedName="RedBar" guid="89ea3dba-cbfd-4c53-baf3-f07c36506db8" name="RedBar" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Red Bar">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="barraSuperior.png" description="barra Superior.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAABRIAAAAECAIAAAB9dFTEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN1AAADdQB75G6FQAAABp0RVh0U29mdHdhcmUAUGFp
+bnQuTkVUIHYzLjUuMTAw9HKhAAAAbUlEQVRoQ+3ZQQ0AAAgCQAv5sX8KE1lAGtxGghsfRu20ECBAgAABAgQIECBAgAABAq9AcSFAgAABAgQIECBAgAABAgSS
+gNnsbCdAgAABAgQIECBAgAABAlHAbFYOAgQIECBAgAABAgQIECAQBQ7LpSsxwho7dAAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>barraSuperior.png</Value></Property><Property><Name>Description</Name><Value>barra Superior.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\MasterPage\Red\barraSuperior.png</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>RedBar</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> RedBar
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

@@ -1,0 +1,24 @@
+======OBJECT = MesValues.Domain === Mes Values=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2016-04-22T14:15:38.0000000Z" lastUpdate="2016-04-21T20:15:20.0000000Z" checksum="4ad7e7d22afd9ab6000848a7d7370457" fullyQualifiedName="MesValues" guid="6ee64f0e-35c3-4e20-8c09-177740bd7d22" name="MesValues" type="00972a17-9975-449e-aab1-d26165d51393" description="Mes Values">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>MesValues</Value></Property><Property><Name>Description</Name><Value>Mes Values</Value></Property><Property><Name>Length</Name><Value>2</Value></Property><Property><Name>AttMaxLen</Name><Value>2</Value></Property><Property><Name>IDEnumDefinedValues</Name><Value>1, Enero, Enero; 2, Febrero, Febrero; 3, Marzo, Marzo; 4, Abril, Abril; 5, Mayo, Mayo; 6, Junio, Junio; 7, Julio, Julio; 8, Agosto, Agosto; 9, Septiembre, Septiembre; 10, Octubre, Octubre; 11, Noviembre, Noviembre; 12, Diciembre, Diciembre</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> MesValues
+Description -> Mes Values
+OBJ_TYPE -> id_OTYPE_DOM
+Length -> 2
+AttMaxLen -> 2
+IDEnumDefinedValues -> Artech.Genexus.Common.CustomTypes.EnumValues
+IsDefault -> False

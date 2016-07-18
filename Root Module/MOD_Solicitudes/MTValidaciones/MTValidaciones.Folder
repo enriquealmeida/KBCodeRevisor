@@ -1,0 +1,10 @@
+======OBJECT = MTValidaciones.Folder === MTValidaciones=====
+<Object parent="MOD_Solicitudes" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="00963078-4237-4f62-b093-e99452c06fb0" user="" versionDate="2016-03-10T18:31:16.0000000Z" lastUpdate="2016-03-10T16:36:58.0000000Z" checksum="b9d2be9f32efaa6c3ac746226606bfa0" fullyQualifiedName="MOD_Solicitudes.MTValidaciones" guid="be2b745a-702d-444e-9626-03a8d955975b" name="MTValidaciones" type="00000000-0000-0000-0000-000000000008" description="MTValidaciones">
+  <Properties><Property><Name>Name</Name><Value>MTValidaciones</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+Name -> MTValidaciones
+ObjectVisibility -> Private
+IsDefault -> False

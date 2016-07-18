@@ -1,0 +1,21 @@
+======OBJECT = MDObj.Transaction === MDObj=====
+
+=== RULES ===
+
+
+=== EVENTS SOURCE ===
+
+
+=== STRUCTURE ===
+MDObjTpo*
+MDObjSec*
+MDObjFch
+MDObjDsc
+
+
+====== PROPERTIES =======
+Name -> MDObj
+GenerateObject -> False
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 5
+IsDefault -> False

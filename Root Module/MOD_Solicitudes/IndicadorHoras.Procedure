@@ -1,0 +1,40 @@
+======OBJECT = IndicadorHoras.Procedure === Indicador Horas =====
+
+=== RULES ===
+parm(in:&FchIni, in:&FchFin, in:&CliId, in:&CrrUsr, in:&PrbSts,out:&FormaCalculo, out:&Indicador) ;
+
+
+=== PROCEDURE SOURCE ===
+&SumHrsRel = 0 
+//Se toman las solicitudes que tengan horas planificadas y que sean del periodoo. 
+for each 
+	using SolicitudesDelPlan(&FchIni, &FchFin, &CliId, &CrrUsr, &PrbSts)
+	where            PrbHrsPln > 0 
+	  &SumHrsRel += HrsCnt 
+endfor
+
+&SumhrsPln = 0
+for each 
+	using SolicitudesDelPlan(&FchIni, &FchFin, &CliId, &CrrUsr, &PrbSts)
+	where            PrbHrsPln > 0 
+      &SumHrsPln += PrbHrsPln
+endfor
+
+
+&DifHrs = iif(&sumHrsPln > &sumHrsRel, &SumHrsPln - &sumHrsRel, &SumHrsRel - &sumhrsPln) 
+if &sumHrsREl <> 0
+	&Indicador = 100 * (&DifHrs /  &SumHrsPln)  
+else
+	&Indicador = 0 
+endif
+
+&FormaCalculo = format("Indicador = %1 Diff = %4  100*(Plan-Real)/Plan = 100*(%2-%3)/%2 ", &Indicador , &SumhrsPln,&sumHrsRel, &difHrs)
+
+
+====== PROPERTIES =======
+Name -> IndicadorHoras
+Description -> Indicador Horas 
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

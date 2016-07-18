@@ -1,0 +1,8 @@
+======OBJECT = UsuHab.Table === Habilitaciones a usuarios=====
+*GLUsAmbId  DMClave- Null=False
+*GLUsId  DMUsuarios- Null=False
+ GLUsAmbNvl  DMNivel- Null=False
+
+====== PROPERTIES =======
+Name -> UsuHab
+Description -> Habilitaciones a usuarios

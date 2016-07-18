@@ -1,0 +1,12 @@
+======OBJECT = QueryViewerAggregationChangedData.SDT === Query Viewer Aggregation Changed Data=====
+
+=== STRUCTURE ===
+QueryViewerAggregationChangedData
+	Name, C(20), Name 
+	Aggregation, C(20), Aggregation 
+
+====== PROPERTIES =======
+Name -> QueryViewerAggregationChangedData
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 67
+IsDefault -> False

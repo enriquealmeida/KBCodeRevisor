@@ -1,0 +1,12 @@
+======OBJECT = IPrio.Index === IPrio=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:34.0000000Z" checksum="4400f340a9567cd5da337cd4c9e9e674" fullyQualifiedName="IPrio" guid="4749c042-83a6-4745-ac72-72a3258eaa98" name="IPrio" type="9e750647-3679-0000-0100-2529de263960" description="IPrio">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PrbPrio</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>IPrio</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> IPrio

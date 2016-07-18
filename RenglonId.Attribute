@@ -1,0 +1,11 @@
+======OBJECT = RenglonId.Attribute === Renglon =====
+NUMERIC(4)
+
+
+====== PROPERTIES =======
+Name -> RenglonId
+Description -> Renglon 
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

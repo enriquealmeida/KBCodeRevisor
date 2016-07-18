@@ -1,0 +1,15 @@
+======OBJECT = PryValHrs.Attribute === Valor de la  hora en el Proyec=====
+NUMERIC(5.2)
+
+
+====== PROPERTIES =======
+Name -> PryValHrs
+Description -> Valor de la  hora en el Proyec
+HORIZONTAL_DESCRIPTION -> Valor de la  hora en el Proyec
+VERTICAL_DESCRIPTION -> Valor de la  hora 
+ContextualTitle -> Valor de la  hora 
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ATT_PICTURE -> Z9.99
+IsDefault -> False

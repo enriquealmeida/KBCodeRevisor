@@ -1,0 +1,26 @@
+======OBJECT = TipoOrdenCambioDNAtoTipoSolicitudMT.Procedure === Convertir tipo Orden Cambio DNA a Tipo de Solicitud de métricas=====
+
+=== RULES ===
+Parm(in:&TipoOC,out:&PrbTpo);
+
+
+=== PROCEDURE SOURCE ===
+do case
+	case &TipoOC = 'CONCEPTO.INTERNOS'
+		&PrbTpo = PrbTpoEnum.PedidoInterno
+	case &TipoOC = 'CONCEPTO.PEDIDOSLUCIA'
+		&PrbTpo = PrbTpoEnum.PedidoLucia
+	case &TipoOC = 'CONCEPTO.INCIDENTES'
+		&PrbTpo = PrbTpoEnum.Incidente
+	otherwise
+		&PrbTpo = PrbTpoEnum.Otros
+endcase
+
+
+====== PROPERTIES =======
+Name -> TipoOrdenCambioDNAtoTipoSolicitudMT
+Description -> Convertir tipo Orden Cambio DNA a Tipo de Solicitud de métricas
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 37
+ObjectVisibility -> Private
+IsDefault -> False

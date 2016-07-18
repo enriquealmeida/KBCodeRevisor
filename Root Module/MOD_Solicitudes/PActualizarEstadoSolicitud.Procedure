@@ -1,0 +1,29 @@
+======OBJECT = PActualizarEstadoSolicitud.Procedure === PActualizar Estado Solicitud=====
+
+=== RULES ===
+parm(in: &PrbId,in: &PryId, in: &NewPrbSts, out: &Successful);
+
+
+=== PROCEDURE SOURCE ===
+&BCSol.load(&PryId,&PrbId)
+&BCSol.PrbSts = &newPrbSts
+&BCSol.Save()
+commit
+if &BCSol.Fail()
+	msg('Ha ocurrido un error intentando actualizar el estado de la solucitud')
+	for &message in &BCSol.GetMessages()
+		msg(&message.Description)
+	endfor
+	&Successful = false
+else
+	msg('La solicitud ha sido actualizada correctamente')
+	&Successful = true
+endif
+
+
+====== PROPERTIES =======
+Name -> PActualizarEstadoSolicitud
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Private
+IsDefault -> False

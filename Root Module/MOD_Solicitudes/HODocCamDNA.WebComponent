@@ -1,0 +1,22 @@
+======OBJECT = HODocCamDNA.WebComponent === Documentación de cambios DNA=====
+
+=== RULES ===
+parm(in:PrbId);
+
+
+=== EVENTS SOURCE ===
+Event Refresh
+    txtReferencia.Caption = '(Ref. Solicitud ' + trim(str(PrbId, 6, 0)) + ')'
+EndEvent  // Refresh
+
+
+====== PROPERTIES =======
+Name -> HODocCamDNA
+Description -> Documentación de cambios DNA
+WEB_COMP -> Yes
+URLAccess -> Yes
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 8
+ObjectVisibility -> Public
+IsDefault -> False

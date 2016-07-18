@@ -1,0 +1,9 @@
+======OBJECT = UserConfiguration.Folder === User Configuration=====
+<Object parent="WWPBaseObjects" parentType="c88fffcd-b6f8-0000-8fec-00b5497e2117" parentGuid="f952860a-9553-4095-82c8-dedaadd8cf64" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2015-10-06T15:09:55.0000000Z" checksum="50d84a0a7b363555f5297f52a5ed63ac" fullyQualifiedName="WWPBaseObjects.UserConfiguration" guid="bd2ec14c-4b2c-4a4d-bc48-872309f2a2ee" name="UserConfiguration" type="00000000-0000-0000-0000-000000000008" description="User Configuration">
+  <Properties><Property><Name>Name</Name><Value>UserConfiguration</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+Name -> UserConfiguration
+IsDefault -> False

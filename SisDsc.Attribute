@@ -1,0 +1,14 @@
+======OBJECT = SisDsc.Attribute === Descripcion=====
+VARCHAR(30)
+
+
+====== PROPERTIES =======
+Name -> SisDsc
+Description -> Descripcion
+HORIZONTAL_DESCRIPTION -> Sistema
+VERTICAL_DESCRIPTION -> Sistema
+ContextualTitle -> Sistema
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

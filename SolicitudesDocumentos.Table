@@ -1,0 +1,13 @@
+======OBJECT = SolicitudesDocumentos.Table === Documentos de las Solicitudes=====
+*PryId  PROYECTO- Null=False
+*PrbId  SOLICITUD- Null=False
+*PrbDocId  Id6- Null=False
+ PrbDocDsc  DMDescLarga- Null=False
+ PrbDocURL  Url- Null=False
+ PrbDocBlob  ArchivoAdjunto- Null=False
+ PrbDocFileName  FileName- Null=True
+ PrbDocFileExt  FileExtension- Null=False
+
+====== PROPERTIES =======
+Name -> SolicitudesDocumentos
+Description -> Documentos de las Solicitudes

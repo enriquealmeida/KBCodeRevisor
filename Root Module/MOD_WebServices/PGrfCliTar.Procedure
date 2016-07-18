@@ -1,0 +1,42 @@
+======OBJECT = PGrfCliTar.Procedure === GrfCliTar=====
+
+=== RULES ===
+parm(in:&CliId,in:&FchIni,in:&FchFin);
+
+
+=== PROCEDURE SOURCE ===
+for each order TarId 
+    &TarId=TarId
+    &HrsCnt=0
+    for each  order TarId PryId 
+        where            CliId=&CliId
+        where            TarId = &TarId
+        where            &FchIni <= HrsFch and HrsFch <= &FchFin 
+     
+        &HrsCnt=&HrsCnt+HrsCnt
+    endfor
+    if round(&HrsCnt,0)<>0
+        &xmlcat=&xmlcat+"<category>"+TRIM(&TarId)+"</category>"
+        &xmlser=&xmlser+"<point>"+TRIM(str(&HrsCnt))+"</point>"
+    endif  
+endfor
+&xmlcat="<categories>"+&xmlcat+"</categories>"
+&xmlser="<series><points>"+&xmlser+"</points></series>"
+
+&XML="<gxchart>"+&xmlCat+&xmlSer+"</gxchart>"
+&xmlwriter.OpenResponse(&HttpResponde)
+&xmlwriter.WriteStartDocument()
+&xmlwriter.WriteRawText(&XML)
+&xmlwriter.Close()
+
+
+====== PROPERTIES =======
+Name -> PGrfCliTar
+Description -> GrfCliTar
+IsMain -> True
+CALL_PROTOCOL -> HTTP
+STD_FUNC_OBJECT -> No
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 15
+ObjectVisibility -> Private
+IsDefault -> False

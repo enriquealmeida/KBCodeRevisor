@@ -1,0 +1,21 @@
+======OBJECT = DMPcj.Domain === DMPcj=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="VAIOEALMEIDA\nsanguinetti" versionDate="2016-05-23T19:13:21.0000000Z" lastUpdate="2016-05-23T17:59:08.0000000Z" checksum="73723d1ae67eba69c99479e17ebe2334" fullyQualifiedName="DMPcj" guid="28558584-3639-454b-b5c2-d085a4584b41" name="DMPcj" type="00972a17-9975-449e-aab1-d26165d51393" description="DMPcj">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMPcj</Value></Property><Property><Name>Description</Name><Value>DMPcj</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMPcj
+Description -> DMPcj
+OBJ_TYPE -> id_OTYPE_DOM
+IsDefault -> False

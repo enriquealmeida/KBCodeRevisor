@@ -1,0 +1,13 @@
+======OBJECT = MainPrograms.Category === Main Programs=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-06-28T16:30:50.0000000Z" checksum="fd2accb6731dc6de6fc23fee383ac8e1" fullyQualifiedName="Main Programs" guid="a7ccc3ad-5574-4898-9a1d-c6b74633f3d1" name="Main Programs" type="00000000-0000-0000-0000-000000000006" description="Main Programs">
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Main Programs</Value></Property><Property><Name>ShowInModelTree</Name><Value>True</Value></Property><Property><Name>Query</Name><Value /></Property><Property><Name>Properties</Name><Value>main_program=true</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Main Programs
+ShowInModelTree -> True
+Query -> 
+Properties -> main_program=true
+IsDefault -> False

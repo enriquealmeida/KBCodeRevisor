@@ -1,0 +1,13 @@
+======OBJECT = UCli1.Index === =====
+<Object Type="Unique" Source="User" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2015-07-21T17:07:36.0000000Z" checksum="36400e656d90e8fbc70eadecfd5a160f" fullyQualifiedName="UCli1" guid="a3593639-6abb-46ca-90fd-b53bfa30c610" name="UCli1" type="9e750647-3679-0000-0100-2529de263960" description="">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">CliNom</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>UCli1</Value></Property><Property><Name>Description</Name><Value /></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> UCli1
+Description -> 

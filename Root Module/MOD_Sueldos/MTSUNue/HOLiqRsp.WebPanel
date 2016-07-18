@@ -1,0 +1,35 @@
+======OBJECT = HOLiqRsp.WebPanel === Liquidación de Sueldos por Rsp =====
+
+=== RULES ===
+parm(in:&RspSuA, in:&RspSuM);
+
+
+=== EVENTS SOURCE ===
+Event Start
+    btnLiquidar.JSEvent('onclick', "confirm('¿Desea liquidar sueldos del responsable?')")
+    &RspId.Additem('', 'Seleccione un responsable')
+    &RspId = ''
+    for each
+        where      RspActivo = true
+        &RspId.Additem(RspId, RspId)
+    endfor
+EndEvent  // Start
+
+Event 'Liquidar'
+    if null(&RspId)
+        msg('Debe seleccionar un responsable para liquidar')
+    else
+        PLiqMes.call(&RspSuA,&RspSuM,&RspId)
+        msg('Se realizó la liquidación y se envió el mail al responsable')
+    endif
+EndEvent  // 'Liquidar'
+
+
+====== PROPERTIES =======
+Name -> HOLiqRsp
+Description -> Liquidación de Sueldos por Rsp 
+AUTO_REFRESH -> VARS_CHANGE
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 29
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,12 @@
+======OBJECT = ITpoCal.Index === ITpo Cal=====
+<Object Type="Unique" Source="Automatic" parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2012-05-18T17:29:36.0000000Z" checksum="97f3b62bb2a9c9e6234fb8176e65ef99" fullyQualifiedName="ITpoCal" guid="6a4e2a86-6af5-43e0-8d97-6f2b28258e92" name="ITpoCal" type="9e750647-3679-0000-0100-2529de263960" description="ITpo Cal">
+  <Part type="62cfa789-c127-0001-0100-77676175e433">
+    <Members>
+      <Member Order="Ascending">PrbTpoCal</Member>
+    </Members>
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ITpoCal</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ITpoCal

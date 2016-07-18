@@ -1,0 +1,162 @@
+======OBJECT = SolRspPlan.WebComponent === Solicitudes del Plan =====
+
+=== RULES ===
+parm(IN:&RspId, in:&FchIniPar, in:&FchFinPar );
+
+
+=== EVENTS SOURCE ===
+Event Start
+ 
+  &Mes=month(&Today)
+  &Mes.Visible=0
+  &Ano=year(&Today)
+  &Ano.Visible=0
+  &FiltroTagId=&Ano.ToFormattedString() + &Mes.ToFormattedString()  
+  &ordenarPor='D'
+  &FiltroSoloTag=Bool.false
+  &PrbEstadoActivo=true   
+//  &CopiarSolicitud = 'COPY'
+  &PrbId.Visible=0
+  &PryId.Visible=0
+ 
+EndEvent  // Start
+
+ 
+Event Plan.load
+	
+	DevuelveSDTPlandelMes.Call(&FiltroCliTpoId, &FiltroCliId, &FiltroCrrUsr, &FiltroSegUsr, &FiltroPrbSts , &FiltroTagId, &FiltroSoloTag, &ordenarPor, &PrbEstadoActivo , &FiltroPrbPryId, &FiltroConsolidado, &PlanSolicitudes)
+	&PrbHrsPlnTot =0
+	for &Solicitud in &PlanSolicitudes
+	if &Solicitud.CrrUsr.ToUpper() = &RspId.ToUpper() or &Solicitud.SegUsr.ToUpper()=&RspId.ToUpper()
+	
+			&CliId=&Solicitud.CliId
+			&PrbPlaFch=&Solicitud.prbplafch
+			&PrbSts=&Solicitud.prbsts
+			&PrbStsSgte = SiguienteEstadoSolicitud(&Solicitud.prbsts)
+			&Siguiente = &PrbStsSgte.ToString()
+			&CrrUsr=&Solicitud.crrusr
+			&PrbDsc=&Solicitud.prbdsc
+			&PrbId=&Solicitud.prbid
+			&prbidTXT = format('#%1#',&PrbId)
+			&PrbCnsId=&Solicitud.prbcnsid
+			&PrbTpo=&Solicitud.prbtpo
+			&PrbPrio=&Solicitud.prbprio
+			&PryId=&Solicitud.prbpryid
+			&TagId=&Solicitud.TagId
+			&PrbDiasAbi=&Solicitud.PrbDiasAbi
+			&PrbHrsPln=&Solicitud.PrbHrsPln
+			&SegUsr=&Solicitud.SegUsr   
+			&SolicitudTesteada=&Solicitud.SolicitudTesteada
+			&PrbRequiereDocumentacion=&Solicitud.PrbRequiereDocumentacion
+			&prbdsc.Tooltiptext = &Solicitud.PrbTxt
+			&PrbHrsPlnTot += &PrbHrsPln
+			
+			&E=&Solicitud.EstadoPlan
+			if &SolicitudTesteada 
+				&Testeada = 'Si'
+			else
+				&Testeada = 'No'
+			endif
+			&HorasRealizadas = GetHorasRealizadasResponsable(&RspId,&Solicitud.PrbId)
+			
+			&Cronometro = 'ON'
+			for each
+			where        PrbId = &Solicitud.prbid
+			where        CronFin.IsEmpty()
+				&Cronometro = 'OFF'
+			endfor
+			
+	Plan.load() 
+	endif 
+	
+	endfor
+ 
+EndEvent  // load
+
+
+Event &Testeada.Click
+	MarcarSolicitudComoTesteada.Call(&PryId, &PrbId)
+	Refresh
+EndEvent
+
+
+Event &PrbIdtxt.Click
+	&Window.Object = Solicitudes.Create(TrnMode.Update,&PryId, &PrbId)
+	&window.Open()
+	//refresh
+EndEvent
+
+Event VerPlan.Click
+	ExtraWWSolicitudesPlanes()
+EndEvent
+
+
+Event 'NextTag'
+	if &Mes = 12
+		&Mes = 1
+		&Ano = &Ano + 1
+	else
+		&Mes=&Mes + 1
+	endif
+    &FiltroTagId=&Ano.ToFormattedString()+&Mes.ToFormattedString()
+EndEvent
+
+
+Event 'PreviosTag'
+	if &Mes = 1
+		&Mes = 12
+		&Ano = &Ano - 1
+	else
+		&Mes = &Mes-1
+	endif
+   &FiltroTagId=&Ano.ToFormattedString()+&Mes.ToFormattedString()
+EndEvent
+
+Event &Cronometro.click
+	CronometroPrenderApagar(&RspId,&prbid, &SePrendioOseApago, &errorDescription)
+	do case
+		case &SePrendioOseApago = DMCronometroAccion.APAGAR
+			&Window.Object = ImputarHorasSolicitud.Create(&PryId, &PrbId)
+			&window.Open()
+			//refresh
+		case &SePrendioOseApago = DMCronometroAccion.NINGUNA
+			msg('Ocurrió un problema al cronometrar: ' + &errorDescription)
+	endcase
+	Plan.Refresh()
+EndEvent
+
+//Event &CopiarSolicitud.Click
+//	&Window.Object = CopiarSolicitud.Create(&prbid, &RspId, &PrbIdNueva)
+//	&Window.Open()
+//	//refresh
+//	if &PrbIdNueva > 0
+//		msg(format('Se dio de alta la solicitud %1',&PrbIdNueva))
+//	endif
+//EndEvent
+
+Event &Siguiente.Click //'AvanzarEstadoSolicitud'
+	&errorDescription = AvanzarEstadoSolicitud(&Pryid, &prbid)
+	if not &errorDescription.IsEmpty()
+		msg('Error al intentar avanzar estado:' + &errorDescription)
+	endif
+	Plan.Refresh()
+EndEvent
+
+Event IngresoHoras.Click
+  ImputarHorasSolicitud.Call(&PryId, &PrbId)
+EndEvent
+
+
+====== PROPERTIES =======
+Name -> SolRspPlan
+Description -> Solicitudes del Plan 
+WEB_COMP -> Yes
+URLAccess -> Yes
+IsMain -> True
+AUTO_REFRESH -> VARS_CHANGE
+WebUX -> SMOOTH
+JOIN_TYPE -> Outer
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

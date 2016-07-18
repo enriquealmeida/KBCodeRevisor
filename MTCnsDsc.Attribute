@@ -1,0 +1,15 @@
+======OBJECT = MTCnsDsc.Attribute === Descripción=====
+VARCHAR(30)
+trim(str(CnsId, 3, 0)) + ': ' + trim(KBId) + ' (' + trim(MTCnsEstId) + ')';
+
+====== PROPERTIES =======
+Name -> MTCnsDsc
+Description -> Descripción
+HORIZONTAL_DESCRIPTION -> Descripción
+VERTICAL_DESCRIPTION -> Descripción
+ContextualTitle -> Descripción
+Formula -> trim(str(CnsId, 3, 0)) + ': ' + trim(KBId) + ' (' + trim(MTCnsEstId) + ')';
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False

@@ -1,0 +1,29 @@
+======OBJECT = CliTpoidDynCombo.Domain === Tipo Cliente DynamicCombo=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2013-09-19T19:40:04.0000000Z" checksum="0a95746467b442b73a5bf7c00da7ba9b" fullyQualifiedName="CliTpoidDynCombo" guid="16c25234-2d4e-4df9-a3bd-06ff445ec040" name="CliTpoidDynCombo" type="00972a17-9975-449e-aab1-d26165d51393" description="Tipo Cliente DynamicCombo">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>CliTpoidDynCombo</Value></Property><Property><Name>Description</Name><Value>Tipo Cliente DynamicCombo</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>10</Value></Property><Property><Name>AttMaxLen</Name><Value>10</Value></Property><Property><Name>ControlType</Name><Value>Dynamic Combo Box</Value></Property><Property><Name>ControlItemValues</Name><Value>CliTpoId</Value></Property><Property><Name>ControlItemDescription</Name><Value>CliTpoId</Value></Property><Property><Name>AddEmptyItem</Name><Value>True</Value></Property><Property><Name>EmptyItemText</Name><Value>Todos</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> CliTpoidDynCombo
+Description -> Tipo Cliente DynamicCombo
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 10
+AttMaxLen -> 10
+ControlType -> 4
+ControlItemValues -> CliTpoId
+ControlItemDescription -> CliTpoId
+AddEmptyItem -> True
+EmptyItemText -> Todos
+IsDefault -> False

@@ -1,0 +1,15 @@
+======OBJECT = WizardSteps.SDT === Wizard Steps=====
+
+=== STRUCTURE ===
+WizardSteps, collection: WizardStepsItem
+	Code, V(40), Code 
+	Title, V(40), Title 
+	Description, V(40), Description 
+
+====== PROPERTIES =======
+Name -> WizardSteps
+Description -> Wizard Steps
+FolderType -> c88fffcd-b6f8-0000-8fec-00b5497e2117
+FolderId -> 2
+ObjectVisibility -> Private
+IsDefault -> False

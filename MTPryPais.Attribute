@@ -1,0 +1,15 @@
+======OBJECT = MTPryPais.Attribute === Pais del proyecto=====
+CHARACTER(3)
+
+
+====== PROPERTIES =======
+Name -> MTPryPais
+Description -> Pais del proyecto
+HORIZONTAL_DESCRIPTION -> Pais del proyecto
+VERTICAL_DESCRIPTION -> Pais del proyecto
+ContextualTitle -> Pais del proyecto
+Class -> PRIMARY
+OBJ_TYPE -> id_OTYPE_ATT
+SuperTypeKey -> adbb33c9-0906-4971-833c-998de27e0676-78
+ATT_PICTURE -> @!
+IsDefault -> False

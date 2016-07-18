@@ -1,0 +1,11 @@
+======OBJECT = QueryViewerData.SDT === Query Viewer Data=====
+
+=== STRUCTURE ===
+QueryViewerData
+	XmlData, C(20), Xml Data 
+
+====== PROPERTIES =======
+Name -> QueryViewerData
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 67
+IsDefault -> False

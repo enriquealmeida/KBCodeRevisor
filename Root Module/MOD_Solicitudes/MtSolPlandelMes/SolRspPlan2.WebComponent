@@ -1,0 +1,47 @@
+======OBJECT = SolRspPlan2.WebComponent === Sol Rsp=====
+
+=== RULES ===
+parm(IN:&RspId, in:&FchIni, in:&FchFin );
+
+
+=== EVENTS SOURCE ===
+Event Start
+ 
+   &CliId.SetEmpty()
+
+   &PrbSts.SetEmpty()
+   &FchFinAux = eom(&FchFin)
+   
+EndEvent  // Start
+
+ Event load
+	 &prbdsc = format("%1 - %2", PrbId, PrbDsc)
+	 &prbdsc = &prbdsc.Substring(1,50)
+ EndEvent
+
+Event &PrbDsc.Click
+	&Window.Object = Solicitudes.Create(TrnMode.Update,PryId, PrbId)
+	&window.Open()
+  //  solicitudesGrid.Refresh()
+EndEvent
+
+
+
+Event PrbHrsReal.Click
+	&Window.Object =  ImputarHorasSolicitud.Create(&PryId, &PrbId)
+	&Window.Open()
+EndEvent
+
+
+
+====== PROPERTIES =======
+Name -> SolRspPlan2
+Description -> Sol Rsp
+WEB_COMP -> Yes
+AUTO_REFRESH -> VARS_CHANGE
+WebUX -> SMOOTH
+JOIN_TYPE -> Outer
+FolderType -> 00000000-0000-0000-0000-000000000008
+FolderId -> 42
+ObjectVisibility -> Private
+IsDefault -> False

@@ -1,0 +1,27 @@
+======OBJECT = PryAct.Attribute === Proyecto Activo=====
+CHARACTER(1)
+DMPryAct.Activo IF PrySts=DMPrySts.Aprobado;
+DMPryAct.Activo IF PrySts=DMPrySts.EnEspera;
+DMPryAct.Activo IF PrySts=DMPrySts.Propuesta;
+DMPryAct.Finalizado IF PrySts=DMPrySts.Cerrado;
+DMPryAct.Finalizado IF PrySts=DMPrySts.Rechazado;
+DMPryAct.Finalizado OTHERWISE;
+
+====== PROPERTIES =======
+Name -> PryAct
+Description -> Proyecto Activo
+HORIZONTAL_DESCRIPTION -> Activo
+VERTICAL_DESCRIPTION -> Activo
+ContextualTitle -> Proyecto Activo
+Formula -> DMPryAct.Activo IF PrySts=DMPrySts.Aprobado;
+DMPryAct.Activo IF PrySts=DMPrySts.EnEspera;
+DMPryAct.Activo IF PrySts=DMPrySts.Propuesta;
+DMPryAct.Finalizado IF PrySts=DMPrySts.Cerrado;
+DMPryAct.Finalizado IF PrySts=DMPrySts.Rechazado;
+DMPryAct.Finalizado OTHERWISE;
+Class -> HORIZONTAL
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+ControlType -> 0
+ControlValues -> Activo:A,Finalizado:F
+IsDefault -> False

@@ -1,0 +1,25 @@
+======OBJECT = DMClave.Domain === Clave=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-07-04T18:31:13.0000000Z" checksum="93ca875e5d042b0b8c673a042af04b7f" fullyQualifiedName="DMClave" guid="16da2d65-d991-45f1-9e37-6162031c0918" name="DMClave" type="00972a17-9975-449e-aab1-d26165d51393" description="Clave">
+  <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+    <Help>
+      <HelpItem>
+        <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Spanish</Language>
+        <Content />
+      </HelpItem>
+    </Help>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>DMClave</Value></Property><Property><Name>Description</Name><Value>Clave</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:Character</Value></Property><Property><Name>Length</Name><Value>15</Value></Property><Property><Name>BackColor</Name><Value>Transparent</Value></Property><Property><Name>ForeColor</Name><Value>Transparent</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> DMClave
+Description -> Clave
+OBJ_TYPE -> id_OTYPE_DOM
+ATTCUSTOMTYPE -> 5
+Length -> 15
+BackColor -> Color [Transparent]
+ForeColor -> Color [Transparent]
+IsDefault -> False

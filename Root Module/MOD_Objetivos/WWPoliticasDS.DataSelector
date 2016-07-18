@@ -1,0 +1,41 @@
+======OBJECT = WWPoliticasDS.DataSelector === WWPoliticas DS=====
+<Object parent="MOD_Objetivos.WorkWithPlusPoliticas" parentType="07135890-56fc-489b-b408-063722fa9f7d" parentGuid="c87d308f-2072-4df9-8c6e-04ed4ed3213c" user="EALMEIDANBK\Enrique" versionDate="2016-05-19T13:32:09.0000000Z" lastUpdate="2016-05-17T19:33:27.0000000Z" checksum="4626d800a236699bd72d5c1e14c27ac9" fullyQualifiedName="MOD_Objetivos.WWPoliticasDS" guid="1fbc2e59-16e5-4716-81d7-b3edc40d661b" name="WWPoliticasDS" type="ffd44be7-3bb4-4d01-9e7e-d1c1a3c095af" description="WWPoliticas DS">
+  <Part type="a2bc65a1-999f-4e9b-b837-72285cc9bb16">
+    <Level>
+      <Condition>
+        <Source><![CDATA[PolDsc like &PolDsc when not &PolDsc.IsEmpty()
+]]></Source>
+      </Condition>
+    </Level>
+    <Variables type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Variable Name="PolDsc">
+        <Documentation />
+        <Help />
+        <Properties><Property><Name>Name</Name><Value>PolDsc</Value></Property><Property><Name>idBasedOn</Name><Value>Attribute:PolDsc</Value></Property></Properties>
+      </Variable>
+      <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Variables>
+    <Parameters>
+      <Parameter>
+        <Type>Variable</Type>
+        <Name>PolDsc</Name>
+        <Description>Pol Dsc</Description>
+      </Parameter>
+    </Parameters>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>WWPoliticasDS</Value></Property><Property><Name>InstanceKey</Name><Value>07135890-56fc-489b-b408-063722fa9f7d-MOD_Objetivos.WorkWithPlusPoliticas</Value></Property><Property><Name>ElementKey</Name><Value>/instance/level[1]/selection</Value></Property><Property><Name>PatternObjectId</Name><Value>GridDataSelector</Value></Property><Property><Name>IsGeneratedObject</Name><Value>True</Value></Property><Property><Name>ObjectVisibility</Name><Value>Private</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> WWPoliticasDS
+InstanceKey -> 07135890-56fc-489b-b408-063722fa9f7d-70
+ElementKey -> /instance/level[1]/selection
+PatternObjectId -> GridDataSelector
+FolderType -> 07135890-56fc-489b-b408-063722fa9f7d
+FolderId -> 70
+IsGeneratedObject -> True
+ObjectVisibility -> Private
+IsDefault -> False

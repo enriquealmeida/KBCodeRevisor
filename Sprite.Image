@@ -1,0 +1,61 @@
+======OBJECT = Sprite.Image === Sprite=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-07-21T17:49:52.0000000Z" lastUpdate="2011-09-01T18:43:06.0000000Z" checksum="36d2f73d49113ccf22de779471e2b6cf" fullyQualifiedName="Sprite" guid="543f649d-8394-48a6-a6e7-0f8b59b1904e" name="Sprite" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Sprite">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="sprite.png" description="sprite.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAACgAAAhmCAMAAAC9nW0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAwBQTFRF19jawcHB/v7+bW1t
+/Pz8+/v79fX1+vr69/f34+Pl5+jo7/DwQm/Z5vH/3+Dg7Ozs4eHi8vLy9vb24OHi9fX2AAAA6+vs4eLj5/H/8fHy5fD/9/f5QW7X8vT06+zsy+L/3+3/6Orq
+4O3/3Oz/4u7/0eb/+fn6M1u8x9//1ef/xN3/P2rRhYWFz+P/1+j/3+Dh4/D/7e/v+vr75/L/2un/3t/g5ebm+fn5f39/4ODh4uPjIiIi5ufoLz6s6urr2trb
+3Nzd0NHS5+jq19fYutj/7OztvsHC8fLy9PT0xMXG3d3fs7W36Ojq+fr6MFa1LlKw9PX1QGzV1NXWQG3WOWHEuLu9ycrL9fb2N1/CrK+wPWfOO2XLOWPI7O3t
+7+/vQGvU8PDx8PDw8PHx8fHx8vL0KEymK06r7e3v5eXm9vb3zM7Q9jQ04XcbnZ2d7Ykb8dJYKDGTpcv/4XoSsbGx+by86Ks7lqrDys7p56Q96sAp6r036bol
+17Mo+AsLc3Nz68I1+ei26LI6boqs9UdHlpaW6bc4+BUV88486Kcb+CQk81JHEw5L5pw/1AgBSUlJ5WgEoXMOLjec9ctM5rIe4efv+GFe6JJC5poV534X5ubm
+1TEB5trB2qMNJCqRampq8dRGzHwK8Jo0O0Ob9Y+PM0Os8bOHxJYWubrX8dVn9HV1+tCaRFmzGRtq+9XVLStr9uBT3E0E+ufK5IoO14YG+Ne+gZm3ICSB+39/
+XH7K6XkU6HQOJSuH6Ojo91VV9mpqtJNI9Mii4FkCzrFMhIfB98SA4mEN9bJVfn+srbHEUmO67o8prYYiHyR39eCMPFG2/HF3nqPR5cpNpKvb++rf5nYu4e7/
+38l1/e/i61ZX7Ysh86M78JYs1jwg2caL9np64XQRd3ST5M526goLTWjDzrZu+euo+cXF8vn/c4bO+9dQz7eH8ahh++1s/v3028BN6pFh9tp9pKSlOk2y7S4v
+UW/GZmZmJkeg5ubn29zdv9r/pair2Nja3N3f6PL/////////FVh3eAAAAQB0Uk5T////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////AFP3ByUAAAorSURBVHja7Nx3XBvnHQbwHzlHcdNhmkQ4aZu06UgXbboDxgK7Tffee++ChGyGbcBs
+MDYbbOykBgzGGIJrB9dxvOPteMXOaJrVzGY03TttUynvnXBMpNO9j2MRkHiePwQffb6fV/fenXS/e9+7kwAYGUd4DhgcTgEj54KR88DIVWDkp2DkM2Dkw2Dk
+xWDkg2DkcjDyPjAyHYw8DUb+B4aQkJCQkJCQkDAeYRAMIWGCw2QwYwAvBCPpYOS9YORjYGQWGMkCIx8AI58DI7PByM/AyJfAyEfByIfAyBfByMfByFfByH/B
+EBISEhISEhISTiDI0z1CwjODsZ+Mj/0c+xVgZCoYuQCMuMDIpWDkEjDyHTDyLTDyTTByGRjJBCPvByMzweAXDLwIDH5lATx4dSUYfPDqKTCEhISEhISEhITh
+kOeFhIQhmGSfCJgUZXAg6exhnku9uPK0MM9IdQVcqUaeDiqTOi3V1LqPVrL0tHPqzLRSo3Qa0Bm0RXgZvSO99mpb9LqefY3RltFBeO/ht5CQkJBwYlcATjDJ
+6VBwFtAwxgcaI4kdHMfOxHjLwDsFv1yEhISErADiDo5JBZAgq4cVACEhIeFkqwDGaRbgOXMAznDUHIAjdI0aX9eM2Y9yDtBrGClQZ+AW4WUMjJ4D0K1HryvG
+W4azAISEhISsAMawAshzYTBvTI6u0HUAgUCKcfo4HIsW4WXEe+11xbw2YwVASEhImKjQgBIUIwm5aTDJGBOI3IYYBWY2ZdrBiJsTd2S4u8LesmD4vYkzM9wZ
+M8Pes2DY43+vUe6a8GcCWzDs1sQmt3t2xP2KFrzouZmuWpwe9t5FFnx5WNKVTA97z4IRz/WdleFuCnvLgtMiktWUFfaOBc8HYkHkhjwLvgyIBaEY+B7OXwpC
+QkJWAIlUARiZUWDYwb7LnbEjoiiwqwDsCgDbCsC2BLCrAKZOne12NwEVgG0JYFcB2BUAthXAP90ZsyKKAtsKIOLwzwqAkJCQMP7hX0uNUi8AU6uTA8nVqVro
+rbaO3NW6NqU02YLJpTpojBQDRsxarB5ZxuqY9ToYrFbrsZq7GSEhISFh3MCbKysrCwF4Q+HSwNLCG7SwsPBXc+bMubhQ16ZULp1jZmmlFgYs+HhlzFqEl9Hs
+9eNIr4PBQnA9cn8kJCQkJJwQMMGvA8jMhGYBpuzIiJwGiDILAF0HYM4BRE4DRM4CzFBohvWimQXosmYApme4mzSzAOlN6aP+aK4DsEmU6wA4C8CfFEJCQlYA
+8XUlIHYdgG1sKoAu6+A/s0tXAXRZB39VBnTFqgKwrgKIvBAgynUA4JWAszIiLwSwrwCyslgB8CeFkJCQMPGgOxSgRXtn99G2znYZ3dwyhITjCdNCAVq0d3Yf
+betslzGNW4aQ8IWEbhi6YeiGoTvWLca619x7CBMbpsEwDYZpMEyLdYux7jX3HsJJB9ETcfTUHh0swIcfuAkJCccMoifi6Kk9OliADz9wExISxhK6QQicZFvn
+124IuiEXGixwQ51BRxWQHnPvIZw0MA2EwEm2dX6dBsE0yIUGC9KgzqCjCkiPufdMSlhWpoc5weB1ZWVFRdcFzX+jw1OuqMZZynzlisrbimpqlJzvuIwjrqKi
+QdOZoqJAm+kqOrSwvE2xgoIcDayp+UubYgXztbCirc10OlheUd5msvkNOeVO8LRrcJSSU3CKNXR0OK3wgpxR6dDuFDk5/M4QEhISJjbMP7FE5US+DuYvWbZs
+2c4lVdn5ztB0OwcHB6ucpZiu6hfqv9XZ2U5Sbty1y3LBQQUHHeCSG59tL3txtjMMBh/bmW3BWg2831RVj61e3OgAq3ZZjWWvDgbvr3WC6gNVrF5k1/7dAZ5Q
+bKfV7dW1C3c5rcfa2tplVr8XLmzMd9wyStZWVS12dta2XhhKY75277nr4cbGh+/K55eLkJCQMO7g8UUquce1UKnfLVhQXJyrgblKmU4nRSklctvb25drYHGx
++VfJjc7weK75kbl1dXW/BFaP5XL1EHAhWFe3XOdCcLnenYKrYgzhvWfjRrBFGK5aFetlJCQkJCQ8S7ivt7Ozs3efDq5tbR26pc/T2ulf6wjXdg79o++2wG0e
+j3/zWifYOvSIxzMvMM+j5HYHuK9vS5/HM3T4sIKezYeiw96+ISWeOPmECf3ro8POv6kGRz7a07rOAW655TT01EeHm0dDvwPsPfzICGz1+485LOOh3i2tra0K
++lXqH3RYj9uHev3+EFxX77hl1m32+0/OO2m6m5239fp1x7b7tx+rd3KhvefQ+vr6+vUP8stFSEhIGHfwoRKVO/XwT7c+Wt5dVrJXBx+69Y/lG7oXLSj5rQaW
+PFr+BxMW9+tg94YNJmzXwkXd3cPDZcXtRzXwzpKysoGB4vZ+3TIG95YUDwy099+kX497Vw4MrDwKrPDfrFS5CYEtKgj8uRUAPtlSshJr8Wh/f8uT0G7W0sIv
+FyEhIWE8wv+DGU/4bjByMRh5KRgcvgKMvAOMvB6MvBaMvAaMvA6MvAeMvB2MvBmMvAGMvA2MvBqMvAmMvAWM/AcMISEhISEhISFhOOTpHiHhmcGXgBlP+Cow
+OPw8GPksGPk2GHkrGBx+DYx8HYx8A4x8AYx8BYy8EQwOPwVGPg1GfgRGfghG/gWGkJCQkJCQkJAwHPJ0j5BwjGAATFzAc8CMAZwCBofngpHzwMgVYOSVYOQC
+MOICIx8BI5eAke+CkR+DkRQw8gkw8m8whISEhISEhISE4ZCne4SEk3gMgJCQMPFgPIztwUN27wIjnwQznkN2PwAj3wMj7wQjl4GRy8HgheYMMHIlGHkKjDAM
+wzD24ekeIaEFrwaD35ED3wQN31YN36gN3/oN30wO354O3/AO30IP35QP3+YPPzgAfhQB/HAD+HEJsX9SA/yQCPixE/HwDA1CQkJCQkJCwskCebpHSJh40/sJ
+NWl3FRiZCka+DEYuBSPfB4PPxcFXxZ8PRn4CRi4EI0+DISQkJCQkJCQknECQp3uEhM8HrmluXoPATc099zZvAmDH3fsPbuvQw93NBwO/9jXv1sIVR/YHAr5t
+OTq4Zts9BxX0OfZHwdu39fT0qI/2bT1wuyP8/dZ7fL7AsM/nO/BnJzjc3HO3zze8X8EV129ygB1b71Wm54gJ99wRHap1rciRTbtXzJ07N+faqP2Rjq0rVBoC
+gblm9twXFR54wBK711h/HmiMCu/Ys+d6lWutNDbex+8MISEhYSLCJChBScKG7JMmGnTlYdCVauQhULlUFwBtnR30GkYK1Bm4RXgZLekF16PXNeG3tS2E93D+
+UhASErICSKQKIM+FwTy7g+sLdRhOMbDD8BgUH2ivva54qPZYARASEhKyAjhj6PJ6XWAFAB2GTWcjI6B5tE5JiTxkR8BQjRJ5zh750aGqJ+KgnZTom5AVACEh
+ISErgLGD6NEVPl7DFQBcU+BVCl73sALgLwUhIWHCwWcEGAAPvQadcON4iwAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>sprite.png</Value></Property><Property><Name>Description</Name><Value>sprite.png</Value></Property><Property><Name>ThemeReference</Name><Value>NULL</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property></Properties></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties />
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>Sprite</Value></Property><Property><Name>IsThemeDependant</Name><Value>False</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> Sprite
+IsDefault -> False

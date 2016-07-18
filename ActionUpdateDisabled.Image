@@ -1,0 +1,34 @@
+======OBJECT = ActionUpdateDisabled.Image === Action Update Disabled=====
+<Object parentGuid="00000000-0000-0000-0000-000000000000" user="" versionDate="2015-10-14T20:36:04.0000000Z" lastUpdate="2014-09-27T00:01:53.0000000Z" checksum="eb702423a7e8d7508c4f2d6d64a4e029" fullyQualifiedName="ActionUpdateDisabled" guid="0211baea-a1e2-4bb5-849c-f3afb69b09ee" name="ActionUpdateDisabled" type="9fb193d9-64a4-4d30-b129-ff7c76830f7e" description="Action Update Disabled">
+  <Part type="36f350de-f768-425f-ac20-773749f331bf">
+    <Images>
+      <ImageItem><Image name="ActionUpdateDisabled.png" description="Action Update Disabled.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADdYAAA3WAZBveZwAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAASxJREFUSEu9kEmLg0AQRv3/3hRc/oV3jy7gCuLZm168u+GhJtVok0w+M8akp+DFzuuSB2pE9O9A
+qRooVQOlaqBUDZSqgfIi5HkeFUXBRx60I4DyAuS6Lum6LvB9nxXaE0D5Jjzauq4yymyD9j+Okm3b1HUdH7VlWUSwLEvx/wgoTyKCbduK0B7mn+15CJQnEMF5
+ninLslOf9B4o/0AG0zSVwTiO+QrtPwHlC0RwmqaHYBRFfMWD3nkCygO+EmSgBIjgOI6UJMlHQQbKX4jgMAwPwTAM+YoHvfMSKO8gy7Ko73sURPungHKnqioR
+MU3za0EGyh3HcWSMCYLgpvHuO0C5IWOGYVBd16x40O5bQMk0TUN5nt+OcuDeFaBUDZSqgVI1UKoGStVAqRbSfgC+opefHMJYAQAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionUpdateDisabled.png</Value></Property><Property><Name>Description</Name><Value>Action Update Disabled.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\buttons\ActionUpdateDisabled.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+      <ImageItem><Image name="ActionUpdateDisabled.png" description="Action Update Disabled.png"><Data>
+<base64Binary>
+iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADdYAAA3WAZBveZwAAAAadEVY
+dFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAASxJREFUSEu9kEmLg0AQRv3/3hRc/oV3jy7gCuLZm168u+GhJtVok0w+M8akp+DFzuuSB2pE9O9A
+qRooVQOlaqBUDZSqgfIi5HkeFUXBRx60I4DyAuS6Lum6LvB9nxXaE0D5Jjzauq4yymyD9j+Okm3b1HUdH7VlWUSwLEvx/wgoTyKCbduK0B7mn+15CJQnEMF5
+ninLslOf9B4o/0AG0zSVwTiO+QrtPwHlC0RwmqaHYBRFfMWD3nkCygO+EmSgBIjgOI6UJMlHQQbKX4jgMAwPwTAM+YoHvfMSKO8gy7Ko73sURPungHKnqioR
+MU3za0EGyh3HcWSMCYLgpvHuO0C5IWOGYVBd16x40O5bQMk0TUN5nt+OcuDeFaBUDZSqgVI1UKoGStVAqRbSfgC+opefHMJYAQAAAABJRU5ErkJggg==
+</base64Binary>
+</Data></Image><Properties><Property><Name>Name</Name><Value>ActionUpdateDisabled.png</Value></Property><Property><Name>Description</Name><Value>Action Update Disabled.png</Value></Property><Property><Name>IsExternalImage</Name><Value>False</Value></Property><Property><Name>ThemeReference</Name><Value>c804fdbd-7c0b-440d-8527-4316c92649a6-6</Value></Property><Property><Name>LanguageReference</Name><Value>NULL</Value></Property><Property><Name>ImageOriginalFullPath</Name><Value>C:\Models\DVelop\Bootstrap\images\buttons\ActionUpdateDisabled.png</Value></Property></Properties><ThemeReference>c804fdbd-7c0b-440d-8527-4316c92649a6-WorkWithPlusBootstrapResponsiveTheme</ThemeReference></ImageItem>
+    </Images>
+    <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+  </Part>
+  <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+    <Properties><Property><Name>IsDefault</Name><Value>True</Value></Property></Properties>
+  </Part>
+  <Properties><Property><Name>Name</Name><Value>ActionUpdateDisabled</Value></Property><Property><Name>IsThemeDependant</Name><Value>True</Value></Property><Property><Name>IsLanguageDependant</Name><Value>False</Value></Property><Property><Name>DefaultImage</Name><Value>,WorkWithPlusBootstrapResponsiveTheme,</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+</Object>
+====== PROPERTIES =======
+Name -> ActionUpdateDisabled
+DefaultImage -> Artech.Genexus.Common.ImageItem
+IsDefault -> False

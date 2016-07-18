@@ -1,0 +1,11 @@
+======OBJECT = TagSolHor.Attribute === Horas Planificadas=====
+NUMERIC(8.2)-
+
+
+====== PROPERTIES =======
+Name -> TagSolHor
+Description -> Horas Planificadas
+Class -> SECONDARY
+OBJ_TYPE -> id_OTYPE_ATT
+idBasedOn -> Artech.Genexus.Common.CustomTypes.BasedOnReference
+IsDefault -> False
